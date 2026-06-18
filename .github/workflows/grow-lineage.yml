@@ -43,7 +43,7 @@ env:
   # ---- Tier 1: generate (drafts only, no publish) ------------------------
   GENERATE_PROMPT: |
     You are the GENERATE pass (tier 1 of 3: generate -> expand -> enhance) of a
-    content growth tick for this knowledge base. NO WEB — this is the AI own world view: write every fact from YOUR OWN training knowledge; the web is unavailable (no fetch/search tools). seed.md holds the concept
+    content growth tick for this knowledge base. NO WEB - this is the AI's own world view: write every fact from YOUR OWN training knowledge; the web is unavailable (no fetch/search tools). seed.md holds the concept
     (subject, taxonomy, sources, conventions); the growth skills and slash-commands
     (plan-roadmap, add-topic, deep-dive, â¦) are auto-discovered from .claude/ â each
     is a thin adapter whose canonical procedure is staged under .github/, so read the
