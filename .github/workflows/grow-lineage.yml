@@ -5,8 +5,8 @@ name: Grow Lineage
 # target repo (which holds only content + _config.yml + .claude + telemetry),
 # stages the centralized framework + that year's seed from lineage/, runs the
 # 3-tier content escalation (Haiku draft -> Sonnet expand -> Opus enhance), then
-# pushes back ONLY the new content + telemetry — the staged framework/seed are
-# stripped so the country repo stays clean. The year's Evolution Log (seed §8) is
+# pushes back ONLY the new content + telemetry â the staged framework/seed are
+# stripped so the country repo stays clean. The year's Evolution Log (seed Â§8) is
 # persisted back to the hub's lineage/seeds/<repo>.md.
 #
 # Dispatched per repo by orchestrate.yml, or manually. Model tiers come from
@@ -29,8 +29,8 @@ on:
 
 concurrency:
   # Shared year-repo write-lock (ADR-0003 repo-write-serializer). Every agent that
-  # writes this repo's main — the publish step here, and future rollback / hygiene /
-  # aligner PRs — MUST join this same `repo-write-<repo>` group so two writers can
+  # writes this repo's main â the publish step here, and future rollback / hygiene /
+  # aligner PRs â MUST join this same `repo-write-<repo>` group so two writers can
   # never race the branch.
   group: repo-write-${{ inputs.repo }}
   cancel-in-progress: false
@@ -43,41 +43,41 @@ env:
   # ---- Tier 1: generate (drafts only, no publish) ------------------------
   GENERATE_PROMPT: |
     You are the GENERATE pass (tier 1 of 3: generate -> expand -> enhance) of a
-    content growth tick for this knowledge base. seed.md holds the concept
+    content growth tick for this knowledge base. NO WEB — this is the AI own world view: write every fact from YOUR OWN training knowledge; the web is unavailable (no fetch/search tools). seed.md holds the concept
     (subject, taxonomy, sources, conventions); the growth skills and slash-commands
-    (plan-roadmap, add-topic, deep-dive, …) are auto-discovered from .claude/ — each
+    (plan-roadmap, add-topic, deep-dive, â¦) are auto-discovered from .claude/ â each
     is a thin adapter whose canonical procedure is staged under .github/, so read the
-    referenced .github/ file for the full steps. Produce DRAFTS only — do NOT build
+    referenced .github/ file for the full steps. Produce DRAFTS only â do NOT build
     indices, run sync-seed / encode-seed, commit, or push (later passes + the
     workflow do that).
 
     Run plan-roadmap to select 1-3 topics NOT already covered (read README.md and
     the existing category files first; never re-add an existing topic), then use
-    add-topic / deep-dive to RESEARCH and WRITE a first draft of each selected
+    add-topic / deep-dive to WRITE (from your own knowledge; no web)  a first draft of each selected
     file under the correct taxonomy directory. ${{ inputs.args }}
-    A pass that writes no new draft content has FAILED — planning alone is not
+    A pass that writes no new draft content has FAILED â planning alone is not
     progress. Leave the drafts uncommitted and stop.
   # ---- Tier 2: expand ----------------------------------------------------
   EXPAND_PROMPT: |
     You are the EXPAND pass (tier 2 of 3) of an in-progress growth tick. The
     generate pass left uncommitted draft files (run `git status` to find them).
     DEEPEN and EXPAND every new or modified draft: add detail and sub-sections,
-    specific dates and figures, at least two sourced facts, and cross-links to
+    specific dates and figures, specific accurate facts from your own knowledge, and cross-links to
     sibling topics. Do NOT build indices, run sync-seed / encode-seed, commit, or
     push. If nothing is uncommitted, stop.
-  # ---- Tier 3: enhance (no publish — the workflow commits) ----------------
+  # ---- Tier 3: enhance (no publish â the workflow commits) ----------------
   ENHANCE_PROMPT: |
     You are the ENHANCE pass (tier 3 of 3) of an in-progress growth tick. Finish
-    the content (do NOT commit or push — the workflow publishes):
-      1. Polish prose, verify facts/sources, fix cross-references, ensure an
+    the content (do NOT commit or push â the workflow publishes):
+      1. Polish prose, ensure factual accuracy from your own knowledge, fix cross-references, ensure an
          encyclopedic neutral tone and correct front matter on every new file.
-      2. build-structure — refresh indices, TIMELINE, INDEX, cross-refs.
-      3. sync-seed — regenerate seed.md sections 1-7.
-      4. encode-seed — append ONE new entry under "## Section 8 — Evolution Log",
-         at the SAME heading level as the existing entries (h3 "### …", NOT h2),
+      2. build-structure â refresh indices, TIMELINE, INDEX, cross-refs.
+      3. sync-seed â regenerate seed.md sections 1-7.
+      4. encode-seed â append ONE new entry under "## Section 8 â Evolution Log",
+         at the SAME heading level as the existing entries (h3 "### â¦", NOT h2),
          in the exact format
-         "### G<gen>-T<seq> — <YYYY-MM-DD> — Tick N: <short summary>"
-         naming what was added. Leave all existing §8 entries intact.
+         "### G<gen>-T<seq> â <YYYY-MM-DD> â Tick N: <short summary>"
+         naming what was added. Leave all existing Â§8 entries intact.
     Then STOP. Do not run publish-session, do not commit, do not push.
   # ---- API-key fallback: one complete pass (no publish) ------------------
   FALLBACK_PROMPT: |
@@ -88,15 +88,14 @@ env:
     staged under .github/).
       1. plan-roadmap to select 1-3 topics NOT already covered (read README.md and
          the existing category files first; never re-add an existing topic).
-      2. add-topic / deep-dive to RESEARCH and WRITE each new file under the
-         correct taxonomy directory — detail, specific dates/figures, at least two
-         sourced facts, and cross-links to sibling topics.
-      3. build-structure — refresh indices, TIMELINE, INDEX, cross-refs.
-      4. sync-seed — regenerate seed.md sections 1-7.
-      5. encode-seed — append a seed.md section 8 Evolution Log entry titled
+      2. add-topic / deep-dive to WRITE (from your own knowledge; no web)  each new file under the
+         correct taxonomy directory â detail, specific dates/figures, specific accurate facts from your own knowledge, and cross-links to sibling topics.
+      3. build-structure â refresh indices, TIMELINE, INDEX, cross-refs.
+      4. sync-seed â regenerate seed.md sections 1-7.
+      5. encode-seed â append a seed.md section 8 Evolution Log entry titled
          "Tick N:" naming what was added.
-    Do NOT run publish-session, commit, or push — the workflow publishes. Stop
-    once the new content + the seed §8 entry exist uncommitted.
+    Do NOT run publish-session, commit, or push â the workflow publishes. Stop
+    once the new content + the seed Â§8 entry exist uncommitted.
 
 jobs:
   grow:
@@ -135,7 +134,7 @@ jobs:
           # canonical agent toolkit (skills/prompts/agents/scripts)
           mkdir -p .github
           cp -r /tmp/hub/lineage/framework/* .github/
-          # this year's concept seed (carries §1 concept + §8 Evolution Log)
+          # this year's concept seed (carries Â§1 concept + Â§8 Evolution Log)
           cp "/tmp/hub/lineage/seeds/${{ inputs.repo }}.md" seed.md
           echo "Staged framework ($(find .github -type f | wc -l) files) + seed.md for ${{ inputs.repo }}"
 
@@ -150,7 +149,7 @@ jobs:
           } >> "$GITHUB_OUTPUT"
           echo "models: generate=$(m generate) expand=$(m expand) enhance=$(m enhance)"
 
-      - name: Tier 1 — generate drafts (Haiku)
+      - name: Tier 1 â generate drafts (Haiku)
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
         with:
@@ -159,10 +158,10 @@ jobs:
           claude_args: >-
             --model ${{ steps.model.outputs.generate }}
             --max-turns 80
-            --allowedTools "Bash,Edit,Write,Read,Glob,Grep,WebFetch,WebSearch,TodoWrite,Task,Skill"
+            --allowedTools "Bash,Edit,Write,Read,Glob,Grep,TodoWrite,Task,Skill"
           show_full_output: true
 
-      - name: Tier 2 — expand drafts (Sonnet)
+      - name: Tier 2 â expand drafts (Sonnet)
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
         with:
@@ -171,10 +170,10 @@ jobs:
           claude_args: >-
             --model ${{ steps.model.outputs.expand }}
             --max-turns 80
-            --allowedTools "Bash,Edit,Write,Read,Glob,Grep,WebFetch,WebSearch,TodoWrite,Task,Skill"
+            --allowedTools "Bash,Edit,Write,Read,Glob,Grep,TodoWrite,Task,Skill"
           show_full_output: true
 
-      - name: Tier 3 — enhance (Opus)
+      - name: Tier 3 â enhance (Opus)
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
         with:
@@ -183,12 +182,12 @@ jobs:
           claude_args: >-
             --model ${{ steps.model.outputs.enhance }}
             --max-turns 120
-            --allowedTools "Bash,Edit,Write,Read,Glob,Grep,WebFetch,WebSearch,TodoWrite,Task,Skill"
+            --allowedTools "Bash,Edit,Write,Read,Glob,Grep,TodoWrite,Task,Skill"
           show_full_output: true
 
       # API-key fallback. Unlike the per-repo grow.yml (where the enhance pass
       # commits, so a dirty tree means "unfinished"), the tiers here deliberately
-      # leave content UNcommitted for the publish step — so a dirty tree means the
+      # leave content UNcommitted for the publish step â so a dirty tree means the
       # tick SUCCEEDED and a clean tree means it produced nothing. Fire the fallback
       # when the tree is empty (no drafts) OR the OAuth passes errored (is_error).
       - name: Detect a failed/empty tick
@@ -208,7 +207,7 @@ jobs:
           echo "failed=$failed" >> "$GITHUB_OUTPUT"
           echo "empty=$empty failed=$failed"
 
-      - name: Fallback — generate the tick on the API key
+      - name: Fallback â generate the tick on the API key
         if: steps.check.outputs.empty == 'true' || steps.check.outputs.failed == 'true'
         continue-on-error: true
         uses: anthropics/claude-code-action@v1
@@ -218,12 +217,12 @@ jobs:
           claude_args: >-
             --model ${{ steps.model.outputs.enhance }}
             --max-turns 150
-            --allowedTools "Bash,Edit,Write,Read,Glob,Grep,WebFetch,WebSearch,TodoWrite,Task,Skill"
+            --allowedTools "Bash,Edit,Write,Read,Glob,Grep,TodoWrite,Task,Skill"
           show_full_output: true
 
       # Run-scoped agent telemetry. Each claude-code-action pass overwrites this
       # file, so the artifact holds the LAST pass (the fallback if it ran, else
-      # the enhance pass) — enough to post-mortem the is_error fallback gate.
+      # the enhance pass) â enough to post-mortem the is_error fallback gate.
       - name: Upload agent telemetry artifact
         if: always()
         uses: actions/upload-artifact@v4
@@ -245,10 +244,10 @@ jobs:
           content_changed=$(git status --porcelain \
             | grep -vE ' (\.github/|seed\.md|lifecycle\.yml|seed-package/|ROADMAP\.md|LIFECYCLE\.md)' \
             | grep -c . || true)
-          # Count §8 tick entries leniently — h2 or h3, any "Tick N:" header.
+          # Count Â§8 tick entries leniently â h2 or h3, any "Tick N:" header.
           count_ticks() { grep -cE '^#{2,3} .*Tick [0-9]+ *:' "$1" 2>/dev/null || echo 0; }
           now=$(count_ticks seed.md); orig=$(count_ticks "$ORIG")
-          # Safety net: the enhance pass should append a §8 "Tick N" entry, but it is
+          # Safety net: the enhance pass should append a Â§8 "Tick N" entry, but it is
           # a non-deterministic model pass and sometimes publishes content without
           # logging the tick. If content was published yet no new tick entry exists,
           # append one deterministically so the central tick clock never lags reality.
@@ -260,9 +259,9 @@ jobs:
             else
               gen=1; seq=0
             fi
-            printf '\n### G%s-T%s — %s — Tick %s: growth tick (Haiku -> Sonnet -> Opus)\n**Action**: Content published by the 3-tier escalation; this §8 entry was recorded deterministically by the workflow because the enhance pass did not run encode-seed.\n' \
+            printf '\n### G%s-T%s â %s â Tick %s: growth tick (Haiku -> Sonnet -> Opus)\n**Action**: Content published by the 3-tier escalation; this Â§8 entry was recorded deterministically by the workflow because the enhance pass did not run encode-seed.\n' \
               "$gen" "$((seq + 1))" "$(date -u +%F)" "$((orig + 1))" >> seed.md
-            echo "::notice::tick clock advanced by safety net — Tick $((orig + 1)) for ${{ inputs.repo }}"
+            echo "::notice::tick clock advanced by safety net â Tick $((orig + 1)) for ${{ inputs.repo }}"
           fi
           # Persist the (now guaranteed-advanced) Evolution Log back to the hub.
           cp seed.md "$ORIG"
@@ -272,10 +271,10 @@ jobs:
               git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
               git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/ai-world-view/ai-world-view.github.io.git"
               git add "lineage/seeds/${{ inputs.repo }}.md"
-              git commit -q -m "chore(lineage): grow ${{ inputs.repo }} — update seed Evolution Log"
+              git commit -q -m "chore(lineage): grow ${{ inputs.repo }} â update seed Evolution Log"
               # The hub's main advances often (other ticks, the daily orchestrate,
               # manual pushes). A single non-rebasing push loses this seed update to
-              # a non-fast-forward rejection — exactly how 2012's first tick clock was
+              # a non-fast-forward rejection â exactly how 2012's first tick clock was
               # lost. Retry with rebase, matching the content-publish step.
               pushed=""
               for _ in 1 2 3 4 5; do
@@ -299,7 +298,7 @@ jobs:
           # of these may be published.
           rm -rf .github seed.md lifecycle.yml seed-package ROADMAP.md LIFECYCLE.md
           if [ -z "$(git status --porcelain)" ]; then
-            echo "No new content this tick — nothing to publish."
+            echo "No new content this tick â nothing to publish."
             exit 0
           fi
           git config user.name "claude-grow"

@@ -21,7 +21,7 @@ concept:
       slug: "culture-society"
     - name: "People"
       slug: "people"
-  source_strategy: "Verify every fact against at least two authoritative sources (one encyclopedic, one specialist)."
+  source_strategy: "Write from the model's own knowledge of the world. Do NOT use web sources, fetch, or search — this is the AI's own world view."
   conventions:
     knowledge_table_heading: "Notable Facts about the country japan"
     file_path: "<category-slug>/<topic-slug>.md"
