@@ -1,0 +1,21 @@
+# =============================================================================
+# GENERATED FILE — do not edit by hand.
+# Regenerate with: ./scripts/sync-lineage-state.rb
+# Source registry: _data/hub.yml
+# =============================================================================
+org: ai-world-view
+totals:
+  repos: 1
+  ticks: 0
+members:
+- name: japan
+  repo: ai-world-view/japan
+  url: https://github.com/ai-world-view/japan
+  site_url: https://ai-world-view.github.io/japan/
+  subject: the country japan
+  status: seeded
+  ticks_logged: 0
+  log_entries: 3
+  generations: 1
+  last_activity: '2026-06-18'
+  last_entry: Genesis — 2026-06-18
