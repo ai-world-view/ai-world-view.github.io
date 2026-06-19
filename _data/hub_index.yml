@@ -1,0 +1,22 @@
+# =============================================================================
+# GENERATED FILE — do not edit by hand.
+# Regenerate with: ./scripts/sync-hub-metadata.sh
+# Source registry: _data/hub.yml
+# =============================================================================
+org: ai-world-view
+totals:
+  repos: 1
+  pages: 0
+repos:
+- name: japan
+  title: japan
+  description: self-growing knowledge base — the country japan
+  url: https://github.com/ai-world-view/japan
+  site_url: https://ai-world-view.github.io/japan/
+  pages_enabled: true
+  scaffolded: true
+  branch: main
+  pushed_at: '2026-06-18T22:30:19Z'
+  page_count: 0
+  sections: []
+  root_pages: []

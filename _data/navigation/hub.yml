@@ -1,0 +1,23 @@
+# =============================================================================
+# GENERATED FILE — do not edit by hand.
+# Regenerate with: ./scripts/sync-hub-metadata.sh
+# Source registry: _data/hub.yml
+# =============================================================================
+- title: Hub Dashboard
+  icon: bi-grid-1x2
+  url: "/hub/"
+- title: Orchestration
+  icon: bi-cpu
+  url: "/orchestration/"
+- title: Self-Improvement
+  icon: bi-arrow-repeat
+  url: "/self-improvement/"
+- title: Lineage
+  icon: bi-diagram-3
+  url: "/lineage/"
+- title: japan
+  icon: bi-journal-richtext
+  url: https://ai-world-view.github.io/japan/
+  children:
+  - title: Site Home
+    url: https://ai-world-view.github.io/japan/
