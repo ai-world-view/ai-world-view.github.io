@@ -163,7 +163,6 @@ jobs:
       - name: Tier 1 — generate drafts (Haiku)
         id: tier1
         continue-on-error: true
-        id: t1
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
@@ -180,7 +179,6 @@ jobs:
       - name: Tier 2 — expand drafts (Sonnet)
         id: tier2
         continue-on-error: true
-        id: t2
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
@@ -195,7 +193,6 @@ jobs:
       - name: Tier 3 — enhance (Opus)
         id: tier3
         continue-on-error: true
-        id: t3
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
@@ -341,7 +338,7 @@ jobs:
           rm -rf .github seed.md lifecycle.yml seed-package ROADMAP.md LIFECYCLE.md
           if [ -z "$(git status --porcelain)" ]; then
             echo "published=false" >> "$GITHUB_OUTPUT"
-            echo "No new content this tick â nothing to publish."
+            echo "No new content this tick — nothing to publish."
             exit 0
           fi
           git config user.name "claude-grow"
@@ -378,9 +375,9 @@ jobs:
         if: always()
         env:
           PUBLISHED: ${{ steps.publish.outputs.published }}
-          GEN_OUTCOME: ${{ steps.t1.outcome }}
-          EXP_OUTCOME: ${{ steps.t2.outcome }}
-          ENH_OUTCOME: ${{ steps.t3.outcome }}
+          GEN_OUTCOME: ${{ steps.tier1.outcome }}
+          EXP_OUTCOME: ${{ steps.tier2.outcome }}
+          ENH_OUTCOME: ${{ steps.tier3.outcome }}
           FB_OUTCOME: ${{ steps.fallback.outcome }}
         run: |
           set -uo pipefail
