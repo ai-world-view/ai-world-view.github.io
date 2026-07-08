@@ -101,7 +101,12 @@ jobs:
   grow:
     runs-on: ubuntu-latest
     permissions:
-      id-token: write # claude-code-action exchanges an OIDC token
+      # No id-token: write. Passing an explicit github_token to claude-code-action
+      # (below) makes it SKIP the OIDC -> Claude GitHub App token exchange that was
+      # 401ing ("Claude Code is not installed on this repository"). github.token
+      # (contents: read on the hub) is all the action needs; every write to the
+      # country repo and the hub seed log still goes through LIFECYCLE_PAT.
+      contents: read
     steps:
       # The `args` dispatch input is interpolated into GENERATE_PROMPT. Even though
       # only owners can dispatch this workflow, harden the surface: pass it via env
@@ -151,9 +156,13 @@ jobs:
 
       - name: Tier 1 â generate drafts (Haiku)
         continue-on-error: true
+        id: t1
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          # Skips the OIDC GitHub-App-token exchange (the agent only edits files
+          # locally; the workflow does every git push via LIFECYCLE_PAT).
+          github_token: ${{ github.token }}
           prompt: ${{ env.GENERATE_PROMPT }}
           claude_args: >-
             --model ${{ steps.model.outputs.generate }}
@@ -163,9 +172,11 @@ jobs:
 
       - name: Tier 2 â expand drafts (Sonnet)
         continue-on-error: true
+        id: t2
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ github.token }}
           prompt: ${{ env.EXPAND_PROMPT }}
           claude_args: >-
             --model ${{ steps.model.outputs.expand }}
@@ -175,9 +186,11 @@ jobs:
 
       - name: Tier 3 â enhance (Opus)
         continue-on-error: true
+        id: t3
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          github_token: ${{ github.token }}
           prompt: ${{ env.ENHANCE_PROMPT }}
           claude_args: >-
             --model ${{ steps.model.outputs.enhance }}
@@ -210,9 +223,11 @@ jobs:
       - name: Fallback â generate the tick on the API key
         if: steps.check.outputs.empty == 'true' || steps.check.outputs.failed == 'true'
         continue-on-error: true
+        id: fallback
         uses: anthropics/claude-code-action@v1
         with:
           anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ github.token }}
           prompt: ${{ env.FALLBACK_PROMPT }}
           claude_args: >-
             --model ${{ steps.model.outputs.enhance }}
@@ -286,6 +301,7 @@ jobs:
           )
 
       - name: Strip the staged framework/seed and publish content + telemetry
+        id: publish
         if: always()
         env:
           GH_TOKEN: ${{ secrets.LIFECYCLE_PAT }}
@@ -298,6 +314,7 @@ jobs:
           # of these may be published.
           rm -rf .github seed.md lifecycle.yml seed-package ROADMAP.md LIFECYCLE.md
           if [ -z "$(git status --porcelain)" ]; then
+            echo "published=false" >> "$GITHUB_OUTPUT"
             echo "No new content this tick â nothing to publish."
             exit 0
           fi
@@ -309,8 +326,47 @@ jobs:
           git remote set-url origin "https://x-access-token:${GH_TOKEN}@github.com/${TARGET}.git"
           git add -A
           git commit -q -m "content: growth tick (Haiku -> Sonnet -> Opus)"
+          pushed=""
           for _ in 1 2 3; do
-            git push origin HEAD:main && exit 0
+            if git push origin HEAD:main; then pushed=1; break; fi
             git pull --rebase origin main || true
           done
-          git push origin HEAD:main
+          if [ -z "$pushed" ]; then
+            git push origin HEAD:main && pushed=1
+          fi
+          if [ -n "$pushed" ]; then
+            echo "published=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "published=false" >> "$GITHUB_OUTPUT"
+            echo "::error::content was generated but could not be pushed to ${TARGET}."
+            exit 1
+          fi
+
+      # Loud failure gate. The three tiers + fallback are continue-on-error, so a
+      # tick where EVERY model pass died at startup (e.g. the old GitHub-App auth
+      # 401, or an invalid OAuth token) used to reach the empty-tree publish and
+      # report the whole run GREEN. Surface that instead: if nothing was published,
+      # fail the job and say whether the cause was an auth/setup error or a genuine
+      # no-op tick.
+      - name: Fail loudly if the growth tick produced no content
+        if: always()
+        env:
+          PUBLISHED: ${{ steps.publish.outputs.published }}
+          GEN_OUTCOME: ${{ steps.t1.outcome }}
+          EXP_OUTCOME: ${{ steps.t2.outcome }}
+          ENH_OUTCOME: ${{ steps.t3.outcome }}
+          FB_OUTCOME: ${{ steps.fallback.outcome }}
+        run: |
+          set -uo pipefail
+          if [ "$PUBLISHED" = "true" ]; then
+            echo "Growth tick published content for ${{ inputs.repo }} — OK."
+            exit 0
+          fi
+          echo "::error::Growth tick produced NO content for ${{ inputs.repo }} (nothing was published)."
+          echo "pass outcomes: generate=$GEN_OUTCOME expand=$EXP_OUTCOME enhance=$ENH_OUTCOME fallback=$FB_OUTCOME"
+          if [ "$GEN_OUTCOME" = "failure" ] && [ "$EXP_OUTCOME" = "failure" ] && [ "$ENH_OUTCOME" = "failure" ]; then
+            echo "::error::All OAuth model passes errored — this is an auth/setup failure (invalid CLAUDE_CODE_OAUTH_TOKEN, or claude-code-action could not authenticate). Check the per-pass logs above."
+          else
+            echo "::error::Model passes ran without error but wrote no new content — growth stalled (every topic may already be covered, or the prompt selected nothing)."
+          fi
+          exit 1
