@@ -115,23 +115,29 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 3 rows.
-- **Dedicated topic files** (3):
+- **README knowledge table**: 6 rows.
+- **Dedicated topic files** (6):
   - `geography/major-islands.md` — Major Islands
   - `history/meiji-restoration.md` — Meiji Restoration
+  - `government-politics/diet-of-japan.md` — Diet of Japan
+  - `economy/bank-of-japan.md` — Bank of Japan
   - `culture-society/shinto-religion.md` — Shinto Religion
-- **Categories with content**: Geography (1), History (1), Culture & Society (1).
-- **Categories awaiting content**: Government & Politics, Economy, People.
+  - `people/hirohito.md` — Hirohito
+- **Categories with content**: Geography (1), History (1), Government & Politics (1),
+  Economy (1), Culture & Society (1), People (1) — all six populated.
+- **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
 
 Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` markers):
 
-- **Category indices**: `geography/index.md`, `history/index.md`, `culture-society/index.md` — present.
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts).
-- **Master index**: `INDEX.md` — present (all topics grouped by taxonomy).
-- **Cross-references**: `## Related` blocks present in all 3 dedicated topic files.
-- **Not yet generated**: category indices for Government & Politics, Economy, People (no content yet).
+- **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
+  `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present.
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all six topics).
+- **Master index**: `INDEX.md` — present (all topics grouped by taxonomy; every category now populated).
+- **Cross-references**: `## Related` blocks present in all 6 dedicated topic files, using relative
+  Markdown links wrapped in `crossrefs` generated markers.
+- **Not yet generated**: none — every taxonomy category has content and an index.
 
 ## 6. Growth Loop
 
@@ -170,3 +176,12 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: corrected the first-railway date (Shimbashi–Yokohama formally opened 1872-10-14) and the Charter Oath date (Gregorian 1868-04-06); fixed typos (*senbon torii*, Yasukuni); converted hand-written "See Also" sections into generated `## Related` cross-reference blocks.
 - **Structure** (`build-structure`): created category indices `geography/index.md`, `history/index.md`, `culture-society/index.md`; `TIMELINE.md` (chronological index of dated facts); `INDEX.md` (master index by taxonomy).
 - **Seed** (`sync-seed`): regenerated §1–7 to reflect 3 topic files, 3 README rows, and the new structural artifacts.
+
+### G1-T2 — 2026-07-09 — Tick 2: populated the three empty categories — Diet of Japan, Bank of Japan, Hirohito
+
+- **Content added** (3 dedicated topic files): `government-politics/diet-of-japan.md` (Japan's bicameral legislature under the 1947 Constitution — structure, sessions, electoral system, parties, and the prewar Imperial Diet), `economy/bank-of-japan.md` (the central bank founded 1882 — monetary policy, the 1980s bubble and Lost Decades, and post-2024 normalization), `people/hirohito.md` (the 124th Emperor, r. 1926–1989 — Showa-era militarism, WWII and surrender, postwar symbolic monarchy, and marine-biology work). Every taxonomy category is now populated.
+- **README**: knowledge table expanded from 3 to 6 rows.
+- **Enhance pass**: converted the new files' `[[wikilink]]` cross-references (which the remote Jekyll theme would not render) into relative-Markdown `## Related` blocks wrapped in `crossrefs` generated markers, matching the repo convention; made cross-references bidirectional by adding links from `meiji-restoration.md` and `shinto-religion.md` back to the new topics; verified front matter (`title`/`date`/`category`) and factual accuracy (BoJ founding 1882-10-10, Nikkei peak 38,915 on 1989-12-29, Diet seat counts 465/248, Hirohito 1901–1989) from the model's own knowledge.
+- **Structure** (`build-structure`): created category indices `government-politics/index.md`, `economy/index.md`, `people/index.md`; refreshed `INDEX.md` (all six categories now populated) and `TIMELINE.md` (merged the new dated facts, from the 1871 yen through the 2025 rate rise, into the chronological index).
+- **Roadmap**: moved the three completed items into Done under G1-T2; cleared the completed "category indices" structure item from the backlog.
+- **Seed** (`sync-seed`): regenerated §4 (6 topic files, 6 README rows, all categories populated) and §5 (6 category indices, refreshed timeline/master index, cross-refs in all 6 files).
