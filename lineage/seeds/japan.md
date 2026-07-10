@@ -115,16 +115,19 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 6 rows.
-- **Dedicated topic files** (6):
+- **README knowledge table**: 9 rows.
+- **Dedicated topic files** (9):
   - `geography/major-islands.md` — Major Islands
+  - `geography/tokyo.md` — Tokyo
   - `history/meiji-restoration.md` — Meiji Restoration
   - `government-politics/diet-of-japan.md` — Diet of Japan
+  - `government-politics/imperial-succession.md` — Imperial Succession
   - `economy/bank-of-japan.md` — Bank of Japan
   - `culture-society/shinto-religion.md` — Shinto Religion
+  - `culture-society/samurai-bushido.md` — Samurai & Bushido
   - `people/hirohito.md` — Hirohito
-- **Categories with content**: Geography (1), History (1), Government & Politics (1),
-  Economy (1), Culture & Society (1), People (1) — all six populated.
+- **Categories with content**: Geography (2), History (1), Government & Politics (2),
+  Economy (1), Culture & Society (2), People (1) — all six populated.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -132,11 +135,12 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` markers):
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
-  `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present.
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all six topics).
-- **Master index**: `INDEX.md` — present (all topics grouped by taxonomy; every category now populated).
-- **Cross-references**: `## Related` blocks present in all 6 dedicated topic files, using relative
-  Markdown links wrapped in `crossrefs` generated markers.
+  `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
+  (Geography, Government & Politics, and Culture & Society now list two topics each).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all nine topics).
+- **Master index**: `INDEX.md` — present (all nine topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 9 dedicated topic files, using relative
+  Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
 ## 6. Growth Loop
@@ -185,3 +189,12 @@ To reconstruct this knowledge base from DNA:
 - **Structure** (`build-structure`): created category indices `government-politics/index.md`, `economy/index.md`, `people/index.md`; refreshed `INDEX.md` (all six categories now populated) and `TIMELINE.md` (merged the new dated facts, from the 1871 yen through the 2025 rate rise, into the chronological index).
 - **Roadmap**: moved the three completed items into Done under G1-T2; cleared the completed "category indices" structure item from the backlog.
 - **Seed** (`sync-seed`): regenerated §4 (6 topic files, 6 README rows, all categories populated) and §5 (6 category indices, refreshed timeline/master index, cross-refs in all 6 files).
+
+### G1-T3 — 2026-07-10 — Tick 3: deepened three categories — Tokyo, Samurai & Bushido, Imperial Succession
+
+- **Content added** (3 dedicated topic files): `geography/tokyo.md` (Japan's capital from the Tokugawa castle town of Edo to a 37-million-person global megacity — Meiji renaming, the 1923 Great Kantō Earthquake, wartime firebombing, postwar reconstruction, administrative structure, seismic hazard, transport, and economic role), `culture-society/samurai-bushido.md` (Japan's warrior aristocracy and the *bushido* code — emergence in the Heian/Kamakura eras, Sengoku warfare, Edo-period administrative transformation, codification in the *Hagakure* and Nitobe's *Bushido*, martial-arts legacy, and Meiji-era abolition), and `government-politics/imperial-succession.md` (the 1947 Constitution and Imperial Household Law, male-only succession, the 2005–2006 succession crisis, Akihito's 2019 abdication and the Reiwa transition, and the female-succession debate). Geography, Government & Politics, and Culture & Society now hold two topics each.
+- **README**: knowledge table expanded from 6 to 9 rows.
+- **Enhance pass**: corrected the Tokyo Stock Exchange founding to 1878 (the article's own later reference), updated the Yamanote Line to 30 stations (Takanawa Gateway opened 2020), and fixed the Tokyo front-matter date to 1868-09-03 to match the "September 1868" renaming; in Imperial Succession, replaced the erroneous "Empress Goshirakawa" (Go-Shirakawa was a male emperor) and mistermed *kōgō* with the reigning-empress example Empress Jitō (r. 690–697) and the correct term *josei tennō*, corrected "Goshakuramachi" to Go-Sakuramachi, and removed an outdated schooling detail for Prince Hisahito; standardized the three new files' cross-reference markers to the canonical `BEGIN/END GENERATED: crossrefs` form; verified front matter and dates from the model's own knowledge.
+- **Structure** (`build-structure`): added the three topics to their category indices (`geography/index.md`, `government-politics/index.md`, `culture-society/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` (from the 1180–1185 Genpei War through the 2019 Reiwa enthronement); made cross-references bidirectional by adding `## Related` links from `major-islands.md`, `meiji-restoration.md`, `shinto-religion.md`, `diet-of-japan.md`, `bank-of-japan.md`, and `hirohito.md` back to the new topics.
+- **Roadmap**: moved the three completed items into Done under G1-T3 and cleared the Now section.
+- **Seed** (`sync-seed`): regenerated §4 (9 topic files, 9 README rows) and §5 (refreshed timeline/master index, cross-refs in all 9 files).
