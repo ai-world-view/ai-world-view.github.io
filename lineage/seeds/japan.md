@@ -115,19 +115,22 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 9 rows.
-- **Dedicated topic files** (9):
+- **README knowledge table**: 12 rows.
+- **Dedicated topic files** (12):
   - `geography/major-islands.md` — Major Islands
   - `geography/tokyo.md` — Tokyo
+  - `history/edo-period.md` — Edo Period
   - `history/meiji-restoration.md` — Meiji Restoration
   - `government-politics/diet-of-japan.md` — Diet of Japan
   - `government-politics/imperial-succession.md` — Imperial Succession
   - `economy/bank-of-japan.md` — Bank of Japan
+  - `economy/technology-manufacturing.md` — Technology & Manufacturing
   - `culture-society/shinto-religion.md` — Shinto Religion
   - `culture-society/samurai-bushido.md` — Samurai & Bushido
   - `people/hirohito.md` — Hirohito
-- **Categories with content**: Geography (2), History (1), Government & Politics (2),
-  Economy (1), Culture & Society (2), People (1) — all six populated.
+  - `people/murasaki-shikibu.md` — Murasaki Shikibu
+- **Categories with content**: Geography (2), History (2), Government & Politics (2),
+  Economy (2), Culture & Society (2), People (2) — all six populated, two topics each.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -136,10 +139,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Geography, Government & Politics, and Culture & Society now list two topics each).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all nine topics).
-- **Master index**: `INDEX.md` — present (all nine topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 9 dedicated topic files, using relative
+  (every category now lists two topics).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all twelve topics).
+- **Master index**: `INDEX.md` — present (all twelve topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 12 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -198,3 +201,12 @@ To reconstruct this knowledge base from DNA:
 - **Structure** (`build-structure`): added the three topics to their category indices (`geography/index.md`, `government-politics/index.md`, `culture-society/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` (from the 1180–1185 Genpei War through the 2019 Reiwa enthronement); made cross-references bidirectional by adding `## Related` links from `major-islands.md`, `meiji-restoration.md`, `shinto-religion.md`, `diet-of-japan.md`, `bank-of-japan.md`, and `hirohito.md` back to the new topics.
 - **Roadmap**: moved the three completed items into Done under G1-T3 and cleared the Now section.
 - **Seed** (`sync-seed`): regenerated §4 (9 topic files, 9 README rows) and §5 (refreshed timeline/master index, cross-refs in all 9 files).
+
+### G1-T4 — 2026-07-11 — Tick 4: added a second topic to History, Economy, and People — Edo Period, Technology & Manufacturing, Murasaki Shikibu
+
+- **Content added** (3 dedicated topic files): `history/edo-period.md` (the 264-year Tokugawa shogunate, 1603–1867 — Sengoku unification, *sankin-kōtai*, the *sakoku* isolation policy and Dejima, the four-estate *mibunsei* system, the merchant economy and Dōjima Rice Exchange, Edo as the world's largest city, the *ukiyo* floating-world culture, and Perry's arrival and the shogunate's collapse), `economy/technology-manufacturing.md` (Japan's postwar industrial miracle — MITI industrial policy and the VLSI Project, the Toyota Production System, consumer-electronics giants Sony and Nintendo, the DRAM wars and the 1986 US–Japan Semiconductor Agreement, *keiretsu* and lifetime employment, and the bubble and Lost Decade), and `people/murasaki-shikibu.md` (the c. 973–c. 1025 Heian court lady and author of *The Tale of Genji* — her education and court service under Empress Shōshi, the *Murasaki Shikibu Diary*, and the composition, themes, and enduring influence of *Genji*). Every taxonomy category now holds two topics.
+- **README**: knowledge table expanded from 9 to 12 rows.
+- **Enhance pass**: corrected a factual error in the Murasaki article — Japan's 2024 banknote redesign features Shibusawa Eiichi on the ¥10,000 note, not Murasaki Shikibu; replaced the claim with her actual commemoration (the reverse of the 2000-issue ¥2,000 note and the 2024 NHK *taiga* drama *Hikaru Kimi e*) and dropped an unverifiable UNESCO Memory of the World claim; de-linked two dangling/mislabeled cross-references (a bare `../people/` link for Sei Shōnagon and a Zen Buddhism link that pointed at the Shinto page); reworded the redundant "37,000 … 37,000" phrasing of the Shimabara Rebellion; verified front matter and dates from the model's own knowledge.
+- **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `economy/index.md`, `people/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` (from c. 973 Murasaki's birth and the 1582 Honnō-ji Incident through the 1986 US–Japan Semiconductor Agreement); added `## Related` crossref blocks to the three new files and made them bidirectional by adding back-links from `meiji-restoration.md`, `samurai-bushido.md`, `tokyo.md`, `bank-of-japan.md`, `hirohito.md`, and `shinto-religion.md`; verified all internal links resolve.
+- **Roadmap**: moved the three completed items into Done under G1-T4 and cleared the Now section.
+- **Seed** (`sync-seed`): regenerated §4 (12 topic files, 12 README rows, two topics per category) and §5 (refreshed timeline/master index, cross-refs in all 12 files).
