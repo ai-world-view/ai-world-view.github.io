@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 1
-  ticks: 3
+  ticks: 4
 members:
 - name: japan
   repo: ai-world-view/japan
@@ -14,9 +14,9 @@ members:
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 3
-  log_entries: 19
+  ticks_logged: 4
+  log_entries: 20
   generations: 1
-  last_activity: '2026-07-10'
-  last_entry: 'G1-T3 — 2026-07-10 — Tick 3: deepened three categories — Tokyo, Samurai
-    & Bushido, Imperial Succession'
+  last_activity: '2026-07-11'
+  last_entry: 'G1-T4 — 2026-07-11 — Tick 4: added a second topic to History, Economy,
+    and People — Edo Period, Technology & Manufacturing, Murasaki Shikibu'
