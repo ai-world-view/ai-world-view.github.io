@@ -115,22 +115,25 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 12 rows.
-- **Dedicated topic files** (12):
+- **README knowledge table**: 15 rows.
+- **Dedicated topic files** (15):
   - `geography/major-islands.md` — Major Islands
   - `geography/tokyo.md` — Tokyo
+  - `geography/kyoto.md` — Kyoto
   - `history/edo-period.md` — Edo Period
   - `history/meiji-restoration.md` — Meiji Restoration
   - `government-politics/diet-of-japan.md` — Diet of Japan
   - `government-politics/imperial-succession.md` — Imperial Succession
+  - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
   - `economy/bank-of-japan.md` — Bank of Japan
   - `economy/technology-manufacturing.md` — Technology & Manufacturing
   - `culture-society/shinto-religion.md` — Shinto Religion
   - `culture-society/samurai-bushido.md` — Samurai & Bushido
+  - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `people/hirohito.md` — Hirohito
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
-- **Categories with content**: Geography (2), History (2), Government & Politics (2),
-  Economy (2), Culture & Society (2), People (2) — all six populated, two topics each.
+- **Categories with content**: Geography (3), History (2), Government & Politics (3),
+  Economy (2), Culture & Society (3), People (2) — all six populated.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -139,10 +142,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (every category now lists two topics).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all twelve topics).
-- **Master index**: `INDEX.md` — present (all twelve topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 12 dedicated topic files, using relative
+  (Geography, Government & Politics, and Culture & Society now list three topics each; the rest two).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all fifteen topics).
+- **Master index**: `INDEX.md` — present (all fifteen topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 15 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -210,3 +213,12 @@ To reconstruct this knowledge base from DNA:
 - **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `economy/index.md`, `people/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` (from c. 973 Murasaki's birth and the 1582 Honnō-ji Incident through the 1986 US–Japan Semiconductor Agreement); added `## Related` crossref blocks to the three new files and made them bidirectional by adding back-links from `meiji-restoration.md`, `samurai-bushido.md`, `tokyo.md`, `bank-of-japan.md`, `hirohito.md`, and `shinto-religion.md`; verified all internal links resolve.
 - **Roadmap**: moved the three completed items into Done under G1-T4 and cleared the Now section.
 - **Seed** (`sync-seed`): regenerated §4 (12 topic files, 12 README rows, two topics per category) and §5 (refreshed timeline/master index, cross-refs in all 12 files).
+
+### G1-T5 — 2026-07-12 — Tick 5: added a third topic to Culture & Society, Government & Politics, and Geography — Edo Culture & Arts, Postwar Constitution & Democracy, Kyoto
+
+- **Content added** (3 dedicated topic files): `culture-society/edo-culture-arts.md` (the Tokugawa "floating world" — *ukiyo-e* woodblock prints and Western *Japonisme*, Kabuki and bunraku theater, Noh, the *chanoyu* tea ceremony and *wabi-sabi*, haiku and *ukiyo-zōshi* literature, sumo, and shamisen/koto music), `government-politics/postwar-constitution.md` (Japan's 1947 Constitution — SCAP drafting, popular sovereignty, the Emperor as symbol, the Chapter III bill of rights, the pacifist Article 9 and its Cold War reinterpretation through the JSDF and 2015 security legislation, the occupation reforms, the 1955 system, and landmark Supreme Court cases), and `geography/kyoto.md` (the imperial capital 794–1868 — Heian-kyō's founding, medieval temples and Zen gardens, the Ōnin War, Edo-period geisha/silk/ceramics, Meiji-era decline and reinvention, WWII sparing, 17 UNESCO sites, festivals, and over-tourism). Geography, Government & Politics, and Culture & Society now hold three topics each.
+- **README**: knowledge table expanded from 12 to 15 rows.
+- **Enhance pass**: corrected the postwar-constitution holidays (Nov 3, 1946 promulgation is now Culture Day / *Bunka no Hi*; May 3, 1947 effect is Constitution Memorial Day / *Kenpō Kinenbi* — the two had been swapped), fixed the misnamed "2023 Three Arrows Policy" to the December 2022 National Security Strategy and its accompanying defense documents with the 2% GDP-by-FY2027 target, dropped an unverifiable "record not broken until 2021" women-in-Diet claim, and softened shaky comparative amendment counts; in kyoto.md replaced two erroneous UNESCO-list entries ("Sairyū-ji" and "Hongan-ji (East)") with the correct Kamigamo and Shimogamo shrines and updated the Raku headship to the 16th-generation succession (2019); in edo-culture-arts.md corrected the first-Yokozuna claim (1789 licenses to Tanikaze and Onogawa; Akashi Shiganosuke semi-legendary) and removed an unverifiable auction figure; verified front matter and cross-reference markers on all three new files.
+- **Structure** (`build-structure`): added the three topics to their category indices (`culture-society/index.md`, `government-politics/index.md`, `geography/index.md`) and to `INDEX.md`; merged 27 new dated facts into `TIMELINE.md` (from the 794 founding of Heian-kyō through the 2015 collective-self-defense legislation); added `## Related` crossref blocks to the three new files and made them bidirectional by adding back-links from `edo-period.md`, `meiji-restoration.md`, `samurai-bushido.md`, `shinto-religion.md`, `murasaki-shikibu.md`, `tokyo.md`, `major-islands.md`, `diet-of-japan.md`, `imperial-succession.md`, and `hirohito.md`; verified all internal Markdown links resolve.
+- **Roadmap**: moved the three completed items into Done under G1-T5 and cleared the Now section.
+- **Seed** (`sync-seed`): regenerated §4 (15 topic files, 15 README rows) and §5 (three topics each in Geography/Government & Politics/Culture & Society, refreshed timeline/master index, cross-refs in all 15 files).
