@@ -115,25 +115,28 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 15 rows.
-- **Dedicated topic files** (15):
+- **README knowledge table**: 18 rows.
+- **Dedicated topic files** (18):
   - `geography/major-islands.md` — Major Islands
   - `geography/tokyo.md` — Tokyo
   - `geography/kyoto.md` — Kyoto
   - `history/edo-period.md` — Edo Period
   - `history/meiji-restoration.md` — Meiji Restoration
+  - `history/world-war-ii.md` — World War II
   - `government-politics/diet-of-japan.md` — Diet of Japan
   - `government-politics/imperial-succession.md` — Imperial Succession
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
   - `economy/bank-of-japan.md` — Bank of Japan
   - `economy/technology-manufacturing.md` — Technology & Manufacturing
+  - `economy/bubble-economy.md` — 1980s Bubble Economy
   - `culture-society/shinto-religion.md` — Shinto Religion
   - `culture-society/samurai-bushido.md` — Samurai & Bushido
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `people/hirohito.md` — Hirohito
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
-- **Categories with content**: Geography (3), History (2), Government & Politics (3),
-  Economy (2), Culture & Society (3), People (2) — all six populated.
+  - `people/katsushika-hokusai.md` — Katsushika Hokusai
+- **Categories with content**: Geography (3), History (3), Government & Politics (3),
+  Economy (3), Culture & Society (3), People (3) — all six populated, three topics each.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -142,10 +145,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Geography, Government & Politics, and Culture & Society now list three topics each; the rest two).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all fifteen topics).
-- **Master index**: `INDEX.md` — present (all fifteen topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 15 dedicated topic files, using relative
+  (every category now lists three topics).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all eighteen topics).
+- **Master index**: `INDEX.md` — present (all eighteen topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 18 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -222,3 +225,12 @@ To reconstruct this knowledge base from DNA:
 - **Structure** (`build-structure`): added the three topics to their category indices (`culture-society/index.md`, `government-politics/index.md`, `geography/index.md`) and to `INDEX.md`; merged 27 new dated facts into `TIMELINE.md` (from the 794 founding of Heian-kyō through the 2015 collective-self-defense legislation); added `## Related` crossref blocks to the three new files and made them bidirectional by adding back-links from `edo-period.md`, `meiji-restoration.md`, `samurai-bushido.md`, `shinto-religion.md`, `murasaki-shikibu.md`, `tokyo.md`, `major-islands.md`, `diet-of-japan.md`, `imperial-succession.md`, and `hirohito.md`; verified all internal Markdown links resolve.
 - **Roadmap**: moved the three completed items into Done under G1-T5 and cleared the Now section.
 - **Seed** (`sync-seed`): regenerated §4 (15 topic files, 15 README rows) and §5 (three topics each in Geography/Government & Politics/Culture & Society, refreshed timeline/master index, cross-refs in all 15 files).
+
+### G1-T6 — 2026-07-13 — Tick 6: added a third topic to History, Economy, and People — World War II, 1980s Bubble Economy, Katsushika Hokusai
+
+- **Content added** (3 dedicated topic files): `history/world-war-ii.md` (Japan's 1931–1945 path from the Manchurian Incident and Second Sino-Japanese War through the Tripartite Pact, Pearl Harbor and the Pacific War, the turning points at Coral Sea, Midway, and the Philippine Sea, the strategic firebombing campaign, the atomic bombings and Soviet invasion, the surrender aboard USS *Missouri*, and the Allied occupation), `economy/bubble-economy.md` (the 1986–1989 asset-price bubble — the Plaza Accord and *endaka*, the record-low 2.5% discount rate, the Nikkei's 38,915 peak and the extreme land inflation, the 1989–1990 monetary tightening and collapse, the *jusen* and banking crisis, and the deflationary Lost Decades), and `people/katsushika-hokusai.md` (the *ukiyo-e* master, 1760–1849 — the Katsukawa training and serial name changes, the *Hokusai Manga*, *Thirty-Six Views of Mount Fuji* and "The Great Wave," Prussian-blue printing, and the *Japonisme* that shaped Monet, Van Gogh, and Art Nouveau). History, Economy, and People now hold three topics each; every category is at the three-topic tier.
+- **README**: knowledge table expanded from 15 to 18 rows.
+- **Enhance pass**: corrected the 1989 Bank of Japan governor timeline in the bubble article (the first discount-rate hike, on May 31, 1989, was under Governor Satoshi Sumita; his successor Yasushi Mieno took office in December 1989 and accelerated the tightening — the draft had wrongly credited Mieno with a May 1989 appointment) and the post-bubble Nikkei 225 trough (≈7,600 in April 2003, roughly 80% below the 1989 peak; the ≈7,050 low came during the 2008–2009 global financial crisis, not 2003); corrected the *zaibatsu* kanji (財閥, not 大財閥) in the WWII article; removed an out-of-place simplified-Chinese gloss on "Prussian blue" in the Hokusai article, keeping the Japanese *berorin-ai*; converted all three new files' hand-written `## Related Topics` lists into canonical `## Related` crossref blocks wrapped in `BEGIN/END GENERATED: crossrefs` markers with em-dash descriptions (placed after the Sources sections); verified front matter and internal links.
+- **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `economy/index.md`, `people/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — re-homing the core Pacific War events (Manchuria, Marco Polo Bridge, Pearl Harbor, Midway, the Tokyo firebombing, Hiroshima) from the Hirohito biography to the dedicated World War II article and adding the League withdrawal, Nanjing, Tripartite Pact, Singapore, Coral Sea, Guadalcanal, Philippine Sea, and the Soviet invasion; re-pointing the 1989 Nikkei peak to the bubble article and adding the 2.5% discount-rate cut, the 1990 crash, the Yamaichi collapse, and the 2003 trough; and adding Hokusai's birth, the *Hokusai Manga*, his death, and the 2024 ¥1,000 banknote. Added bidirectional back-links from `hirohito.md`, `meiji-restoration.md`, `postwar-constitution.md`, and `tokyo.md` (World War II); `bank-of-japan.md`, `technology-manufacturing.md`, and `tokyo.md` (1980s Bubble Economy); and `edo-period.md`, `edo-culture-arts.md`, and `tokyo.md` (Katsushika Hokusai); verified all internal Markdown links resolve.
+- **Roadmap**: moved the three completed items into Done under G1-T6 and cleared the Now section.
+- **Seed** (`sync-seed`): regenerated §4 (18 topic files, 18 README rows, three topics per category) and §5 (three topics in every category, refreshed timeline/master index, cross-refs in all 18 files).
