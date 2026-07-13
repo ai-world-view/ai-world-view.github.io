@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 1
-  ticks: 4
+  ticks: 5
 members:
 - name: japan
   repo: ai-world-view/japan
@@ -14,9 +14,10 @@ members:
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 4
-  log_entries: 20
+  ticks_logged: 5
+  log_entries: 21
   generations: 1
-  last_activity: '2026-07-11'
-  last_entry: 'G1-T4 — 2026-07-11 — Tick 4: added a second topic to History, Economy,
-    and People — Edo Period, Technology & Manufacturing, Murasaki Shikibu'
+  last_activity: '2026-07-12'
+  last_entry: 'G1-T5 — 2026-07-12 — Tick 5: added a third topic to Culture & Society,
+    Government & Politics, and Geography — Edo Culture & Arts, Postwar Constitution
+    & Democracy, Kyoto'
