@@ -115,13 +115,15 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 18 rows.
-- **Dedicated topic files** (18):
+- **README knowledge table**: 21 rows.
+- **Dedicated topic files** (21):
   - `geography/major-islands.md` — Major Islands
   - `geography/tokyo.md` — Tokyo
   - `geography/kyoto.md` — Kyoto
+  - `geography/noto-peninsula.md` — Noto Peninsula
   - `history/edo-period.md` — Edo Period
   - `history/meiji-restoration.md` — Meiji Restoration
+  - `history/sengoku-period.md` — Sengoku Period
   - `history/world-war-ii.md` — World War II
   - `government-politics/diet-of-japan.md` — Diet of Japan
   - `government-politics/imperial-succession.md` — Imperial Succession
@@ -132,11 +134,13 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/shinto-religion.md` — Shinto Religion
   - `culture-society/samurai-bushido.md` — Samurai & Bushido
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
+  - `culture-society/tea-ceremony.md` — Tea Ceremony
   - `people/hirohito.md` — Hirohito
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/katsushika-hokusai.md` — Katsushika Hokusai
-- **Categories with content**: Geography (3), History (3), Government & Politics (3),
-  Economy (3), Culture & Society (3), People (3) — all six populated, three topics each.
+- **Categories with content**: Geography (4), History (4), Government & Politics (3),
+  Economy (3), Culture & Society (4), People (3) — all six populated; Geography, History,
+  and Culture & Society hold four topics each, the rest three.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -145,10 +149,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (every category now lists three topics).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all eighteen topics).
-- **Master index**: `INDEX.md` — present (all eighteen topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 18 dedicated topic files, using relative
+  (Geography, History, and Culture & Society now list four topics each; the rest three).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all twenty-one topics).
+- **Master index**: `INDEX.md` — present (all twenty-one topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 21 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -234,3 +238,12 @@ To reconstruct this knowledge base from DNA:
 - **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `economy/index.md`, `people/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — re-homing the core Pacific War events (Manchuria, Marco Polo Bridge, Pearl Harbor, Midway, the Tokyo firebombing, Hiroshima) from the Hirohito biography to the dedicated World War II article and adding the League withdrawal, Nanjing, Tripartite Pact, Singapore, Coral Sea, Guadalcanal, Philippine Sea, and the Soviet invasion; re-pointing the 1989 Nikkei peak to the bubble article and adding the 2.5% discount-rate cut, the 1990 crash, the Yamaichi collapse, and the 2003 trough; and adding Hokusai's birth, the *Hokusai Manga*, his death, and the 2024 ¥1,000 banknote. Added bidirectional back-links from `hirohito.md`, `meiji-restoration.md`, `postwar-constitution.md`, and `tokyo.md` (World War II); `bank-of-japan.md`, `technology-manufacturing.md`, and `tokyo.md` (1980s Bubble Economy); and `edo-period.md`, `edo-culture-arts.md`, and `tokyo.md` (Katsushika Hokusai); verified all internal Markdown links resolve.
 - **Roadmap**: moved the three completed items into Done under G1-T6 and cleared the Now section.
 - **Seed** (`sync-seed`): regenerated §4 (18 topic files, 18 README rows, three topics per category) and §5 (three topics in every category, refreshed timeline/master index, cross-refs in all 18 files).
+
+### G1-T7 — 2026-07-14 — Tick 7: added a fourth topic to History, Culture & Society, and Geography — Sengoku Period, Tea Ceremony, Noto Peninsula
+
+- **Content added** (3 dedicated topic files): `history/sengoku-period.md` (the "Warring States" era, 1467–1615 — the Ōnin War and the collapse of Ashikaga authority, *gekokujō* social mobility, the *daimyo*/castle-town system, the Tanegashima firearms revolution and the Battle of Nagashino, the three unifiers Nobunaga/Hideyoshi/Ieyasu, the Korean invasions, and the road to Sekigahara and the Siege of Osaka), `culture-society/tea-ceremony.md` (*chanoyu* — Chinese and Zen origins via Eisai, the *wabi* aesthetic of Murata Jukō and Takeno Jōō, Sen no Rikyū and the Raku-ware/*nijiriguchi* revolution, the Three Sen Houses, the *chaji* sequence and seasonal structure, and the ceramics/tea-room material culture), and `geography/noto-peninsula.md` (the Ishikawa peninsula on the Sea of Japan — Inner/Outer Noto coasts, Senmaida rice terraces, Wajima lacquerware, *ama* diving and salt production, the January 1, 2024 M7.6 earthquake, and the Japanese Geopark/GIAHS heritage designations). Geography, History, and Culture & Society now hold four topics each.
+- **README**: knowledge table expanded from 18 to 21 rows.
+- **Enhance pass**: corrected the Sengoku article's claim that Hideyoshi force-marched back "from the Korean border campaign" in 1582 (the Korean invasions were 1592–1598; in 1582 he was besieging Takamatsu Castle against the Mōri — the *Chūgoku Ōgaeshi*) and aligned the Battle of Nagashino to its standard date of June 28, 1575; in the tea-ceremony article corrected the swapped iemoto founder names of the Three Sen Houses (Urasenke was founded by Sensō Sōshitsu, Omotesenke by Kōshin Sōsa — the draft had mislabeled both) and fixed the *nijōma* romanization; in the Noto article downgraded the "UNESCO Global Geopark" claim to its actual **Japanese Geopark** designation (per its own 日本ジオパーク gloss and absence from the UNESCO Global Geoparks list), re-attributed the GIAHS designation from UNESCO to the **FAO**, corrected the "deadliest since the 1995 Great Hanshin Earthquake" claim to the 2011 Tōhoku Earthquake (the far deadlier and more recent quake), relocated Godzilla Rock to Suzu, and fixed the *Rokkōsaki* romanization; propagated the geopark correction to the README and `geography/index.md` rows; and fixed the "Ashikawa" → "Ashikaga" typo in the History index. Verified front matter, dates, and internal links on all three new files.
+- **Structure** (`build-structure`): added the three topics to their category indices (`geography/index.md`, `history/index.md`, `culture-society/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` (the c. 1400 emergence of tea, the 1467–1615 Sengoku span, the 1543 Tanegashima firearms, and Takeno Jōō/Sen no Rikyū); added `## Related` crossref blocks to the three new files and made them bidirectional with back-links from `major-islands.md` (Noto), `edo-period.md` and `meiji-restoration.md` (Sengoku), and `samurai-bushido.md` and `edo-culture-arts.md` (Tea Ceremony); verified all internal Markdown links resolve.
+- **Roadmap**: the three completed items move into Done under G1-T7; the Now section clears.
+- **Seed** (`sync-seed`): regenerated §4 (21 topic files, 21 README rows; four topics each in Geography/History/Culture & Society) and §5 (refreshed timeline/master index, cross-refs in all 21 files).
