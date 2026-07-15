@@ -115,12 +115,13 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 21 rows.
-- **Dedicated topic files** (21):
+- **README knowledge table**: 24 rows.
+- **Dedicated topic files** (24):
   - `geography/major-islands.md` — Major Islands
   - `geography/tokyo.md` — Tokyo
   - `geography/kyoto.md` — Kyoto
   - `geography/noto-peninsula.md` — Noto Peninsula
+  - `geography/mount-fuji.md` — Mount Fuji
   - `history/edo-period.md` — Edo Period
   - `history/meiji-restoration.md` — Meiji Restoration
   - `history/sengoku-period.md` — Sengoku Period
@@ -128,6 +129,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `government-politics/diet-of-japan.md` — Diet of Japan
   - `government-politics/imperial-succession.md` — Imperial Succession
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
+  - `government-politics/imperial-household.md` — The Imperial Household
   - `economy/bank-of-japan.md` — Bank of Japan
   - `economy/technology-manufacturing.md` — Technology & Manufacturing
   - `economy/bubble-economy.md` — 1980s Bubble Economy
@@ -138,9 +140,10 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/hirohito.md` — Hirohito
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/katsushika-hokusai.md` — Katsushika Hokusai
-- **Categories with content**: Geography (4), History (4), Government & Politics (3),
-  Economy (3), Culture & Society (4), People (3) — all six populated; Geography, History,
-  and Culture & Society hold four topics each, the rest three.
+  - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
+- **Categories with content**: Geography (5), History (4), Government & Politics (4),
+  Economy (3), Culture & Society (4), People (4) — all six populated; Geography leads with
+  five topics, Economy trails with three, and the rest hold four each.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -149,10 +152,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Geography, History, and Culture & Society now list four topics each; the rest three).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all twenty-one topics).
-- **Master index**: `INDEX.md` — present (all twenty-one topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 21 dedicated topic files, using relative
+  (Geography now lists five topics; Economy three; History, Government & Politics, Culture & Society, and People four each).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all twenty-four topics).
+- **Master index**: `INDEX.md` — present (all twenty-four topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 24 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -247,3 +250,12 @@ To reconstruct this knowledge base from DNA:
 - **Structure** (`build-structure`): added the three topics to their category indices (`geography/index.md`, `history/index.md`, `culture-society/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` (the c. 1400 emergence of tea, the 1467–1615 Sengoku span, the 1543 Tanegashima firearms, and Takeno Jōō/Sen no Rikyū); added `## Related` crossref blocks to the three new files and made them bidirectional with back-links from `major-islands.md` (Noto), `edo-period.md` and `meiji-restoration.md` (Sengoku), and `samurai-bushido.md` and `edo-culture-arts.md` (Tea Ceremony); verified all internal Markdown links resolve.
 - **Roadmap**: the three completed items move into Done under G1-T7; the Now section clears.
 - **Seed** (`sync-seed`): regenerated §4 (21 topic files, 21 README rows; four topics each in Geography/History/Culture & Society) and §5 (refreshed timeline/master index, cross-refs in all 21 files).
+
+### G1-T8 — 2026-07-15 — Tick 8: added Mount Fuji, The Imperial Household, and Tokugawa Ieyasu
+
+- **Content added** (3 dedicated topic files): `geography/mount-fuji.md` (Japan's 3,776 m stratovolcano — the Ko-/Chū-/Shin-Fuji volcanic phases, the 1707 Hōei eruption, the Fuji Five Lakes, *Fujikō* pilgrimage and *Sengen* shrine worship of Konohanasakuya-hime, Hokusai's and Hiroshige's *Thirty-Six Views*, the 2013 UNESCO cultural inscription, and modern climbing-fee and ashfall-hazard management), `government-politics/imperial-household.md` (the *Kōshitsu* — the 1947 constitutional redefinition of the Emperor as symbol, the Imperial Household Law and Agency, the current imperial family, the annual ceremonial calendar and *Daijō-sai*, the Three Sacred Treasures, the male-line succession crisis, and the Meiji-to-present arc of the throne's power), and `people/tokugawa-ieyasu.md` (the third unifier, 1543–1616 — the Imagawa hostage years, alliance with Nobunaga, service under Hideyoshi, victory at Sekigahara, the 1603 shogunate and its *bakuhan*/*sankin-kōtai* institutions, the elimination of the Toyotomi at Osaka, and his deification as Tōshō Daigongen). Geography now holds five topics; Government & Politics and People four each.
+- **README**: knowledge table expanded from 21 to 24 rows.
+- **Enhance pass**: in `mount-fuji.md` removed the unverifiable key figure "Fujian Fujimaro" and corrected the Lake Motosu "Reverse Fuji" banknote reference (it appears on the 2004-series ¥1,000 note reverse, not the 2024 note, whose reverse carries Hokusai's "Great Wave"); in `imperial-household.md` replaced the anachronistic era-name style *令和天皇* for the living Emperor with *今上天皇*, fixed the mislabeled gloss for Cabinet advice and approval (*naikaku no jogen to shōnin*), corrected Akihito's accession to the *day of* (not the day after) Hirohito's death with the Heisei era beginning the following day, and fixed the "enshered" typo to "enshrined"; in `tokugawa-ieyasu.md` corrected the post-Komaki hostage from Hidetada to his second son Ogimaru (later Yūki Hideyasu) and Ishida Mitsunari's execution to November 6, 1600 (Gregorian; the "October 1" is the lunar date, which would precede the October 21 battle if read as New Style); verified front matter, dates, and internal links on all three new files.
+- **Structure** (`build-structure`): added the three topics to their category indices (`geography/index.md`, `government-politics/index.md`, `people/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — the 864–866 Jōgan eruption, Ieyasu's birth/Okehazama/Sekigahara/abdication/death, the 2019 *Daijō-sai*, the 2021 succession panel, the 2013 UNESCO inscription, and the 2024 Fuji climbing fee — and re-homed the Hōei eruption (with its preceding 1707-10-28 earthquake) from the Major Islands entry to the dedicated Mount Fuji article; added `## Related` crossref blocks to the three new files and made them bidirectional with back-links from `sengoku-period.md`, `edo-period.md`, `samurai-bushido.md`, and `tokyo.md` (Ieyasu); `katsushika-hokusai.md`, `edo-culture-arts.md`, `shinto-religion.md`, `major-islands.md`, and `tokyo.md` (Mount Fuji); and `imperial-succession.md`, `postwar-constitution.md`, and `hirohito.md` (The Imperial Household); verified all internal Markdown links resolve.
+- **Roadmap**: moved the three completed items into Done under G1-T8 and cleared the Now section.
+- **Seed** (`sync-seed`): regenerated §4 (24 topic files, 24 README rows; Geography five, Economy three, the rest four) and §5 (refreshed timeline/master index, cross-refs in all 24 files).
