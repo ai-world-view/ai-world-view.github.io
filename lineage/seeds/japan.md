@@ -115,8 +115,8 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 24 rows.
-- **Dedicated topic files** (24):
+- **README knowledge table**: 27 rows.
+- **Dedicated topic files** (27):
   - `geography/major-islands.md` — Major Islands
   - `geography/tokyo.md` — Tokyo
   - `geography/kyoto.md` — Kyoto
@@ -126,6 +126,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `history/meiji-restoration.md` — Meiji Restoration
   - `history/sengoku-period.md` — Sengoku Period
   - `history/world-war-ii.md` — World War II
+  - `history/heian-period.md` — Heian Period
   - `government-politics/diet-of-japan.md` — Diet of Japan
   - `government-politics/imperial-succession.md` — Imperial Succession
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
@@ -133,17 +134,20 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `economy/bank-of-japan.md` — Bank of Japan
   - `economy/technology-manufacturing.md` — Technology & Manufacturing
   - `economy/bubble-economy.md` — 1980s Bubble Economy
+  - `economy/lost-decade.md` — Lost Decade & Deflation
   - `culture-society/shinto-religion.md` — Shinto Religion
   - `culture-society/samurai-bushido.md` — Samurai & Bushido
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/tea-ceremony.md` — Tea Ceremony
+  - `culture-society/noh-theater.md` — Noh Theater
   - `people/hirohito.md` — Hirohito
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/katsushika-hokusai.md` — Katsushika Hokusai
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
-- **Categories with content**: Geography (5), History (4), Government & Politics (4),
-  Economy (3), Culture & Society (4), People (4) — all six populated; Geography leads with
-  five topics, Economy trails with three, and the rest hold four each.
+- **Categories with content**: Geography (5), History (5), Government & Politics (4),
+  Economy (4), Culture & Society (5), People (4) — all six populated; Geography, History,
+  and Culture & Society lead with five topics each, Government & Politics, Economy, and
+  People hold four each.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -152,10 +156,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Geography now lists five topics; Economy three; History, Government & Politics, Culture & Society, and People four each).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all twenty-four topics).
-- **Master index**: `INDEX.md` — present (all twenty-four topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 24 dedicated topic files, using relative
+  (Geography, History, and Culture & Society now list five topics each; Government & Politics, Economy, and People four each).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all twenty-seven topics).
+- **Master index**: `INDEX.md` — present (all twenty-seven topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 27 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -259,3 +263,11 @@ To reconstruct this knowledge base from DNA:
 - **Structure** (`build-structure`): added the three topics to their category indices (`geography/index.md`, `government-politics/index.md`, `people/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — the 864–866 Jōgan eruption, Ieyasu's birth/Okehazama/Sekigahara/abdication/death, the 2019 *Daijō-sai*, the 2021 succession panel, the 2013 UNESCO inscription, and the 2024 Fuji climbing fee — and re-homed the Hōei eruption (with its preceding 1707-10-28 earthquake) from the Major Islands entry to the dedicated Mount Fuji article; added `## Related` crossref blocks to the three new files and made them bidirectional with back-links from `sengoku-period.md`, `edo-period.md`, `samurai-bushido.md`, and `tokyo.md` (Ieyasu); `katsushika-hokusai.md`, `edo-culture-arts.md`, `shinto-religion.md`, `major-islands.md`, and `tokyo.md` (Mount Fuji); and `imperial-succession.md`, `postwar-constitution.md`, and `hirohito.md` (The Imperial Household); verified all internal Markdown links resolve.
 - **Roadmap**: moved the three completed items into Done under G1-T8 and cleared the Now section.
 - **Seed** (`sync-seed`): regenerated §4 (24 topic files, 24 README rows; Geography five, Economy three, the rest four) and §5 (refreshed timeline/master index, cross-refs in all 24 files).
+
+### G1-T9 — 2026-07-16 — Tick 9: added Noh Theater, Heian Period, and Lost Decade & Deflation
+
+- **Content added** (3 dedicated topic files): `culture-society/noh-theater.md` (Japan's oldest surviving theater — *sarugaku*/*dengaku* origins, Kan'ami's 1374 Imagumano breakthrough under Ashikaga Yoshimitsu, Zeami's plays and treatises (*Fūshi Kaden*, *Kakyō*) and the aesthetics of *yūgen*, *ma*, and *monomane*, the stage/masks/five-play cycle, the five schools, samurai patronage, and the influence on Yeats and modern theater), `history/heian-period.md` (the 794–1185 classical era — the founding of Heian-kyō, the *Ritsuryō* order, the Fujiwara *sekkan* regency to Michinaga, the *kana* literary flowering of Murasaki and Sei Shōnagon, Tendai and Shingon Buddhism, and the rise of the Taira and Minamoto through the Genpei War), and `economy/lost-decade.md` (the post-bubble stagnation — the 1989–1993 collapse, the non-performing-loan banking crisis, ZIRP and the first QE, the 1997 fiscal contraction, entrenched deflation, the Koizumi reforms, the 2008–2009 shock, and the social toll). Culture & Society and History now hold five topics each; Economy four.
+- **README**: knowledge table stands at 27 rows (the three new topics added during the tick).
+- **Enhance pass**: in `noh-theater.md` corrected the *waki* kanji (脇, not 脚 "leg"), fixed the main stage size (roughly six meters / three *ken* square of cypress, not "eight square meters"), and reworded the Sengoku cross-reference that had misdated Kan'ami and Zeami's floruit (early Muromachi, not the Sengoku era); in `lost-decade.md` corrected Nippon Credit Bank's kanji (日本債券信用銀行, which had duplicated LTCB's 日本長期信用銀行), fixed the discount-rate attribution (the first May 1989 hike was under Governor Satoshi Sumita, not Mieno, who took office in December 1989 — the same correction earlier applied to `bubble-economy.md` in T6), and updated the Nikkei's peak-surpass to February 2024; in `heian-period.md` re-attributed the *insei* system's institutionalization to Emperor Shirakawa (from 1086), not Go-Sanjō (who abdicated in 1073 and died months later), and fixed the anthology name to *Gosen Wakashū*. Verified front matter, dates, and internal links on all three new files.
+- **Structure** (`build-structure`): added the three topics to their category indices (`culture-society/index.md`, `history/index.md`, `economy/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — the 794–1185 Heian span with the 858 first regency, the 894 end of the Tang embassies, the 905 *Kokinshū*, 939 Masakado, 1018 Michinaga, 1086 Shirakawa's *insei*, and the 1156/1160/1167 warrior ascendancy; Noh's c. 1374 Imagumano performance, Zeami's *Fūshi Kaden*, his 1434 exile and 1443 death, the 1618 Kita school, and the 2008 UNESCO inscription; and the Lost Decade's 1992 Nikkei trough, 1996 *jusen* resolution, 1997 tax hike and Sanyo failure, 1998 LTCB nationalization, 2002 Takenaka Plan, 2005 postal privatization, 2009 GFC low, and 2024 peak-surpass — and added bidirectional back-links from `murasaki-shikibu.md`, `kyoto.md`, `samurai-bushido.md`, `edo-culture-arts.md`, and `tea-ceremony.md` (Heian Period / Noh Theater) and from `bubble-economy.md`, `bank-of-japan.md`, and `technology-manufacturing.md` (Lost Decade & Deflation); verified all internal Markdown links resolve.
+- **Seed** (`sync-seed`): regenerated §4 (27 topic files, 27 README rows; five topics each in Geography/History/Culture & Society, four in Government & Politics/Economy/People) and §5 (refreshed timeline/master index, cross-refs in all 27 files).
