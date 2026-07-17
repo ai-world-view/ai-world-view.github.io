@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 1
-  ticks: 8
+  ticks: 9
 members:
 - name: japan
   repo: ai-world-view/japan
@@ -14,9 +14,9 @@ members:
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 8
-  log_entries: 24
+  ticks_logged: 9
+  log_entries: 25
   generations: 1
-  last_activity: '2026-07-15'
-  last_entry: 'G1-T8 — 2026-07-15 — Tick 8: added Mount Fuji, The Imperial Household,
-    and Tokugawa Ieyasu'
+  last_activity: '2026-07-16'
+  last_entry: 'G1-T9 — 2026-07-16 — Tick 9: added Noh Theater, Heian Period, and Lost
+    Decade & Deflation'
