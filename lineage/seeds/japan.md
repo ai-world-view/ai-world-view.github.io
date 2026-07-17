@@ -115,8 +115,8 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 27 rows.
-- **Dedicated topic files** (27):
+- **README knowledge table**: 30 rows.
+- **Dedicated topic files** (30):
   - `geography/major-islands.md` — Major Islands
   - `geography/tokyo.md` — Tokyo
   - `geography/kyoto.md` — Kyoto
@@ -131,6 +131,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `government-politics/imperial-succession.md` — Imperial Succession
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
   - `government-politics/imperial-household.md` — The Imperial Household
+  - `government-politics/liberal-democratic-party.md` — Liberal Democratic Party
   - `economy/bank-of-japan.md` — Bank of Japan
   - `economy/technology-manufacturing.md` — Technology & Manufacturing
   - `economy/bubble-economy.md` — 1980s Bubble Economy
@@ -144,10 +145,12 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/katsushika-hokusai.md` — Katsushika Hokusai
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
-- **Categories with content**: Geography (5), History (5), Government & Politics (4),
-  Economy (4), Culture & Society (5), People (4) — all six populated; Geography, History,
-  and Culture & Society lead with five topics each, Government & Politics, Economy, and
-  People hold four each.
+  - `people/empress-meiji.md` — Empress Meiji
+  - `people/abe-shinzo.md` — Abe Shinzo
+- **Categories with content**: Geography (5), History (5), Government & Politics (5),
+  Economy (4), Culture & Society (5), People (6) — all six populated; People leads with
+  six topics, followed by Geography, History, Government & Politics, and Culture & Society
+  with five each, and Economy with four.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -156,10 +159,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Geography, History, and Culture & Society now list five topics each; Government & Politics, Economy, and People four each).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all twenty-seven topics).
-- **Master index**: `INDEX.md` — present (all twenty-seven topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 27 dedicated topic files, using relative
+  (People now lists six topics; Geography, History, Government & Politics, and Culture & Society five each; Economy four).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all thirty topics).
+- **Master index**: `INDEX.md` — present (all thirty topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 30 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -271,3 +274,12 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: in `noh-theater.md` corrected the *waki* kanji (脇, not 脚 "leg"), fixed the main stage size (roughly six meters / three *ken* square of cypress, not "eight square meters"), and reworded the Sengoku cross-reference that had misdated Kan'ami and Zeami's floruit (early Muromachi, not the Sengoku era); in `lost-decade.md` corrected Nippon Credit Bank's kanji (日本債券信用銀行, which had duplicated LTCB's 日本長期信用銀行), fixed the discount-rate attribution (the first May 1989 hike was under Governor Satoshi Sumita, not Mieno, who took office in December 1989 — the same correction earlier applied to `bubble-economy.md` in T6), and updated the Nikkei's peak-surpass to February 2024; in `heian-period.md` re-attributed the *insei* system's institutionalization to Emperor Shirakawa (from 1086), not Go-Sanjō (who abdicated in 1073 and died months later), and fixed the anthology name to *Gosen Wakashū*. Verified front matter, dates, and internal links on all three new files.
 - **Structure** (`build-structure`): added the three topics to their category indices (`culture-society/index.md`, `history/index.md`, `economy/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — the 794–1185 Heian span with the 858 first regency, the 894 end of the Tang embassies, the 905 *Kokinshū*, 939 Masakado, 1018 Michinaga, 1086 Shirakawa's *insei*, and the 1156/1160/1167 warrior ascendancy; Noh's c. 1374 Imagumano performance, Zeami's *Fūshi Kaden*, his 1434 exile and 1443 death, the 1618 Kita school, and the 2008 UNESCO inscription; and the Lost Decade's 1992 Nikkei trough, 1996 *jusen* resolution, 1997 tax hike and Sanyo failure, 1998 LTCB nationalization, 2002 Takenaka Plan, 2005 postal privatization, 2009 GFC low, and 2024 peak-surpass — and added bidirectional back-links from `murasaki-shikibu.md`, `kyoto.md`, `samurai-bushido.md`, `edo-culture-arts.md`, and `tea-ceremony.md` (Heian Period / Noh Theater) and from `bubble-economy.md`, `bank-of-japan.md`, and `technology-manufacturing.md` (Lost Decade & Deflation); verified all internal Markdown links resolve.
 - **Seed** (`sync-seed`): regenerated §4 (27 topic files, 27 README rows; five topics each in Geography/History/Culture & Society, four in Government & Politics/Economy/People) and §5 (refreshed timeline/master index, cross-refs in all 27 files).
+
+### G1-T10 — 2026-07-17 — Tick 10: added Empress Meiji, Abe Shinzo, and the Liberal Democratic Party
+
+- **Content added** (3 dedicated topic files): `people/empress-meiji.md` (Empress Shōken / Empress Consort Meiji, 1849–1914 — born Ichijō Haruko of the Fujiwara *Sekke*, her elevation as *Kōgō*, adoption of Western court dress, patronage of women's education and the Japanese Red Cross, her ~30,000 *waka* poems, and joint enshrinement with Emperor Meiji at Meiji Shrine), `people/abe-shinzo.md` (Japan's longest-serving prime minister, 1954–2022 — the Kishi/Satō political dynasty, the abortive 2006–2007 first tenure, the record 2012–2020 second tenure, the three arrows of Abenomics, the 2014 Article 9 reinterpretation, the Free and Open Indo-Pacific and Quad, the Moritomo/Kake scandals, and his 2022 assassination in Nara), and `government-politics/liberal-democratic-party.md` (Japan's dominant conservative party — the 1955 merger and 1955 System, factional (*habatsu*) organization, the MITI developmental economy, the 1993 collapse and 1994 return, the Koizumi and Abe eras, and the 2023–2024 funding scandal and 2024 minority government). Government & Politics now holds five topics and People six.
+- **README**: knowledge table expanded from 27 to 30 rows.
+- **Enhance pass**: in `abe-shinzo.md` corrected the record Abe surpassed (Katsura Tarō's cumulative-days record, with Satō Eisaku's consecutive-days record), fixed the LDP-presidency win to September 2012 (not December), corrected the misnamed "Kakei Gakuen" to **Kake Gakuen**, replaced the fabricated "Toshimitsu Ikegami" suicide with the actual official **Toshio Akagi** of the Kinki Local Finance Bureau, updated the church-tie count to 179 LDP members, and reworded the 2007 upper-house-loss and resignation phrasing; in `empress-meiji.md` corrected her elevation date to 1869-02-09 (from the traditional Meiji 1/12/28), fixed the burial to the separate **Fushimi Momoyama East Mausoleum** (*Higashi no Misasagi*) rather than a shared tomb, removed the fabricated "Thirty-two Articles" title and the unverifiable Meiji-Shrine "UNESCO candidate" claim, and generalized her father's court office; in `liberal-democratic-party.md` removed the dubious "36 of 64 postwar PMs" count, dropped Nakasone from the Seiwa-kai lineage row (adding Shintarō Abe), corrected the *Shinseitō* founders to Hata/Ozawa (from "Ichirō Matsui"), clarified that Japan had been the world's second-largest economy since 1968, corrected the upper house to 248 seats, fixed the 2024 faction-dissolution account (Kōchikai disbanded; Asō's Shikōkai initially resisted), and removed the "three Ks" program; converted all three files' `[[wikilink]]` cross-references (inline and in `## Related`) into relative-Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
+- **Structure** (`build-structure`): added the three topics to their category indices (`people/index.md`, `government-politics/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — Empress Shōken's 1849 birth, 1869 elevation, and 1914 death; Abe's 1954 birth, 2006 and 2012 premierships, the 2014 Article 9 reinterpretation, his 2020 resignation and 2022 assassination; and the LDP's 1955 founding (re-pointed to the new article with its 1955-11-22 date), the 1993 majority loss, the 2009 DPJ defeat, and the 2024 coalition majority loss; added `## Related` crossref blocks to the three new files and made them bidirectional with back-links from `hirohito.md` (Abe, Empress Meiji), `meiji-restoration.md`, `imperial-household.md`, and `imperial-succession.md` (Empress Meiji), `postwar-constitution.md`, `diet-of-japan.md`, `bank-of-japan.md`, `bubble-economy.md`, `lost-decade.md`, and `technology-manufacturing.md` (LDP and/or Abe); verified all internal Markdown links resolve.
+- **Roadmap**: moved the three completed items into Done under G1-T10 and cleared the Now section.
+- **Seed** (`sync-seed`): regenerated §4 (30 topic files, 30 README rows; People six, Government & Politics five, Geography/History/Culture & Society five, Economy four) and §5 (refreshed timeline/master index, cross-refs in all 30 files).
