@@ -115,18 +115,20 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 30 rows.
-- **Dedicated topic files** (30):
+- **README knowledge table**: 33 rows.
+- **Dedicated topic files** (33):
   - `geography/major-islands.md` — Major Islands
   - `geography/tokyo.md` — Tokyo
   - `geography/kyoto.md` — Kyoto
   - `geography/noto-peninsula.md` — Noto Peninsula
   - `geography/mount-fuji.md` — Mount Fuji
+  - `geography/osaka.md` — Osaka
   - `history/edo-period.md` — Edo Period
   - `history/meiji-restoration.md` — Meiji Restoration
   - `history/sengoku-period.md` — Sengoku Period
   - `history/world-war-ii.md` — World War II
   - `history/heian-period.md` — Heian Period
+  - `history/taisho-period.md` — Taishō Period
   - `government-politics/diet-of-japan.md` — Diet of Japan
   - `government-politics/imperial-succession.md` — Imperial Succession
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
@@ -141,16 +143,17 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/tea-ceremony.md` — Tea Ceremony
   - `culture-society/noh-theater.md` — Noh Theater
+  - `culture-society/women-in-japanese-society.md` — Women in Japanese Society
   - `people/hirohito.md` — Hirohito
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/katsushika-hokusai.md` — Katsushika Hokusai
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
   - `people/empress-meiji.md` — Empress Meiji
   - `people/abe-shinzo.md` — Abe Shinzo
-- **Categories with content**: Geography (5), History (5), Government & Politics (5),
-  Economy (4), Culture & Society (5), People (6) — all six populated; People leads with
-  six topics, followed by Geography, History, Government & Politics, and Culture & Society
-  with five each, and Economy with four.
+- **Categories with content**: Geography (6), History (6), Government & Politics (5),
+  Economy (4), Culture & Society (6), People (6) — all six populated; Geography, History,
+  Culture & Society, and People lead with six topics each, followed by Government & Politics
+  with five and Economy with four.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -159,10 +162,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (People now lists six topics; Geography, History, Government & Politics, and Culture & Society five each; Economy four).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all thirty topics).
-- **Master index**: `INDEX.md` — present (all thirty topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 30 dedicated topic files, using relative
+  (Geography, History, Culture & Society, and People now list six topics each; Government & Politics five; Economy four).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all thirty-three topics).
+- **Master index**: `INDEX.md` — present (all thirty-three topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 33 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -283,3 +286,11 @@ To reconstruct this knowledge base from DNA:
 - **Structure** (`build-structure`): added the three topics to their category indices (`people/index.md`, `government-politics/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — Empress Shōken's 1849 birth, 1869 elevation, and 1914 death; Abe's 1954 birth, 2006 and 2012 premierships, the 2014 Article 9 reinterpretation, his 2020 resignation and 2022 assassination; and the LDP's 1955 founding (re-pointed to the new article with its 1955-11-22 date), the 1993 majority loss, the 2009 DPJ defeat, and the 2024 coalition majority loss; added `## Related` crossref blocks to the three new files and made them bidirectional with back-links from `hirohito.md` (Abe, Empress Meiji), `meiji-restoration.md`, `imperial-household.md`, and `imperial-succession.md` (Empress Meiji), `postwar-constitution.md`, `diet-of-japan.md`, `bank-of-japan.md`, `bubble-economy.md`, `lost-decade.md`, and `technology-manufacturing.md` (LDP and/or Abe); verified all internal Markdown links resolve.
 - **Roadmap**: moved the three completed items into Done under G1-T10 and cleared the Now section.
 - **Seed** (`sync-seed`): regenerated §4 (30 topic files, 30 README rows; People six, Government & Politics five, Geography/History/Culture & Society five, Economy four) and §5 (refreshed timeline/master index, cross-refs in all 30 files).
+
+### G1-T11 — 2026-07-18 — Tick 11: added Osaka, Taishō Period, and Women in Japanese Society
+
+- **Content added** (3 dedicated topic files): `geography/osaka.md` (Japan's commercial capital of the Kansai region — Naniwa as an early imperial capital, Hideyoshi's 1583 castle and the 1614–1615 sieges, the Tokugawa "kitchen of the realm" and the Dōjima Rice Exchange as the world's first organized futures market, Meiji textile industrialization, the 1945 air raids, Expo '70, Kansai International Airport, and Expo 2025), `history/taisho-period.md` (the 1912–1926 era of "Taishō democracy" — Yoshino Sakuzō's *minponshugi*, Hara Takashi's commoner cabinet and his 1921 assassination, the WWI export boom and the 1918 Rice Riots, the 1925 pairing of universal male suffrage with the Peace Preservation Law, the 1923 Great Kantō Earthquake, and the *moga*/mass-culture modernity that preceded Shōwa militarism), and `culture-society/women-in-japanese-society.md` (women's status from Heian literary agency through Edo *onna daigaku* patriarchy and the Meiji *ie* code to the 1946 suffrage, the 1947 constitutional equality, and the contemporary gaps in pay, politics, and fertility). Geography, History, and Culture & Society now hold six topics each.
+- **README**: knowledge table expanded from 30 to 33 rows.
+- **Enhance pass**: in `osaka.md` corrected the geography summary (the city sits on the Yodo–Yamato delta at Osaka Bay, an inlet of the Seto Inland Sea — the draft's "Namba" is a district, not a river), removed the unconnected key figure Matsudaira Katamori (replaced with Ihara Saikaku and Homma Munehisa), softened "first permanent imperial capital" for Naniwa under Kōtoku, and fixed the 1874 railway claim (the pioneering line was the 1872 Shimbashi–Yokohama; the Osaka–Kobe line, from Umeda not Namba, followed in 1874); in `taisho-period.md` removed the unverifiable film actress "Ruri Hanayagi," adding the *benshi* narration context and framing Makino Shōzō as the father of Japanese cinema; verified dates and front matter across all three files.
+- **Structure** (`build-structure`): added the three topics to their category indices (`geography/index.md`, `history/index.md`, `culture-society/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — Osaka's 1583 castle, the 1614–1615 sieges, the re-homed 1697 Dōjima Exchange, the 1882 spinning company, the 1903 exposition, the 1945 air raid, Expo '70, the 1994 Kansai airport, and Expo 2025; the Taishō span with the 1918 Rice Riots, Hara's 1921 assassination, the re-homed 1923 Great Kantō Earthquake, and the 1925 Peace Preservation Law; and the women's-history thread of the 1898 *ie* code, the 1911 *Seitō* founding, the 1922 political-participation reform, the 1985 EEOL, Doi Takako's 1986 party leadership, and the 2023 record-low fertility — and added bidirectional back-links from `edo-period.md`, `tokugawa-ieyasu.md`, and `sengoku-period.md` (Osaka); `meiji-restoration.md`, `world-war-ii.md`, and `hirohito.md` (Taishō Period); and `murasaki-shikibu.md`, `empress-meiji.md`, and `heian-period.md` (Women in Japanese Society); verified all internal Markdown links resolve.
+- **Seed** (`sync-seed`): regenerated §4 (33 topic files, 33 README rows; Geography/History/Culture & Society/People six each, Government & Politics five, Economy four) and §5 (refreshed timeline/master index, cross-refs in all 33 files).
