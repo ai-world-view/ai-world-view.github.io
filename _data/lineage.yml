@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 1
-  ticks: 10
+  ticks: 11
 members:
 - name: japan
   repo: ai-world-view/japan
@@ -14,9 +14,9 @@ members:
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 10
-  log_entries: 26
+  ticks_logged: 11
+  log_entries: 27
   generations: 1
-  last_activity: '2026-07-17'
-  last_entry: 'G1-T10 — 2026-07-17 — Tick 10: added Empress Meiji, Abe Shinzo, and
-    the Liberal Democratic Party'
+  last_activity: '2026-07-18'
+  last_entry: 'G1-T11 — 2026-07-18 — Tick 11: added Osaka, Taishō Period, and Women
+    in Japanese Society'
