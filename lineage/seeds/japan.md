@@ -115,14 +115,15 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 33 rows.
-- **Dedicated topic files** (33):
+- **README knowledge table**: 36 rows.
+- **Dedicated topic files** (36):
   - `geography/major-islands.md` — Major Islands
   - `geography/tokyo.md` — Tokyo
   - `geography/kyoto.md` — Kyoto
   - `geography/noto-peninsula.md` — Noto Peninsula
   - `geography/mount-fuji.md` — Mount Fuji
   - `geography/osaka.md` — Osaka
+  - `geography/hokkaido.md` — Hokkaido
   - `history/edo-period.md` — Edo Period
   - `history/meiji-restoration.md` — Meiji Restoration
   - `history/sengoku-period.md` — Sengoku Period
@@ -134,10 +135,12 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
   - `government-politics/imperial-household.md` — The Imperial Household
   - `government-politics/liberal-democratic-party.md` — Liberal Democratic Party
+  - `government-politics/supreme-court.md` — Supreme Court of Japan
   - `economy/bank-of-japan.md` — Bank of Japan
   - `economy/technology-manufacturing.md` — Technology & Manufacturing
   - `economy/bubble-economy.md` — 1980s Bubble Economy
   - `economy/lost-decade.md` — Lost Decade & Deflation
+  - `economy/postwar-recovery-growth.md` — Postwar Recovery & Economic Growth
   - `culture-society/shinto-religion.md` — Shinto Religion
   - `culture-society/samurai-bushido.md` — Samurai & Bushido
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
@@ -150,10 +153,10 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
   - `people/empress-meiji.md` — Empress Meiji
   - `people/abe-shinzo.md` — Abe Shinzo
-- **Categories with content**: Geography (6), History (6), Government & Politics (5),
-  Economy (4), Culture & Society (6), People (6) — all six populated; Geography, History,
-  Culture & Society, and People lead with six topics each, followed by Government & Politics
-  with five and Economy with four.
+- **Categories with content**: Geography (7), History (6), Government & Politics (6),
+  Economy (5), Culture & Society (6), People (6) — all six populated; Geography leads with
+  seven topics, History, Government & Politics, Culture & Society, and People hold six each,
+  and Economy five.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -162,10 +165,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Geography, History, Culture & Society, and People now list six topics each; Government & Politics five; Economy four).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all thirty-three topics).
-- **Master index**: `INDEX.md` — present (all thirty-three topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 33 dedicated topic files, using relative
+  (Geography now lists seven topics; History, Government & Politics, Culture & Society, and People six each; Economy five).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all thirty-six topics).
+- **Master index**: `INDEX.md` — present (all thirty-six topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 36 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -294,3 +297,12 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: in `osaka.md` corrected the geography summary (the city sits on the Yodo–Yamato delta at Osaka Bay, an inlet of the Seto Inland Sea — the draft's "Namba" is a district, not a river), removed the unconnected key figure Matsudaira Katamori (replaced with Ihara Saikaku and Homma Munehisa), softened "first permanent imperial capital" for Naniwa under Kōtoku, and fixed the 1874 railway claim (the pioneering line was the 1872 Shimbashi–Yokohama; the Osaka–Kobe line, from Umeda not Namba, followed in 1874); in `taisho-period.md` removed the unverifiable film actress "Ruri Hanayagi," adding the *benshi* narration context and framing Makino Shōzō as the father of Japanese cinema; verified dates and front matter across all three files.
 - **Structure** (`build-structure`): added the three topics to their category indices (`geography/index.md`, `history/index.md`, `culture-society/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — Osaka's 1583 castle, the 1614–1615 sieges, the re-homed 1697 Dōjima Exchange, the 1882 spinning company, the 1903 exposition, the 1945 air raid, Expo '70, the 1994 Kansai airport, and Expo 2025; the Taishō span with the 1918 Rice Riots, Hara's 1921 assassination, the re-homed 1923 Great Kantō Earthquake, and the 1925 Peace Preservation Law; and the women's-history thread of the 1898 *ie* code, the 1911 *Seitō* founding, the 1922 political-participation reform, the 1985 EEOL, Doi Takako's 1986 party leadership, and the 2023 record-low fertility — and added bidirectional back-links from `edo-period.md`, `tokugawa-ieyasu.md`, and `sengoku-period.md` (Osaka); `meiji-restoration.md`, `world-war-ii.md`, and `hirohito.md` (Taishō Period); and `murasaki-shikibu.md`, `empress-meiji.md`, and `heian-period.md` (Women in Japanese Society); verified all internal Markdown links resolve.
 - **Seed** (`sync-seed`): regenerated §4 (33 topic files, 33 README rows; Geography/History/Culture & Society/People six each, Government & Politics five, Economy four) and §5 (refreshed timeline/master index, cross-refs in all 33 files).
+
+### G1-T12 — 2026-07-19 — Tick 12: added Hokkaido, Supreme Court of Japan, and Postwar Recovery & Economic Growth
+
+- **Content added** (3 dedicated topic files): `geography/hokkaido.md` (Japan's northernmost and second-largest island — its subarctic geography and Daisetsuzan volcanism, the indigenous Ainu and their post-Meiji suppression and 2019 legal recognition, the 1869–1912 *Kaitakushi* colonization under Kuroda, Capron, and Clark, the coal/*tondenhei* frontier economy, and the modern agriculture, fisheries, and winter-tourism pillars), `government-politics/supreme-court.md` (the *Saikō Saibansho* under the 1947 Constitution — its fifteen justices and Grand/Petty Bench structure, the Article 81 review power and the popular-review *kokumin shinsa*, the exceptional restraint that has yielded only about a dozen unconstitutional-statute rulings, and landmark *Sunakawa*, patricide, apportionment, inheritance, and gender-recognition cases), and `economy/postwar-recovery-growth.md` (Japan's 1945–1970 rise from occupation ruin — the SCAP reforms, the Dodge Line and Shoup Mission, the Korean War procurement boom, MITI industrial policy and the Ikeda Income Doubling Plan, and the high-growth "economic miracle" that made Japan the world's second-largest economy by 1968). Geography now holds seven topics; Government & Politics and Economy six and five respectively.
+- **README**: knowledge table expanded from 33 to 36 rows.
+- **Enhance pass**: in `supreme-court.md` corrected the factually wrong and internally self-contradicting claim that the Court had "never struck down a law" (it has invalidated statutory provisions in about a dozen cases, beginning with the 1973 patricide ruling the article itself describes) in both the summary and the Article 81 section, and removed the fabricated "Minseitō political fund case" grafted onto the apportionment section; in `hokkaido.md` corrected the coalfields (the Ishikari and Sorachi fields, not "Miike," which is in Kyushu) and named the Daisetsuzan high point as Asahidake (2,291 m) rather than a single "Mount Daisetsu," and reset the front-matter date to the 1869-08-15 renaming; in `postwar-recovery-growth.md` replaced the dubious auto-output figures with the documented rise from ~69,000 vehicles (1955) to ~7 million (1973) and corrected the Income Doubling Plan romanization to *Shotoku Baizō Keikaku*; verified front matter, dates, and internal links on all three new files.
+- **Structure** (`build-structure`): added the three topics to their category indices (`geography/index.md`, `government-politics/index.md`, `economy/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — re-homing the 1869 *Kaitakushi* entry to the dedicated Hokkaido article and adding the 1876 Sapporo Agricultural College, the 1899 Former Natives Protection Act, the 1972 Sapporo Winter Olympics, the 1993 Okushiri and 2018 Iburi earthquakes, the 2019 Ainu People's Support Act, and the 2020 Upopoy opening; the 1947 Court establishment, the 1959 *Sunakawa*, 1973 patricide, 2013 inheritance, and 2023 gender-recognition rulings; and the 1946–1947 land reform, 1949 Dodge Line, 1950–1953 Korean War procurement, 1952 sovereignty restoration, 1960 Income Doubling Plan, 1964 OECD accession, and 1968 second-largest-economy milestone — and added bidirectional back-links from `major-islands.md` and `meiji-restoration.md` (Hokkaido); `postwar-constitution.md`, `diet-of-japan.md`, and `liberal-democratic-party.md` (Supreme Court); and `technology-manufacturing.md`, `bank-of-japan.md`, `world-war-ii.md`, and `liberal-democratic-party.md` (Postwar Recovery); verified all internal Markdown links resolve.
+- **Roadmap**: moved the completed Hokkaido, Supreme Court, and Postwar Recovery items into Done under G1-T12; returned the un-delivered "Edo City & Urban Development" item to the Backlog; cleared the Now section.
+- **Seed** (`sync-seed`): regenerated §4 (36 topic files, 36 README rows; Geography seven, History/Government & Politics/Culture & Society/People six, Economy five) and §5 (refreshed timeline/master index, cross-refs in all 36 files).
