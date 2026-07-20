@@ -115,8 +115,8 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 36 rows.
-- **Dedicated topic files** (36):
+- **README knowledge table**: 39 rows.
+- **Dedicated topic files** (39):
   - `geography/major-islands.md` — Major Islands
   - `geography/tokyo.md` — Tokyo
   - `geography/kyoto.md` — Kyoto
@@ -130,6 +130,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `history/world-war-ii.md` — World War II
   - `history/heian-period.md` — Heian Period
   - `history/taisho-period.md` — Taishō Period
+  - `history/kamakura-period.md` — Kamakura Period
   - `government-politics/diet-of-japan.md` — Diet of Japan
   - `government-politics/imperial-succession.md` — Imperial Succession
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
@@ -141,22 +142,24 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `economy/bubble-economy.md` — 1980s Bubble Economy
   - `economy/lost-decade.md` — Lost Decade & Deflation
   - `economy/postwar-recovery-growth.md` — Postwar Recovery & Economic Growth
+  - `economy/financial-system.md` — Japanese Financial System
   - `culture-society/shinto-religion.md` — Shinto Religion
   - `culture-society/samurai-bushido.md` — Samurai & Bushido
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/tea-ceremony.md` — Tea Ceremony
   - `culture-society/noh-theater.md` — Noh Theater
   - `culture-society/women-in-japanese-society.md` — Women in Japanese Society
+  - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `people/hirohito.md` — Hirohito
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/katsushika-hokusai.md` — Katsushika Hokusai
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
   - `people/empress-meiji.md` — Empress Meiji
   - `people/abe-shinzo.md` — Abe Shinzo
-- **Categories with content**: Geography (7), History (6), Government & Politics (6),
-  Economy (5), Culture & Society (6), People (6) — all six populated; Geography leads with
-  seven topics, History, Government & Politics, Culture & Society, and People hold six each,
-  and Economy five.
+- **Categories with content**: Geography (7), History (7), Government & Politics (6),
+  Economy (6), Culture & Society (7), People (6) — all six populated; Geography, History,
+  and Culture & Society lead with seven topics each, Government & Politics, Economy, and
+  People hold six each.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -165,10 +168,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Geography now lists seven topics; History, Government & Politics, Culture & Society, and People six each; Economy five).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all thirty-six topics).
-- **Master index**: `INDEX.md` — present (all thirty-six topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 36 dedicated topic files, using relative
+  (Geography, History, and Culture & Society now list seven topics each; Government & Politics, Economy, and People six each).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all thirty-nine topics).
+- **Master index**: `INDEX.md` — present (all thirty-nine topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 39 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -306,3 +309,12 @@ To reconstruct this knowledge base from DNA:
 - **Structure** (`build-structure`): added the three topics to their category indices (`geography/index.md`, `government-politics/index.md`, `economy/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — re-homing the 1869 *Kaitakushi* entry to the dedicated Hokkaido article and adding the 1876 Sapporo Agricultural College, the 1899 Former Natives Protection Act, the 1972 Sapporo Winter Olympics, the 1993 Okushiri and 2018 Iburi earthquakes, the 2019 Ainu People's Support Act, and the 2020 Upopoy opening; the 1947 Court establishment, the 1959 *Sunakawa*, 1973 patricide, 2013 inheritance, and 2023 gender-recognition rulings; and the 1946–1947 land reform, 1949 Dodge Line, 1950–1953 Korean War procurement, 1952 sovereignty restoration, 1960 Income Doubling Plan, 1964 OECD accession, and 1968 second-largest-economy milestone — and added bidirectional back-links from `major-islands.md` and `meiji-restoration.md` (Hokkaido); `postwar-constitution.md`, `diet-of-japan.md`, and `liberal-democratic-party.md` (Supreme Court); and `technology-manufacturing.md`, `bank-of-japan.md`, `world-war-ii.md`, and `liberal-democratic-party.md` (Postwar Recovery); verified all internal Markdown links resolve.
 - **Roadmap**: moved the completed Hokkaido, Supreme Court, and Postwar Recovery items into Done under G1-T12; returned the un-delivered "Edo City & Urban Development" item to the Backlog; cleared the Now section.
 - **Seed** (`sync-seed`): regenerated §4 (36 topic files, 36 README rows; Geography seven, History/Government & Politics/Culture & Society/People six, Economy five) and §5 (refreshed timeline/master index, cross-refs in all 36 files).
+
+### G1-T13 — 2026-07-20 — Tick 13: added the Kamakura Period, the Japanese Financial System, and Martial Arts & Budo
+
+- **Content added** (3 dedicated topic files): `history/kamakura-period.md` (Japan's first warrior government, 1185–1333 — the Genpei War and Battle of Dan-no-Ura, Minamoto no Yoritomo's *bakufu* and the *shugo*/*jitō* system, the Hōjō *shikken* regency and Hōjō Masako, the *Jōei Shikimoku* legal code, the Zen/Pure Land/Nichiren Buddhist flowering, the Mongol invasions and the *kamikaze*, and the fall to Go-Daigo and Ashikaga Takauji), `economy/financial-system.md` (the institutions of Japanese finance — the Bank of Japan and Ministry of Finance/FSA, the three megabanks and the regional/cooperative tiers, the *keiretsu* main-bank model, the 1997–1998 banking crisis and Takenaka reforms, the insurance and multi-pillar pension systems including the GPIF, the Tokyo securities markets and the JGB market, the 1996–2001 Financial Big Bang, and Abenomics-era governance and fintech reforms), and `culture-society/martial-arts-budo.md` (the Japanese martial disciplines — judo and Jigorō Kanō's Kōdōkan, Okinawan karate and Funakoshi, kendo, aikido, kyūdō, iaidō, naginata, and sumo — from samurai *bugei* through the Meiji reformulation into *budō* as character cultivation, Olympic sport, and global cultural export). History and Culture & Society now hold seven topics each; Economy six.
+- **README**: knowledge table expanded from 36 to 39 rows.
+- **Enhance pass**: in `kamakura-period.md` corrected the drowned imperial grandmother at Dan-no-Ura from the erroneous "Nijō-no-Tsubone" to Nii-no-Ama (Taira no Tokiko, Kiyomori's widow), fixed the 1192 shogunal appointment (Go-Toba was the *reigning* emperor, not "retired," and the appointment followed Go-Shirakawa's death), reframed Prince Mochihito's 1180 call to arms (a son of the cloistered Go-Shirakawa, dropping the dubious "backed by" claim), and set the front-matter date to 1185-04-25 to match Dan-no-Ura; in `financial-system.md` corrected the FSA's establishment to 2000 (with the ministry's 2001 reorganization to *Zaimushō*), replaced two bogus Japanese glosses (annuities "*kanemochi*" → *nenkin hoken*; casualty insurance "*sonai*" → *songai hoken*), re-dated the ¥16,980 National Pension contribution to FY2024, softened an unverifiable GPIF "¥14.8 trillion 2022 loss" figure, and clarified the original NISA limit (¥1 million in 2014, raised to ¥1.2 million in 2016); in `martial-arts-budo.md` corrected the 2020 Olympic karate result (Ryō Kiyuna took men's kata; Sandra Sánchez of Spain won women's — not "Kiichiro Shimizu"/"both events"), fixed the kendo *dō* kanji (胴, not 胎), replaced the spurious sumo-hazing term "*harikite*" with *kawaigari*, corrected the ninth Japanese Budō Association art from a duplicated "jūdō" to *jūkendo* (銃剣道), and fixed the "ninjudo" typo; converted every `[[wikilink]]` (inline and in `## Related`) across all three files into relative-Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers; verified front matter, dates, and internal links on all three files.
+- **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `economy/index.md`, `culture-society/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — the 1185–1333 Kamakura span with Dan-no-Ura (1185), Yoritomo's 1192 shogunate (re-homed from Samurai & Bushido), the 1232 *Jōei Shikimoku*, and the 1274/1281 Mongol invasions and 1333 collapse; the Tokyo Stock Exchange (1878), the 1948 Securities and Exchange Law, the 1996 Big Bang, and the 2024 New NISA; and judo's founding (1882) and 1964 Olympic debut, karate's 1922 mainland demonstration and 2021 Olympic debut — and made cross-references bidirectional with back-links from `heian-period.md`, `sengoku-period.md`, and `samurai-bushido.md` (Kamakura Period); `bank-of-japan.md`, `lost-decade.md`, and `bubble-economy.md` (Japanese Financial System); and `samurai-bushido.md`, `tea-ceremony.md`, and `noh-theater.md` (Martial Arts & Budo); verified all internal Markdown links resolve.
+- **Roadmap**: moved the three completed items into Done under G1-T13, removed the redundant Kamakura backlog entry, and cleared the Now section.
+- **Seed** (`sync-seed`): regenerated §4 (39 topic files, 39 README rows; Geography/History/Culture & Society seven each, Government & Politics/Economy/People six) and §5 (refreshed timeline/master index, cross-refs in all 39 files).
