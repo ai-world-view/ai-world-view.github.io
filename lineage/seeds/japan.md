@@ -115,8 +115,8 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 39 rows.
-- **Dedicated topic files** (39):
+- **README knowledge table**: 42 rows.
+- **Dedicated topic files** (42):
   - `geography/major-islands.md` — Major Islands
   - `geography/tokyo.md` — Tokyo
   - `geography/kyoto.md` — Kyoto
@@ -124,6 +124,8 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `geography/mount-fuji.md` — Mount Fuji
   - `geography/osaka.md` — Osaka
   - `geography/hokkaido.md` — Hokkaido
+  - `geography/kyushu.md` — Kyushu
+  - `geography/shikoku.md` — Shikoku
   - `history/edo-period.md` — Edo Period
   - `history/meiji-restoration.md` — Meiji Restoration
   - `history/sengoku-period.md` — Sengoku Period
@@ -137,6 +139,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `government-politics/imperial-household.md` — The Imperial Household
   - `government-politics/liberal-democratic-party.md` — Liberal Democratic Party
   - `government-politics/supreme-court.md` — Supreme Court of Japan
+  - `government-politics/ministry-economy-trade-industry.md` — Ministry of Economy, Trade and Industry (METI)
   - `economy/bank-of-japan.md` — Bank of Japan
   - `economy/technology-manufacturing.md` — Technology & Manufacturing
   - `economy/bubble-economy.md` — 1980s Bubble Economy
@@ -156,10 +159,10 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
   - `people/empress-meiji.md` — Empress Meiji
   - `people/abe-shinzo.md` — Abe Shinzo
-- **Categories with content**: Geography (7), History (7), Government & Politics (6),
-  Economy (6), Culture & Society (7), People (6) — all six populated; Geography, History,
-  and Culture & Society lead with seven topics each, Government & Politics, Economy, and
-  People hold six each.
+- **Categories with content**: Geography (9), History (7), Government & Politics (7),
+  Economy (6), Culture & Society (7), People (6) — all six populated; Geography leads with
+  nine topics, History, Government & Politics, and Culture & Society hold seven each, and
+  Economy and People hold six each.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -168,10 +171,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Geography, History, and Culture & Society now list seven topics each; Government & Politics, Economy, and People six each).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all thirty-nine topics).
-- **Master index**: `INDEX.md` — present (all thirty-nine topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 39 dedicated topic files, using relative
+  (Geography now lists nine topics; History, Government & Politics, and Culture & Society seven each; Economy and People six each).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all forty-two topics).
+- **Master index**: `INDEX.md` — present (all forty-two topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 42 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -318,3 +321,12 @@ To reconstruct this knowledge base from DNA:
 - **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `economy/index.md`, `culture-society/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — the 1185–1333 Kamakura span with Dan-no-Ura (1185), Yoritomo's 1192 shogunate (re-homed from Samurai & Bushido), the 1232 *Jōei Shikimoku*, and the 1274/1281 Mongol invasions and 1333 collapse; the Tokyo Stock Exchange (1878), the 1948 Securities and Exchange Law, the 1996 Big Bang, and the 2024 New NISA; and judo's founding (1882) and 1964 Olympic debut, karate's 1922 mainland demonstration and 2021 Olympic debut — and made cross-references bidirectional with back-links from `heian-period.md`, `sengoku-period.md`, and `samurai-bushido.md` (Kamakura Period); `bank-of-japan.md`, `lost-decade.md`, and `bubble-economy.md` (Japanese Financial System); and `samurai-bushido.md`, `tea-ceremony.md`, and `noh-theater.md` (Martial Arts & Budo); verified all internal Markdown links resolve.
 - **Roadmap**: moved the three completed items into Done under G1-T13, removed the redundant Kamakura backlog entry, and cleared the Now section.
 - **Seed** (`sync-seed`): regenerated §4 (39 topic files, 39 README rows; Geography/History/Culture & Society seven each, Government & Politics/Economy/People six) and §5 (refreshed timeline/master index, cross-refs in all 39 files).
+
+### G1-T14 — 2026-07-21 — Tick 14: added Kyushu, Shikoku, and the Ministry of Economy, Trade and Industry (METI)
+
+- **Content added** (3 dedicated topic files): `geography/kyushu.md` (Japan's third-largest island and southwestern gateway to Asia — its volcanic geology (Aso, Sakurajima, Unzen, Beppu), the 1543 Portuguese arrival and the Christian century through the Shimabara Rebellion and Nagasaki's Dejima, Satsuma's role in the Meiji Restoration and the 1877 Satsuma Rebellion, the Yawata steel and Chikuhō coal industrial base, the 1945 Nagasaki bombing, and the modern "Silicon Island" semiconductor cluster), `geography/shikoku.md` (Japan's smallest main island — the Shikoku Mountains and the pristine Shimanto River, the Seto Inland Sea art islands, the 1,200-km 88-temple Kōbo Daishi pilgrimage and Kūkai, Chōsokabe Motochika's brief unification and Tosa's Sakamoto Ryōma, the Honshu bridge connections, and its acute rural depopulation), and `government-politics/ministry-economy-trade-industry.md` (Japan's principal economic ministry — MITI's 1949 founding and administrative guidance, the developmental-state model and the Chalmers Johnson thesis, foreign-exchange control and the VLSI and DRAM strategies, the 1981 auto VERs, the 2001 reorganization into METI, and its energy, Green Growth, and semiconductor (JASM, Rapidus) policy). Geography now holds nine topics; Government & Politics seven.
+- **README**: knowledge table stands at 42 rows (the three new topics added during the tick).
+- **Enhance pass**: in `kyushu.md` corrected the Hatchobaru geothermal plant's capacity (approximately 112 MW, Japan's largest, not 212 MW), reassigned the Itoshima archaeological area to Fukuoka Prefecture (Yoshinogari is in Saga), and replaced the erroneous auto-export port "Shimizu" (which is in Shizuoka, on Honshu) with Kanda (Fukuoka, beside the Toyota Kyushu plant); in `shikoku.md` corrected the Seto-Ōhashi Bridge's Shikoku terminus to Sakaide in Kagawa (not Ehime) and the road's name to the Seto-Chūō Expressway, removed the false claim that Tosa washi was part of the 2014 UNESCO washi inscription (which recognized Sekishū-banshi, Hon-minoshi, and Hosokawa-shi instead), and raised the island's 2020 population to ~3.7 million; in `ministry-economy-trade-industry.md` aligned the VLSI Technology Research Association's span to 1976–1980; wrapped all three new files' `## Related` sections in canonical `BEGIN/END GENERATED: crossrefs` markers; verified front matter, dates, and internal links on all three files.
+- **Structure** (`build-structure`): added the three topics to their category indices (`geography/index.md`, `government-politics/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — Kūkai's birth (774), *nyūjō* (835), and Kōbo Daishi title (921), Chōsokabe's 1585 unification, Sakamoto Ryōma's 1867 assassination, the 1988 Seto-Ōhashi opening, and the 2010 Setouchi Triennale (Shikoku); the 1877 Battle of Shiroyama, the 1901 Yawata Works, the 1914 Sakurajima eruption, and the 2015 Meiji Industrial and 2018 Hidden Christian UNESCO inscriptions and 2024 TSMC/JASM opening (Kyushu); and the re-homed 1949 MITI founding plus the 1981 auto VERs, the 1982 Johnson thesis, the 2001 METI reorganization, the 2012 Feed-in Tariff, the 2021 Green Growth Strategy, and the 2022 Rapidus backing (METI) — and made cross-references bidirectional with back-links from `major-islands.md` (Kyushu, Shikoku), `technology-manufacturing.md` (Kyushu, METI), `postwar-recovery-growth.md` (METI), and `liberal-democratic-party.md` (METI); verified all internal Markdown links resolve.
+- **Roadmap**: the three completed items move into Done under G1-T14; the Now section clears.
+- **Seed** (`sync-seed`): regenerated §4 (42 topic files, 42 README rows; Geography nine, History/Government & Politics/Culture & Society seven, Economy/People six) and §5 (refreshed timeline/master index, cross-refs in all 42 files).
