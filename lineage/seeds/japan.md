@@ -115,8 +115,8 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 42 rows.
-- **Dedicated topic files** (42):
+- **README knowledge table**: 45 rows.
+- **Dedicated topic files** (45):
   - `geography/major-islands.md` — Major Islands
   - `geography/tokyo.md` — Tokyo
   - `geography/kyoto.md` — Kyoto
@@ -146,6 +146,8 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `economy/lost-decade.md` — Lost Decade & Deflation
   - `economy/postwar-recovery-growth.md` — Postwar Recovery & Economic Growth
   - `economy/financial-system.md` — Japanese Financial System
+  - `economy/financial-sector-regulation.md` — Financial Sector Regulation
+  - `economy/labor-market-and-employment.md` — Labor Market & Employment
   - `culture-society/shinto-religion.md` — Shinto Religion
   - `culture-society/samurai-bushido.md` — Samurai & Bushido
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
@@ -159,10 +161,11 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
   - `people/empress-meiji.md` — Empress Meiji
   - `people/abe-shinzo.md` — Abe Shinzo
+  - `people/yukio-mishima.md` — Yukio Mishima
 - **Categories with content**: Geography (9), History (7), Government & Politics (7),
-  Economy (6), Culture & Society (7), People (6) — all six populated; Geography leads with
-  nine topics, History, Government & Politics, and Culture & Society hold seven each, and
-  Economy and People hold six each.
+  Economy (8), Culture & Society (7), People (7) — all six populated; Geography leads with
+  nine topics, Economy follows with eight, and History, Government & Politics, Culture &
+  Society, and People hold seven each.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -171,10 +174,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Geography now lists nine topics; History, Government & Politics, and Culture & Society seven each; Economy and People six each).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all forty-two topics).
-- **Master index**: `INDEX.md` — present (all forty-two topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 42 dedicated topic files, using relative
+  (Geography now lists nine topics; Economy eight; History, Government & Politics, Culture & Society, and People seven each).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all forty-five topics).
+- **Master index**: `INDEX.md` — present (all forty-five topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 45 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -330,3 +333,12 @@ To reconstruct this knowledge base from DNA:
 - **Structure** (`build-structure`): added the three topics to their category indices (`geography/index.md`, `government-politics/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — Kūkai's birth (774), *nyūjō* (835), and Kōbo Daishi title (921), Chōsokabe's 1585 unification, Sakamoto Ryōma's 1867 assassination, the 1988 Seto-Ōhashi opening, and the 2010 Setouchi Triennale (Shikoku); the 1877 Battle of Shiroyama, the 1901 Yawata Works, the 1914 Sakurajima eruption, and the 2015 Meiji Industrial and 2018 Hidden Christian UNESCO inscriptions and 2024 TSMC/JASM opening (Kyushu); and the re-homed 1949 MITI founding plus the 1981 auto VERs, the 1982 Johnson thesis, the 2001 METI reorganization, the 2012 Feed-in Tariff, the 2021 Green Growth Strategy, and the 2022 Rapidus backing (METI) — and made cross-references bidirectional with back-links from `major-islands.md` (Kyushu, Shikoku), `technology-manufacturing.md` (Kyushu, METI), `postwar-recovery-growth.md` (METI), and `liberal-democratic-party.md` (METI); verified all internal Markdown links resolve.
 - **Roadmap**: the three completed items move into Done under G1-T14; the Now section clears.
 - **Seed** (`sync-seed`): regenerated §4 (42 topic files, 42 README rows; Geography nine, History/Government & Politics/Culture & Society seven, Economy/People six) and §5 (refreshed timeline/master index, cross-refs in all 42 files).
+
+### G1-T15 — 2026-07-22 — Tick 15: added Financial Sector Regulation, Labor Market & Employment, and Yukio Mishima
+
+- **Content added** (3 dedicated topic files): `economy/financial-sector-regulation.md` (Japan's financial regulatory framework — the Financial Services Agency (FSA) and its 2000 establishment, Basel capital standards and stress testing, the 1997–1998 bank failures and the Takenaka Plan NPL resolution, the 1996–2001 "Big Bang" deregulation, regional-bank consolidation, insurance and consumer-credit supervision, and the modern macroprudential, cryptocurrency, and stablecoin regimes), `economy/labor-market-and-employment.md` (Japan's labor market — the postwar lifetime-employment (*shūshin koyō*) and seniority-wage (*nenko*) system, the 1990s *risutora* shift to precarity, *freeters* and NEETs, the *Shunto* spring wage rounds and the 2023–2024 reversal, gender precarity and Womenomics, *karoshi* overwork deaths, demographic decline and the Specified Skilled Worker visa, and the 2019 Work Style Reform), and `people/yukio-mishima.md` (the postwar author, 1925–1970 — *Confessions of a Mask*, *The Temple of the Golden Pavilion*, and the *Sea of Fertility* tetralogy, his physical self-fashioning and theatrical work, the Nobel that went to Kawabata, and the *Tate no Kai* Shield Society and 1970 Ichigaya *seppuku*). Economy now holds eight topics and People seven.
+- **README**: knowledge table expanded from 42 to 45 rows.
+- **Enhance pass**: in `financial-sector-regulation.md` corrected Yamaichi Securities' hidden *tobashi* losses to roughly ¥260 billion (the draft's "¥2.6 trillion" overstated them tenfold), fixed the LTCB sale to the Ripplewood-led consortium to ¥1 billion (not a "nominal ¥1"), re-titled Heizō Takenaka as Financial Services Minister (concurrently Minister for Economic and Fiscal Policy) rather than "Finance Minister," and corrected the Concordia Financial Group merger partners to the Bank of Yokohama and Higashi-Nippon Bank (not "Tokyo Higashi Shinkin Bank"); in `labor-market-and-employment.md` repaired the mojibake in the high-income exemption term (*kōdo purofesshonaru*, colloquially *kō-puro*, replacing the Cyrillic-corrupted "purофェショナル"/"hokuropro") and re-attributed the 2022 occupational-stress survey to the MHLW (not the FSA, which regulates finance); in `yukio-mishima.md` fixed the Kinkaku-ji arsonist to the novice monk Hayashi Yōken (removing the erroneous "Genpō Hayashi" gloss), corrected the *Runaway Horses* title to *Honba* (奔馬, dropping the spurious "Honma no Kiba"), fixed the Taishō-era dating in the *Spring Snow* entry, corrected the given-name/surname pairings of the four Shield Society members (Masayoshi Koga and Masahiro Ogawa had been swapped) and Morita's age, and removed a stray editorial "earlier draft" note; verified front matter, dates, and internal links on all three files.
+- **Structure** (`build-structure`): added the three topics to their category indices (`economy/index.md`, `people/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — Mishima's 1925 birth, *Confessions of a Mask* (1949), the 1968 Shield Society, and the 1970-11-25 Ichigaya *seppuku*; the FSA's 2000 establishment, the 2018 Coincheck hack, and the 2023 stablecoin framework; and the 1955 first *Shunto*, the 2015 Dentsu *karoshi*, the 2019 Work Style Reform Law, and the 2023–2024 *Shunto* wage increases; and made cross-references bidirectional with back-links from `financial-system.md`, `lost-decade.md`, `bank-of-japan.md`, and `postwar-recovery-growth.md` (Financial Sector Regulation); `lost-decade.md`, `technology-manufacturing.md`, `postwar-recovery-growth.md`, `women-in-japanese-society.md`, and `abe-shinzo.md` (Labor Market & Employment); and `postwar-constitution.md`, `samurai-bushido.md`, `taisho-period.md`, `noh-theater.md`, and `murasaki-shikibu.md` (Yukio Mishima); verified all internal Markdown links resolve.
+- **Roadmap**: moved the three completed items into Done under G1-T15 and cleared the Now section.
+- **Seed** (`sync-seed`): regenerated §4 (45 topic files, 45 README rows; Geography nine, Economy eight, History/Government & Politics/Culture & Society/People seven) and §5 (refreshed timeline/master index, cross-refs in all 45 files).
