@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 1
-  ticks: 13
+  ticks: 14
 members:
 - name: japan
   repo: ai-world-view/japan
@@ -14,9 +14,9 @@ members:
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 13
-  log_entries: 29
+  ticks_logged: 14
+  log_entries: 30
   generations: 1
-  last_activity: '2026-07-20'
-  last_entry: 'G1-T13 — 2026-07-20 — Tick 13: added the Kamakura Period, the Japanese
-    Financial System, and Martial Arts & Budo'
+  last_activity: '2026-07-21'
+  last_entry: 'G1-T14 — 2026-07-21 — Tick 14: added Kyushu, Shikoku, and the Ministry
+    of Economy, Trade and Industry (METI)'
