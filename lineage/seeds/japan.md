@@ -115,8 +115,8 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 45 rows.
-- **Dedicated topic files** (45):
+- **README knowledge table**: 48 rows.
+- **Dedicated topic files** (48):
   - `geography/major-islands.md` — Major Islands
   - `geography/tokyo.md` — Tokyo
   - `geography/kyoto.md` — Kyoto
@@ -155,6 +155,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/noh-theater.md` — Noh Theater
   - `culture-society/women-in-japanese-society.md` — Women in Japanese Society
   - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
+  - `culture-society/ryoan-ji-temple.md` — Ryoan-ji Temple
   - `people/hirohito.md` — Hirohito
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/katsushika-hokusai.md` — Katsushika Hokusai
@@ -162,10 +163,12 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/empress-meiji.md` — Empress Meiji
   - `people/abe-shinzo.md` — Abe Shinzo
   - `people/yukio-mishima.md` — Yukio Mishima
+  - `people/minamoto-no-yoritomo.md` — Minamoto no Yoritomo
+  - `people/ashikaga-takauji.md` — Ashikaga Takauji
 - **Categories with content**: Geography (9), History (7), Government & Politics (7),
-  Economy (8), Culture & Society (7), People (7) — all six populated; Geography leads with
-  nine topics, Economy follows with eight, and History, Government & Politics, Culture &
-  Society, and People hold seven each.
+  Economy (8), Culture & Society (8), People (9) — all six populated; People now leads with
+  nine topics, tied with Geography, followed by Culture & Society and Economy with eight each,
+  and History and Government & Politics with seven each.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -174,10 +177,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Geography now lists nine topics; Economy eight; History, Government & Politics, Culture & Society, and People seven each).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all forty-five topics).
-- **Master index**: `INDEX.md` — present (all forty-five topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 45 dedicated topic files, using relative
+  (People and Geography now list nine topics each; Culture & Society and Economy eight each; History and Government & Politics seven each).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all forty-eight topics).
+- **Master index**: `INDEX.md` — present (all forty-eight topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 48 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -342,3 +345,12 @@ To reconstruct this knowledge base from DNA:
 - **Structure** (`build-structure`): added the three topics to their category indices (`economy/index.md`, `people/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — Mishima's 1925 birth, *Confessions of a Mask* (1949), the 1968 Shield Society, and the 1970-11-25 Ichigaya *seppuku*; the FSA's 2000 establishment, the 2018 Coincheck hack, and the 2023 stablecoin framework; and the 1955 first *Shunto*, the 2015 Dentsu *karoshi*, the 2019 Work Style Reform Law, and the 2023–2024 *Shunto* wage increases; and made cross-references bidirectional with back-links from `financial-system.md`, `lost-decade.md`, `bank-of-japan.md`, and `postwar-recovery-growth.md` (Financial Sector Regulation); `lost-decade.md`, `technology-manufacturing.md`, `postwar-recovery-growth.md`, `women-in-japanese-society.md`, and `abe-shinzo.md` (Labor Market & Employment); and `postwar-constitution.md`, `samurai-bushido.md`, `taisho-period.md`, `noh-theater.md`, and `murasaki-shikibu.md` (Yukio Mishima); verified all internal Markdown links resolve.
 - **Roadmap**: moved the three completed items into Done under G1-T15 and cleared the Now section.
 - **Seed** (`sync-seed`): regenerated §4 (45 topic files, 45 README rows; Geography nine, Economy eight, History/Government & Politics/Culture & Society/People seven) and §5 (refreshed timeline/master index, cross-refs in all 45 files).
+
+### G1-T16 — 2026-07-23 — Tick 16: added Minamoto no Yoritomo, Ashikaga Takauji, and Ryōan-ji Temple
+
+- **Content added** (3 dedicated topic files): `people/minamoto-no-yoritomo.md` (the founder of the Kamakura shogunate, 1147–1199 — the Heiji Rebellion and twenty-year Izu exile, the Genpei War and the destruction of the Taira at Dan-no-Ura, the marriage to Hōjō Masako, the elimination of Minamoto no Yoshitsune, the *shugo*/*jitō*/*gokenin* institutions of warrior government, the 1192 *sei-i taishōgun* appointment, and the Hōjō *shikken* regency that followed his death), `people/ashikaga-takauji.md` (the founder of the Muromachi shogunate, 1305–1358 — his 1333 defection from Kamakura, the failed Kenmu Restoration under Emperor Go-Daigo, the victory at Minatogawa, the Northern/Southern Court (*Nanboku-chō*) schism, the *Kenmu Shikimoku* code, the 1338 shogunal title, the Kannō Disturbance with his brother Tadayoshi, and his patronage of Rinzai Zen and the *Gozan* temples), and `culture-society/ryoan-ji-temple.md` (the Rinzai Zen monastery in Kyoto and its late-15th-century *karesansui* rock garden — the fifteen stones of which only fourteen are ever visible, the *abura-kabe* oil wall, the disputed Sōami attribution, the Ōnin War destruction and Hosokawa Masamoto reconstruction, and the 1994 UNESCO inscription). People now holds nine topics (tied with Geography) and Culture & Society eight.
+- **README**: knowledge table expanded from 45 to 48 rows.
+- **Enhance pass**: in `minamoto-no-yoritomo.md` corrected the grandmother who drowned with the child Emperor Antoku at Dan-no-Ura from the erroneous "Nijō" to **Nii-no-Ama** (Taira no Tokiko, the widow of Taira no Kiyomori) — the same error corrected in `kamakura-period.md` during T13; in `ashikaga-takauji.md` rewrote the 1335–1336 campaign (Takauji **defeated** Nitta Yoshisada at the Battle of Takenoshita in December 1335 and took Kyoto, then was driven from the capital by loyalist reinforcements under Kitabatake Akiie and forced to retreat to Kyushu — the draft had him "defeated by Nitta at Takenoshita in February 1336"), fixed the ancestral name to **Minamoto no Yoshiie** (from "Yoshiyie"), and corrected the chief administrator's name to **Kō no Moronao** (from "Ko no Moronō"); verified `ryoan-ji-temple.md` (founding 1450, garden c. 1490–1513, 1994 UNESCO inscription) and confirmed front matter, dates, and crossref markers on all three files.
+- **Structure** (`build-structure`): added the three topics to their category indices (`people/index.md`, `culture-society/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — Yoritomo's 1147 birth, 1180 uprising, and 1199 death, **re-homing** the 1192 shogunate founding from the Kamakura Period article to the Yoritomo biography; Takauji's 1305 birth, the 1336 Minatogawa victory and *Kenmu Shikimoku*, the 1336–1392 Nanboku-chō, the 1338 Muromachi shogunate, and his 1358 death; and Ryōan-ji's 1450 founding and c. 1490–1513 rock garden — and made cross-references bidirectional with back-links from `kamakura-period.md`, `heian-period.md`, `sengoku-period.md`, `samurai-bushido.md`, and `tokugawa-ieyasu.md` (Yoritomo and/or Takauji); `noh-theater.md` (Takauji and Ryōan-ji); and `tea-ceremony.md`, `kyoto.md`, and `edo-culture-arts.md` (Ryōan-ji); verified all internal Markdown links resolve.
+- **Roadmap**: moved the three completed items into Done under G1-T16, removed the two redundant "already selected for Now" backlog entries, and cleared the Now section.
+- **Seed** (`sync-seed`): regenerated §4 (48 topic files, 48 README rows; People and Geography nine each, Culture & Society and Economy eight each, History and Government & Politics seven each) and §5 (refreshed timeline/master index, cross-refs in all 48 files).
