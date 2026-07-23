@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 1
-  ticks: 14
+  ticks: 15
 members:
 - name: japan
   repo: ai-world-view/japan
@@ -14,9 +14,9 @@ members:
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 14
-  log_entries: 30
+  ticks_logged: 15
+  log_entries: 31
   generations: 1
-  last_activity: '2026-07-21'
-  last_entry: 'G1-T14 — 2026-07-21 — Tick 14: added Kyushu, Shikoku, and the Ministry
-    of Economy, Trade and Industry (METI)'
+  last_activity: '2026-07-22'
+  last_entry: 'G1-T15 — 2026-07-22 — Tick 15: added Financial Sector Regulation, Labor
+    Market & Employment, and Yukio Mishima'
