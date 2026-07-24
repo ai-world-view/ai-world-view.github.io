@@ -115,8 +115,8 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 48 rows.
-- **Dedicated topic files** (48):
+- **README knowledge table**: 51 rows.
+- **Dedicated topic files** (51):
   - `geography/major-islands.md` — Major Islands
   - `geography/tokyo.md` — Tokyo
   - `geography/kyoto.md` — Kyoto
@@ -126,6 +126,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `geography/hokkaido.md` — Hokkaido
   - `geography/kyushu.md` — Kyushu
   - `geography/shikoku.md` — Shikoku
+  - `geography/kobe.md` — Kobe
   - `history/edo-period.md` — Edo Period
   - `history/meiji-restoration.md` — Meiji Restoration
   - `history/sengoku-period.md` — Sengoku Period
@@ -156,6 +157,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/women-in-japanese-society.md` — Women in Japanese Society
   - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `culture-society/ryoan-ji-temple.md` — Ryoan-ji Temple
+  - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `people/hirohito.md` — Hirohito
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/katsushika-hokusai.md` — Katsushika Hokusai
@@ -165,10 +167,11 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/yukio-mishima.md` — Yukio Mishima
   - `people/minamoto-no-yoritomo.md` — Minamoto no Yoritomo
   - `people/ashikaga-takauji.md` — Ashikaga Takauji
-- **Categories with content**: Geography (9), History (7), Government & Politics (7),
-  Economy (8), Culture & Society (8), People (9) — all six populated; People now leads with
-  nine topics, tied with Geography, followed by Culture & Society and Economy with eight each,
-  and History and Government & Politics with seven each.
+  - `people/emperor-meiji.md` — Emperor Meiji
+- **Categories with content**: Geography (10), History (7), Government & Politics (7),
+  Economy (8), Culture & Society (9), People (10) — all six populated; Geography and People now
+  lead with ten topics each, followed by Culture & Society with nine, Economy with eight, and
+  History and Government & Politics with seven each.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -177,10 +180,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (People and Geography now list nine topics each; Culture & Society and Economy eight each; History and Government & Politics seven each).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all forty-eight topics).
-- **Master index**: `INDEX.md` — present (all forty-eight topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 48 dedicated topic files, using relative
+  (Geography and People now list ten topics each; Culture & Society nine; Economy eight; History and Government & Politics seven each).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all fifty-one topics).
+- **Master index**: `INDEX.md` — present (all fifty-one topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 51 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -354,3 +357,11 @@ To reconstruct this knowledge base from DNA:
 - **Structure** (`build-structure`): added the three topics to their category indices (`people/index.md`, `culture-society/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — Yoritomo's 1147 birth, 1180 uprising, and 1199 death, **re-homing** the 1192 shogunate founding from the Kamakura Period article to the Yoritomo biography; Takauji's 1305 birth, the 1336 Minatogawa victory and *Kenmu Shikimoku*, the 1336–1392 Nanboku-chō, the 1338 Muromachi shogunate, and his 1358 death; and Ryōan-ji's 1450 founding and c. 1490–1513 rock garden — and made cross-references bidirectional with back-links from `kamakura-period.md`, `heian-period.md`, `sengoku-period.md`, `samurai-bushido.md`, and `tokugawa-ieyasu.md` (Yoritomo and/or Takauji); `noh-theater.md` (Takauji and Ryōan-ji); and `tea-ceremony.md`, `kyoto.md`, and `edo-culture-arts.md` (Ryōan-ji); verified all internal Markdown links resolve.
 - **Roadmap**: moved the three completed items into Done under G1-T16, removed the two redundant "already selected for Now" backlog entries, and cleared the Now section.
 - **Seed** (`sync-seed`): regenerated §4 (48 topic files, 48 README rows; People and Geography nine each, Culture & Society and Economy eight each, History and Government & Politics seven each) and §5 (refreshed timeline/master index, cross-refs in all 48 files).
+
+### G1-T17 — 2026-07-24 — Tick 17: added Buddhist Schools & Traditions, Kobe, and Emperor Meiji
+
+- **Content added** (3 dedicated topic files): `culture-society/buddhist-schools.md` (fifteen centuries of Japanese Buddhism — the arrival from Baekje, the six Nara schools and Tōdai-ji, Heian-era Tendai (Saichō) and Shingon (Kūkai), the Kamakura flowering of Pure Land (Hōnen, Shinran, Ippen), Zen (Eisai's Rinzai, Dōgen's Sōtō, Ōbaku), and Nichiren, the Edo *danka* system, and the Meiji *shinbutsu-bunri* crisis), `geography/kobe.md` (Japan's cosmopolitan port city — medieval Hyōgo and Taira no Kiyomori's Fukuhara harbor, the 1868 treaty-port opening and Kitano *ijinkan* settlement, Nada sake and Kobe beef, the 1945 firebombing, the postwar port and Port Island reclamation, the 1995 Great Hanshin Earthquake and reconstruction, and the Akashi Kaikyō Bridge), and `people/emperor-meiji.md` (the 122nd Emperor, 1852–1912 — the Bakumatsu crisis, the Boshin War and Charter Oath, the *Genrō* oligarchy, the abolition of the feudal order and Satsuma Rebellion, the Iwakura Mission, industrialization and the 1889 Constitution, the Sino-Japanese and Russo-Japanese Wars, and his death and enshrinement at Meiji Jingū). Geography and People now hold ten topics each; Culture & Society nine.
+- **README**: knowledge table expanded from 48 to 51 rows.
+- **Enhance pass**: in `buddhist-schools.md` standardized the syncretism term to *shinbutsu-shūgō* (神仏習合) from the non-standard "shinbutsu-konkō (神仏混合)" (three occurrences, incl. a cross-ref), corrected Eisai's *Kōzen Gokokuron* to 1198 (from 1192), fixed Nichiren's death to Ikegami in present-day Tokyo (he retired to Minobu in 1274 but died at Ikegami in 1282), and replaced the fabricated modernist "Kitara Tōru" with the Shin reformer Kiyozawa Manshi (1863–1903); in `kobe.md` corrected the 1995 earthquake magnitude (JMA magnitude 7.3 / moment magnitude Mw 6.9, replacing the muddled "Mw 7.2 … 7.3"), updated the Akashi Kaikyō Bridge claim (held the longest suspension-span record only until Turkey's 1915 Çanakkale Bridge in 2022), softened the unverifiable "186 of 186 berths" and "over 5,500 died in Kobe" and "second-busiest port" figures, and relaxed the "same day as the Meiji Restoration" flourish to "same year"; in `emperor-meiji.md` corrected the death date to July 30, 1912 (matching the repo's own timeline; the draft had July 29) and the Triple Intervention to April 23, 1895 (from May 5). Verified front matter, dates, and internal links on all three files.
+- **Structure** (`build-structure`): added the three topics to their category indices (`geography/index.md`, `culture-society/index.md`, `people/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — Buddhism's arrival (c. 552), the 604 Seventeen-Article Constitution, the 752 Tōdai-ji Great Buddha, Saichō's 805 Tendai and Kūkai's 816 Shingon foundations, the 1052 onset of *mappō*, Hōnen's 1198 treatise, Nichiren's 1253 *daimoku*, and Ingen's 1654 Ōbaku arrival (re-homing the c. 552 introduction from Shinto Religion to Buddhist Schools); Kiyomori's c. 1168 Fukuhara harbor, Kobe's 1868 treaty-port opening, the 1874 Osaka–Kobe Railway, the 1945 firebombing, and the 1998 Akashi Kaikyō Bridge (re-homing the 1995 Great Hanshin Earthquake from Major Islands to Kobe); and Emperor Meiji's 1852 birth and 1867 accession (re-homing his 1912 death from Meiji Restoration to the Emperor Meiji biography) — and made cross-references bidirectional with back-links from `meiji-restoration.md`, `hirohito.md`, and `empress-meiji.md` (Emperor Meiji); `osaka.md`, `kyoto.md`, and `world-war-ii.md` (Kobe); and `shinto-religion.md`, `heian-period.md`, `kamakura-period.md`, `tea-ceremony.md`, `noh-theater.md`, `ryoan-ji-temple.md`, and `edo-period.md` (Buddhist Schools & Traditions); verified all internal Markdown links resolve.
+- **Seed** (`sync-seed`): regenerated §4 (51 topic files, 51 README rows; Geography and People ten each, Culture & Society nine, Economy eight, History and Government & Politics seven) and §5 (refreshed timeline/master index, cross-refs in all 51 files).
