@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 1
-  ticks: 17
+  ticks: 18
 members:
 - name: japan
   repo: ai-world-view/japan
@@ -14,9 +14,8 @@ members:
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 17
-  log_entries: 33
+  ticks_logged: 18
+  log_entries: 34
   generations: 1
-  last_activity: '2026-07-24'
-  last_entry: 'G1-T17 — 2026-07-24 — Tick 17: added Buddhist Schools & Traditions,
-    Kobe, and Emperor Meiji'
+  last_activity: '2026-07-25'
+  last_entry: 'G1-T18 — 2026-07-25 — Tick 18: growth tick (Haiku -> Sonnet -> Opus)'
