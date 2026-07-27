@@ -115,8 +115,8 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 51 rows.
-- **Dedicated topic files** (51):
+- **README knowledge table**: 54 rows.
+- **Dedicated topic files** (54):
   - `geography/major-islands.md` — Major Islands
   - `geography/tokyo.md` — Tokyo
   - `geography/kyoto.md` — Kyoto
@@ -134,6 +134,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `history/heian-period.md` — Heian Period
   - `history/taisho-period.md` — Taishō Period
   - `history/kamakura-period.md` — Kamakura Period
+  - `history/russo-japanese-war.md` — Russo-Japanese War
   - `government-politics/diet-of-japan.md` — Diet of Japan
   - `government-politics/imperial-succession.md` — Imperial Succession
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
@@ -158,6 +159,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `culture-society/ryoan-ji-temple.md` — Ryoan-ji Temple
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
+  - `culture-society/ukiyo-e-woodblock-prints.md` — Ukiyo-e Woodblock Prints
   - `people/hirohito.md` — Hirohito
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/katsushika-hokusai.md` — Katsushika Hokusai
@@ -168,10 +170,11 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/minamoto-no-yoritomo.md` — Minamoto no Yoritomo
   - `people/ashikaga-takauji.md` — Ashikaga Takauji
   - `people/emperor-meiji.md` — Emperor Meiji
-- **Categories with content**: Geography (10), History (7), Government & Politics (7),
-  Economy (8), Culture & Society (9), People (10) — all six populated; Geography and People now
-  lead with ten topics each, followed by Culture & Society with nine, Economy with eight, and
-  History and Government & Politics with seven each.
+  - `people/nitobe-inazou.md` — Nitobe Inazō
+- **Categories with content**: Geography (10), History (8), Government & Politics (7),
+  Economy (8), Culture & Society (10), People (11) — all six populated; People now leads with
+  eleven topics, followed by Geography and Culture & Society with ten each, History and Economy
+  with eight each, and Government & Politics with seven.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -180,10 +183,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Geography and People now list ten topics each; Culture & Society nine; Economy eight; History and Government & Politics seven each).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all fifty-one topics).
-- **Master index**: `INDEX.md` — present (all fifty-one topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 51 dedicated topic files, using relative
+  (People now lists eleven topics; Geography and Culture & Society ten each; History and Economy eight each; Government & Politics seven).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all fifty-four topics).
+- **Master index**: `INDEX.md` — present (all fifty-four topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 54 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -368,3 +371,12 @@ To reconstruct this knowledge base from DNA:
 
 ### G1-T18 — 2026-07-25 — Tick 18: growth tick (Haiku -> Sonnet -> Opus)
 **Action**: Content published by the 3-tier escalation; this §8 entry was recorded deterministically by the workflow because the enhance pass did not run encode-seed.
+
+### G1-T19 — 2026-07-27 — Tick 19: added the Russo-Japanese War, Nitobe Inazō, and Ukiyo-e Woodblock Prints
+
+- **Content added** (3 dedicated topic files): `history/russo-japanese-war.md` (the 1904–1905 war between the Russian and Japanese empires — the surprise attack on Port Arthur, the Anglo-Japanese Alliance, the siege of Port Arthur and 203 Metre Hill, the Battles of the Yellow Sea, Mukden, and Tsushima, the human and financial cost, the Treaty of Portsmouth and the Hibiya riots, and the war's effects on Japan's great-power status, the 1905 Russian Revolution, and anti-colonial movements), `people/nitobe-inazou.md` (the Meiji-Taishō cosmopolitan intellectual, 1862–1933 — his samurai-family origins and Sapporo/Johns Hopkins/Halle education, Quaker conversion, *Bushido: The Soul of Japan* (1900), agricultural work in colonial Taiwan, his 1920–1926 term as Under-Secretary-General of the League of Nations, and his death amid Japan's turn to militarism), and `culture-society/ukiyo-e-woodblock-prints.md` (Japan's woodblock-print tradition — the three-artisan production system, Moronobu's first single-sheet prints, Harunobu's 1765 *nishiki-e*, the *yakusha-e*/*bijin-ga*/*meisho-e*/*shunga* genres, the masters Utamaro, Sharaku, Hokusai, and Hiroshige, the Prussian-blue revolution, the Meiji decline and *shin-hanga* revival, and the *Japonisme* that reshaped European modernism). History and Culture & Society now hold eight and ten topics; People eleven.
+- **README**: knowledge table stands at 54 rows (the three new topics added during the tick).
+- **Enhance pass**: verified factual accuracy across all three files (Russo-Japanese War dates and casualty figures, the Treaty of Portsmouth terms; Nitobe's biography, the 1900 Philadelphia *Bushido* first edition, and the 1984–2007 ¥5,000-note portrait; ukiyo-e's 1765 *nishiki-e* invention, artist dates, and print-genre taxonomy); standardized the ukiyo-e "Key figures" line to consistent surname-first Japanese order; confirmed front matter (`title`/`date`/`category`) and that the three files' `## Related` crossref blocks resolve.
+- **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `culture-society/index.md`, `people/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — re-homing the 1904–1905 war and the Battle of Tsushima from the Meiji Restoration article to the dedicated Russo-Japanese War article and adding the 1902 Anglo-Japanese Alliance, the 1904 Port Arthur attack, the 1905 Port Arthur surrender, Mukden, and the Treaty of Portsmouth; re-homing the 1900 *Bushido* publication to the Nitobe biography and adding his 1862 birth, 1920 League appointment, and 1933 death; and adding Moronobu's c. 1680s single-sheet prints and Sharaku's 1794–1795 actor portraits (Ukiyo-e); and made cross-references bidirectional with back-links from `meiji-restoration.md`, `emperor-meiji.md`, `world-war-ii.md`, and `taisho-period.md` (Russo-Japanese War); `meiji-restoration.md`, `emperor-meiji.md`, `samurai-bushido.md`, and `taisho-period.md` (Nitobe Inazō); and `katsushika-hokusai.md`, `edo-culture-arts.md`, `edo-period.md`, and `tokyo.md` (Ukiyo-e Woodblock Prints); verified all internal Markdown links resolve.
+- **Roadmap**: moved the three completed items into Done under G1-T19 and cleared the Now section.
+- **Seed** (`sync-seed`): regenerated §4 (54 topic files, 54 README rows; People eleven, Geography and Culture & Society ten each, History and Economy eight each, Government & Politics seven) and §5 (refreshed timeline/master index, cross-refs in all 54 files).
