@@ -32,7 +32,7 @@ founder                  : "Amr Abdel-Motaleb"
 # renders via the shared zer0-mistakes theme pulled over `remote_theme` — no
 # theme files are vendored here. The org's country sites consume the same theme the
 # same way. To pin a version use "bamr87/zer0-mistakes@vX.Y.Z".
-remote_theme             : "bamr87/zer0-mistakes"
+remote_theme             : "bamr87/zer0-mistakes@v1.26.0"
 
 ## Github Information
 github_user              : &github_user "ai-world-view"
@@ -95,20 +95,36 @@ info_banner              : '/assets/images/info-banner-mountain-wizard.png' # pa
 # Settings for automatic preview image generation using AI
 # Used by: scripts/generate-preview-images.sh
 
+# Fleet-aligned preview contract (same shape as lifehacker.dev and the
+# year-of-ai hub). `auto` is a capability ladder resolved by
+# scripts/generate-preview-images.sh — the published engine (<= 0.6.x)
+# doesn't know it, so always go through the wrapper:
+#   raster image API key wired   — that renderer (Claude writes the art brief);
+#   Claude credential alone      — Claude authors the banner as SVG
+#                                  (scripts/claude_svg_banner.py);
+#   nothing wired                — deterministic local SVG.
+# MEMBER repos are illustrated by the grow tick itself (grow-lineage.yml
+# "Illustrate" step, art direction from lineage/policy.yml `preview:`) —
+# this block only covers the hub site's own pages.
 preview_images:
   enabled                : true
-  provider               : 'openai'           # openai, stability, local
-  model                  : 'gpt-image-2'      # gpt-image-2, dall-e-3, dall-e-2, stable-diffusion
-  size                   : '1536x1024'        # Landscape for GPT Image banners; DALL-E 3 also supports 1792x1024
-  quality                : 'auto'             # auto for GPT Image models; standard/hd for DALL-E 3
-  style                  : 'flat vector world-map cartography, muted earth tones video game aesthetic, vibrant colors, nostalgic, clean pixel graphics'
+  provider               : 'auto'             # auto | local | claude | openai | xai | stability | gemini
+  model                  : ''                 # empty → the active renderer's default
+  size                   : '1536x1024'        # landscape banner
+  quality                : 'auto'
+  style                  : 'flat vector world-map cartography, muted earth tones, atlas-plate composition, clean geographic shapes'
   output_dir             : 'assets/images/previews'
   # Path normalization: allows omitting /assets/ prefix in frontmatter
   # e.g., preview: /images/previews/my-image.png becomes /assets/images/previews/my-image.png
   assets_prefix          : '/assets'          # Prefix to prepend to relative preview paths
   auto_prefix            : true               # Auto-add assets_prefix if path doesn't start with it
+  # SVG-only: the vector banner IS the committed preview (~12 KB, diffs as
+  # text, crisp at any size, no rasterizer toolchain on any agent or runner).
+  rasterizer             : 'none'             # auto|rsvg|inkscape|magick|playwright|none
+  prompt_engine          : 'claude'           # claude writes the art brief (template = built-in prompt)
+  review_engine          : 'claude'           # claude vision-reviews raster renders (none = skip)
   # Additional style modifiers applied to all prompts
-  style_modifiers        : 'pixelated, retro gaming style, CRT screen glow effect, limited color palette'
+  style_modifiers        : 'engraved-map texture, compass-rose accents, parchment undertone, restrained palette'
 
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
@@ -206,7 +222,10 @@ nanobar:
 # server-side proxy to avoid exposing the API key in client-side code.
 
 ai_chat:
-  enabled                : true
+  # Disabled until the chat proxy is actually deployed (proxy_ready below) —
+  # with enabled:true + proxy_ready:false the widget rendered but every
+  # production send failed. Aligned with the year-of-ai reference hub.
+  enabled                : false
   provider               : 'anthropic'        # AI provider (Claude Messages API)
   auth_mode              : 'proxy'            # 'proxy' (recommended) or 'direct'
   proxy_ready            : false              # Set true only when your proxy endpoint is deployed
@@ -222,11 +241,11 @@ ai_chat:
   strict_context         : true               # Ground answers to current page context only
   out_of_scope_message   : "I can only answer from the content on this page."
   system_prompt          : >-
-    You are a helpful assistant for the Atlas-Mistakes website,
-    a Jekyll theme and developer blog. Answer questions about the
-    current page content and help users navigate the site.
-    Be concise and friendly.
-  welcome_message        : "Hi! I'm the Atlas assistant. Ask about this page, report a problem, or suggest an improvement."
+    You are a helpful assistant for AI World View, an autonomous atlas of
+    self-growing country knowledge bases written from the model's own
+    world view. Answer questions about the current page content and help
+    users navigate the site. Be concise and friendly.
+  welcome_message        : "Hi! I'm the AI World View assistant. Ask about this page, report a problem, or suggest an improvement."
   placeholder            : "Ask about this page..."
   context_max_length     : 2000               # Max chars of page content sent as context
   icon                   : 'bi-robot'         # Bootstrap icon for chat button
@@ -442,7 +461,7 @@ defaults:
       share: true
       related: true
       sidebar:
-        nav: tree
+        nav: auto
     permalink: /:collection/:name/
 
   # pages
@@ -471,7 +490,7 @@ defaults:
       share: true
       related: true
       sidebar:
-        nav: tree
+        nav: auto
 
   # pages/_quickstart
   - 
@@ -483,7 +502,7 @@ defaults:
       share: true
       related: true
       sidebar:
-        nav: tree
+        nav: auto
 
   # pages/_posts
   - 
@@ -511,7 +530,7 @@ defaults:
       author_profile: true
       read_time: true
       sidebar:
-        nav: tree
+        nav: auto
       comments: # true
       share: true
       related: true
@@ -567,6 +586,7 @@ exclude:
   # pages/home.md). This exclude IS the guard against a "/" collision — README
   # has no front matter, so keep it listed here (don't rely on published:false).
   - README.md
+  - CLAUDE.md
 
   # ── Orchestration source data (not site content) ─────────────────────────
   # lineage/ holds the centralized seeds + bootstrap kit for the self-growing

@@ -3,15 +3,21 @@ name: Grow Lineage
 
 # Central growth engine. The hub grows ONE country repo per run: it checks out the
 # target repo (which holds only content + _config.yml + .claude + telemetry),
-# stages the centralized framework + that year's seed from lineage/, runs the
+# stages the centralized framework + that country's seed from lineage/, runs the
 # 3-tier content escalation (Haiku draft -> Sonnet expand -> Opus enhance), then
 # pushes back ONLY the new content + telemetry — the staged framework/seed are
-# stripped so the country repo stays clean. The year's Evolution Log (seed §8) is
-# persisted back to the hub's lineage/seeds/<repo>.md.
+# stripped so the country repo stays clean. The country's Evolution Log (seed §8)
+# is persisted back to the hub's lineage/seeds/<repo>.md.
 #
 # Dispatched per repo by orchestrate.yml, or manually. Model tiers come from
 # lineage/policy.yml. Perpetual growth: every tick is a grow tick (no lifecycle
 # gate, no replant/consolidate).
+#
+# A `gate` job runs first (aligned with the year-of-ai reference hub): it honors
+# the fleet kill-switch (_data/fleet_pause.yml) and validates both dispatch
+# inputs, so a paused fleet or a malformed input can never reach the model
+# passes or the publish steps — including their `if: always()` variants, which
+# an in-job check could not stop.
 #
 # Secrets: CLAUDE_CODE_OAUTH_TOKEN (primary), ANTHROPIC_API_KEY (fallback),
 # LIFECYCLE_PAT (push to the target country repo + the hub's seed log).
@@ -77,6 +83,8 @@ env:
     the content (do NOT commit or push — the workflow publishes):
       1. Polish prose, ensure factual accuracy from your own knowledge, fix cross-references, ensure an
          encyclopedic neutral tone and correct front matter on every new file.
+         Every front-matter `date:` MUST be a single plain ISO date
+         (YYYY-MM-DD) — never a range, a bare year, or prose.
       2. build-structure — refresh indices, TIMELINE, INDEX, cross-refs.
       3. sync-seed — regenerate seed.md sections 1-7.
       4. encode-seed — append ONE new entry under "## Section 8 — Evolution Log",
@@ -104,7 +112,45 @@ env:
     once the new content + the seed §8 entry exist uncommitted.
 
 jobs:
+  # Kill-switch + input validation (ADR-0003 / year-of-ai ADR-0006 pattern). A
+  # separate job so that when it fails or the fleet is paused, NONE of the grow
+  # job's steps run — including its `if: always()` persist/publish steps, which
+  # an in-job check could not have stopped.
+  gate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Honor the fleet kill-switch (_data/fleet_pause.yml)
+        run: |
+          set -euo pipefail
+          curl -fsSL --max-time 20 \
+            "https://raw.githubusercontent.com/ai-world-view/ai-world-view.github.io/main/_data/fleet_pause.yml" \
+            -o /tmp/fleet_pause.yml || { echo "::warning::could not fetch fleet_pause.yml — proceeding"; exit 0; }
+          if ruby -ryaml -e 'exit(YAML.load_file("/tmp/fleet_pause.yml")["paused"] == true ? 0 : 1)' 2>/dev/null; then
+            reason="$(ruby -ryaml -e 'puts YAML.load_file("/tmp/fleet_pause.yml")["reason"].to_s' 2>/dev/null)"
+            echo "::error::Fleet is PAUSED via _data/fleet_pause.yml — refusing to grow. ${reason:+Reason: $reason}"
+            exit 1
+          fi
+
+      # Both dispatch inputs are validated before any step interpolates them.
+      # `repo` must be a bare repo name (it is spliced into paths and git URLs);
+      # `args` may be topic prose but never shell/expression metacharacters.
+      - name: Validate the repo and args inputs
+        env:
+          REPO: ${{ inputs.repo }}
+          ARGS: ${{ inputs.args }}
+        run: |
+          if ! printf '%s' "$REPO" | LC_ALL=C grep -qE '^[A-Za-z0-9][A-Za-z0-9._-]*$'; then
+            echo "::error::inputs.repo is not a plain repo name; refusing to run."
+            exit 1
+          fi
+          if printf '%s' "$ARGS" | LC_ALL=C grep -qE '[`$<>|;&{}]'; then
+            echo "::error::inputs.args contains disallowed characters (possible injection); refusing to run."
+            exit 1
+          fi
+          echo "inputs OK: repo=$REPO"
+
   grow:
+    needs: gate
     runs-on: ubuntu-latest
     permissions:
       # No id-token: write. Passing an explicit github_token to claude-code-action
@@ -114,27 +160,16 @@ jobs:
       # country repo and the hub seed log still goes through LIFECYCLE_PAT.
       contents: read
     steps:
-      # The `args` dispatch input is interpolated into GENERATE_PROMPT. Even though
-      # only owners can dispatch this workflow, harden the surface: pass it via env
-      # (never into a run: script) and reject injection metacharacters before any
-      # model/publish step runs. Normal topic text (letters, digits, spaces, commas,
-      # periods, hyphens, slashes, quotes) passes; shell/expression metacharacters do not.
-      - name: Validate the args input (reject injection metacharacters)
-        env:
-          ARGS: ${{ inputs.args }}
-        run: |
-          if printf '%s' "$ARGS" | LC_ALL=C grep -qE '[`$<>|;&{}]'; then
-            echo "::error::inputs.args contains disallowed characters (possible injection); refusing to run."
-            exit 1
-          fi
-          echo "args input OK"
-
       - name: Checkout the target country repo (primary)
         uses: actions/checkout@v4
         with:
           repository: ${{ env.TARGET }}
           token: ${{ secrets.LIFECYCLE_PAT }}
           fetch-depth: 0
+          # Never leave the org-wide PAT in .git/config while the model passes
+          # run with Bash — pushes re-authenticate explicitly (aligned with the
+          # year-of-ai reference hub).
+          persist-credentials: false
 
       - name: Stage framework + seed from the hub
         env:
@@ -142,10 +177,23 @@ jobs:
         run: |
           set -euo pipefail
           git clone --depth 1 https://github.com/ai-world-view/ai-world-view.github.io /tmp/hub
-          # canonical agent toolkit (skills/prompts/agents/scripts)
+          # Canonical agent toolkit (skills/prompts/agents/instructions). The
+          # peer-to-peer surfaces are NOT staged: framework/workflows/ and
+          # framework/scripts/ are dead under the central model, and the
+          # consolidate/replant/genesis prompts + the check-lifecycle skill
+          # contradict lineage/policy.yml (perpetual growth, no lifecycle
+          # gate). Keeping them out of .github/ saves staged bytes and model
+          # context on every pass and removes contradictory instructions.
           mkdir -p .github
-          cp -r /tmp/hub/lineage/framework/* .github/
-          # this year's concept seed (carries §1 concept + §8 Evolution Log)
+          rsync -a \
+            --exclude='workflows/' \
+            --exclude='scripts/' \
+            --exclude='prompts/consolidate.prompt.md' \
+            --exclude='prompts/replant.prompt.md' \
+            --exclude='prompts/genesis.prompt.md' \
+            --exclude='skills/check-lifecycle/' \
+            /tmp/hub/lineage/framework/ .github/
+          # this country's concept seed (carries §1 concept + §8 Evolution Log)
           cp "/tmp/hub/lineage/seeds/${{ inputs.repo }}.md" seed.md
           echo "Staged framework ($(find .github -type f | wc -l) files) + seed.md for ${{ inputs.repo }}"
 
@@ -270,6 +318,72 @@ jobs:
           if-no-files-found: ignore
           retention-days: 14
 
+      # ---- Illustrate: Claude-authored SVG banners for the tick's content ----
+      # Deterministic step, not a model pass: every new/changed markdown file
+      # this tick gets a content-aware SVG preview banner (cover art + og:image
+      # on the member site). Claude AUTHORS the vector via the hub's
+      # scripts/claude_svg_banner.py (art direction + model from
+      # lineage/policy.yml `preview:`); with no Claude credential it falls back
+      # to the zer0-image-generator engine's deterministic `local` SVG. A
+      # banner failure never blocks the tick's publish.
+      - name: Illustrate — SVG preview banners for new content
+        if: always()
+        continue-on-error: true
+        env:
+          CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -uo pipefail
+          # Art direction + on/off come from policy, not the workflow.
+          readarray -t P < <(ruby -ryaml -e '
+            p = (YAML.load_file("/tmp/hub/lineage/policy.yml")["preview"] rescue nil) || {}
+            puts p.fetch("enabled", false) ? "true" : "false"
+            puts (p["model"] || "").to_s.tr("\n", " ")
+            puts (p["style"] || "").to_s.tr("\n", " ")
+            puts (p["style_modifiers"] || "").to_s.tr("\n", " ")
+            puts (p["output_dir"] || "assets/images/previews").to_s
+          ')
+          ENABLED="${P[0]:-false}"; MODEL="${P[1]:-}"; STYLE="${P[2]:-}"
+          MODIFIERS="${P[3]:-}"; OUT_DIR="${P[4]:-assets/images/previews}"
+          if [ "$ENABLED" != "true" ]; then
+            echo "preview.enabled is false in lineage/policy.yml — skipping banners."
+            exit 0
+          fi
+          if ! git status --porcelain | grep -vE "${HUB_OWNED_EXCLUDE_RE}" \
+               | grep -qE '\.(md|markdown)$'; then
+            echo "No new content this tick — nothing to illustrate."
+            exit 0
+          fi
+          # The engine ships inside the zer0-image-generator gem (a single
+          # python file); the companion imports it as a library.
+          gem install --user-install --no-document zer0-image-generator >/dev/null 2>&1 || true
+          ENGINE="$(gem contents zer0-image-generator 2>/dev/null | grep -m1 'preview_generator\.py$' || true)"
+          if [ -z "$ENGINE" ]; then
+            echo "::warning::zer0-image-generator engine unavailable — skipping banners this tick."
+            exit 0
+          fi
+          python3 -c 'import yaml' 2>/dev/null || pip3 install --quiet PyYAML || true
+          status=0
+          python3 /tmp/hub/scripts/claude_svg_banner.py --engine "$ENGINE" --changed \
+            ${MODEL:+--model "$MODEL"} \
+            ${STYLE:+--style "$STYLE"} \
+            ${MODIFIERS:+--style-modifiers "$MODIFIERS"} \
+            --output-dir "$OUT_DIR" || status=$?
+          if [ "$status" = "3" ]; then
+            echo "No Claude credential — deterministic local SVG banners instead."
+            git status --porcelain | grep -vE "${HUB_OWNED_EXCLUDE_RE}" \
+              | grep -E '\.(md|markdown)$' | sed -E 's/^.{3}//; s/^"(.*)"$/\1/' \
+              | while IFS= read -r f; do
+                  [ -f "$f" ] && python3 "$ENGINE" -f "$f" -p local --rasterizer none \
+                    ${STYLE:+--style "$STYLE"} || true
+                done
+          elif [ "$status" != "0" ]; then
+            echo "::warning::banner generation reported failures (exit $status) — the tick publishes regardless."
+          fi
+          # A failed front-matter stamp can leave a .bak next to the article;
+          # never let one ride into the publish commit.
+          find . -name '*.md.bak' -not -path './.git/*' -delete 2>/dev/null || true
+
       - name: Persist the seed Evolution Log back to the hub
         if: always()
         env:
@@ -340,6 +454,14 @@ jobs:
             echo "published=false" >> "$GITHUB_OUTPUT"
             echo "No new content this tick — nothing to publish."
             exit 0
+          fi
+          # Front-matter gate (aligned with the year-of-ai reference hub): a
+          # single unparseable `date:` fails the member's whole Pages build.
+          # Deterministically normalize ranges / bare years / prose dates to
+          # ISO, and refuse to publish anything that still cannot be parsed.
+          if ! ruby /tmp/hub/scripts/normalize-front-matter-dates.rb --fix .; then
+            echo "::error::unparseable front-matter date(s) remain after normalization — refusing to publish a broken build."
+            exit 1
           fi
           git config user.name "claude-grow"
           git config user.email "noreply@anthropic.com"

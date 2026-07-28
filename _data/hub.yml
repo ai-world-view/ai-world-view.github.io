@@ -36,7 +36,7 @@ pages:
   # Every org site — including this root site — consumes the shared zer0-mistakes
   # theme directly from upstream; no repo vendors theme files. Pin a version with
   # "bamr87/zer0-mistakes@vX.Y.Z" if you want reproducible builds.
-  theme_repo: bamr87/zer0-mistakes
+  theme_repo: bamr87/zer0-mistakes@v1.26.0
   # Git ref to scaffold against / publish from. Empty = repo default branch.
   branch: ""
 
