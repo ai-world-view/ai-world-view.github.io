@@ -4,10 +4,10 @@ description: >-
   The routine AI-agent fleet that reviews, fixes, and evolves the
   ai-world-view hub and framework — a continuously self-improving system.
 keywords:
-  - self-improvement fleet
-  - ai agents
+  - ai agent fleet
+  - autonomous self-improvement
+  - self-monitoring ai system
   - telemetry ledger
-  - docs warden
   - fleet health
 layout: default
 permalink: /self-improvement/
@@ -28,9 +28,10 @@ The fleet was designed in the reference implementation (the `year-of-ai` hub,
 from which this org was planted), and this hub arrived with its safety
 scaffolding and watchers **already built**: the kill-switch, the write
 serializer, the evolution ledger, and the daily watchers all run here today.
-The framework's own self-improvement mechanisms (`learn`, `pollinate`,
-`distill`, `evolve`) exist in `lineage/framework/` but are **dormant** — built
-for the old per-repo model and not yet wired into the central engine. The fleet
+The framework's own self-improvement mechanisms — the grow-adjacent prompts
+(`distill`, `evolve`) and skills (`learn`, `pollinate`) — exist in
+`lineage/framework/` but are **dormant** — built for the old per-repo model
+and not yet wired into the central engine. The fleet
 below wires those up and fills the remaining gaps, forming a closed loop.
 
 ## The continuous-improvement loop

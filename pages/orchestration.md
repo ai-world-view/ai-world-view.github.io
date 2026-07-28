@@ -1,5 +1,5 @@
 ---
-title: AI Orchestration — how the atlas grows itself
+title: AI Orchestration — how the network grows itself
 description: >-
   How the ai-world-view hub orchestrates a federated network of self-growing
   country knowledge bases written from the model's own world view.
@@ -8,7 +8,7 @@ keywords:
   - self-growing knowledge bases
   - growth engine
   - model escalation
-  - ai world view atlas
+  - ai world view network
 layout: default
 permalink: /orchestration/
 sidebar:
@@ -33,7 +33,7 @@ This page documents the whole model, the growth process, and the strategy.
 
 <div class="alert alert-info d-flex align-items-start gap-2" role="alert">
   <i class="bi bi-info-circle-fill mt-1"></i>
-  <div><strong>In one sentence:</strong> a scheduled hub clones each country
+  <div><strong>In one sentence:</strong> a scheduled hub checks out each country
   repo, runs a three-model AI escalation (Haiku drafts → Sonnet expands → Opus
   polishes) to write new content from the model's own world view — no web —
   records the growth in a central seed, and publishes only the finished content
