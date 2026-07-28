@@ -16,7 +16,7 @@ sidebar:
 lastmod: 2026-07-28
 ---
 
-# Lineage
+# Lineage — the living country knowledge-base family
 
 Every repository here is a **self-growing knowledge base** — one country each —
 that writes its own content one daily *tick* at a time, drawn entirely from the

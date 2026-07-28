@@ -16,7 +16,7 @@ sidebar:
 lastmod: 2026-07-28
 ---
 
-# Content Hub
+# Content Hub — AI World View Site Dashboard
 
 {% assign theme_repo = site.data.hub.pages.theme_repo | split: '@' | first %}
 {% assign hub_repo = site.data.hub.org | append: '/' | append: site.data.hub.org | append: '.github.io' %}

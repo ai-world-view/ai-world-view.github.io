@@ -16,7 +16,7 @@ sidebar:
 lastmod: 2026-07-28
 ---
 
-# AI Orchestration
+# AI Orchestration — how the network grows itself
 
 This organization is a **federated network of self-growing knowledge bases** —
 one repository per country (`japan`, and growing). Each one writes its own
