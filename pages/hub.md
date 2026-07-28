@@ -6,7 +6,7 @@ description: >-
 keywords:
   - ai world view hub
   - content dashboard
-  - github pages fleet
+  - GitHub Pages fleet
   - self-growing knowledge bases
   - country site directory
 layout: default

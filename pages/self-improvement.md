@@ -16,7 +16,7 @@ sidebar:
 lastmod: 2026-07-28
 ---
 
-# Self-Improvement — models watching models
+# Self-Improvement — the fleet that watches the fleet
 
 The hub grows the knowledge bases ([AI Orchestration]({{ '/orchestration/' | relative_url }}))
 and spawns new countries on its own. But growing isn't enough — a system that

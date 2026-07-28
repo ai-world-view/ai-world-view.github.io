@@ -349,7 +349,7 @@ weighed and why this one was chosen.
 > hub and framework — a self-monitoring, continuously improving loop. See
 > [**Self-Improvement**]({{ '/self-improvement/' | relative_url }}).
 
-## At a glance
+## 7 · At a glance
 
 <div class="row g-3 my-2">
   <div class="col-md-6">
