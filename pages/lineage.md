@@ -1,14 +1,19 @@
 ---
-title: Lineage
+title: Lineage — the living country knowledge-base family
 description: >-
-  The living lineage of the ai-world-view knowledge base — every self-growing
-  country repo, its growth state, and how each was spawned from the last. The hub
-  orchestrates their growth centrally; each repo grows perpetually and references
-  the others.
+  Every self-growing country repo in the ai-world-view lineage, its growth
+  state, and how each was spawned — orchestrated centrally by the hub.
+keywords:
+  - ai world view lineage
+  - self-growing knowledge base
+  - country repos
+  - growth ticks
+  - central orchestration
 layout: default
 permalink: /lineage/
 sidebar:
   nav: hub
+lastmod: 2026-07-28
 ---
 
 # Lineage

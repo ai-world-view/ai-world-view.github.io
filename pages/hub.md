@@ -2,8 +2,7 @@
 title: Content Hub — AI World View Site Dashboard
 description: >-
   Browse and monitor every content site in the ai-world-view org. Each country
-  repo publishes its own GitHub Pages site; this dashboard tracks them all in
-  one place.
+  repo publishes its own GitHub Pages site; this dashboard tracks them all.
 keywords:
   - ai world view hub
   - content dashboard

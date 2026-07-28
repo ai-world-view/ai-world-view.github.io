@@ -1,13 +1,19 @@
 ---
-title: AI Orchestration
+title: AI Orchestration — how the atlas grows itself
 description: >-
   How the ai-world-view hub orchestrates a federated network of self-growing
-  knowledge bases — the architecture model, the growth process, and the strategy
-  behind an atlas that writes itself from the model's own world view.
+  country knowledge bases written from the model's own world view.
+keywords:
+  - ai orchestration
+  - self-growing knowledge bases
+  - growth engine
+  - model escalation
+  - ai world view atlas
 layout: default
 permalink: /orchestration/
 sidebar:
   nav: hub
+lastmod: 2026-07-28
 ---
 
 # AI Orchestration
@@ -193,7 +199,7 @@ Step by step, the engine (`grow-lineage.yml`) does this for a single repo:
    the engine's deterministic `local` SVG — it never blocks a publish.
 8. **Record** — persist the updated seed Evolution Log back to the hub (the tick
    clock advances), then **strip** every hub-owned file from the checkout.
-9. **Publish** — normalize front-matter dates, then commit and push **only** the
+9. **Publish** — normalize front matter dates, then commit and push **only** the
    new content + telemetry to the country repo, which rebuilds its own Pages
    site.
 

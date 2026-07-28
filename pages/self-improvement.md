@@ -1,13 +1,19 @@
 ---
-title: Self-Improvement
+title: Self-Improvement — the fleet that watches the fleet
 description: >-
-  The routine AI-agent fleet that reviews, updates, fixes, learns, aligns, and
-  evolves the ai-world-view hub and framework — a self-monitoring, continuously
-  improving "model for models."
+  The routine AI-agent fleet that reviews, fixes, and evolves the
+  ai-world-view hub and framework — a self-monitoring model for models.
+keywords:
+  - self-improvement fleet
+  - ai agents
+  - telemetry ledger
+  - docs warden
+  - fleet health
 layout: default
 permalink: /self-improvement/
 sidebar:
   nav: hub
+lastmod: 2026-07-28
 ---
 
 # Self-Improvement — models watching models
@@ -110,7 +116,7 @@ framework mechanism), or <span class="badge text-bg-secondary">upgrade</span>
 (make an existing deterministic tool agentic). Priorities **P0 → P2**. Agents
 marked **Built** run in this hub today; the rest are the designed roadmap.
 
-#### Monitor / Observe
+### Monitor / Observe
 
 | Agent | Pri | Origin | What it does |
 |---|---|---|---|
@@ -122,7 +128,7 @@ marked **Built** run in this hub today; the rest are the designed roadmap.
 | `fleet-cost-governor` | P2 | net-new | Cost rail on the orchestrator — pre-flight ceiling + budget writer |
 | `lineage-state-report` | P2 | net-new | Single human pane of glass; a pure aggregator over the other signals |
 
-#### Review
+### Review
 
 | Agent | Pri | Origin | What it does |
 |---|---|---|---|
@@ -132,7 +138,7 @@ marked **Built** run in this hub today; the rest are the designed roadmap.
 | `published-content-auditor` | P2 | upgrade | Audits published content for post-publish drift — internal-link rot, self-contradiction, orphans |
 | `world-view-consistency-auditor` | P2 | net-new | Checks that the published sites stay true to the concept: the model's own world view, with no web-sourced material creeping in |
 
-#### Fix
+### Fix
 
 | Agent | Pri | Origin | What it does |
 |---|---|---|---|
@@ -142,13 +148,13 @@ marked **Built** run in this hub today; the rest are the designed roadmap.
 | `supply-chain-security-warden` | P1 | net-new | Extends the CodeQL scan (**built**) with the Dependabot / action-pinning audit on secret-bearing workflows |
 | `tick-rollback-sentinel` | P2 | net-new | Bounded, human-initiated withdrawal of a bad publish — the rollback the system lacks |
 
-#### Align
+### Align
 
 | Agent | Pri | Origin | What it does |
 |---|---|---|---|
 | `ledger-tickclock-auditor` | P1 | rewire | Validates the tick-clock / Evolution Log against reality via a CI check gate |
 
-#### Update
+### Update
 
 | Agent | Pri | Origin | What it does |
 |---|---|---|---|
@@ -156,13 +162,13 @@ marked **Built** run in this hub today; the rest are the designed roadmap.
 | `claude-md-canon-warden` | P1 | rewire | Re-syncs each repo's drifted (stale old-model) CLAUDE.md back to canon |
 | `adapter-canon-aligner` | P2 | rewire | The backward `.claude/`-to-canon diff — keeps the framework converging, not fragmenting |
 
-#### Learn
+### Learn
 
 | Agent | Pri | Origin | What it does |
 |---|---|---|---|
 | `learn-flywheel` | P1 | rewire | Mines a stabilized telemetry window and embeds friction-removing edits into the canonical framework |
 
-#### Evolve
+### Evolve
 
 | Agent | Pri | Origin | What it does |
 |---|---|---|---|
