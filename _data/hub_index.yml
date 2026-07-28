@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 1
-  pages: 62
+  pages: 65
 repos:
 - name: japan
   title: japan
@@ -16,14 +16,14 @@ repos:
   pages_enabled: true
   scaffolded: true
   branch: main
-  pushed_at: '2026-07-25T07:45:26Z'
-  page_count: 62
+  pushed_at: '2026-07-27T09:08:07Z'
+  page_count: 65
   sections:
   - name: culture-society
     title: Culture & Society
     url: https://ai-world-view.github.io/japan/culture-society/
     source_url: https://github.com/ai-world-view/japan/tree/main/culture-society
-    count: 10
+    count: 11
   - name: economy
     title: Economy
     url: https://ai-world-view.github.io/japan/economy/
@@ -43,12 +43,12 @@ repos:
     title: History
     url: https://ai-world-view.github.io/japan/history/
     source_url: https://github.com/ai-world-view/japan/tree/main/history
-    count: 8
+    count: 9
   - name: people
     title: People
     url: https://ai-world-view.github.io/japan/people/
     source_url: https://github.com/ai-world-view/japan/tree/main/people
-    count: 11
+    count: 12
   root_pages:
   - title: Timeline
     url: https://ai-world-view.github.io/japan/TIMELINE/
