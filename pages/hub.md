@@ -129,7 +129,7 @@ that watches the fleet.
 
 > No hub data yet. Run `ruby scripts/sync-hub-metadata.rb` to populate the
 > dashboard from the repositories discovered via
-> [`_data/hub.yml`]({{ site.repository | prepend: "https://github.com/" }}/blob/main/_data/hub.yml),
+> [`_data/hub.yml`]({{ site.repository | join: '' | prepend: "https://github.com/" }}/blob/main/_data/hub.yml),
 > or wait for the scheduled **Hub Metadata Sync** workflow.
 
 {% endif %}
