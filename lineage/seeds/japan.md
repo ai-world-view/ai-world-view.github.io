@@ -115,8 +115,8 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 54 rows.
-- **Dedicated topic files** (54):
+- **README knowledge table**: 60 rows.
+- **Dedicated topic files** (60):
   - `geography/major-islands.md` — Major Islands
   - `geography/tokyo.md` — Tokyo
   - `geography/kyoto.md` — Kyoto
@@ -135,6 +135,9 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `history/taisho-period.md` — Taishō Period
   - `history/kamakura-period.md` — Kamakura Period
   - `history/russo-japanese-war.md` — Russo-Japanese War
+  - `history/genpei-war.md` — Genpei War
+  - `history/azuchi-momoyama-period.md` — Azuchi-Momoyama Period
+  - `history/nara-period.md` — Nara Period
   - `government-politics/diet-of-japan.md` — Diet of Japan
   - `government-politics/imperial-succession.md` — Imperial Succession
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
@@ -160,6 +163,8 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/ryoan-ji-temple.md` — Ryoan-ji Temple
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `culture-society/ukiyo-e-woodblock-prints.md` — Ukiyo-e Woodblock Prints
+  - `culture-society/haiku-poetry.md` — Haiku & Poetry
+  - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
   - `people/hirohito.md` — Hirohito
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/katsushika-hokusai.md` — Katsushika Hokusai
@@ -171,10 +176,11 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/ashikaga-takauji.md` — Ashikaga Takauji
   - `people/emperor-meiji.md` — Emperor Meiji
   - `people/nitobe-inazou.md` — Nitobe Inazō
-- **Categories with content**: Geography (10), History (8), Government & Politics (7),
-  Economy (8), Culture & Society (10), People (11) — all six populated; People now leads with
-  eleven topics, followed by Geography and Culture & Society with ten each, History and Economy
-  with eight each, and Government & Politics with seven.
+  - `people/yoshida-shoin.md` — Yoshida Shoin
+- **Categories with content**: Geography (10), History (11), Government & Politics (7),
+  Economy (8), Culture & Society (12), People (12) — all six populated; Culture & Society and
+  People now lead with twelve topics each, followed by History with eleven, Geography with ten,
+  Economy with eight, and Government & Politics with seven.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -183,10 +189,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (People now lists eleven topics; Geography and Culture & Society ten each; History and Economy eight each; Government & Politics seven).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all fifty-four topics).
-- **Master index**: `INDEX.md` — present (all fifty-four topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 54 dedicated topic files, using relative
+  (Culture & Society and People now list twelve topics each; History eleven; Geography ten; Economy eight; Government & Politics seven).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all sixty topics).
+- **Master index**: `INDEX.md` — present (all sixty topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 60 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -380,3 +386,12 @@ To reconstruct this knowledge base from DNA:
 - **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `culture-society/index.md`, `people/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — re-homing the 1904–1905 war and the Battle of Tsushima from the Meiji Restoration article to the dedicated Russo-Japanese War article and adding the 1902 Anglo-Japanese Alliance, the 1904 Port Arthur attack, the 1905 Port Arthur surrender, Mukden, and the Treaty of Portsmouth; re-homing the 1900 *Bushido* publication to the Nitobe biography and adding his 1862 birth, 1920 League appointment, and 1933 death; and adding Moronobu's c. 1680s single-sheet prints and Sharaku's 1794–1795 actor portraits (Ukiyo-e); and made cross-references bidirectional with back-links from `meiji-restoration.md`, `emperor-meiji.md`, `world-war-ii.md`, and `taisho-period.md` (Russo-Japanese War); `meiji-restoration.md`, `emperor-meiji.md`, `samurai-bushido.md`, and `taisho-period.md` (Nitobe Inazō); and `katsushika-hokusai.md`, `edo-culture-arts.md`, `edo-period.md`, and `tokyo.md` (Ukiyo-e Woodblock Prints); verified all internal Markdown links resolve.
 - **Roadmap**: moved the three completed items into Done under G1-T19 and cleared the Now section.
 - **Seed** (`sync-seed`): regenerated §4 (54 topic files, 54 README rows; People eleven, Geography and Culture & Society ten each, History and Economy eight each, Government & Politics seven) and §5 (refreshed timeline/master index, cross-refs in all 54 files).
+
+### G1-T20 — 2026-07-28 — Tick 20: added the Genpei War, the Azuchi-Momoyama Period, and Haiku & Poetry, and reconciled three orphaned T18 articles
+
+- **Content added** (3 dedicated topic files): `history/genpei-war.md` (the 1180–1185 Minamoto–Taira civil war — the Hōgen and Heiji rebellions and Taira ascendancy, Prince Mochihito's call to arms, the battles of Ishibashiyama, Kurikara, Ichi-no-Tani, Yashima, and Dan-no-Ura, the drowning of the child Emperor Antoku and the loss of the Kusanagi sword, Yoshitsune's tragic fall, the *Heike monogatari*, and the founding of the Kamakura shogunate), `history/azuchi-momoyama-period.md` (the 1568–1603 unification era — Oda Nobunaga's firearms revolution and destruction of Enryaku-ji, the Honnō-ji Incident, Toyotomi Hideyoshi's *kampaku* rule, land survey, Sword Hunt, and Korean invasions, Tokugawa Ieyasu's victory at Sekigahara, the castle-building and Kanō/Rikyū/nanban cultural florescence, and the Christian century and its suppression), and `culture-society/haiku-poetry.md` (the 5–7–5 haiku and the broader *waka*/*tanka* tradition — the *renga* origins, Matsuo Bashō and *Oku no Hosomichi*, the four great masters Bashō, Buson, Issa, and Shiki, the aesthetics of *kigo*, *kireji*, *ma*, *wabi-sabi*, and *karumi*, the *Man'yōshū*/*Kokinshū* anthologies, and the international influence on Imagism and the Beats). History now holds eleven topics; Culture & Society twelve.
+- **Reconciliation of three T18 orphans**: the tick-18 escalation (commit `ed8f964`) had published `history/nara-period.md`, `culture-society/modern-cinema-anime.md`, and `people/yoshida-shoin.md` to `main` but — because that tick's enhance pass never ran (see the G1-T18 note above) — they were never linked from the README, the category indices, `INDEX.md`, or `TIMELINE.md`, and their `## Related` blocks used bare `BEGIN/END GENERATED: crossrefs` text (which the remote Jekyll theme renders as literal visible text rather than an HTML comment). This tick integrated all three into the structure and fixed their markers, bringing the repo to a consistent 60 topics / 60 README rows.
+- **README**: knowledge table expanded from 54 to 60 rows — the three new topics plus the three now-linked T18 orphans (Nara Period, Modern Cinema & Anime, Yoshida Shoin).
+- **Enhance pass**: verified factual accuracy across the three new files from the model's own knowledge (Genpei battle dates and the Dan-no-Ura drowning of Antoku with Nii-no-Ama; the Azuchi-Momoyama unification chronology, Nagashino 1575, Honnō-ji 1582, Sekigahara 1600; the haiku masters' dates, Bashō's 1686 "old pond" and 1689 journey, and the *Man'yōshū*/*Kokinshū* datings), and confirmed front matter (`title`/`date`/`category`) on all three; fixed a broken cross-reference in `haiku-poetry.md` (`[Buddhism in Japan](buddhism-japan.md)` → `[Buddhist Schools & Traditions](buddhist-schools.md)`); in the reconciled orphans, converted all three `## Related` blocks from bare-text markers to canonical `<!-- BEGIN/END GENERATED: crossrefs -->` HTML comments and normalized redundant same-category `../<cat>/` link paths to bare filenames; in `nara-period.md` corrected an anachronism ("the shogunate-era government" issuing the 723 land edict → "the imperial court," there being no shogunate until 1192) and the edict's romanization (*sanzei ichigen no hō* → *Sanze isshin no hō*, 三世一身法); and in `modern-cinema-anime.md` standardized the "Taisho Period" cross-reference label to "Taishō Period."
+- **Structure** (`build-structure`): added all six topics (three new + three reconciled) to their category indices (`history/index.md`, `culture-society/index.md`, `people/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — re-homing the 1180–1185 Genpei War and the Dan-no-Ura entry to the dedicated Genpei War article and adding Kurikara (1183), Ichi-no-Tani (1184), Yashima (1185), and Yoshitsune's 1189 death; a new 1568–1603 Azuchi-Momoyama span with Enryaku-ji (1571), Nagashino (1575), the Bateren Edict (1587), unification (1590), the Korean invasions (1592–1598), and Hideyoshi's death (1598), re-homing Nagashino, Honnō-ji, and the Sword Hunt to it; the *Man'yōshū* (c. 759), Bashō's birth (1644), "old pond" (1686), journey (1689), and death (1694), and Shiki's *Hototogisu* (1897) for Haiku & Poetry; the Taihō Code (701), the 710 capital move, and the 710–794 Nara span; the first film screenings (1897), *Rashōmon* (1950), *Astro Boy* (1963), Studio Ghibli (1985), and *Spirited Away* (2001) for Modern Cinema & Anime; and Yoshida Shoin's birth (1830), Shōka Sonjuku (1857), and execution (1859) — and made cross-references bidirectional with back-links from `heian-period.md`, `kamakura-period.md`, `samurai-bushido.md`, and `minamoto-no-yoritomo.md` (Genpei War); `sengoku-period.md`, `edo-period.md`, and `tokugawa-ieyasu.md` (Azuchi-Momoyama); `edo-culture-arts.md`, `edo-period.md`, `murasaki-shikibu.md`, and `nara-period.md` (Haiku & Poetry); `heian-period.md` and `buddhist-schools.md` (Nara Period); `ukiyo-e-woodblock-prints.md` (Modern Cinema & Anime); and `meiji-restoration.md` (Yoshida Shoin); verified all internal Markdown links resolve.
+- **Seed** (`sync-seed`): regenerated §4 (60 topic files, 60 README rows; Culture & Society and People twelve each, History eleven, Geography ten, Economy eight, Government & Politics seven) and §5 (refreshed timeline/master index, cross-refs in all 60 files).
