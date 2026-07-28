@@ -2,7 +2,7 @@
 title: Self-Improvement — the fleet that watches the fleet
 description: >-
   The routine AI-agent fleet that reviews, fixes, and evolves the
-  ai-world-view hub and framework — a self-monitoring model for models.
+  ai-world-view hub and framework — a continuously self-improving system.
 keywords:
   - self-improvement fleet
   - ai agents
@@ -214,4 +214,6 @@ guardrails, and the closed-loop rationale — is recorded in
 [**ADR-0003**](https://github.com/year-of-ai/year-of-ai.github.io/blob/main/lineage/decisions/ADR-0003-self-improving-agent-fleet.md)
 in the reference `year-of-ai` hub, from which this org was planted. It is the
 synthesized output of a 14-agent design workflow (4 architect lenses →
-synthesis → 3 adversarial critics → finalize).
+synthesis → 3 adversarial critics → finalize). Or browse the
+[content hub]({{ '/hub/' | relative_url }}) to see the published output those
+agents protect.

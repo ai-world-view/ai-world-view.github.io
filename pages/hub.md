@@ -20,12 +20,19 @@ lastmod: 2026-07-28
 
 {% assign theme_repo = site.data.hub.pages.theme_repo | split: '@' | first %}
 {% assign hub_repo = site.data.hub.org | append: '/' | append: site.data.hub.org | append: '.github.io' %}
-Every country repository in the organization publishes **its own** GitHub Pages
+This is the live dashboard for every knowledge-base site in the ai-world-view
+org — track each country repo's content count, section breakdown, and live
+status below. Every country repository publishes **its own** GitHub Pages
 site — content stays in each repo and renders with the shared
-[zer0-mistakes](https://github.com/{{ theme_repo }}) theme
-via `remote_theme`. This page is the dashboard that tracks them all; the data
-below is refreshed automatically by the
+[zer0-mistakes](https://github.com/{{ theme_repo }}) theme via `remote_theme`;
+the data below is refreshed automatically by the
 [hub metadata sync](https://github.com/{{ hub_repo }}/blob/main/scripts/sync-hub-metadata.rb).
+
+See the [Lineage dashboard]({{ '/lineage/' | relative_url }}) for growth state
+per country, [AI Orchestration]({{ '/orchestration/' | relative_url }}) for how
+the growth engine works, and
+[Self-Improvement]({{ '/self-improvement/' | relative_url }}) for the fleet
+that watches the fleet.
 
 {% assign hub = site.data.hub_index %}
 {% if hub and hub.repos and hub.repos.size > 0 %}

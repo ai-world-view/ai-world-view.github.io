@@ -106,7 +106,8 @@ model, the growth process, and the strategy behind it.
 > the model's own world view (no web sources) through a Haiku → Sonnet → Opus
 > escalation, then publishes to the country's own Pages site. See the
 > [content hub]({{ '/hub/' | relative_url }}) for published-page counts per
-> country.
+> country, and [Self-Improvement]({{ '/self-improvement/' | relative_url }})
+> for the agent fleet that monitors and evolves the growth system.
 
 {% else %}
 

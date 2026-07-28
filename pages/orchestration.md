@@ -40,7 +40,7 @@ This page documents the whole model, the growth process, and the strategy.
   back to the country's own site — forever.</div>
 </div>
 
-## 1 · The model — one hub, many living repos
+## 1 · Architecture — one hub, many living repos
 
 Growth is **centralized**. The hub owns *what grows, how, and when*; the country
 repos own *only their content and their published site*. Nothing that grows a
