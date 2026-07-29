@@ -17,8 +17,8 @@
 #   role: Job title or role (optional)
 
 default:
-  name: "Atlas-Mistakes Team"
-  bio: "The collective voice of the Atlas-Mistakes Jekyll theme development team."
+  name: "AI World View Team"
+  bio: "The collective voice of the AI World View hub — the autonomous atlas of self-growing country knowledge bases."
   avatar: "/images/gravatar-small.png"
   github: "bamr87"
   website: "https://bamr87.github.io/zer0-mistakes/"

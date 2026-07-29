@@ -1,4 +1,4 @@
-# Cloudflare Worker config for the Atlas-Mistakes AI chat proxy.
+# Cloudflare Worker config for the AI World View AI chat proxy.
 # Copy to wrangler.toml, fill in the placeholders, then `wrangler deploy`.
 #
 # Secrets are NOT set here — store them with `wrangler secret put <NAME>`:

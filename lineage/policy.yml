@@ -1,12 +1,14 @@
 # =============================================================================
 # Canonical growth policy for the ai-world-view lineage.
 # =============================================================================
-# The hub (ai-world-view/ai-world-view.github.io) orchestrates growth CENTRALLY: it
-# pulls each country's seed from lineage/seeds/<year>.md, clones the country repo,
-# runs the 3-tier content escalation, and pushes the new content back. The year
-# repos hold only content + a GitHub Pages _config.yml + .claude/ + telemetry/.
+# The hub (ai-world-view/ai-world-view.github.io) orchestrates growth CENTRALLY:
+# it pulls each country's seed from lineage/seeds/<country>.md, clones the
+# country repo, runs the 3-tier content escalation, and pushes the new content
+# back. The country repos hold only content + a GitHub Pages _config.yml +
+# .claude/ + telemetry/.
 #
-# Read by: scripts/lib/hub.rb / the hub grow workflow (.github/workflows/grow.yml).
+# Read by: .github/workflows/orchestrate.yml (cadence) and
+# .github/workflows/grow-lineage.yml (model tiers + preview).
 
 # 3-tier content escalation — the model used for each pass of a growth tick.
 models:
@@ -24,10 +26,31 @@ lifecycle:
   archive: false
   delete: false
 
-# Cadence (UTC). The hub's orchestrate workflow runs daily and grows the repos.
+# Cadence (UTC). The hub's orchestrate workflow runs daily; repos_per_run
+# bounds how many members it grows per run (stalest-first rotation, so every
+# member still grows perpetually — just not all of them every day). With one
+# member today the throttle is a no-op, but the keys keep this policy aligned
+# with the year-of-ai reference hub as the roster grows. Set 0 to grow every
+# member every run.
 cadence:
   cron: "30 5 * * *"
   ticks_per_run: 1
+  repos_per_run: 4
+  selection: stalest-first
+
+# Preview banners — the grow tick's "Illustrate" step (grow-lineage.yml) runs
+# scripts/claude_svg_banner.py over each tick's new content: Claude AUTHORS a
+# content-aware SVG banner per article (~12 KB vector, no rasterizer), stamped
+# into `preview:` front matter so member pages ship cover art + og:images.
+# Falls back to the zer0-image-generator engine's deterministic `local` SVG
+# when no Claude credential is available. Org-wide art direction lives HERE
+# (not in the workflow) — same policy-over-workflow rule as the model tiers.
+preview:
+  enabled: true
+  model: "claude-sonnet-4-6"      # authoring model for the SVG banner
+  style: "flat vector world-map cartography, muted earth tones, atlas-plate composition, clean geographic shapes"
+  style_modifiers: "engraved-map texture, compass-rose accents, parchment undertone, restrained palette"
+  output_dir: "assets/images/previews"
 
 # Auth (org secrets the hub grow workflow needs):
 #   CLAUDE_CODE_OAUTH_TOKEN  — primary auth for every model pass (subscription)
