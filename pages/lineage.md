@@ -89,7 +89,9 @@ model, the growth process, and the strategy behind it.
         <a class="btn btn-sm btn-outline-secondary" href="{{ m.url }}" target="_blank" rel="noopener">
           <i class="bi bi-github me-1"></i>Source
         </a>
-        <a class="btn btn-sm btn-outline-secondary" href="{{ m.url }}/actions/workflows/grow.yml" target="_blank" rel="noopener" title="Growth heartbeat">
+        {% comment %} Member repos carry no workflows under the central model —
+           the growth heartbeat lives in the hub's grow-lineage engine. {% endcomment %}
+        <a class="btn btn-sm btn-outline-secondary" href="https://github.com/{{ lin.org }}/{{ lin.org }}.github.io/actions/workflows/grow-lineage.yml" target="_blank" rel="noopener" title="Growth heartbeat (hub engine)">
           <i class="bi bi-activity me-1"></i>Ticks
         </a>
       </div>
