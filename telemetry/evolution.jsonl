@@ -1,0 +1,1 @@
+{"schema":"evolution-telemetry/v1","run_id":"30434152484","repo":"japan","conclusion":"failure","is_error":null,"num_turns":65,"input_tokens":112,"output_tokens":39353,"cost_usd":5.5352205,"framework_sha":"f450079333500e30071e0712f4b58d739a1feff3","started":"2026-07-29T08:06:03Z","ended":"2026-07-29T08:55:19Z"}
