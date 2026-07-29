@@ -44,7 +44,10 @@ question, consult the reference hub and keep this replant aligned with it.
   no manual repos list) and the generated `hub_index.yml` + `navigation/hub.yml`.
 - `scripts/` — hub tooling (`sync-hub-metadata.rb`, `provision-org-sites.rb`,
   `lib/hub.rb`), the lineage ledger refresher (`sync-lineage-state.rb`), the
-  new-country planter (`plant-lineage.rb`), the PR reviewer (`content-review.rb`),
+  new-country planter (`plant-lineage.rb` — resumes into an existing EMPTY
+  repo left by an interrupted plant, refuses one with content; run in CI
+  after `gh auth setup-git` so its git pushes authenticate), the PR reviewer
+  (`content-review.rb`),
   the docs-coverage engine (`docs-warden.rb`), the fleet-health digest
   (`fleet-health.rb`), the front-matter date normalizer
   (`normalize-front-matter-dates.rb` — the grow tick's publish gate and the
