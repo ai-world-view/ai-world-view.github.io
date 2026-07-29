@@ -115,8 +115,8 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 60 rows.
-- **Dedicated topic files** (60):
+- **README knowledge table**: 63 rows.
+- **Dedicated topic files** (63):
   - `geography/major-islands.md` — Major Islands
   - `geography/tokyo.md` — Tokyo
   - `geography/kyoto.md` — Kyoto
@@ -138,6 +138,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `history/genpei-war.md` — Genpei War
   - `history/azuchi-momoyama-period.md` — Azuchi-Momoyama Period
   - `history/nara-period.md` — Nara Period
+  - `history/heisei-period.md` — Heisei Period
   - `government-politics/diet-of-japan.md` — Diet of Japan
   - `government-politics/imperial-succession.md` — Imperial Succession
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
@@ -145,6 +146,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `government-politics/liberal-democratic-party.md` — Liberal Democratic Party
   - `government-politics/supreme-court.md` — Supreme Court of Japan
   - `government-politics/ministry-economy-trade-industry.md` — Ministry of Economy, Trade and Industry (METI)
+  - `government-politics/electoral-system.md` — Electoral System of Japan
   - `economy/bank-of-japan.md` — Bank of Japan
   - `economy/technology-manufacturing.md` — Technology & Manufacturing
   - `economy/bubble-economy.md` — 1980s Bubble Economy
@@ -177,10 +179,11 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/emperor-meiji.md` — Emperor Meiji
   - `people/nitobe-inazou.md` — Nitobe Inazō
   - `people/yoshida-shoin.md` — Yoshida Shoin
-- **Categories with content**: Geography (10), History (11), Government & Politics (7),
-  Economy (8), Culture & Society (12), People (12) — all six populated; Culture & Society and
-  People now lead with twelve topics each, followed by History with eleven, Geography with ten,
-  Economy with eight, and Government & Politics with seven.
+  - `people/akihito.md` — Akihito
+- **Categories with content**: Geography (10), History (12), Government & Politics (8),
+  Economy (8), Culture & Society (12), People (13) — all six populated; People now leads with
+  thirteen topics, followed by Culture & Society and History with twelve each, Geography with ten,
+  and Economy and Government & Politics with eight each.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -189,10 +192,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Culture & Society and People now list twelve topics each; History eleven; Geography ten; Economy eight; Government & Politics seven).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all sixty topics).
-- **Master index**: `INDEX.md` — present (all sixty topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 60 dedicated topic files, using relative
+  (People now lists thirteen topics; Culture & Society and History twelve each; Geography ten; Economy and Government & Politics eight each).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all sixty-three topics).
+- **Master index**: `INDEX.md` — present (all sixty-three topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -395,3 +398,11 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: verified factual accuracy across the three new files from the model's own knowledge (Genpei battle dates and the Dan-no-Ura drowning of Antoku with Nii-no-Ama; the Azuchi-Momoyama unification chronology, Nagashino 1575, Honnō-ji 1582, Sekigahara 1600; the haiku masters' dates, Bashō's 1686 "old pond" and 1689 journey, and the *Man'yōshū*/*Kokinshū* datings), and confirmed front matter (`title`/`date`/`category`) on all three; fixed a broken cross-reference in `haiku-poetry.md` (`[Buddhism in Japan](buddhism-japan.md)` → `[Buddhist Schools & Traditions](buddhist-schools.md)`); in the reconciled orphans, converted all three `## Related` blocks from bare-text markers to canonical `<!-- BEGIN/END GENERATED: crossrefs -->` HTML comments and normalized redundant same-category `../<cat>/` link paths to bare filenames; in `nara-period.md` corrected an anachronism ("the shogunate-era government" issuing the 723 land edict → "the imperial court," there being no shogunate until 1192) and the edict's romanization (*sanzei ichigen no hō* → *Sanze isshin no hō*, 三世一身法); and in `modern-cinema-anime.md` standardized the "Taisho Period" cross-reference label to "Taishō Period."
 - **Structure** (`build-structure`): added all six topics (three new + three reconciled) to their category indices (`history/index.md`, `culture-society/index.md`, `people/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — re-homing the 1180–1185 Genpei War and the Dan-no-Ura entry to the dedicated Genpei War article and adding Kurikara (1183), Ichi-no-Tani (1184), Yashima (1185), and Yoshitsune's 1189 death; a new 1568–1603 Azuchi-Momoyama span with Enryaku-ji (1571), Nagashino (1575), the Bateren Edict (1587), unification (1590), the Korean invasions (1592–1598), and Hideyoshi's death (1598), re-homing Nagashino, Honnō-ji, and the Sword Hunt to it; the *Man'yōshū* (c. 759), Bashō's birth (1644), "old pond" (1686), journey (1689), and death (1694), and Shiki's *Hototogisu* (1897) for Haiku & Poetry; the Taihō Code (701), the 710 capital move, and the 710–794 Nara span; the first film screenings (1897), *Rashōmon* (1950), *Astro Boy* (1963), Studio Ghibli (1985), and *Spirited Away* (2001) for Modern Cinema & Anime; and Yoshida Shoin's birth (1830), Shōka Sonjuku (1857), and execution (1859) — and made cross-references bidirectional with back-links from `heian-period.md`, `kamakura-period.md`, `samurai-bushido.md`, and `minamoto-no-yoritomo.md` (Genpei War); `sengoku-period.md`, `edo-period.md`, and `tokugawa-ieyasu.md` (Azuchi-Momoyama); `edo-culture-arts.md`, `edo-period.md`, `murasaki-shikibu.md`, and `nara-period.md` (Haiku & Poetry); `heian-period.md` and `buddhist-schools.md` (Nara Period); `ukiyo-e-woodblock-prints.md` (Modern Cinema & Anime); and `meiji-restoration.md` (Yoshida Shoin); verified all internal Markdown links resolve.
 - **Seed** (`sync-seed`): regenerated §4 (60 topic files, 60 README rows; Culture & Society and People twelve each, History eleven, Geography ten, Economy eight, Government & Politics seven) and §5 (refreshed timeline/master index, cross-refs in all 60 files).
+
+### G1-T21 — 2026-07-29 — Tick 21: added the Heisei Period, the Electoral System of Japan, and Akihito
+
+- **Content added** (3 dedicated topic files): `history/heisei-period.md` (the 1989–2019 era of Emperor Akihito — the bursting of the 1980s bubble and the Mieno tightening, the deflationary Lost Decades and the 1997–1998 banking failures (Hokkaido Takushoku, Yamaichi, LTCB), the 1995 Kobe earthquake and Aum Shinrikyō sarin attack, Koizumi's structural reforms and Big Bang, the 2011 Tōhoku earthquake and Fukushima Daiichi meltdown, Abenomics and Kuroda's QQE, the Cool Japan cultural ascendancy, and the 2019 Reiwa transition), `government-politics/electoral-system.md` (Japan's mixed-member electoral framework — the postwar SNTV multi-member districts and the intra-party faction politics they bred, the 1994 Hosokawa reform to single-member districts plus 11-bloc proportional representation, the seat-amplification effect across the 1996–2024 general elections, the more proportional House of Councillors, duplex candidacy and malapportionment litigation, and the 2024 funding scandal and minority government), and `people/akihito.md` (the 125th Emperor, b. 1933, r. 1989–2019 — his Vining education and 1959 marriage to the commoner Michiko Shōda, the humanized "people's monarchy" of disaster visits and Saipan/Peleliu war-memorial pilgrimages, his ichthyological research on gobioid fishes, the 2005–2006 succession debate, and his 2016 address and 2019 abdication under the special one-time law, the first in over two centuries). History now holds twelve topics, Government & Politics eight, and People thirteen.
+- **README**: knowledge table expanded from 60 to 63 rows.
+- **Enhance pass**: in `akihito.md` corrected his parentage and birth order (eldest son and fifth child of the reigning Emperor Hirohito, who had acceded in 1926 — the draft wrongly called him the "fourth child of Crown Prince Hirohito" and dated Hirohito's enthronement to 1947), removed a fabricated tutor claim (Colonel Bonner Fellers) while keeping the documented Elizabeth Gray Vining, and de-duplicated the abdication paragraph (clarifying that the June 2017 special law did not amend the Imperial Household Law itself); in `heisei-period.md` fixed the summary, which had described the era as "encompassing … the 124th Emperor Hirohito's final days" (Heisei began the day after Hirohito's death and was entirely Akihito's reign); in `electoral-system.md` corrected a mislabeled "SMD system, in which multiple LDP candidates from the same district competed" to the **SNTV multi-member** system (single-member districts return one member), fixed the House of Councillors figures (248 total = 148 prefectural-district + 100 nationwide PR, not the draft's reversed "~100 district / ~145 PR / 245 total"), removed a fabricated "5% threshold" for the lower-house PR tier, softened the 1996 result from an overstated "working majority" (the LDP won 239 of 500), and corrected the *chū-senkyoku-sei* term; verified front matter (`title`/`date`/`category`, each a single ISO date) and internal links on all three files.
+- **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `government-politics/index.md`, `people/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — Akihito's 1933 birth, 1959 marriage, 2005 Saipan and 2015 Peleliu visits, and 2016 abdication address; the 1989 start of Heisei, the 1995 Aum sarin attack, the 1997 Hokkaido Takushoku collapse, and the 2019 Reiwa announcement; and the 1996 first mixed-member election and the 2005 postal snap election (Electoral System) — and made cross-references bidirectional with back-links from `hirohito.md`, `emperor-meiji.md`, `imperial-succession.md`, and `imperial-household.md` (Akihito); `bubble-economy.md`, `lost-decade.md`, `bank-of-japan.md`, `abe-shinzo.md`, `hirohito.md`, `diet-of-japan.md`, and `liberal-democratic-party.md` (Heisei Period); and `diet-of-japan.md`, `liberal-democratic-party.md`, `postwar-constitution.md`, `supreme-court.md`, and `abe-shinzo.md` (Electoral System); verified all internal Markdown links resolve.
+- **Seed** (`sync-seed`): regenerated §4 (63 topic files, 63 README rows; People thirteen, Culture & Society and History twelve each, Geography ten, Economy and Government & Politics eight each) and §5 (refreshed timeline/master index, cross-refs in all 63 files).
