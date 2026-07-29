@@ -316,11 +316,17 @@ weighed and why this one was chosen.
   paused org-wide simply by not dispatching.
 - **Escalate, don't repeat.** Cheap models do the broad first-draft work; the
   frontier model is reserved for the judgment-heavy finish.
-- **New countries spawn tangentially.** As the frontier matures, the hub plants
-  a fresh repo whose subject is chosen to be *tangential* to the newest one —
-  neighbors, trading partners, cultural kin — so the atlas branches outward into
-  related territory rather than looping. The frontier today is `japan`, the
-  org's founding member.
+- **New countries spawn tangentially — and automatically.** As the frontier
+  matures, the hub plants a fresh repo whose subject is chosen to be
+  *tangential* to the newest one — neighbors, trading partners, cultural kin —
+  so the atlas branches outward into related territory rather than looping.
+  Spawning is **maturity-gated automation**: once every member has logged the
+  policy's `spawn.frontier_ticks` growth cycles and the roster is under
+  `spawn.max_members`, the daily orchestrate run dispatches the plant-lineage
+  workflow — a frontier-model DECIDE pass authors the tangential country seed
+  from the model's own knowledge (no web), the deterministic planter creates
+  the repo, and the next tick grows it. The frontier today is `japan`, the
+  org's founding member; its first sibling will be planted by this mechanism.
 - **The world view is the source.** Everything published is the model's own
   knowledge — an honest snapshot of how the AI sees each country, with no web
   research shoring it up. That is the point, not a limitation.

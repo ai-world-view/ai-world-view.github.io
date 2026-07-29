@@ -14,7 +14,9 @@ orchestrates their growth.
 - `policy.yml` — the **canonical growth policy**: the 3-tier model escalation
   (Haiku → Sonnet → Opus), perpetual-growth rules, `cadence.repos_per_run`
   (stalest-first rotation — enforced by `orchestrate.yml`), the `preview:`
-  banner art direction (the grow tick's Illustrate step), and auth.
+  banner art direction (the grow tick's Illustrate step), the `spawn:` gate
+  (maturity-gated automatic country spawning via `plant-lineage.yml` —
+  year-of-ai ADR-0007), and auth.
 - `framework/` — the **canonical agent toolkit** (`prompts/`, `skills/`,
   `agents/`) that the hub's central grow workflow stages into a cloned country
   repo to run a tick. `workflows/` and `scripts/lineage.sh` are the retired

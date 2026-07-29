@@ -71,7 +71,10 @@ question, consult the reference hub and keep this replant aligned with it.
 - `.github/workflows/` — content/site: `hub-sync.yml`, `ai-content-review.yml`;
   the **growth engine** `orchestrate.yml` (daily scheduler) + `grow-lineage.yml`
   (grows one country repo per dispatch, including the **Illustrate** SVG-banner
-  step); and the **self-improvement fleet** (ADR-0003 doctrine, see the
+  step) + `plant-lineage.yml` (spawns ONE new tangential country repo — auto
+  mode is maturity-gated by `lineage/policy.yml` `spawn:` and dispatched by
+  orchestrate; manual mode keeps the two-key confirm); and the
+  **self-improvement fleet** (ADR-0003 doctrine, see the
   reference hub) `telemetry-ledger.yml` (evolution ledger),
   `framework-pr-reviewer.yml` (gates framework PRs), `docs-warden.yml` (doc
   coverage), `pages-deploy-sentinel.yml` (member site liveness),
@@ -94,9 +97,17 @@ them lives here in the hub:
   truth. Every seed's `source_strategy` is the org's defining rule: **write from
   the model's own knowledge — no web sources, no fetch, no search**.
 - **Policy** is centralized — `lineage/policy.yml` sets the 3-tier model
-  escalation, the perpetual-growth rules, and the `preview:` art direction for
-  the SVG banners. Every tick is a grow tick: repos are **never** consolidated,
-  archived, or deleted; new countries spawn tangentially from the frontier.
+  escalation, the perpetual-growth rules, the `preview:` art direction for
+  the SVG banners, and the **spawn gate** (`spawn:` —
+  enabled/frontier_ticks/max_members). Every tick is a grow tick: repos are
+  **never** consolidated, archived, or deleted; new countries spawn
+  tangentially from the frontier — **automatically** (year-of-ai ADR-0007):
+  once every member has logged `spawn.frontier_ticks` growth cycles and the
+  roster is under `spawn.max_members`, orchestrate dispatches
+  `plant-lineage.yml`, whose DECIDE pass authors a tangential country seed
+  (adjacent geography / strong ties, from the model's own knowledge — no web)
+  and whose planter (`plant-lineage.rb`) creates the member repo. The manual
+  two-key path (`--apply --confirm <id>`) remains as override/recovery.
 - **The framework** is centralized — `lineage/framework/` is the canonical agent
   toolkit (`prompts/`, `skills/`, `agents/`, `scripts/`, a reference
   `workflows/grow.yml`) staged into a cloned country repo at tick time, then
