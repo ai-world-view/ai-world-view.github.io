@@ -138,7 +138,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `history/genpei-war.md` — Genpei War
   - `history/azuchi-momoyama-period.md` — Azuchi-Momoyama Period
   - `history/nara-period.md` — Nara Period
-  - `history/heisei-period.md` — Heisei Period
+  - `history/japanese-colonialism.md` — Japanese Colonialism and Territorial Expansion
   - `government-politics/diet-of-japan.md` — Diet of Japan
   - `government-politics/imperial-succession.md` — Imperial Succession
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
@@ -146,7 +146,6 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `government-politics/liberal-democratic-party.md` — Liberal Democratic Party
   - `government-politics/supreme-court.md` — Supreme Court of Japan
   - `government-politics/ministry-economy-trade-industry.md` — Ministry of Economy, Trade and Industry (METI)
-  - `government-politics/electoral-system.md` — Electoral System of Japan
   - `economy/bank-of-japan.md` — Bank of Japan
   - `economy/technology-manufacturing.md` — Technology & Manufacturing
   - `economy/bubble-economy.md` — 1980s Bubble Economy
@@ -155,6 +154,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `economy/financial-system.md` — Japanese Financial System
   - `economy/financial-sector-regulation.md` — Financial Sector Regulation
   - `economy/labor-market-and-employment.md` — Labor Market & Employment
+  - `economy/japanese-corporations-zaibatsu.md` — Japanese Corporations & the Zaibatsu System
   - `culture-society/shinto-religion.md` — Shinto Religion
   - `culture-society/samurai-bushido.md` — Samurai & Bushido
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
@@ -167,6 +167,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/ukiyo-e-woodblock-prints.md` — Ukiyo-e Woodblock Prints
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
   - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
+  - `culture-society/kabuki-theater.md` — Kabuki Theater
   - `people/hirohito.md` — Hirohito
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/katsushika-hokusai.md` — Katsushika Hokusai
@@ -179,11 +180,10 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/emperor-meiji.md` — Emperor Meiji
   - `people/nitobe-inazou.md` — Nitobe Inazō
   - `people/yoshida-shoin.md` — Yoshida Shoin
-  - `people/akihito.md` — Akihito
-- **Categories with content**: Geography (10), History (12), Government & Politics (8),
-  Economy (8), Culture & Society (12), People (13) — all six populated; People now leads with
-  thirteen topics, followed by Culture & Society and History with twelve each, Geography with ten,
-  and Economy and Government & Politics with eight each.
+- **Categories with content**: Geography (10), History (12), Government & Politics (7),
+  Economy (9), Culture & Society (13), People (12) — all six populated; Culture & Society now
+  leads with thirteen topics, followed by History and People with twelve each, Geography with ten,
+  Economy with nine, and Government & Politics with seven.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -192,7 +192,7 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (People now lists thirteen topics; Culture & Society and History twelve each; Geography ten; Economy and Government & Politics eight each).
+  (Culture & Society now lists thirteen topics; History and People twelve each; Geography ten; Economy nine; Government & Politics seven).
 - **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all sixty-three topics).
 - **Master index**: `INDEX.md` — present (all sixty-three topics grouped by taxonomy; every category populated).
 - **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
@@ -406,3 +406,11 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: in `akihito.md` corrected his parentage and birth order (eldest son and fifth child of the reigning Emperor Hirohito, who had acceded in 1926 — the draft wrongly called him the "fourth child of Crown Prince Hirohito" and dated Hirohito's enthronement to 1947), removed a fabricated tutor claim (Colonel Bonner Fellers) while keeping the documented Elizabeth Gray Vining, and de-duplicated the abdication paragraph (clarifying that the June 2017 special law did not amend the Imperial Household Law itself); in `heisei-period.md` fixed the summary, which had described the era as "encompassing … the 124th Emperor Hirohito's final days" (Heisei began the day after Hirohito's death and was entirely Akihito's reign); in `electoral-system.md` corrected a mislabeled "SMD system, in which multiple LDP candidates from the same district competed" to the **SNTV multi-member** system (single-member districts return one member), fixed the House of Councillors figures (248 total = 148 prefectural-district + 100 nationwide PR, not the draft's reversed "~100 district / ~145 PR / 245 total"), removed a fabricated "5% threshold" for the lower-house PR tier, softened the 1996 result from an overstated "working majority" (the LDP won 239 of 500), and corrected the *chū-senkyoku-sei* term; verified front matter (`title`/`date`/`category`, each a single ISO date) and internal links on all three files.
 - **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `government-politics/index.md`, `people/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — Akihito's 1933 birth, 1959 marriage, 2005 Saipan and 2015 Peleliu visits, and 2016 abdication address; the 1989 start of Heisei, the 1995 Aum sarin attack, the 1997 Hokkaido Takushoku collapse, and the 2019 Reiwa announcement; and the 1996 first mixed-member election and the 2005 postal snap election (Electoral System) — and made cross-references bidirectional with back-links from `hirohito.md`, `emperor-meiji.md`, `imperial-succession.md`, and `imperial-household.md` (Akihito); `bubble-economy.md`, `lost-decade.md`, `bank-of-japan.md`, `abe-shinzo.md`, `hirohito.md`, `diet-of-japan.md`, and `liberal-democratic-party.md` (Heisei Period); and `diet-of-japan.md`, `liberal-democratic-party.md`, `postwar-constitution.md`, `supreme-court.md`, and `abe-shinzo.md` (Electoral System); verified all internal Markdown links resolve.
 - **Seed** (`sync-seed`): regenerated §4 (63 topic files, 63 README rows; People thirteen, Culture & Society and History twelve each, Geography ten, Economy and Government & Politics eight each) and §5 (refreshed timeline/master index, cross-refs in all 63 files).
+
+### G1-T22 — 2026-07-30 — Tick 22: added Japanese Corporations & the Zaibatsu System, Kabuki Theater, and Japanese Colonialism and Territorial Expansion
+
+- **Content added** (3 dedicated topic files): `economy/japanese-corporations-zaibatsu.md` (the arc of Japan's corporate architecture — the Meiji *zaibatsu* Big Four (Mitsui, Mitsubishi, Sumitomo, Yasuda), the SCAP dissolution and Holding Company Liquidation Commission, the postwar *keiretsu* "Big Six" and MITI administrative guidance, the Toyota Production System and *kaizen*, Sony and Honda outside the *keiretsu*, lifetime employment and seniority wages, the bubble-era cross-shareholding peak, and the 2000s governance-reform unbundling and Softbank), `culture-society/kabuki-theater.md` (Japan's populist classical theater — Izumo no Okuni's c. 1603 origins, the 1629 women's and 1652 *wakashu* bans that produced the *onnagata*, Chikamatsu and the Genroku repertoire, the *aragoto* style and Ichikawa Danjūrō lineage, the *Kabuki Jūhachiban*, the *hanamichi*, *kumadori*, and revolving stage, hereditary *shūmei* succession, and the Meiji-to-present survival as UNESCO Intangible Cultural Heritage), and `history/japanese-colonialism.md` (Japan's 1895–1945 empire — Taiwan after Shimonoseki, the annexation of Korea and the March First Movement, the comfort-women system, the Kwantung Army, Manchukuo, and the Second Sino-Japanese War and Nanjing, the Greater East Asia Co-Prosperity Sphere, Unit 731 and forced labor, and the contested postwar legacy from the 1965 treaty to the apology debates). Culture & Society now holds thirteen topics; History twelve; Economy nine.
+- **README**: knowledge table expanded to 63 rows with the three new topics.
+- **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected several errors — in `kabuki-theater.md`, fixed the founder's name (*Izumi Okuni* → *Izumo no Okuni*), the *wakashu*-ban date (the draft's "1680s" → 1652, with the resulting *yarō kabuki*), the Ichikawa Danjūrō lineage count and a fabricated birth name (→ "thirteen holders; Danjūrō XIII assumed the name in 2022"), and the debut/succession terms (*kozō shūmei* → *hatsu-butai*; corrected the *shūmei* 襲名 / *myōseki* 名跡 kanji); in `japanese-corporations-zaibatsu.md`, corrected Mitsui's retail term (*genwaku* → *genkin kake-ne nashi*), softened the Sumitomo "oldest continuous enterprise" claim, fixed the Sony TR-55 overclaim and added the TR-63, corrected Honda's automobile entry (1969 → the 1963 S500/T360, with the N360 and Civic), replaced a bogus "¥2 trillion" bubble-loss figure, and refined Panasonic's 2013 plasma-TV exit; in `japanese-colonialism.md`, fixed the Unit 731 kanji (官731部隊 → 731部隊) and standardized the "Taishō Period" cross-reference label. Confirmed `title`/`date`/`category` front matter on all three (each `date` a single ISO date) and that every internal Markdown link resolves.
+- **Structure** (`build-structure`): added the three topics to their category indices (`economy/index.md`, `culture-society/index.md`, `history/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — re-homing the c. 1603 Okuni and 1629 women's-ban entries from Edo Culture & Arts to the dedicated Kabuki Theater article and adding the 1652 *wakashu* ban, the 1704 Danjūrō I onstage killing, the 1758 revolving stage, the 1832 *Jūhachiban*, and the 2008 UNESCO inscription; adding the 1673 Mitsui Echigoya, 1870 Mitsubishi founding, 1937 Toyota Motor, 1946 HCLC dissolution, and 2008 Toyota-overtakes-GM facts (Zaibatsu); and adding the 1895 Shimonoseki/Taiwan cession, 1905 Eulsa protectorate, 1919 March First Movement, 1932 Manchukuo, and 1965 Japan–ROK treaty facts while re-homing the 1910 annexation of Korea from Meiji Restoration to the Colonialism article — and made cross-references bidirectional with back-links from `edo-period.md`, `edo-culture-arts.md`, `noh-theater.md`, `women-in-japanese-society.md`, `samurai-bushido.md`, `tea-ceremony.md`, `ukiyo-e-woodblock-prints.md`, `haiku-poetry.md`, and `modern-cinema-anime.md` (Kabuki Theater); `meiji-restoration.md`, `ministry-economy-trade-industry.md`, `bank-of-japan.md`, `postwar-recovery-growth.md`, `bubble-economy.md`, `lost-decade.md`, `labor-market-and-employment.md`, `technology-manufacturing.md`, and `abe-shinzo.md` (Zaibatsu); and `meiji-restoration.md`, `russo-japanese-war.md`, `taisho-period.md`, `world-war-ii.md`, `postwar-constitution.md`, `imperial-household.md`, `liberal-democratic-party.md`, `hirohito.md`, `emperor-meiji.md`, and `technology-manufacturing.md` (Colonialism); verified all internal Markdown links resolve.
+- **Seed** (`sync-seed`): regenerated §4 and §5 from live repo state (63 topic files / 63 README rows; Culture & Society thirteen, History and People twelve each, Geography ten, Economy nine, Government & Politics seven). Note: the §8 G1-T21 entry records Heisei Period, Electoral System of Japan, and Akihito, but those three files were never committed to this repository and are absent on disk; sync-seed therefore reflects the actual on-disk inventory, and this tick's three additions bring the real total back to 63.
