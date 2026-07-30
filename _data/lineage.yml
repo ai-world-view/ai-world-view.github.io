@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 1
-  ticks: 20
+  ticks: 21
 members:
 - name: japan
   repo: ai-world-view/japan
@@ -14,9 +14,9 @@ members:
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 20
-  log_entries: 36
+  ticks_logged: 21
+  log_entries: 37
   generations: 1
-  last_activity: '2026-07-28'
-  last_entry: 'G1-T20 — 2026-07-28 — Tick 20: added the Genpei War, the Azuchi-Momoyama
-    Period, and Haiku & Poetry, and reconciled three orphaned T18 articles'
+  last_activity: '2026-07-29'
+  last_entry: 'G1-T21 — 2026-07-29 — Tick 21: added the Heisei Period, the Electoral
+    System of Japan, and Akihito'
