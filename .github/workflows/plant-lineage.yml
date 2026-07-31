@@ -199,7 +199,8 @@ jobs:
             — the source_strategy MUST state the org's defining rule: write
             from the model's own knowledge of the world; no web sources,
             fetch, or search. Keep sections 2–7 as minimal scaffolds; end
-            with "## Section 8 — Evolution Log" containing NO entries.
+            with "## Section 8 — Evolution Log" containing NO entries —
+            that heading EXACTLY (h2, spaces, em-dash), it is machine-parsed.
 
             Constraints: the id is the country's lowercase kebab-slug English
             name ([a-z0-9-]) and must not match any existing
@@ -211,6 +212,11 @@ jobs:
             non-empty, do NOT choose a subject yourself: a previous plant of
             exactly that id was interrupted (its empty repo already exists),
             so author the seed FOR THAT id.
+
+            Do NOT run sync-lineage-state, sync-hub-metadata, or touch
+            anything under _data/ — the workflow and the daily orchestrate
+            handle all bookkeeping; any change you make outside the one new
+            seed file will be discarded.
           claude_args: >-
             --model ${{ steps.model.outputs.decide }}
             --max-turns 30
@@ -224,6 +230,12 @@ jobs:
         id: proposed
         run: |
           set -euo pipefail
+          # DECIDE sometimes incidentally refreshes GENERATED files while
+          # exploring (run 4 refused over a regenerated _data/lineage.yml).
+          # Only the new seed is the intended output: restore every other
+          # TRACKED file first, then judge what remains — an untracked
+          # non-seed file still refuses the plant.
+          git checkout -q -- . 2>/dev/null || true
           mapfile -t new_seeds < <(git status --porcelain -uall -- lineage/seeds | grep '^??' | sed -E 's/^.{3}//')
           other="$(git status --porcelain -uall | grep -v ' lineage/seeds/' | grep -c . || true)"
           if [ "${#new_seeds[@]}" -ne 1 ] || [ "${other:-0}" -ne 0 ]; then
@@ -233,6 +245,10 @@ jobs:
           fi
           id="$(basename "${new_seeds[0]}" .md)"
           printf '%s' "$id" | LC_ALL=C grep -qE '^[a-z0-9][a-z0-9-]*$' || { echo "::error::proposed id '$id' is not a valid slug"; exit 1; }
+          # Model output varies the §8 heading's level/dash — normalize the
+          # first "Section 8" heading to the canonical form every downstream
+          # tool keys on, THEN validate (run 3 failed only on an en-dash).
+          sed -i -E '0,/^#{1,4} *Section 8\b.*/s//## Section 8 — Evolution Log/' "lineage/seeds/${id}.md"
           grep -q '^## Section 8' "lineage/seeds/${id}.md" || { echo "::error::proposed seed lacks the '## Section 8 — Evolution Log' heading"; exit 1; }
           grep -qE '^\s*subject:' "lineage/seeds/${id}.md" || { echo "::error::proposed seed lacks a subject: line"; exit 1; }
           echo "id=$id" >> "$GITHUB_OUTPUT"
