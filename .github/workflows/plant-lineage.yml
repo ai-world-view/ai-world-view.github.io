@@ -199,7 +199,8 @@ jobs:
             — the source_strategy MUST state the org's defining rule: write
             from the model's own knowledge of the world; no web sources,
             fetch, or search. Keep sections 2–7 as minimal scaffolds; end
-            with "## Section 8 — Evolution Log" containing NO entries.
+            with "## Section 8 — Evolution Log" containing NO entries —
+            that heading EXACTLY (h2, spaces, em-dash), it is machine-parsed.
 
             Constraints: the id is the country's lowercase kebab-slug English
             name ([a-z0-9-]) and must not match any existing
@@ -233,6 +234,10 @@ jobs:
           fi
           id="$(basename "${new_seeds[0]}" .md)"
           printf '%s' "$id" | LC_ALL=C grep -qE '^[a-z0-9][a-z0-9-]*$' || { echo "::error::proposed id '$id' is not a valid slug"; exit 1; }
+          # Model output varies the §8 heading's level/dash — normalize the
+          # first "Section 8" heading to the canonical form every downstream
+          # tool keys on, THEN validate (run 3 failed only on an en-dash).
+          sed -i -E '0,/^#{1,4} *Section 8\b.*/s//## Section 8 — Evolution Log/' "lineage/seeds/${id}.md"
           grep -q '^## Section 8' "lineage/seeds/${id}.md" || { echo "::error::proposed seed lacks the '## Section 8 — Evolution Log' heading"; exit 1; }
           grep -qE '^\s*subject:' "lineage/seeds/${id}.md" || { echo "::error::proposed seed lacks a subject: line"; exit 1; }
           echo "id=$id" >> "$GITHUB_OUTPUT"
