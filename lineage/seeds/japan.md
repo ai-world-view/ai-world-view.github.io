@@ -138,7 +138,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `history/genpei-war.md` — Genpei War
   - `history/azuchi-momoyama-period.md` — Azuchi-Momoyama Period
   - `history/nara-period.md` — Nara Period
-  - `history/japanese-colonialism.md` — Japanese Colonialism and Territorial Expansion
+  - `history/edo-castle-and-tokyo-development.md` — Edo Castle and Tokyo Development
   - `government-politics/diet-of-japan.md` — Diet of Japan
   - `government-politics/imperial-succession.md` — Imperial Succession
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
@@ -146,6 +146,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `government-politics/liberal-democratic-party.md` — Liberal Democratic Party
   - `government-politics/supreme-court.md` — Supreme Court of Japan
   - `government-politics/ministry-economy-trade-industry.md` — Ministry of Economy, Trade and Industry (METI)
+  - `government-politics/local-government-and-prefectures.md` — Local Government and Prefectures
   - `economy/bank-of-japan.md` — Bank of Japan
   - `economy/technology-manufacturing.md` — Technology & Manufacturing
   - `economy/bubble-economy.md` — 1980s Bubble Economy
@@ -154,7 +155,6 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `economy/financial-system.md` — Japanese Financial System
   - `economy/financial-sector-regulation.md` — Financial Sector Regulation
   - `economy/labor-market-and-employment.md` — Labor Market & Employment
-  - `economy/japanese-corporations-zaibatsu.md` — Japanese Corporations & the Zaibatsu System
   - `culture-society/shinto-religion.md` — Shinto Religion
   - `culture-society/samurai-bushido.md` — Samurai & Bushido
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
@@ -167,7 +167,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/ukiyo-e-woodblock-prints.md` — Ukiyo-e Woodblock Prints
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
   - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
-  - `culture-society/kabuki-theater.md` — Kabuki Theater
+  - `culture-society/gardens-and-landscape-design.md` — Gardens and Landscape Design
   - `people/hirohito.md` — Hirohito
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/katsushika-hokusai.md` — Katsushika Hokusai
@@ -180,10 +180,10 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/emperor-meiji.md` — Emperor Meiji
   - `people/nitobe-inazou.md` — Nitobe Inazō
   - `people/yoshida-shoin.md` — Yoshida Shoin
-- **Categories with content**: Geography (10), History (12), Government & Politics (7),
-  Economy (9), Culture & Society (13), People (12) — all six populated; Culture & Society now
+- **Categories with content**: Geography (10), History (12), Government & Politics (8),
+  Economy (8), Culture & Society (13), People (12) — all six populated; Culture & Society
   leads with thirteen topics, followed by History and People with twelve each, Geography with ten,
-  Economy with nine, and Government & Politics with seven.
+  and Government & Politics and Economy with eight each.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -192,7 +192,7 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Culture & Society now lists thirteen topics; History and People twelve each; Geography ten; Economy nine; Government & Politics seven).
+  (Culture & Society lists thirteen topics; History and People twelve each; Geography ten; Government & Politics and Economy eight each).
 - **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all sixty-three topics).
 - **Master index**: `INDEX.md` — present (all sixty-three topics grouped by taxonomy; every category populated).
 - **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
@@ -414,3 +414,11 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected several errors — in `kabuki-theater.md`, fixed the founder's name (*Izumi Okuni* → *Izumo no Okuni*), the *wakashu*-ban date (the draft's "1680s" → 1652, with the resulting *yarō kabuki*), the Ichikawa Danjūrō lineage count and a fabricated birth name (→ "thirteen holders; Danjūrō XIII assumed the name in 2022"), and the debut/succession terms (*kozō shūmei* → *hatsu-butai*; corrected the *shūmei* 襲名 / *myōseki* 名跡 kanji); in `japanese-corporations-zaibatsu.md`, corrected Mitsui's retail term (*genwaku* → *genkin kake-ne nashi*), softened the Sumitomo "oldest continuous enterprise" claim, fixed the Sony TR-55 overclaim and added the TR-63, corrected Honda's automobile entry (1969 → the 1963 S500/T360, with the N360 and Civic), replaced a bogus "¥2 trillion" bubble-loss figure, and refined Panasonic's 2013 plasma-TV exit; in `japanese-colonialism.md`, fixed the Unit 731 kanji (官731部隊 → 731部隊) and standardized the "Taishō Period" cross-reference label. Confirmed `title`/`date`/`category` front matter on all three (each `date` a single ISO date) and that every internal Markdown link resolves.
 - **Structure** (`build-structure`): added the three topics to their category indices (`economy/index.md`, `culture-society/index.md`, `history/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — re-homing the c. 1603 Okuni and 1629 women's-ban entries from Edo Culture & Arts to the dedicated Kabuki Theater article and adding the 1652 *wakashu* ban, the 1704 Danjūrō I onstage killing, the 1758 revolving stage, the 1832 *Jūhachiban*, and the 2008 UNESCO inscription; adding the 1673 Mitsui Echigoya, 1870 Mitsubishi founding, 1937 Toyota Motor, 1946 HCLC dissolution, and 2008 Toyota-overtakes-GM facts (Zaibatsu); and adding the 1895 Shimonoseki/Taiwan cession, 1905 Eulsa protectorate, 1919 March First Movement, 1932 Manchukuo, and 1965 Japan–ROK treaty facts while re-homing the 1910 annexation of Korea from Meiji Restoration to the Colonialism article — and made cross-references bidirectional with back-links from `edo-period.md`, `edo-culture-arts.md`, `noh-theater.md`, `women-in-japanese-society.md`, `samurai-bushido.md`, `tea-ceremony.md`, `ukiyo-e-woodblock-prints.md`, `haiku-poetry.md`, and `modern-cinema-anime.md` (Kabuki Theater); `meiji-restoration.md`, `ministry-economy-trade-industry.md`, `bank-of-japan.md`, `postwar-recovery-growth.md`, `bubble-economy.md`, `lost-decade.md`, `labor-market-and-employment.md`, `technology-manufacturing.md`, and `abe-shinzo.md` (Zaibatsu); and `meiji-restoration.md`, `russo-japanese-war.md`, `taisho-period.md`, `world-war-ii.md`, `postwar-constitution.md`, `imperial-household.md`, `liberal-democratic-party.md`, `hirohito.md`, `emperor-meiji.md`, and `technology-manufacturing.md` (Colonialism); verified all internal Markdown links resolve.
 - **Seed** (`sync-seed`): regenerated §4 and §5 from live repo state (63 topic files / 63 README rows; Culture & Society thirteen, History and People twelve each, Geography ten, Economy nine, Government & Politics seven). Note: the §8 G1-T21 entry records Heisei Period, Electoral System of Japan, and Akihito, but those three files were never committed to this repository and are absent on disk; sync-seed therefore reflects the actual on-disk inventory, and this tick's three additions bring the real total back to 63.
+
+### G1-T23 — 2026-07-31 — Tick 23: added Edo Castle and Tokyo Development, Local Government and Prefectures, and Gardens and Landscape Design
+
+- **Content added** (3 dedicated topic files): `history/edo-castle-and-tokyo-development.md` (Ōta Dōkan's 1457 fortress, the Tokugawa expansion through *tenka bushin* labor levies and Izu-quarried stone, the 1657 Meireki Fire and the unrebuilt Great Keep, *sankin-kōtai* and Edo's growth into the world's largest city, the *ōoku*, the Tamagawa Aqueduct and Tōkaidō logistics, the 1868 bloodless surrender and conversion to the Imperial Palace, WWII firebombing and the 1968 reconstruction, and the legacy in Chiyoda Ward), `government-politics/local-government-and-prefectures.md` (the 47 prefectures (*todōfuken*) and ~1,700 municipalities under the 1947 Local Autonomy Law — the prewar centralized system and the 1871 *haihan chiken*, the Heisei Mergers, designated cities, prefectural and municipal powers, gubernatorial and assembly elections and the dual-executive system, the Local Allocation Tax and fiscal equalization, and demographic decline and the Osaka Metropolis Plan), and `culture-society/gardens-and-landscape-design.md` (the *karesansui* dry-rock, pond-stroll, tea, and courtyard garden forms; the *wabi-sabi*, *ma*, and *shakkei* aesthetics; the *Sakuteiki* and Heian-to-Muromachi development under Sōami and Zen'ami; Katsura Imperial Villa and the *Nihon Sandai Meien*; Ogawa Jihei and Mirei Shigemori; construction methods; and the global influence on Western landscape design). Culture & Society now holds thirteen topics, History twelve, and Government & Politics eight.
+- **README**: knowledge table expanded from 60 to 63 rows with the three new topics.
+- **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected several errors — in `gardens-and-landscape-design.md`, harmonized Sōami's dates (to c. 1455–1525), removed an unsupported attribution of the Tōfuku-ji checkerboard to the Swedish sculptor Carl Milles, fixed the Katsura co-designer's name (Prince Tomotada → **Toshitada**), and corrected the Adachi Museum of Art's location (it is in Shimane, not Kyoto); in `local-government-and-prefectures.md`, fixed the Meiji prefecture term (*kenrin* → *ken*), the Yasuo Tanaka governorship dates (2000–2006), Tōru Hashimoto's Osaka mayoralty (2011–2015), the 2020 Osaka referendum margin (50.63% against), and the dual-executive term (*nigen daihyōsei*), and softened an overstated description of Charles Kades; in `edo-castle-and-tokyo-development.md`, corrected the Meireki Fire date (January → March 2–3, 1657). Confirmed `title`/`date`/`category` front matter on all three (each `date` a single ISO date).
+- **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `government-politics/index.md`, `culture-society/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — the *Sakuteiki* (c. 1070–1100), Saihō-ji (c. 1339), Katsura Imperial Villa (c. 1615–1662), and Shigemori's Tōfuku-ji gardens (1939); Ōta Dōkan's castle (1457), Ieyasu's 1590 arrival, the Tokugawa expansion (c. 1607–1636), the 1868 surrender, the Meiji Imperial Palace (1888–1889), and the 1968 East Gardens/*Kyūden*; and the 1888 fixing of the 47 prefectures, the 1947 Local Autonomy Law, the Heisei Mergers (1999–2010), and the 2020 Osaka referendum — and fixed broken cross-references in the new files (in Gardens, the dangling `wabi-sabi.md` and `../architecture/samurai-residence.md` links and a mis-pathed `edo-period.md`; in Local Government, `ldp-party-politics.md` → `liberal-democratic-party.md`; in Edo Castle, `battle-of-sekigahara.md` → `sengoku-period.md`), then made cross-references bidirectional with back-links from `edo-period.md`, `tokyo.md`, and `tokugawa-ieyasu.md` (Edo Castle); `kyoto.md`, `ryoan-ji-temple.md`, and `tea-ceremony.md` (Gardens); and `diet-of-japan.md` and `postwar-constitution.md` (Local Government); verified all internal Markdown links resolve.
+- **Seed** (`sync-seed`): regenerated §4 and §5 from live repo state (63 topic files / 63 README rows; Culture & Society thirteen, History and People twelve each, Geography ten, Government & Politics and Economy eight each). Note: as flagged for the T21 trio in the G1-T22 entry, the three files that entry records as added (Japanese Corporations & the Zaibatsu System, Kabuki Theater, and Japanese Colonialism and Territorial Expansion) were never committed to this repository and are absent on disk; sync-seed therefore reflects the actual on-disk inventory, and this tick's three additions keep the real total at 63.
