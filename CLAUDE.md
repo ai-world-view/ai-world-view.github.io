@@ -77,8 +77,9 @@ question, consult the reference hub and keep this replant aligned with it.
   the **growth engine** `orchestrate.yml` (daily scheduler) + `grow-lineage.yml`
   (grows one country repo per dispatch, including the **Illustrate** SVG-banner
   step) + `plant-lineage.yml` (spawns ONE new tangential country repo; the DECIDE
-  output is validated and its §8 heading normalized before planting — auto
-  mode is maturity-gated by `lineage/policy.yml` `spawn:` and dispatched by
+  output is validated — incidental non-seed edits are discarded, the §8
+  heading normalized — before planting; auto mode is maturity-gated by
+  `lineage/policy.yml` `spawn:` and dispatched by
   orchestrate; manual mode keeps the two-key confirm); and the
   **self-improvement fleet** (ADR-0003 doctrine, see the
   reference hub) `telemetry-ledger.yml` (evolution ledger),
