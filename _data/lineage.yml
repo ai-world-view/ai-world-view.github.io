@@ -5,8 +5,8 @@
 # =============================================================================
 org: ai-world-view
 totals:
-  repos: 1
-  ticks: 22
+  repos: 2
+  ticks: 23
 members:
 - name: japan
   repo: ai-world-view/japan
@@ -14,9 +14,20 @@ members:
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 22
-  log_entries: 38
+  ticks_logged: 23
+  log_entries: 39
   generations: 1
-  last_activity: '2026-07-30'
-  last_entry: 'G1-T22 — 2026-07-30 — Tick 22: added Japanese Corporations & the Zaibatsu
-    System, Kabuki Theater, and Japanese Colonialism and Territorial Expansion'
+  last_activity: '2026-07-31'
+  last_entry: 'G1-T23 — 2026-07-31 — Tick 23: added Edo Castle and Tokyo Development,
+    Local Government and Prefectures, and Gardens and Landscape Design'
+- name: south-korea
+  repo: ai-world-view/south-korea
+  url: https://github.com/ai-world-view/south-korea
+  site_url: https://ai-world-view.github.io/south-korea/
+  subject: the country south korea
+  status: seeded
+  ticks_logged: 0
+  log_entries: 1
+  generations: 0
+  last_activity: ''
+  last_entry: ''
