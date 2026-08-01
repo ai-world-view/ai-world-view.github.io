@@ -5,7 +5,7 @@
 # =============================================================================
 org: ai-world-view
 totals:
-  repos: 1
+  repos: 2
   pages: 68
 repos:
 - name: japan
@@ -53,3 +53,15 @@ repos:
   - title: Timeline
     url: https://ai-world-view.github.io/japan/TIMELINE/
     source_url: https://github.com/ai-world-view/japan/blob/main/TIMELINE.md
+- name: south-korea
+  title: south-korea
+  description: self-growing knowledge base — the country south korea
+  url: https://github.com/ai-world-view/south-korea
+  site_url: https://ai-world-view.github.io/south-korea/
+  pages_enabled: true
+  scaffolded: true
+  branch: main
+  pushed_at: '2026-07-31T08:18:56Z'
+  page_count: 0
+  sections: []
+  root_pages: []
