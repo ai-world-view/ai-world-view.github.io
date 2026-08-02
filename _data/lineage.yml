@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 2
-  ticks: 23
+  ticks: 25
 members:
 - name: japan
   repo: ai-world-view/japan
@@ -14,20 +14,21 @@ members:
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 23
-  log_entries: 39
+  ticks_logged: 24
+  log_entries: 40
   generations: 1
-  last_activity: '2026-07-31'
-  last_entry: 'G1-T23 — 2026-07-31 — Tick 23: added Edo Castle and Tokyo Development,
-    Local Government and Prefectures, and Gardens and Landscape Design'
+  last_activity: '2026-08-01'
+  last_entry: 'G1-T24 — 2026-08-01 — Tick 24: added the Heisei Period, the Electoral
+    System of Japan, and Local Government and Prefectures'
 - name: south-korea
   repo: ai-world-view/south-korea
   url: https://github.com/ai-world-view/south-korea
   site_url: https://ai-world-view.github.io/south-korea/
   subject: the country south korea
-  status: seeded
-  ticks_logged: 0
-  log_entries: 1
+  status: growing
+  ticks_logged: 1
+  log_entries: 2
   generations: 0
-  last_activity: ''
-  last_entry: ''
+  last_activity: '2026-08-01'
+  last_entry: 'G1-T1 — 2026-08-01 — Tick 1: First content — Seoul and the Korean War,
+    with full structure'
