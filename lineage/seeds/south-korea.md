@@ -87,14 +87,17 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (2):
+`INDEX.md`). Dedicated topic files (5):
 
 | Category | File | Topic |
 |---|---|---|
 | Geography | `geography/seoul.md` | Seoul — capital and largest city |
 | History | `history/korean-war.md` | Korean War (1950–1953) |
+| Economy | `economy/chaebol.md` | Chaebol — family-controlled conglomerates |
+| Culture & Society | `culture-society/hallyu.md` | Hallyu — the Korean Wave |
+| People | `people/park-chung-hee.md` | Park Chung-hee — president (1961–1979) |
 
-Categories with no topics yet: Government & Politics, Economy, Culture & Society, People.
+Categories with no topics yet: Government & Politics.
 
 ## Section 5 — Structure Inventory
 
@@ -104,12 +107,14 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 |---|---|
 | `geography/index.md` | Present — 1 entry |
 | `history/index.md` | Present — 1 entry |
-| `TIMELINE.md` | Present — 21 dated events across both articles |
+| `economy/index.md` | Present — 1 entry |
+| `culture-society/index.md` | Present — 1 entry |
+| `people/index.md` | Present — 1 entry |
+| `TIMELINE.md` | Present — 36 dated events across all five articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in `geography/seoul.md` and `history/korean-war.md` |
+| Cross-references (`## Related`) | Present in all five topic articles |
 
-Category indices for Government & Politics, Economy, Culture & Society, and People are not yet
-generated (those folders have no content).
+Category index for Government & Politics is not yet generated (that folder has no content).
 
 ## Section 6 — Growth Loop
 
@@ -140,3 +145,14 @@ Planted the knowledge base's first two articles and its structural layer.
 - ENHANCE pass corrected facts: Seoul's area (605 km²), Lotte World Tower's rank at completion (fifth-tallest), and Gen. Walton Walker's death (killed in a jeep accident, Dec 1950).
 - build-structure: created `geography/index.md`, `history/index.md`, `TIMELINE.md` (21 dated events), `INDEX.md`, and `## Related` cross-reference blocks in both articles; surfaced content in `README.md`.
 - sync-seed: regenerated §3 (Architecture), §4 (Content Inventory: 0→2 files), and §5 (Structure Inventory).
+
+### G1-T2 — 2026-08-02 — Tick 2: Chaebol, Hallyu, and Park Chung-hee across three new categories
+
+Added three dedicated articles opening the Economy, Culture & Society, and People categories.
+
+- Created `economy/chaebol.md`: encyclopedic article on the chaebol conglomerates — origins, the state-chaebol partnership under Park Chung-hee, profiles of Samsung, Hyundai, LG, SK, and Lotte, the 1997 Asian Financial Crisis and Daewoo collapse, and contemporary governance debates.
+- Created `culture-society/hallyu.md`: encyclopedic article on the Korean Wave — K-drama, K-pop, film (Parasite), the entertainment-company production system, K-beauty, soft power, and industry controversies.
+- Created `people/park-chung-hee.md`: encyclopedic article on Park Chung-hee — military career, the 1961 coup, the Han River Miracle, the Yushin system and repression, foreign relations, his 1979 assassination, and the arc to daughter Park Geun-hye.
+- ENHANCE pass corrected facts: Park Geun-hye's pardon was by President Moon Jae-in (not Yoon Suk-yeol); Shin Kyuk-ho died in January 2020 (not 1998); Lee Jae-yong was acquitted in the 2024 accounting-fraud case; SK's founder was Chey Jong-gun (1953); Kim Woo-choong was pardoned at the end of 2007; BLACKPINK's Lisa was misattributed to TWICE (corrected to TWICE's Japanese/Taiwanese members); BTS received a service deferral, not an exemption; and the Bu-Ma (Busan–Masan) Uprising was correctly dated and named.
+- build-structure: created `economy/index.md`, `culture-society/index.md`, `people/index.md`; refreshed `INDEX.md`, `TIMELINE.md` (21→36 dated events), and `README.md`; added bidirectional `## Related` links wiring the new articles to Seoul and the Korean War.
+- sync-seed: regenerated §4 (Content Inventory: 2→5 files) and §5 (Structure Inventory: 2→5 category indices).
