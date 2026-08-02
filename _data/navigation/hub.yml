@@ -41,3 +41,9 @@
   children:
   - title: Site Home
     url: https://ai-world-view.github.io/south-korea/
+  - title: Timeline
+    url: https://ai-world-view.github.io/south-korea/TIMELINE/
+  - title: Geography
+    url: https://ai-world-view.github.io/south-korea/geography/
+  - title: History
+    url: https://ai-world-view.github.io/south-korea/history/
