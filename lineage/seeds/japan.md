@@ -116,74 +116,73 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
 - **README knowledge table**: 63 rows.
-- **Dedicated topic files** (63):
-  - `geography/major-islands.md` — Major Islands
-  - `geography/tokyo.md` — Tokyo
-  - `geography/kyoto.md` — Kyoto
-  - `geography/noto-peninsula.md` — Noto Peninsula
-  - `geography/mount-fuji.md` — Mount Fuji
-  - `geography/osaka.md` — Osaka
+- **Dedicated topic files** (63), grouped by category:
   - `geography/hokkaido.md` — Hokkaido
-  - `geography/kyushu.md` — Kyushu
-  - `geography/shikoku.md` — Shikoku
   - `geography/kobe.md` — Kobe
-  - `history/edo-period.md` — Edo Period
-  - `history/meiji-restoration.md` — Meiji Restoration
-  - `history/sengoku-period.md` — Sengoku Period
-  - `history/world-war-ii.md` — World War II
-  - `history/heian-period.md` — Heian Period
-  - `history/taisho-period.md` — Taishō Period
-  - `history/kamakura-period.md` — Kamakura Period
-  - `history/russo-japanese-war.md` — Russo-Japanese War
-  - `history/genpei-war.md` — Genpei War
+  - `geography/kyoto.md` — Kyoto
+  - `geography/kyushu.md` — Kyushu
+  - `geography/major-islands.md` — Major Islands
+  - `geography/mount-fuji.md` — Mount Fuji
+  - `geography/noto-peninsula.md` — Noto Peninsula
+  - `geography/osaka.md` — Osaka
+  - `geography/shikoku.md` — Shikoku
+  - `geography/tokyo.md` — Tokyo
   - `history/azuchi-momoyama-period.md` — Azuchi-Momoyama Period
+  - `history/edo-period.md` — Edo Period
+  - `history/genpei-war.md` — Genpei War
+  - `history/heian-period.md` — Heian Period
+  - `history/kamakura-period.md` — Kamakura Period
+  - `history/meiji-restoration.md` — Meiji Restoration
   - `history/nara-period.md` — Nara Period
+  - `history/russo-japanese-war.md` — Russo-Japanese War
+  - `history/sengoku-period.md` — Sengoku Period
+  - `history/taisho-period.md` — Taisho Period
+  - `history/world-war-ii.md` — World War II
   - `government-politics/diet-of-japan.md` — Diet of Japan
-  - `government-politics/imperial-succession.md` — Imperial Succession
-  - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
   - `government-politics/imperial-household.md` — The Imperial Household
+  - `government-politics/imperial-succession.md` — Imperial Succession
   - `government-politics/liberal-democratic-party.md` — Liberal Democratic Party
-  - `government-politics/supreme-court.md` — Supreme Court of Japan
   - `government-politics/ministry-economy-trade-industry.md` — Ministry of Economy, Trade and Industry (METI)
-  - `government-politics/genro-elder-statesmen.md` — Genrō (Elder Statesmen)
+  - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
+  - `government-politics/self-defense-forces.md` — Self-Defense Forces
+  - `government-politics/supreme-court.md` — Supreme Court of Japan
   - `economy/bank-of-japan.md` — Bank of Japan
-  - `economy/technology-manufacturing.md` — Technology & Manufacturing
   - `economy/bubble-economy.md` — 1980s Bubble Economy
+  - `economy/energy-nuclear-power.md` — Energy and Nuclear Power Policy
+  - `economy/financial-sector-regulation.md` — Financial Sector Regulation
+  - `economy/financial-system.md` — Japanese Financial System
+  - `economy/labor-market-and-employment.md` — Labor Market & Employment
   - `economy/lost-decade.md` — Lost Decade & Deflation
   - `economy/postwar-recovery-growth.md` — Postwar Recovery & Economic Growth
-  - `economy/financial-system.md` — Japanese Financial System
-  - `economy/financial-sector-regulation.md` — Financial Sector Regulation
-  - `economy/labor-market-and-employment.md` — Labor Market & Employment
-  - `culture-society/shinto-religion.md` — Shinto Religion
-  - `culture-society/samurai-bushido.md` — Samurai & Bushido
-  - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
-  - `culture-society/tea-ceremony.md` — Tea Ceremony
-  - `culture-society/noh-theater.md` — Noh Theater
-  - `culture-society/women-in-japanese-society.md` — Women in Japanese Society
-  - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
-  - `culture-society/ryoan-ji-temple.md` — Ryoan-ji Temple
+  - `economy/technology-manufacturing.md` — Technology & Manufacturing
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
-  - `culture-society/ukiyo-e-woodblock-prints.md` — Ukiyo-e Woodblock Prints
+  - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
+  - `culture-society/education-system.md` — Education System
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
+  - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
-  - `culture-society/ainu-people.md` — Ainu People and Indigenous Culture
-  - `culture-society/ikebana.md` — Ikebana (Flower Arrangement)
-  - `people/hirohito.md` — Hirohito
-  - `people/murasaki-shikibu.md` — Murasaki Shikibu
-  - `people/katsushika-hokusai.md` — Katsushika Hokusai
-  - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
-  - `people/empress-meiji.md` — Empress Meiji
+  - `culture-society/noh-theater.md` — Noh Theater
+  - `culture-society/ryoan-ji-temple.md` — Ryoan-ji Temple
+  - `culture-society/samurai-bushido.md` — Samurai & Bushido
+  - `culture-society/shinto-religion.md` — Shinto Religion
+  - `culture-society/tea-ceremony.md` — Tea Ceremony
+  - `culture-society/ukiyo-e-woodblock-prints.md` — Ukiyo-e Woodblock Prints
+  - `culture-society/women-in-japanese-society.md` — Women in Japanese Society
   - `people/abe-shinzo.md` — Abe Shinzo
-  - `people/yukio-mishima.md` — Yukio Mishima
-  - `people/minamoto-no-yoritomo.md` — Minamoto no Yoritomo
   - `people/ashikaga-takauji.md` — Ashikaga Takauji
   - `people/emperor-meiji.md` — Emperor Meiji
+  - `people/empress-meiji.md` — Empress Meiji
+  - `people/hirohito.md` — Hirohito
+  - `people/katsushika-hokusai.md` — Katsushika Hokusai
+  - `people/minamoto-no-yoritomo.md` — Minamoto no Yoritomo
+  - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/nitobe-inazou.md` — Nitobe Inazō
+  - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
   - `people/yoshida-shoin.md` — Yoshida Shoin
-- **Categories with content**: Geography (10), History (11), Government & Politics (8),
-  Economy (8), Culture & Society (14), People (12) — all six populated; Culture & Society
-  leads with fourteen topics, followed by People with twelve, History with eleven, Geography
-  with ten, and Government & Politics and Economy with eight each.
+  - `people/yukio-mishima.md` — Yukio Mishima
+- **Categories with content**: Geography (10), History (11), Government & Politics (8), Economy (9), Culture & Society (13), People (12) — all six categories populated; Culture &
+  Society leads with thirteen topics, followed by People with twelve, History with
+  eleven, Geography with ten, Economy with nine, and Government & Politics with eight.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -192,9 +191,9 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Culture & Society lists fourteen topics; People twelve; History eleven; Geography ten; Government & Politics and Economy eight each).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all sixty-three topics).
-- **Master index**: `INDEX.md` — present (all sixty-three topics grouped by taxonomy; every category populated).
+  (Culture & Society lists thirteen topics; People twelve; History eleven; Geography ten; Economy nine; Government & Politics eight).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
+- **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
 - **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
@@ -438,3 +437,11 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected several errors — in `ainu-people.md`, fixed Shakushain's death (killed at a peace banquet in October 1669, not "executed December 8, 1672"), corrected the location of Upopoy, the National Ainu Museum (Shiraoi, not Tomakomai), removed a fabricated term for Ainu shamans (replaced *yukarakus* with *tusukur*) and an unverifiable claim that "Koichi Kaizawa" became the second Ainu member of the House of Councillors in 2019 (Shigeru Kayano remains the only person of Ainu descent to have served in the Diet), replaced an unverified "2020 NHK morning drama" media example with the manga/anime *Golden Kamuy*, dated the UNESCO critically-endangered classification to the 2009 *Atlas*, and de-duplicated the *Women in Japanese Society* cross-reference; in `ikebana.md`, corrected the Rikka systematizer's name (Ikenobo Senkō, not "Senno"), the current head of the school (Ikenobo Sen'ei, the 45th-generation *iemoto*, not "Senshō"), and the name of the global body (Ikebana International, not "International Ikebana Association"); in `genro-elder-statesmen.md`, softened an anachronistic claim that Saionji "studied law at Sciences Po" to studying law in Paris and named the *Tōyō Jiyū Shinbun* he co-founded with Nakae Chōmin. Confirmed `title`/`date`/`category` front matter on all three, each `date` a single ISO date (1868-01-01, 1899-03-01, 1462-01-01).
 - **Structure** (`build-structure`): added the three topics to their category indices (`government-politics/index.md`, `culture-society/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — Shakushain's Revolt (1669), the Menashi-Kunashir Battle (1789), the 1997 Ainu Cultural Promotion Act, and the 2008 Diet recognition of the Ainu as indigenous (Ainu People); the first documented ikebana reference (1462), the founding of the Ōhara (1897) and Sogetsu (1927) schools, and Ikebana International (1956) (Ikebana); and Ōkubo's 1878 assassination, the 1888 Privy Council, Itō's 1909 assassination at Harbin, the 1913 Taishō Political Crisis, and Saionji's 1940 death (Genrō) — and made cross-references bidirectional with back-links from `hokkaido.md` and `meiji-restoration.md` (Ainu); `tea-ceremony.md` and `edo-culture-arts.md` (Ikebana); and `meiji-restoration.md`, `diet-of-japan.md`, `taisho-period.md`, `russo-japanese-war.md`, and `hirohito.md` (Genrō); verified all internal Markdown links resolve.
 - **Seed** (`sync-seed`): regenerated §4 and §5 from live repo state (63 topic files / 63 README rows; Culture & Society fourteen, People twelve, History eleven, Geography ten, Government & Politics and Economy eight each). Reconciliation note: as flagged in the G1-T24 entry, the phantom files that prior §8 entries recorded (`history/heisei-period.md`, `government-politics/electoral-system.md`, and `government-politics/local-government-and-prefectures.md`) are absent on disk; the regenerated §4 removes them and reflects the actual on-disk inventory, which this tick's three additions restore to 63.
+
+### G1-T26 — 2026-08-03 — Tick 26: added the Self-Defense Forces, the Education System, and Energy and Nuclear Power Policy
+
+- **Content added** (3 dedicated topic files): `government-politics/self-defense-forces.md` (Japan's military organization (*Jieitai*) under Article 9 — the 1950 National Police Reserve and 1954 founding of the Ground, Maritime, and Air Self-Defense Forces, the *Sunakawa* case and the political-question doctrine, the Yoshida Doctrine and 1% GNP ceiling, the US–Japan Security Treaty and the Okinawa base dilemma, PKO and Iraq deployments, the 2007 elevation to a Ministry of Defense, the 2014–2015 collective-self-defense reinterpretation, the 2022 National Security Strategy with its 2%-of-GDP target and counterstrike capability, and the JSDF's disaster-relief record), `culture-society/education-system.md` (Japan's schooling from the 1872 *Gakusei* and the Meiji Imperial University system through the 1890 Imperial Rescript, the 1947 Fundamental Law of Education and the 6-3-3-4 structure, examination and *juku* culture and the *kyōiku mama*, the *yutori* reform cycle, higher-education stratification and the "Todai brand," gender disparities, and demographic decline and digital transformation), and `economy/energy-nuclear-power.md` (Japan's energy trajectory from coal and hydropower through the 1954 atomic-program budget and the 1966 Tōkai reactor, the 1973–79 oil shocks, the pre-Fukushima 54-reactor fleet, the March 2011 Fukushima Daiichi disaster and the NAIIC verdict, the post-2012 Nuclear Regulation Authority, the LNG-and-renewables energy-mix shift, and the contemporary energy trilemma). Government & Politics and Economy now hold eight and nine topics; Culture & Society thirteen.
+- **README**: knowledge table stands at 63 rows (the three new rows were added during the generate tier); unchanged this pass.
+- **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected several errors — in `education-system.md`, removed a duplicated key figure (Mori Arinori had been listed twice, once as "Arinori Mori"), corrected the "1886 Education Ordinance (*Kyōiku Rei*)" to Mori's 1886 School Orders (*Gakkō Rei*), de-linked an *ijime* (bullying) reference that wrongly pointed at *Women in Japanese Society*, and replaced a dubious "*Shichi Daigaku*" private-university grouping with a factual description of Waseda and Keiō; in `energy-nuclear-power.md`, replaced a fabricated NRA chairman ("Satoshi Araki") with the actual first chairman Shunichi Tanaka (2012–2017), untangled the JAEC establishment date (1954 nuclear budget → 1955 Basic Law → JAEC founded 1956), corrected the pre-Fukushima fleet from 55 to 54 reactors (consistent with the ~49 GW figure), and removed a link that attributed the DPJ-era 2011 crisis response to the LDP; in `self-defense-forces.md`, fixed a garbled Gulf War contribution figure ("¥13 billion ($90 billion …)") to the correct ~$13 billion, relabeled the "Ashibe doctrine" as the political-question doctrine (*tōchi kōi ron*), and aligned the front-matter date with the JSDF's 1954-07-01 founding. Confirmed `title`/`date`/`category` front matter on all three, each `date` a single ISO date (1954-07-01, 1872-08-02, 1954-07-04).
+- **Structure** (`build-structure`): added the three topics to their category indices (`government-politics/index.md`, `economy/index.md`, `culture-society/index.md`) and to `INDEX.md`; appended `## Related` crossref blocks (six links each) to the three new files, which had none; merged new dated facts into `TIMELINE.md` — the 1872 *Gakusei*, the 1947 Fundamental Law, and the 2002 *yutori* curriculum (Education); the 1954 atomic budget, the 1966 Tōkai reactor, the 1973 oil shock, the 2011-03-11 Fukushima disaster, and the 2012-09-19 NRA founding (Energy); and the 1954 tri-service founding, the 1992 PKO Law, the 2004 Samawah deployment, the 2007 Ministry of Defense elevation, and the 2022 National Security Strategy (Self-Defense Forces).
+- **Seed** (`sync-seed`): regenerated §4 and §5 from live repo state (63 topic files / 63 README rows; Culture & Society thirteen, People twelve, History eleven, Geography ten, Economy nine, Government & Politics eight). Reconciliation note: the phantom files recorded in the G1-T25 entry (`government-politics/genro-elder-statesmen.md`, `culture-society/ainu-people.md`, `culture-society/ikebana.md`) are absent on disk; the regenerated §4 reflects the actual on-disk inventory, in which this tick's three additions bring the count to 63.
