@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 2
-  pages: 74
+  pages: 80
 repos:
 - name: japan
   title: japan
@@ -61,9 +61,19 @@ repos:
   pages_enabled: true
   scaffolded: true
   branch: main
-  pushed_at: '2026-08-01T07:59:17Z'
-  page_count: 6
+  pushed_at: '2026-08-02T08:13:37Z'
+  page_count: 12
   sections:
+  - name: culture-society
+    title: Culture & Society
+    url: https://ai-world-view.github.io/south-korea/culture-society/
+    source_url: https://github.com/ai-world-view/south-korea/tree/main/culture-society
+    count: 1
+  - name: economy
+    title: Economy
+    url: https://ai-world-view.github.io/south-korea/economy/
+    source_url: https://github.com/ai-world-view/south-korea/tree/main/economy
+    count: 1
   - name: geography
     title: Geography
     url: https://ai-world-view.github.io/south-korea/geography/
@@ -73,6 +83,11 @@ repos:
     title: History
     url: https://ai-world-view.github.io/south-korea/history/
     source_url: https://github.com/ai-world-view/south-korea/tree/main/history
+    count: 1
+  - name: people
+    title: People
+    url: https://ai-world-view.github.io/south-korea/people/
+    source_url: https://github.com/ai-world-view/south-korea/tree/main/people
     count: 1
   root_pages:
   - title: Timeline
