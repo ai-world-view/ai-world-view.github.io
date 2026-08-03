@@ -87,17 +87,19 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (5):
+`INDEX.md`). Dedicated topic files (7):
 
 | Category | File | Topic |
 |---|---|---|
 | Geography | `geography/seoul.md` | Seoul — capital and largest city |
 | History | `history/korean-war.md` | Korean War (1950–1953) |
+| History | `history/democratization.md` | Democratization of South Korea (1987–1993) |
+| Government & Politics | `government-politics/government-structure.md` | Government structure — the presidential republic |
 | Economy | `economy/chaebol.md` | Chaebol — family-controlled conglomerates |
 | Culture & Society | `culture-society/hallyu.md` | Hallyu — the Korean Wave |
 | People | `people/park-chung-hee.md` | Park Chung-hee — president (1961–1979) |
 
-Categories with no topics yet: Government & Politics.
+Every taxonomy category now has at least one dedicated topic.
 
 ## Section 5 — Structure Inventory
 
@@ -106,15 +108,16 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 | Artifact | State |
 |---|---|
 | `geography/index.md` | Present — 1 entry |
-| `history/index.md` | Present — 1 entry |
+| `history/index.md` | Present — 2 entries |
+| `government-politics/index.md` | Present — 1 entry |
 | `economy/index.md` | Present — 1 entry |
 | `culture-society/index.md` | Present — 1 entry |
 | `people/index.md` | Present — 1 entry |
-| `TIMELINE.md` | Present — 36 dated events across all five articles |
+| `TIMELINE.md` | Present — 53 dated events across all seven articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all five topic articles |
+| Cross-references (`## Related`) | Present in all seven topic articles |
 
-Category index for Government & Politics is not yet generated (that folder has no content).
+All six category indices are now generated; every category has content.
 
 ## Section 6 — Growth Loop
 
@@ -156,3 +159,14 @@ Added three dedicated articles opening the Economy, Culture & Society, and Peopl
 - ENHANCE pass corrected facts: Park Geun-hye's pardon was by President Moon Jae-in (not Yoon Suk-yeol); Shin Kyuk-ho died in January 2020 (not 1998); Lee Jae-yong was acquitted in the 2024 accounting-fraud case; SK's founder was Chey Jong-gun (1953); Kim Woo-choong was pardoned at the end of 2007; BLACKPINK's Lisa was misattributed to TWICE (corrected to TWICE's Japanese/Taiwanese members); BTS received a service deferral, not an exemption; and the Bu-Ma (Busan–Masan) Uprising was correctly dated and named.
 - build-structure: created `economy/index.md`, `culture-society/index.md`, `people/index.md`; refreshed `INDEX.md`, `TIMELINE.md` (21→36 dated events), and `README.md`; added bidirectional `## Related` links wiring the new articles to Seoul and the Korean War.
 - sync-seed: regenerated §4 (Content Inventory: 2→5 files) and §5 (Structure Inventory: 2→5 category indices).
+
+### G1-T3 — 2026-08-03 — Tick 3: Government structure and democratization open the last empty category
+
+Added two dedicated articles — one opening the final empty category (Government & Politics) and one filling a pivotal historical gap — bringing every taxonomy category to at least one topic.
+
+- Created `government-politics/government-structure.md`: encyclopedic article on the presidential republic — constitutional history, the executive (president, Prime Minister, cabinet), the unicameral National Assembly and electoral system, the judiciary and Constitutional Court, checks and balances, local government, the civil service and Board of Audit and Inspection, and the December 2024 martial-law crisis and Yoon Suk-yeol's removal.
+- Created `history/democratization.md`: encyclopedic article on the 1987–1993 democratic transition — the Park/Chun authoritarian background and Gwangju, the June Democratic Struggle and June 29 Declaration, Roh Tae-woo's presidency and the Sixth Republic constitution, and the consolidation under Kim Young-sam and Kim Dae-jung.
+- Sonnet pass had enriched `history/korean-war.md` with POW-camp (Geoje/Dodd incident) and strategic-air-campaign sections plus chaebol/democratization cross-links.
+- ENHANCE pass corrected facts: the 1987 constitution is unamended (not "amended through 2014"); the 1948 legislature was unicameral; Constitutional Court terms are renewable; National Assembly elections fall in April (not March); six high courts (not five); the 17 subdivisions include Sejong; Park Jong-chul died under torture in January 1987 (not June 18) while Lee Han-yeol was the June figure; Kim Young-sam's Feb 25 1993 inauguration was not a liberation anniversary; Chun/Roh received prison terms then 1997 pardons (Roh was not given a suspended sentence); the Sunshine Policy was Kim Dae-jung's, not Kim Young-sam's; the Great Workers' Struggle began in 1987; and the Suiho Dam raids were June 1952. Fixed Korean romanizations (직선제 jikseonje; 국무총리 Gungmuchongni) and typos (유월 항쟁; "Announcement").
+- build-structure: created `government-politics/index.md`; refreshed `history/index.md` (1→2 entries), `INDEX.md`, `TIMELINE.md` (36→53 dated events), and `README.md`; added `## Related` back-links from Park Chung-hee to both new articles.
+- sync-seed: regenerated §4 (Content Inventory: 5→7 files; last empty category filled) and §5 (Structure Inventory: 5→6 category indices).
