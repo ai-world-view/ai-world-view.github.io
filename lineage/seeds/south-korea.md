@@ -87,19 +87,23 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (7):
+`INDEX.md`). Dedicated topic files (10):
 
 | Category | File | Topic |
 |---|---|---|
 | Geography | `geography/seoul.md` | Seoul — capital and largest city |
+| History | `history/japanese-colonial-period.md` | Japanese Colonial Period (1910–1945) |
 | History | `history/korean-war.md` | Korean War (1950–1953) |
 | History | `history/democratization.md` | Democratization of South Korea (1987–1993) |
 | Government & Politics | `government-politics/government-structure.md` | Government structure — the presidential republic |
 | Economy | `economy/chaebol.md` | Chaebol — family-controlled conglomerates |
+| Economy | `economy/semiconductors.md` | Semiconductors — memory-chip leadership and geopolitics |
 | Culture & Society | `culture-society/hallyu.md` | Hallyu — the Korean Wave |
+| Culture & Society | `culture-society/korean-cuisine.md` | Korean cuisine and food culture |
 | People | `people/park-chung-hee.md` | Park Chung-hee — president (1961–1979) |
 
-Every taxonomy category now has at least one dedicated topic.
+Every taxonomy category has at least one dedicated topic; History, Economy, and Culture & Society
+now hold multiple.
 
 ## Section 5 — Structure Inventory
 
@@ -108,16 +112,16 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 | Artifact | State |
 |---|---|
 | `geography/index.md` | Present — 1 entry |
-| `history/index.md` | Present — 2 entries |
+| `history/index.md` | Present — 3 entries |
 | `government-politics/index.md` | Present — 1 entry |
-| `economy/index.md` | Present — 1 entry |
-| `culture-society/index.md` | Present — 1 entry |
+| `economy/index.md` | Present — 2 entries |
+| `culture-society/index.md` | Present — 2 entries |
 | `people/index.md` | Present — 1 entry |
-| `TIMELINE.md` | Present — 53 dated events across all seven articles |
+| `TIMELINE.md` | Present — 65 dated events across all ten articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all seven topic articles |
+| Cross-references (`## Related`) | Present in all ten topic articles |
 
-All six category indices are now generated; every category has content.
+All six category indices are generated; every category has content.
 
 ## Section 6 — Growth Loop
 
@@ -170,3 +174,14 @@ Added two dedicated articles — one opening the final empty category (Governmen
 - ENHANCE pass corrected facts: the 1987 constitution is unamended (not "amended through 2014"); the 1948 legislature was unicameral; Constitutional Court terms are renewable; National Assembly elections fall in April (not March); six high courts (not five); the 17 subdivisions include Sejong; Park Jong-chul died under torture in January 1987 (not June 18) while Lee Han-yeol was the June figure; Kim Young-sam's Feb 25 1993 inauguration was not a liberation anniversary; Chun/Roh received prison terms then 1997 pardons (Roh was not given a suspended sentence); the Sunshine Policy was Kim Dae-jung's, not Kim Young-sam's; the Great Workers' Struggle began in 1987; and the Suiho Dam raids were June 1952. Fixed Korean romanizations (직선제 jikseonje; 국무총리 Gungmuchongni) and typos (유월 항쟁; "Announcement").
 - build-structure: created `government-politics/index.md`; refreshed `history/index.md` (1→2 entries), `INDEX.md`, `TIMELINE.md` (36→53 dated events), and `README.md`; added `## Related` back-links from Park Chung-hee to both new articles.
 - sync-seed: regenerated §4 (Content Inventory: 5→7 files; last empty category filled) and §5 (Structure Inventory: 5→6 category indices).
+
+### G1-T4 — 2026-08-04 — Tick 4: Japanese colonial period, semiconductors, and Korean cuisine deepen three categories
+
+Added three dedicated articles deepening the History, Economy, and Culture & Society categories, each of the three now holding multiple topics.
+
+- Created `history/japanese-colonial-period.md`: encyclopedic article on the 1910–1945 period — the road to annexation (Ganghwa, Eulsa, and Annexation treaties), military and "cultural" rule, the March 1st Movement and the Provisional Government, wartime assimilation (Sōshi-kaimei, labor and military mobilization), the "comfort women" system, economic transformation, collaboration and resistance, liberation, and unresolved postwar legacies (the 1965 treaty and 2018 forced-labor rulings).
+- Created `economy/semiconductors.md`: encyclopedic article on memory-chip leadership — Samsung's and SK Hynix's (Hyundai Electronics/Hynix) origins, the transition from follower to global leader, DRAM/NAND/HBM technology milestones, the TSMC logic-foundry gap, U.S.–China export controls and the CHIPS Act, market positions, the 2022–2023 downturn and AI-driven recovery, and the K-Semiconductor Strategy.
+- Created `culture-society/korean-cuisine.md`: encyclopedic article on hansik — fermentation and kimchi, the kimjang tradition (UNESCO 2013), banchan and flavor layering, regional cuisines, major dishes and drinking culture, modern convenience/delivery/café culture, global spread and soft power, and health philosophy.
+- ENHANCE pass polished prose, corrected same-directory cross-reference paths, softened an over-broad "Asia's largest fish market" claim (Noryangjin) and an unsupported delivery-order figure, and confirmed factual accuracy and single-ISO front-matter dates on all three files.
+- build-structure: refreshed `history/index.md` (2→3), `economy/index.md` (1→2), `culture-society/index.md` (1→2), `INDEX.md`, `TIMELINE.md` (53→65 dated events), and `README.md`; wrapped the three new `## Related` blocks in generated markers and added bidirectional back-links from Seoul, Chaebol, Hallyu, Park Chung-hee, Korean War, Democratization, and Government Structure.
+- sync-seed: regenerated §4 (Content Inventory: 7→10 files) and §5 (Structure Inventory: entry counts and 65-event timeline).
