@@ -132,6 +132,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `history/genpei-war.md` — Genpei War
   - `history/heian-period.md` — Heian Period
   - `history/kamakura-period.md` — Kamakura Period
+  - `history/meiji-constitution.md` — Meiji Constitution
   - `history/meiji-restoration.md` — Meiji Restoration
   - `history/nara-period.md` — Nara Period
   - `history/russo-japanese-war.md` — Russo-Japanese War
@@ -141,14 +142,13 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `government-politics/diet-of-japan.md` — Diet of Japan
   - `government-politics/imperial-household.md` — The Imperial Household
   - `government-politics/imperial-succession.md` — Imperial Succession
+  - `government-politics/japan-socialist-party.md` — Japan Socialist Party
   - `government-politics/liberal-democratic-party.md` — Liberal Democratic Party
   - `government-politics/ministry-economy-trade-industry.md` — Ministry of Economy, Trade and Industry (METI)
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
-  - `government-politics/self-defense-forces.md` — Self-Defense Forces
   - `government-politics/supreme-court.md` — Supreme Court of Japan
   - `economy/bank-of-japan.md` — Bank of Japan
   - `economy/bubble-economy.md` — 1980s Bubble Economy
-  - `economy/energy-nuclear-power.md` — Energy and Nuclear Power Policy
   - `economy/financial-sector-regulation.md` — Financial Sector Regulation
   - `economy/financial-system.md` — Japanese Financial System
   - `economy/labor-market-and-employment.md` — Labor Market & Employment
@@ -157,7 +157,6 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `economy/technology-manufacturing.md` — Technology & Manufacturing
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
-  - `culture-society/education-system.md` — Education System
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
   - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
@@ -169,6 +168,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/ukiyo-e-woodblock-prints.md` — Ukiyo-e Woodblock Prints
   - `culture-society/women-in-japanese-society.md` — Women in Japanese Society
   - `people/abe-shinzo.md` — Abe Shinzo
+  - `people/akihito.md` — Akihito
   - `people/ashikaga-takauji.md` — Ashikaga Takauji
   - `people/emperor-meiji.md` — Emperor Meiji
   - `people/empress-meiji.md` — Empress Meiji
@@ -180,9 +180,9 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
   - `people/yoshida-shoin.md` — Yoshida Shoin
   - `people/yukio-mishima.md` — Yukio Mishima
-- **Categories with content**: Geography (10), History (11), Government & Politics (8), Economy (9), Culture & Society (13), People (12) — all six categories populated; Culture &
-  Society leads with thirteen topics, followed by People with twelve, History with
-  eleven, Geography with ten, Economy with nine, and Government & Politics with eight.
+- **Categories with content**: Geography (10), History (12), Government & Politics (8), Economy (8), Culture & Society (12), People (13) — all six categories populated; People
+  leads with thirteen topics, followed by History and Culture & Society with twelve
+  each, Geography with ten, and Government & Politics and Economy with eight each.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -191,7 +191,7 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Culture & Society lists thirteen topics; People twelve; History eleven; Geography ten; Economy nine; Government & Politics eight).
+  (People lists thirteen topics; History and Culture & Society twelve each; Geography ten; Government & Politics and Economy eight each).
 - **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
 - **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
 - **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
@@ -445,3 +445,11 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected several errors — in `education-system.md`, removed a duplicated key figure (Mori Arinori had been listed twice, once as "Arinori Mori"), corrected the "1886 Education Ordinance (*Kyōiku Rei*)" to Mori's 1886 School Orders (*Gakkō Rei*), de-linked an *ijime* (bullying) reference that wrongly pointed at *Women in Japanese Society*, and replaced a dubious "*Shichi Daigaku*" private-university grouping with a factual description of Waseda and Keiō; in `energy-nuclear-power.md`, replaced a fabricated NRA chairman ("Satoshi Araki") with the actual first chairman Shunichi Tanaka (2012–2017), untangled the JAEC establishment date (1954 nuclear budget → 1955 Basic Law → JAEC founded 1956), corrected the pre-Fukushima fleet from 55 to 54 reactors (consistent with the ~49 GW figure), and removed a link that attributed the DPJ-era 2011 crisis response to the LDP; in `self-defense-forces.md`, fixed a garbled Gulf War contribution figure ("¥13 billion ($90 billion …)") to the correct ~$13 billion, relabeled the "Ashibe doctrine" as the political-question doctrine (*tōchi kōi ron*), and aligned the front-matter date with the JSDF's 1954-07-01 founding. Confirmed `title`/`date`/`category` front matter on all three, each `date` a single ISO date (1954-07-01, 1872-08-02, 1954-07-04).
 - **Structure** (`build-structure`): added the three topics to their category indices (`government-politics/index.md`, `economy/index.md`, `culture-society/index.md`) and to `INDEX.md`; appended `## Related` crossref blocks (six links each) to the three new files, which had none; merged new dated facts into `TIMELINE.md` — the 1872 *Gakusei*, the 1947 Fundamental Law, and the 2002 *yutori* curriculum (Education); the 1954 atomic budget, the 1966 Tōkai reactor, the 1973 oil shock, the 2011-03-11 Fukushima disaster, and the 2012-09-19 NRA founding (Energy); and the 1954 tri-service founding, the 1992 PKO Law, the 2004 Samawah deployment, the 2007 Ministry of Defense elevation, and the 2022 National Security Strategy (Self-Defense Forces).
 - **Seed** (`sync-seed`): regenerated §4 and §5 from live repo state (63 topic files / 63 README rows; Culture & Society thirteen, People twelve, History eleven, Geography ten, Economy nine, Government & Politics eight). Reconciliation note: the phantom files recorded in the G1-T25 entry (`government-politics/genro-elder-statesmen.md`, `culture-society/ainu-people.md`, `culture-society/ikebana.md`) are absent on disk; the regenerated §4 reflects the actual on-disk inventory, in which this tick's three additions bring the count to 63.
+
+### G1-T27 — 2026-08-04 — Tick 27: added the Meiji Constitution, the Japan Socialist Party, and Akihito
+
+- **Content added** (3 dedicated topic files): `history/meiji-constitution.md` (Japan's first written constitution, promulgated 1889 — the *jiyū minken* pressure and 1881 rescript, Itō Hirobumi's 1882–83 European study tour under Gneist and Stein and the Prussian model with Hermann Roesler, the secret Natsushima drafting and the Privy Council, the 76 articles across seven chapters, imperial sovereignty and the *kokutai*, the "within the limits of the law" subject rights, the bicameral Diet and its tax-qualified franchise, the electoral expansions to the 1925 universal male suffrage paired with the Peace Preservation Law, Taishō party government, the Article 11 *tosuiken* supreme-command loophole and the road through the 1932 and 1936 incidents to militarism, and the 1946–47 SCAP supersession), `government-politics/japan-socialist-party.md` (Japan's principal postwar left opposition, 1945–1996 — the founding, the 1947 Katayama coalition and its collapse, the 1951 right–left split over the peace and security treaties, the 1955 reunification and the 55-System opposition role, the 1958 peak, the 1960 DSP split and the Asanuma assassination, the *Anpo* crisis, Takako Doi and the 1989 *Madonna boom*, the 1993 collapse, the 1994–96 Murayama coalition with the LDP and the abandonment of its pacifist platforms, and the 1996 rebranding as the SDP and its marginalization), and `people/akihito.md` (the 125th Emperor, r. 1989–2019 — his Quaker tutor Elizabeth Gray Vining and gobioid-fish ichthyology, the 1959 marriage to the commoner Michiko Shōda and the *Mitchii boom*, the Heisei "Lost Decades," his compassionate disaster visits after the 1995 Hanshin and 2011 Tōhoku earthquakes, his candor on wartime history and reconciliation visits to Saipan and Peleliu, the male-line succession crisis and Prince Hisahito's 2006 birth, the 2016 abdication-intent address, the 2017 one-time special-measures law, and the 2019 abdication and Reiwa transition). History twelve, Government & Politics and Economy eight each, People thirteen.
+- **README**: knowledge table expanded from 60 to 63 rows with the three new topics.
+- **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected several errors — in `people/akihito.md`, corrected the parenthetical Japanese term for abdication (*taii*, 退位, not the erroneous "*taikan*," which denotes coronation); in `history/meiji-constitution.md`, fixed the chapter count (seven chapters, not "eight," and the cabinet/courts/amendment grouping to Chapters IV–VII); and in `government-politics/japan-socialist-party.md`, removed an anachronistic causal claim that the party's 1958 electoral peak "rattled LDP leaders into pressing for merger in 1955," reframing it so the 1955 socialist reunification and mid-decade strength (not the later 1958 result) spurred the November 1955 conservative merger into the LDP. Confirmed `title`/`date`/`category` front matter on all three, each `date` a single ISO date (1889-02-11, 1945-11-02, 1989-01-08).
+- **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `government-politics/index.md`, `people/index.md`), to `INDEX.md`, and to the README homepage table; merged new dated facts into `TIMELINE.md` — re-homing the 1889-02-11 promulgation row to the dedicated Meiji Constitution article; the 1945 JSP founding, the 1947 Katayama cabinet, the 1955 reunification, the 1960 Asanuma assassination, and the 1994 Murayama premiership (Japan Socialist Party); and Akihito's 1989 accession and his 2016 abdication-intent address (Akihito) — and made cross-references bidirectional with back-links from `meiji-restoration.md` and `postwar-constitution.md` (Meiji Constitution); `liberal-democratic-party.md` and `postwar-constitution.md` (Japan Socialist Party); and `hirohito.md` and `imperial-succession.md` (Akihito); verified all internal Markdown links resolve.
+- **Seed** (`sync-seed`): regenerated §4 and §5 from live repo state (63 topic files / 63 README rows; People thirteen, History and Culture & Society twelve each, Geography ten, Government & Politics and Economy eight each). Reconciliation note: the phantom files recorded in the G1-T26 entry (`government-politics/self-defense-forces.md`, `culture-society/education-system.md`, `economy/energy-nuclear-power.md`) are absent on disk; the regenerated §4 removes them and reflects the actual on-disk inventory, which this tick's three additions restore to 63.
