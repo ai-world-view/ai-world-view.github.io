@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 2
-  ticks: 27
+  ticks: 29
 members:
 - name: japan
   repo: ai-world-view/japan
@@ -14,21 +14,21 @@ members:
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 25
-  log_entries: 41
+  ticks_logged: 26
+  log_entries: 42
   generations: 1
-  last_activity: '2026-08-02'
-  last_entry: 'G1-T25 — 2026-08-02 — Tick 25: added the Genrō (Elder Statesmen), the
-    Ainu People and Indigenous Culture, and Ikebana'
+  last_activity: '2026-08-03'
+  last_entry: 'G1-T26 — 2026-08-03 — Tick 26: added the Self-Defense Forces, the Education
+    System, and Energy and Nuclear Power Policy'
 - name: south-korea
   repo: ai-world-view/south-korea
   url: https://github.com/ai-world-view/south-korea
   site_url: https://ai-world-view.github.io/south-korea/
   subject: the country south korea
   status: growing
-  ticks_logged: 2
-  log_entries: 3
+  ticks_logged: 3
+  log_entries: 4
   generations: 0
-  last_activity: '2026-08-02'
-  last_entry: 'G1-T2 — 2026-08-02 — Tick 2: Chaebol, Hallyu, and Park Chung-hee across
-    three new categories'
+  last_activity: '2026-08-03'
+  last_entry: 'G1-T3 — 2026-08-03 — Tick 3: Government structure and democratization
+    open the last empty category'
