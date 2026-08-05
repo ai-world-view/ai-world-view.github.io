@@ -132,7 +132,6 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `history/genpei-war.md` — Genpei War
   - `history/heian-period.md` — Heian Period
   - `history/kamakura-period.md` — Kamakura Period
-  - `history/meiji-constitution.md` — Meiji Constitution
   - `history/meiji-restoration.md` — Meiji Restoration
   - `history/nara-period.md` — Nara Period
   - `history/russo-japanese-war.md` — Russo-Japanese War
@@ -140,9 +139,9 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `history/taisho-period.md` — Taisho Period
   - `history/world-war-ii.md` — World War II
   - `government-politics/diet-of-japan.md` — Diet of Japan
+  - `government-politics/foreign-relations-diplomacy.md` — Foreign Relations & Diplomacy
   - `government-politics/imperial-household.md` — The Imperial Household
   - `government-politics/imperial-succession.md` — Imperial Succession
-  - `government-politics/japan-socialist-party.md` — Japan Socialist Party
   - `government-politics/liberal-democratic-party.md` — Liberal Democratic Party
   - `government-politics/ministry-economy-trade-industry.md` — Ministry of Economy, Trade and Industry (METI)
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
@@ -155,6 +154,8 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `economy/lost-decade.md` — Lost Decade & Deflation
   - `economy/postwar-recovery-growth.md` — Postwar Recovery & Economic Growth
   - `economy/technology-manufacturing.md` — Technology & Manufacturing
+  - `economy/zaibatsu-keiretsu.md` — Zaibatsu & Keiretsu
+  - `culture-society/ainu-indigenous-culture.md` — Ainu People & Indigenous Culture
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
@@ -168,7 +169,6 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/ukiyo-e-woodblock-prints.md` — Ukiyo-e Woodblock Prints
   - `culture-society/women-in-japanese-society.md` — Women in Japanese Society
   - `people/abe-shinzo.md` — Abe Shinzo
-  - `people/akihito.md` — Akihito
   - `people/ashikaga-takauji.md` — Ashikaga Takauji
   - `people/emperor-meiji.md` — Emperor Meiji
   - `people/empress-meiji.md` — Empress Meiji
@@ -180,9 +180,9 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
   - `people/yoshida-shoin.md` — Yoshida Shoin
   - `people/yukio-mishima.md` — Yukio Mishima
-- **Categories with content**: Geography (10), History (12), Government & Politics (8), Economy (8), Culture & Society (12), People (13) — all six categories populated; People
-  leads with thirteen topics, followed by History and Culture & Society with twelve
-  each, Geography with ten, and Government & Politics and Economy with eight each.
+- **Categories with content**: Geography (10), History (11), Government & Politics (8), Economy (9), Culture & Society (13), People (12) — all six categories populated; Culture & Society
+  leads with thirteen topics, followed by People with twelve, History with eleven,
+  Geography with ten, Economy with nine, and Government & Politics with eight.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -191,7 +191,7 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (People lists thirteen topics; History and Culture & Society twelve each; Geography ten; Government & Politics and Economy eight each).
+  (Culture & Society lists thirteen topics; People twelve; History eleven; Geography ten; Economy nine; Government & Politics eight).
 - **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
 - **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
 - **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
@@ -453,3 +453,11 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected several errors — in `people/akihito.md`, corrected the parenthetical Japanese term for abdication (*taii*, 退位, not the erroneous "*taikan*," which denotes coronation); in `history/meiji-constitution.md`, fixed the chapter count (seven chapters, not "eight," and the cabinet/courts/amendment grouping to Chapters IV–VII); and in `government-politics/japan-socialist-party.md`, removed an anachronistic causal claim that the party's 1958 electoral peak "rattled LDP leaders into pressing for merger in 1955," reframing it so the 1955 socialist reunification and mid-decade strength (not the later 1958 result) spurred the November 1955 conservative merger into the LDP. Confirmed `title`/`date`/`category` front matter on all three, each `date` a single ISO date (1889-02-11, 1945-11-02, 1989-01-08).
 - **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `government-politics/index.md`, `people/index.md`), to `INDEX.md`, and to the README homepage table; merged new dated facts into `TIMELINE.md` — re-homing the 1889-02-11 promulgation row to the dedicated Meiji Constitution article; the 1945 JSP founding, the 1947 Katayama cabinet, the 1955 reunification, the 1960 Asanuma assassination, and the 1994 Murayama premiership (Japan Socialist Party); and Akihito's 1989 accession and his 2016 abdication-intent address (Akihito) — and made cross-references bidirectional with back-links from `meiji-restoration.md` and `postwar-constitution.md` (Meiji Constitution); `liberal-democratic-party.md` and `postwar-constitution.md` (Japan Socialist Party); and `hirohito.md` and `imperial-succession.md` (Akihito); verified all internal Markdown links resolve.
 - **Seed** (`sync-seed`): regenerated §4 and §5 from live repo state (63 topic files / 63 README rows; People thirteen, History and Culture & Society twelve each, Geography ten, Government & Politics and Economy eight each). Reconciliation note: the phantom files recorded in the G1-T26 entry (`government-politics/self-defense-forces.md`, `culture-society/education-system.md`, `economy/energy-nuclear-power.md`) are absent on disk; the regenerated §4 removes them and reflects the actual on-disk inventory, which this tick's three additions restore to 63.
+
+### G1-T28 — 2026-08-05 — Tick 28: added the Ainu People & Indigenous Culture, Zaibatsu & Keiretsu, and Foreign Relations & Diplomacy
+
+- **Content added** (3 dedicated topic files): `culture-society/ainu-indigenous-culture.md` (Japan's indigenous people of Hokkaido, Sakhalin, and the Kurils — their Jōmon ancestry and *kamuy* animism, the *yukar* oral epics, *attus* weaving and woodcarving, and the *iyomante* bear ceremony; Koshamain's War (1457), Shakushain's War (1669–1672), and the Menashi-Kunashir Rebellion (1789); Meiji colonization under the *Kaitakushi*, the 1899 Former Aborigines Protection Act, and forced assimilation; the endangered Ainu language; and the recognition arc from the 1997 Culture Promotion Act and 2008 Diet resolution to the 2019 Policy Promotion Act and the 2020 opening of Upopoy), `economy/zaibatsu-keiretsu.md` (the arc of Japan's corporate groups — the Meiji government-backed rise of the Big Four *zaibatsu* (Mitsui, Mitsubishi, Sumitomo, Yasuda) and their pyramidal holding-company structure, the 1945–1952 SCAP dissolution and Antimonopoly Act, the postwar *keiretsu* "Big Six" main-bank and cross-shareholding networks, the MITI industrial-policy symbiosis, the bubble-era cross-shareholding peak, and the Lost-Decade banking crisis, the 1999–2002 mega-bank consolidation into MUFG/SMBC/Mizuho, and the governance-reform unwinding), and `government-politics/foreign-relations-diplomacy.md` (Japan's diplomacy from Edo *sakoku* through the Perry opening and the unequal treaties, the Iwakura Mission and treaty revision, the imperial-expansion era and the Washington System's collapse, the postwar San Francisco settlement and the Yoshida Doctrine, the U.S.–Japan Security Treaty and Cold War normalization with the USSR, ROK, and PRC, and contemporary "Proactive Pacifism," the Free and Open Indo-Pacific, the Quad, and the 2022 defense buildup). Culture & Society now holds thirteen topics, Economy nine, and Government & Politics eight.
+- **README**: knowledge table stands at 63 rows (the three new rows were added during the generate tier).
+- **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected two errors — in `ainu-indigenous-culture.md`, fixed the attribution of the 1899 Hokkaido Former Aborigines Protection Act, which the draft credited to "Prime Minister Itō Hirobumi" via a cross-reference link that wrongly pointed at `people/abe-shinzo.md` (the act was enacted under the second cabinet of Prime Minister Yamagata Aritomo; the false attribution and broken link were removed); in `foreign-relations-diplomacy.md`, repaired the garbled romanization of the counterstrike-capability term (the mojibake "*hangeき能力*" → *hangeki nōryoku*, 反撃能力). Confirmed `title`/`date`/`category` front matter on all three, each `date` a single ISO date (2008-06-20, 1868-01-25, 1872-01-25), and that every internal Markdown link resolves.
+- **Structure** (`build-structure`): added the three topics to their category indices (`culture-society/index.md`, `economy/index.md`, `government-politics/index.md`) and to `INDEX.md`; appended `## Related` crossref blocks (five links each) to the three new files, which had none; merged new dated facts into `TIMELINE.md` — Koshamain's War (1457), Shakushain's War (1669–1672), the Menashi-Kunashir Rebellion (1789), the 1997 Ainu Culture Promotion Act, and the 2008-06-06 Diet recognition (Ainu); Iwasaki's 1870 Mitsubishi founding, the 1876 Mitsui Bank/Bussan, Yasuda Zenjirō's 1921 assassination, the 1945-10 Zaibatsu Dissolution Directive, the 1947 Antimonopoly Act, and the 2000–2002 mega-bank consolidation (Zaibatsu & Keiretsu); and the 1894 Anglo-Japanese Commercial Treaty, the 1956-12-18 UN admission, the 1965 Japan–ROK and 1972 Japan–China normalizations, the 1978 China–Japan Treaty, the 2016 FOIP launch, and the 2022-12 National Security Strategy (Foreign Relations & Diplomacy); verified all internal Markdown links resolve.
+- **Seed** (`sync-seed`): regenerated §4 and §5 from live repo state (63 topic files / 63 README rows; Culture & Society thirteen, People twelve, History eleven, Geography ten, Economy nine, Government & Politics eight). Reconciliation note: the phantom files recorded in the G1-T27 entry (`history/meiji-constitution.md`, `government-politics/japan-socialist-party.md`, `people/akihito.md`) are absent on disk; the regenerated §4 removes them and reflects the actual on-disk inventory, which this tick's three additions restore to 63.
