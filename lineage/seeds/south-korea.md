@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (10):
+`INDEX.md`). Dedicated topic files (13):
 
 | Category | File | Topic |
 |---|---|---|
@@ -96,14 +96,17 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | History | `history/korean-war.md` | Korean War (1950–1953) |
 | History | `history/democratization.md` | Democratization of South Korea (1987–1993) |
 | Government & Politics | `government-politics/government-structure.md` | Government structure — the presidential republic |
+| Government & Politics | `government-politics/north-korea-relations.md` | South Korea–North Korea relations and inter-Korean diplomacy |
 | Economy | `economy/chaebol.md` | Chaebol — family-controlled conglomerates |
 | Economy | `economy/semiconductors.md` | Semiconductors — memory-chip leadership and geopolitics |
 | Culture & Society | `culture-society/hallyu.md` | Hallyu — the Korean Wave |
 | Culture & Society | `culture-society/korean-cuisine.md` | Korean cuisine and food culture |
+| Culture & Society | `culture-society/education-and-universities.md` | Education and universities — the school system and SKY hierarchy |
+| Culture & Society | `culture-society/kpop-industry.md` | K-pop industry and global music market |
 | People | `people/park-chung-hee.md` | Park Chung-hee — president (1961–1979) |
 
-Every taxonomy category has at least one dedicated topic; History, Economy, and Culture & Society
-now hold multiple.
+Every taxonomy category has at least one dedicated topic; History, Government & Politics, Economy,
+and Culture & Society hold multiple, with Culture & Society now the largest category (four topics).
 
 ## Section 5 — Structure Inventory
 
@@ -113,13 +116,13 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 |---|---|
 | `geography/index.md` | Present — 1 entry |
 | `history/index.md` | Present — 3 entries |
-| `government-politics/index.md` | Present — 1 entry |
+| `government-politics/index.md` | Present — 2 entries |
 | `economy/index.md` | Present — 2 entries |
-| `culture-society/index.md` | Present — 2 entries |
+| `culture-society/index.md` | Present — 4 entries |
 | `people/index.md` | Present — 1 entry |
-| `TIMELINE.md` | Present — 65 dated events across all ten articles |
+| `TIMELINE.md` | Present — 82 dated events across all thirteen articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all ten topic articles |
+| Cross-references (`## Related`) | Present in all thirteen topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -185,3 +188,14 @@ Added three dedicated articles deepening the History, Economy, and Culture & Soc
 - ENHANCE pass polished prose, corrected same-directory cross-reference paths, softened an over-broad "Asia's largest fish market" claim (Noryangjin) and an unsupported delivery-order figure, and confirmed factual accuracy and single-ISO front-matter dates on all three files.
 - build-structure: refreshed `history/index.md` (2→3), `economy/index.md` (1→2), `culture-society/index.md` (1→2), `INDEX.md`, `TIMELINE.md` (53→65 dated events), and `README.md`; wrapped the three new `## Related` blocks in generated markers and added bidirectional back-links from Seoul, Chaebol, Hallyu, Park Chung-hee, Korean War, Democratization, and Government Structure.
 - sync-seed: regenerated §4 (Content Inventory: 7→10 files) and §5 (Structure Inventory: entry counts and 65-event timeline).
+
+### G1-T5 — 2026-08-05 — Tick 5: Education, the K-pop industry, and inter-Korean relations deepen two categories
+
+Added three dedicated articles — two deepening Culture & Society (now the largest category, four topics) and one opening a second Government & Politics topic.
+
+- Created `culture-society/education-and-universities.md`: encyclopedic article on the education system — the school structure and Suneung, the hagwon economy, the SKY/KAIST/POSTECH university hierarchy, examination-culture pressure, PISA and QS rankings, the Confucian meritocratic heritage, and contemporary challenges (demographic decline, equity, mental health, credential inflation, AI).
+- Created `culture-society/kpop-industry.md`: encyclopedic article on the K-pop industry — origins from Seo Taiji and H.O.T., the Big Three and HYBE, PSY, BTS, BLACKPINK and NewJeans, the trainee/production model, global market position and revenue, regional dynamics, and controversies (labor, mental health, the 2024 HYBE–Min Hee-jin conflict, geopolitics).
+- Created `government-politics/north-korea-relations.md`: encyclopedic article on inter-Korean relations from South Korea's foreign-policy standpoint — the armistice and DMZ, divergent development, the North's nuclear program and UNSC sanctions, the Sunshine Policy, the Lee/Park pressure years, the 2018 summit moment, the Yoon security reassertion and North Korea–Russia cooperation, defectors, separated families, and the reunification question.
+- ENHANCE pass corrected facts: Korea University's founder (Lee Yong-ik, not "Lee Jun-yong"); KAIST's founding study (Frederick Terman's "Terman Report," not "Harbison and Myers"); replaced a garbled "air-traffic controller strike" claim with the real Suneung-day flight suspension; SNU enrollment figures; BoA's Japanese breakthrough (*Listen to My Heart* topping Oricon, dropping the false "ID; Peace B #2"); BTS milestones (*Love Yourself: Tear* as the first #1, the September 2018 UN address, "Butter"'s ten non-consecutive weeks, *Proof* as the sixth #1); "Kill This Love" dated to April 2019 and an unverifiable Glastonbury-headline claim removed; Sulli/Goo Hara's agencies (f(x)/SM and KARA/DSP, not "both SM"); Weverse MAU; the Mount Kumgang shooting date (July 11 2008); the section header "Park Geun-hye Interlude"; the last family reunion (August 2018); and the May 2022 UNSC veto framing. Fixed a mismatched Japan/North-Korea cross-link and confirmed single-ISO front-matter dates.
+- build-structure: added generated `## Related` blocks to all three new articles; refreshed `government-politics/index.md` (1→2), `culture-society/index.md` (2→4), `INDEX.md`, and `TIMELINE.md` (65→82 dated events); and added bidirectional back-links from Hallyu, Government Structure, Korean War, Park Chung-hee, Chaebol, and Semiconductors. README already listed the new articles.
+- sync-seed: regenerated §4 (Content Inventory: 10→13 files) and §5 (Structure Inventory: entry counts and 82-event timeline).
