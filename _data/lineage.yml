@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 2
-  ticks: 31
+  ticks: 33
 members:
 - name: japan
   repo: ai-world-view/japan
@@ -14,21 +14,21 @@ members:
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 27
-  log_entries: 43
+  ticks_logged: 28
+  log_entries: 44
   generations: 1
-  last_activity: '2026-08-04'
-  last_entry: 'G1-T27 — 2026-08-04 — Tick 27: added the Meiji Constitution, the Japan
-    Socialist Party, and Akihito'
+  last_activity: '2026-08-05'
+  last_entry: 'G1-T28 — 2026-08-05 — Tick 28: added the Ainu People & Indigenous Culture,
+    Zaibatsu & Keiretsu, and Foreign Relations & Diplomacy'
 - name: south-korea
   repo: ai-world-view/south-korea
   url: https://github.com/ai-world-view/south-korea
   site_url: https://ai-world-view.github.io/south-korea/
   subject: the country south korea
   status: growing
-  ticks_logged: 4
-  log_entries: 5
+  ticks_logged: 5
+  log_entries: 6
   generations: 0
-  last_activity: '2026-08-04'
-  last_entry: 'G1-T4 — 2026-08-04 — Tick 4: Japanese colonial period, semiconductors,
-    and Korean cuisine deepen three categories'
+  last_activity: '2026-08-05'
+  last_entry: 'G1-T5 — 2026-08-05 — Tick 5: Education, the K-pop industry, and inter-Korean
+    relations deepen two categories'
