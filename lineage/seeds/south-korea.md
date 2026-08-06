@@ -87,11 +87,12 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (13):
+`INDEX.md`). Dedicated topic files (15):
 
 | Category | File | Topic |
 |---|---|---|
 | Geography | `geography/seoul.md` | Seoul — capital and largest city |
+| Geography | `geography/busan.md` | Busan — port city and second metropolis |
 | History | `history/japanese-colonial-period.md` | Japanese Colonial Period (1910–1945) |
 | History | `history/korean-war.md` | Korean War (1950–1953) |
 | History | `history/democratization.md` | Democratization of South Korea (1987–1993) |
@@ -104,9 +105,11 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Culture & Society | `culture-society/education-and-universities.md` | Education and universities — the school system and SKY hierarchy |
 | Culture & Society | `culture-society/kpop-industry.md` | K-pop industry and global music market |
 | People | `people/park-chung-hee.md` | Park Chung-hee — president (1961–1979) |
+| People | `people/kim-dae-jung.md` | Kim Dae-jung — president (1998–2003) and Nobel laureate |
 
-Every taxonomy category has at least one dedicated topic; History, Government & Politics, Economy,
-and Culture & Society hold multiple, with Culture & Society now the largest category (four topics).
+Every taxonomy category now holds at least two dedicated topics; Culture & Society is the largest
+(four topics), followed by History (three), with Geography, Government & Politics, Economy, and
+People at two each.
 
 ## Section 5 — Structure Inventory
 
@@ -114,15 +117,15 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 
 | Artifact | State |
 |---|---|
-| `geography/index.md` | Present — 1 entry |
+| `geography/index.md` | Present — 2 entries |
 | `history/index.md` | Present — 3 entries |
 | `government-politics/index.md` | Present — 2 entries |
 | `economy/index.md` | Present — 2 entries |
 | `culture-society/index.md` | Present — 4 entries |
-| `people/index.md` | Present — 1 entry |
-| `TIMELINE.md` | Present — 82 dated events across all thirteen articles |
+| `people/index.md` | Present — 2 entries |
+| `TIMELINE.md` | Present — 97 dated events across all fifteen articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all thirteen topic articles |
+| Cross-references (`## Related`) | Present in all fifteen topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -199,3 +202,13 @@ Added three dedicated articles — two deepening Culture & Society (now the larg
 - ENHANCE pass corrected facts: Korea University's founder (Lee Yong-ik, not "Lee Jun-yong"); KAIST's founding study (Frederick Terman's "Terman Report," not "Harbison and Myers"); replaced a garbled "air-traffic controller strike" claim with the real Suneung-day flight suspension; SNU enrollment figures; BoA's Japanese breakthrough (*Listen to My Heart* topping Oricon, dropping the false "ID; Peace B #2"); BTS milestones (*Love Yourself: Tear* as the first #1, the September 2018 UN address, "Butter"'s ten non-consecutive weeks, *Proof* as the sixth #1); "Kill This Love" dated to April 2019 and an unverifiable Glastonbury-headline claim removed; Sulli/Goo Hara's agencies (f(x)/SM and KARA/DSP, not "both SM"); Weverse MAU; the Mount Kumgang shooting date (July 11 2008); the section header "Park Geun-hye Interlude"; the last family reunion (August 2018); and the May 2022 UNSC veto framing. Fixed a mismatched Japan/North-Korea cross-link and confirmed single-ISO front-matter dates.
 - build-structure: added generated `## Related` blocks to all three new articles; refreshed `government-politics/index.md` (1→2), `culture-society/index.md` (2→4), `INDEX.md`, and `TIMELINE.md` (65→82 dated events); and added bidirectional back-links from Hallyu, Government Structure, Korean War, Park Chung-hee, Chaebol, and Semiconductors. README already listed the new articles.
 - sync-seed: regenerated §4 (Content Inventory: 10→13 files) and §5 (Structure Inventory: entry counts and 82-event timeline).
+
+### G1-T6 — 2026-08-06 — Tick 6: Busan and Kim Dae-jung open second topics in Geography and People
+
+Added two dedicated articles — one deepening Geography (its second topic) and one deepening People (its second topic) — bringing every taxonomy category to at least two topics.
+
+- Created `geography/busan.md`: encyclopedic article on Busan — geography and climate, the Joseon-era Choryang Waegwan, the 1876 treaty-port opening and colonial transformation, the 1950 Busan Perimeter, the 1979 Bu-Ma Uprising, rapid-growth industrialization, contemporary port operations and the Busan-Jinhae Free Economic Zone, shipbuilding, the 2030 World Expo bid, culture (Jagalchi Market, Gamcheon Culture Village, BIFF, APEC 2005), beaches, the 2002 Asian Games, transport, and demographic decline.
+- Created `people/kim-dae-jung.md`: encyclopedic article on Kim Dae-jung — his Jeolla origins, the 1971 challenge to Park Chung-hee, the 1973 Tokyo kidnapping, the 1980 death sentence and exile, the Three-Kim era, the 1987/1992 losses and 1997 victory (the first opposition-party transfer of power), the IMF-crisis economic reforms and Daewoo collapse, the Sunshine Policy and 2000 Pyongyang summit, the 2000 Nobel Peace Prize, and his legacy.
+- ENHANCE pass corrected facts: Busan's BIFC tower height (63 floors, not 56); the 2030 Expo vote (Riyadh won outright in the first round, 119 to Busan's 29, no second round); Geumjeongsanseong's wall length (~18 km); Kim Dae-jung's 1992 third-place opponent (Chung Ju-yung of the Unification National Party, not Kim Jong-pil); the Sunshine Policy's Korean spelling (햇볕정책, not 햇빛 정책); and removed a false attribution of the covert pre-summit cash transfer to a nonexistent son "Kim Hyun-chul." Fixed a "break out" grammar slip and the mischaracterization of Busan as Kim Dae-jung's political base. Confirmed single-ISO front-matter dates on both files.
+- build-structure: refreshed `geography/index.md` (1→2) and `people/index.md` (1→2); updated `INDEX.md` and `README.md`; extended `TIMELINE.md` (82→97 dated events) with fifteen new Busan and Kim Dae-jung events; wrapped both new `## Related` blocks in generated markers; and added bidirectional back-links from Seoul, Korean War, Japanese Colonial Period, Democratization, Park Chung-hee, Chaebol, and North Korea Relations.
+- sync-seed: regenerated §4 (Content Inventory: 13→15 files) and §5 (Structure Inventory: entry counts and 97-event timeline; every category now holds at least two topics).
