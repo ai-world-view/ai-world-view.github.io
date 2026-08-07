@@ -115,8 +115,8 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 63 rows.
-- **Dedicated topic files** (63), grouped by category:
+- **README knowledge table**: 62 rows.
+- **Dedicated topic files** (62), grouped by category:
   - `geography/hokkaido.md` — Hokkaido
   - `geography/kobe.md` — Kobe
   - `geography/kyoto.md` — Kyoto
@@ -139,7 +139,6 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `history/taisho-period.md` — Taisho Period
   - `history/world-war-ii.md` — World War II
   - `government-politics/diet-of-japan.md` — Diet of Japan
-  - `government-politics/foreign-relations-diplomacy.md` — Foreign Relations & Diplomacy
   - `government-politics/imperial-household.md` — The Imperial Household
   - `government-politics/imperial-succession.md` — Imperial Succession
   - `government-politics/liberal-democratic-party.md` — Liberal Democratic Party
@@ -152,10 +151,9 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `economy/financial-system.md` — Japanese Financial System
   - `economy/labor-market-and-employment.md` — Labor Market & Employment
   - `economy/lost-decade.md` — Lost Decade & Deflation
+  - `economy/meiji-industrialization.md` — Meiji Industrialization
   - `economy/postwar-recovery-growth.md` — Postwar Recovery & Economic Growth
   - `economy/technology-manufacturing.md` — Technology & Manufacturing
-  - `economy/zaibatsu-keiretsu.md` — Zaibatsu & Keiretsu
-  - `culture-society/ainu-indigenous-culture.md` — Ainu People & Indigenous Culture
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
@@ -168,6 +166,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/tea-ceremony.md` — Tea Ceremony
   - `culture-society/ukiyo-e-woodblock-prints.md` — Ukiyo-e Woodblock Prints
   - `culture-society/women-in-japanese-society.md` — Women in Japanese Society
+  - `culture-society/zen-buddhism.md` — Zen Buddhism
   - `people/abe-shinzo.md` — Abe Shinzo
   - `people/ashikaga-takauji.md` — Ashikaga Takauji
   - `people/emperor-meiji.md` — Emperor Meiji
@@ -180,9 +179,9 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
   - `people/yoshida-shoin.md` — Yoshida Shoin
   - `people/yukio-mishima.md` — Yukio Mishima
-- **Categories with content**: Geography (10), History (11), Government & Politics (8), Economy (9), Culture & Society (13), People (12) — all six categories populated; Culture & Society
+- **Categories with content**: Geography (10), History (11), Government & Politics (7), Economy (9), Culture & Society (13), People (12) — all six categories populated; Culture & Society
   leads with thirteen topics, followed by People with twelve, History with eleven,
-  Geography with ten, Economy with nine, and Government & Politics with eight.
+  Geography with ten, Economy with nine, and Government & Politics with seven.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -191,10 +190,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Culture & Society lists thirteen topics; People twelve; History eleven; Geography ten; Economy nine; Government & Politics eight).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
-- **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
+  (Culture & Society lists thirteen topics; People twelve; History eleven; Geography ten; Economy nine; Government & Politics seven).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 62 topics).
+- **Master index**: `INDEX.md` — present (all 62 topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 62 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -469,3 +468,11 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: normalized all three front-matter `date:` fields to single plain ISO dates — `1200-01-01` (Ainu, medieval-presence anchor), `1868-01-01` (Zaibatsu, Meiji-origin anchor), and `1945-08-15` (Foreign Relations, surrender/postwar anchor) — replacing bare-year values. Corrected several factual errors from the model's own knowledge: in `ainu-indigenous-culture.md`, fixed *attus* cloth to the inner bark of the ohyō elm (*Ulmus laciniata*) rather than "giant dogwood," and replaced the mischaracterization of Ainu woodcarving as *inro*/*netsuke* with authentic forms (*ikupasuy* prayer sticks, *makiri* knife sheaths, *morew*/*aiushi* motifs); in `zaibatsu-keiretsu.md`, corrected the postwar bank lineage so Mitsui's Sakura Bank and Sumitomo Bank merge into Sumitomo Mitsui Banking Corporation (SMFG) in 2001 rather than "MUFG," fixed MUFG's own genealogy (Mitsubishi Tokyo Financial Group + UFJ Holdings, the latter from Sanwa and Tokai banks), replaced an overstated "≈50% of paid-up capital by 1920" claim with the standard end-of-war ~quarter-of-paid-in-capital figure, generalized the dubious "1884 / 4.6 million yen" Nagasaki-shipyard purchase, and corrected 1960 GDP from "$90 billion" to ~$44 billion; in `foreign-relations-diplomacy.md`, fixed the Self-Defense Forces founding to July 1954, corrected the 1965 Japan–ROK settlement to $300 million in grants and $200 million in loans, repaired the Malabar-exercise history (US–India origin, Japan joining permanently in 2015 and Australia in 2020), and removed an irrelevant Sakhalin/Hokkaido aside. Fixed a broken relative cross-reference in `zaibatsu-keiretsu.md` (the METI `## Related` link, which lacked its `../government-politics/` prefix); confirmed `title`/`date`/`category` front matter and that every internal Markdown link in the three files resolves.
 - **Structure** (`build-structure`): added the three topics to their category indices (`culture-society/index.md`, `economy/index.md`, `government-politics/index.md`) and to `INDEX.md`; the three files already carried valid `## Related` crossref blocks. Merged distinct dated facts into `TIMELINE.md` — Shakushain's War (1669–1672), the Menashi-Kunashir rebellion (1789), the 1997 Ainu Cultural Promotion Act, and the 2009 UNESCO inscription of *upopo*/*rimse* (Ainu); the 1876 founding of Mitsui Bussan, the 1946 Holding Company Liquidation Commission, the 1947 Antimonopoly Law, and the 2001 Sumitomo–Sakura merger (Zaibatsu & Keiretsu); and the 1956 Japan–Soviet Joint Declaration, the 1965 Japan–ROK and 1972 Japan–PRC normalizations, the 1978 China–Japan Peace and Friendship Treaty, and the 2022 National Security Strategy (Foreign Relations & Diplomacy).
 - **Seed** (`sync-seed`): §1–7 already reflected the live repo state (63 topic files / 63 README rows; Culture & Society thirteen, People twelve, History eleven, Geography ten, Economy nine, Government & Politics eight) and needed no changes this pass; the README-row reconciliation above brought the homepage table into agreement with the §4 count.
+
+### G1-T30 — 2026-08-07 — Tick 30: added Zen Buddhism and Meiji Industrialization, and expanded Nitobe Inazō
+
+- **Content added** (2 dedicated topic files, plus one substantially expanded): `culture-society/zen-buddhism.md` (the Japanese school of Mahāyāna Buddhism — Chinese Chan origins under Bodhidharma and the Tang masters, the Kamakura transmission by Eisai (Rinzai) and Dōgen (Sōtō), *zazen*, the *kōan* and the *Wumenguan*/*Biyanlu* collections, Hakuin's Rinzai systematization, the influence on ink painting, haiku, the tea ceremony, *karesansui* gardens, and *budō*, the *terauke* entrenchment and the Ōbaku school, the Meiji *shinbutsu-bunri* crisis, and the 20th-century internationalization through D.T. Suzuki and Shunryu Suzuki), and `economy/meiji-industrialization.md` (Japan's 1868–1912 state-directed industrialization — the *shokusan kōgyō* developmental state, the Iwakura Mission and the ~3,000 *oyatoi gaikokujin* foreign advisors, railways from the 1872 Shimbashi–Yokohama line, the Tomioka Silk Mill and the cotton/silk export engine, coal and the Yawata steelworks and shipbuilding, the *zaibatsu* model and *kangyō harai-sage* privatization, the communications and education base, and the financing through land tax, foreign bonds, and war indemnities). The People article `people/nitobe-inazou.md` was substantially expanded (early life and the Sapporo Band, colonial Taiwan, the composition/reception/controversies of *Bushido*, the League of Nations Intellectual Cooperation work, and postwar reinterpretation). Culture & Society now holds thirteen topics and Economy nine.
+- **README**: knowledge table expanded from 60 to 62 rows with Zen Buddhism and Meiji Industrialization.
+- **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected errors — in `zen-buddhism.md`, fixed the header romanization gloss ("*Zenbushō*" → *Zenshū*, 禅宗) and the Japanese name of Dōgen's master Tiantong Rujing ("Tōyō Eichō" → Tendō Nyojō); in `meiji-industrialization.md`, corrected the Iwakura Mission report title (the invented "*Tagaijō-ki*" → *Beiō Kairan Jikki*, 米欧回覧実記, compiled by Kume Kunitake), removed the erroneous "Jacquart" (a weaving-loom term) from the Tomioka silk-reeling machines, and replaced a raw Japanese "今の東京工業大学" gloss with plain English ("now the Tokyo Institute of Technology"); in `nitobe-inazou.md`, corrected the eighth bushido virtue's romanization (self-control "*jiga*" → *kokki*, 克己), unlinked a First Sino-Japanese War reference that had pointed at the Russo-Japanese War page (no `sino-japanese-war.md` exists), and removed a nonsensical "Inazo Nitobe (a relative)" self-reference. Confirmed `title`/`date`/`category` front matter on all three, each `date` a single ISO date (Zen 1191-01-01, Meiji Industrialization 1868-01-25, Nitobe 1862-09-01), and that every internal Markdown link resolves.
+- **Structure** (`build-structure`): added Zen Buddhism to `culture-society/index.md` and Meiji Industrialization to `economy/index.md`, and both to `INDEX.md` and the README homepage table; wrapped the two new files' hand-written `## Related` sections in the canonical `BEGIN/END GENERATED: crossrefs` markers used by every other topic file; merged new dated facts into `TIMELINE.md` — Eisai's 1191 founding of the first Rinzai temple and Dōgen's 1244 Eihei-ji (Zen Buddhism), and the 1872 Tomioka Silk Mill and the 1906 Railway Nationalization Act (Meiji Industrialization); verified all internal Markdown links resolve.
+- **Seed** (`sync-seed`): regenerated §4 and §5 from live repo state (62 topic files / 62 README rows; Culture & Society thirteen, People twelve, History eleven, Geography ten, Economy nine, Government & Politics seven). Reconciliation note: the phantom files recorded in the G1-T28/T29 entries (`culture-society/ainu-indigenous-culture.md`, `economy/zaibatsu-keiretsu.md`, `government-politics/foreign-relations-diplomacy.md`) are absent on disk; the regenerated §4 removes them and reflects the actual on-disk inventory (60 pre-existing files + this tick's 2 additions = 62).
