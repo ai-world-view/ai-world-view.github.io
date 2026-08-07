@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (15):
+`INDEX.md`). Dedicated topic files (17):
 
 | Category | File | Topic |
 |---|---|---|
@@ -104,12 +104,14 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Culture & Society | `culture-society/korean-cuisine.md` | Korean cuisine and food culture |
 | Culture & Society | `culture-society/education-and-universities.md` | Education and universities — the school system and SKY hierarchy |
 | Culture & Society | `culture-society/kpop-industry.md` | K-pop industry and global music market |
+| Culture & Society | `culture-society/sports-and-olympics.md` | Sports and the Olympic Games — hosting, athletic excellence, and esports |
 | People | `people/park-chung-hee.md` | Park Chung-hee — president (1961–1979) |
 | People | `people/kim-dae-jung.md` | Kim Dae-jung — president (1998–2003) and Nobel laureate |
+| People | `people/lee-myung-bak.md` | Lee Myung-bak — president (2008–2013) |
 
-Every taxonomy category now holds at least two dedicated topics; Culture & Society is the largest
-(four topics), followed by History (three), with Geography, Government & Politics, Economy, and
-People at two each.
+Every taxonomy category holds at least two dedicated topics; Culture & Society is the largest
+(five topics), followed by History and People (three each), with Geography, Government & Politics,
+and Economy at two each.
 
 ## Section 5 — Structure Inventory
 
@@ -121,11 +123,11 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 | `history/index.md` | Present — 3 entries |
 | `government-politics/index.md` | Present — 2 entries |
 | `economy/index.md` | Present — 2 entries |
-| `culture-society/index.md` | Present — 4 entries |
-| `people/index.md` | Present — 2 entries |
-| `TIMELINE.md` | Present — 97 dated events across all fifteen articles |
+| `culture-society/index.md` | Present — 5 entries |
+| `people/index.md` | Present — 3 entries |
+| `TIMELINE.md` | Present — 114 dated events across all seventeen articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all fifteen topic articles |
+| Cross-references (`## Related`) | Present in all seventeen topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -212,3 +214,13 @@ Added two dedicated articles — one deepening Geography (its second topic) and 
 - ENHANCE pass corrected facts: Busan's BIFC tower height (63 floors, not 56); the 2030 Expo vote (Riyadh won outright in the first round, 119 to Busan's 29, no second round); Geumjeongsanseong's wall length (~18 km); Kim Dae-jung's 1992 third-place opponent (Chung Ju-yung of the Unification National Party, not Kim Jong-pil); the Sunshine Policy's Korean spelling (햇볕정책, not 햇빛 정책); and removed a false attribution of the covert pre-summit cash transfer to a nonexistent son "Kim Hyun-chul." Fixed a "break out" grammar slip and the mischaracterization of Busan as Kim Dae-jung's political base. Confirmed single-ISO front-matter dates on both files.
 - build-structure: refreshed `geography/index.md` (1→2) and `people/index.md` (1→2); updated `INDEX.md` and `README.md`; extended `TIMELINE.md` (82→97 dated events) with fifteen new Busan and Kim Dae-jung events; wrapped both new `## Related` blocks in generated markers; and added bidirectional back-links from Seoul, Korean War, Japanese Colonial Period, Democratization, Park Chung-hee, Chaebol, and North Korea Relations.
 - sync-seed: regenerated §4 (Content Inventory: 13→15 files) and §5 (Structure Inventory: entry counts and 97-event timeline; every category now holds at least two topics).
+
+### G1-T7 — 2026-08-07 — Tick 7: Sports & the Olympics and Lee Myung-bak deepen Culture & Society and People
+
+Added two dedicated articles — one making Culture & Society the largest category (five topics) and one giving People a third topic.
+
+- Created `culture-society/sports-and-olympics.md`: encyclopedic article on South Korean sport — the 1988 Seoul and 2018 PyeongChang Olympics, dominance in archery and short-track speed skating, taekwondo, esports (StarCraft and League of Legends), the 2002 World Cup run, golf, baseball, and sport as national soft power.
+- Created `people/lee-myung-bak.md`: encyclopedic article on Lee Myung-bak — his Hyundai Construction career, the Seoul mayoralty (Cheonggyecheon restoration and 2004 transit reform), the presidency (Four Major Rivers Project, MB Doctrine, 2008 beef protests, the Cheonan and Yeonpyeong incidents), and his post-presidency corruption conviction and 2022 pardon.
+- ENHANCE pass converted draft `[[wikilinks]]` in both files to resolved markdown links and corrected facts: the Seoul 1988 participant count (159 NOCs); the 2002 World Cup path (drew the U.S.; beat Italy on a golden goal and Spain on penalties); Park Ji-sung's seven Man Utd seasons; the K League's 1983 founding; a softened League of Legends Worlds viewership claim; and, in the Lee article, the removal of the Han River Renaissance (mayor Oh Se-hoon's project) misattributed to Lee, the "two terms"/"no prior political experience" errors, the renaming to the Four Major Rivers Project, the DAS ownership wording, and the Supreme Court's October 2020 (not January 2021) finalization of the 17-year sentence.
+- build-structure: added generated `## Related` blocks to both new articles; refreshed `culture-society/index.md` (4→5), `people/index.md` (2→3), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (97→114 dated events) with seventeen new sport and Lee Myung-bak events; and added bidirectional back-links from Seoul, Park Chung-hee, North Korea Relations, Hallyu, and Chaebol.
+- sync-seed: regenerated §4 (Content Inventory: 15→17 files) and §5 (Structure Inventory: entry counts and 114-event timeline).
