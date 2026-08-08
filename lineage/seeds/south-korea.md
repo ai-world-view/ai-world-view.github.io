@@ -87,12 +87,13 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (17):
+`INDEX.md`). Dedicated topic files (20):
 
 | Category | File | Topic |
 |---|---|---|
 | Geography | `geography/seoul.md` | Seoul — capital and largest city |
 | Geography | `geography/busan.md` | Busan — port city and second metropolis |
+| History | `history/three-kingdoms-period.md` | Three Kingdoms period (Goguryeo, Baekje, Silla) and Silla's unification |
 | History | `history/japanese-colonial-period.md` | Japanese Colonial Period (1910–1945) |
 | History | `history/korean-war.md` | Korean War (1950–1953) |
 | History | `history/democratization.md` | Democratization of South Korea (1987–1993) |
@@ -100,6 +101,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Government & Politics | `government-politics/north-korea-relations.md` | South Korea–North Korea relations and inter-Korean diplomacy |
 | Economy | `economy/chaebol.md` | Chaebol — family-controlled conglomerates |
 | Economy | `economy/semiconductors.md` | Semiconductors — memory-chip leadership and geopolitics |
+| Economy | `economy/technology-sector.md` | Technology sector — ICT, displays, AI, telecom, and mobility beyond semiconductors |
 | Culture & Society | `culture-society/hallyu.md` | Hallyu — the Korean Wave |
 | Culture & Society | `culture-society/korean-cuisine.md` | Korean cuisine and food culture |
 | Culture & Society | `culture-society/education-and-universities.md` | Education and universities — the school system and SKY hierarchy |
@@ -108,10 +110,11 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/park-chung-hee.md` | Park Chung-hee — president (1961–1979) |
 | People | `people/kim-dae-jung.md` | Kim Dae-jung — president (1998–2003) and Nobel laureate |
 | People | `people/lee-myung-bak.md` | Lee Myung-bak — president (2008–2013) |
+| People | `people/bang-si-hyuk.md` | Bang Si-hyuk — HYBE founder and architect of BTS |
 
 Every taxonomy category holds at least two dedicated topics; Culture & Society is the largest
-(five topics), followed by History and People (three each), with Geography, Government & Politics,
-and Economy at two each.
+(five topics), followed by History and People (four each), Economy (three), and Geography and
+Government & Politics (two each).
 
 ## Section 5 — Structure Inventory
 
@@ -120,14 +123,14 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 | Artifact | State |
 |---|---|
 | `geography/index.md` | Present — 2 entries |
-| `history/index.md` | Present — 3 entries |
+| `history/index.md` | Present — 4 entries |
 | `government-politics/index.md` | Present — 2 entries |
-| `economy/index.md` | Present — 2 entries |
+| `economy/index.md` | Present — 3 entries |
 | `culture-society/index.md` | Present — 5 entries |
-| `people/index.md` | Present — 3 entries |
-| `TIMELINE.md` | Present — 114 dated events across all seventeen articles |
+| `people/index.md` | Present — 4 entries |
+| `TIMELINE.md` | Present — 142 dated events across all twenty articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all seventeen topic articles |
+| Cross-references (`## Related`) | Present in all twenty topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -224,3 +227,14 @@ Added two dedicated articles — one making Culture & Society the largest catego
 - ENHANCE pass converted draft `[[wikilinks]]` in both files to resolved markdown links and corrected facts: the Seoul 1988 participant count (159 NOCs); the 2002 World Cup path (drew the U.S.; beat Italy on a golden goal and Spain on penalties); Park Ji-sung's seven Man Utd seasons; the K League's 1983 founding; a softened League of Legends Worlds viewership claim; and, in the Lee article, the removal of the Han River Renaissance (mayor Oh Se-hoon's project) misattributed to Lee, the "two terms"/"no prior political experience" errors, the renaming to the Four Major Rivers Project, the DAS ownership wording, and the Supreme Court's October 2020 (not January 2021) finalization of the 17-year sentence.
 - build-structure: added generated `## Related` blocks to both new articles; refreshed `culture-society/index.md` (4→5), `people/index.md` (2→3), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (97→114 dated events) with seventeen new sport and Lee Myung-bak events; and added bidirectional back-links from Seoul, Park Chung-hee, North Korea Relations, Hallyu, and Chaebol.
 - sync-seed: regenerated §4 (Content Inventory: 15→17 files) and §5 (Structure Inventory: entry counts and 114-event timeline).
+
+### G1-T8 — 2026-08-08 — Tick 8: Three Kingdoms period, the technology sector, and Bang Si-hyuk deepen History, Economy, and People
+
+Added three dedicated articles — one giving History its deepest chronological reach (a fourth topic), one opening a third Economy topic beyond the chaebol/semiconductor focus, and one giving People a fourth topic.
+
+- Created `history/three-kingdoms-period.md`: encyclopedic article on the Three Kingdoms period — the origins and development of Goguryeo, Baekje, and Silla; the Hwarang and the Bone Rank System; Gwanggaeto the Great and the Gwanggaeto Stele; the Sui and Tang wars and Silla's Tang alliance; Unified Silla and Gyeongju; Buddhism, arts, and material culture; relations with China and Japan; and the decline into the Later Three Kingdoms and Goryeo's reunification.
+- Created `economy/technology-sector.md`: encyclopedic article on the ICT and technology economy beyond semiconductors — the developmental-state and broadband origins; display technology (OLED, foldables, microLED); smartphones and component dominance; AI (HBM, HyperCLOVA); 5G leadership; autonomous vehicles and mobility; gaming, webtoons, and digital content; the R&D system (KAIST, POSTECH, ETRI, the K-Semiconductor Strategy); the startup ecosystem; and geopolitical and sustainability challenges.
+- Created `people/bang-si-hyuk.md`: encyclopedic article on Bang Si-hyuk — his education and production career, the 2005 founding of Big Hit, BTS's development and Billboard breakthrough, the 2020 IPO and HYBE's acquisition-driven scale-up, Weverse, BTS's military service, the 2024 Min Hee-jin/ADOR dispute and other controversies, and his economic, industrial, geopolitical, and technological legacy.
+- ENHANCE pass converted draft `[[wikilinks]]` in all three files to resolved markdown links and corrected facts: corrected Bang Si-hyuk's education (Seoul National University aesthetics, not "K-Arts composition"), reframed "Butter" as ten non-consecutive weeks at #1 (matching the K-pop article), reworded BTS's military service as a deferral (not exemption) with December 2023 enlistments, and fixed "2AM" from duo to group; in the technology article, corrected HyperCLOVA's scale (~204 billion parameters), softened the "world's first OLED TV" claim, corrected the Boston Dynamics valuation, and reframed Samsung's Taylor, Texas fab as still under construction; in the Three Kingdoms article, removed a spurious martial-arts term, fixed the Chinese term for investiture (冊封), and corrected "Wang-in (Wani)" and a duplicated-artisan error.
+- build-structure: refreshed `history/index.md` (3→4), `economy/index.md` (2→3), `people/index.md` (3→4), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (114→142 dated events) with twenty-eight new events spanning the Three Kingdoms era, the technology sector, and Bang Si-hyuk; wrapped all three new `## Related` blocks in generated markers; and added bidirectional back-links from Seoul, Korean War, Japanese Colonial Period, Busan, Education, Semiconductors, Chaebol, K-pop Industry, Hallyu, Kim Dae-jung, and Park Chung-hee.
+- sync-seed: regenerated §4 (Content Inventory: 17→20 files) and §5 (Structure Inventory: entry counts and 142-event timeline).
