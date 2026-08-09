@@ -87,13 +87,15 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (20):
+`INDEX.md`). Dedicated topic files (23):
 
 | Category | File | Topic |
 |---|---|---|
 | Geography | `geography/seoul.md` | Seoul — capital and largest city |
 | Geography | `geography/busan.md` | Busan — port city and second metropolis |
+| Geography | `geography/jeju-island.md` | Jeju Island — volcanic island, tourism, haenyeo divers, and the April 3 Incident |
 | History | `history/three-kingdoms-period.md` | Three Kingdoms period (Goguryeo, Baekje, Silla) and Silla's unification |
+| History | `history/korean-independence-movement.md` | Korean Independence Movement (1876–1945) — anti-colonial struggle to liberation |
 | History | `history/japanese-colonial-period.md` | Japanese Colonial Period (1910–1945) |
 | History | `history/korean-war.md` | Korean War (1950–1953) |
 | History | `history/democratization.md` | Democratization of South Korea (1987–1993) |
@@ -110,11 +112,12 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/park-chung-hee.md` | Park Chung-hee — president (1961–1979) |
 | People | `people/kim-dae-jung.md` | Kim Dae-jung — president (1998–2003) and Nobel laureate |
 | People | `people/lee-myung-bak.md` | Lee Myung-bak — president (2008–2013) |
+| People | `people/moon-jae-in.md` | Moon Jae-in — president (2017–2022) and inter-Korean diplomacy |
 | People | `people/bang-si-hyuk.md` | Bang Si-hyuk — HYBE founder and architect of BTS |
 
-Every taxonomy category holds at least two dedicated topics; Culture & Society is the largest
-(five topics), followed by History and People (four each), Economy (three), and Geography and
-Government & Politics (two each).
+Every taxonomy category holds at least two dedicated topics; Culture & Society, History, and People
+are the largest (five topics each), followed by Economy and Geography (three each) and Government &
+Politics (two).
 
 ## Section 5 — Structure Inventory
 
@@ -122,15 +125,15 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 
 | Artifact | State |
 |---|---|
-| `geography/index.md` | Present — 2 entries |
-| `history/index.md` | Present — 4 entries |
+| `geography/index.md` | Present — 3 entries |
+| `history/index.md` | Present — 5 entries |
 | `government-politics/index.md` | Present — 2 entries |
 | `economy/index.md` | Present — 3 entries |
 | `culture-society/index.md` | Present — 5 entries |
-| `people/index.md` | Present — 4 entries |
-| `TIMELINE.md` | Present — 142 dated events across all twenty articles |
+| `people/index.md` | Present — 5 entries |
+| `TIMELINE.md` | Present — 165 dated events across all twenty-three articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all twenty topic articles |
+| Cross-references (`## Related`) | Present in all twenty-three topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -238,3 +241,14 @@ Added three dedicated articles — one giving History its deepest chronological 
 - ENHANCE pass converted draft `[[wikilinks]]` in all three files to resolved markdown links and corrected facts: corrected Bang Si-hyuk's education (Seoul National University aesthetics, not "K-Arts composition"), reframed "Butter" as ten non-consecutive weeks at #1 (matching the K-pop article), reworded BTS's military service as a deferral (not exemption) with December 2023 enlistments, and fixed "2AM" from duo to group; in the technology article, corrected HyperCLOVA's scale (~204 billion parameters), softened the "world's first OLED TV" claim, corrected the Boston Dynamics valuation, and reframed Samsung's Taylor, Texas fab as still under construction; in the Three Kingdoms article, removed a spurious martial-arts term, fixed the Chinese term for investiture (冊封), and corrected "Wang-in (Wani)" and a duplicated-artisan error.
 - build-structure: refreshed `history/index.md` (3→4), `economy/index.md` (2→3), `people/index.md` (3→4), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (114→142 dated events) with twenty-eight new events spanning the Three Kingdoms era, the technology sector, and Bang Si-hyuk; wrapped all three new `## Related` blocks in generated markers; and added bidirectional back-links from Seoul, Korean War, Japanese Colonial Period, Busan, Education, Semiconductors, Chaebol, K-pop Industry, Hallyu, Kim Dae-jung, and Park Chung-hee.
 - sync-seed: regenerated §4 (Content Inventory: 17→20 files) and §5 (Structure Inventory: entry counts and 142-event timeline).
+
+### G1-T9 — 2026-08-09 — Tick 9: Jeju Island, the Korean Independence Movement, and Moon Jae-in deepen Geography, History, and People
+
+Added three dedicated articles — one giving Geography a third topic, one filling a foundational gap in the History narrative, and one completing the modern presidential arc in People (now five topics).
+
+- Created `geography/jeju-island.md`: encyclopedic article on Jeju — volcanic geology (Hallasan, Seongsan Ilchulbong, the Geomunoreum/Manjangul lava tubes), UNESCO natural and geopark status, creation mythology and Jejueo, the haenyeo diving tradition, Tamna and pre-modern history, the 1948 April 3 Incident and its long suppression and eventual state apology, postwar tourism and the Special Self-Governing Province, the Jeju Naval Base controversy, and the island's progressive regional identity and tourism-dependent economy.
+- Created `history/korean-independence-movement.md`: encyclopedic article on the 1876–1945 anti-colonial struggle — the treaty-port era and Righteous Army, the Donghak Peasant Revolt, An Jung-geun's assassination of Itō Hirobumi, the Eulsa Treaty and annexation, the March 1st Movement and the Provisional Government, armed resistance in Manchuria (Qingshanli) and the Korean Patriotic Corps (Yun Bong-gil), cultural/intellectual/economic resistance, the Korean Liberation Army, late-colonial repression, liberation and division, and the contested Cold War legacies.
+- Created `people/moon-jae-in.md`: encyclopedic article on Moon Jae-in — his refugee-family origins on Geoje, human-rights lawyering with Roh Moo-hyun, the road through the Candlelight Revolution to the 2017 election, the three 2018 inter-Korean summits and PyeongChang diplomacy, income-led growth and real-estate policy, the K-quarantine COVID-19 response, and post-presidential legal jeopardy.
+- ENHANCE pass corrected facts and converted draft `[[wikilinks]]` to resolved markdown links: in the Jeju article, fixed the status to a special self-governing province (제주특별자치도, not a "special autonomous city"), Hallasan as South Korea's (not the peninsula's) highest peak, Manjangul's length (~7.4 km, not 13.4 km), the party abbreviation (SKLP), Roh Moo-hyun's apology date (October 2003), the waterfall name (Jeongbang, dropping the garbled "Jeremijang"), and the foreigner-only casino wording; in the independence-movement article, corrected the Korean Liberation Army's commander (Ji Cheong-cheon, with Yi Beom-seok as field commander), Jeon Bong-jun's nickname ("Mung Bean General"), the Eulsa romanization, and standardized "An Jung-geun"; in the Moon article, corrected his university (Kyung Hee, not Seoul National), his parents' origin (South Hamgyong), the bribery-case description, and softened an over-asserted "grand pardon" claim to reflect its unresolved status.
+- build-structure: refreshed `geography/index.md` (2→3), `history/index.md` (4→5), `people/index.md` (4→5), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (142→165 dated events) with twenty-three new events spanning Jeju, the independence movement, and Moon Jae-in; wrapped all three new `## Related` blocks in generated markers; and added bidirectional back-links from Seoul, Korean War, Japanese Colonial Period, Democratization, Park Chung-hee, Kim Dae-jung, Lee Myung-bak, and North Korea Relations.
+- sync-seed: regenerated §4 (Content Inventory: 20→23 files) and §5 (Structure Inventory: entry counts and 165-event timeline).
