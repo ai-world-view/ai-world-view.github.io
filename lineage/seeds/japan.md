@@ -115,9 +115,10 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 62 rows.
-- **Dedicated topic files** (62), grouped by category:
+- **README knowledge table**: 63 rows.
+- **Dedicated topic files** (63), grouped by category:
   - `geography/hokkaido.md` — Hokkaido
+  - `geography/kanazawa.md` — Kanazawa
   - `geography/kobe.md` — Kobe
   - `geography/kyoto.md` — Kyoto
   - `geography/kyushu.md` — Kyushu
@@ -157,6 +158,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
+  - `culture-society/kabuki-theater.md` — Kabuki Theater
   - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
   - `culture-society/noh-theater.md` — Noh Theater
@@ -166,7 +168,6 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/tea-ceremony.md` — Tea Ceremony
   - `culture-society/ukiyo-e-woodblock-prints.md` — Ukiyo-e Woodblock Prints
   - `culture-society/women-in-japanese-society.md` — Women in Japanese Society
-  - `culture-society/zen-buddhism.md` — Zen Buddhism
   - `people/abe-shinzo.md` — Abe Shinzo
   - `people/ashikaga-takauji.md` — Ashikaga Takauji
   - `people/emperor-meiji.md` — Emperor Meiji
@@ -179,9 +180,9 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
   - `people/yoshida-shoin.md` — Yoshida Shoin
   - `people/yukio-mishima.md` — Yukio Mishima
-- **Categories with content**: Geography (10), History (11), Government & Politics (7), Economy (9), Culture & Society (13), People (12) — all six categories populated; Culture & Society
-  leads with thirteen topics, followed by People with twelve, History with eleven,
-  Geography with ten, Economy with nine, and Government & Politics with seven.
+- **Categories with content**: Geography (11), History (11), Government & Politics (7), Economy (9), Culture & Society (13), People (12) — all six categories populated; Culture & Society
+  leads with thirteen topics, followed by People with twelve, then History and
+  Geography with eleven each, Economy with nine, and Government & Politics with seven.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -190,10 +191,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Culture & Society lists thirteen topics; People twelve; History eleven; Geography ten; Economy nine; Government & Politics seven).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 62 topics).
-- **Master index**: `INDEX.md` — present (all 62 topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 62 dedicated topic files, using relative
+  (Culture & Society lists thirteen topics; People twelve; History and Geography eleven each; Economy nine; Government & Politics seven).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
+- **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -484,3 +485,11 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected an error — in `zen-buddhism.md`, fixed the founding date of Eisai's Shōfuku-ji in Hakata from 1191 to 1195 (Eisai returned from his second China journey in 1191 but founded the temple, traditionally Japan's oldest Zen temple, in 1195). Confirmed `title`/`date`/`category` front matter on both files, each `date` a single plain ISO date (Zen Buddhism 1190-01-01, Meiji Industrialization 1868-01-25), and that every internal Markdown link resolves.
 - **Structure** (`build-structure`): added Zen Buddhism to `culture-society/index.md` and Meiji Industrialization to `economy/index.md`, and both to `INDEX.md`; both files already carried valid `## Related` crossref blocks in the canonical `BEGIN/END GENERATED: crossrefs` markers. Merged new dated facts into `TIMELINE.md` — the 1195 founding of Shōfuku-ji, Dōgen's 1244 Eihei-ji, and the 1962 San Francisco Zen Center (Zen Buddhism); and the 1872 Tomioka Silk Mill, the 1884 sale of the Nagasaki Shipyard to Mitsubishi, the 1906 Railway Nationalization Act, and the 1911 Factory Law (Meiji Industrialization).
 - **Seed** (`sync-seed`): §1–7 already reflected the live repo state (62 topic files / 62 README rows; Culture & Society thirteen, People twelve, History eleven, Geography ten, Economy nine, Government & Politics seven) and needed no changes this pass. Reconciliation note: the G1-T30 entry records these same two topics (plus a Nitobe expansion) with details that do not match the on-disk files (e.g. a 1191-01-01 Zen date and *Wumenguan*/*Biyanlu* glosses); that prior record never landed on disk, and this tick's regeneration supersedes it, bringing the actual inventory to 62.
+
+### G1-T32 — 2026-08-09 — Tick 32: added Kabuki Theater, Meiji Industrialization, and Kanazawa
+
+- **Content added** (3 dedicated topic files): `culture-society/kabuki-theater.md` (Japan's classical popular theater — Okuni's c. 1603 Kyoto origins, the 1629/1652 bans that produced all-male performance and the *onnagata* art, Edo-period codification of *jidaimono*/*sewamono* plays, the *aragoto*/*wagoto* styles, *kumadori* makeup, *hanamichi* and the c. 1758 revolving stage, canonical plays such as *Kanadehon Chūshingura* and *Kanjinchō*, the Kabuki-za and other venues, Living National Treasures, and UNESCO recognition), `economy/meiji-industrialization.md` (Japan's 1868–1912 state-led transformation into Asia's first industrial power — the *fukoku kyōhei* strategy, the Iwakura Mission and *yatoi gaikokujin* technology transfer, railways/telegraph/banking and the 1897 gold standard, the Tomioka silk mill and Osaka cotton spinning, coal/copper/steel and shipbuilding, the *zaibatsu*, labor mobilization and its social costs, and the military-industrial base that defeated Russia), and `geography/kanazawa.md` (the Sea of Japan castle town of the million-*koku* Maeda domain — its escape from WWII bombing, Kenroku-en garden, gold-leaf/Kutani-ware/lacquer/Kaga-yūzen crafts, the Kaga Hōshō Noh tradition, the Higashi Chaya geisha district, Ōmichō Market, the SANAA-designed 21st Century Museum, the 2015 Hokuriku Shinkansen, and the 2024 Noto earthquake). Culture & Society now holds thirteen topics, Economy nine, and Geography eleven.
+- **README**: knowledge table expanded from 62 to 63 rows with Kabuki Theater, Meiji Industrialization, and Kanazawa.
+- **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected errors in `kabuki-theater.md` — the UNESCO Masterpiece proclamation year (2003 → **2005**, the third proclamation; Bunraku was 2003 and Nōgaku 2001), the garbled early-cinema actor name ("Bandō Tsurnosuke" → **Bandō Tsumasaburō**), and the Ichikawa Danjūrō lineage example (now extended to **Danjūrō XIII**, named 2022). Confirmed `title`/`date`/`category` front matter on all three files, each `date` a single plain ISO date (Kabuki Theater 1603-07-14, Meiji Industrialization 1868-01-25, Kanazawa 1583-07-15), and that every internal Markdown link resolves.
+- **Structure** (`build-structure`): added Kabuki Theater to `culture-society/index.md`, Meiji Industrialization to `economy/index.md`, and Kanazawa to `geography/index.md`, and all three to `INDEX.md` and the README homepage table; the three files already carried valid `## Related` crossref blocks in the canonical `BEGIN/END GENERATED: crossrefs` markers. Merged new dated facts into `TIMELINE.md` — the 1652 *yarō* Kabuki transition, the c. 1758 revolving stage, the 1889 Kabuki-za opening, and the 2005 UNESCO proclamation (Kabuki); the 1872 Tomioka Silk Mill, the 1897 gold standard, and the 1906 Railway Nationalization Act (Meiji Industrialization); and the 1583 Maeda founding, the 1871 opening of Kenroku-en, the 2004 21st Century Museum, the 2015-03-14 Hokuriku Shinkansen, and the 2024-01-01 Noto earthquake (Kanazawa).
+- **Seed** (`sync-seed`): regenerated §4 and §5 from live repo state (63 topic files / 63 README rows; Culture & Society thirteen, People twelve, History and Geography eleven each, Economy nine, Government & Politics seven). Reconciliation note: the prior §8 records for Zen Buddhism (G1-T30/T31) describe a `culture-society/zen-buddhism.md` that is absent on disk; the regenerated §4 removes that phantom entry and reflects the actual on-disk inventory (60 pre-existing files + this tick's 3 additions = 63).
