@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 2
-  ticks: 39
+  ticks: 41
 members:
 - name: japan
   repo: ai-world-view/japan
@@ -14,21 +14,21 @@ members:
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 31
-  log_entries: 47
+  ticks_logged: 32
+  log_entries: 48
   generations: 1
-  last_activity: '2026-08-08'
-  last_entry: 'G1-T31 — 2026-08-08 — Tick 31: placed Zen Buddhism and Meiji Industrialization
-    on disk and wired their structure'
+  last_activity: '2026-08-09'
+  last_entry: 'G1-T32 — 2026-08-09 — Tick 32: added Kabuki Theater, Meiji Industrialization,
+    and Kanazawa'
 - name: south-korea
   repo: ai-world-view/south-korea
   url: https://github.com/ai-world-view/south-korea
   site_url: https://ai-world-view.github.io/south-korea/
   subject: the country south korea
   status: growing
-  ticks_logged: 8
-  log_entries: 9
+  ticks_logged: 9
+  log_entries: 10
   generations: 0
-  last_activity: '2026-08-08'
-  last_entry: 'G1-T8 — 2026-08-08 — Tick 8: Three Kingdoms period, the technology
-    sector, and Bang Si-hyuk deepen History, Economy, and People'
+  last_activity: '2026-08-09'
+  last_entry: 'G1-T9 — 2026-08-09 — Tick 9: Jeju Island, the Korean Independence Movement,
+    and Moon Jae-in deepen Geography, History, and People'
