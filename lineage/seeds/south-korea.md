@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (23):
+`INDEX.md`). Dedicated topic files (25):
 
 | Category | File | Topic |
 |---|---|---|
@@ -101,6 +101,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | History | `history/democratization.md` | Democratization of South Korea (1987–1993) |
 | Government & Politics | `government-politics/government-structure.md` | Government structure — the presidential republic |
 | Government & Politics | `government-politics/north-korea-relations.md` | South Korea–North Korea relations and inter-Korean diplomacy |
+| Government & Politics | `government-politics/technology-innovation-policy.md` | Technology and innovation policy — the developmental state, K-Semiconductor Strategy, R&D, and tech regulation |
 | Economy | `economy/chaebol.md` | Chaebol — family-controlled conglomerates |
 | Economy | `economy/semiconductors.md` | Semiconductors — memory-chip leadership and geopolitics |
 | Economy | `economy/technology-sector.md` | Technology sector — ICT, displays, AI, telecom, and mobility beyond semiconductors |
@@ -114,10 +115,11 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/lee-myung-bak.md` | Lee Myung-bak — president (2008–2013) |
 | People | `people/moon-jae-in.md` | Moon Jae-in — president (2017–2022) and inter-Korean diplomacy |
 | People | `people/bang-si-hyuk.md` | Bang Si-hyuk — HYBE founder and architect of BTS |
+| People | `people/yoon-suk-yeol.md` | Yoon Suk-yeol — president (2022–2025) and the December 2024 martial-law crisis |
 
-Every taxonomy category holds at least two dedicated topics; Culture & Society, History, and People
-are the largest (five topics each), followed by Economy and Geography (three each) and Government &
-Politics (two).
+Every taxonomy category holds at least three dedicated topics; People is the largest (six topics),
+followed by Culture & Society and History (five each) and Economy, Geography, and Government &
+Politics (three each).
 
 ## Section 5 — Structure Inventory
 
@@ -127,13 +129,13 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 |---|---|
 | `geography/index.md` | Present — 3 entries |
 | `history/index.md` | Present — 5 entries |
-| `government-politics/index.md` | Present — 2 entries |
+| `government-politics/index.md` | Present — 3 entries |
 | `economy/index.md` | Present — 3 entries |
 | `culture-society/index.md` | Present — 5 entries |
-| `people/index.md` | Present — 5 entries |
-| `TIMELINE.md` | Present — 165 dated events across all twenty-three articles |
+| `people/index.md` | Present — 6 entries |
+| `TIMELINE.md` | Present — 183 dated events across all twenty-five articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all twenty-three topic articles |
+| Cross-references (`## Related`) | Present in all twenty-five topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -252,3 +254,13 @@ Added three dedicated articles — one giving Geography a third topic, one filli
 - ENHANCE pass corrected facts and converted draft `[[wikilinks]]` to resolved markdown links: in the Jeju article, fixed the status to a special self-governing province (제주특별자치도, not a "special autonomous city"), Hallasan as South Korea's (not the peninsula's) highest peak, Manjangul's length (~7.4 km, not 13.4 km), the party abbreviation (SKLP), Roh Moo-hyun's apology date (October 2003), the waterfall name (Jeongbang, dropping the garbled "Jeremijang"), and the foreigner-only casino wording; in the independence-movement article, corrected the Korean Liberation Army's commander (Ji Cheong-cheon, with Yi Beom-seok as field commander), Jeon Bong-jun's nickname ("Mung Bean General"), the Eulsa romanization, and standardized "An Jung-geun"; in the Moon article, corrected his university (Kyung Hee, not Seoul National), his parents' origin (South Hamgyong), the bribery-case description, and softened an over-asserted "grand pardon" claim to reflect its unresolved status.
 - build-structure: refreshed `geography/index.md` (2→3), `history/index.md` (4→5), `people/index.md` (4→5), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (142→165 dated events) with twenty-three new events spanning Jeju, the independence movement, and Moon Jae-in; wrapped all three new `## Related` blocks in generated markers; and added bidirectional back-links from Seoul, Korean War, Japanese Colonial Period, Democratization, Park Chung-hee, Kim Dae-jung, Lee Myung-bak, and North Korea Relations.
 - sync-seed: regenerated §4 (Content Inventory: 20→23 files) and §5 (Structure Inventory: entry counts and 165-event timeline).
+
+### G1-T10 — 2026-08-10 — Tick 10: Yoon Suk-yeol and technology & innovation policy deepen People and Government & Politics
+
+Added two dedicated articles — one completing the modern presidential arc in People (now six topics, the largest category) and one opening a third Government & Politics topic on the developmental-state technology strategy.
+
+- Created `people/yoon-suk-yeol.md`: encyclopedic article on Yoon Suk-yeol — his prosecutorial career and rise, the 0.73-point 2022 election, foreign policy (the Camp David trilateral framework, the Washington Declaration, Japan normalization), domestic record (the semiconductor downturn and HBM recovery, the Itaewon crowd crush, divided government, the Kim Keon-hee controversies), the December 2024 martial-law crisis, his 2025 impeachment, Constitutional Court removal, arrest, and pending insurrection prosecution.
+- Created `government-politics/technology-innovation-policy.md`: encyclopedic article on South Korea's technology and innovation policy — the developmental-state foundations, the DRAM "memory-chip path" and research institutions (KAIST, ETRI, POSTECH, Daedeok), R&D investment and tax incentives, the K-Semiconductor Strategy and HBM, AI policy and Korean LLMs, 5G/6G, batteries, the venture ecosystem, tech regulation (platforms, data, export controls), and structural challenges.
+- ENHANCE pass corrected facts: in the Yoon article, reframed the garbled "CIA-era" NIS case as the 2013 NIS online opinion-manipulation investigation; fixed Lee Myung-bak's sentence (increased to 17 years on appeal, not reduced); corrected the Constitutional Court's April 2025 ruling to an eight-justice unanimous 8-0 decision (one seat vacant, no ninth justice or recusal) citing Article 77; corrected the June 2025 snap-election runner-up to the PPP's Kim Moon-soo (~41%, not "Han Dong-hoon ~45%") with Lee Jae-myung at ~49.4%; and fixed the Related block (Park Geun-hye was pardoned by Moon Jae-in in December 2021, not Yoon; corrected the technology-policy cross-reference path). In the technology article, removed the false claim that YMTC is SK Hynix's joint-venture partner; corrected the muddled Wassenaar/equipment-supply-chain passage (the US, Japan, and the Netherlands control chipmaking tools, not Korea); fixed the AI Basic Act timeline (passed December 2024, promulgated January 2025, effective January 2026); reconciled Samsung's DRAM-leadership dates (1992 DRAM, 1993 memory overall); and dated the Naver antitrust fine to 2020.
+- build-structure: added generated `## Related` markers to both new articles; refreshed `government-politics/index.md` (2→3), `people/index.md` (5→6), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (165→183 dated events) with eighteen new events spanning Yoon's career and the technology-policy arc; and added bidirectional back-links from Moon Jae-in, Lee Myung-bak, North Korea Relations, Government Structure, Semiconductors, Technology Sector, Chaebol, and Park Chung-hee.
+- sync-seed: regenerated §4 (Content Inventory: 23→25 files) and §5 (Structure Inventory: entry counts and 183-event timeline; People becomes the largest category).
