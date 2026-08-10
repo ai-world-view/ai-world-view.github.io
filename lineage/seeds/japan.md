@@ -117,8 +117,9 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   Culture & Society, People.
 - **README knowledge table**: 63 rows.
 - **Dedicated topic files** (63), grouped by category:
+  - `geography/hiroshima.md` — Hiroshima
   - `geography/hokkaido.md` — Hokkaido
-  - `geography/kanazawa.md` — Kanazawa
+  - `geography/kamakura.md` — Kamakura
   - `geography/kobe.md` — Kobe
   - `geography/kyoto.md` — Kyoto
   - `geography/kyushu.md` — Kyushu
@@ -152,13 +153,11 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `economy/financial-system.md` — Japanese Financial System
   - `economy/labor-market-and-employment.md` — Labor Market & Employment
   - `economy/lost-decade.md` — Lost Decade & Deflation
-  - `economy/meiji-industrialization.md` — Meiji Industrialization
   - `economy/postwar-recovery-growth.md` — Postwar Recovery & Economic Growth
   - `economy/technology-manufacturing.md` — Technology & Manufacturing
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
-  - `culture-society/kabuki-theater.md` — Kabuki Theater
   - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
   - `culture-society/noh-theater.md` — Noh Theater
@@ -177,12 +176,13 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/minamoto-no-yoritomo.md` — Minamoto no Yoritomo
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/nitobe-inazou.md` — Nitobe Inazō
+  - `people/oda-nobunaga.md` — Oda Nobunaga
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
   - `people/yoshida-shoin.md` — Yoshida Shoin
   - `people/yukio-mishima.md` — Yukio Mishima
-- **Categories with content**: Geography (11), History (11), Government & Politics (7), Economy (9), Culture & Society (13), People (12) — all six categories populated; Culture & Society
-  leads with thirteen topics, followed by People with twelve, then History and
-  Geography with eleven each, Economy with nine, and Government & Politics with seven.
+- **Categories with content**: Geography (12), History (11), Government & Politics (7), Economy (8), Culture & Society (12), People (13) — all six categories populated; People
+  leads with thirteen topics, followed by Geography and Culture & Society with twelve
+  each, then History with eleven, Economy with eight, and Government & Politics with seven.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -191,7 +191,7 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Culture & Society lists thirteen topics; People twelve; History and Geography eleven each; Economy nine; Government & Politics seven).
+  (People lists thirteen topics; Geography and Culture & Society twelve each; History eleven; Economy eight; Government & Politics seven).
 - **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
 - **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
 - **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
@@ -493,3 +493,11 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected errors in `kabuki-theater.md` — the UNESCO Masterpiece proclamation year (2003 → **2005**, the third proclamation; Bunraku was 2003 and Nōgaku 2001), the garbled early-cinema actor name ("Bandō Tsurnosuke" → **Bandō Tsumasaburō**), and the Ichikawa Danjūrō lineage example (now extended to **Danjūrō XIII**, named 2022). Confirmed `title`/`date`/`category` front matter on all three files, each `date` a single plain ISO date (Kabuki Theater 1603-07-14, Meiji Industrialization 1868-01-25, Kanazawa 1583-07-15), and that every internal Markdown link resolves.
 - **Structure** (`build-structure`): added Kabuki Theater to `culture-society/index.md`, Meiji Industrialization to `economy/index.md`, and Kanazawa to `geography/index.md`, and all three to `INDEX.md` and the README homepage table; the three files already carried valid `## Related` crossref blocks in the canonical `BEGIN/END GENERATED: crossrefs` markers. Merged new dated facts into `TIMELINE.md` — the 1652 *yarō* Kabuki transition, the c. 1758 revolving stage, the 1889 Kabuki-za opening, and the 2005 UNESCO proclamation (Kabuki); the 1872 Tomioka Silk Mill, the 1897 gold standard, and the 1906 Railway Nationalization Act (Meiji Industrialization); and the 1583 Maeda founding, the 1871 opening of Kenroku-en, the 2004 21st Century Museum, the 2015-03-14 Hokuriku Shinkansen, and the 2024-01-01 Noto earthquake (Kanazawa).
 - **Seed** (`sync-seed`): regenerated §4 and §5 from live repo state (63 topic files / 63 README rows; Culture & Society thirteen, People twelve, History and Geography eleven each, Economy nine, Government & Politics seven). Reconciliation note: the prior §8 records for Zen Buddhism (G1-T30/T31) describe a `culture-society/zen-buddhism.md` that is absent on disk; the regenerated §4 removes that phantom entry and reflects the actual on-disk inventory (60 pre-existing files + this tick's 3 additions = 63).
+
+### G1-T33 — 2026-08-10 — Tick 33: added Hiroshima, Kamakura, and Oda Nobunaga
+
+- **Content added** (3 dedicated topic files): `geography/hiroshima.md` (Japan's sixth-largest city on the Ōta River delta — its prewar military-garrison role, the August 6, 1945 atomic bombing by "Little Boy" and its ~140,000 deaths by year's end, the *hibakusha* and the ABCC/RERF radiation studies, the Peace Memorial City reconstruction under Mayor Hamai and Kenzō Tange's Peace Memorial Park, and the annual ceremony, the 2016 Obama visit, the 2023 G7 Summit, and the Mayors for Peace network), `geography/kamakura.md` (the Kanagawa coastal city and seat of Japan's first warrior government, 1185–1333 — Yoritomo's choice of the defensible site, the shogunate's tripartite administration and the Hōjō regency, the Mongol invasions and *kamikaze*, the 1333 fall at Tōshō-ji, the Rinzai *Gozan* Zen temples, the Kōtoku-in Great Buddha, Tsurugaoka Hachiman Shrine, and the modern heritage-tourism city), and `people/oda-nobunaga.md` (the first of Japan's three unifiers, 1534–1582 — the Fool of Owari, Okehazama (1560), the 1568 entry into Kyoto and 1573 end of the Ashikaga shogunate, the arquebus volleys at Nagashino (1575), the *rakuichi-rakuza* market policy and Azuchi Castle, the destruction of Enryaku-ji and the Ikkō-ikki, his tea and Noh patronage and Jesuit tolerance, and the Honnō-ji Incident). Geography rises to twelve topics and People to thirteen.
+- **README**: knowledge table stands at 63 rows, including Hiroshima, Kamakura, and Oda Nobunaga added during the tick.
+- **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected errors — in `people/oda-nobunaga.md`, aligned the front-matter `date` to the body's birthdate (1534-07-02 → **1534-06-23**, June 23, 1534) and softened the overstated "Akechi's control lasted only thirteen days" to "less than two weeks," adding the proverbial *mikka tenka* ("three-day rule"), since the Honnō-ji-to-Yamazaki span was about eleven days; in `geography/kamakura.md`, corrected the NHK drama claim (recast as the **2022** *Taiga* drama *Kamakura-dono no 13-nin*, "The 13 Lords of the Shogun," rather than a "2021 government selection"), reconciled a temple-count discrepancy between the article ("over 180 temples and shrines") and the README row ("over 2,000 temples") to **some 65 Buddhist temples and 19 Shinto shrines** (README: "dozens of historic temples and shrines"), and removed a dangling Yokohama link that pointed at the Tokyo file. Confirmed `title`/`date`/`category` front matter on all three files, each `date` a single plain ISO date (Hiroshima 1945-08-06, Kamakura 1185-01-01, Oda Nobunaga 1534-06-23), and that every internal Markdown link resolves.
+- **Structure** (`build-structure`): added Hiroshima and Kamakura to `geography/index.md` and Oda Nobunaga to `people/index.md`, and all three to `INDEX.md`; the three files already carried valid `## Related` crossref blocks. Merged new dated facts into `TIMELINE.md` — Kamakura's 1180 founding and 1252 Great Buddha casting; Oda Nobunaga's 1534 birth, the 1560 Battle of Okehazama, and the 1582 Honnō-ji Incident; and Hiroshima's 1589 castle-town founding by Mōri Terumoto and a Geography-view entry for the 1945-08-06 atomic bombing alongside the existing World War II record.
+- **Seed** (`sync-seed`): regenerated §4 and §5 from live repo state (63 topic files / 63 README rows; People thirteen, Geography and Culture & Society twelve each, History eleven, Economy eight, Government & Politics seven). Reconciliation note: the phantom entries recorded by G1-T30–T32 — Zen Buddhism, Kabuki Theater, Meiji Industrialization, and Kanazawa — are absent on disk and have been dropped from the regenerated §4/§5, so the DNA now reflects the actual on-disk inventory (60 pre-existing files + this tick's 3 additions = 63).
