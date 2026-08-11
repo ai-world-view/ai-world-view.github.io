@@ -56,7 +56,7 @@ centrally by the hub; this repo does not grow itself.
 
 The repository holds only its own content, a GitHub Pages `_config.yml` (a `remote_theme` consumer
 of [`bamr87/zer0-mistakes`](https://github.com/bamr87/zer0-mistakes)), the `_data/navigation`
-config, the `.claude/` adapter toolkit, and `telemetry/`. The AI customization layer is staged from
+config, a `ROADMAP.md` growth plan, the `.claude/` adapter toolkit, and `telemetry/`. The AI customization layer is staged from
 the hub into `.github/` at tick time (`.claude/` holds thin adapters that point to it). The staged
 framework layer present this tick:
 
@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (25):
+`INDEX.md`). Dedicated topic files (28):
 
 | Category | File | Topic |
 |---|---|---|
@@ -95,6 +95,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Geography | `geography/busan.md` | Busan — port city and second metropolis |
 | Geography | `geography/jeju-island.md` | Jeju Island — volcanic island, tourism, haenyeo divers, and the April 3 Incident |
 | History | `history/three-kingdoms-period.md` | Three Kingdoms period (Goguryeo, Baekje, Silla) and Silla's unification |
+| History | `history/goryeo-period.md` | Goryeo period (918–1392) — medieval kingdom, celadon, the Tripitaka Koreana, and metal movable type |
 | History | `history/korean-independence-movement.md` | Korean Independence Movement (1876–1945) — anti-colonial struggle to liberation |
 | History | `history/japanese-colonial-period.md` | Japanese Colonial Period (1910–1945) |
 | History | `history/korean-war.md` | Korean War (1950–1953) |
@@ -105,11 +106,13 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Economy | `economy/chaebol.md` | Chaebol — family-controlled conglomerates |
 | Economy | `economy/semiconductors.md` | Semiconductors — memory-chip leadership and geopolitics |
 | Economy | `economy/technology-sector.md` | Technology sector — ICT, displays, AI, telecom, and mobility beyond semiconductors |
+| Economy | `economy/automotive-industry.md` | Automotive industry — Hyundai–Kia–Genesis, global market position, EVs, hydrogen, and batteries |
 | Culture & Society | `culture-society/hallyu.md` | Hallyu — the Korean Wave |
 | Culture & Society | `culture-society/korean-cuisine.md` | Korean cuisine and food culture |
 | Culture & Society | `culture-society/education-and-universities.md` | Education and universities — the school system and SKY hierarchy |
 | Culture & Society | `culture-society/kpop-industry.md` | K-pop industry and global music market |
 | Culture & Society | `culture-society/sports-and-olympics.md` | Sports and the Olympic Games — hosting, athletic excellence, and esports |
+| Culture & Society | `culture-society/film-cinema-industry.md` | Film and cinema industry — from "Arirang" to "Parasite" and the streaming era |
 | People | `people/park-chung-hee.md` | Park Chung-hee — president (1961–1979) |
 | People | `people/kim-dae-jung.md` | Kim Dae-jung — president (1998–2003) and Nobel laureate |
 | People | `people/lee-myung-bak.md` | Lee Myung-bak — president (2008–2013) |
@@ -117,9 +120,9 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/bang-si-hyuk.md` | Bang Si-hyuk — HYBE founder and architect of BTS |
 | People | `people/yoon-suk-yeol.md` | Yoon Suk-yeol — president (2022–2025) and the December 2024 martial-law crisis |
 
-Every taxonomy category holds at least three dedicated topics; People is the largest (six topics),
-followed by Culture & Society and History (five each) and Economy, Geography, and Government &
-Politics (three each).
+Every taxonomy category holds at least three dedicated topics; History, Culture & Society, and
+People are the largest (six topics each), followed by Economy (four) and Geography and Government
+& Politics (three each).
 
 ## Section 5 — Structure Inventory
 
@@ -128,14 +131,14 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 | Artifact | State |
 |---|---|
 | `geography/index.md` | Present — 3 entries |
-| `history/index.md` | Present — 5 entries |
+| `history/index.md` | Present — 6 entries |
 | `government-politics/index.md` | Present — 3 entries |
-| `economy/index.md` | Present — 3 entries |
-| `culture-society/index.md` | Present — 5 entries |
+| `economy/index.md` | Present — 4 entries |
+| `culture-society/index.md` | Present — 6 entries |
 | `people/index.md` | Present — 6 entries |
-| `TIMELINE.md` | Present — 183 dated events across all twenty-five articles |
+| `TIMELINE.md` | Present — 211 dated events across all twenty-eight articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all twenty-five topic articles |
+| Cross-references (`## Related`) | Present in all twenty-eight topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -264,3 +267,14 @@ Added two dedicated articles — one completing the modern presidential arc in P
 - ENHANCE pass corrected facts: in the Yoon article, reframed the garbled "CIA-era" NIS case as the 2013 NIS online opinion-manipulation investigation; fixed Lee Myung-bak's sentence (increased to 17 years on appeal, not reduced); corrected the Constitutional Court's April 2025 ruling to an eight-justice unanimous 8-0 decision (one seat vacant, no ninth justice or recusal) citing Article 77; corrected the June 2025 snap-election runner-up to the PPP's Kim Moon-soo (~41%, not "Han Dong-hoon ~45%") with Lee Jae-myung at ~49.4%; and fixed the Related block (Park Geun-hye was pardoned by Moon Jae-in in December 2021, not Yoon; corrected the technology-policy cross-reference path). In the technology article, removed the false claim that YMTC is SK Hynix's joint-venture partner; corrected the muddled Wassenaar/equipment-supply-chain passage (the US, Japan, and the Netherlands control chipmaking tools, not Korea); fixed the AI Basic Act timeline (passed December 2024, promulgated January 2025, effective January 2026); reconciled Samsung's DRAM-leadership dates (1992 DRAM, 1993 memory overall); and dated the Naver antitrust fine to 2020.
 - build-structure: added generated `## Related` markers to both new articles; refreshed `government-politics/index.md` (2→3), `people/index.md` (5→6), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (165→183 dated events) with eighteen new events spanning Yoon's career and the technology-policy arc; and added bidirectional back-links from Moon Jae-in, Lee Myung-bak, North Korea Relations, Government Structure, Semiconductors, Technology Sector, Chaebol, and Park Chung-hee.
 - sync-seed: regenerated §4 (Content Inventory: 23→25 files) and §5 (Structure Inventory: entry counts and 183-event timeline; People becomes the largest category).
+
+### G1-T11 — 2026-08-11 — Tick 11: The Goryeo period, the automotive industry, and the film industry deepen History, Economy, and Culture & Society
+
+Added three dedicated articles — one giving History its deepest medieval reach (a sixth topic), one opening a fourth Economy topic on the country's third industrial pillar, and one giving Culture & Society a sixth topic on a cultural export distinct from Hallyu. History, Culture & Society, and People are now tied as the largest categories (six topics each).
+
+- Created `history/goryeo-period.md`: encyclopedic article on the Goryeo dynasty (918–1392) — Wang Geon's reunification and the Ten Injunctions, Gwangjong's and Seongjong's centralization, the 1170–1270 military dictatorship, Buddhist civilization (Uicheon, Jinul, the Jogye Order), the two Tripitaka Koreana editions and the metal-movable-type Jikji, celadon and sanggam inlay, the arrival of Neo-Confucianism, the Khitan/Jurchen/Mongol wars and the Goryeo–Yuan period, the late-Goryeo revival under Gongmin, Waegu piracy, and the 1388 Wihwado Retreat that brought Yi Seong-gye and the Joseon founding.
+- Created `economy/automotive-industry.md`: encyclopedic article on the automotive sector — the Park-era infant-industry origins, Hyundai's founding (1967), the Pony and Excel, the 1997–1998 restructuring and Hyundai's acquisition of Kia, the Genesis luxury brand and Peter Schreyer's design turn, Hyundai Motor Group's rise to the world's third-largest automaker, the global manufacturing footprint, the EV/hydrogen strategy (Ioniq, Nexo, E-GMP), the LGES/Samsung SDI/SK On battery industry, and challenges from Chinese competition, the IRA, labor relations, and software-defined vehicles.
+- Created `culture-society/film-cinema-industry.md`: encyclopedic article on Korean cinema — colonial-era beginnings and Na Woon-gyu's "Arirang," the postwar golden age, the screen-quota system, the 1990s commercial renaissance, the 2000s auteur breakthrough (Park Chan-wook, Bong Joon-ho, Lee Chang-dong), BIFF, the "Parasite" awards sweep and its cultural impact, the Netflix/"Squid Game" streaming era, industry structure (CJ, CGV, KOFIC), genre signatures, and diaspora cinema.
+- ENHANCE pass corrected facts and converted draft `[[wikilinks]]` to resolved markdown links: in the Goryeo article, fixed Ögedei from Genghis Khan's "grandson" to his son and successor, corrected romanizations (gwijok not "gwibang"; Jungin not "Junggin"), reworked a muddled An Hyang/Sungkyunkwan passage (the academy was renamed Seonggyungwan in 1298), and standardized "Yi Seong-gye"; in the film article, reattributed "The Housemaid" (1960) to its actual director Kim Ki-young (not Shin Sang-ok) with the World Cinema Foundation's 2008 Cannes restoration, corrected the JSA admissions claim (~5.8 million nationwide, not Seoul alone), removed a false Oscar-submission claim for "The Handmaiden" (adding its 2018 BAFTA win), reframed Mother's 2009 Un Certain Regard screening, fixed the Squid Game Emmy count (six total, including Hwang Dong-hyuk's Directing and Lee Jung-jae's Lead Actor), and fixed "Sopyonje" and a Dongguk hangul typo.
+- build-structure: refreshed `history/index.md` (5→6), `economy/index.md` (3→4), `culture-society/index.md` (5→6), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (183→211 dated events) with twenty-eight new events spanning the Goryeo dynasty, the automotive industry, and Korean cinema; wrapped the three new `## Related` blocks in generated markers; and added bidirectional back-links from Three Kingdoms Period, Education and Universities, Chaebol, Technology Sector, Hallyu, K-pop Industry, and Busan.
+- sync-seed: regenerated §3 (noting `ROADMAP.md`), §4 (Content Inventory: 25→28 files), and §5 (Structure Inventory: entry counts and 211-event timeline; History, Culture & Society, and People tie as the largest categories).
