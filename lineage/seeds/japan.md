@@ -117,9 +117,8 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   Culture & Society, People.
 - **README knowledge table**: 63 rows.
 - **Dedicated topic files** (63), grouped by category:
-  - `geography/hiroshima.md` — Hiroshima
+  - `geography/himeji-castle.md` — Himeji Castle
   - `geography/hokkaido.md` — Hokkaido
-  - `geography/kamakura.md` — Kamakura
   - `geography/kobe.md` — Kobe
   - `geography/kyoto.md` — Kyoto
   - `geography/kyushu.md` — Kyushu
@@ -145,6 +144,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `government-politics/imperial-succession.md` — Imperial Succession
   - `government-politics/liberal-democratic-party.md` — Liberal Democratic Party
   - `government-politics/ministry-economy-trade-industry.md` — Ministry of Economy, Trade and Industry (METI)
+  - `government-politics/ministry-of-foreign-affairs.md` — Ministry of Foreign Affairs
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
   - `government-politics/supreme-court.md` — Supreme Court of Japan
   - `economy/bank-of-japan.md` — Bank of Japan
@@ -158,6 +158,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
+  - `culture-society/heian-court.md` — Heian Court & Aristocracy
   - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
   - `culture-society/noh-theater.md` — Noh Theater
@@ -176,13 +177,12 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/minamoto-no-yoritomo.md` — Minamoto no Yoritomo
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/nitobe-inazou.md` — Nitobe Inazō
-  - `people/oda-nobunaga.md` — Oda Nobunaga
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
   - `people/yoshida-shoin.md` — Yoshida Shoin
   - `people/yukio-mishima.md` — Yukio Mishima
-- **Categories with content**: Geography (12), History (11), Government & Politics (7), Economy (8), Culture & Society (12), People (13) — all six categories populated; People
-  leads with thirteen topics, followed by Geography and Culture & Society with twelve
-  each, then History with eleven, Economy with eight, and Government & Politics with seven.
+- **Categories with content**: Geography (11), History (11), Government & Politics (8), Economy (8), Culture & Society (13), People (12) — all six categories populated; Culture &
+  Society leads with thirteen topics, followed by People with twelve, Geography and
+  History with eleven each, and Government & Politics and Economy with eight each.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -191,7 +191,7 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (People lists thirteen topics; Geography and Culture & Society twelve each; History eleven; Economy eight; Government & Politics seven).
+  (Culture & Society lists thirteen topics; People twelve; Geography and History eleven each; Government & Politics and Economy eight each).
 - **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
 - **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
 - **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
@@ -501,3 +501,11 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected errors — in `people/oda-nobunaga.md`, aligned the front-matter `date` to the body's birthdate (1534-07-02 → **1534-06-23**, June 23, 1534) and softened the overstated "Akechi's control lasted only thirteen days" to "less than two weeks," adding the proverbial *mikka tenka* ("three-day rule"), since the Honnō-ji-to-Yamazaki span was about eleven days; in `geography/kamakura.md`, corrected the NHK drama claim (recast as the **2022** *Taiga* drama *Kamakura-dono no 13-nin*, "The 13 Lords of the Shogun," rather than a "2021 government selection"), reconciled a temple-count discrepancy between the article ("over 180 temples and shrines") and the README row ("over 2,000 temples") to **some 65 Buddhist temples and 19 Shinto shrines** (README: "dozens of historic temples and shrines"), and removed a dangling Yokohama link that pointed at the Tokyo file. Confirmed `title`/`date`/`category` front matter on all three files, each `date` a single plain ISO date (Hiroshima 1945-08-06, Kamakura 1185-01-01, Oda Nobunaga 1534-06-23), and that every internal Markdown link resolves.
 - **Structure** (`build-structure`): added Hiroshima and Kamakura to `geography/index.md` and Oda Nobunaga to `people/index.md`, and all three to `INDEX.md`; the three files already carried valid `## Related` crossref blocks. Merged new dated facts into `TIMELINE.md` — Kamakura's 1180 founding and 1252 Great Buddha casting; Oda Nobunaga's 1534 birth, the 1560 Battle of Okehazama, and the 1582 Honnō-ji Incident; and Hiroshima's 1589 castle-town founding by Mōri Terumoto and a Geography-view entry for the 1945-08-06 atomic bombing alongside the existing World War II record.
 - **Seed** (`sync-seed`): regenerated §4 and §5 from live repo state (63 topic files / 63 README rows; People thirteen, Geography and Culture & Society twelve each, History eleven, Economy eight, Government & Politics seven). Reconciliation note: the phantom entries recorded by G1-T30–T32 — Zen Buddhism, Kabuki Theater, Meiji Industrialization, and Kanazawa — are absent on disk and have been dropped from the regenerated §4/§5, so the DNA now reflects the actual on-disk inventory (60 pre-existing files + this tick's 3 additions = 63).
+
+### G1-T34 — 2026-08-11 — Tick 34: added Himeji Castle, Heian Court & Aristocracy, and Ministry of Foreign Affairs
+
+- **Content added** (3 dedicated topic files): `geography/himeji-castle.md` (Japan's premier surviving feudal castle in Hyōgo Prefecture — Akamatsu Sadanori's 1346 Himeyama fort, Hideyoshi's 1581 keep, Ikeda Terumasa's 1601–1609 reconstruction into the white-plastered "White Heron" (*Shirasagi-jō*) connected-keep complex, the maze approach and firearms-era defensive design, Honda Tadamasa's West Bailey and Princess Sen, the near-demolition and 23-yen salvage auction of the Meiji era, the 1931 National Treasure designation, the 1993 UNESCO inscription, and the 2009–2015 Heisei restoration), `culture-society/heian-court.md` (the aristocratic society of the Heian period, 794–1185 — the Fujiwara regency (*sesshō*/*kampaku*) and Michinaga's marriage politics, the *insei* cloistered rule, *shinden-zukuri* residences and *jūnihitoe* dress codes, the *Kokinshū*, *Genji*, and *Pillow Book* literary flowering, *yamato-e* and *gagaku* arts, the exceptional prominence of women authors, court religion, and the decline through the Genpei War), and `government-politics/ministry-of-foreign-affairs.md` (the *Gaimushō* since its 1869 founding — the unequal-treaty revision campaign and the Iwakura Mission, the diplomacy of imperial expansion through Shimonoseki and Portsmouth, the postwar San Francisco system and Yoshida Doctrine, normalization with South Korea (1965) and China (1972), ODA and cultural diplomacy, and the contemporary Free and Open Indo-Pacific strategy and Quad). Culture & Society holds thirteen topics; Geography and History eleven each; Government & Politics and Economy eight each; People twelve.
+- **README**: knowledge table stands at 63 rows, including Himeji Castle, Heian Court & Aristocracy, and Ministry of Foreign Affairs added during the tick.
+- **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected errors — in `geography/himeji-castle.md`, fixed the inverted keep description (the main keep appears five stories externally but contains six floors plus a basement, not "seven stories externally / five internally") and corrected the founder's name from "Akamatsu Sadayori" to **Akamatsu Sadanori** (both instances); in `culture-society/heian-court.md`, corrected the *waka* syllable count from "30-syllable" to **31-syllable** (5-7-5-7-7); in `government-politics/ministry-of-foreign-affairs.md`, corrected the German legal advisor's name from "Heinrich Roesler" to **Hermann Roesler**. Confirmed `title`/`date`/`category` front matter on all three files, each `date` a single plain ISO date (Himeji Castle 1346-01-01, Heian Court & Aristocracy 794-01-01, Ministry of Foreign Affairs 1869-01-01), and that every internal Markdown link resolves.
+- **Structure** (`build-structure`): added Himeji Castle to `geography/index.md`, Heian Court & Aristocracy to `culture-society/index.md`, and Ministry of Foreign Affairs to `government-politics/index.md`, and all three to `INDEX.md`; the three files already carried valid `## Related` crossref blocks in the canonical `BEGIN/END GENERATED: crossrefs` markers. Merged new dated facts into `TIMELINE.md` — the 1346 Himeyama fort, Hideyoshi's 1581 keep, the 1601–1609 Ikeda reconstruction, the 1618 West Bailey, the 1931 National Treasure designation, the 1993 UNESCO inscription, and the 2009–2015 Heisei restoration (Himeji); the 794–1185 court span, the 927 *Engishiki*, and Sei Shōnagon's c. 996–1012 *Pillow Book* (Heian Court); and the 1869 founding, the 1871–1873 Iwakura Mission, the 1894 Anglo-Japanese commerce treaty, the 1911 completion of treaty revision, the 1951 Security Treaty, the 1965 Japan–Korea and 1972 Japan–China normalizations, and Abe's 2007 "Confluence of the Two Seas" speech (Foreign Affairs).
+- **Seed** (`sync-seed`): regenerated §4 and §5 from live repo state (63 topic files / 63 README rows; Culture & Society thirteen, People twelve, Geography and History eleven each, Government & Politics and Economy eight each). Reconciliation note: the additions recorded by G1-T33 — Hiroshima, Kamakura, and Oda Nobunaga — are absent on disk, and the §4 list carried by the staged seed still named those files plus a phantom `people/oda-nobunaga.md`; the regenerated §4/§5 drop them and reflect the actual on-disk inventory (60 pre-existing files + this tick's 3 additions = 63).
