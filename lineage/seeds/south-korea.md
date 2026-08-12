@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (28):
+`INDEX.md`). Dedicated topic files (31):
 
 | Category | File | Topic |
 |---|---|---|
@@ -96,6 +96,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Geography | `geography/jeju-island.md` | Jeju Island — volcanic island, tourism, haenyeo divers, and the April 3 Incident |
 | History | `history/three-kingdoms-period.md` | Three Kingdoms period (Goguryeo, Baekje, Silla) and Silla's unification |
 | History | `history/goryeo-period.md` | Goryeo period (918–1392) — medieval kingdom, celadon, the Tripitaka Koreana, and metal movable type |
+| History | `history/joseon-dynasty.md` | Joseon dynasty (1392–1910) — Korea's longest kingdom, Neo-Confucian statecraft, Hangul, the gwageo order, and the Imjin and Manchu invasions |
 | History | `history/korean-independence-movement.md` | Korean Independence Movement (1876–1945) — anti-colonial struggle to liberation |
 | History | `history/japanese-colonial-period.md` | Japanese Colonial Period (1910–1945) |
 | History | `history/korean-war.md` | Korean War (1950–1953) |
@@ -107,8 +108,10 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Economy | `economy/semiconductors.md` | Semiconductors — memory-chip leadership and geopolitics |
 | Economy | `economy/technology-sector.md` | Technology sector — ICT, displays, AI, telecom, and mobility beyond semiconductors |
 | Economy | `economy/automotive-industry.md` | Automotive industry — Hyundai–Kia–Genesis, global market position, EVs, hydrogen, and batteries |
+| Economy | `economy/banking-and-finance.md` | Banking and finance — the developmental-state directed-credit system, the 1997 Asian Financial Crisis, post-crisis restructuring, and the fintech and internet-only-bank era |
 | Culture & Society | `culture-society/hallyu.md` | Hallyu — the Korean Wave |
 | Culture & Society | `culture-society/korean-cuisine.md` | Korean cuisine and food culture |
+| Culture & Society | `culture-society/religion-and-buddhism.md` | Religion and Buddhism — Buddhism, Confucianism, Christianity, shamanism, new religious movements, and the contemporary religious landscape |
 | Culture & Society | `culture-society/education-and-universities.md` | Education and universities — the school system and SKY hierarchy |
 | Culture & Society | `culture-society/kpop-industry.md` | K-pop industry and global music market |
 | Culture & Society | `culture-society/sports-and-olympics.md` | Sports and the Olympic Games — hosting, athletic excellence, and esports |
@@ -120,9 +123,9 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/bang-si-hyuk.md` | Bang Si-hyuk — HYBE founder and architect of BTS |
 | People | `people/yoon-suk-yeol.md` | Yoon Suk-yeol — president (2022–2025) and the December 2024 martial-law crisis |
 
-Every taxonomy category holds at least three dedicated topics; History, Culture & Society, and
-People are the largest (six topics each), followed by Economy (four) and Geography and Government
-& Politics (three each).
+Every taxonomy category holds at least three dedicated topics; History and Culture & Society are
+the largest (seven topics each), followed by People (six) and Economy (five), then Geography and
+Government & Politics (three each).
 
 ## Section 5 — Structure Inventory
 
@@ -131,14 +134,14 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 | Artifact | State |
 |---|---|
 | `geography/index.md` | Present — 3 entries |
-| `history/index.md` | Present — 6 entries |
+| `history/index.md` | Present — 7 entries |
 | `government-politics/index.md` | Present — 3 entries |
-| `economy/index.md` | Present — 4 entries |
-| `culture-society/index.md` | Present — 6 entries |
+| `economy/index.md` | Present — 5 entries |
+| `culture-society/index.md` | Present — 7 entries |
 | `people/index.md` | Present — 6 entries |
-| `TIMELINE.md` | Present — 211 dated events across all twenty-eight articles |
+| `TIMELINE.md` | Present — 236 dated events across all thirty-one articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all twenty-eight topic articles |
+| Cross-references (`## Related`) | Present in all thirty-one topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -278,3 +281,14 @@ Added three dedicated articles — one giving History its deepest medieval reach
 - ENHANCE pass corrected facts and converted draft `[[wikilinks]]` to resolved markdown links: in the Goryeo article, fixed Ögedei from Genghis Khan's "grandson" to his son and successor, corrected romanizations (gwijok not "gwibang"; Jungin not "Junggin"), reworked a muddled An Hyang/Sungkyunkwan passage (the academy was renamed Seonggyungwan in 1298), and standardized "Yi Seong-gye"; in the film article, reattributed "The Housemaid" (1960) to its actual director Kim Ki-young (not Shin Sang-ok) with the World Cinema Foundation's 2008 Cannes restoration, corrected the JSA admissions claim (~5.8 million nationwide, not Seoul alone), removed a false Oscar-submission claim for "The Handmaiden" (adding its 2018 BAFTA win), reframed Mother's 2009 Un Certain Regard screening, fixed the Squid Game Emmy count (six total, including Hwang Dong-hyuk's Directing and Lee Jung-jae's Lead Actor), and fixed "Sopyonje" and a Dongguk hangul typo.
 - build-structure: refreshed `history/index.md` (5→6), `economy/index.md` (3→4), `culture-society/index.md` (5→6), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (183→211 dated events) with twenty-eight new events spanning the Goryeo dynasty, the automotive industry, and Korean cinema; wrapped the three new `## Related` blocks in generated markers; and added bidirectional back-links from Three Kingdoms Period, Education and Universities, Chaebol, Technology Sector, Hallyu, K-pop Industry, and Busan.
 - sync-seed: regenerated §3 (noting `ROADMAP.md`), §4 (Content Inventory: 25→28 files), and §5 (Structure Inventory: entry counts and 211-event timeline; History, Culture & Society, and People tie as the largest categories).
+
+### G1-T12 — 2026-08-12 — Tick 12: The Joseon dynasty, banking and finance, and religion and Buddhism deepen History, Economy, and Culture & Society
+
+Added three dedicated articles — one filling the largest remaining chronological gap in History (the 518-year Joseon dynasty between Goryeo and the colonial period, a seventh topic), one opening a fifth Economy topic beyond the industrial pillars, and one giving Culture & Society a seventh topic on Korea's religious life. History and Culture & Society now tie as the largest categories (seven topics each).
+
+- Created `history/joseon-dynasty.md`: encyclopedic article on the Joseon dynasty (1392–1910) — Yi Seong-gye's founding and the move to Hanyang, Neo-Confucian statecraft and Jeong Do-jeon, Sejong the Great and Hangul, the yangban/jungin/sangmin/cheonmin hierarchy and the gwageo examination, the literati purges and Easterner/Westerner factions, the Imjin War and Yi Sun-sin, the Manchu invasions and Qing suzerainty, the Toegye–Yulgok Confucian tradition and white porcelain, late-Joseon Silhak and Dasan, the Catholic persecutions, and the slide from the Daewongun's isolation through the Ganghwa Treaty to the Empire of Korea and 1910 annexation.
+- Created `economy/banking-and-finance.md`: encyclopedic article on the banking and finance sector — the developmental-state directed-credit system and policy banks (KDB, KEXIM, IBK), the chaebol–bank nexus and curb market, the 1997 Asian Financial Crisis and IMF bailout, post-crisis restructuring (KAMCO, the Big Deal, Daewoo's collapse), the 2003 credit-card crisis, the contemporary commercial/policy/foreign bank structure and Basel supervision, the fintech and internet-only-bank revolution (KakaoPay, KakaoBank, Toss), cryptocurrency and the Terra/Luna collapse, and the household-debt challenge.
+- Created `culture-society/religion-and-buddhism.md`: encyclopedic article on Korean religion — Buddhism's arrival and the Three Kingdoms, Wonhyo/Uicheon/Jinul and the great scholastic period, Goryeo state Buddhism and the Tripitaka Koreana, marginalization under Joseon, colonial-era transformation, the post-liberation purification movement and Jogye Order, the rise of Catholic and Protestant Christianity, shamanism (Muism), new religious movements, and the contemporary multi-religious, increasingly secular landscape.
+- ENHANCE pass corrected facts across all three files: in the religion article, the 2015 census figures (Protestant 19.7% > Buddhist 15.5%, non-religious 56.1%; the summary previously overstated Buddhism at 27.7% and exceeded 100%), the 1839 martyrs (Jacques Chastan, not "Moye"), the 1911 Temple Ordinance name (Sachallyeong), the 2014 event (Pope Francis *beatified*, not canonized, 124 martyrs), Hyesim's *Seonmun yeomsong*, and the sect-reduction sequence; in the Joseon article, the Six Ministries (Yukjo, not "libu"), the higher civil exam (*mungwa*, not "munhwa-gwa"), the 1504 purge (Gapja, not "Gabo"), the Eulsa Sahwa's Greater/Lesser Yun rivalry, the Jeongmyo War, the Samjeondo surrender ritual (samgwe-gugodu before Hong Taiji), the Four-Seven Debate's actual interlocutors (Yi Hwang–Gi Dae-seung; Yulgok–Seong Hon), Dasan's works (*Gyeongse yupyo*, *Mongmin simseo*, *Heumheum sinseo*), and the Sillok description; and in the banking article, Kim Woo-choong's name, the Big Deal example (memory chips consolidated under Hyundai; aerospace merged), KakaoBank's growth (5 million customers within its first six months, not 15 million in nine), and the Seoul housing figures.
+- build-structure: added generated `## Related` blocks to all three new articles (converting them from unwrapped "Related Topics" lists); refreshed `history/index.md` (6→7), `economy/index.md` (4→5), `culture-society/index.md` (6→7), `INDEX.md`, and `README.md` (already listed the new files); extended `TIMELINE.md` (211→236 dated events) with twenty-five new events spanning the Joseon dynasty, Korean banking, and religious history; and added bidirectional back-links from Goryeo Period, Three Kingdoms Period, Japanese Colonial Period, Seoul, Chaebol, Semiconductors, Automotive Industry, Technology Sector, and Park Chung-hee.
+- sync-seed: regenerated §4 (Content Inventory: 28→31 files) and §5 (Structure Inventory: entry counts and 236-event timeline; History and Culture & Society tie as the largest categories at seven topics each).
