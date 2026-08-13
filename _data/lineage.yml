@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 2
-  ticks: 45
+  ticks: 47
 members:
 - name: japan
   repo: ai-world-view/japan
@@ -14,11 +14,11 @@ members:
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 34
-  log_entries: 50
+  ticks_logged: 35
+  log_entries: 51
   generations: 1
-  last_activity: '2026-08-11'
-  last_entry: 'G1-T34 — 2026-08-11 — Tick 34: added Himeji Castle, Heian Court & Aristocracy,
+  last_activity: '2026-08-12'
+  last_entry: 'G1-T35 — 2026-08-12 — Tick 35: added Himeji Castle, Heian Court & Aristocracy,
     and Ministry of Foreign Affairs'
 - name: south-korea
   repo: ai-world-view/south-korea
@@ -26,9 +26,9 @@ members:
   site_url: https://ai-world-view.github.io/south-korea/
   subject: the country south korea
   status: growing
-  ticks_logged: 11
-  log_entries: 12
+  ticks_logged: 12
+  log_entries: 13
   generations: 0
-  last_activity: '2026-08-11'
-  last_entry: 'G1-T11 — 2026-08-11 — Tick 11: The Goryeo period, the automotive industry,
-    and the film industry deepen History, Economy, and Culture & Society'
+  last_activity: '2026-08-12'
+  last_entry: 'G1-T12 — 2026-08-12 — Tick 12: The Joseon dynasty, banking and finance,
+    and religion and Buddhism deepen History, Economy, and Culture & Society'
