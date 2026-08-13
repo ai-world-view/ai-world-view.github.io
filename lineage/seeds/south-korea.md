@@ -87,18 +87,20 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (31):
+`INDEX.md`). Dedicated topic files (34):
 
 | Category | File | Topic |
 |---|---|---|
 | Geography | `geography/seoul.md` | Seoul — capital and largest city |
 | Geography | `geography/busan.md` | Busan — port city and second metropolis |
 | Geography | `geography/jeju-island.md` | Jeju Island — volcanic island, tourism, haenyeo divers, and the April 3 Incident |
+| Geography | `geography/incheon.md` | Incheon — gateway port city, Incheon International Airport, the Inchon Landing, and the Songdo smart-city district |
 | History | `history/three-kingdoms-period.md` | Three Kingdoms period (Goguryeo, Baekje, Silla) and Silla's unification |
 | History | `history/goryeo-period.md` | Goryeo period (918–1392) — medieval kingdom, celadon, the Tripitaka Koreana, and metal movable type |
 | History | `history/joseon-dynasty.md` | Joseon dynasty (1392–1910) — Korea's longest kingdom, Neo-Confucian statecraft, Hangul, the gwageo order, and the Imjin and Manchu invasions |
 | History | `history/korean-independence-movement.md` | Korean Independence Movement (1876–1945) — anti-colonial struggle to liberation |
 | History | `history/japanese-colonial-period.md` | Japanese Colonial Period (1910–1945) |
+| History | `history/liberation-and-founding.md` | Korean Liberation and Founding (1945–1948) — occupation, division at the 38th parallel, and the founding of the Republic of Korea |
 | History | `history/korean-war.md` | Korean War (1950–1953) |
 | History | `history/democratization.md` | Democratization of South Korea (1987–1993) |
 | Government & Politics | `government-politics/government-structure.md` | Government structure — the presidential republic |
@@ -118,14 +120,15 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Culture & Society | `culture-society/film-cinema-industry.md` | Film and cinema industry — from "Arirang" to "Parasite" and the streaming era |
 | People | `people/park-chung-hee.md` | Park Chung-hee — president (1961–1979) |
 | People | `people/kim-dae-jung.md` | Kim Dae-jung — president (1998–2003) and Nobel laureate |
+| People | `people/roh-moo-hyun.md` | Roh Moo-hyun — president (2003–2008), human-rights lawyer, and the KORUS FTA and October 2007 summit |
 | People | `people/lee-myung-bak.md` | Lee Myung-bak — president (2008–2013) |
 | People | `people/moon-jae-in.md` | Moon Jae-in — president (2017–2022) and inter-Korean diplomacy |
 | People | `people/bang-si-hyuk.md` | Bang Si-hyuk — HYBE founder and architect of BTS |
 | People | `people/yoon-suk-yeol.md` | Yoon Suk-yeol — president (2022–2025) and the December 2024 martial-law crisis |
 
-Every taxonomy category holds at least three dedicated topics; History and Culture & Society are
-the largest (seven topics each), followed by People (six) and Economy (five), then Geography and
-Government & Politics (three each).
+Every taxonomy category holds at least three dedicated topics; History is now the largest (eight
+topics), followed by Culture & Society and People (seven each), then Economy (five), Geography
+(four), and Government & Politics (three).
 
 ## Section 5 — Structure Inventory
 
@@ -133,15 +136,15 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 
 | Artifact | State |
 |---|---|
-| `geography/index.md` | Present — 3 entries |
-| `history/index.md` | Present — 7 entries |
+| `geography/index.md` | Present — 4 entries |
+| `history/index.md` | Present — 8 entries |
 | `government-politics/index.md` | Present — 3 entries |
 | `economy/index.md` | Present — 5 entries |
 | `culture-society/index.md` | Present — 7 entries |
-| `people/index.md` | Present — 6 entries |
-| `TIMELINE.md` | Present — 236 dated events across all thirty-one articles |
+| `people/index.md` | Present — 7 entries |
+| `TIMELINE.md` | Present — 259 dated events across all thirty-four articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all thirty-one topic articles |
+| Cross-references (`## Related`) | Present in all thirty-four topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -292,3 +295,14 @@ Added three dedicated articles — one filling the largest remaining chronologic
 - ENHANCE pass corrected facts across all three files: in the religion article, the 2015 census figures (Protestant 19.7% > Buddhist 15.5%, non-religious 56.1%; the summary previously overstated Buddhism at 27.7% and exceeded 100%), the 1839 martyrs (Jacques Chastan, not "Moye"), the 1911 Temple Ordinance name (Sachallyeong), the 2014 event (Pope Francis *beatified*, not canonized, 124 martyrs), Hyesim's *Seonmun yeomsong*, and the sect-reduction sequence; in the Joseon article, the Six Ministries (Yukjo, not "libu"), the higher civil exam (*mungwa*, not "munhwa-gwa"), the 1504 purge (Gapja, not "Gabo"), the Eulsa Sahwa's Greater/Lesser Yun rivalry, the Jeongmyo War, the Samjeondo surrender ritual (samgwe-gugodu before Hong Taiji), the Four-Seven Debate's actual interlocutors (Yi Hwang–Gi Dae-seung; Yulgok–Seong Hon), Dasan's works (*Gyeongse yupyo*, *Mongmin simseo*, *Heumheum sinseo*), and the Sillok description; and in the banking article, Kim Woo-choong's name, the Big Deal example (memory chips consolidated under Hyundai; aerospace merged), KakaoBank's growth (5 million customers within its first six months, not 15 million in nine), and the Seoul housing figures.
 - build-structure: added generated `## Related` blocks to all three new articles (converting them from unwrapped "Related Topics" lists); refreshed `history/index.md` (6→7), `economy/index.md` (4→5), `culture-society/index.md` (6→7), `INDEX.md`, and `README.md` (already listed the new files); extended `TIMELINE.md` (211→236 dated events) with twenty-five new events spanning the Joseon dynasty, Korean banking, and religious history; and added bidirectional back-links from Goryeo Period, Three Kingdoms Period, Japanese Colonial Period, Seoul, Chaebol, Semiconductors, Automotive Industry, Technology Sector, and Park Chung-hee.
 - sync-seed: regenerated §4 (Content Inventory: 28→31 files) and §5 (Structure Inventory: entry counts and 236-event timeline; History and Culture & Society tie as the largest categories at seven topics each).
+
+### G1-T13 — 2026-08-13 — Tick 13: Incheon, the 1945–1948 liberation-and-founding era, and Roh Moo-hyun deepen Geography, History, and People
+
+Added three dedicated articles — one giving Geography a fourth topic, one filling the last major chronological gap in History (the three years between the colonial period and the Korean War, an eighth topic that makes History the largest category), and one completing the modern presidential line in People (a seventh topic).
+
+- Created `geography/incheon.md`: encyclopedic article on Incheon — its tidal-basin geography and islands (Ganghwa, Yeongjong), the 1883 treaty-port opening and the 1899 Gyeongin Line, colonial-era growth, the September 1950 Inchon Landing, post-war industrialization, Incheon International Airport (2001), the Songdo International Business District and the Green Climate Fund, the Ara Waterway, the 2014 Asian Games, and contemporary port, aviation, and free-economic-zone operations.
+- Created `history/liberation-and-founding.md`: encyclopedic article on 1945–1948 — Japan's surrender and the 38th-parallel division, the U.S. military government (USMGIK) and the Soviet occupation, the Provisional Government and the Rhee/Kim Ku/left factions, the Moscow trusteeship crisis and the failed Joint Commission, the Autumn Uprising, the Jeju April 3 and Yeosu–Suncheon episodes, the National Security Law, the May 1948 election and July constitution, and the parallel founding of the ROK and DPRK.
+- Created `people/roh-moo-hyun.md`: encyclopedic article on Roh Moo-hyun — his self-taught legal and human-rights career, his 1988 entry to the National Assembly and the "Roh Moo-hyun the Fool" regionalism campaigns, the 2002 upset election, the "participatory government," the 2004 impeachment and its reversal, the KORUS FTA, the October 2007 inter-Korean summit, and his post-presidential prosecution and 2009 death.
+- ENHANCE pass corrected facts and tightened prose: removed a broken `kim-young-sam.md` link and an embedded `[sic]` editorial note in the Roh article, and fixed its account of his political rise (first elected 1988, not 1992), the 2002 result (Lee Hoe-chang 46.6%, not 39%; Chung Mong-joon's eve-of-vote withdrawal), and the omitted October 2007 Pyongyang summit; in the Incheon article, corrected Ganghwa Island's area (~300 km², not 1,199), the Yongyu (not "Unmun") reclamation, the Gyeongin Line as Korea's first railway (1899), the airport rail link (AREX, not KTX), the Songdo tenant (the UN Green Climate Fund, not the Korea Exchange), the port's standing (second to Busan, not global top 15), and the removal of a misplaced KSOE shipbuilding claim and the Seoul-only Jeoldusan fort; in the liberation article, corrected the Soviet advance halting at the 38th parallel. Wrapped all three new `## Related` blocks in generated markers.
+- build-structure: refreshed `geography/index.md` (3→4), `history/index.md` (7→8), `people/index.md` (6→7), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (236→259 dated events) with twenty-three new events spanning Incheon, the founding era, and Roh Moo-hyun; and added bidirectional back-links from Seoul, Busan, Jeju Island, Korean War, Japanese Colonial Period, Korean Independence Movement, Democratization, Kim Dae-jung, Lee Myung-bak, Moon Jae-in, and Yoon Suk-yeol.
+- sync-seed: regenerated §4 (Content Inventory: 31→34 files) and §5 (Structure Inventory: entry counts and 259-event timeline; History becomes the largest category at eight topics).
