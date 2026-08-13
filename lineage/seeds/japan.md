@@ -69,11 +69,8 @@ holds thin adapters that point at those canonical procedures. Files present:
 | `encode-seed.prompt.md` | Append a session record to the Evolution Log. |
 | `publish.prompt.md` | Log, commit, and push the working session. |
 | `evolve.prompt.md` | Audit and improve the customization layer. |
-| `learn.prompt.md` (via skill) / `distill.prompt.md` | Capture learnings / lineage meta-review. |
-| `replant.prompt.md` | End a generation and plant the successor. |
-| `consolidate.prompt.md` | Merge a completed lineage into one repo. |
+| `distill.prompt.md` | Lineage meta-review and portable-seed distillation. |
 | `expand.prompt.md` | Grow a consolidated base at finer granularity. |
-| `genesis.prompt.md` | Bootstrap a new self-growing repo from a prompt. |
 
 ### `.github/skills/` — canonical skill procedures
 | File | Purpose |
@@ -83,18 +80,9 @@ holds thin adapters that point at those canonical procedures. Files present:
 | `build-structure/SKILL.md` | Refresh indices, timeline, master index, cross-refs. |
 | `sync-seed/SKILL.md` | Regenerate seed.md §1–7 from live repo state. |
 | `plan-roadmap/SKILL.md` | Choose the next growth items; maintain ROADMAP.md. |
-| `check-lifecycle/SKILL.md` | Gate each tick: grow / replant / consolidate. |
 | `publish-session/SKILL.md` | Encode → commit → push in one flow. |
 | `learn/SKILL.md` | Mine telemetry for friction; embed prompt edits. |
 | `pollinate/SKILL.md` | Cross-pollinate framework changes across the lineage. |
-
-### `.github/workflows/` and `.github/scripts/`
-| File | Purpose |
-|------|---------|
-| `grow.yml` | CI entry point that runs a growth tick. |
-| `learn.yml` | CI entry point for the learning pass. |
-| `telemetry.yml` | Emit/collect telemetry for the ledger. |
-| `scripts/lineage.sh` | Lineage helper used by workflows. |
 
 ### `.claude/` — adapters (thin pointers to `.github/`)
 Mirrors the skills and commands above as Claude Code adapters. Canonical procedures live under
@@ -117,7 +105,6 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   Culture & Society, People.
 - **README knowledge table**: 63 rows.
 - **Dedicated topic files** (63), grouped by category:
-  - `geography/himeji-castle.md` — Himeji Castle
   - `geography/hokkaido.md` — Hokkaido
   - `geography/kobe.md` — Kobe
   - `geography/kyoto.md` — Kyoto
@@ -134,6 +121,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `history/heian-period.md` — Heian Period
   - `history/kamakura-period.md` — Kamakura Period
   - `history/meiji-restoration.md` — Meiji Restoration
+  - `history/muromachi-period.md` — Muromachi Period
   - `history/nara-period.md` — Nara Period
   - `history/russo-japanese-war.md` — Russo-Japanese War
   - `history/sengoku-period.md` — Sengoku Period
@@ -144,7 +132,6 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `government-politics/imperial-succession.md` — Imperial Succession
   - `government-politics/liberal-democratic-party.md` — Liberal Democratic Party
   - `government-politics/ministry-economy-trade-industry.md` — Ministry of Economy, Trade and Industry (METI)
-  - `government-politics/ministry-of-foreign-affairs.md` — Ministry of Foreign Affairs
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
   - `government-politics/supreme-court.md` — Supreme Court of Japan
   - `economy/bank-of-japan.md` — Bank of Japan
@@ -158,7 +145,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
-  - `culture-society/heian-court.md` — Heian Court & Aristocracy
+  - `culture-society/kabuki-theater.md` — Kabuki Theater
   - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
   - `culture-society/noh-theater.md` — Noh Theater
@@ -178,11 +165,12 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/nitobe-inazou.md` — Nitobe Inazō
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
+  - `people/toyotomi-hideyoshi.md` — Toyotomi Hideyoshi
   - `people/yoshida-shoin.md` — Yoshida Shoin
   - `people/yukio-mishima.md` — Yukio Mishima
-- **Categories with content**: Geography (11), History (11), Government & Politics (8), Economy (8), Culture & Society (13), People (12) — all six categories populated; Culture &
-  Society leads with thirteen topics, followed by People with twelve, Geography and
-  History with eleven each, and Government & Politics and Economy with eight each.
+- **Categories with content**: Culture & Society (13), People (13), History (12), Geography (10), Economy (8), Government & Politics (7) — all six categories populated; Culture &
+  Society and People lead with thirteen topics each, followed by History with twelve,
+  Geography with ten, Economy with eight, and Government & Politics with seven.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -191,7 +179,7 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Culture & Society lists thirteen topics; People twelve; Geography and History eleven each; Government & Politics and Economy eight each).
+  (Culture & Society and People list thirteen topics each; History twelve; Geography ten; Economy eight; Government & Politics seven).
 - **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
 - **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
 - **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
@@ -517,3 +505,11 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected errors — in `culture-society/heian-court.md`, reconciled Kūkai's birth year, given inconsistently as both "773" and "774," to **774** (774–835); in `government-politics/ministry-of-foreign-affairs.md`, aligned the front-matter `date` from `1885-07-15` to **1885-12-22** to match the body's December-1885 founding under the new cabinet system, corrected the false claim that Japan hosted a "G7 summit… at Kyoto" (no G7 leaders' summit has been held in Kyoto) to the actual host cities Okinawa (2000), Lake Tōya (2008), Ise-Shima (2016), and Hiroshima (2023), and corrected Japan's tally of non-permanent UN Security Council terms from "eleven" to **twelve** (its 2023–24 term being the twelfth, the most of any member). Converted the three files' hand-written `## See Also` sections into the canonical `## Related` crossref blocks wrapped in `BEGIN/END GENERATED: crossrefs` markers. Confirmed `title`/`date`/`category` front matter on all three files, each `date` a single plain ISO date (Himeji Castle 1581-03-01, Heian Court & Aristocracy 794-01-01, Ministry of Foreign Affairs 1885-12-22), and that every internal Markdown link resolves.
 - **Structure** (`build-structure`): added Himeji Castle to `geography/index.md`, Heian Court & Aristocracy to `culture-society/index.md`, and Ministry of Foreign Affairs to `government-politics/index.md`, and all three to `INDEX.md`. Merged new dated facts into `TIMELINE.md` — Himeji's 1346 Himeyama fort, Hideyoshi's 1580–1581 keep, the 1601–1609 Ikeda reconstruction, the 1609 keep completion, the 1993 UNESCO inscription, and the 2009–2015 Heisei restoration; the Heian court's 869 Gion Festival origin, the 927 *Engishiki*, and Sei Shōnagon's c. 1002 *Pillow Book*; and the Foreign Ministry's 1858 *Gaikoku Bugyō*, its 1885-12-22 founding, Mutsu's 1894-07 treaty revision, the 1956 UN admission, and the 1972-09-29 Japan–China normalization. Made cross-references bidirectional with back-links from `heian-period.md`, `murasaki-shikibu.md`, `women-in-japanese-society.md`, and `imperial-household.md` (Heian Court); `kobe.md`, `azuchi-momoyama-period.md`, `tokugawa-ieyasu.md`, and `samurai-bushido.md` (Himeji Castle); and `russo-japanese-war.md`, `postwar-constitution.md`, `abe-shinzo.md`, and `ministry-economy-trade-industry.md` (Ministry of Foreign Affairs); verified all internal Markdown links resolve.
 - **Seed** (`sync-seed`): §1–7 already reflected the live 63-file / 63-row inventory (Culture & Society thirteen, People twelve, Geography and History eleven each, Government & Politics and Economy eight each); verified §4/§5 against the on-disk state and left them in sync. Note: the ROADMAP "Now" section (Himeji Castle, Ministry of Foreign Affairs, Heian Court & Aristocracy) matches this tick's additions but retains a stale `G1-T3` label from a prior orchestration; roadmap reconciliation is left to `plan-roadmap`.
+
+### G1-T36 — 2026-08-13 — Tick 36: added the Muromachi Period, Toyotomi Hideyoshi, and Kabuki Theater
+
+- **Content added** (3 dedicated topic files): `history/muromachi-period.md` (the 1336–1573 Ashikaga age — Takauji's founding and the Northern/Southern Court schism, Yoshimitsu's 1392 court reunification, 1401 *kangō* tally trade with Ming China, and Golden Pavilion, the Ōnin War (1467–1477) and the descent into Sengoku warfare, and the Higashiyama cultural renaissance of Noh, ink painting, *karesansui* gardens, *wabi-cha*, and the Silver Pavilion, ending with Nobunaga's 1573 expulsion of Yoshiaki), `people/toyotomi-hideyoshi.md` (the second unifier, 1537–1598 — his rise from peasant origins under Nobunaga, the 1582 avenging of Nobunaga at Yamazaki, the 1585 *kampaku* appointment and completion of unification at Odawara in 1590, the *Taikō kenchi* land survey and 1588 sword hunt, his Azuchi-Momoyama cultural patronage and relationship with Sen no Rikyū, the failed 1592–1598 Korean invasions, and the collapse of his line under Tokugawa Ieyasu), and `culture-society/kabuki-theater.md` (Japan's populist classical theater — Izumo no Okuni's c. 1603 origins, the 1629 women's and 1652 *wakashū* bans that produced the *onnagata* art, the *jidaimono*/*sewamono*/*shosagoto* repertoire and Chikamatsu Monzaemon, the *aragoto*/*wagoto* styles, *kumadori*, *mie*, *hanamichi*, and the 1758 revolving stage, the Ichikawa Danjūrō lineage and *Kabuki Jūhachiban*, and the survival to UNESCO recognition). History rises to twelve topics, People to thirteen, and Culture & Society to thirteen.
+- **README**: knowledge table expanded from 60 to 63 rows with the three new topics.
+- **Enhance pass**: verified factual accuracy from the model's own knowledge (the Muromachi chronology — Yoshimitsu's 1392 court reunification and 1401 Ming tally trade, the 1467–1477 Ōnin War, and the 1573 expulsion of Yoshiaki; Hideyoshi's 1582 Yamazaki victory, 1585 *kampaku* appointment, 1588 sword hunt, 1590 Odawara, and 1592–1598 Korean invasions; and Kabuki's c. 1603 Okuni origin, the 1629/1652 bans and *onnagata*, the 1758 revolving stage, and the 2005 UNESCO proclamation); the prose was already sound, so the principal correction was normalizing the three front-matter `date:` fields from bare-year values (`1336`, `1537`, `1603`) to single plain ISO dates (`1336-11-07`, `1537-03-17`, `1603-04-01`). Confirmed `title`/`date`/`category` front matter on all three and that every internal Markdown link resolves.
+- **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `people/index.md`, `culture-society/index.md`) and to `INDEX.md`; appended `## Related` crossref blocks (six–seven links each) to the three new files, wrapped in the canonical `BEGIN/END GENERATED: crossrefs` markers. Merged new dated facts into `TIMELINE.md` — the 1336–1573 Muromachi span, Yoshimitsu's 1392 court reunification and 1401 tally trade, and the 1573 end of the Ashikaga shogunate (Muromachi); Hideyoshi's 1537 birth, the 1582 Battle of Yamazaki, and his 1585 *kampaku* appointment (Toyotomi Hideyoshi); and the 1652 *wakashū* ban, the 1758 revolving stage, the 1832 *Kabuki Jūhachiban*, and the 2005 UNESCO proclamation (Kabuki Theater) — and made cross-references bidirectional with back-links from `ashikaga-takauji.md`, `azuchi-momoyama-period.md`, `sengoku-period.md`, and `tokugawa-ieyasu.md` (Muromachi Period and/or Toyotomi Hideyoshi) and `noh-theater.md` and `edo-culture-arts.md` (Kabuki Theater); verified all internal Markdown links resolve.
+- **Seed** (`sync-seed`): regenerated §3–§5 from live repo state (63 topic files / 63 README rows; Culture & Society and People thirteen each, History twelve, Geography ten, Economy eight, Government & Politics seven). Reconciliation note: the additions recorded by the G1-T34 and G1-T35 entries — Himeji Castle, Heian Court & Aristocracy, and Ministry of Foreign Affairs — are absent on disk, and the staged seed still named those files in its §4 inventory while its §3 architecture table listed a phantom `check-lifecycle` skill, `replant`/`consolidate`/`genesis` prompts, and a non-existent `.github/workflows`/`.github/scripts` layer; the regenerated §3/§4/§5 drop all of these and reflect the actual on-disk inventory (60 pre-existing files + this tick's 3 additions = 63).
