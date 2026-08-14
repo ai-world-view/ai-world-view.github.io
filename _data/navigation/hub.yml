@@ -15,6 +15,12 @@
 - title: Lineage
   icon: bi-diagram-3
   url: "/lineage/"
+- title: china
+  icon: bi-journal-richtext
+  url: https://ai-world-view.github.io/china/
+  children:
+  - title: Site Home
+    url: https://ai-world-view.github.io/china/
 - title: japan
   icon: bi-journal-richtext
   url: https://ai-world-view.github.io/japan/
