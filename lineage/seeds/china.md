@@ -58,26 +58,63 @@ The repository holds only its own content, a GitHub Pages `_config.yml` (a `remo
 of [`bamr87/zer0-mistakes`](https://github.com/bamr87/zer0-mistakes)), the `_data/navigation`
 config, a `ROADMAP.md` growth plan, the `.claude/` adapter toolkit, and `telemetry/`. The AI
 customization layer is staged from the hub into `.github/` at tick time (`.claude/` holds thin
-adapters that point to it). Sections 2–7 are populated from Section 1 by the `sync-seed` skill on
-the first tick.
+adapters that point to it). At the time of this sync, `.github/` contained:
+
+| Group | Files | Purpose |
+|-------|-------|---------|
+| `.github/agents/` | `architect`, `curator` | Orchestrator and content-specialist agent definitions |
+| `.github/instructions/` | `agents`, `content` | Behavioral rules for agents and content authoring |
+| `.github/prompts/` | `deep-dive`, `distill`, `encode-seed`, `evolve`, `expand`, `grow`, `publish`, `update-readme` | Canonical procedures for growth and lifecycle commands |
+| `.github/skills/` | `add-topic`, `build-structure`, `learn`, `plan-roadmap`, `pollinate`, `publish-session`, `research`, `sync-seed` | Canonical skill procedures staged from the hub |
 
 ## Section 4 — Content Inventory
 
-_Scaffold — populated by `sync-seed` on the first `/grow` tick from the live repo contents._
+Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
+
+- **README knowledge table**: 3 rows.
+- **Dedicated topic files**: 3.
+  - `culture-society/confucianism.md` — Confucianism
+  - `geography/the-great-wall.md` — The Great Wall of China
+  - `government-politics/communist-party-china.md` — The Communist Party of China
+- **Categories with content**: Culture & Society (1), Geography (1), Government & Politics (1).
+- **Categories still empty**: History, Economy, People.
 
 ## Section 5 — Structure Inventory
 
-_Scaffold — populated by `sync-seed` on the first `/grow` tick from the live repo contents._
+Generated structural artifacts (maintained by `build-structure`):
+
+- **Category index pages**: `geography/index.md`, `government-politics/index.md`,
+  `culture-society/index.md` (History, Economy, People not yet generated — no content).
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 10 dated milestones.
+- **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
+- **Cross-references**: `## Related` blocks present in all 3 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
-_Scaffold — populated by `sync-seed` on the first `/grow` tick. Growth is orchestrated centrally
-by the hub: one tick adds or expands topics under the taxonomy in Section 1, written from the
-model's own world view._
+Growth is orchestrated centrally by the hub. On each tick the hub checks out this repo, stages the
+framework into `.github/` and the concept seed as `seed.md`, then runs a **Haiku → Sonnet → Opus**
+escalation: plan the next roadmap items, research and write new content from the model's own world
+view under the Section 1 taxonomy, refresh structure (`build-structure`), sync the DNA
+(`sync-seed`), record the tick (`encode-seed`), and publish only the new content + telemetry back
+here.
 
 ## Section 7 — Rebuild Procedure
 
-_Scaffold — populated by `sync-seed` on the first `/grow` tick. The concept in Section 1 is
-sufficient to regrow this knowledge base from scratch._
+The Concept Definition in Section 1 is sufficient to regrow this knowledge base from scratch:
+re-plant a repo with the same `concept` block, then run growth ticks that add topics under the
+taxonomy and regenerate structure. Content is authored from the model's own world view; no external
+source corpus is required. Sections 2–7 are regenerated from live repo state by `sync-seed`; the
+Evolution Log (Section 8) is the append-only record of what each tick actually did.
 
 ## Section 8 — Evolution Log
+
+### G1-T1 — 2026-08-14 — Tick 1: First content — Confucianism, the Great Wall, and the Communist Party of China
+
+Planted the knowledge base's first three topics, one per opened category. Added
+`culture-society/confucianism.md`, `geography/the-great-wall.md`, and
+`government-politics/communist-party-china.md` (each with `title`/`date`/`category` front
+matter and mutual cross-references), plus 3 README knowledge-table rows. Built the initial
+structural layer: category index pages for the three populated categories, `TIMELINE.md`
+(10 dated milestones), `INDEX.md` (master TOC by taxonomy), and generated `## Related`
+cross-reference blocks in every topic file. Regenerated seed sections 2–7 to match live
+state. History, Economy, and People remain empty for future ticks.
