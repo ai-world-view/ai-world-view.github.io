@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (34):
+`INDEX.md`). Dedicated topic files (37):
 
 | Category | File | Topic |
 |---|---|---|
@@ -106,11 +106,13 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Government & Politics | `government-politics/government-structure.md` | Government structure — the presidential republic |
 | Government & Politics | `government-politics/north-korea-relations.md` | South Korea–North Korea relations and inter-Korean diplomacy |
 | Government & Politics | `government-politics/technology-innovation-policy.md` | Technology and innovation policy — the developmental state, K-Semiconductor Strategy, R&D, and tech regulation |
+| Government & Politics | `government-politics/military-defense-policy.md` | Military and defense policy — the armed forces, conscription, the defense industry, the U.S. alliance, deterrence toward North Korea, OPCON, and the shift to civilian control |
 | Economy | `economy/chaebol.md` | Chaebol — family-controlled conglomerates |
 | Economy | `economy/semiconductors.md` | Semiconductors — memory-chip leadership and geopolitics |
 | Economy | `economy/technology-sector.md` | Technology sector — ICT, displays, AI, telecom, and mobility beyond semiconductors |
 | Economy | `economy/automotive-industry.md` | Automotive industry — Hyundai–Kia–Genesis, global market position, EVs, hydrogen, and batteries |
 | Economy | `economy/banking-and-finance.md` | Banking and finance — the developmental-state directed-credit system, the 1997 Asian Financial Crisis, post-crisis restructuring, and the fintech and internet-only-bank era |
+| Economy | `economy/energy-resources-policy.md` | Energy and resources policy — a resource-poor economy's nuclear, coal, LNG, and renewable strategy; the state energy enterprises; and the nuclear phase-out and its reversal |
 | Culture & Society | `culture-society/hallyu.md` | Hallyu — the Korean Wave |
 | Culture & Society | `culture-society/korean-cuisine.md` | Korean cuisine and food culture |
 | Culture & Society | `culture-society/religion-and-buddhism.md` | Religion and Buddhism — Buddhism, Confucianism, Christianity, shamanism, new religious movements, and the contemporary religious landscape |
@@ -122,13 +124,14 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/kim-dae-jung.md` | Kim Dae-jung — president (1998–2003) and Nobel laureate |
 | People | `people/roh-moo-hyun.md` | Roh Moo-hyun — president (2003–2008), human-rights lawyer, and the KORUS FTA and October 2007 summit |
 | People | `people/lee-myung-bak.md` | Lee Myung-bak — president (2008–2013) |
+| People | `people/park-geun-hye.md` | Park Geun-hye — president (2013–2017); first female head of state, the Choi Soon-sil scandal, impeachment, and pardon |
 | People | `people/moon-jae-in.md` | Moon Jae-in — president (2017–2022) and inter-Korean diplomacy |
 | People | `people/bang-si-hyuk.md` | Bang Si-hyuk — HYBE founder and architect of BTS |
 | People | `people/yoon-suk-yeol.md` | Yoon Suk-yeol — president (2022–2025) and the December 2024 martial-law crisis |
 
-Every taxonomy category holds at least three dedicated topics; History is now the largest (eight
-topics), followed by Culture & Society and People (seven each), then Economy (five), Geography
-(four), and Government & Politics (three).
+Every taxonomy category holds at least four dedicated topics; History and People are now tied as
+the largest (eight topics each), followed by Culture & Society (seven), Economy (six), and Geography
+and Government & Politics (four each).
 
 ## Section 5 — Structure Inventory
 
@@ -138,13 +141,13 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 |---|---|
 | `geography/index.md` | Present — 4 entries |
 | `history/index.md` | Present — 8 entries |
-| `government-politics/index.md` | Present — 3 entries |
-| `economy/index.md` | Present — 5 entries |
+| `government-politics/index.md` | Present — 4 entries |
+| `economy/index.md` | Present — 6 entries |
 | `culture-society/index.md` | Present — 7 entries |
-| `people/index.md` | Present — 7 entries |
-| `TIMELINE.md` | Present — 259 dated events across all thirty-four articles |
+| `people/index.md` | Present — 8 entries |
+| `TIMELINE.md` | Present — 283 dated events across all thirty-seven articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all thirty-four topic articles |
+| Cross-references (`## Related`) | Present in all thirty-seven topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -306,3 +309,14 @@ Added three dedicated articles — one giving Geography a fourth topic, one fill
 - ENHANCE pass corrected facts and tightened prose: removed a broken `kim-young-sam.md` link and an embedded `[sic]` editorial note in the Roh article, and fixed its account of his political rise (first elected 1988, not 1992), the 2002 result (Lee Hoe-chang 46.6%, not 39%; Chung Mong-joon's eve-of-vote withdrawal), and the omitted October 2007 Pyongyang summit; in the Incheon article, corrected Ganghwa Island's area (~300 km², not 1,199), the Yongyu (not "Unmun") reclamation, the Gyeongin Line as Korea's first railway (1899), the airport rail link (AREX, not KTX), the Songdo tenant (the UN Green Climate Fund, not the Korea Exchange), the port's standing (second to Busan, not global top 15), and the removal of a misplaced KSOE shipbuilding claim and the Seoul-only Jeoldusan fort; in the liberation article, corrected the Soviet advance halting at the 38th parallel. Wrapped all three new `## Related` blocks in generated markers.
 - build-structure: refreshed `geography/index.md` (3→4), `history/index.md` (7→8), `people/index.md` (6→7), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (236→259 dated events) with twenty-three new events spanning Incheon, the founding era, and Roh Moo-hyun; and added bidirectional back-links from Seoul, Busan, Jeju Island, Korean War, Japanese Colonial Period, Korean Independence Movement, Democratization, Kim Dae-jung, Lee Myung-bak, Moon Jae-in, and Yoon Suk-yeol.
 - sync-seed: regenerated §4 (Content Inventory: 31→34 files) and §5 (Structure Inventory: entry counts and 259-event timeline; History becomes the largest category at eight topics).
+
+### G1-T14 — 2026-08-14 — Tick 14: Park Geun-hye, energy and resources policy, and military and defense policy deepen People, Economy, and Government & Politics
+
+Added three dedicated articles — one completing the modern presidential line in People (an eighth topic that ties People with History as the largest category), one opening a sixth Economy topic on a core sector, and one giving Government & Politics a fourth topic on the security state.
+
+- Created `people/park-geun-hye.md`: encyclopedic article on Park Geun-hye — her Blue House childhood and the 1974 assassination of her mother, her acting First Lady years, her entry to the National Assembly and rise to the GNP/Saenuri leadership, the 2012 election as the first female and first popular-vote-majority president, the "Creative Economy" and the Sewol disaster, the Trust-Building Process and the THAAD deployment, the Choi Soon-sil scandal, the candlelight protests and 2016–2017 impeachment and Constitutional Court removal, her conviction, and her 2021 pardon.
+- Created `economy/energy-resources-policy.md`: encyclopedic article on energy and resources policy — the resource-poor import dependence and strategic reserves, the developmental-state nuclear program (Kori-1, Wolsong, the APR-1400 and the Barakah export), the 1980s LNG boom and KOGAS, the Fukushima inflection, Moon Jae-in's nuclear phase-out and Yoon Suk-yeol's reversal, fossil-fuel imports and refining, renewables and the hydrogen economy, the state enterprises (KEPCO, KHNP, KOGAS, KNOC), and carbon-neutrality commitments.
+- Created `government-politics/military-defense-policy.md`: encyclopedic article on military and defense policy — the armistice-shaped threat environment, the military-developmental state under Park Chung-hee, the arc from Chun/Roh through Kim Young-sam's Hanahoe purge to civilian control, provocation-and-deterrence cycles (Cheonan, Yeonpyeong, THAAD), the 2018 de-escalation and its reversal, the ROK force structure and missile defense, OPCON, conscription and demographic strain, and the fast-growing defense-export industry.
+- ENHANCE pass corrected facts and converted draft `[[wikilinks]]` in all three files to resolved markdown links: in the Park Geun-hye article, fixed the pardon's grantor (President Moon Jae-in in December 2021, not Yoon Suk-yeol) in both the summary and key-figures header, corrected the finalized sentence (20 years after a January 2021 Supreme Court ruling, not "effectively 22"), fixed "Samsung C&T" (not "C&S"), the impeachment tally's invalid/abstention split (7 invalid, 2 abstentions), the "president-elect" mislabel for Yoon in late 2021, a self-contradictory female-prime-minister passage, and the redundant Choi Soon-sil transliteration (noting her later name change to Choi Seo-won); in the energy article, re-attributed the December 2009 Barakah contract to Lee Myung-bak's term (not Park Geun-hye's), removed a false KOGAS 10% stake in Yamal LNG, softened the primary-energy import share (~93%), dated the Shinan wind project to 2021, and renamed an informal "Reversal of Reversal" heading; in the military article, reframed the 1971 U.S. division withdrawal, changed "signed" to "ratified" for the 1975 NPT, corrected the Sejong-class Aegis interceptors (SM-2, not SM-3), and softened the first-female-fighter-pilot date.
+- build-structure: refreshed `people/index.md` (7→8), `economy/index.md` (5→6), `government-politics/index.md` (3→4), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (259→283 dated events) with twenty-four new events spanning Park Geun-hye's career, the energy sector, and defense policy; wrapped the three new `## Related` blocks in generated markers; and added bidirectional back-links from Park Chung-hee, Lee Myung-bak, Moon Jae-in, Yoon Suk-yeol, Government Structure, North Korea Relations, Technology and Innovation Policy, Chaebol, Semiconductors, Automotive Industry, Democratization, and the Korean War.
+- sync-seed: regenerated §4 (Content Inventory: 34→37 files) and §5 (Structure Inventory: entry counts and 283-event timeline; People ties History as the largest category at eight topics, and every category now holds at least four topics). Reconciled `ROADMAP.md`, moving the three completed items to Done.
