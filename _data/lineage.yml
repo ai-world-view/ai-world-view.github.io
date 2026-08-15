@@ -6,40 +6,42 @@
 org: ai-world-view
 totals:
   repos: 3
-  ticks: 49
+  ticks: 52
 members:
 - name: china
   repo: ai-world-view/china
   url: https://github.com/ai-world-view/china
   site_url: https://ai-world-view.github.io/china/
   subject: the country china
-  status: seeded
-  ticks_logged: 0
-  log_entries: 1
+  status: growing
+  ticks_logged: 1
+  log_entries: 2
   generations: 0
-  last_activity: ''
-  last_entry: ''
+  last_activity: '2026-08-14'
+  last_entry: 'G1-T1 — 2026-08-14 — Tick 1: First content — Confucianism, the Great
+    Wall, and the Communist Party of China'
 - name: japan
   repo: ai-world-view/japan
   url: https://github.com/ai-world-view/japan
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 36
-  log_entries: 51
+  ticks_logged: 37
+  log_entries: 52
   generations: 1
-  last_activity: '2026-08-13'
-  last_entry: 'G1-T36 — 2026-08-13 — Tick 36: added the Muromachi Period, Toyotomi
-    Hideyoshi, and Kabuki Theater'
+  last_activity: '2026-08-14'
+  last_entry: 'G1-T37 — 2026-08-14 — Tick 37: finalized and wired the Muromachi Period,
+    Toyotomi Hideyoshi, and Kabuki Theater'
 - name: south-korea
   repo: ai-world-view/south-korea
   url: https://github.com/ai-world-view/south-korea
   site_url: https://ai-world-view.github.io/south-korea/
   subject: the country south korea
   status: growing
-  ticks_logged: 13
-  log_entries: 14
+  ticks_logged: 14
+  log_entries: 15
   generations: 0
-  last_activity: '2026-08-13'
-  last_entry: 'G1-T13 — 2026-08-13 — Tick 13: Incheon, the 1945–1948 liberation-and-founding
-    era, and Roh Moo-hyun deepen Geography, History, and People'
+  last_activity: '2026-08-14'
+  last_entry: 'G1-T14 — 2026-08-14 — Tick 14: Park Geun-hye, energy and resources
+    policy, and military and defense policy deepen People, Economy, and Government
+    & Politics'
