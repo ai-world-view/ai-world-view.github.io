@@ -21,6 +21,14 @@
   children:
   - title: Site Home
     url: https://ai-world-view.github.io/china/
+  - title: Timeline
+    url: https://ai-world-view.github.io/china/TIMELINE/
+  - title: Culture & Society
+    url: https://ai-world-view.github.io/china/culture-society/
+  - title: Geography
+    url: https://ai-world-view.github.io/china/geography/
+  - title: Government & Politics
+    url: https://ai-world-view.github.io/china/government-politics/
 - title: japan
   icon: bi-journal-richtext
   url: https://ai-world-view.github.io/japan/
