@@ -71,23 +71,28 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 3 rows.
-- **Dedicated topic files**: 3.
+- **README knowledge table**: 6 rows.
+- **Dedicated topic files**: 6.
   - `culture-society/confucianism.md` — Confucianism
+  - `economy/economic-reform-opening-up.md` — Economic Reform & Opening-up (1978 Onward)
   - `geography/the-great-wall.md` — The Great Wall of China
   - `government-politics/communist-party-china.md` — The Communist Party of China
-- **Categories with content**: Culture & Society (1), Geography (1), Government & Politics (1).
-- **Categories still empty**: History, Economy, People.
+  - `history/the-qin-dynasty.md` — The Qin Dynasty
+  - `people/mao-zedong.md` — Mao Zedong
+- **Categories with content**: Culture & Society (1), Economy (1), Geography (1),
+  Government & Politics (1), History (1), People (1).
+- **Categories still empty**: none — all six taxonomy categories now have content.
 
 ## Section 5 — Structure Inventory
 
 Generated structural artifacts (maintained by `build-structure`):
 
-- **Category index pages**: `geography/index.md`, `government-politics/index.md`,
-  `culture-society/index.md` (History, Economy, People not yet generated — no content).
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 10 dated milestones.
+- **Category index pages**: all six generated — `geography/index.md`,
+  `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
+  `economy/index.md`, `people/index.md`.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 21 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 3 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 6 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -118,3 +123,16 @@ structural layer: category index pages for the three populated categories, `TIME
 (10 dated milestones), `INDEX.md` (master TOC by taxonomy), and generated `## Related`
 cross-reference blocks in every topic file. Regenerated seed sections 2–7 to match live
 state. History, Economy, and People remain empty for future ticks.
+
+### G1-T2 — 2026-08-15 — Tick 2: Opened History, Economy, and People — the Qin Dynasty, Economic Reform & Opening-up, and Mao Zedong
+
+Added one topic to each of the three previously empty categories: `history/the-qin-dynasty.md`
+(China's first centralized empire, 221–206 BCE), `economy/economic-reform-opening-up.md`
+(Deng Xiaoping's post-1978 market reforms), and `people/mao-zedong.md` (founding leader of the
+People's Republic), each with `title`/`date`/`category` front matter, Summary, thematic sections,
+Related cross-references, and Sources. Refreshed the structural layer: generated category index
+pages for History, Economy, and People (all six categories now populated); extended `TIMELINE.md`
+from 10 to 21 dated milestones; added the new topics to `INDEX.md`; grew the README knowledge
+table from 3 to 6 rows; and wove new cross-references from the three original topics to the new
+ones. Regenerated seed sections 4–5 to match live state (6 topic files, 6 README rows, no empty
+categories).
