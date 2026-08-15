@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (37):
+`INDEX.md`). Dedicated topic files (40):
 
 | Category | File | Topic |
 |---|---|---|
@@ -95,6 +95,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Geography | `geography/busan.md` | Busan — port city and second metropolis |
 | Geography | `geography/jeju-island.md` | Jeju Island — volcanic island, tourism, haenyeo divers, and the April 3 Incident |
 | Geography | `geography/incheon.md` | Incheon — gateway port city, Incheon International Airport, the Inchon Landing, and the Songdo smart-city district |
+| Geography | `geography/daegu.md` | Daegu — southeastern metropolis, textile ("Manchester of Korea") hub, the 2003 subway fire, and the conservative TK heartland |
 | History | `history/three-kingdoms-period.md` | Three Kingdoms period (Goguryeo, Baekje, Silla) and Silla's unification |
 | History | `history/goryeo-period.md` | Goryeo period (918–1392) — medieval kingdom, celadon, the Tripitaka Koreana, and metal movable type |
 | History | `history/joseon-dynasty.md` | Joseon dynasty (1392–1910) — Korea's longest kingdom, Neo-Confucian statecraft, Hangul, the gwageo order, and the Imjin and Manchu invasions |
@@ -113,6 +114,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Economy | `economy/automotive-industry.md` | Automotive industry — Hyundai–Kia–Genesis, global market position, EVs, hydrogen, and batteries |
 | Economy | `economy/banking-and-finance.md` | Banking and finance — the developmental-state directed-credit system, the 1997 Asian Financial Crisis, post-crisis restructuring, and the fintech and internet-only-bank era |
 | Economy | `economy/energy-resources-policy.md` | Energy and resources policy — a resource-poor economy's nuclear, coal, LNG, and renewable strategy; the state energy enterprises; and the nuclear phase-out and its reversal |
+| Economy | `economy/labor-employment-policy.md` | Labor and employment policy — union history, the 1987 Great Workers' Struggle, the IMF-era restructuring, and the regular/non-regular dual labor market |
 | Culture & Society | `culture-society/hallyu.md` | Hallyu — the Korean Wave |
 | Culture & Society | `culture-society/korean-cuisine.md` | Korean cuisine and food culture |
 | Culture & Society | `culture-society/religion-and-buddhism.md` | Religion and Buddhism — Buddhism, Confucianism, Christianity, shamanism, new religious movements, and the contemporary religious landscape |
@@ -120,6 +122,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Culture & Society | `culture-society/kpop-industry.md` | K-pop industry and global music market |
 | Culture & Society | `culture-society/sports-and-olympics.md` | Sports and the Olympic Games — hosting, athletic excellence, and esports |
 | Culture & Society | `culture-society/film-cinema-industry.md` | Film and cinema industry — from "Arirang" to "Parasite" and the streaming era |
+| Culture & Society | `culture-society/architecture-urban-design.md` | Architecture and urban design — the hanok tradition, developmental-state apartment urbanism, contemporary landmarks, and smart cities |
 | People | `people/park-chung-hee.md` | Park Chung-hee — president (1961–1979) |
 | People | `people/kim-dae-jung.md` | Kim Dae-jung — president (1998–2003) and Nobel laureate |
 | People | `people/roh-moo-hyun.md` | Roh Moo-hyun — president (2003–2008), human-rights lawyer, and the KORUS FTA and October 2007 summit |
@@ -129,9 +132,9 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/bang-si-hyuk.md` | Bang Si-hyuk — HYBE founder and architect of BTS |
 | People | `people/yoon-suk-yeol.md` | Yoon Suk-yeol — president (2022–2025) and the December 2024 martial-law crisis |
 
-Every taxonomy category holds at least four dedicated topics; History and People are now tied as
-the largest (eight topics each), followed by Culture & Society (seven), Economy (six), and Geography
-and Government & Politics (four each).
+Every taxonomy category holds at least four dedicated topics; History, People, and Culture & Society
+are now tied as the largest (eight topics each), followed by Economy (seven), Geography (five), and
+Government & Politics (four).
 
 ## Section 5 — Structure Inventory
 
@@ -139,15 +142,15 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 
 | Artifact | State |
 |---|---|
-| `geography/index.md` | Present — 4 entries |
+| `geography/index.md` | Present — 5 entries |
 | `history/index.md` | Present — 8 entries |
 | `government-politics/index.md` | Present — 4 entries |
-| `economy/index.md` | Present — 6 entries |
-| `culture-society/index.md` | Present — 7 entries |
+| `economy/index.md` | Present — 7 entries |
+| `culture-society/index.md` | Present — 8 entries |
 | `people/index.md` | Present — 8 entries |
-| `TIMELINE.md` | Present — 283 dated events across all thirty-seven articles |
+| `TIMELINE.md` | Present — 302 dated events across all forty articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all thirty-seven topic articles |
+| Cross-references (`## Related`) | Present in all forty topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -320,3 +323,14 @@ Added three dedicated articles — one completing the modern presidential line i
 - ENHANCE pass corrected facts and converted draft `[[wikilinks]]` in all three files to resolved markdown links: in the Park Geun-hye article, fixed the pardon's grantor (President Moon Jae-in in December 2021, not Yoon Suk-yeol) in both the summary and key-figures header, corrected the finalized sentence (20 years after a January 2021 Supreme Court ruling, not "effectively 22"), fixed "Samsung C&T" (not "C&S"), the impeachment tally's invalid/abstention split (7 invalid, 2 abstentions), the "president-elect" mislabel for Yoon in late 2021, a self-contradictory female-prime-minister passage, and the redundant Choi Soon-sil transliteration (noting her later name change to Choi Seo-won); in the energy article, re-attributed the December 2009 Barakah contract to Lee Myung-bak's term (not Park Geun-hye's), removed a false KOGAS 10% stake in Yamal LNG, softened the primary-energy import share (~93%), dated the Shinan wind project to 2021, and renamed an informal "Reversal of Reversal" heading; in the military article, reframed the 1971 U.S. division withdrawal, changed "signed" to "ratified" for the 1975 NPT, corrected the Sejong-class Aegis interceptors (SM-2, not SM-3), and softened the first-female-fighter-pilot date.
 - build-structure: refreshed `people/index.md` (7→8), `economy/index.md` (5→6), `government-politics/index.md` (3→4), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (259→283 dated events) with twenty-four new events spanning Park Geun-hye's career, the energy sector, and defense policy; wrapped the three new `## Related` blocks in generated markers; and added bidirectional back-links from Park Chung-hee, Lee Myung-bak, Moon Jae-in, Yoon Suk-yeol, Government Structure, North Korea Relations, Technology and Innovation Policy, Chaebol, Semiconductors, Automotive Industry, Democratization, and the Korean War.
 - sync-seed: regenerated §4 (Content Inventory: 34→37 files) and §5 (Structure Inventory: entry counts and 283-event timeline; People ties History as the largest category at eight topics, and every category now holds at least four topics). Reconciled `ROADMAP.md`, moving the three completed items to Done.
+
+### G1-T15 — 2026-08-15 — Tick 15: Daegu, labor and employment policy, and architecture and urban design deepen Geography, Economy, and Culture & Society
+
+Added three dedicated articles — one giving Geography a fifth topic, one opening a seventh Economy topic on the world of work, and one giving Culture & Society an eighth topic that ties it with History and People as the largest categories (eight topics each).
+
+- Created `geography/daegu.md`: encyclopedic article on Daegu — its river-basin geography and heat-trapping climate, the 1601 provincial capital and 1658 Yangnyeong herbal-medicine market, the 1946 October Uprising and Korean War rear-base role, the textile "Manchester of Korea" economy and its diversification (automotive parts, machinery, medical/bio, the nearby Gumi complex), the 2003 Jungang-ro subway fire, the 2020 Shincheonji COVID-19 outbreak, the universities, traditional-medicine culture, sport, and the conservative "TK" political identity.
+- Created `economy/labor-employment-policy.md`: encyclopedic article on labor and employment policy — colonial forced labor and post-liberation Jeonpyeong, authoritarian labor control and Jeon Tae-il, the 1987 Great Workers' Struggle and the FKTU/KCTU dual-federation structure, the 1997 IMF crisis and the Tripartite Commission, the contemporary regular/non-regular dual market, the 52-hour workweek and minimum-wage debates, the gender pay gap, youth and demographic challenges, Samsung's abandoned no-union tradition, and recent Moon/Yoon policy swings.
+- Created `culture-society/architecture-urban-design.md`: encyclopedic article on architecture and urban design — the hanok/palace/temple tradition, colonial and post-war building, developmental-state apartment urbanism and Kim Swoo-geun, the post-1987 renaissance (Leeum, the National Museum, Cheonggyecheon, Seung H-Sang), contemporary landmarks (DDP, Lotte World Tower, Songdo), hanok preservation, and urban-planning challenges.
+- ENHANCE pass corrected facts and converted the three draft `[[wikilink]]` Related blocks to resolved markdown links: in the Daegu article, fixed the administrative history (a Directly Governed City from July 1981, redesignated a Metropolitan City in 1995, not a "Special City" in 1981/1988), removed the false "third in metropolitan terms" ranking, replaced the fabricated mayor "Lee Geon-young" with Hong Joon-pyo (2022–present), and corrected the TK-figures list (Chun Doo-hwan was born in Hapcheon, South Gyeongsang → replaced with Roh Tae-woo of the Daegu area); in the labor article, corrected the KCTU founding date (November 11, 1995, not 1990) and romanization (Minju Nochong) and the 9,160-won minimum wage year (2022); in the architecture article, corrected the National Museum figure ("137,000 m² of exhibition space" → total floor area) and removed the unverifiable "G-Sang Design Group" and "HNTB" firm attributions.
+- build-structure: refreshed `geography/index.md` (4→5), `economy/index.md` (6→7), `culture-society/index.md` (7→8), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (283→302 dated events) with nineteen new events spanning Daegu's history, Korean labor milestones, and architectural landmarks; and added bidirectional back-links from Busan, Seoul, Incheon, Korean War, Park Chung-hee, Chaebol, Automotive Industry, Hallyu, and Democratization.
+- sync-seed: regenerated §4 (Content Inventory: 37→40 files) and §5 (Structure Inventory: entry counts and 302-event timeline; History, People, and Culture & Society tie as the largest categories at eight topics each). Reconciled `ROADMAP.md`, moving the three completed items to Done.
