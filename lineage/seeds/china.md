@@ -71,17 +71,20 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 6 rows.
-- **Dedicated topic files**: 6.
+- **README knowledge table**: 9 rows.
+- **Dedicated topic files**: 9.
   - `culture-society/confucianism.md` — Confucianism
   - `economy/economic-reform-opening-up.md` — Economic Reform & Opening-up (1978 Onward)
+  - `geography/the-forbidden-city.md` — The Forbidden City
   - `geography/the-great-wall.md` — The Great Wall of China
   - `government-politics/communist-party-china.md` — The Communist Party of China
   - `history/the-qin-dynasty.md` — The Qin Dynasty
+  - `history/the-tang-dynasty.md` — The Tang Dynasty
+  - `people/confucius.md` — Confucius
   - `people/mao-zedong.md` — Mao Zedong
-- **Categories with content**: Culture & Society (1), Economy (1), Geography (1),
-  Government & Politics (1), History (1), People (1).
-- **Categories still empty**: none — all six taxonomy categories now have content.
+- **Categories with content**: Culture & Society (1), Economy (1), Geography (2),
+  Government & Politics (1), History (2), People (2).
+- **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
 
@@ -90,9 +93,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 21 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 33 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 6 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 9 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -136,3 +139,21 @@ from 10 to 21 dated milestones; added the new topics to `INDEX.md`; grew the REA
 table from 3 to 6 rows; and wove new cross-references from the three original topics to the new
 ones. Regenerated seed sections 4–5 to match live state (6 topic files, 6 README rows, no empty
 categories).
+
+### G1-T3 — 2026-08-16 — Tick 3: Added depth — Confucius, the Tang Dynasty, and the Forbidden City
+
+Deepened three already-open categories rather than opening new ones: `people/confucius.md`
+(the philosopher who founded Confucianism, 551–479 BCE), `history/the-tang-dynasty.md`
+(China's cosmopolitan golden age, 618–907 CE), and `geography/the-forbidden-city.md` (the Ming
+and Qing imperial palace, built 1406–1420), each with `title`/`date`/`category` front matter,
+Summary, thematic sections, Related cross-references, and Sources. The People, History, and
+Geography categories each now hold two topics. Polished the new prose and corrected several
+facts (Xuanzang's 657 texts brought back vs. translated; the Duke of Zhou dream passage,
+*Analects* 7.5; Kuai Xiang's role and dates). Refreshed the structural layer: added category-index
+rows for Geography, History, and People; extended `TIMELINE.md` from 21 to 33 dated milestones
+(Confucius's death, six Tang milestones, and Forbidden City construction, the 1912 abdication,
+the 1925 Palace Museum, and its 1987 UNESCO listing); added the three topics to `INDEX.md`; grew
+the README knowledge table from 6 to 9 rows; and wove reciprocal cross-references between the new
+topics and the existing Confucianism, Qin Dynasty, Great Wall, and Mao Zedong articles.
+Regenerated seed sections 4–5 to match live state (9 topic files, 9 README rows, 33 milestones,
+no empty categories).
