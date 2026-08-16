@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (40):
+`INDEX.md`). Dedicated topic files (43):
 
 | Category | File | Topic |
 |---|---|---|
@@ -96,6 +96,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Geography | `geography/jeju-island.md` | Jeju Island — volcanic island, tourism, haenyeo divers, and the April 3 Incident |
 | Geography | `geography/incheon.md` | Incheon — gateway port city, Incheon International Airport, the Inchon Landing, and the Songdo smart-city district |
 | Geography | `geography/daegu.md` | Daegu — southeastern metropolis, textile ("Manchester of Korea") hub, the 2003 subway fire, and the conservative TK heartland |
+| Geography | `geography/gyeonggi-province.md` | Gyeonggi Province — the most populous province ringing Seoul; the largest regional economy, the chip-fab belt and Pangyo cluster, new towns, the DMZ frontier, and Joseon heritage |
 | History | `history/three-kingdoms-period.md` | Three Kingdoms period (Goguryeo, Baekje, Silla) and Silla's unification |
 | History | `history/goryeo-period.md` | Goryeo period (918–1392) — medieval kingdom, celadon, the Tripitaka Koreana, and metal movable type |
 | History | `history/joseon-dynasty.md` | Joseon dynasty (1392–1910) — Korea's longest kingdom, Neo-Confucian statecraft, Hangul, the gwageo order, and the Imjin and Manchu invasions |
@@ -115,6 +116,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Economy | `economy/banking-and-finance.md` | Banking and finance — the developmental-state directed-credit system, the 1997 Asian Financial Crisis, post-crisis restructuring, and the fintech and internet-only-bank era |
 | Economy | `economy/energy-resources-policy.md` | Energy and resources policy — a resource-poor economy's nuclear, coal, LNG, and renewable strategy; the state energy enterprises; and the nuclear phase-out and its reversal |
 | Economy | `economy/labor-employment-policy.md` | Labor and employment policy — union history, the 1987 Great Workers' Struggle, the IMF-era restructuring, and the regular/non-regular dual labor market |
+| Economy | `economy/petrochemicals-heavy-chemicals.md` | Petrochemicals and heavy chemical industry — the Ulsan/Yeosu/Daesan cracking complexes, the major chemical chaebol, products and markets, the 2022–2025 downturn, and the shift to specialty and green chemistry |
 | Culture & Society | `culture-society/hallyu.md` | Hallyu — the Korean Wave |
 | Culture & Society | `culture-society/korean-cuisine.md` | Korean cuisine and food culture |
 | Culture & Society | `culture-society/religion-and-buddhism.md` | Religion and Buddhism — Buddhism, Confucianism, Christianity, shamanism, new religious movements, and the contemporary religious landscape |
@@ -123,6 +125,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Culture & Society | `culture-society/sports-and-olympics.md` | Sports and the Olympic Games — hosting, athletic excellence, and esports |
 | Culture & Society | `culture-society/film-cinema-industry.md` | Film and cinema industry — from "Arirang" to "Parasite" and the streaming era |
 | Culture & Society | `culture-society/architecture-urban-design.md` | Architecture and urban design — the hanok tradition, developmental-state apartment urbanism, contemporary landmarks, and smart cities |
+| Culture & Society | `culture-society/hangul.md` | Hangul and the Korean alphabet — Sejong's 1443–1446 creation, the featural design and syllable-block structure, colonial-era preservation, UNESCO recognition, and its role in Korean identity and literacy |
 | People | `people/park-chung-hee.md` | Park Chung-hee — president (1961–1979) |
 | People | `people/kim-dae-jung.md` | Kim Dae-jung — president (1998–2003) and Nobel laureate |
 | People | `people/roh-moo-hyun.md` | Roh Moo-hyun — president (2003–2008), human-rights lawyer, and the KORUS FTA and October 2007 summit |
@@ -132,8 +135,8 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/bang-si-hyuk.md` | Bang Si-hyuk — HYBE founder and architect of BTS |
 | People | `people/yoon-suk-yeol.md` | Yoon Suk-yeol — president (2022–2025) and the December 2024 martial-law crisis |
 
-Every taxonomy category holds at least four dedicated topics; History, People, and Culture & Society
-are now tied as the largest (eight topics each), followed by Economy (seven), Geography (five), and
+Every taxonomy category holds at least four dedicated topics; Culture & Society is now the largest
+(nine topics), followed by History, People, and Economy (eight each), Geography (six), and
 Government & Politics (four).
 
 ## Section 5 — Structure Inventory
@@ -142,15 +145,15 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 
 | Artifact | State |
 |---|---|
-| `geography/index.md` | Present — 5 entries |
+| `geography/index.md` | Present — 6 entries |
 | `history/index.md` | Present — 8 entries |
 | `government-politics/index.md` | Present — 4 entries |
-| `economy/index.md` | Present — 7 entries |
-| `culture-society/index.md` | Present — 8 entries |
+| `economy/index.md` | Present — 8 entries |
+| `culture-society/index.md` | Present — 9 entries |
 | `people/index.md` | Present — 8 entries |
-| `TIMELINE.md` | Present — 302 dated events across all forty articles |
+| `TIMELINE.md` | Present — 317 dated events across all forty-three articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all forty topic articles |
+| Cross-references (`## Related`) | Present in all forty-three topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -334,3 +337,14 @@ Added three dedicated articles — one giving Geography a fifth topic, one openi
 - ENHANCE pass corrected facts and converted the three draft `[[wikilink]]` Related blocks to resolved markdown links: in the Daegu article, fixed the administrative history (a Directly Governed City from July 1981, redesignated a Metropolitan City in 1995, not a "Special City" in 1981/1988), removed the false "third in metropolitan terms" ranking, replaced the fabricated mayor "Lee Geon-young" with Hong Joon-pyo (2022–present), and corrected the TK-figures list (Chun Doo-hwan was born in Hapcheon, South Gyeongsang → replaced with Roh Tae-woo of the Daegu area); in the labor article, corrected the KCTU founding date (November 11, 1995, not 1990) and romanization (Minju Nochong) and the 9,160-won minimum wage year (2022); in the architecture article, corrected the National Museum figure ("137,000 m² of exhibition space" → total floor area) and removed the unverifiable "G-Sang Design Group" and "HNTB" firm attributions.
 - build-structure: refreshed `geography/index.md` (4→5), `economy/index.md` (6→7), `culture-society/index.md` (7→8), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (283→302 dated events) with nineteen new events spanning Daegu's history, Korean labor milestones, and architectural landmarks; and added bidirectional back-links from Busan, Seoul, Incheon, Korean War, Park Chung-hee, Chaebol, Automotive Industry, Hallyu, and Democratization.
 - sync-seed: regenerated §4 (Content Inventory: 37→40 files) and §5 (Structure Inventory: entry counts and 302-event timeline; History, People, and Culture & Society tie as the largest categories at eight topics each). Reconciled `ROADMAP.md`, moving the three completed items to Done.
+
+### G1-T16 — 2026-08-16 — Tick 16: Gyeonggi Province, the petrochemical industry, and Hangul deepen Geography, Economy, and Culture & Society
+
+Added three dedicated articles — one giving Geography a sixth topic, one opening an eighth Economy topic on a core export sector, and one giving Culture & Society a ninth topic (making it the sole largest category) on the Korean writing system.
+
+- Created `geography/gyeonggi-province.md`: encyclopedic article on Gyeonggi Province — its geography and DMZ frontier, administrative divisions and major cities, the largest regional economy in the country, the Bundang/Pangyo tech clusters and Suwon–Hwaseong–Pyeongtaek chip-fab belt, automotive and logistics industry, the new-town programs and Songdo, multicultural Ansan, transport, the Hwaseong Fortress and Namhansanseong World Heritage sites, education, and political identity.
+- Created `economy/petrochemicals-heavy-chemicals.md`: encyclopedic article on the petrochemical and heavy chemical industry — the Park-era origins and the Ulsan complex, the major chemical chaebol (LG Chem, SK Geo Centric, Lotte Chemical, Hanwha, Kumho), the Ulsan/Yeosu/Daesan production centers, products and markets, global competitive position, environmental and labor dimensions, the 2022–2025 Chinese-overcapacity downturn, the S-Oil Shaheen project, and the shift toward specialty and circular/green chemistry.
+- Created `culture-society/hangul.md`: encyclopedic article on Hangul — King Sejong's 1443–1446 creation and the *Hunminjeongeum*, the featural phonetic design and syllable-block structure, Unicode encoding, the *yangban* resistance and colonial-era preservation by the Korean Language Society, modern standardization, scientific and educational significance, UNESCO recognition, Hallyu-driven global learning, and the North Korean Chosŏn'gŭl divergence.
+- ENHANCE pass corrected facts: in the Hangul article, replaced the fabricated collaborator "Jeonjong" with the Hall of Worthies (Jiphyeonjeon) scholars, fixed the *Matchumbeop* romanization and the Korean Language Society's history, and removed a false 1972 "Hangul→Hangeul renaming" claim (the two are romanizations of the same word); in the petrochemical article, moved the first-cracker origin from Onsan to the Ulsan Petrochemical Complex (1972), corrected "Honam Petrochemical merged into SK" to renamed Lotte Chemical (2012), fixed the garbled GS Caltex refinery-capacity figure, corrected Shaheen ("Falcon," not "Eagle") and reconciled its ₩9.25 trillion cost, and rewrote the overstated "Gyeonggi petrochemical" section as a capital-region downstream cluster; in the Gyeonggi article, corrected the GRP claim (largest region, having overtaken Seoul — not "second to Seoul"), moved Incheon International Airport to Incheon, removed GGGI from Songdo (its HQ is in Seoul), fixed the "adjacent Sejong" and provincial-council figures, softened the DMZ wildlife list, and clarified Incheon's separate metropolitan-city status. Fixed broken cross-references in all three files (`sejong-the-great.md`, `hallyu-korean-wave.md`, `korean-language-diaspora.md`, `environmental-policy.md`) and confirmed single-ISO front-matter dates.
+- build-structure: refreshed `geography/index.md` (5→6), `economy/index.md` (7→8), `culture-society/index.md` (8→9), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (302→317 dated events) with fifteen new events spanning Hangul's history, the petrochemical sector, and Gyeonggi's heritage and new towns; wrapped the three new `## Related` blocks in generated markers; and added bidirectional back-links from Joseon Dynasty, Japanese Colonial Period, Education and Universities, Hallyu, Chaebol, Energy and Resources Policy, Automotive Industry, Semiconductors, Seoul, Incheon, and Technology Sector.
+- sync-seed: regenerated §4 (Content Inventory: 40→43 files) and §5 (Structure Inventory: entry counts and 317-event timeline; Culture & Society becomes the sole largest category at nine topics).
