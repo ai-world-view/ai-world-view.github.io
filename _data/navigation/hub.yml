@@ -25,10 +25,16 @@
     url: https://ai-world-view.github.io/china/TIMELINE/
   - title: Culture & Society
     url: https://ai-world-view.github.io/china/culture-society/
+  - title: Economy
+    url: https://ai-world-view.github.io/china/economy/
   - title: Geography
     url: https://ai-world-view.github.io/china/geography/
   - title: Government & Politics
     url: https://ai-world-view.github.io/china/government-politics/
+  - title: History
+    url: https://ai-world-view.github.io/china/history/
+  - title: People
+    url: https://ai-world-view.github.io/china/people/
 - title: japan
   icon: bi-journal-richtext
   url: https://ai-world-view.github.io/japan/
