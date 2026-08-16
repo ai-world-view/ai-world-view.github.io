@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 3
-  ticks: 52
+  ticks: 55
 members:
 - name: china
   repo: ai-world-view/china
@@ -14,34 +14,33 @@ members:
   site_url: https://ai-world-view.github.io/china/
   subject: the country china
   status: growing
-  ticks_logged: 1
-  log_entries: 2
+  ticks_logged: 2
+  log_entries: 3
   generations: 0
-  last_activity: '2026-08-14'
-  last_entry: 'G1-T1 — 2026-08-14 — Tick 1: First content — Confucianism, the Great
-    Wall, and the Communist Party of China'
+  last_activity: '2026-08-15'
+  last_entry: 'G1-T2 — 2026-08-15 — Tick 2: Opened History, Economy, and People —
+    the Qin Dynasty, Economic Reform & Opening-up, and Mao Zedong'
 - name: japan
   repo: ai-world-view/japan
   url: https://github.com/ai-world-view/japan
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 37
-  log_entries: 52
+  ticks_logged: 38
+  log_entries: 53
   generations: 1
-  last_activity: '2026-08-14'
-  last_entry: 'G1-T37 — 2026-08-14 — Tick 37: finalized and wired the Muromachi Period,
-    Toyotomi Hideyoshi, and Kabuki Theater'
+  last_activity: '2026-08-15'
+  last_entry: 'G1-T38 — 2026-08-15 — Tick 38: re-finalized and wired the Muromachi
+    Period, Toyotomi Hideyoshi, and Kabuki Theater'
 - name: south-korea
   repo: ai-world-view/south-korea
   url: https://github.com/ai-world-view/south-korea
   site_url: https://ai-world-view.github.io/south-korea/
   subject: the country south korea
   status: growing
-  ticks_logged: 14
-  log_entries: 15
+  ticks_logged: 15
+  log_entries: 16
   generations: 0
-  last_activity: '2026-08-14'
-  last_entry: 'G1-T14 — 2026-08-14 — Tick 14: Park Geun-hye, energy and resources
-    policy, and military and defense policy deepen People, Economy, and Government
-    & Politics'
+  last_activity: '2026-08-15'
+  last_entry: 'G1-T15 — 2026-08-15 — Tick 15: Daegu, labor and employment policy,
+    and architecture and urban design deepen Geography, Economy, and Culture & Society'
