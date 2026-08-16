@@ -134,6 +134,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `government-politics/ministry-economy-trade-industry.md` — Ministry of Economy, Trade and Industry (METI)
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
   - `government-politics/supreme-court.md` — Supreme Court of Japan
+  - `economy/automobile-industry.md` — Japanese Automobile Industry
   - `economy/bank-of-japan.md` — Bank of Japan
   - `economy/bubble-economy.md` — 1980s Bubble Economy
   - `economy/financial-sector-regulation.md` — Financial Sector Regulation
@@ -145,7 +146,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
-  - `culture-society/kabuki-theater.md` — Kabuki Theater
+  - `culture-society/ikebana.md` — Ikebana
   - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
   - `culture-society/noh-theater.md` — Noh Theater
@@ -165,12 +166,11 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/nitobe-inazou.md` — Nitobe Inazō
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
-  - `people/toyotomi-hideyoshi.md` — Toyotomi Hideyoshi
   - `people/yoshida-shoin.md` — Yoshida Shoin
   - `people/yukio-mishima.md` — Yukio Mishima
-- **Categories with content**: Culture & Society (13), People (13), History (12), Geography (10), Economy (8), Government & Politics (7) — all six categories populated; Culture &
-  Society and People lead with thirteen topics each, followed by History with twelve,
-  Geography with ten, Economy with eight, and Government & Politics with seven.
+- **Categories with content**: Culture & Society (13), History (12), People (12), Geography (10), Economy (9), Government & Politics (7) — all six categories populated; Culture &
+  Society leads with thirteen topics, followed by History and People with twelve each,
+  Geography with ten, Economy with nine, and Government & Politics with seven.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -179,7 +179,7 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Culture & Society and People list thirteen topics each; History twelve; Geography ten; Economy eight; Government & Politics seven).
+  (Culture & Society lists thirteen topics; History and People twelve each; Geography ten; Economy nine; Government & Politics seven).
 - **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
 - **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
 - **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
@@ -531,3 +531,12 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: normalized the three front-matter `date:` fields from ranges/bare year (`1336-1573`, `1537-1598`, `1603`) to single plain ISO dates (`1336-01-01`, `1537-03-17`, `1603-01-01`); converted every `[[wikilink]]` — both inline body references and the `## Related` lists — into relative-Markdown links (no other content file uses wikilinks, which the remote Jekyll theme would not render), wrapping the three `## Related` sections in the canonical `BEGIN/END GENERATED: crossrefs` markers; corrected one factual claim in `kabuki-theater.md` — the revolving stage (*mawari-butai*, c. 1758) is credited to the Osaka playwright Namiki Shōzō, not to "Osaka's Nakamura-za" (Nakamura-za was one of the three licensed **Edo** theaters); dropped the dead `oda-nobunaga.md` cross-reference (no such file) in favor of an `ashikaga-takauji.md` link. Confirmed `title`/`date`/`category` front matter on all three and that every internal Markdown link resolves.
 - **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `people/index.md`, `culture-society/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — the 1336–1573 Muromachi span and Yoshimitsu's 1392 court reunification (Muromachi Period); Hideyoshi's 1537-03-17 birth, the 1582 Battle of Yamazaki, and his 1585 *kampaku* appointment (Toyotomi Hideyoshi); and the 1652 *wakashū* ban, the 1840 *Kabuki Jūhachiban* codification, and the 2008 UNESCO inscription (Kabuki Theater). Made cross-references bidirectional with back-links from `ashikaga-takauji.md`, `sengoku-period.md`, `azuchi-momoyama-period.md`, `kamakura-period.md`, and `tokugawa-ieyasu.md` (Muromachi Period and/or Toyotomi Hideyoshi) and `noh-theater.md` and `edo-culture-arts.md` (Kabuki Theater); verified all internal Markdown links resolve.
 - **Seed** (`sync-seed`): §1–7 already reflected the live 63-file / 63-row inventory (Culture & Society and People thirteen each, History twelve, Geography ten, Economy eight, Government & Politics seven), with §5's structural claims made true by this tick's `build-structure` work; verified §3/§4/§5 against on-disk state and left sections 1–7 in sync.
+
+### G1-T39 — 2026-08-16 — Tick 39: added Ikebana, the Japanese Automobile Industry, and the Muromachi Period
+
+- **Reconciliation**: the fourth consecutive tick to touch the Muromachi Period. The three preceding records (G1-T36 through G1-T38) each described adding *Muromachi Period, Toyotomi Hideyoshi, and Kabuki Theater*, but that work never reached `main` — and this tick's content pass in fact staged a *different* trio: `history/muromachi-period.md` (kept), plus the new `culture-society/ikebana.md` and `economy/automobile-industry.md` in place of the Toyotomi and Kabuki articles (which are not present on disk). The seed's §4 inventory still carried the never-persisted phantom entries `people/toyotomi-hideyoshi.md` and `culture-society/kabuki-theater.md`; this tick corrected §4 to mirror the true 63-file tree.
+- **Content** (3 dedicated topic files, present from the content pass): `history/muromachi-period.md` (the 1336–1573 Ashikaga age — Takauji's founding and the Nanboku-chō schism, Yoshimitsu's 1392 court reunification, the 1378 *Hana no Gosho* and the 1401 *kangō* tally trade with Ming China, the Kitayama/Higashiyama flowering of Noh, ink painting, *karesansui* gardens, the tea ceremony, and ikebana, the 1441 Kakitsu Incident, the Ōnin War and descent into Sengoku warfare, and Nobunaga's 1573 expulsion of Yoshiaki), `culture-society/ikebana.md` (the art of flower arrangement — its Buddhist altar-offering origins, the Ikenobo school at Kyoto's Rokkaku-do and the *rikka* style formalized under Ikenobo Senkei (documented c. 1462), the Edo-period democratization into *shoka* and *nageire*, the modern Ohara (*moribana*, 1895) and Sōgetsu (free-style, 1927) schools, and the *ten-chi-jin* three-line structure, negative space (*ma*), and seasonal awareness), and `economy/automobile-industry.md` (Japan's postwar automotive rise — Toyota's 1937 founding and the Toyopet Crown, Honda and Nissan, the Toyota Production System of *just-in-time*, *jidoka*, and *kaizen*, the Corolla/Civic oil-crisis breakthrough, the 1981 Voluntary Export Restraints and US transplant factories, the 1989 luxury brands, the 1997 Prius, and Toyota's 2008 rise to the world's largest automaker). History rises to twelve topics, Culture & Society to thirteen, and Economy to nine.
+- **README**: knowledge table brought to 63 rows by adding the three topics (the staged table had 60).
+- **Enhance pass**: normalized the three front-matter `date:` fields from bare years (`1336`, `1400`, `1956`) to single plain ISO dates (`1336-01-01`, `1400-01-01`, `1956-01-01`); corrected two factual errors in `ikebana.md` — Ono no Imoko's 607 CE embassy was to **Sui** China (the Sui dynasty ruled 581–618; the Tang began in 618), and the Sōgetsu school's founder is **Sōfū Teshigahara** (1900–1979), "Sōgetsu" (草月) being the school name rather than the founder's given name (the draft's "Sogetsu Teshigahara … Sogetsu Teshigahara I" conflated the two); added `## Related` cross-reference blocks (none had existed) to all three new files, wrapped in the canonical `BEGIN/END GENERATED: crossrefs` markers. Confirmed `title`/`date`/`category` front matter on all three and that every internal Markdown link resolves.
+- **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `culture-society/index.md`, `economy/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — the 1336–1573 Muromachi span, the 1378 *Hana no Gosho*, the 1441 Kakitsu Incident, and Nobunaga's 1573 expulsion of Yoshiaki (Muromachi Period); the c. 1462 Ikenobo Senkei reference, the 1895 Ohara school, and the 1927 Sōgetsu school (Ikebana); and Toyota's 1937 founding, the 1966 Corolla, the 1997 Prius, and the 2008 rise to world's-largest automaker (Japanese Automobile Industry). Made cross-references bidirectional with back-links from `ashikaga-takauji.md`, `sengoku-period.md`, and `azuchi-momoyama-period.md` (Muromachi Period), `tea-ceremony.md` and `noh-theater.md` (Muromachi Period and Ikebana), and `technology-manufacturing.md` and `postwar-recovery-growth.md` (Japanese Automobile Industry); verified all internal Markdown links resolve.
+- **Seed** (`sync-seed`): regenerated §4 to mirror the live 63-file tree — replaced the phantom `culture-society/kabuki-theater.md` and `people/toyotomi-hideyoshi.md` residue with the on-disk `culture-society/ikebana.md`, added `economy/automobile-industry.md`, and corrected the per-category counts (Economy 8→9, People 13→12; Culture & Society thirteen, History twelve) in both §4 and §5. README-row and total-file counts (63) were already accurate. Left §1–3 and §6–7 unchanged.
