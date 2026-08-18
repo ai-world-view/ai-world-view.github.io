@@ -31,16 +31,19 @@ question, consult the reference hub and keep this replant aligned with it.
 
 ## Repository map
 
-- `_config.yml` — production config. `remote_theme` is **pinned**
-  (`bamr87/zer0-mistakes@v1.26.0`) — every org site builds on this theme, so
-  bumps are deliberate: change the tag here AND in `_config_dev.yml` AND
-  `_data/hub.yml pages.theme_repo` together, then re-roll members with
-  `provision-org-sites.rb` (see "Known gaps and drift" for the full procedure).
+- `_config.yml` — production config. `remote_theme` is **unpinned by policy**
+  (`bamr87/zer0-mistakes`, no tag): every site in the fleet tracks the theme's
+  latest `main`, so a theme fix reaches production without a bump PR in nine
+  repos. There is no tag to maintain here, in `_config_dev.yml`, or in
+  `_data/hub.yml pages.theme_repo` — keep all three tag-free. The trade is
+  explicit: an upstream regression lands immediately, so the safety net is the
+  `build-validation` gate on PRs plus `pages-deploy-sentinel` after deploy, and
+  theme bugs go **upstream** rather than getting pinned around.
 - `_config_dev.yml` — local-dev overrides (localhost, `unpublished: true`,
   analytics off). It does **not** disable `remote_theme` — no theme files are
-  vendored here to fall back to — it re-declares it at the **same pin** as
-  `_config.yml`, so local previews and the `build-validation` gate render the
-  theme production actually serves.
+  vendored here to fall back to — it re-declares it, also untagged, so local
+  previews and the `build-validation` gate render the same latest theme
+  production serves.
 - `pages/` — all content collections + standalone pages (`home.md`, `hub.md`, …).
 - `_data/` — data the theme reads (`navigation/`, `ui-text.yml`, `theme_skins.yml`,
   `theme_backgrounds.yml`, `authors.yml`, `landing.yml`, …) **plus** the hub:
@@ -210,9 +213,11 @@ ruby scripts/content-review.rb --help        # the PR content reviewer
 1. **Make minimal, surgical changes.** This is a content site; match existing
    front-matter and Liquid patterns in `pages/`.
 2. **Don't add theme files.** No `_layouts/`, `_includes/`, `_sass/`, or
-   `_plugins/` belong here — change the theme upstream, release it, then bump
-   the pinned `remote_theme` tag (in `_config.yml`, `_config_dev.yml`, AND
-   `_data/hub.yml` together). Never float the theme on `HEAD`.
+   `_plugins/` belong here — change the theme upstream and it arrives here on
+   its next build. **Never pin `remote_theme` to a tag**: the fleet tracks the
+   theme's latest `main` by policy, in `_config.yml`, `_config_dev.yml`, and
+   `_data/hub.yml` alike. A local fork or a pin to dodge an upstream bug is not
+   a fix — file it upstream.
 3. **`_data/` is the theme's runtime contract.** `remote_theme` does not supply
    `_data`; the theme's layouts/includes read `site.data.*` (navigation,
    `ui-text`, skins, …). Don't delete these.
@@ -261,23 +266,19 @@ ruby scripts/content-review.rb --help        # the PR content reviewer
 Recorded here on purpose: each is a real gap a future session should not have to
 re-discover. Fixing any of them is its own change, not a drive-by.
 
-- **Theme pin is two minors behind.** The org pins
-  `bamr87/zer0-mistakes@v1.26.0`; upstream is at **v1.28.0**. This is NOT a
-  drive-by bump: `_data/hub.yml pages.theme_repo` is the value stamped into
-  every provisioned member repo, so bumping re-rolls the whole org. The
-  procedure, in order:
-  1. Update the tag in **all three** places together — `_config.yml`
-     (`remote_theme`), `_config_dev.yml` (`remote_theme`, the pin the local
-     preview and the `build-validation` gate render with), and `_data/hub.yml`
-     (`pages.theme_repo`).
-  2. Validate on the hub first: `bundle exec jekyll build --config
-     '_config.yml,_config_dev.yml'` (the PR gate does this), plus a visual pass
-     over `/`, `/hub/`, `/lineage/`.
-  3. Re-roll the members: `ruby scripts/provision-org-sites.rb` rewrites each
-     member's `_config.yml` with the new `theme_repo`.
-  4. Watch `pages-deploy-sentinel` for the next hour — it now checks the hub as
-     well as every member, so a theme regression shows up as an errored Pages
-     build rather than a silently stale site.
+- **Members still carry the old pin until they are re-rolled.** The hub is now
+  tag-free in all three places, but `_data/hub.yml pages.theme_repo` is the
+  value `provision-org-sites.rb` stamps into each member's `_config.yml` — so
+  every member repo keeps whatever tag it was last provisioned with until the
+  provisioner runs. Run `ruby scripts/provision-org-sites.rb` to propagate the
+  untagged value, then watch `pages-deploy-sentinel` (it now checks the hub as
+  well as every member) for the next hour.
+- **Nothing here builds against the theme on a schedule.** With the pin gone, an
+  upstream regression reaches production on the member's next build. The
+  `build-validation` gate only fires on PRs touching this repo, so a theme-only
+  break is invisible until it ships. lifehacker.dev's `nightly.yml` — a daily
+  rebuild against a fresh, uncached theme clone — is the fleet's proven pattern
+  for this and is worth copying here.
 - **No `CODEOWNERS` and no pull-request template.** Neither exists anywhere in
   the repo (checked `/`, `.github/`, `docs/`). Nothing enforces review on the
   high-blast-radius surfaces — `lineage/policy.yml` (model tiers drive every

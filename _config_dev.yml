@@ -8,12 +8,12 @@
 # disabled here. Set JEKYLL_GITHUB_TOKEN to avoid GitHub API rate limits on the
 # theme download.
 #
-# PINNED to the same tag as _config.yml on purpose: this override is what local
-# previews AND the build-validation CI gate render with, so floating it on the
-# theme's main branch would validate a theme the published site never serves and
-# would turn every upstream commit into gate noise. Keep this tag in lockstep
-# with _config.yml (and _data/hub.yml `pages.theme_repo`) on every bump.
-remote_theme             : "bamr87/zer0-mistakes@v1.26.0"
+# DELIBERATELY UNTAGGED, matching _config.yml. The fleet tracks the theme's
+# latest main by policy, so there is no tag to keep in lockstep here. Because
+# this override is layered last, it is what local previews AND the
+# build-validation gate render with — leaving it untagged is what makes the gate
+# test the same latest theme production actually serves.
+remote_theme             : "bamr87/zer0-mistakes"
 
 # Development URL Configuration
 # Override production URLs for local development server
