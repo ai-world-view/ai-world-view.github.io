@@ -4,7 +4,7 @@
 version: 2
 updates:
   # The action refs across all workflows (orchestrate, grow-lineage, hub-sync,
-  # ai-content-review, deploy-chat-proxy) — today pinned to floating tags like
+  # ai-content-review, build-validation) — today pinned to floating tags like
   # actions/checkout@v4 on secret-bearing jobs. Dependabot tracks updates and (with
   # the GitHub setting enabled) can pin to SHAs.
   - package-ecosystem: github-actions

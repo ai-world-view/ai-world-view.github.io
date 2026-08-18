@@ -27,14 +27,12 @@ on:
     paths:
       - '_data/hub.yml'
       - 'scripts/sync-hub-metadata.rb'
-      - 'scripts/sync-hub-metadata.sh'
       - 'scripts/lib/hub.rb'
       - '.github/workflows/hub-sync.yml'
   pull_request:
     paths:
       - '_data/hub.yml'
       - 'scripts/sync-hub-metadata.rb'
-      - 'scripts/sync-hub-metadata.sh'
       - 'scripts/lib/hub.rb'
       - '.github/workflows/hub-sync.yml'
 

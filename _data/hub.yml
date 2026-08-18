@@ -8,13 +8,13 @@
 # this site is the dashboard that presents and monitors them.
 #
 # Consumers of this registry:
-#   scripts/provision-org-sites.sh   rolls the Pages scaffold out to org repos
+#   scripts/provision-org-sites.rb   rolls the Pages scaffold out to org repos
 #                                    (templates/org-site/*) and enables Pages
-#   scripts/sync-hub-metadata.sh     refreshes the generated dashboard data:
+#   scripts/sync-hub-metadata.rb     refreshes the generated dashboard data:
 #                                      _data/hub_index.yml      (repo stats)
 #                                      _data/navigation/hub.yml (sidebar tree)
 #
-# Validated by `./scripts/sync-hub-metadata.sh --check` (CI gate).
+# Validated by `ruby scripts/sync-hub-metadata.rb --check` (CI gate).
 # =============================================================================
 
 # GitHub organization (or user) whose repositories make up the hub.
