@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-description: "Get in touch with the Zer0-Mistakes team"
+description: "Get in touch with the AI World View team — questions about the country knowledge bases, how they are written from the model's own knowledge, or contributing."
 layout: default
 permalink: /contact/
 categories:
