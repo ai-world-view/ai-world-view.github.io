@@ -10,7 +10,7 @@ source "https://rubygems.org"
 
 # GitHub Pages gem — bundles Jekyll and every GitHub Pages whitelisted plugin
 # (jekyll-seo-tag, jekyll-feed, jekyll-sitemap, jekyll-include-cache, …).
-gem "github-pages", group: :jekyll_plugins
+gem "github-pages", "~> 232", group: :jekyll_plugins
 
 # Pull the shared theme from GitHub at build time.
 gem "jekyll-remote-theme"

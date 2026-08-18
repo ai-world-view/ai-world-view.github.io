@@ -2,11 +2,18 @@
 # This file overrides production settings for local development
 
 # Theme Configuration
-# Disable remote theme for local development - allows site to build with local theme files
-# Local dev fetches the theme over the network via remote_theme, same as
-# production (no theme files are vendored). Set JEKYLL_GITHUB_TOKEN to avoid
-# GitHub API rate limits on the theme download.
-remote_theme             : "bamr87/zer0-mistakes"
+# Local dev fetches the theme over the network via remote_theme, exactly like
+# production — this repo vendors NO theme files (no _layouts/, _includes/,
+# _sass/), so there is nothing local to fall back to and remote_theme is never
+# disabled here. Set JEKYLL_GITHUB_TOKEN to avoid GitHub API rate limits on the
+# theme download.
+#
+# PINNED to the same tag as _config.yml on purpose: this override is what local
+# previews AND the build-validation CI gate render with, so floating it on the
+# theme's main branch would validate a theme the published site never serves and
+# would turn every upstream commit into gate noise. Keep this tag in lockstep
+# with _config.yml (and _data/hub.yml `pages.theme_repo`) on every bump.
+remote_theme             : "bamr87/zer0-mistakes@v1.26.0"
 
 # Development URL Configuration
 # Override production URLs for local development server
