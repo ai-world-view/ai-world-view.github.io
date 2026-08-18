@@ -6,7 +6,8 @@ Guidance for Claude Code (claude.ai/code) working in this repository.
 
 `ai-world-view.github.io` is the **organization root site** for the
 `ai-world-view` org — a landing page plus a **content hub** that presents every
-other repo in the org (the country knowledge bases: `japan`, and growing). The
+other repo in the org (the country knowledge bases: `china`, `japan`,
+`south-korea`, and growing — `_data/lineage.yml` is the live roster). The
 org's defining trait: content is written from the model's **own knowledge** —
 the AI's own world view — with **no web research** in the growth passes.
 
@@ -30,13 +31,19 @@ question, consult the reference hub and keep this replant aligned with it.
 
 ## Repository map
 
-- `_config.yml` — production config. `remote_theme` is **pinned**
-  (`bamr87/zer0-mistakes@v1.26.0`) — every org site builds on this theme, so
-  bumps are deliberate: change the tag here AND `_data/hub.yml
-  pages.theme_repo` together, then re-roll members with
-  `provision-org-sites.rb`.
+- `_config.yml` — production config. `remote_theme` is **unpinned by policy**
+  (`bamr87/zer0-mistakes`, no tag): every site in the fleet tracks the theme's
+  latest `main`, so a theme fix reaches production without a bump PR in nine
+  repos. There is no tag to maintain here, in `_config_dev.yml`, or in
+  `_data/hub.yml pages.theme_repo` — keep all three tag-free. The trade is
+  explicit: an upstream regression lands immediately, so the safety net is the
+  `build-validation` gate on PRs plus `pages-deploy-sentinel` after deploy, and
+  theme bugs go **upstream** rather than getting pinned around.
 - `_config_dev.yml` — local-dev overrides (localhost, `unpublished: true`,
-  analytics off). Also uses `remote_theme`.
+  analytics off). It does **not** disable `remote_theme` — no theme files are
+  vendored here to fall back to — it re-declares it, also untagged, so local
+  previews and the `build-validation` gate render the same latest theme
+  production serves.
 - `pages/` — all content collections + standalone pages (`home.md`, `hub.md`, …).
 - `_data/` — data the theme reads (`navigation/`, `ui-text.yml`, `theme_skins.yml`,
   `theme_backgrounds.yml`, `authors.yml`, `landing.yml`, …) **plus** the hub:
@@ -62,7 +69,8 @@ question, consult the reference hub and keep this replant aligned with it.
   keep the copies in sync).
 - `lineage/` — the **centralized growth source of truth** (see below):
   `seeds/<country>.md` (each country's concept + Evolution Log; today:
-  `japan.md`), `seed-package/` (bootstrap kit), `repo-template/` (the
+  `china.md`, `japan.md`, `south-korea.md`), `seed-package/` (bootstrap kit),
+  `repo-template/` (the
   country-repo skeleton the planter drops), `policy.yml` (model tiers + cadence
   + preview art direction), and `framework/` (the canonical agent toolkit staged
   into a country repo per tick). Excluded from the Jekyll build. The design
@@ -73,7 +81,15 @@ question, consult the reference hub and keep this replant aligned with it.
 - `templates/deploy/chat-proxy/` — Cloudflare Worker for the AI-chat widget.
   There is no deploy workflow for it here yet; the widget is
   `ai_chat.enabled: false` until the proxy is actually deployed.
-- `.github/workflows/` — content/site: `hub-sync.yml`, `ai-content-review.yml`;
+- `.github/workflows/` — content/site: `hub-sync.yml`, `ai-content-review.yml`,
+  `build-validation.yml` (the **pre-merge Jekyll build gate**: on PRs touching
+  `pages/**`, `_data/**`, `_config*.yml`, `Gemfile*`, `assets/**` or `404.html`
+  it runs the front-matter date check then
+  `bundle exec jekyll build --config '_config.yml,_config_dev.yml'`. Read-only —
+  it publishes nothing, so it deliberately carries **no** `fleet_pause`
+  kill-switch: a paused fleet must still be able to validate a human's PR.
+  It needs `JEKYLL_GITHUB_TOKEN` for the `remote_theme` download and
+  `LANG: C.UTF-8` for the theme's SCSS);
   the **growth engine** `orchestrate.yml` (daily scheduler) + `grow-lineage.yml`
   (grows one country repo per dispatch, including the **Illustrate** SVG-banner
   step) + `plant-lineage.yml` (spawns ONE new tangential country repo; the DECIDE
@@ -159,10 +175,16 @@ export JEKYLL_GITHUB_TOKEN=$(gh auth token)
 docker compose up                       # http://localhost:4000, live reload
 bundle exec jekyll serve --config '_config.yml,_config_dev.yml'   # non-Docker
 
-# Validate a build (theme is remote, so a network fetch happens)
+# Validate a build (theme is remote, so a network fetch happens).
+# This is exactly what .github/workflows/build-validation.yml runs on every PR.
 bundle exec jekyll build --config '_config.yml,_config_dev.yml'
 # Sandboxed / minimal shells: system-gem installs need BUNDLE_PATH=<scratch>/bundle,
-# and SassC needs a UTF-8 locale — export LC_ALL=en_US.UTF-8
+# and the theme's SCSS needs a UTF-8 locale — export LC_ALL=C.UTF-8 (or
+# en_US.UTF-8 where that locale is generated). Without it the build dies with
+# `Invalid US-ASCII character "\xE2"` inside the theme's _sass.
+# The Gemfile pins `github-pages "~> 232"` on purpose: unpinned, bundler resolves
+# back to github-pages 222 (jekyll 3.9 + liquid 4.0.3), whose taint check raises
+# `undefined method 'tainted?'` on Ruby >= 3.2 — the build cannot run at all.
 
 # Content hub
 ruby scripts/sync-hub-metadata.rb            # refresh dashboard data from _data/hub.yml
@@ -191,9 +213,11 @@ ruby scripts/content-review.rb --help        # the PR content reviewer
 1. **Make minimal, surgical changes.** This is a content site; match existing
    front-matter and Liquid patterns in `pages/`.
 2. **Don't add theme files.** No `_layouts/`, `_includes/`, `_sass/`, or
-   `_plugins/` belong here — change the theme upstream, release it, then bump
-   the pinned `remote_theme` tag (in `_config.yml` AND `_data/hub.yml`
-   together). Never float the theme on `HEAD`.
+   `_plugins/` belong here — change the theme upstream and it arrives here on
+   its next build. **Never pin `remote_theme` to a tag**: the fleet tracks the
+   theme's latest `main` by policy, in `_config.yml`, `_config_dev.yml`, and
+   `_data/hub.yml` alike. A local fork or a pin to dodge an upstream bug is not
+   a fix — file it upstream.
 3. **`_data/` is the theme's runtime contract.** `remote_theme` does not supply
    `_data`; the theme's layouts/includes read `site.data.*` (navigation,
    `ui-text`, skins, …). Don't delete these.
@@ -236,3 +260,30 @@ ruby scripts/content-review.rb --help        # the PR content reviewer
     `scripts/claude_svg_banner.py` is its `claude` rung. Both files are vendored
     identically across the fleet repos — fix bugs in lockstep, never fork the
     copies.
+
+## Known gaps and drift (audited 2026-08-18)
+
+Recorded here on purpose: each is a real gap a future session should not have to
+re-discover. Fixing any of them is its own change, not a drive-by.
+
+- **Members still carry the old pin until they are re-rolled.** The hub is now
+  tag-free in all three places, but `_data/hub.yml pages.theme_repo` is the
+  value `provision-org-sites.rb` stamps into each member's `_config.yml` — so
+  every member repo keeps whatever tag it was last provisioned with until the
+  provisioner runs. Run `ruby scripts/provision-org-sites.rb` to propagate the
+  untagged value, then watch `pages-deploy-sentinel` (it now checks the hub as
+  well as every member) for the next hour.
+- **Nothing here builds against the theme on a schedule.** With the pin gone, an
+  upstream regression reaches production on the member's next build. The
+  `build-validation` gate only fires on PRs touching this repo, so a theme-only
+  break is invisible until it ships. lifehacker.dev's `nightly.yml` — a daily
+  rebuild against a fresh, uncached theme clone — is the fleet's proven pattern
+  for this and is worth copying here.
+- **No `CODEOWNERS` and no pull-request template.** Neither exists anywhere in
+  the repo (checked `/`, `.github/`, `docs/`). Nothing enforces review on the
+  high-blast-radius surfaces — `lineage/policy.yml` (model tiers drive every
+  tick), `lineage/framework/**` (staged into member repos), `_data/hub.yml`
+  (re-rolls members), and `.github/workflows/**` (hold the org secrets). The
+  fleet's own doctrine assumes a human gate on those; today it is convention
+  only. Adding them is a governance decision for the org owner, so this note is
+  the record, not a to-do executed silently.

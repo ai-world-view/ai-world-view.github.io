@@ -31,8 +31,9 @@ founder                  : "Amr Abdel-Motaleb"
 # This repo is the ai-world-view organization root site (ai-world-view.github.io). It
 # renders via the shared zer0-mistakes theme pulled over `remote_theme` — no
 # theme files are vendored here. The org's country sites consume the same theme the
-# same way. To pin a version use "bamr87/zer0-mistakes@vX.Y.Z".
-remote_theme             : "bamr87/zer0-mistakes@v1.26.0"
+# same way, untagged by policy: the fleet tracks the theme's latest main.
+# Do NOT add an @vX.Y.Z tag here — theme bugs go upstream, not pinned around.
+remote_theme             : "bamr87/zer0-mistakes"
 
 ## Github Information
 github_user              : &github_user "ai-world-view"
@@ -676,7 +677,6 @@ sass:
 ## Style Settings -------------------------------------------------------------
 
 # theme                  : "zer0-mistakes-jekyll"
-# remote_theme           : "bamr87/zer0-mistakes"
 theme_skin               : "air" # "air", "aqua", "dirt", "neon", "mint", "plum", "sunrise"
 
 # SVG background layers (fffuel.co style) — gradient, pattern, noise per skin

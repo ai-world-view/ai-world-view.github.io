@@ -12,6 +12,11 @@ name: Pages Deploy Sentinel
 # and 2008/2012 (platform-side deploy failures). So the build status check is
 # authoritative, and an unreadable status is reported, never assumed healthy.
 # Reading another repo's Pages builds needs a PAT — pass LIFECYCLE_PAT.
+#
+# The HUB is checked too. It is not a lineage member (_data/lineage.yml lists
+# only the country repos) and it is excluded from the hub registry, so nothing
+# watched the org's own front door: this repo's Pages site could serve a stale
+# or errored deploy indefinitely. It is prepended to the scan list below.
 
 on:
   schedule:
@@ -47,10 +52,15 @@ jobs:
           GH_TOKEN: ${{ secrets.LIFECYCLE_PAT || github.token }}
         run: |
           set -uo pipefail
-          # repo<TAB>site_url for every member in the lineage ledger.
+          # repo<TAB>site_url for the hub itself, then every member in the
+          # lineage ledger. The hub is not a member, so it is added explicitly —
+          # otherwise the org root site is the one Pages deploy nobody watches.
           members="$(ruby -ryaml -e '
             d = YAML.load_file("_data/lineage.yml")
             org = d["org"]
+            owner = org.split("/").first
+            hub = "#{owner}.github.io"
+            puts "#{owner}/#{hub}\thttps://#{hub}/"
             (d["members"] || []).each do |m|
               repo = m["repo"] || "#{org}/#{m["name"]}"
               site = m["site_url"] || "https://#{org.split("/").first}.github.io/#{m["name"]}/"
@@ -82,14 +92,14 @@ jobs:
               fails="${fails}| \`${repo##*/}\` | ${st} | ${code} | ${site} |"$'\n'
             fi
           done <<< "$members"
-          echo "checked ${total} member(s), ${bad} unhealthy."
+          echo "checked ${total} site(s) (hub + members), ${bad} unhealthy."
           {
             echo "## 🌐 Pages Deploy Sentinel"
             echo
-            echo "_$(date -u '+%Y-%m-%d %H:%M UTC') · checked ${total} member site(s)._"
+            echo "_$(date -u '+%Y-%m-%d %H:%M UTC') · checked ${total} site(s): the hub + $((total - 1)) member(s)._"
             echo
             if [ "$bad" -eq 0 ]; then
-              echo "✅ All member Pages sites are built and live."
+              echo "✅ The hub and every member Pages site are built and live."
             else
               echo "**${bad} unhealthy site(s):**"
               echo
@@ -126,5 +136,5 @@ jobs:
           title="Pages Deploy Sentinel — unhealthy member site(s)"
           num="$(gh issue list --search "$title in:title" --state open --json number --jq '.[0].number' 2>/dev/null)"
           if [ -n "$num" ]; then
-            gh issue close "$num" --comment "$(cat /tmp/sentinel.md)"$'\n\n'"All member sites are healthy again — auto-closing."
+            gh issue close "$num" --comment "$(cat /tmp/sentinel.md)"$'\n\n'"The hub and all member sites are healthy again — auto-closing."
           fi
