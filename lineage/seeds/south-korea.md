@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (43):
+`INDEX.md`). Dedicated topic files (46):
 
 | Category | File | Topic |
 |---|---|---|
@@ -117,6 +117,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Economy | `economy/energy-resources-policy.md` | Energy and resources policy — a resource-poor economy's nuclear, coal, LNG, and renewable strategy; the state energy enterprises; and the nuclear phase-out and its reversal |
 | Economy | `economy/labor-employment-policy.md` | Labor and employment policy — union history, the 1987 Great Workers' Struggle, the IMF-era restructuring, and the regular/non-regular dual labor market |
 | Economy | `economy/petrochemicals-heavy-chemicals.md` | Petrochemicals and heavy chemical industry — the Ulsan/Yeosu/Daesan cracking complexes, the major chemical chaebol, products and markets, the 2022–2025 downturn, and the shift to specialty and green chemistry |
+| Economy | `economy/shipbuilding-industry.md` | Shipbuilding industry — the developmental-state origins, the chaebol-integrated Big Three (HD Hyundai, Hanwha Ocean, Samsung Heavy Industries), LNG-carrier and naval leadership, the 2008–2016 downturn, and the green-shipping transition |
 | Culture & Society | `culture-society/hallyu.md` | Hallyu — the Korean Wave |
 | Culture & Society | `culture-society/korean-cuisine.md` | Korean cuisine and food culture |
 | Culture & Society | `culture-society/religion-and-buddhism.md` | Religion and Buddhism — Buddhism, Confucianism, Christianity, shamanism, new religious movements, and the contemporary religious landscape |
@@ -126,6 +127,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Culture & Society | `culture-society/film-cinema-industry.md` | Film and cinema industry — from "Arirang" to "Parasite" and the streaming era |
 | Culture & Society | `culture-society/architecture-urban-design.md` | Architecture and urban design — the hanok tradition, developmental-state apartment urbanism, contemporary landmarks, and smart cities |
 | Culture & Society | `culture-society/hangul.md` | Hangul and the Korean alphabet — Sejong's 1443–1446 creation, the featural design and syllable-block structure, colonial-era preservation, UNESCO recognition, and its role in Korean identity and literacy |
+| Culture & Society | `culture-society/webtoons.md` | Webtoons and digital comics — the Naver/Kakao vertical-scroll format, platform business models, dominant genres, global expansion and the drama/film/anime adaptation pipeline, the creator economy, and webtoons as a "third pillar" of Hallyu |
 | People | `people/park-chung-hee.md` | Park Chung-hee — president (1961–1979) |
 | People | `people/kim-dae-jung.md` | Kim Dae-jung — president (1998–2003) and Nobel laureate |
 | People | `people/roh-moo-hyun.md` | Roh Moo-hyun — president (2003–2008), human-rights lawyer, and the KORUS FTA and October 2007 summit |
@@ -134,9 +136,10 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/moon-jae-in.md` | Moon Jae-in — president (2017–2022) and inter-Korean diplomacy |
 | People | `people/bang-si-hyuk.md` | Bang Si-hyuk — HYBE founder and architect of BTS |
 | People | `people/yoon-suk-yeol.md` | Yoon Suk-yeol — president (2022–2025) and the December 2024 martial-law crisis |
+| People | `people/yi-sun-sin.md` | Yi Sun-sin (1545–1598) — Joseon admiral and national hero; his undefeated Imjin War naval campaigns, the *geobukseon* turtle ship, Myeongnyang and Noryang, the *Nanjung Ilgi*, and his cultural legacy |
 
-Every taxonomy category holds at least four dedicated topics; Culture & Society is now the largest
-(nine topics), followed by History, People, and Economy (eight each), Geography (six), and
+Every taxonomy category holds at least four dedicated topics; Culture & Society is the largest
+(ten topics), followed by Economy and People (nine each), History (eight), Geography (six), and
 Government & Politics (four).
 
 ## Section 5 — Structure Inventory
@@ -148,12 +151,12 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 | `geography/index.md` | Present — 6 entries |
 | `history/index.md` | Present — 8 entries |
 | `government-politics/index.md` | Present — 4 entries |
-| `economy/index.md` | Present — 8 entries |
-| `culture-society/index.md` | Present — 9 entries |
-| `people/index.md` | Present — 8 entries |
-| `TIMELINE.md` | Present — 317 dated events across all forty-three articles |
+| `economy/index.md` | Present — 9 entries |
+| `culture-society/index.md` | Present — 10 entries |
+| `people/index.md` | Present — 9 entries |
+| `TIMELINE.md` | Present — 335 dated events across all forty-six articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all forty-three topic articles |
+| Cross-references (`## Related`) | Present in all forty-six topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -348,3 +351,14 @@ Added three dedicated articles — one giving Geography a sixth topic, one openi
 - ENHANCE pass corrected facts: in the Hangul article, replaced the fabricated collaborator "Jeonjong" with the Hall of Worthies (Jiphyeonjeon) scholars, fixed the *Matchumbeop* romanization and the Korean Language Society's history, and removed a false 1972 "Hangul→Hangeul renaming" claim (the two are romanizations of the same word); in the petrochemical article, moved the first-cracker origin from Onsan to the Ulsan Petrochemical Complex (1972), corrected "Honam Petrochemical merged into SK" to renamed Lotte Chemical (2012), fixed the garbled GS Caltex refinery-capacity figure, corrected Shaheen ("Falcon," not "Eagle") and reconciled its ₩9.25 trillion cost, and rewrote the overstated "Gyeonggi petrochemical" section as a capital-region downstream cluster; in the Gyeonggi article, corrected the GRP claim (largest region, having overtaken Seoul — not "second to Seoul"), moved Incheon International Airport to Incheon, removed GGGI from Songdo (its HQ is in Seoul), fixed the "adjacent Sejong" and provincial-council figures, softened the DMZ wildlife list, and clarified Incheon's separate metropolitan-city status. Fixed broken cross-references in all three files (`sejong-the-great.md`, `hallyu-korean-wave.md`, `korean-language-diaspora.md`, `environmental-policy.md`) and confirmed single-ISO front-matter dates.
 - build-structure: refreshed `geography/index.md` (5→6), `economy/index.md` (7→8), `culture-society/index.md` (8→9), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (302→317 dated events) with fifteen new events spanning Hangul's history, the petrochemical sector, and Gyeonggi's heritage and new towns; wrapped the three new `## Related` blocks in generated markers; and added bidirectional back-links from Joseon Dynasty, Japanese Colonial Period, Education and Universities, Hallyu, Chaebol, Energy and Resources Policy, Automotive Industry, Semiconductors, Seoul, Incheon, and Technology Sector.
 - sync-seed: regenerated §4 (Content Inventory: 40→43 files) and §5 (Structure Inventory: entry counts and 317-event timeline; Culture & Society becomes the sole largest category at nine topics).
+
+### G1-T17 — 2026-08-19 — Tick 17: Yi Sun-sin, the shipbuilding industry, and webtoons deepen People, Economy, and Culture & Society
+
+Added three dedicated articles — one giving People a ninth topic and its first pre-modern figure, one opening a ninth Economy topic on a core industrial-export sector, and one giving Culture & Society a tenth topic (extending its lead as the largest category) on a digital creative export.
+
+- Created `people/yi-sun-sin.md`: encyclopedic article on Admiral Yi Sun-sin (1545–1598) — his yangban origins and military-exam entry, the rebuilding of the Jeolla fleet, the *panokson* and *geobukseon* (turtle ship), the undefeated Imjin War campaigns (Okpo, Sacheon, Hansando's crane-wing formation, Busan), the court-martial and Won Gyun's Chilcheollyang disaster, the 13-ship victory at Myeongnyang, his death in triumph at Noryang, the *Nanjung Ilgi* (UNESCO Memory of the World, 2013), and his enduring place in Korean national identity.
+- Created `economy/shipbuilding-industry.md`: encyclopedic article on the shipbuilding sector — the developmental-state origins under Park Chung-hee's HCI drive and Chung Ju-yung's Ulsan gambit, the chaebol-integrated Big Three (HD Hyundai, Hanwha Ocean/formerly DSME, Samsung Heavy Industries), LNG-carrier and naval leadership, chaebol vertical integration and the Geoje/Ulsan cluster, the 2008–2016 downturn and offshore-platform losses, the LNG-driven recovery, the green-shipping and autonomous-vessel transition, and landmark projects (Prelude FLNG, HMM Algeciras, Yamal Arc7 carriers).
+- Created `culture-society/webtoons.md`: encyclopedic article on webtoons — the *PC bang* and broadband origins, Naver's 2004 standardization of the vertical-scroll format, the platform-dominant industry (Naver/WEBTOON, Kakao Page/Piccoma, Lezhin), format and aesthetic innovation, dominant genres and hit titles, global expansion and the drama/film/anime adaptation pipeline, the creator economy and its precarity, and webtoons as a "third pillar" of Hallyu.
+- ENHANCE pass corrected facts and converted the three draft `See Also`/`[[wikilink]]` blocks to resolved markdown `## Related` links: in the Yi Sun-sin article, fixed his birthplace (Hanseong/Seoul, with ancestral roots in Asan, not born in Asan), removed an unverifiable "Kim Jae-seo" reinstatement attribution and dated his restoration to August 1597, softened a dubious 60,000–100,000 naval-casualty figure, and reconciled a "72 engagements" claim with the widely cited ~23 undefeated battles; in the shipbuilding article, corrected the Prelude FLNG length (488 m, not the feet-to-metres slip "601 m," in both mentions) and the *Dokdo* builder (Hanjin Heavy Industries, not HHI); in the webtoons article, removed a questionable "Comic World" rebrand claim and an unverified Daum pioneer, reframed the *Navillera* adaptation (a 2021 tvN drama distributed on Netflix), and replaced an unreliable "920 billion won in 2022" figure with an order-of-magnitude framing.
+- build-structure: refreshed `people/index.md` (8→9), `economy/index.md` (8→9), `culture-society/index.md` (9→10), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (317→335 dated events) with nineteen new events spanning Yi Sun-sin's life and campaigns, the shipbuilding sector, and the webtoon industry; wrapped the three new `## Related` blocks in generated markers; and added bidirectional back-links from Joseon Dynasty, Military and Defense Policy, Chaebol, Automotive Industry, Hallyu, Film and Cinema Industry, and Technology Sector.
+- sync-seed: regenerated §4 (Content Inventory: 43→46 files) and §5 (Structure Inventory: entry counts and 335-event timeline; Culture & Society extends its lead as the largest category at ten topics, with Economy and People tied second at nine). Reconciled `ROADMAP.md`, moving the three completed items to Done.
