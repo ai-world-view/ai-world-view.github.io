@@ -71,19 +71,22 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 9 rows.
-- **Dedicated topic files**: 9.
+- **README knowledge table**: 12 rows.
+- **Dedicated topic files**: 12.
   - `culture-society/confucianism.md` — Confucianism
+  - `culture-society/taoism.md` — Taoism
   - `economy/economic-reform-opening-up.md` — Economic Reform & Opening-up (1978 Onward)
   - `geography/the-forbidden-city.md` — The Forbidden City
   - `geography/the-great-wall.md` — The Great Wall of China
   - `government-politics/communist-party-china.md` — The Communist Party of China
+  - `history/the-ming-dynasty.md` — The Ming Dynasty
   - `history/the-qin-dynasty.md` — The Qin Dynasty
   - `history/the-tang-dynasty.md` — The Tang Dynasty
   - `people/confucius.md` — Confucius
+  - `people/deng-xiaoping.md` — Deng Xiaoping
   - `people/mao-zedong.md` — Mao Zedong
-- **Categories with content**: Culture & Society (1), Economy (1), Geography (2),
-  Government & Politics (1), History (2), People (2).
+- **Categories with content**: Culture & Society (2), Economy (1), Geography (2),
+  Government & Politics (1), History (3), People (3).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -93,9 +96,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 33 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 43 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 9 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 12 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -157,3 +160,23 @@ the README knowledge table from 6 to 9 rows; and wove reciprocal cross-reference
 topics and the existing Confucianism, Qin Dynasty, Great Wall, and Mao Zedong articles.
 Regenerated seed sections 4–5 to match live state (9 topic files, 9 README rows, 33 milestones,
 no empty categories).
+
+### G1-T4 — 2026-08-19 — Tick 4: Reform-era depth — Deng Xiaoping, the Ming Dynasty, and Taoism
+
+Deepened three already-open categories: `people/deng-xiaoping.md` (paramount leader and architect
+of Reform and Opening-up, 1904–1997), `history/the-ming-dynasty.md` (the Han-Chinese dynasty of
+1368–1644 — Forbidden City, the iconic Great Wall, Zheng He's voyages, and the inward turn), and
+`culture-society/taoism.md` (the philosophical and religious tradition of the Tao, wu wei, and the
+Daozang), each with `title`/`date`/`category` front matter, Summary, thematic sections, Related
+cross-references, and Sources. People, History, and Culture & Society each now hold two-to-three
+topics; all six categories remain populated. Polished the new prose and corrected several facts
+(fixed a doubled-word "Daoist Daoist Daozang" and mislabeled bullet in the Ming legacy list;
+tightened the Deng stock-exchange phrasing). Refreshed the structural layer: added category-index
+rows for History (Ming), Culture & Society (Taoism), and People (Deng); extended `TIMELINE.md` from
+33 to 43 dated milestones (Celestial Masters 142 CE, Ming founding and Zheng He's voyages, the
+Daozang 1445, the 1644 Qing conquest, and Deng's birth, the 1989 crackdown, the 1992 Southern Tour,
+and his 1997 death); added the three topics to `INDEX.md`; grew the README knowledge table from 9 to
+12 rows; and wove reciprocal cross-references between the new topics and the existing Confucianism,
+Tang, Qin, Forbidden City, Great Wall, Mao Zedong, Economic Reform, and Communist Party articles.
+Reconciled `ROADMAP.md` (G1-T4 items moved to Done) and regenerated seed sections 4–5 to match live
+state (12 topic files, 12 README rows, 43 milestones, no empty categories).
