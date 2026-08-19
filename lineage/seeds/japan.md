@@ -119,9 +119,9 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `history/edo-period.md` — Edo Period
   - `history/genpei-war.md` — Genpei War
   - `history/heian-period.md` — Heian Period
+  - `history/heisei-period.md` — Heisei Period
   - `history/kamakura-period.md` — Kamakura Period
   - `history/meiji-restoration.md` — Meiji Restoration
-  - `history/muromachi-period.md` — Muromachi Period
   - `history/nara-period.md` — Nara Period
   - `history/russo-japanese-war.md` — Russo-Japanese War
   - `history/sengoku-period.md` — Sengoku Period
@@ -130,11 +130,11 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `government-politics/diet-of-japan.md` — Diet of Japan
   - `government-politics/imperial-household.md` — The Imperial Household
   - `government-politics/imperial-succession.md` — Imperial Succession
+  - `government-politics/japan-self-defense-forces.md` — Japan Self-Defense Forces
   - `government-politics/liberal-democratic-party.md` — Liberal Democratic Party
   - `government-politics/ministry-economy-trade-industry.md` — Ministry of Economy, Trade and Industry (METI)
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
   - `government-politics/supreme-court.md` — Supreme Court of Japan
-  - `economy/automobile-industry.md` — Japanese Automobile Industry
   - `economy/bank-of-japan.md` — Bank of Japan
   - `economy/bubble-economy.md` — 1980s Bubble Economy
   - `economy/financial-sector-regulation.md` — Financial Sector Regulation
@@ -146,7 +146,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
-  - `culture-society/ikebana.md` — Ikebana
+  - `culture-society/kabuki-theater.md` — Kabuki Theater
   - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
   - `culture-society/noh-theater.md` — Noh Theater
@@ -168,9 +168,9 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
   - `people/yoshida-shoin.md` — Yoshida Shoin
   - `people/yukio-mishima.md` — Yukio Mishima
-- **Categories with content**: Culture & Society (13), History (12), People (12), Geography (10), Economy (9), Government & Politics (7) — all six categories populated; Culture &
+- **Categories with content**: Culture & Society (13), History (12), People (12), Geography (10), Government & Politics (8), Economy (8) — all six categories populated; Culture &
   Society leads with thirteen topics, followed by History and People with twelve each,
-  Geography with ten, Economy with nine, and Government & Politics with seven.
+  Geography with ten, and Government & Politics and Economy with eight each.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -179,7 +179,7 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Culture & Society lists thirteen topics; History and People twelve each; Geography ten; Economy nine; Government & Politics seven).
+  (Culture & Society lists thirteen topics; History and People twelve each; Geography ten; Government & Politics and Economy eight each).
 - **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
 - **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
 - **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
@@ -540,3 +540,12 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: normalized the three front-matter `date:` fields from bare years (`1336`, `1400`, `1956`) to single plain ISO dates (`1336-01-01`, `1400-01-01`, `1956-01-01`); corrected two factual errors in `ikebana.md` — Ono no Imoko's 607 CE embassy was to **Sui** China (the Sui dynasty ruled 581–618; the Tang began in 618), and the Sōgetsu school's founder is **Sōfū Teshigahara** (1900–1979), "Sōgetsu" (草月) being the school name rather than the founder's given name (the draft's "Sogetsu Teshigahara … Sogetsu Teshigahara I" conflated the two); added `## Related` cross-reference blocks (none had existed) to all three new files, wrapped in the canonical `BEGIN/END GENERATED: crossrefs` markers. Confirmed `title`/`date`/`category` front matter on all three and that every internal Markdown link resolves.
 - **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `culture-society/index.md`, `economy/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — the 1336–1573 Muromachi span, the 1378 *Hana no Gosho*, the 1441 Kakitsu Incident, and Nobunaga's 1573 expulsion of Yoshiaki (Muromachi Period); the c. 1462 Ikenobo Senkei reference, the 1895 Ohara school, and the 1927 Sōgetsu school (Ikebana); and Toyota's 1937 founding, the 1966 Corolla, the 1997 Prius, and the 2008 rise to world's-largest automaker (Japanese Automobile Industry). Made cross-references bidirectional with back-links from `ashikaga-takauji.md`, `sengoku-period.md`, and `azuchi-momoyama-period.md` (Muromachi Period), `tea-ceremony.md` and `noh-theater.md` (Muromachi Period and Ikebana), and `technology-manufacturing.md` and `postwar-recovery-growth.md` (Japanese Automobile Industry); verified all internal Markdown links resolve.
 - **Seed** (`sync-seed`): regenerated §4 to mirror the live 63-file tree — replaced the phantom `culture-society/kabuki-theater.md` and `people/toyotomi-hideyoshi.md` residue with the on-disk `culture-society/ikebana.md`, added `economy/automobile-industry.md`, and corrected the per-category counts (Economy 8→9, People 13→12; Culture & Society thirteen, History twelve) in both §4 and §5. README-row and total-file counts (63) were already accurate. Left §1–3 and §6–7 unchanged.
+
+### G1-T40 — 2026-08-19 — Tick 40: added the Heisei Period, the Japan Self-Defense Forces, and Kabuki Theater
+
+- **Reconciliation**: the on-disk trio recorded in G1-T39 (`history/muromachi-period.md`, `culture-society/ikebana.md`, `economy/automobile-industry.md`) never reached `main` and is absent from the working tree; this tick's content pass instead staged a fresh trio — `history/heisei-period.md`, `government-politics/japan-self-defense-forces.md`, and `culture-society/kabuki-theater.md`. The seed's §4/§5 inventories, which still carried the never-persisted `muromachi-period`, `ikebana`, and `automobile-industry` phantoms, were corrected to mirror the true 63-file tree.
+- **Content** (3 dedicated topic files, present from the content pass): `history/heisei-period.md` (Emperor Akihito's 1989–2019 era — the 1989 accession on Hirohito's death and the Nikkei's December 1989 peak, the bubble's collapse and the deflationary "Lost Decades," the 1993 end of one-party LDP rule, the 1995 Kobe earthquake and Aum Shinrikyo subway attack, the Koizumi reforms, the global rise of anime, manga, and video games and "Cool Japan," the 2008 crisis and DPJ interregnum, the 2011 triple disaster and Fukushima, demographic decline and Abenomics, and the first imperial abdication since 1817), `government-politics/japan-self-defense-forces.md` (Japan's postwar military — the 1945–1954 path from disarmament through the National Police Reserve to the 1954 establishment of the *Jieitai*, Article 9's constraints and the "Yoshida Doctrine," the U.S.–Japan Security Treaty and Three Non-Nuclear Principles, the 1992 PKO law and Cambodia deployment, the 2004 Iraq deployment, the 2014 collective-self-defense reinterpretation and 2015 legislation, the modern three-branch force and new space/cyber domains, and the 2022 pivot to counterstrike capability and doubled spending), and `culture-society/kabuki-theater.md` (Japan's populist classical theater — Izumo no Okuni's c. 1603 origins, the 1629 women's and 1652 *wakashu* bans that produced the *onnagata* art, the *aragoto* and *wagoto* styles, *kata*, *kumadori*, *mie*, the *hanamichi*, and the c. 1758 revolving stage, the Ichikawa Danjuro lineage and *Kabuki Jūhachiban*, the great playwrights Chikamatsu, Nanboku, and Mokuami, the Meiji reforms and the Kabuki-za, and the 2008 UNESCO inscription). History holds twelve topics, Government & Politics eight, and Culture & Society thirteen.
+- **README**: knowledge table brought to 63 rows by adding the three topics (the staged table had 60).
+- **Enhance pass**: normalized the three front-matter `date:` fields from bare years (`1989`, `1954`, `1603`) to single plain ISO dates (`1989-01-08`, `1954-07-01`, `1603-01-01`); verified factual accuracy from the model's own knowledge (the Heisei chronology — the 38,915 Nikkei peak of 29 December 1989, the 6,434 Kobe deaths, the M9.0 Tōhoku quake and INES-7 Fukushima meltdowns; the SDF timeline — the 1 July 1954 establishment, the 1971 Diet affirmation of the Three Non-Nuclear Principles, the 1 July 2014 collective-self-defense Cabinet Decision, and the December 2022 security documents; and the kabuki record — Okuni's c. 1603 Kamo-riverbed debut, the 1629 and 1652 bans, Danjūrō I's 1660–1704 dates, and the 2008 UNESCO listing); confirmed `title`/`date`/`category` front matter on all three and that each new file's `## Related` block and internal Markdown links resolve.
+- **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `government-politics/index.md`, `culture-society/index.md`), to `INDEX.md`, and to the README homepage table; merged new dated facts into `TIMELINE.md` — the c. 1603 Okuni debut, the 1652 *wakashu* ban, the 1889 Kabuki-za opening, and the 2008 UNESCO inscription (Kabuki Theater); the 1954-07-01 establishment, the 1992 PKO law and Cambodia deployment, the 2004 Samawah deployment, the 2007 Ministry of Defense upgrade, and the December 2022 National Security Strategy (Japan Self-Defense Forces); and the 1989–2019 Heisei span and the 1995 Aum sarin attack (Heisei Period). Made cross-references bidirectional with back-links from `noh-theater.md`, `edo-culture-arts.md`, and `edo-period.md` (Kabuki Theater); `postwar-constitution.md`, `world-war-ii.md`, and `abe-shinzo.md` (Japan Self-Defense Forces); and `hirohito.md`, `abe-shinzo.md`, `lost-decade.md`, and `bubble-economy.md` (Heisei Period); verified all internal Markdown links resolve.
+- **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — removed the phantom `history/muromachi-period.md`, `culture-society/ikebana.md`, and `economy/automobile-industry.md` entries and added the on-disk `history/heisei-period.md`, `government-politics/japan-self-defense-forces.md`, and `culture-society/kabuki-theater.md`; corrected the per-category counts (Government & Politics 7→8, Economy 9→8; History twelve, Culture & Society thirteen) in both §4 and §5. README-row and total-file counts (63) unchanged. Left §1–3 and §6–7 unchanged.
