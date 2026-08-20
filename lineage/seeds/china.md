@@ -71,22 +71,25 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 12 rows.
-- **Dedicated topic files**: 12.
+- **README knowledge table**: 15 rows.
+- **Dedicated topic files**: 15.
   - `culture-society/confucianism.md` — Confucianism
   - `culture-society/taoism.md` — Taoism
   - `economy/economic-reform-opening-up.md` — Economic Reform & Opening-up (1978 Onward)
   - `geography/the-forbidden-city.md` — The Forbidden City
   - `geography/the-great-wall.md` — The Great Wall of China
+  - `geography/the-silk-road.md` — The Silk Road
   - `government-politics/communist-party-china.md` — The Communist Party of China
+  - `history/the-han-dynasty.md` — The Han Dynasty
   - `history/the-ming-dynasty.md` — The Ming Dynasty
   - `history/the-qin-dynasty.md` — The Qin Dynasty
   - `history/the-tang-dynasty.md` — The Tang Dynasty
   - `people/confucius.md` — Confucius
   - `people/deng-xiaoping.md` — Deng Xiaoping
   - `people/mao-zedong.md` — Mao Zedong
-- **Categories with content**: Culture & Society (2), Economy (1), Geography (2),
-  Government & Politics (1), History (3), People (3).
+  - `people/xi-jinping.md` — Xi Jinping
+- **Categories with content**: Culture & Society (2), Economy (1), Geography (3),
+  Government & Politics (1), History (4), People (4).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -96,9 +99,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 43 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 60 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 12 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 15 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -180,3 +183,27 @@ and his 1997 death); added the three topics to `INDEX.md`; grew the README knowl
 Tang, Qin, Forbidden City, Great Wall, Mao Zedong, Economic Reform, and Communist Party articles.
 Reconciled `ROADMAP.md` (G1-T4 items moved to Done) and regenerated seed sections 4–5 to match live
 state (12 topic files, 12 README rows, 43 milestones, no empty categories).
+
+### G1-T5 — 2026-08-20 — Tick 5: Deepened the imperial arc and connected it to the present — the Han Dynasty, the Silk Road, and Xi Jinping
+
+Added three topics spanning the full historical range: `history/the-han-dynasty.md` (the second
+imperial dynasty, 206 BCE–220 CE, which made Confucianism the state ideology and opened the Silk
+Road), `geography/the-silk-road.md` (the trans-Eurasian trade and cultural-exchange network from the
+2nd century BCE), and `people/xi-jinping.md` (paramount leader since 2012), each with
+`title`/`date`/`category` front matter, Summary, thematic sections, Related cross-references, and
+Sources. Geography now holds three topics and History and People four each; all six categories remain
+populated. Polished the new prose and corrected several factual errors: Xi Jinping's mother is Qi Xin
+(not "He Lianying") and his marriage to Peng Liyuan was in 1987 (not 2004); Hu Jintao served as
+General Secretary from 2002 (not 2004); Samarkand was removed from a list of Han-held Tarim Basin
+oasis cities (it lay beyond the Han frontier); the *Huangdi Neijing* was corrected out of an
+astronomy passage; and several grammar slips were fixed. Repaired a broken cross-reference in the
+Silk Road article (a link to a nonexistent Zheng He file was repointed to the Ming Dynasty), wrapped
+the three new articles' Related blocks in the standard `crossrefs` markers, and wove reciprocal
+back-links from ten existing articles (Qin, Tang, Ming, Great Wall, Confucius, Confucianism,
+Communist Party, Mao, Deng, Economic Reform) to the new topics. Refreshed the structural layer: added
+category-index rows for Geography (Silk Road), History (Han), and People (Xi); extended `TIMELINE.md`
+from 43 to 60 dated milestones (Han founding at Gaixia 202 BCE through the Eastern Han's fall in 220
+CE, Zhang Qian's return 126 BCE, the Sogdian Letters 313 CE and Nestorian Stele 781 CE, Richthofen's
+coinage 1877 and the Dunhuang discovery 1900, and Xi's birth 1953, term-limit removal 2018, and third
+term 2022); and added the three topics to `INDEX.md`. Regenerated seed sections 4–5 to match live
+state (15 topic files, 15 README rows, 60 milestones, no empty categories).
