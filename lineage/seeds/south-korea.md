@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (46):
+`INDEX.md`). Dedicated topic files (48):
 
 | Category | File | Topic |
 |---|---|---|
@@ -109,6 +109,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Government & Politics | `government-politics/north-korea-relations.md` | South Korea–North Korea relations and inter-Korean diplomacy |
 | Government & Politics | `government-politics/technology-innovation-policy.md` | Technology and innovation policy — the developmental state, K-Semiconductor Strategy, R&D, and tech regulation |
 | Government & Politics | `government-politics/military-defense-policy.md` | Military and defense policy — the armed forces, conscription, the defense industry, the U.S. alliance, deterrence toward North Korea, OPCON, and the shift to civilian control |
+| Government & Politics | `government-politics/environmental-policy.md` | Environmental policy and sustainability — the Green Growth era and Four Major Rivers Project, carbon neutrality and the Green New Deal, the K-ETS carbon market, air pollution (PM2.5, hwangsa) and plastic waste, the nuclear-phase-out reversal, environmental governance, and corporate ESG |
 | Economy | `economy/chaebol.md` | Chaebol — family-controlled conglomerates |
 | Economy | `economy/semiconductors.md` | Semiconductors — memory-chip leadership and geopolitics |
 | Economy | `economy/technology-sector.md` | Technology sector — ICT, displays, AI, telecom, and mobility beyond semiconductors |
@@ -128,6 +129,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Culture & Society | `culture-society/architecture-urban-design.md` | Architecture and urban design — the hanok tradition, developmental-state apartment urbanism, contemporary landmarks, and smart cities |
 | Culture & Society | `culture-society/hangul.md` | Hangul and the Korean alphabet — Sejong's 1443–1446 creation, the featural design and syllable-block structure, colonial-era preservation, UNESCO recognition, and its role in Korean identity and literacy |
 | Culture & Society | `culture-society/webtoons.md` | Webtoons and digital comics — the Naver/Kakao vertical-scroll format, platform business models, dominant genres, global expansion and the drama/film/anime adaptation pipeline, the creator economy, and webtoons as a "third pillar" of Hallyu |
+| Culture & Society | `culture-society/gaming-industry.md` | Gaming industry — the PC-bang and *StarCraft* origins, the MMORPG and mobile eras, Nexon/NCSoft/Krafton/Smilegate, esports (the LCK, Overwatch League, GSL), the economics of free-to-play, the China market and THAAD, and the regulatory debates (Shutdown Law, loot boxes) |
 | People | `people/park-chung-hee.md` | Park Chung-hee — president (1961–1979) |
 | People | `people/kim-dae-jung.md` | Kim Dae-jung — president (1998–2003) and Nobel laureate |
 | People | `people/roh-moo-hyun.md` | Roh Moo-hyun — president (2003–2008), human-rights lawyer, and the KORUS FTA and October 2007 summit |
@@ -138,9 +140,9 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/yoon-suk-yeol.md` | Yoon Suk-yeol — president (2022–2025) and the December 2024 martial-law crisis |
 | People | `people/yi-sun-sin.md` | Yi Sun-sin (1545–1598) — Joseon admiral and national hero; his undefeated Imjin War naval campaigns, the *geobukseon* turtle ship, Myeongnyang and Noryang, the *Nanjung Ilgi*, and his cultural legacy |
 
-Every taxonomy category holds at least four dedicated topics; Culture & Society is the largest
-(ten topics), followed by Economy and People (nine each), History (eight), Geography (six), and
-Government & Politics (four).
+Every taxonomy category holds at least five dedicated topics; Culture & Society is the largest
+(eleven topics), followed by Economy and People (nine each), History (eight), Geography (six), and
+Government & Politics (five).
 
 ## Section 5 — Structure Inventory
 
@@ -150,13 +152,13 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 |---|---|
 | `geography/index.md` | Present — 6 entries |
 | `history/index.md` | Present — 8 entries |
-| `government-politics/index.md` | Present — 4 entries |
+| `government-politics/index.md` | Present — 5 entries |
 | `economy/index.md` | Present — 9 entries |
-| `culture-society/index.md` | Present — 10 entries |
+| `culture-society/index.md` | Present — 11 entries |
 | `people/index.md` | Present — 9 entries |
-| `TIMELINE.md` | Present — 335 dated events across all forty-six articles |
+| `TIMELINE.md` | Present — 369 dated events across all forty-eight articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all forty-six topic articles |
+| Cross-references (`## Related`) | Present in all forty-eight topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -362,3 +364,13 @@ Added three dedicated articles — one giving People a ninth topic and its first
 - ENHANCE pass corrected facts and converted the three draft `See Also`/`[[wikilink]]` blocks to resolved markdown `## Related` links: in the Yi Sun-sin article, fixed his birthplace (Hanseong/Seoul, with ancestral roots in Asan, not born in Asan), removed an unverifiable "Kim Jae-seo" reinstatement attribution and dated his restoration to August 1597, softened a dubious 60,000–100,000 naval-casualty figure, and reconciled a "72 engagements" claim with the widely cited ~23 undefeated battles; in the shipbuilding article, corrected the Prelude FLNG length (488 m, not the feet-to-metres slip "601 m," in both mentions) and the *Dokdo* builder (Hanjin Heavy Industries, not HHI); in the webtoons article, removed a questionable "Comic World" rebrand claim and an unverified Daum pioneer, reframed the *Navillera* adaptation (a 2021 tvN drama distributed on Netflix), and replaced an unreliable "920 billion won in 2022" figure with an order-of-magnitude framing.
 - build-structure: refreshed `people/index.md` (8→9), `economy/index.md` (8→9), `culture-society/index.md` (9→10), `INDEX.md`, and `README.md`; extended `TIMELINE.md` (317→335 dated events) with nineteen new events spanning Yi Sun-sin's life and campaigns, the shipbuilding sector, and the webtoon industry; wrapped the three new `## Related` blocks in generated markers; and added bidirectional back-links from Joseon Dynasty, Military and Defense Policy, Chaebol, Automotive Industry, Hallyu, Film and Cinema Industry, and Technology Sector.
 - sync-seed: regenerated §4 (Content Inventory: 43→46 files) and §5 (Structure Inventory: entry counts and 335-event timeline; Culture & Society extends its lead as the largest category at ten topics, with Economy and People tied second at nine). Reconciled `ROADMAP.md`, moving the three completed items to Done.
+
+### G1-T18 — 2026-08-20 — Tick 18: Environmental policy and the gaming industry deepen Government & Politics and Culture & Society
+
+Added two dedicated articles — one opening a fifth Government & Politics topic on the climate-and-environment domain (bringing every category to at least five topics) and one giving Culture & Society an eleventh topic (extending its lead as the largest category) on the country's largest content export.
+
+- Created `government-politics/environmental-policy.md`: encyclopedic article on environmental policy and sustainability — the resource-poor growth-versus-ecology tension, Lee Myung-bak's "Low Carbon, Green Growth" and the Four Major Rivers Project, the K-ETS carbon market (East Asia's first), Moon Jae-in's 2050 carbon-neutrality goal and Green New Deal, the enhanced 40%-by-2030 NDC and the Carbon Neutrality Act, the Yoon-era nuclear reversal and offshore-wind push, air pollution (PM2.5 and hwangsa) and plastic waste, the environmental governance structure, chaebol ESG commitments, and international frameworks (GGGI, TEMM, CBD).
+- Created `culture-society/gaming-industry.md`: encyclopedic article on the gaming industry — the PC-bang and *StarCraft* origins and the birth of Korean esports, the free-to-play MMORPG boom (*Lineage*, *MapleStory*, *Guild Wars*), the mobile and battle-royale eras (*PUBG*, *Lost Ark*), the major companies (Nexon, NCSoft, Krafton, Smilegate, Gravity, Pearl Abyss), industry economics, esports (the LCK and Faker, the GSL, the Overwatch League), policy and regulation (the Shutdown Law, loot-box disclosure), the China market and the THAAD license freeze, and gaming as global soft power.
+- ENHANCE pass corrected facts and converted both draft `[[wikilink]]` blocks to resolved markdown `## Related` links: in the gaming article, un-swapped the Krafton/Bluehole and Smilegate founders (Bluehole/Krafton founded by Jang Byung-gyu with Kim Chang-han leading *PUBG*; Smilegate founded by Kwon Hyuk-bin), reattributed *Lineage* to NCSoft (not Nexon), corrected the "Emperor" progamer to Lim Yo-hwan (임요환, "BoxeR") from a mis-paired "Lee Yun-yeol," removed a fabricated Tencent 9% Nexon stake (reframed around the abortive 2019 NXC sale and Tencent's Krafton stake), fixed the false "second-largest export after K-pop" claim (games are Korea's single largest content export), rewrote the loot-box-disclosure history (voluntary 2015, legally mandated by a 2023 amendment effective March 2024), corrected the GSL operator (GomTV/AfreecaTV, not "OGN subsidiary"), removed unverifiable founder names (Gravity, an NCSoft "Kwon Young-soo" CEO) and a specific LCK franchise-fee figure, and reconciled the *Lost Ark* Korean-launch year (2018); in the environmental article, rewrote a circular, self-contradicting Ministry of Environment history, fixed the institute name (Korea Environment Institute), corrected the PM2.5-standard effective date (March 2018), and removed a copy-paste KOCCA source artifact.
+- build-structure: refreshed `government-politics/index.md` (4→5), `culture-society/index.md` (10→11), `INDEX.md`, and `README.md` (already listed both); extended `TIMELINE.md` to 369 dated events with thirty-three new entries spanning the game industry (1994–2024) and environmental policy (2008–2023); wrapped both new `## Related` blocks in generated markers; and added bidirectional back-links from Sports and the Olympic Games, Technology Sector, Energy and Resources Policy, and the Petrochemical Industry.
+- sync-seed: regenerated §4 (Content Inventory: 46→48 files) and §5 (Structure Inventory: entry counts and 369-event timeline; every category now holds at least five topics, and Culture & Society leads at eleven).
