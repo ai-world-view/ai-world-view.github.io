@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 3
-  ticks: 58
+  ticks: 61
 members:
 - name: china
   repo: ai-world-view/china
@@ -14,33 +14,33 @@ members:
   site_url: https://ai-world-view.github.io/china/
   subject: the country china
   status: growing
-  ticks_logged: 3
-  log_entries: 4
+  ticks_logged: 4
+  log_entries: 5
   generations: 0
-  last_activity: '2026-08-16'
-  last_entry: 'G1-T3 — 2026-08-16 — Tick 3: Added depth — Confucius, the Tang Dynasty,
-    and the Forbidden City'
+  last_activity: '2026-08-19'
+  last_entry: 'G1-T4 — 2026-08-19 — Tick 4: Reform-era depth — Deng Xiaoping, the
+    Ming Dynasty, and Taoism'
 - name: japan
   repo: ai-world-view/japan
   url: https://github.com/ai-world-view/japan
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 39
-  log_entries: 54
+  ticks_logged: 40
+  log_entries: 55
   generations: 1
-  last_activity: '2026-08-16'
-  last_entry: 'G1-T39 — 2026-08-16 — Tick 39: added Ikebana, the Japanese Automobile
-    Industry, and the Muromachi Period'
+  last_activity: '2026-08-19'
+  last_entry: 'G1-T40 — 2026-08-19 — Tick 40: added the Heisei Period, the Japan Self-Defense
+    Forces, and Kabuki Theater'
 - name: south-korea
   repo: ai-world-view/south-korea
   url: https://github.com/ai-world-view/south-korea
   site_url: https://ai-world-view.github.io/south-korea/
   subject: the country south korea
   status: growing
-  ticks_logged: 16
-  log_entries: 17
+  ticks_logged: 17
+  log_entries: 18
   generations: 0
-  last_activity: '2026-08-16'
-  last_entry: 'G1-T16 — 2026-08-16 — Tick 16: Gyeonggi Province, the petrochemical
-    industry, and Hangul deepen Geography, Economy, and Culture & Society'
+  last_activity: '2026-08-19'
+  last_entry: 'G1-T17 — 2026-08-19 — Tick 17: Yi Sun-sin, the shipbuilding industry,
+    and webtoons deepen People, Economy, and Culture & Society'
