@@ -106,6 +106,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 - **README knowledge table**: 63 rows.
 - **Dedicated topic files** (63), grouped by category:
   - `geography/hokkaido.md` — Hokkaido
+  - `geography/honshu.md` — Honshu
   - `geography/kobe.md` — Kobe
   - `geography/kyoto.md` — Kyoto
   - `geography/kyushu.md` — Kyushu
@@ -119,9 +120,9 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `history/edo-period.md` — Edo Period
   - `history/genpei-war.md` — Genpei War
   - `history/heian-period.md` — Heian Period
-  - `history/heisei-period.md` — Heisei Period
   - `history/kamakura-period.md` — Kamakura Period
   - `history/meiji-restoration.md` — Meiji Restoration
+  - `history/muromachi-period.md` — Muromachi Period
   - `history/nara-period.md` — Nara Period
   - `history/russo-japanese-war.md` — Russo-Japanese War
   - `history/sengoku-period.md` — Sengoku Period
@@ -130,7 +131,6 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `government-politics/diet-of-japan.md` — Diet of Japan
   - `government-politics/imperial-household.md` — The Imperial Household
   - `government-politics/imperial-succession.md` — Imperial Succession
-  - `government-politics/japan-self-defense-forces.md` — Japan Self-Defense Forces
   - `government-politics/liberal-democratic-party.md` — Liberal Democratic Party
   - `government-politics/ministry-economy-trade-industry.md` — Ministry of Economy, Trade and Industry (METI)
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
@@ -146,7 +146,6 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
-  - `culture-society/kabuki-theater.md` — Kabuki Theater
   - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
   - `culture-society/noh-theater.md` — Noh Theater
@@ -165,12 +164,13 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/minamoto-no-yoritomo.md` — Minamoto no Yoritomo
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/nitobe-inazou.md` — Nitobe Inazō
+  - `people/oda-nobunaga.md` — Oda Nobunaga
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
   - `people/yoshida-shoin.md` — Yoshida Shoin
   - `people/yukio-mishima.md` — Yukio Mishima
-- **Categories with content**: Culture & Society (13), History (12), People (12), Geography (10), Government & Politics (8), Economy (8) — all six categories populated; Culture &
-  Society leads with thirteen topics, followed by History and People with twelve each,
-  Geography with ten, and Government & Politics and Economy with eight each.
+- **Categories with content**: People (13), History (12), Culture & Society (12), Geography (11), Economy (8), Government & Politics (7) — all six categories populated; People
+  leads with thirteen topics, followed by History and Culture & Society with twelve each,
+  Geography with eleven, Economy with eight, and Government & Politics with seven.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -179,7 +179,7 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Culture & Society lists thirteen topics; History and People twelve each; Geography ten; Government & Politics and Economy eight each).
+  (People lists thirteen topics; History and Culture & Society twelve each; Geography eleven; Economy eight; Government & Politics seven).
 - **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
 - **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
 - **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
@@ -549,3 +549,12 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: normalized the three front-matter `date:` fields from bare years (`1989`, `1954`, `1603`) to single plain ISO dates (`1989-01-08`, `1954-07-01`, `1603-01-01`); verified factual accuracy from the model's own knowledge (the Heisei chronology — the 38,915 Nikkei peak of 29 December 1989, the 6,434 Kobe deaths, the M9.0 Tōhoku quake and INES-7 Fukushima meltdowns; the SDF timeline — the 1 July 1954 establishment, the 1971 Diet affirmation of the Three Non-Nuclear Principles, the 1 July 2014 collective-self-defense Cabinet Decision, and the December 2022 security documents; and the kabuki record — Okuni's c. 1603 Kamo-riverbed debut, the 1629 and 1652 bans, Danjūrō I's 1660–1704 dates, and the 2008 UNESCO listing); confirmed `title`/`date`/`category` front matter on all three and that each new file's `## Related` block and internal Markdown links resolve.
 - **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `government-politics/index.md`, `culture-society/index.md`), to `INDEX.md`, and to the README homepage table; merged new dated facts into `TIMELINE.md` — the c. 1603 Okuni debut, the 1652 *wakashu* ban, the 1889 Kabuki-za opening, and the 2008 UNESCO inscription (Kabuki Theater); the 1954-07-01 establishment, the 1992 PKO law and Cambodia deployment, the 2004 Samawah deployment, the 2007 Ministry of Defense upgrade, and the December 2022 National Security Strategy (Japan Self-Defense Forces); and the 1989–2019 Heisei span and the 1995 Aum sarin attack (Heisei Period). Made cross-references bidirectional with back-links from `noh-theater.md`, `edo-culture-arts.md`, and `edo-period.md` (Kabuki Theater); `postwar-constitution.md`, `world-war-ii.md`, and `abe-shinzo.md` (Japan Self-Defense Forces); and `hirohito.md`, `abe-shinzo.md`, `lost-decade.md`, and `bubble-economy.md` (Heisei Period); verified all internal Markdown links resolve.
 - **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — removed the phantom `history/muromachi-period.md`, `culture-society/ikebana.md`, and `economy/automobile-industry.md` entries and added the on-disk `history/heisei-period.md`, `government-politics/japan-self-defense-forces.md`, and `culture-society/kabuki-theater.md`; corrected the per-category counts (Government & Politics 7→8, Economy 9→8; History twelve, Culture & Society thirteen) in both §4 and §5. README-row and total-file counts (63) unchanged. Left §1–3 and §6–7 unchanged.
+
+### G1-T41 — 2026-08-20 — Tick 41: added Honshu, the Muromachi Period, and Oda Nobunaga
+
+- **Reconciliation**: the heisei/JSDF/kabuki trio recorded in G1-T40 (`history/heisei-period.md`, `government-politics/japan-self-defense-forces.md`, `culture-society/kabuki-theater.md`) never reached this working tree; this tick's content pass instead staged a fresh trio — `geography/honshu.md`, `history/muromachi-period.md`, and `people/oda-nobunaga.md`. The seed's §4/§5 inventories, which still carried the never-persisted `heisei-period`, `japan-self-defense-forces`, and `kabuki-theater` phantoms, were corrected to mirror the true 63-file tree.
+- **Content** (3 dedicated topic files, present from the content pass): `geography/honshu.md` (Japan's largest and most populous island — its ≈228,000 km² and ≈104 million people, the Japanese Alps and four-plate tectonic setting, the Kantō/Kansai/Chūbu/Tōhoku/Chūgoku regions and their cities, the Pacific Belt megalopolis and Shinkansen network, and Honshu's role as the continuous cradle of Japanese civilization), `history/muromachi-period.md` (the Ashikaga shogunate, 1338–1573 — Takauji's founding and the Nanboku-chō schism, Yoshimitsu's peak and the *kangō* Ming trade, the Ōnin War and the descent into Sengoku warfare, and the Zen-infused cultural flowering of Noh, ink painting, the tea ceremony, and dry-landscape gardens), and `people/oda-nobunaga.md` (the first of the three great unifiers, 1534–1582 — the consolidation of Owari, Okehazama, the Kiyosu alliance with Ieyasu, firearms doctrine and Nagashino, the deposition of the last Ashikaga shogun, the *rakuichi-rakuza* and land-survey reforms, Azuchi Castle, and the Honnō-ji Incident). Geography holds eleven topics, History twelve, and People thirteen.
+- **README**: knowledge table brought to 63 rows by adding the three topics (the staged table had 60).
+- **Enhance pass**: verified factual accuracy from the model's own knowledge and made three corrections — in `oda-nobunaga.md`, replaced the erroneous killing of "his uncle Nobumitsu in 1556" with the accurate 1555 seizure of Kiyosu Castle and elimination of the rival Kiyosu-Oda branch under Oda Nobutomo; in `muromachi-period.md`, aligned the tea master's name to the knowledge base's canonical "Murata Jukō" (from "Shukō") and corrected the Ming-trade note (relations normalized 1401; the *kangō* tally system inaugurated 1404 under the Yongle Emperor, who had been conflated with the 1401 date). Fixed dangling cross-references — dropped links to the not-yet-written `toyotomi-hideyoshi.md` and `battle-of-nagashino.md` from `oda-nobunaga.md`, repointed a `zen-buddhism.md` link to the existing `buddhist-schools.md` in `muromachi-period.md`, and corrected a Muromachi→Ashikaga Takauji link that pointed at `history/` instead of `people/`; wrapped all three new files' `## Related` blocks in the canonical `BEGIN/END GENERATED: crossrefs` markers; confirmed single plain ISO `date:` front matter (2026-08-20) on all three.
+- **Structure** (`build-structure`): added the three topics to their category indices (`geography/index.md`, `history/index.md`, `people/index.md`), to `INDEX.md`, and to the README homepage table; merged new dated facts into `TIMELINE.md` — the 1338–1573 Muromachi span, the 1392 Nanboku-chō reunification, and the 1404 *kangō* trade (Muromachi Period); and Nobunaga's 1534 birth, his 1568 entry into Kyoto, and the 1573 expulsion of Yoshiaki (Oda Nobunaga). Made cross-references bidirectional with back-links from `sengoku-period.md`, `azuchi-momoyama-period.md`, `ashikaga-takauji.md`, and `tokugawa-ieyasu.md` (Oda Nobunaga); `sengoku-period.md`, `azuchi-momoyama-period.md`, `kamakura-period.md`, `ashikaga-takauji.md`, `noh-theater.md`, `tea-ceremony.md`, and `ryoan-ji-temple.md` (Muromachi Period); and `major-islands.md`, `mount-fuji.md`, `tokyo.md`, `kyoto.md`, and `osaka.md` (Honshu); verified all internal Markdown links resolve.
+- **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — removed the phantom `history/heisei-period.md`, `government-politics/japan-self-defense-forces.md`, and `culture-society/kabuki-theater.md` entries and added the on-disk `geography/honshu.md`, `history/muromachi-period.md`, and `people/oda-nobunaga.md`; corrected the per-category counts (Geography 10→11, History twelve, Government & Politics 8→7, People 12→13, Culture & Society 13→12) in both §4 and §5. README-row and total-file counts (63) unchanged. Left §1–3 and §6–7 unchanged.
