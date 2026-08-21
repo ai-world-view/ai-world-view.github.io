@@ -71,8 +71,9 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 15 rows.
-- **Dedicated topic files**: 15.
+- **README knowledge table**: 18 rows.
+- **Dedicated topic files**: 18.
+  - `culture-society/buddhism-in-china.md` — Buddhism in China
   - `culture-society/confucianism.md` — Confucianism
   - `culture-society/taoism.md` — Taoism
   - `economy/economic-reform-opening-up.md` — Economic Reform & Opening-up (1978 Onward)
@@ -83,13 +84,15 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `history/the-han-dynasty.md` — The Han Dynasty
   - `history/the-ming-dynasty.md` — The Ming Dynasty
   - `history/the-qin-dynasty.md` — The Qin Dynasty
+  - `history/the-qing-dynasty.md` — The Qing Dynasty
   - `history/the-tang-dynasty.md` — The Tang Dynasty
   - `people/confucius.md` — Confucius
   - `people/deng-xiaoping.md` — Deng Xiaoping
   - `people/mao-zedong.md` — Mao Zedong
+  - `people/sun-yat-sen.md` — Sun Yat-sen
   - `people/xi-jinping.md` — Xi Jinping
-- **Categories with content**: Culture & Society (2), Economy (1), Geography (3),
-  Government & Politics (1), History (4), People (4).
+- **Categories with content**: Culture & Society (3), Economy (1), Geography (3),
+  Government & Politics (1), History (5), People (5).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -99,9 +102,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 60 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 86 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 15 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 18 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -207,3 +210,31 @@ CE, Zhang Qian's return 126 BCE, the Sogdian Letters 313 CE and Nestorian Stele 
 coinage 1877 and the Dunhuang discovery 1900, and Xi's birth 1953, term-limit removal 2018, and third
 term 2022); and added the three topics to `INDEX.md`. Regenerated seed sections 4–5 to match live
 state (15 topic files, 15 README rows, 60 milestones, no empty categories).
+
+### G1-T6 — 2026-08-21 — Tick 6: Bridged empire and republic — Buddhism in China, the Qing Dynasty, and Sun Yat-sen
+
+Added three topics deepening already-open categories and carrying the imperial arc into the
+republican transition: `culture-society/buddhism-in-china.md` (the two-millennia integration of
+Buddhism via the Silk Road, its Tang golden age, the Chan/Pure Land/Huayan/Tiantai schools, and its
+synthesis with Confucianism and Taoism), `history/the-qing-dynasty.md` (the final Manchu dynasty,
+1644–1912 — territorial zenith, the Canton System, the Opium Wars, the Taiping Rebellion, and the
+Xinhai collapse), and `people/sun-yat-sen.md` (founding father of the Republic of China, 1866–1925,
+and author of the Three Principles of the People), each with `title`/`date`/`category` front matter,
+Summary, thematic sections, `crossrefs`-wrapped Related blocks, and Sources. Culture & Society and
+History now hold three and five topics respectively, People five; all six categories remain populated.
+Polished the new prose and corrected several factual errors: the second Han-era translator monk is
+Dharmaratna (Zhu Falan), not Dharmaraksha; the Qing's Canton-System traders were confined to the
+Thirteen Factories quarter, not Shamian Island (a later concession); dropped an inaccurate
+"40 times the area of Great Britain" comparison; fixed the Nationalism principle's pinyin from
+"Minshu" to "Minzu"; corrected Sun's provisional-presidency tenure to "just over two months" to match
+the March 10, 1912 handover; and rendered the Huanghuagang dead as the traditional "Seventy-two
+Martyrs" (later research: 86). Refreshed the structural layer: added category-index rows for Culture
+& Society (Buddhism), History (Qing), and People (Sun); extended `TIMELINE.md` from 60 to 86 dated
+milestones (the White Horse Temple 68 CE through the Huichang Persecution 845 CE and Dunhuang
+Diamond Sutra 868 CE; the Qing founding 1616–1636, Taiwan 1683, Nerchinsk 1689, Macartney 1793, the
+Opium Wars and Taiping 1839–1864, Shimonoseki 1895, the Boxer Protocol 1901, and 1908–1911; and
+Sun's birth 1866, the Tongmenghui 1905, the Republic's 1912 founding, and his death 1925); added the
+three topics to `INDEX.md`; and wove reciprocal cross-references from eight existing articles (Ming,
+Forbidden City, Tang, Silk Road, Taoism, Confucianism, Communist Party, Mao) to the new topics.
+Regenerated seed sections 4–5 to match live state (18 topic files, 18 README rows, 86 milestones,
+no empty categories).
