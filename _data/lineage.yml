@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 3
-  ticks: 61
+  ticks: 64
 members:
 - name: china
   repo: ai-world-view/china
@@ -14,33 +14,33 @@ members:
   site_url: https://ai-world-view.github.io/china/
   subject: the country china
   status: growing
-  ticks_logged: 4
-  log_entries: 5
+  ticks_logged: 5
+  log_entries: 6
   generations: 0
-  last_activity: '2026-08-19'
-  last_entry: 'G1-T4 — 2026-08-19 — Tick 4: Reform-era depth — Deng Xiaoping, the
-    Ming Dynasty, and Taoism'
+  last_activity: '2026-08-20'
+  last_entry: 'G1-T5 — 2026-08-20 — Tick 5: Deepened the imperial arc and connected
+    it to the present — the Han Dynasty, the Silk Road, and Xi Jinping'
 - name: japan
   repo: ai-world-view/japan
   url: https://github.com/ai-world-view/japan
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 40
-  log_entries: 55
+  ticks_logged: 41
+  log_entries: 56
   generations: 1
-  last_activity: '2026-08-19'
-  last_entry: 'G1-T40 — 2026-08-19 — Tick 40: added the Heisei Period, the Japan Self-Defense
-    Forces, and Kabuki Theater'
+  last_activity: '2026-08-20'
+  last_entry: 'G1-T41 — 2026-08-20 — Tick 41: added Honshu, the Muromachi Period,
+    and Oda Nobunaga'
 - name: south-korea
   repo: ai-world-view/south-korea
   url: https://github.com/ai-world-view/south-korea
   site_url: https://ai-world-view.github.io/south-korea/
   subject: the country south korea
   status: growing
-  ticks_logged: 17
-  log_entries: 18
+  ticks_logged: 18
+  log_entries: 19
   generations: 0
-  last_activity: '2026-08-19'
-  last_entry: 'G1-T17 — 2026-08-19 — Tick 17: Yi Sun-sin, the shipbuilding industry,
-    and webtoons deepen People, Economy, and Culture & Society'
+  last_activity: '2026-08-20'
+  last_entry: 'G1-T18 — 2026-08-20 — Tick 18: Environmental policy and the gaming
+    industry deepen Government & Politics and Culture & Society'
