@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 3
-  ticks: 64
+  ticks: 67
 members:
 - name: china
   repo: ai-world-view/china
@@ -14,33 +14,32 @@ members:
   site_url: https://ai-world-view.github.io/china/
   subject: the country china
   status: growing
-  ticks_logged: 5
-  log_entries: 6
+  ticks_logged: 6
+  log_entries: 7
   generations: 0
-  last_activity: '2026-08-20'
-  last_entry: 'G1-T5 — 2026-08-20 — Tick 5: Deepened the imperial arc and connected
-    it to the present — the Han Dynasty, the Silk Road, and Xi Jinping'
+  last_activity: '2026-08-21'
+  last_entry: 'G1-T6 — 2026-08-21 — Tick 6: Bridged empire and republic — Buddhism
+    in China, the Qing Dynasty, and Sun Yat-sen'
 - name: japan
   repo: ai-world-view/japan
   url: https://github.com/ai-world-view/japan
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 41
-  log_entries: 56
+  ticks_logged: 42
+  log_entries: 57
   generations: 1
-  last_activity: '2026-08-20'
-  last_entry: 'G1-T41 — 2026-08-20 — Tick 41: added Honshu, the Muromachi Period,
-    and Oda Nobunaga'
+  last_activity: '2026-08-21'
+  last_entry: 'G1-T42 — 2026-08-21 — Tick 42: added Honshu, Kabuki, and Hiroshima'
 - name: south-korea
   repo: ai-world-view/south-korea
   url: https://github.com/ai-world-view/south-korea
   site_url: https://ai-world-view.github.io/south-korea/
   subject: the country south korea
   status: growing
-  ticks_logged: 18
-  log_entries: 19
+  ticks_logged: 19
+  log_entries: 20
   generations: 0
-  last_activity: '2026-08-20'
-  last_entry: 'G1-T18 — 2026-08-20 — Tick 18: Environmental policy and the gaming
-    industry deepen Government & Politics and Culture & Society'
+  last_activity: '2026-08-21'
+  last_entry: 'G1-T19 — 2026-08-21 — Tick 19: Sejong the Great, Ulsan, and Korean
+    literature deepen People, Geography, and Culture & Society'
