@@ -105,9 +105,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   Culture & Society, People.
 - **README knowledge table**: 63 rows.
 - **Dedicated topic files** (63), grouped by category:
-  - `geography/hiroshima.md` — Hiroshima
   - `geography/hokkaido.md` — Hokkaido
-  - `geography/honshu.md` — Honshu
   - `geography/kobe.md` — Kobe
   - `geography/kyoto.md` — Kyoto
   - `geography/kyushu.md` — Kyushu
@@ -134,7 +132,9 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `government-politics/liberal-democratic-party.md` — Liberal Democratic Party
   - `government-politics/ministry-economy-trade-industry.md` — Ministry of Economy, Trade and Industry (METI)
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
+  - `government-politics/prefectural-system.md` — Prefectural System
   - `government-politics/supreme-court.md` — Supreme Court of Japan
+  - `economy/automotive-industry.md` — Automotive Industry
   - `economy/bank-of-japan.md` — Bank of Japan
   - `economy/bubble-economy.md` — 1980s Bubble Economy
   - `economy/financial-sector-regulation.md` — Financial Sector Regulation
@@ -146,7 +146,6 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
-  - `culture-society/kabuki.md` — Kabuki
   - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
   - `culture-society/noh-theater.md` — Noh Theater
@@ -165,12 +164,11 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/minamoto-no-yoritomo.md` — Minamoto no Yoritomo
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/nitobe-inazou.md` — Nitobe Inazō
+  - `people/oda-nobunaga.md` — Oda Nobunaga
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
   - `people/yoshida-shoin.md` — Yoshida Shoin
   - `people/yukio-mishima.md` — Yukio Mishima
-- **Categories with content**: Culture & Society (13), Geography (12), People (12), History (11), Economy (8), Government & Politics (7) — all six categories populated; Culture &
-  Society leads with thirteen topics, followed by Geography and People with twelve each,
-  History with eleven, Economy with eight, and Government & Politics with seven.
+- **Categories with content**: People (13), Culture & Society (12), History (11), Geography (10), Economy (9), Government & Politics (8) — all six categories populated; People leads with thirteen topics, followed by Culture & Society with twelve, History with eleven, Geography with ten, Economy with nine, and Government & Politics with eight.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -179,7 +177,7 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Culture & Society lists thirteen topics; Geography and People twelve each; History eleven; Economy eight; Government & Politics seven).
+  (People lists thirteen topics; Culture & Society twelve; History eleven; Geography ten; Economy nine; Government & Politics eight).
 - **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
 - **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
 - **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
@@ -567,3 +565,12 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: verified factual accuracy from the model's own knowledge and made corrections — in `hiroshima.md`, replaced the mistermed hypocenter gloss (*shanai*) with the correct *bakushinchi* and repaired its self-contradictory geometry, removed an invented "Ōno-Mihara" port in favor of the historic Ujina wharves, and fixed a simplified-Chinese glyph in the Carp's name (广島→広島); in `honshu.md`, corrected the Tōdai-ji Great Buddha date (cast "745 CE" → dedicated 752 CE). Fixed dangling cross-references — the two links to the not-yet-written `nagasaki.md` and `miyajima.md` were dropped from `hiroshima.md` and repointed to the existing `russo-japanese-war.md` and `emperor-meiji.md`. Confirmed single plain ISO `date:` front matter (2026-08-21) and `title`/`category` on all three, and that each new file's `## Related` block and internal Markdown links resolve.
 - **Structure** (`build-structure`): added the three topics to their category indices (`geography/index.md` ×2, `culture-society/index.md`), to `INDEX.md`, and to the README homepage table; merged new dated facts into `TIMELINE.md` — the 1652 *wakashu* ban, the c. 1758 revolving stage, the 1889 Kabuki-za opening, and the 2001 UNESCO Masterpiece proclamation (Kabuki); and the 1589 Hiroshima Castle founding, the 1894 Imperial General Headquarters relocation, the 1915 Industrial Promotion Hall, the 1945-08-06 "Little Boy" detonation, the 1949 Peace Memorial City Law, the 1954 Peace Memorial Park, the 1996 A-Bomb Dome inscription, the 2016 Obama visit, and the 2023 G7 Summit (Hiroshima); Honshu added no new dated facts, being a synthesis of already-dated events. Made cross-references bidirectional with back-links from `major-islands.md`, `tokyo.md`, `kyoto.md`, `osaka.md`, and `mount-fuji.md` (Honshu); `kyoto.md`, `osaka.md`, `edo-period.md`, `noh-theater.md`, `edo-culture-arts.md`, and `ukiyo-e-woodblock-prints.md` (Kabuki); and `world-war-ii.md`, `russo-japanese-war.md`, and `emperor-meiji.md` (Hiroshima); a repository-wide link check confirmed all internal content links resolve.
 - **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — removed the phantom `history/muromachi-period.md` and `people/oda-nobunaga.md` entries and added the on-disk `culture-society/kabuki.md` and `geography/hiroshima.md` (honshu was already listed); corrected the per-category counts (Geography 11→12, History 12→11, Culture & Society 12→13, People 13→12; Economy 8 and Government & Politics 7 unchanged) in both §4 and §5. README-row and total-file counts (63) unchanged. Left §1–3 and §6–7 unchanged.
+
+### G1-T43 — 2026-08-22 — Tick 43: added Oda Nobunaga, the Automotive Industry, and the Prefectural System
+
+- **Reconciliation**: all three topics staged this tick — `people/oda-nobunaga.md`, `economy/automotive-industry.md`, and `government-politics/prefectural-system.md` — correspond to subjects the Evolution Log had recorded as "added" in earlier ticks without the files ever reaching the working tree (Oda Nobunaga in G1-T33/G1-T41, the "Japanese Automobile Industry" as the never-persisted `economy/automobile-industry.md` in G1-T39, and "Local Government and Prefectures" in G1-T23/G1-T24). This tick is the first in which the three files are actually present on disk; the seed's §4/§5 inventories, which described a drifted tree with phantom `geography/hiroshima.md` and `geography/honshu.md`-adjacent miscounts, were corrected to mirror the true 63-file tree.
+- **Content** (3 dedicated topic files, present from the content pass): `people/oda-nobunaga.md` (the first of the three great unifiers, 1534–1582 — the "Fool of Owari," the consolidation of Owari and Mino, the 1560 upset at Okehazama, the *Tenka Fubu* seal, the 1568 march on Kyoto and 1573 expulsion of the last Ashikaga shogun, firearms doctrine and the 1575 Battle of Nagashino, the suppression of Enryaku-ji and the decade-long Ishiyama Hongan-ji siege, the *rakuichi-rakuza* free-market and land-survey reforms, Azuchi Castle, pragmatic relations with the Jesuits, and the 1582 Honnō-ji Incident and its avenging at Yamazaki), `economy/automotive-industry.md` (Japan's flagship industrial sector — the 1920s–1945 origins and the 1936 law that expelled Ford and GM, the Korean War procurement boom that rescued Toyota, the Toyota Production System and lean manufacturing, the oil-shock export surge and rising U.S. market share, the 1981 Voluntary Export Restraints and the luxury-brand and transplant-factory responses, the Lexus and Prius eras, the Renault–Nissan–Mitsubishi Alliance and the Ghosn affair, the EV-transition challenges against Tesla and BYD, and the sector's regional economic geography), and `government-politics/prefectural-system.md` (Japan's 47 prefectures and layered local government — the *todōfuken* classification, the feudal-domain antecedents and the 1871 *haihan-chiken*, prewar Home Ministry centralization, the 1947 constitutional Chapter 8 and the Local Autonomy Law, prefectural and municipal structure and finances, the Local Allocation Tax equalization, regional variation from Tokyo concentration to Okinawa's base burden, the Heisei municipal mergers, and the capital-relocation and Osaka Metropolis debates). People holds thirteen topics, Economy nine, and Government & Politics eight.
+- **README**: knowledge table brought to 63 rows by adding the three topics (the staged table had 60).
+- **Enhance pass**: verified factual accuracy from the model's own knowledge and made corrections — in `oda-nobunaga.md`, recast the birthplace as the traditional Nagoya/Shobata dispute rather than conflating the two, moved Nobuyuki's execution to 1557 (after the 1556 Battle of Ino and a second conspiracy), removed the spurious Japanese term "*hitoyomi*" for the rotating volley at Nagashino, corrected the *rakuichi-rakuza* dating from an erroneous 1549 to the 1567 Kanō ordinance reinforced by the 1577 Azuchi edict, restored family-name order in "Mori Ranmaru," and aligned the Nagashino date to the knowledge base's canonical 1575-06-28; in `automotive-industry.md`, replaced a self-contradictory opening output figure (a "9.4 million vehicles" claim below the article's own Toyota-alone total) with the accurate ≈20 million worldwide / ≈7.8 million domestic (2022) framing, corrected the Honda U.S. entry (N600 in 1970; the Civic introduced 1972, U.S. sales 1973, not "1969"), clarified that the 15-million-by-2020 figure covers Toyota hybrids led by the Prius rather than the Prius alone, and fixed the BYD claim (it overtook Tesla as the top BEV maker in Q4 2023 while Toyota remained the largest automaker overall); in `prefectural-system.md`, corrected the designated-city count from fifteen to twenty, moved the "highest proportion of elderly residents" distinction from Shimane to Akita, and de-duplicated the awkward "Ichiro Matsui" governor/mayor sentence. Confirmed single plain ISO `date:` front matter (2026-08-22) and `title`/`category` on all three, and that each new file's `## Related` block and internal Markdown links resolve.
+- **Structure** (`build-structure`): added the three topics to their category indices (`people/index.md`, `economy/index.md`, `government-politics/index.md`), to `INDEX.md`, and to the README homepage table; merged new dated facts into `TIMELINE.md` — Nobunaga's 1534 birth, his 1568 installation of Yoshiaki, the 1573 end of the Ashikaga shogunate, the 1576–1579 building of Azuchi Castle, and the 1582-07-02 Battle of Yamazaki (Oda Nobunaga); the 1937 founding of Toyota Motor Co., the July 1950 Korean War truck orders, the 1989-08 Lexus LS400 launch, the 1997-12-10 Prius launch, the 2008 overtaking of GM, and the 2010-12 Nissan Leaf (Automotive Industry); and the 1871-08-29 *haihan-chiken*, the 1888 settling at 47 prefectures, the 1943 creation of Tokyo Metropolis, the 1947-04-17 Local Autonomy Law, and the 2015-05-17 first Osaka Metropolis referendum (Prefectural System). Made cross-references bidirectional with back-links from `sengoku-period.md` and `azuchi-momoyama-period.md` (Oda Nobunaga), `technology-manufacturing.md` (Automotive Industry), and `postwar-constitution.md` (Prefectural System); verified all internal Markdown links resolve.
+- **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — added the on-disk `people/oda-nobunaga.md`, `economy/automotive-industry.md`, and `government-politics/prefectural-system.md` and removed stale phantom entries that no longer match the working tree; corrected the per-category counts (People 12→13, Economy 8→9, Government & Politics 7→8, Geography 12→10, Culture & Society 13→12; History 11 unchanged) in both §4 and §5. README-row and total-file counts (63) unchanged. Left §1–3 and §6–7 unchanged.
