@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (51):
+`INDEX.md`). Dedicated topic files (54):
 
 | Category | File | Topic |
 |---|---|---|
@@ -105,6 +105,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | History | `history/japanese-colonial-period.md` | Japanese Colonial Period (1910–1945) |
 | History | `history/liberation-and-founding.md` | Korean Liberation and Founding (1945–1948) — occupation, division at the 38th parallel, and the founding of the Republic of Korea |
 | History | `history/korean-war.md` | Korean War (1950–1953) |
+| History | `history/gwangju-uprising.md` | Gwangju Uprising (May 18 Incident, 1980) — Chun Doo-hwan's expanded martial law, the ten-day citizen resistance and its military suppression, casualties and the U.S. role, and the legacy for the democracy movement, legal accountability, and memorialization |
 | History | `history/democratization.md` | Democratization of South Korea (1987–1993) |
 | Government & Politics | `government-politics/government-structure.md` | Government structure — the presidential republic |
 | Government & Politics | `government-politics/north-korea-relations.md` | South Korea–North Korea relations and inter-Korean diplomacy |
@@ -132,6 +133,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Culture & Society | `culture-society/webtoons.md` | Webtoons and digital comics — the Naver/Kakao vertical-scroll format, platform business models, dominant genres, global expansion and the drama/film/anime adaptation pipeline, the creator economy, and webtoons as a "third pillar" of Hallyu |
 | Culture & Society | `culture-society/gaming-industry.md` | Gaming industry — the PC-bang and *StarCraft* origins, the MMORPG and mobile eras, Nexon/NCSoft/Krafton/Smilegate, esports (the LCK, Overwatch League, GSL), the economics of free-to-play, the China market and THAAD, and the regulatory debates (Shutdown Law, loot boxes) |
 | Culture & Society | `culture-society/korean-literature.md` | Korean literature and literary culture — *hyangga* and *sijo*, pansori and *Chunhyang*, the Hangul vernacular flourishing, colonial-era poets (Kim Sowol, Yun Dong-ju, Yi Sang), *minjung* and women's literature, and the contemporary global wave from Shin Kyung-sook to Han Kang's 2024 Nobel Prize |
+| Culture & Society | `culture-society/korean-drama-industry.md` | Korean drama industry (K-dramas) — the broadcasting/cable/streaming structure, the live-shoot production and single-head-writer models, the star system, historical development from *Winter Sonata* and *Dae Jang Geum* through the Netflix era (*Crash Landing on You*, *Squid Game*), and its soft-power, tourism, and labor dimensions |
 | People | `people/park-chung-hee.md` | Park Chung-hee — president (1961–1979) |
 | People | `people/kim-dae-jung.md` | Kim Dae-jung — president (1998–2003) and Nobel laureate |
 | People | `people/roh-moo-hyun.md` | Roh Moo-hyun — president (2003–2008), human-rights lawyer, and the KORUS FTA and October 2007 summit |
@@ -142,10 +144,11 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/yoon-suk-yeol.md` | Yoon Suk-yeol — president (2022–2025) and the December 2024 martial-law crisis |
 | People | `people/yi-sun-sin.md` | Yi Sun-sin (1545–1598) — Joseon admiral and national hero; his undefeated Imjin War naval campaigns, the *geobukseon* turtle ship, Myeongnyang and Noryang, the *Nanjung Ilgi*, and his cultural legacy |
 | People | `people/sejong-the-great.md` | Sejong the Great (r. 1418–1450) — Joseon's fourth king; the creation of Hangul and the *Hunminjeongeum*, the Hall of Worthies, Jang Yeong-sil's inventions, calendar and tax reform, and the northern frontier expansion |
+| People | `people/syngman-rhee.md` | Syngman Rhee (1875–1965) — the founding and longest-serving president (1948–1960); the independence-era exile and Provisional Government, the anti-communist founding state, the Korean War presidency, constitutional manipulation and electoral fraud, and the 1960 April Revolution that ousted him |
 
 Every taxonomy category holds at least five dedicated topics; Culture & Society is the largest
-(twelve topics), followed by People (ten), Economy (nine), History (eight), Geography (seven), and
-Government & Politics (five).
+(thirteen topics), followed by People (eleven), History and Economy (nine each), Geography (seven),
+and Government & Politics (five).
 
 ## Section 5 — Structure Inventory
 
@@ -154,14 +157,14 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 | Artifact | State |
 |---|---|
 | `geography/index.md` | Present — 7 entries |
-| `history/index.md` | Present — 8 entries |
+| `history/index.md` | Present — 9 entries |
 | `government-politics/index.md` | Present — 5 entries |
 | `economy/index.md` | Present — 9 entries |
-| `culture-society/index.md` | Present — 12 entries |
-| `people/index.md` | Present — 10 entries |
-| `TIMELINE.md` | Present — 387 dated events across all fifty-one articles |
+| `culture-society/index.md` | Present — 13 entries |
+| `people/index.md` | Present — 11 entries |
+| `TIMELINE.md` | Present — 393 dated events across all fifty-four articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all fifty-one topic articles |
+| Cross-references (`## Related`) | Present in all fifty-four topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -388,3 +391,14 @@ Added three dedicated articles — one filling a foundational pre-modern gap in 
 - ENHANCE pass corrected facts and converted all three draft `[[wikilink]]` blocks to resolved markdown `## Related` links: fixed Queen Soheon's clan (Cheongsong, not Cheongju Sim), softened an over-precise Sejong death date and the 10,000-won banknote year, and dropped an invalid `[[culture-society]]` category link; reframed Ulsan as the smallest by population of the six metropolitan cities (not "fifth-largest"); and in the literature article fixed romanizations and glosses (*Eobu Sasisa*; *Haeegeseo Sonyeon-ege*; Kim Sowol's "Chohon") and a stray-asterisk *chuch'e* formatting error.
 - build-structure: refreshed `geography/index.md` (6→7), `culture-society/index.md` (11→12), `people/index.md` (9→10), `INDEX.md`, and `README.md` (already listed all three); extended `TIMELINE.md` to 387 dated events with eighteen new entries spanning Sejong's reign (1419–1450), the modern literary canon (1908–2024), and Ulsan's industrial history (1962–2012); wrapped all three new `## Related` blocks in generated markers; and added bidirectional back-links from Hangul, Joseon Dynasty, Yi Sun-sin, Education and Universities, Busan, Park Chung-hee, the Petrochemical, Shipbuilding, and Automotive industries, Hallyu, the Film and Cinema Industry, and the Japanese Colonial Period.
 - sync-seed: regenerated §4 (Content Inventory: 48→51 files) and §5 (Structure Inventory: entry counts and 387-event timeline; Culture & Society leads at twelve, People second at ten).
+
+### G1-T20 — 2026-08-22 — Tick 20: The Gwangju Uprising, Syngman Rhee, and the Korean drama industry deepen History, People, and Culture & Society
+
+Added three dedicated articles — one filling the pivotal 1980 gap in History (a ninth topic), one adding the Republic's founding president to People (an eleventh topic), and one giving Culture & Society its serialized-television pillar (a thirteenth topic, extending its lead).
+
+- Created `history/gwangju-uprising.md`: encyclopedic article on the Gwangju Uprising (May 18–27, 1980) — the December 12, 1979 coup and expanded martial law, the ten-day chronology from the Chonnam National University clash through the citizen "liberated zone" to Operation Fascinating Vacation, the disputed casualty figures, the U.S./Combined Forces Command controversy, and the legacy for the democracy movement, the 1995–1997 prosecutions, and UNESCO memorialization.
+- Created `people/syngman-rhee.md`: encyclopedic article on Syngman Rhee (1875–1965) — his U.S. education and Provisional Government presidency, MacArthur-sponsored return and 1948 founding of the Republic, the National Security Law and founding-era massacres (Jeju, the Bodo League), the Korean War presidency and POW release, the Pusan Political Crisis and "rounding-off" amendment, and the rigged March 1960 election and April Revolution that ended his rule.
+- Created `culture-society/korean-drama-industry.md`: encyclopedic article on the K-drama industry — the broadcasting/cable/streaming structure, the live-shoot production and single-head-writer models and star system, the historical arc from *Winter Sonata* and *Dae Jang Geum* through *Descendants of the Sun* and *Goblin* to the Netflix era (*Kingdom*, *Crash Landing on You*, *Squid Game*), and its soft-power, tourism, and labor dimensions.
+- ENHANCE pass corrected facts and converted all three draft `[[wikilink]]` blocks to resolved markdown `## Related` links: in the drama article, fixed "Seoul Broadcasting Company (SBC/SBS)" to Seoul Broadcasting System (SBS); in the Gwangju article, removed the misleading "(now Jeonnam University)" rename claim for Chonnam National University, corrected the garbled May 18th National Cemetery romanization (*5.18 Mingjuhwa Undong Chunggeupji* → *Gungnip 5·18 Minju Myoji*), and trimmed the key-figures list to the figures actually involved in the 1979–1980 events; in the Rhee article, corrected the George Washington University BA year (1905→1907), fixed a "flown in on a General Douglas MacArthur's" grammar slip, replaced the self-referential key-figures entries with actual associated figures, and converted an inline `[[Gwangju Uprising]]` wikilink in the body to a resolved markdown link.
+- build-structure: refreshed `history/index.md` (8→9), `people/index.md` (10→11), `culture-society/index.md` (12→13), `INDEX.md`, and `README.md`; extended `TIMELINE.md` to 393 dated events with six new entries (Rhee's 1875 birth, the 1960 April Revolution and his resignation, the May 27, 1980 fall of Gwangju's Provincial Hall, *Dae Jang Geum* in 2003, and Netflix's January 2016 Korea launch); and wrapped all three new `## Related` blocks in generated markers, wiring the new articles to Democratization, the Korean War, Liberation and Founding, the Independence Movement, Park Chung-hee, Kim Dae-jung, Military and Defense Policy, Government Structure, Hallyu, the Film and K-pop industries, Webtoons, and related topics.
+- sync-seed: regenerated §4 (Content Inventory: 51→54 files) and §5 (Structure Inventory: entry counts and 393-event timeline; Culture & Society leads at thirteen, People second at eleven).
