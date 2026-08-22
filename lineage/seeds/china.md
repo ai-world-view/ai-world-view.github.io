@@ -71,15 +71,17 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 18 rows.
-- **Dedicated topic files**: 18.
+- **README knowledge table**: 21 rows.
+- **Dedicated topic files**: 21.
   - `culture-society/buddhism-in-china.md` — Buddhism in China
   - `culture-society/confucianism.md` — Confucianism
   - `culture-society/taoism.md` — Taoism
+  - `economy/belt-and-road-initiative.md` — Belt and Road Initiative
   - `economy/economic-reform-opening-up.md` — Economic Reform & Opening-up (1978 Onward)
   - `geography/the-forbidden-city.md` — The Forbidden City
   - `geography/the-great-wall.md` — The Great Wall of China
   - `geography/the-silk-road.md` — The Silk Road
+  - `government-politics/chinese-civil-war.md` — Chinese Civil War
   - `government-politics/communist-party-china.md` — The Communist Party of China
   - `history/the-han-dynasty.md` — The Han Dynasty
   - `history/the-ming-dynasty.md` — The Ming Dynasty
@@ -89,10 +91,11 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `people/confucius.md` — Confucius
   - `people/deng-xiaoping.md` — Deng Xiaoping
   - `people/mao-zedong.md` — Mao Zedong
+  - `people/qin-shi-huang.md` — Qin Shi Huang
   - `people/sun-yat-sen.md` — Sun Yat-sen
   - `people/xi-jinping.md` — Xi Jinping
-- **Categories with content**: Culture & Society (3), Economy (1), Geography (3),
-  Government & Politics (1), History (5), People (5).
+- **Categories with content**: Culture & Society (3), Economy (2), Geography (3),
+  Government & Politics (2), History (5), People (6).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -102,9 +105,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 86 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 102 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 18 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 21 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -238,3 +241,29 @@ three topics to `INDEX.md`; and wove reciprocal cross-references from eight exis
 Forbidden City, Tang, Silk Road, Taoism, Confucianism, Communist Party, Mao) to the new topics.
 Regenerated seed sections 4–5 to match live state (18 topic files, 18 README rows, 86 milestones,
 no empty categories).
+
+### G1-T7 — 2026-08-22 — Tick 7: Founder, fracture, and frontier — Qin Shi Huang, the Chinese Civil War, and the Belt and Road Initiative
+
+Added three topics deepening People, Government & Politics, and Economy and spanning the full arc from
+imperial foundation to contemporary global strategy: `people/qin-shi-huang.md` (259–210 BCE, founder and
+first emperor of unified China, the Legalist state, the Great Wall, and the Terracotta Army),
+`government-politics/chinese-civil-war.md` (the 1927–1949 KMT–CPC struggle from the Shanghai Massacre and
+the Long March through the decisive 1948–49 campaigns to the Communist victory and Nationalist retreat to
+Taiwan), and `economy/belt-and-road-initiative.md` (Xi Jinping's post-2013 global infrastructure program,
+its financing institutions, corridors, debt debates, and Western responses), each with `title`/`date`/`category`
+front matter, Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. Economy and
+Government & Politics now hold two topics each and People six; all six categories remain populated. Polished
+the new prose for encyclopedic neutral tone, softened a contested gold-tonnage figure in the Civil War
+article, and harmonized the three new files' Related blocks to the canonical `BEGIN/END GENERATED: crossrefs`
+markers used repo-wide. Fixed cross-references: removed four links to non-existent articles (Asian
+Infrastructure Investment Bank, the Long March, the Cultural Revolution, the Warring States Period) and
+repaired a pre-existing broken Silk Road link in the Han Dynasty article. Refreshed the structural layer:
+added category-index rows for Economy (Belt and Road), Government & Politics (Chinese Civil War), and People
+(Qin Shi Huang); extended `TIMELINE.md` from 86 to 102 dated milestones (Qin Shi Huang's birth 259 BCE
+through the 1974 Terracotta Army discovery; the Shanghai Massacre 1927, Second United Front 1937, and the
+1946–1950 campaigns and Nationalist retreat; and the BRI arc from its 2013 launch through the Silk Road Fund
+2014, AIIB 2016, Hambantota 2017, China–Laos Railway 2021, and the third Belt and Road Forum 2023), repointing
+the existing 2013 milestone to the new dedicated article; added the three topics to `INDEX.md`; and wove
+reciprocal cross-references from eleven existing articles (Qin Dynasty, Great Wall, Han, Mao, Xi, Communist
+Party, Sun Yat-sen, Qing, Deng, Economic Reform, Silk Road) to the new topics. Regenerated seed sections 4–5
+to match live state (21 topic files, 21 README rows, 102 milestones, no empty categories).
