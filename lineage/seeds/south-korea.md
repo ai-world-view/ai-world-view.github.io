@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (54):
+`INDEX.md`). Dedicated topic files (57):
 
 | Category | File | Topic |
 |---|---|---|
@@ -98,6 +98,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Geography | `geography/daegu.md` | Daegu — southeastern metropolis, textile ("Manchester of Korea") hub, the 2003 subway fire, and the conservative TK heartland |
 | Geography | `geography/gyeonggi-province.md` | Gyeonggi Province — the most populous province ringing Seoul; the largest regional economy, the chip-fab belt and Pangyo cluster, new towns, the DMZ frontier, and Joseon heritage |
 | Geography | `geography/ulsan.md` | Ulsan — South Korea's heavy-industrial capital; the Ulsan–Onsan petrochemical complex, Hyundai's flagship auto plant and Hyundai Heavy Industries' shipyard, the 1962 Special Industrial District, the 1987 Great Workers' Struggle, and the Taehwa River restoration |
+| Geography | `geography/gwangju.md` | Gwangju — the largest city of the southwestern Honam region; the 1929 Student Independence Movement and the 1980 Gwangju Uprising, its progressive political identity, Kia/GGM auto manufacturing, and the Gwangju Biennale and Asia Culture Center |
 | History | `history/three-kingdoms-period.md` | Three Kingdoms period (Goguryeo, Baekje, Silla) and Silla's unification |
 | History | `history/goryeo-period.md` | Goryeo period (918–1392) — medieval kingdom, celadon, the Tripitaka Koreana, and metal movable type |
 | History | `history/joseon-dynasty.md` | Joseon dynasty (1392–1910) — Korea's longest kingdom, Neo-Confucian statecraft, Hangul, the gwageo order, and the Imjin and Manchu invasions |
@@ -112,6 +113,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Government & Politics | `government-politics/technology-innovation-policy.md` | Technology and innovation policy — the developmental state, K-Semiconductor Strategy, R&D, and tech regulation |
 | Government & Politics | `government-politics/military-defense-policy.md` | Military and defense policy — the armed forces, conscription, the defense industry, the U.S. alliance, deterrence toward North Korea, OPCON, and the shift to civilian control |
 | Government & Politics | `government-politics/environmental-policy.md` | Environmental policy and sustainability — the Green Growth era and Four Major Rivers Project, carbon neutrality and the Green New Deal, the K-ETS carbon market, air pollution (PM2.5, hwangsa) and plastic waste, the nuclear-phase-out reversal, environmental governance, and corporate ESG |
+| Government & Politics | `government-politics/electoral-system.md` | Electoral system and the National Assembly — presidential and legislative elections, the mixed-member proportional system and 3% threshold, the 2020 semi-linked reform and satellite parties, the National Election Commission, Honam–TK regionalism, and the 2016–2017 and 2024–2025 impeachment crises |
 | Economy | `economy/chaebol.md` | Chaebol — family-controlled conglomerates |
 | Economy | `economy/semiconductors.md` | Semiconductors — memory-chip leadership and geopolitics |
 | Economy | `economy/technology-sector.md` | Technology sector — ICT, displays, AI, telecom, and mobility beyond semiconductors |
@@ -121,6 +123,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Economy | `economy/labor-employment-policy.md` | Labor and employment policy — union history, the 1987 Great Workers' Struggle, the IMF-era restructuring, and the regular/non-regular dual labor market |
 | Economy | `economy/petrochemicals-heavy-chemicals.md` | Petrochemicals and heavy chemical industry — the Ulsan/Yeosu/Daesan cracking complexes, the major chemical chaebol, products and markets, the 2022–2025 downturn, and the shift to specialty and green chemistry |
 | Economy | `economy/shipbuilding-industry.md` | Shipbuilding industry — the developmental-state origins, the chaebol-integrated Big Three (HD Hyundai, Hanwha Ocean, Samsung Heavy Industries), LNG-carrier and naval leadership, the 2008–2016 downturn, and the green-shipping transition |
+| Economy | `economy/tourism-industry.md` | Tourism industry — the Hallyu-driven inbound boom and its market composition, domestic tourism, heritage and food tourism, MICE, Jeju as tourism hub, the industry's economic weight, and the COVID-19 collapse and recovery |
 | Culture & Society | `culture-society/hallyu.md` | Hallyu — the Korean Wave |
 | Culture & Society | `culture-society/korean-cuisine.md` | Korean cuisine and food culture |
 | Culture & Society | `culture-society/religion-and-buddhism.md` | Religion and Buddhism — Buddhism, Confucianism, Christianity, shamanism, new religious movements, and the contemporary religious landscape |
@@ -146,9 +149,9 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/sejong-the-great.md` | Sejong the Great (r. 1418–1450) — Joseon's fourth king; the creation of Hangul and the *Hunminjeongeum*, the Hall of Worthies, Jang Yeong-sil's inventions, calendar and tax reform, and the northern frontier expansion |
 | People | `people/syngman-rhee.md` | Syngman Rhee (1875–1965) — the founding and longest-serving president (1948–1960); the independence-era exile and Provisional Government, the anti-communist founding state, the Korean War presidency, constitutional manipulation and electoral fraud, and the 1960 April Revolution that ousted him |
 
-Every taxonomy category holds at least five dedicated topics; Culture & Society is the largest
-(thirteen topics), followed by People (eleven), History and Economy (nine each), Geography (seven),
-and Government & Politics (five).
+Every taxonomy category holds at least six dedicated topics; Culture & Society is the largest
+(thirteen topics), followed by People (eleven), Economy (ten), History (nine), Geography (eight),
+and Government & Politics (six).
 
 ## Section 5 — Structure Inventory
 
@@ -156,15 +159,15 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 
 | Artifact | State |
 |---|---|
-| `geography/index.md` | Present — 7 entries |
+| `geography/index.md` | Present — 8 entries |
 | `history/index.md` | Present — 9 entries |
-| `government-politics/index.md` | Present — 5 entries |
-| `economy/index.md` | Present — 9 entries |
+| `government-politics/index.md` | Present — 6 entries |
+| `economy/index.md` | Present — 10 entries |
 | `culture-society/index.md` | Present — 13 entries |
 | `people/index.md` | Present — 11 entries |
-| `TIMELINE.md` | Present — 393 dated events across all fifty-four articles |
+| `TIMELINE.md` | Present — 413 dated events across all fifty-seven articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all fifty-four topic articles |
+| Cross-references (`## Related`) | Present in all fifty-seven topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -402,3 +405,14 @@ Added three dedicated articles — one filling the pivotal 1980 gap in History (
 - ENHANCE pass corrected facts and converted all three draft `[[wikilink]]` blocks to resolved markdown `## Related` links: in the drama article, fixed "Seoul Broadcasting Company (SBC/SBS)" to Seoul Broadcasting System (SBS); in the Gwangju article, removed the misleading "(now Jeonnam University)" rename claim for Chonnam National University, corrected the garbled May 18th National Cemetery romanization (*5.18 Mingjuhwa Undong Chunggeupji* → *Gungnip 5·18 Minju Myoji*), and trimmed the key-figures list to the figures actually involved in the 1979–1980 events; in the Rhee article, corrected the George Washington University BA year (1905→1907), fixed a "flown in on a General Douglas MacArthur's" grammar slip, replaced the self-referential key-figures entries with actual associated figures, and converted an inline `[[Gwangju Uprising]]` wikilink in the body to a resolved markdown link.
 - build-structure: refreshed `history/index.md` (8→9), `people/index.md` (10→11), `culture-society/index.md` (12→13), `INDEX.md`, and `README.md`; extended `TIMELINE.md` to 393 dated events with six new entries (Rhee's 1875 birth, the 1960 April Revolution and his resignation, the May 27, 1980 fall of Gwangju's Provincial Hall, *Dae Jang Geum* in 2003, and Netflix's January 2016 Korea launch); and wrapped all three new `## Related` blocks in generated markers, wiring the new articles to Democratization, the Korean War, Liberation and Founding, the Independence Movement, Park Chung-hee, Kim Dae-jung, Military and Defense Policy, Government Structure, Hallyu, the Film and K-pop industries, Webtoons, and related topics.
 - sync-seed: regenerated §4 (Content Inventory: 51→54 files) and §5 (Structure Inventory: entry counts and 393-event timeline; Culture & Society leads at thirteen, People second at eleven).
+
+### G1-T21 — 2026-08-23 — Tick 21: Gwangju, the tourism industry, and the electoral system deepen Geography, Economy, and Government & Politics
+
+Added three dedicated articles — one giving Geography an eighth topic (the largest Honam-region city), one opening a tenth Economy topic on the service economy, and one giving Government & Politics a sixth topic on the machinery of democracy.
+
+- Created `geography/gwangju.md`: encyclopedic article on Gwangju — its Honam-region setting and climate, the name's Goryeo origin and its role as South Jeolla's provincial capital, the 1929 Gwangju Student Independence Movement, mid-20th-century marginalization, the 1980 Gwangju Uprising and its memorialization (the May 18 Archives, the Asia Culture Center), contemporary economy (Kia and the GGM venture, photonics, start-ups), the Gwangju Biennale, and its progressive regional identity.
+- Created `economy/tourism-industry.md`: encyclopedic article on tourism — the Hallyu-driven inbound boom and market composition, the 2019 peak and COVID-19 collapse and recovery, domestic tourism, accommodation and transport infrastructure, heritage/cultural and food tourism, MICE, tourism policy and the KTO, and Jeju as the leading hub.
+- Created `government-politics/electoral-system.md`: encyclopedic article on the electoral system — presidential and National Assembly elections, the mixed-member system and 3% threshold, the National Election Commission, the Assembly's structure and powers, Honam–TK regionalism, the authoritarian-era evolution to the 1987 direct-election restoration, and the special elections of 2017 and 2025.
+- ENHANCE pass corrected facts and converted the three draft `## Related` lists to marker-wrapped, annotated blocks. In the Gwangju article: fixed the population and ranking (about 1.4 million, roughly the sixth-largest city, from a ~1.47-million mid-2010s peak — not "fifth-largest... down from 1.53 million in 2010"); a milder January climate (~0 °C, not −3 °C); Baekje framing (southern territory, not "a center of Baekje power"); the 940 naming under Goryeo and the 1896 provincial-capital designation, with the 1986 separation as a Directly Governed City and the 2005 relocation of the provincial seat to Muan (replacing "a role it has maintained into the modern era"); added the 1929 Gwangju Student Independence Movement; corrected the 1980 suppression force (airborne special-forces brigades, with the 20th Division only in the final assault — not "the 20th Division of the Special Forces") and the casualty framing; disentangled the May 18 Archives from the ACC/former Provincial Hall; fixed Metro Line 2 (under construction since 2019, not opened) and the Honam KTX second-phase claim; renamed the "Gwangju National Museum of Contemporary Art" to the Gwangju Museum of Art; corrected the false "no major auto plants" claim (Kia's Gwangju plant and the 2019 GGM "Gwangju-type job" venture); and replaced a vague "Government Investment Expansion Plan." In the tourism article: fixed Manjanggul's length (~7.4 km, dropping "13.4 km... world's longest lava tube"), reframed Jeju as the country's first special self-governing province (not "the only... special autonomous province"), corrected "Seobaeksan" to Sobaeksan and Gangneung to a 2018 PyeongChang venue cluster (not "host city"), and removed a fabricated "Songdo (Jeju Island)" hot-spring resort. In the electoral article: fixed the seat-count history (300 since 2012, not "increased from 299 for 2024," with all "299" figures corrected to 300), the PR threshold (3%, not 5%), the standing-committee count (17, not 22), the Speaker romanization (gukhoe uijang), and the presidential-election timing (historically December with a February 25 inauguration, shifting to a spring vote and May 10 inauguration after the 2017 snap election); removed the fabricated "February 11, 1980" Chun election and corrected the Yusin electoral body (the National Conference for Unification); corrected the false "2004 constitutional amendment" (unamended since 1987; the two-vote ballot and the 2020 semi-linked reform were statutory); rewrote the muddled proportional-representation passage (the semi-linked system and satellite parties; 254 district / 46 list seats in 2024); corrected the 2024 result (~175 to ~108 seats, not "180 of 299"); and fixed the mislabeled female-representation figures (39 of 299 in the 17th Assembly of 2004 rising to about 60 of 300, ~20%, in the 22nd Assembly of 2024).
+- build-structure: refreshed `geography/index.md` (7→8), `economy/index.md` (9→10), and `government-politics/index.md` (5→6); updated `INDEX.md` (README already listed all three); extended `TIMELINE.md` (393→413 dated events) with twenty new events spanning Gwangju's history (940–2015), the tourism industry (1962–2023), and electoral milestones (1948–2020); wrapped the three new `## Related` blocks in generated markers; and added bidirectional back-links from the Gwangju Uprising, Kim Dae-jung, Hallyu, Jeju Island, Government Structure, and Yoon Suk-yeol.
+- sync-seed: regenerated §4 (Content Inventory: 54→57 files) and §5 (Structure Inventory: entry counts and 413-event timeline; Culture & Society leads at thirteen, People second at eleven, Economy third at ten).
