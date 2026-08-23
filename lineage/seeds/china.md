@@ -71,18 +71,20 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 21 rows.
-- **Dedicated topic files**: 21.
+- **README knowledge table**: 24 rows.
+- **Dedicated topic files**: 24.
   - `culture-society/buddhism-in-china.md` — Buddhism in China
   - `culture-society/confucianism.md` — Confucianism
   - `culture-society/taoism.md` — Taoism
   - `economy/belt-and-road-initiative.md` — Belt and Road Initiative
   - `economy/economic-reform-opening-up.md` — Economic Reform & Opening-up (1978 Onward)
+  - `economy/special-economic-zones.md` — Special Economic Zones
   - `geography/the-forbidden-city.md` — The Forbidden City
   - `geography/the-great-wall.md` — The Great Wall of China
   - `geography/the-silk-road.md` — The Silk Road
   - `government-politics/chinese-civil-war.md` — Chinese Civil War
   - `government-politics/communist-party-china.md` — The Communist Party of China
+  - `history/cultural-revolution.md` — Cultural Revolution
   - `history/the-han-dynasty.md` — The Han Dynasty
   - `history/the-ming-dynasty.md` — The Ming Dynasty
   - `history/the-qin-dynasty.md` — The Qin Dynasty
@@ -94,8 +96,9 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `people/qin-shi-huang.md` — Qin Shi Huang
   - `people/sun-yat-sen.md` — Sun Yat-sen
   - `people/xi-jinping.md` — Xi Jinping
-- **Categories with content**: Culture & Society (3), Economy (2), Geography (3),
-  Government & Politics (2), History (5), People (6).
+  - `people/zhou-enlai.md` — Zhou Enlai
+- **Categories with content**: Culture & Society (3), Economy (3), Geography (3),
+  Government & Politics (2), History (6), People (7).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -105,9 +108,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 102 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 114 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 21 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 24 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -267,3 +270,27 @@ the existing 2013 milestone to the new dedicated article; added the three topics
 reciprocal cross-references from eleven existing articles (Qin Dynasty, Great Wall, Han, Mao, Xi, Communist
 Party, Sun Yat-sen, Qing, Deng, Economic Reform, Silk Road) to the new topics. Regenerated seed sections 4–5
 to match live state (21 topic files, 21 README rows, 102 milestones, no empty categories).
+
+### G1-T8 — 2026-08-23 — Tick 8: Mao-era turning points — Zhou Enlai, the Cultural Revolution, and the Special Economic Zones
+
+Added three topics carrying the arc from the radical Mao era into the reform opening: `people/zhou-enlai.md`
+(1898–1976, first Premier of the People's Republic — the Long March, the Bandung Conference, the 1971–1972
+opening to the United States, and the Four Modernizations), `history/cultural-revolution.md` (the 1966–1976
+upheaval — the May 16 Circular, the Red Guards and the "Four Olds," factional violence and military
+intervention, the Lin Biao Incident, and the fall of the Gang of Four), and `economy/special-economic-zones.md`
+(the market-reform laboratories opened from 1979 — the four original zones, the 1984 coastal-city expansion,
+Hainan and Pudong, Deng's 1992 Southern Tour, and the later Free Trade Zones), each with `title`/`date`/`category`
+front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources.
+Economy, History, and People now hold three, six, and seven topics respectively; all six categories remain
+populated. Polished the new prose for encyclopedic neutral tone and harmonized an internal date conflict (Deng
+Xiaoping's first purge given as 1966 in both the Zhou and Cultural Revolution articles). Verified every
+cross-reference resolves (0 broken links repo-wide). Refreshed the structural layer: added category-index rows
+for History (Cultural Revolution), Economy (Special Economic Zones), and People (Zhou Enlai); added the three
+topics to `INDEX.md`; extended `TIMELINE.md` from 102 to 114 dated milestones (Zhou's birth 1898, Bandung 1955,
+the May 16 Circular and Red Guard mobilization 1966, the Kissinger visit and Lin Biao's death 1971, the Nixon
+visit 1972, Zhou's death and the Gang of Four's arrest 1976, the SEZ authorization 1979 and founding 1980,
+Hainan 1988, Pudong 1990, and the Shanghai Free Trade Zone 2013), repointing the 1980 SEZ milestone to the new
+dedicated article; and wove reciprocal cross-references from five existing articles (Mao, Deng, Economic Reform,
+Communist Party, Belt and Road) to the new topics. Reconciled `ROADMAP.md` (the three Now items moved to Done;
+Hu Jintao, Jiang Zemin, and the Opium Wars promoted from Backlog to Now) and regenerated seed sections 4–5 to
+match live state (24 topic files, 24 README rows, 114 milestones, no empty categories).
