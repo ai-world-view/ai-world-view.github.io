@@ -103,8 +103,9 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
 
 - **Taxonomy** (6 categories): Geography, History, Government & Politics, Economy,
   Culture & Society, People.
-- **README knowledge table**: 60 rows.
-- **Dedicated topic files** (60), grouped by category:
+- **README knowledge table**: 63 rows.
+- **Dedicated topic files** (63), grouped by category:
+  - `geography/hiroshima.md` — Hiroshima
   - `geography/hokkaido.md` — Hokkaido
   - `geography/kobe.md` — Kobe
   - `geography/kyoto.md` — Kyoto
@@ -144,6 +145,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
+  - `culture-society/kabuki-theater.md` — Kabuki Theater
   - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
   - `culture-society/noh-theater.md` — Noh Theater
@@ -162,10 +164,11 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/minamoto-no-yoritomo.md` — Minamoto no Yoritomo
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/nitobe-inazou.md` — Nitobe Inazō
+  - `people/tanaka-kakuei.md` — Tanaka Kakuei
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
   - `people/yoshida-shoin.md` — Yoshida Shoin
   - `people/yukio-mishima.md` — Yukio Mishima
-- **Categories with content**: Culture & Society (12), People (12), History (11), Geography (10), Economy (8), Government & Politics (7) — all six categories populated; Culture & Society and People lead with twelve topics each, followed by History with eleven, Geography with ten, Economy with eight, and Government & Politics with seven.
+- **Categories with content**: Culture & Society (13), People (13), History (11), Geography (11), Economy (8), Government & Politics (7) — all six categories populated; Culture & Society and People lead with thirteen topics each, followed by History and Geography with eleven each, Economy with eight, and Government & Politics with seven.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -174,10 +177,10 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Culture & Society and People list twelve topics each; History eleven; Geography ten; Economy eight; Government & Politics seven).
-- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 60 topics).
-- **Master index**: `INDEX.md` — present (all 60 topics grouped by taxonomy; every category populated).
-- **Cross-references**: `## Related` blocks present in all 60 dedicated topic files, using relative
+  (Culture & Society and People list thirteen topics each; History and Geography eleven each; Economy eight; Government & Politics seven).
+- **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
+- **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
+- **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
   Markdown links wrapped in `BEGIN/END GENERATED: crossrefs` markers.
 - **Not yet generated**: none — every taxonomy category has content and an index.
 
@@ -580,3 +583,11 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected one error in `history/genpei-war.md` — the Battle of Ichi-no-Tani was dated an out-of-sequence "February 7, 1184" (the lunar 2nd-month/7th-day rendered as a Gregorian month), which wrongly placed it *before* the Battle of Awazu (21 February 1184) that the narrative and the article itself set earlier; aligned it to the conventional Gregorian **1184-03-20**, matching the Gregorian conversions used for the file's other battles (Kurikara 1183-06-02, Yashima 1185-03-22, Dan-no-Ura 1185-04-25), and synced the same date in `TIMELINE.md`. Confirmed `title`/`date`/`category` front matter on all three files, each `date` a single plain ISO date (Haiku & Poetry 1603-01-01, Azuchi-Momoyama Period 1568-01-01, Genpei War 1180-04-20), and that every internal Markdown link resolves.
 - **Structure** (`build-structure`): the content/build pass had already added the three topics to their category indices (`culture-society/index.md`, `history/index.md`), to `INDEX.md`, to `TIMELINE.md`, and to the README homepage table, and wrapped their `## Related` sections in the canonical `BEGIN/END GENERATED: crossrefs` markers with bidirectional back-links from `edo-period.md` and `heian-period.md` (Genpei War / Haiku & Poetry / Azuchi-Momoyama Period), `nara-period.md` (Haiku & Poetry), and `modern-cinema-anime.md` (Ukiyo-e cross-link); the enhance pass verified this coverage and corrected the single out-of-sync Ichi-no-Tani date in `TIMELINE.md`. Also confirmed the build pass's fixes to earlier files — the correction of a false "shogunate-era government" in `history/nara-period.md` (the Nara period predates the shogunate) with the proper *Sanze isshin no hō* land law, and the standardization of stale crossref markers in `modern-cinema-anime.md`, `nara-period.md`, and `yoshida-shoin.md`.
 - **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 60-file tree — removed the never-persisted G1-T43 phantoms `people/oda-nobunaga.md`, `economy/automotive-industry.md`, and `government-politics/prefectural-system.md`, and corrected the totals to 60 topic files / 60 README rows with per-category counts Culture & Society twelve, People twelve, History eleven, Geography ten, Economy eight, and Government & Politics seven, in both §4 and §5. Left §1–3 and §6–7 unchanged.
+
+### G1-T45 — 2026-08-24 — Tick 45: added Hiroshima, Kabuki Theater, and Tanaka Kakuei
+
+- **Content** (3 dedicated topic files, present from the content pass): `geography/hiroshima.md` (the western-Honshu city and prefecture on the Ōta River delta — its castle-town founding under Mōri Terumoto, prewar military significance, the August 6, 1945 atomic bombing by the *Enola Gay*, casualty figures and *hibakusha*, the Genbaku Dome and Kenzō Tange's Peace Memorial Park, the annual Peace Ceremony, Obama's 2016 visit, the 2023 G7 Hiroshima Summit, the 2024 Nobel Peace Prize to Nihon Hidankyō, and the modern city), `culture-society/kabuki-theater.md` (Japan's classical popular theater — Izumo no Okuni's c. 1603 origins, the Tokugawa performance bans and the all-male *onnagata* tradition, the *aragoto*/*wagoto* acting styles, *kumadori* makeup, the *hanamichi* and revolving-stage stagecraft, playwrights from Chikamatsu to Tsuruya Nanboku IV, the Kabuki-za and the Ichikawa Danjūrō line, and the 2008 UNESCO inscription), and `people/tanaka-kakuei.md` (the postwar prime minister, 1918–1993 — his self-made rise from Niigata, the 1972 China normalization, *Nihon Rettō Kaizō-ron*, his 1974 resignation, the Lockheed scandal, arrest, and 1983 conviction, and the "shadow shogun" era of LDP money politics until his 1985 stroke). Culture & Society and People now hold thirteen topics each; Geography eleven; History eleven; Economy eight; Government & Politics seven.
+- **README**: knowledge table stands at 63 rows, including the Hiroshima, Kabuki Theater, and Tanaka Kakuei rows added during the tick.
+- **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected three errors — in `people/tanaka-kakuei.md`, Makiko Tanaka is Tanaka Kakuei's **daughter**, not his granddaughter; in `culture-society/kabuki-theater.md`, the Ichikawa Danjūrō line is now in its **thirteenth** generation (Ichikawa Ebizō XI assumed the name Danjūrō XIII in November 2022), not its twelfth; and in `geography/hiroshima.md`, the garbled "approximately 12 South Korean laborers" and anachronistic "South Korean" phrasing was rewritten to reflect the tens of thousands of Korean laborers (then imperial subjects) present, with an estimated 20,000–30,000 deaths, and the confused "radiation affects" clause was corrected. Confirmed `title`/`date`/`category` front matter on all three files, each `date` a single plain ISO date (Hiroshima 1945-08-06, Kabuki Theater 1603-01-01, Tanaka Kakuei 1918-05-04), and converted each file's hand-written `## See Also` list into a canonical `## Related` block wrapped in `BEGIN/END GENERATED: crossrefs` markers placed after Sources; verified every internal Markdown link resolves.
+- **Structure** (`build-structure`): added the three topics to their category indices (`geography/index.md`, `culture-society/index.md`, `people/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — Hiroshima's 1589 founding, the 1945-08-06 bombing (Geography), 1949 Peace Memorial City designation, 1954 Peace Memorial Park, 1996 Genbaku Dome UNESCO listing, Obama's 2016-05-27 visit, the 2023-05 G7 summit, and the 2024-10 Nobel Peace Prize; Kabuki's 1652 *yarō-kabuki* transition, c. 1673 *aragoto*, 1825 *Yotsuya Kaidan*, 1889 Kabuki-za, 2008 UNESCO inscription, and 2022-11 Danjūrō XIII; and Tanaka's 1918-05-04 birth, 1947 first election, 1972 manifesto/premiership/China normalization, 1974 resignation, 1976 arrest, 1983 conviction, 1985 stroke, and 1993 death. Made cross-references bidirectional with back-links from `history/world-war-ii.md` (Hiroshima), `culture-society/edo-culture-arts.md` (Kabuki Theater), and `government-politics/liberal-democratic-party.md` (Tanaka Kakuei).
+- **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — added `geography/hiroshima.md`, `culture-society/kabuki-theater.md`, and `people/tanaka-kakuei.md`, and corrected the totals to 63 topic files / 63 README rows with per-category counts Culture & Society thirteen, People thirteen, History eleven, Geography eleven, Economy eight, and Government & Politics seven, in both §4 and §5. Left §1–3 and §6–7 unchanged.
