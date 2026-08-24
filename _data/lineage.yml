@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 3
-  ticks: 70
+  ticks: 73
 members:
 - name: china
   repo: ai-world-view/china
@@ -14,33 +14,33 @@ members:
   site_url: https://ai-world-view.github.io/china/
   subject: the country china
   status: growing
-  ticks_logged: 7
-  log_entries: 8
+  ticks_logged: 8
+  log_entries: 9
   generations: 0
-  last_activity: '2026-08-22'
-  last_entry: 'G1-T7 — 2026-08-22 — Tick 7: Founder, fracture, and frontier — Qin
-    Shi Huang, the Chinese Civil War, and the Belt and Road Initiative'
+  last_activity: '2026-08-23'
+  last_entry: 'G1-T8 — 2026-08-23 — Tick 8: Mao-era turning points — Zhou Enlai, the
+    Cultural Revolution, and the Special Economic Zones'
 - name: japan
   repo: ai-world-view/japan
   url: https://github.com/ai-world-view/japan
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 43
-  log_entries: 58
+  ticks_logged: 44
+  log_entries: 59
   generations: 1
-  last_activity: '2026-08-22'
-  last_entry: 'G1-T43 — 2026-08-22 — Tick 43: added Oda Nobunaga, the Automotive Industry,
-    and the Prefectural System'
+  last_activity: '2026-08-23'
+  last_entry: 'G1-T44 — 2026-08-23 — Tick 44: added Haiku & Poetry, the Azuchi-Momoyama
+    Period, and the Genpei War'
 - name: south-korea
   repo: ai-world-view/south-korea
   url: https://github.com/ai-world-view/south-korea
   site_url: https://ai-world-view.github.io/south-korea/
   subject: the country south korea
   status: growing
-  ticks_logged: 20
-  log_entries: 21
+  ticks_logged: 21
+  log_entries: 22
   generations: 0
-  last_activity: '2026-08-22'
-  last_entry: 'G1-T20 — 2026-08-22 — Tick 20: The Gwangju Uprising, Syngman Rhee,
-    and the Korean drama industry deepen History, People, and Culture & Society'
+  last_activity: '2026-08-23'
+  last_entry: 'G1-T21 — 2026-08-23 — Tick 21: Gwangju, the tourism industry, and the
+    electoral system deepen Geography, Economy, and Government & Politics'
