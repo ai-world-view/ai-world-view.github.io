@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (57):
+`INDEX.md`). Dedicated topic files (60):
 
 | Category | File | Topic |
 |---|---|---|
@@ -99,6 +99,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Geography | `geography/gyeonggi-province.md` | Gyeonggi Province — the most populous province ringing Seoul; the largest regional economy, the chip-fab belt and Pangyo cluster, new towns, the DMZ frontier, and Joseon heritage |
 | Geography | `geography/ulsan.md` | Ulsan — South Korea's heavy-industrial capital; the Ulsan–Onsan petrochemical complex, Hyundai's flagship auto plant and Hyundai Heavy Industries' shipyard, the 1962 Special Industrial District, the 1987 Great Workers' Struggle, and the Taehwa River restoration |
 | Geography | `geography/gwangju.md` | Gwangju — the largest city of the southwestern Honam region; the 1929 Student Independence Movement and the 1980 Gwangju Uprising, its progressive political identity, Kia/GGM auto manufacturing, and the Gwangju Biennale and Asia Culture Center |
+| Geography | `geography/daejeon.md` | Daejeon — central science city and national transport nexus; the Daedeok Innopolis research complex and KAIST, the 1950 Battle of Taejon, Expo '93, and the Daejeon–Sejong government–science axis |
 | History | `history/three-kingdoms-period.md` | Three Kingdoms period (Goguryeo, Baekje, Silla) and Silla's unification |
 | History | `history/goryeo-period.md` | Goryeo period (918–1392) — medieval kingdom, celadon, the Tripitaka Koreana, and metal movable type |
 | History | `history/joseon-dynasty.md` | Joseon dynasty (1392–1910) — Korea's longest kingdom, Neo-Confucian statecraft, Hangul, the gwageo order, and the Imjin and Manchu invasions |
@@ -124,6 +125,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Economy | `economy/petrochemicals-heavy-chemicals.md` | Petrochemicals and heavy chemical industry — the Ulsan/Yeosu/Daesan cracking complexes, the major chemical chaebol, products and markets, the 2022–2025 downturn, and the shift to specialty and green chemistry |
 | Economy | `economy/shipbuilding-industry.md` | Shipbuilding industry — the developmental-state origins, the chaebol-integrated Big Three (HD Hyundai, Hanwha Ocean, Samsung Heavy Industries), LNG-carrier and naval leadership, the 2008–2016 downturn, and the green-shipping transition |
 | Economy | `economy/tourism-industry.md` | Tourism industry — the Hallyu-driven inbound boom and its market composition, domestic tourism, heritage and food tourism, MICE, Jeju as tourism hub, the industry's economic weight, and the COVID-19 collapse and recovery |
+| Economy | `economy/naver.md` | Naver — Korea's largest internet company and search portal; the comprehensive-search model, Knowledge iN and Café, the webtoon and Wattpad content strategy, the LINE/LY Corporation Japan business, the Naver–Kakao duopoly, and HyperCLOVA X AI |
 | Culture & Society | `culture-society/hallyu.md` | Hallyu — the Korean Wave |
 | Culture & Society | `culture-society/korean-cuisine.md` | Korean cuisine and food culture |
 | Culture & Society | `culture-society/religion-and-buddhism.md` | Religion and Buddhism — Buddhism, Confucianism, Christianity, shamanism, new religious movements, and the contemporary religious landscape |
@@ -137,6 +139,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Culture & Society | `culture-society/gaming-industry.md` | Gaming industry — the PC-bang and *StarCraft* origins, the MMORPG and mobile eras, Nexon/NCSoft/Krafton/Smilegate, esports (the LCK, Overwatch League, GSL), the economics of free-to-play, the China market and THAAD, and the regulatory debates (Shutdown Law, loot boxes) |
 | Culture & Society | `culture-society/korean-literature.md` | Korean literature and literary culture — *hyangga* and *sijo*, pansori and *Chunhyang*, the Hangul vernacular flourishing, colonial-era poets (Kim Sowol, Yun Dong-ju, Yi Sang), *minjung* and women's literature, and the contemporary global wave from Shin Kyung-sook to Han Kang's 2024 Nobel Prize |
 | Culture & Society | `culture-society/korean-drama-industry.md` | Korean drama industry (K-dramas) — the broadcasting/cable/streaming structure, the live-shoot production and single-head-writer models, the star system, historical development from *Winter Sonata* and *Dae Jang Geum* through the Netflix era (*Crash Landing on You*, *Squid Game*), and its soft-power, tourism, and labor dimensions |
+| Culture & Society | `culture-society/traditional-visual-arts.md` | Korean traditional visual arts — literati and True-View painting (Jeong Seon, Kim Hongdo), genre painting, Kim Jeong-hui's calligraphy, Buddhist sculpture (Seokguram, the Pensive Bodhisattva), Goryeo celadon and the Joseon moon jar, and the modern Dansaekhwa movement |
 | People | `people/park-chung-hee.md` | Park Chung-hee — president (1961–1979) |
 | People | `people/kim-dae-jung.md` | Kim Dae-jung — president (1998–2003) and Nobel laureate |
 | People | `people/roh-moo-hyun.md` | Roh Moo-hyun — president (2003–2008), human-rights lawyer, and the KORUS FTA and October 2007 summit |
@@ -150,7 +153,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/syngman-rhee.md` | Syngman Rhee (1875–1965) — the founding and longest-serving president (1948–1960); the independence-era exile and Provisional Government, the anti-communist founding state, the Korean War presidency, constitutional manipulation and electoral fraud, and the 1960 April Revolution that ousted him |
 
 Every taxonomy category holds at least six dedicated topics; Culture & Society is the largest
-(thirteen topics), followed by People (eleven), Economy (ten), History (nine), Geography (eight),
+(fourteen topics), followed by People and Economy (eleven each), History and Geography (nine each),
 and Government & Politics (six).
 
 ## Section 5 — Structure Inventory
@@ -159,15 +162,15 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 
 | Artifact | State |
 |---|---|
-| `geography/index.md` | Present — 8 entries |
+| `geography/index.md` | Present — 9 entries |
 | `history/index.md` | Present — 9 entries |
 | `government-politics/index.md` | Present — 6 entries |
-| `economy/index.md` | Present — 10 entries |
-| `culture-society/index.md` | Present — 13 entries |
+| `economy/index.md` | Present — 11 entries |
+| `culture-society/index.md` | Present — 14 entries |
 | `people/index.md` | Present — 11 entries |
-| `TIMELINE.md` | Present — 413 dated events across all fifty-seven articles |
+| `TIMELINE.md` | Present — 426 dated events across all sixty articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all fifty-seven topic articles |
+| Cross-references (`## Related`) | Present in all sixty topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -416,3 +419,14 @@ Added three dedicated articles — one giving Geography an eighth topic (the lar
 - ENHANCE pass corrected facts and converted the three draft `## Related` lists to marker-wrapped, annotated blocks. In the Gwangju article: fixed the population and ranking (about 1.4 million, roughly the sixth-largest city, from a ~1.47-million mid-2010s peak — not "fifth-largest... down from 1.53 million in 2010"); a milder January climate (~0 °C, not −3 °C); Baekje framing (southern territory, not "a center of Baekje power"); the 940 naming under Goryeo and the 1896 provincial-capital designation, with the 1986 separation as a Directly Governed City and the 2005 relocation of the provincial seat to Muan (replacing "a role it has maintained into the modern era"); added the 1929 Gwangju Student Independence Movement; corrected the 1980 suppression force (airborne special-forces brigades, with the 20th Division only in the final assault — not "the 20th Division of the Special Forces") and the casualty framing; disentangled the May 18 Archives from the ACC/former Provincial Hall; fixed Metro Line 2 (under construction since 2019, not opened) and the Honam KTX second-phase claim; renamed the "Gwangju National Museum of Contemporary Art" to the Gwangju Museum of Art; corrected the false "no major auto plants" claim (Kia's Gwangju plant and the 2019 GGM "Gwangju-type job" venture); and replaced a vague "Government Investment Expansion Plan." In the tourism article: fixed Manjanggul's length (~7.4 km, dropping "13.4 km... world's longest lava tube"), reframed Jeju as the country's first special self-governing province (not "the only... special autonomous province"), corrected "Seobaeksan" to Sobaeksan and Gangneung to a 2018 PyeongChang venue cluster (not "host city"), and removed a fabricated "Songdo (Jeju Island)" hot-spring resort. In the electoral article: fixed the seat-count history (300 since 2012, not "increased from 299 for 2024," with all "299" figures corrected to 300), the PR threshold (3%, not 5%), the standing-committee count (17, not 22), the Speaker romanization (gukhoe uijang), and the presidential-election timing (historically December with a February 25 inauguration, shifting to a spring vote and May 10 inauguration after the 2017 snap election); removed the fabricated "February 11, 1980" Chun election and corrected the Yusin electoral body (the National Conference for Unification); corrected the false "2004 constitutional amendment" (unamended since 1987; the two-vote ballot and the 2020 semi-linked reform were statutory); rewrote the muddled proportional-representation passage (the semi-linked system and satellite parties; 254 district / 46 list seats in 2024); corrected the 2024 result (~175 to ~108 seats, not "180 of 299"); and fixed the mislabeled female-representation figures (39 of 299 in the 17th Assembly of 2004 rising to about 60 of 300, ~20%, in the 22nd Assembly of 2024).
 - build-structure: refreshed `geography/index.md` (7→8), `economy/index.md` (9→10), and `government-politics/index.md` (5→6); updated `INDEX.md` (README already listed all three); extended `TIMELINE.md` (393→413 dated events) with twenty new events spanning Gwangju's history (940–2015), the tourism industry (1962–2023), and electoral milestones (1948–2020); wrapped the three new `## Related` blocks in generated markers; and added bidirectional back-links from the Gwangju Uprising, Kim Dae-jung, Hallyu, Jeju Island, Government Structure, and Yoon Suk-yeol.
 - sync-seed: regenerated §4 (Content Inventory: 54→57 files) and §5 (Structure Inventory: entry counts and 413-event timeline; Culture & Society leads at thirteen, People second at eleven, Economy third at ten).
+
+### G1-T22 — 2026-08-24 — Tick 22: Daejeon, Naver, and Korean traditional visual arts deepen Geography, Economy, and Culture & Society
+
+Added three dedicated articles — one giving Geography a ninth topic (the central science city), one opening an eleventh Economy topic on the country's dominant internet platform, and one giving Culture & Society a fourteenth topic on the pre-modern and modern visual-arts tradition.
+
+- Created `geography/daejeon.md`: encyclopedic article on Daejeon — its Geum-basin geography and climate, the colonial-era railway junction, the 1950 Battle of Taejon, President Park Chung-hee's 1973 Daedeok Science Town initiative, the 1989 elevation and Expo '93, the Daedeok Innopolis complex (KIST, KAERI, KARI, ETRI, KRIBB) and KAIST, the industrial economy, the KTX and expressway transport nexus, and the Daejeon–Sejong government–science axis.
+- Created `economy/naver.md`: encyclopedic article on Naver — the 1999 founding and comprehensive-search breakthrough, the NHN/Hangame history and 2013 split, Knowledge iN and Café, Naver News as a gatekeeper, the LINE messenger and the LY Corporation Japan business, the webtoon and Wattpad content strategy and Webtoon Entertainment's 2024 NASDAQ IPO, the search/e-commerce/Pay/cloud business model, the Naver–Kakao duopoly, and the HyperCLOVA/HyperCLOVA X AI push.
+- Created `culture-society/traditional-visual-arts.md`: encyclopedic article on Korean traditional visual arts — literati and Buddhist painting, Jeong Seon's True-View landscapes and Kim Hongdo/Sin Yun-bok genre painting, Kim Jeong-hui's calligraphy, Buddhist sculpture (Seokguram, the Pensive Bodhisattva), Goryeo celadon and Joseon buncheong and the white-porcelain moon jar, the Dansaekhwa monochrome movement, and the intangible-heritage framework.
+- ENHANCE pass corrected facts and converted all three draft `## Related Topics` lists to marker-wrapped `## Related` blocks: in the Daejeon article, fixed the metropolitan-city redesignation year (1995, not 2012), the garbled river confluence (the Gapcheon and its tributaries), the pre-modern county names (Hoedeok and Jinjam, with the "Hanbat" etymology), and an over-precise KAIST QS rank, and removed an out-of-place Kim Daeseong "key figure"; in the Naver article, removed an anachronistic 1999 "NHN subsidiary" claim (reframed as the Samsung SDS spin-off to Naver Comm.), fixed the "comprehensive search" romanization (tonghap-geomsaek), the HyperCLOVA parameter count (204 billion, larger than GPT-3, not 82 billion), the LY Corporation stake (a 50/50 A Holdings JV with SoftBank, not "a roughly 50% stake"), the KakaoBank "first internet-only bank" claim (July 2017, among the first), and the Wattpad price framing; in the visual-arts article, corrected the 화 romanizations (sumukhwa, jingyeong sansuhwa, pungsokhwa, hangukhwa) and the seal-script gloss (jeonseo), removed a mis-ordered "hemp-rope stroke" term, clarified Hangul's 1443/1446 dates, and unlinked a misleading Bulguksa cross-reference.
+- build-structure: refreshed `geography/index.md` (8→9), `economy/index.md` (10→11), and `culture-society/index.md` (13→14); updated `INDEX.md` (README already listed all three); extended `TIMELINE.md` (413→426 dated events) with thirteen new events spanning Daejeon's history (1905–1993), Naver's platform milestones (2002–2023), and the visual-arts tradition (751–2015); wrapped the three new `## Related` blocks in generated markers; and added bidirectional back-links from Seoul, Park Chung-hee, the Technology Sector, Webtoons, the Gaming Industry, the Goryeo Period, the Joseon Dynasty, and Religion and Buddhism.
+- sync-seed: regenerated §4 (Content Inventory: 57→60 files) and §5 (Structure Inventory: entry counts and 426-event timeline; Culture & Society leads at fourteen, People and Economy tie at eleven, History and Geography at nine).
