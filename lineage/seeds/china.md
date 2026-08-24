@@ -71,8 +71,8 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 24 rows.
-- **Dedicated topic files**: 24.
+- **README knowledge table**: 27 rows.
+- **Dedicated topic files**: 27.
   - `culture-society/buddhism-in-china.md` — Buddhism in China
   - `culture-society/confucianism.md` — Confucianism
   - `culture-society/taoism.md` — Taoism
@@ -87,18 +87,21 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `history/cultural-revolution.md` — Cultural Revolution
   - `history/the-han-dynasty.md` — The Han Dynasty
   - `history/the-ming-dynasty.md` — The Ming Dynasty
+  - `history/the-opium-wars.md` — The Opium Wars
   - `history/the-qin-dynasty.md` — The Qin Dynasty
   - `history/the-qing-dynasty.md` — The Qing Dynasty
   - `history/the-tang-dynasty.md` — The Tang Dynasty
   - `people/confucius.md` — Confucius
   - `people/deng-xiaoping.md` — Deng Xiaoping
+  - `people/hu-jintao.md` — Hu Jintao
+  - `people/jiang-zemin.md` — Jiang Zemin
   - `people/mao-zedong.md` — Mao Zedong
   - `people/qin-shi-huang.md` — Qin Shi Huang
   - `people/sun-yat-sen.md` — Sun Yat-sen
   - `people/xi-jinping.md` — Xi Jinping
   - `people/zhou-enlai.md` — Zhou Enlai
 - **Categories with content**: Culture & Society (3), Economy (3), Geography (3),
-  Government & Politics (2), History (6), People (7).
+  Government & Politics (2), History (7), People (9).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -108,9 +111,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 114 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 125 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 24 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 27 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -294,3 +297,32 @@ dedicated article; and wove reciprocal cross-references from five existing artic
 Communist Party, Belt and Road) to the new topics. Reconciled `ROADMAP.md` (the three Now items moved to Done;
 Hu Jintao, Jiang Zemin, and the Opium Wars promoted from Backlog to Now) and regenerated seed sections 4–5 to
 match live state (24 topic files, 24 README rows, 114 milestones, no empty categories).
+
+### G1-T9 — 2026-08-24 — Tick 9: Western imperialism and the modern succession — the Opium Wars, Jiang Zemin, and Hu Jintao
+
+Added three topics deepening History and People and carrying the narrative from the Qing's forced
+opening into the contemporary leadership succession: `history/the-opium-wars.md` (the two conflicts of
+1839–1842 and 1856–1860 — Britain's failed Macartney and Amherst embassies, Lin Zexu's opium
+destruction, the Treaty of Nanking and the supplementary Wangxia and Whampoa treaties, the Arrow War,
+the burning of the Summer Palace, the Convention of Peking, and the resulting "unequal treaty system,"
+Self-Strengthening Movement, and "Century of Humiliation"), `people/jiang-zemin.md` (paramount leader
+1989–2004 — his Tiananmen-era rise, Deng's Southern Tour, the 1995–96 Taiwan Strait Crisis, WTO
+accession, the Hong Kong handover, the "Three Represents," and the institutionalization of orderly
+succession), and `people/hu-jintao.md` (paramount leader 2002–2012 — the two-step succession, SARS,
+the "Scientific Outlook on Development" and "Harmonious Society," the 2008 Olympics, Sichuan earthquake,
+and Xinjiang riots, and his 2022 removal from the 20th Party Congress), each with `title`/`date`/`category`
+front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and
+Sources. History now holds seven topics and People nine; all six categories remain populated. Polished
+the new prose for encyclopedic neutral tone and corrected several facts (the Convention of Peking
+indemnity rendered as 8 million taels of silver each for Britain and France; Deng's age during the
+early-1992 Southern Tour corrected to 87). Refreshed the structural layer: added category-index rows
+for History (Opium Wars) and People (Jiang, Hu); added the three topics to `INDEX.md`; extended
+`TIMELINE.md` from 114 to 125 dated milestones (the Arrow War 1856 and Treaty of Tientsin 1858, with
+the 1839/1842/1860 Opium-War milestones repointed to the new dedicated article; Jiang's birth 1926,
+his 1989 elevation, the 1997 Hong Kong handover, and his 2022 death; and Hu's birth 1942, his 2002
+elevation, the 2008 Olympics and Sichuan earthquake, his 2012 handover to Xi, and his 2022 congress
+exit); and wove reciprocal cross-references from three existing articles (the Qing Dynasty to the Opium
+Wars, and Deng Xiaoping and Xi Jinping to their successors and predecessors). Verified every
+cross-reference resolves (0 broken links repo-wide). Reconciled `ROADMAP.md` (the three Now items moved
+to Done as G1-T9) and regenerated seed sections 4–5 to match live state (27 topic files, 27 README rows,
+125 milestones, no empty categories).
