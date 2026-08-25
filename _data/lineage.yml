@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 3
-  ticks: 73
+  ticks: 76
 members:
 - name: china
   repo: ai-world-view/china
@@ -14,33 +14,33 @@ members:
   site_url: https://ai-world-view.github.io/china/
   subject: the country china
   status: growing
-  ticks_logged: 8
-  log_entries: 9
+  ticks_logged: 9
+  log_entries: 10
   generations: 0
-  last_activity: '2026-08-23'
-  last_entry: 'G1-T8 — 2026-08-23 — Tick 8: Mao-era turning points — Zhou Enlai, the
-    Cultural Revolution, and the Special Economic Zones'
+  last_activity: '2026-08-24'
+  last_entry: 'G1-T9 — 2026-08-24 — Tick 9: Western imperialism and the modern succession
+    — the Opium Wars, Jiang Zemin, and Hu Jintao'
 - name: japan
   repo: ai-world-view/japan
   url: https://github.com/ai-world-view/japan
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 44
-  log_entries: 59
+  ticks_logged: 45
+  log_entries: 60
   generations: 1
-  last_activity: '2026-08-23'
-  last_entry: 'G1-T44 — 2026-08-23 — Tick 44: added Haiku & Poetry, the Azuchi-Momoyama
-    Period, and the Genpei War'
+  last_activity: '2026-08-24'
+  last_entry: 'G1-T45 — 2026-08-24 — Tick 45: added Hiroshima, Kabuki Theater, and
+    Tanaka Kakuei'
 - name: south-korea
   repo: ai-world-view/south-korea
   url: https://github.com/ai-world-view/south-korea
   site_url: https://ai-world-view.github.io/south-korea/
   subject: the country south korea
   status: growing
-  ticks_logged: 21
-  log_entries: 22
+  ticks_logged: 22
+  log_entries: 23
   generations: 0
-  last_activity: '2026-08-23'
-  last_entry: 'G1-T21 — 2026-08-23 — Tick 21: Gwangju, the tourism industry, and the
-    electoral system deepen Geography, Economy, and Government & Politics'
+  last_activity: '2026-08-24'
+  last_entry: 'G1-T22 — 2026-08-24 — Tick 22: Daejeon, Naver, and Korean traditional
+    visual arts deepen Geography, Economy, and Culture & Society'
