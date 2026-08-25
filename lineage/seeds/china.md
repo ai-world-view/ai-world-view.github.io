@@ -71,9 +71,10 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 27 rows.
-- **Dedicated topic files**: 27.
+- **README knowledge table**: 30 rows.
+- **Dedicated topic files**: 30.
   - `culture-society/buddhism-in-china.md` — Buddhism in China
+  - `culture-society/chinese-medicine.md` — Chinese Medicine
   - `culture-society/confucianism.md` — Confucianism
   - `culture-society/taoism.md` — Taoism
   - `economy/belt-and-road-initiative.md` — Belt and Road Initiative
@@ -84,12 +85,14 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `geography/the-silk-road.md` — The Silk Road
   - `government-politics/chinese-civil-war.md` — Chinese Civil War
   - `government-politics/communist-party-china.md` — The Communist Party of China
+  - `government-politics/national-peoples-congress.md` — The National People's Congress
   - `history/cultural-revolution.md` — Cultural Revolution
   - `history/the-han-dynasty.md` — The Han Dynasty
   - `history/the-ming-dynasty.md` — The Ming Dynasty
   - `history/the-opium-wars.md` — The Opium Wars
   - `history/the-qin-dynasty.md` — The Qin Dynasty
   - `history/the-qing-dynasty.md` — The Qing Dynasty
+  - `history/the-song-dynasty.md` — The Song Dynasty
   - `history/the-tang-dynasty.md` — The Tang Dynasty
   - `people/confucius.md` — Confucius
   - `people/deng-xiaoping.md` — Deng Xiaoping
@@ -100,8 +103,8 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `people/sun-yat-sen.md` — Sun Yat-sen
   - `people/xi-jinping.md` — Xi Jinping
   - `people/zhou-enlai.md` — Zhou Enlai
-- **Categories with content**: Culture & Society (3), Economy (3), Geography (3),
-  Government & Politics (2), History (7), People (9).
+- **Categories with content**: Culture & Society (4), Economy (3), Geography (3),
+  Government & Politics (3), History (8), People (9).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -111,9 +114,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 125 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 144 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 27 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 30 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -326,3 +329,42 @@ Wars, and Deng Xiaoping and Xi Jinping to their successors and predecessors). Ve
 cross-reference resolves (0 broken links repo-wide). Reconciled `ROADMAP.md` (the three Now items moved
 to Done as G1-T9) and regenerated seed sections 4–5 to match live state (27 topic files, 27 README rows,
 125 milestones, no empty categories).
+
+### G1-T10 — 2026-08-25 — Tick 10: Sophisticated statecraft across the ages — the Song Dynasty, the National People's Congress, and Chinese Medicine
+
+Added three topics deepening History, Government & Politics, and Culture & Society and spanning imperial
+zenith, contemporary institutions, and a two-millennia cultural tradition: `history/the-song-dynasty.md`
+(the culturally and technologically brilliant 960–1279 era — the Northern/Southern Song division, Zhu Xi's
+Neo-Confucianism, Wang Anshi's New Laws, the Zizhi Tongjian, printing, gunpowder, the compass, paper money,
+and the fall at Yamen in 1279), `government-politics/national-peoples-congress.md` (the PRC's constitutionally
+"highest organ of state power" and chief legislature since 1954, its Standing Committee and electoral pyramid,
+the 2018 term-limit removal and 2020 Civil Code, and its operational subordination to the Communist Party via
+the "Two Sessions" with the CPPCC), and `culture-society/chinese-medicine.md` (the 2,500-year healing system —
+qi, yin-yang, the Five Elements and meridians, the *Huangdi Neijing*, herbal medicine, acupuncture, moxibustion,
+the *Bencao Gangmu*, and Tu Youyou's Nobel-winning artemisinin), each with `title`/`date`/`category` front
+matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. History
+now holds eight topics, Government & Politics three, and Culture & Society four; all six categories remain
+populated. Polished the new prose for encyclopedic neutral tone and corrected several factual errors: in the
+Song article, fixed a garbled "ten kingdoms and seventeen kingdoms" to the ten kingdoms and dated Taizong's
+reunification to 979, corrected the *Zizhi Tongjian*'s length from an erroneous "9.94 million" to roughly three
+million characters, replaced the misplaced Yuan-era painter Huang Gongwang with the Northern Song master Fan
+Kuan, fixed Lu You's deathbed poem title (*Shì'ér*, not "Shi Zi"), and corrected the Marco Polo passage (he
+described Hangzhou after, not before, the Mongol conquest); in the NPC article, repaired the muddled
+constitutional-amendment tally (four successive PRC constitutions plus five amendments to the 1982 charter,
+1988–2018), rewrote the erroneous "Fifth NPC (1975–1980) met only once" claim into the correct decade-long gap
+in sessions (no congress from early 1965 until the Fourth NPC's single January 1975 session), and removed a
+nonexistent 2024 constitutional amendment from the Sources; and in the Chinese Medicine article, corrected the
+*Zhubing Yuanhou Lun* (misspelled and misdated to the Tang — actually Chao Yuanfang, Sui, 610 CE), added the
+Tang *Xinxiu Bencao* (659) and Sun Simiao, normalized "T'ang" to "Tang," and fixed a cross-reference (the NPC
+Standing Committee's 2016 Traditional Chinese Medicine Law, not a 2003 State Council regulation). Refreshed the
+structural layer: added category-index rows for History (Song), Government & Politics (National People's
+Congress), and Culture & Society (Chinese Medicine); added the three topics to `INDEX.md`; extended `TIMELINE.md`
+from 125 to 144 dated milestones (the Song founding 960 through the Battle of Yamen 1279 — including Wang Anshi's
+New Laws 1069, the Zizhi Tongjian 1084, Su Song's astronomical clock 1092, the Jingkang Incident 1127, and Zhu
+Xi's death 1200; the medical milestones of the Zhubing Yuanhou Lun 610, the Xinxiu Bencao 659, Wang Weiyi's
+bronze mannequins 1027, the Bencao Gangmu 1596, and artemisinin's isolation 1972 and Nobel 2015; and the NPC's
+founding 1954, the 1982 Constitution, the 2020 Civil Code and Hong Kong National Security Law, and the 14th NPC
+of 2023); and wove reciprocal cross-references from seven existing articles (the Tang, Ming, Qing, and
+Confucianism to the Song; the Communist Party to the NPC; and Taoism and Buddhism to Chinese Medicine). Verified
+every cross-reference resolves (0 broken links repo-wide). Regenerated seed sections 4–5 to match live state
+(30 topic files, 30 README rows, 144 milestones, no empty categories).
