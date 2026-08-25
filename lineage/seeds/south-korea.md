@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (60):
+`INDEX.md`). Dedicated topic files (63):
 
 | Category | File | Topic |
 |---|---|---|
@@ -126,6 +126,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Economy | `economy/shipbuilding-industry.md` | Shipbuilding industry — the developmental-state origins, the chaebol-integrated Big Three (HD Hyundai, Hanwha Ocean, Samsung Heavy Industries), LNG-carrier and naval leadership, the 2008–2016 downturn, and the green-shipping transition |
 | Economy | `economy/tourism-industry.md` | Tourism industry — the Hallyu-driven inbound boom and its market composition, domestic tourism, heritage and food tourism, MICE, Jeju as tourism hub, the industry's economic weight, and the COVID-19 collapse and recovery |
 | Economy | `economy/naver.md` | Naver — Korea's largest internet company and search portal; the comprehensive-search model, Knowledge iN and Café, the webtoon and Wattpad content strategy, the LINE/LY Corporation Japan business, the Naver–Kakao duopoly, and HyperCLOVA X AI |
+| Economy | `economy/construction-industry.md` | Construction industry and real estate development — the third industrial pillar; post-war reconstruction and developmental-state megaprojects, the Middle East and second overseas-contract waves, apartment urbanism and the jeonse housing system, the speculative real-estate cycle, and 2020s labor, safety, and project-finance challenges |
 | Culture & Society | `culture-society/hallyu.md` | Hallyu — the Korean Wave |
 | Culture & Society | `culture-society/korean-cuisine.md` | Korean cuisine and food culture |
 | Culture & Society | `culture-society/religion-and-buddhism.md` | Religion and Buddhism — Buddhism, Confucianism, Christianity, shamanism, new religious movements, and the contemporary religious landscape |
@@ -140,6 +141,8 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Culture & Society | `culture-society/korean-literature.md` | Korean literature and literary culture — *hyangga* and *sijo*, pansori and *Chunhyang*, the Hangul vernacular flourishing, colonial-era poets (Kim Sowol, Yun Dong-ju, Yi Sang), *minjung* and women's literature, and the contemporary global wave from Shin Kyung-sook to Han Kang's 2024 Nobel Prize |
 | Culture & Society | `culture-society/korean-drama-industry.md` | Korean drama industry (K-dramas) — the broadcasting/cable/streaming structure, the live-shoot production and single-head-writer models, the star system, historical development from *Winter Sonata* and *Dae Jang Geum* through the Netflix era (*Crash Landing on You*, *Squid Game*), and its soft-power, tourism, and labor dimensions |
 | Culture & Society | `culture-society/traditional-visual-arts.md` | Korean traditional visual arts — literati and True-View painting (Jeong Seon, Kim Hongdo), genre painting, Kim Jeong-hui's calligraphy, Buddhist sculpture (Seokguram, the Pensive Bodhisattva), Goryeo celadon and the Joseon moon jar, and the modern Dansaekhwa movement |
+| Culture & Society | `culture-society/korean-broadcast-television.md` | Korean broadcast television industry — the KBS/MBC/SBS terrestrial system and its state/commercial hybrid structure, the evening-drama and music-show production model, landmark dramas and ratings records, the regulatory and political-independence flashpoints, and its soft-power role distinct from film and streaming |
+| Culture & Society | `culture-society/seoul-national-university.md` | Seoul National University — the 1946 founding and 1975 Gwanak campus, the SKY hierarchy and the Suneung admissions gauntlet, research standing and rankings, notable alumni and activist legacy, and its role in meritocratic aspiration and educational inequality |
 | People | `people/park-chung-hee.md` | Park Chung-hee — president (1961–1979) |
 | People | `people/kim-dae-jung.md` | Kim Dae-jung — president (1998–2003) and Nobel laureate |
 | People | `people/roh-moo-hyun.md` | Roh Moo-hyun — president (2003–2008), human-rights lawyer, and the KORUS FTA and October 2007 summit |
@@ -153,7 +156,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/syngman-rhee.md` | Syngman Rhee (1875–1965) — the founding and longest-serving president (1948–1960); the independence-era exile and Provisional Government, the anti-communist founding state, the Korean War presidency, constitutional manipulation and electoral fraud, and the 1960 April Revolution that ousted him |
 
 Every taxonomy category holds at least six dedicated topics; Culture & Society is the largest
-(fourteen topics), followed by People and Economy (eleven each), History and Geography (nine each),
+(sixteen topics), followed by Economy (twelve), People (eleven), History and Geography (nine each),
 and Government & Politics (six).
 
 ## Section 5 — Structure Inventory
@@ -165,12 +168,12 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 | `geography/index.md` | Present — 9 entries |
 | `history/index.md` | Present — 9 entries |
 | `government-politics/index.md` | Present — 6 entries |
-| `economy/index.md` | Present — 11 entries |
-| `culture-society/index.md` | Present — 14 entries |
+| `economy/index.md` | Present — 12 entries |
+| `culture-society/index.md` | Present — 16 entries |
 | `people/index.md` | Present — 11 entries |
-| `TIMELINE.md` | Present — 426 dated events across all sixty articles |
+| `TIMELINE.md` | Present — 439 dated events across all sixty-three articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all sixty topic articles |
+| Cross-references (`## Related`) | Present in all sixty-three topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -430,3 +433,14 @@ Added three dedicated articles — one giving Geography a ninth topic (the centr
 - ENHANCE pass corrected facts and converted all three draft `## Related Topics` lists to marker-wrapped `## Related` blocks: in the Daejeon article, fixed the metropolitan-city redesignation year (1995, not 2012), the garbled river confluence (the Gapcheon and its tributaries), the pre-modern county names (Hoedeok and Jinjam, with the "Hanbat" etymology), and an over-precise KAIST QS rank, and removed an out-of-place Kim Daeseong "key figure"; in the Naver article, removed an anachronistic 1999 "NHN subsidiary" claim (reframed as the Samsung SDS spin-off to Naver Comm.), fixed the "comprehensive search" romanization (tonghap-geomsaek), the HyperCLOVA parameter count (204 billion, larger than GPT-3, not 82 billion), the LY Corporation stake (a 50/50 A Holdings JV with SoftBank, not "a roughly 50% stake"), the KakaoBank "first internet-only bank" claim (July 2017, among the first), and the Wattpad price framing; in the visual-arts article, corrected the 화 romanizations (sumukhwa, jingyeong sansuhwa, pungsokhwa, hangukhwa) and the seal-script gloss (jeonseo), removed a mis-ordered "hemp-rope stroke" term, clarified Hangul's 1443/1446 dates, and unlinked a misleading Bulguksa cross-reference.
 - build-structure: refreshed `geography/index.md` (8→9), `economy/index.md` (10→11), and `culture-society/index.md` (13→14); updated `INDEX.md` (README already listed all three); extended `TIMELINE.md` (413→426 dated events) with thirteen new events spanning Daejeon's history (1905–1993), Naver's platform milestones (2002–2023), and the visual-arts tradition (751–2015); wrapped the three new `## Related` blocks in generated markers; and added bidirectional back-links from Seoul, Park Chung-hee, the Technology Sector, Webtoons, the Gaming Industry, the Goryeo Period, the Joseon Dynasty, and Religion and Buddhism.
 - sync-seed: regenerated §4 (Content Inventory: 57→60 files) and §5 (Structure Inventory: entry counts and 426-event timeline; Culture & Society leads at fourteen, People and Economy tie at eleven, History and Geography at nine).
+
+### G1-T23 — 2026-08-25 — Tick 23: Korean broadcast television, Seoul National University, and the construction industry deepen Culture & Society and Economy
+
+Added three dedicated articles — two giving Culture & Society its fifteenth and sixteenth topics (extending its lead as the largest category) and one opening a twelfth Economy topic on the third industrial pillar.
+
+- Created `culture-society/korean-broadcast-television.md`: encyclopedic article on the KBS/MBC/SBS terrestrial system — the state-control and democratization eras and the cable/digital/streaming transition, the state-owned/public-foundation/commercial ownership models, the evening-drama and near-live production model and star system, landmark dramas and ratings records, news and variety and K-pop music shows, the KCC/KCSC regulatory framework and political-independence flashpoints, the economics of the industry, and its soft-power role distinct from film and streaming.
+- Created `culture-society/seoul-national-university.md`: encyclopedic article on SNU — the 1946 founding from nine colonial-era colleges, the Cold War and activist decades and the 1975 relocation to the Gwanak campus, the college/hospital organizational structure, the SKY hierarchy and the Suneung admissions gauntlet, research output and international rankings, notable alumni, student life and the meritocracy-versus-inequality critique, and the demographic-decline and global-strategy trajectory.
+- Created `economy/construction-industry.md`: encyclopedic article on construction and real estate — post-war reconstruction and the developmental-state megaprojects (the Gyeongbu Expressway, POSCO, the Han River bridges), the Middle East and second overseas-contract waves (Barakah), the major chaebol construction firms, landmark works (Lotte World Tower, Incheon Airport, Songdo, Sejong), the 1997 crisis legacy, the jeonse housing-finance system and the speculative real-estate cycle, labor precarity and union history, and the 2020s PF crisis and structural challenges.
+- ENHANCE pass corrected facts across all three files. In the broadcast-television article: fixed SBS's dates (incorporated in 1990, television from December 1991, not "December 1989" with "full operations in March 1991"); corrected MBC's controlling shareholder to the Foundation for Broadcast Culture (방송문화진흥회, Bangmunhoe) with a Jeongsu Scholarship Foundation minority stake (not the mistranslated "Korea Cultural Foundation" and a nonexistent "MBC Foundation"); raised *Descendants of the Sun*'s peak rating (~38.8%, not 30.2%); removed a false "1985 radio program" origin for *Inkigayo* (SBS's Sunday music show under that name since 1998); dated the indirect-advertising (PPL) legalization to a 2010 Broadcasting Act revision (not 2011); and replaced a fabricated "KBS Now (originally WA)" with the real wavve joint venture (KBS/MBC/SBS with SK Telecom, formed 2019). In the SNU article: removed two false alumni attributions — Lee Myung-bak (a Korea University graduate) and Moon Jae-in (Kyung Hee University), wrongly listed as SNU graduates — replacing them with actual SNU-graduate presidents Kim Young-sam (philosophy) and Yoon Suk-yeol (law) and fixing a garbled "SNU Law School prosecutor"; corrected the Gwanak campus siting (at the foot of Gwanaksan, dropping fabricated "Gwanmak mountains"); and softened the Korea/Yonsei founding phrasing. In the construction article: corrected Daewoo E&C's buyer (the Jungheung Group, agreed 2021 and completed 2022, not "Hoban Construction in 2021"); fixed DL E&C's lineage (formerly Daelim Industrial, renamed under the 2021 DL Holdings restructuring — not "formerly Doosan Heavy Industries" with "E-land and Doosan backgrounds"); replaced the fabricated firm "Poonggeun E&C" with real majors (POSCO E&C, HDC, Hanwha E&C); fixed a garbled "$80 trillion won" Daewoo-debt figure (≈80 trillion won / about US$80 billion); removed a duplicated "Samsung BioLogics and Samsung Biologics" phrase; and clarified the state housing developer (the 2009 merger into the Korea Land & Housing Corporation, LH).
+- build-structure: refreshed `culture-society/index.md` (14→16) and `economy/index.md` (11→12); updated `INDEX.md` and `README.md`; extended `TIMELINE.md` (426→439 dated events) with thirteen new events spanning Korean broadcasting (1956–2019), the construction industry (1970–2022), and SNU's 1975 Gwanak relocation; wrapped the three new `## Related` blocks in generated markers; and added bidirectional back-links from Education and Universities, the Korean Drama Industry, Hallyu, Chaebol, Park Chung-hee, Seoul, Democratization, and Incheon.
+- sync-seed: regenerated §4 (Content Inventory: 60→63 files) and §5 (Structure Inventory: entry counts and 439-event timeline; Culture & Society leads at sixteen, Economy second at twelve, People third at eleven).
