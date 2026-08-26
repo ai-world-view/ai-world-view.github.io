@@ -71,11 +71,12 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 30 rows.
-- **Dedicated topic files**: 30.
+- **README knowledge table**: 33 rows.
+- **Dedicated topic files**: 33.
   - `culture-society/buddhism-in-china.md` — Buddhism in China
   - `culture-society/chinese-medicine.md` — Chinese Medicine
   - `culture-society/confucianism.md` — Confucianism
+  - `culture-society/i-ching.md` — The I Ching (Book of Changes)
   - `culture-society/taoism.md` — Taoism
   - `economy/belt-and-road-initiative.md` — Belt and Road Initiative
   - `economy/economic-reform-opening-up.md` — Economic Reform & Opening-up (1978 Onward)
@@ -87,6 +88,7 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `government-politics/communist-party-china.md` — The Communist Party of China
   - `government-politics/national-peoples-congress.md` — The National People's Congress
   - `history/cultural-revolution.md` — Cultural Revolution
+  - `history/the-great-leap-forward.md` — The Great Leap Forward
   - `history/the-han-dynasty.md` — The Han Dynasty
   - `history/the-ming-dynasty.md` — The Ming Dynasty
   - `history/the-opium-wars.md` — The Opium Wars
@@ -102,9 +104,10 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `people/qin-shi-huang.md` — Qin Shi Huang
   - `people/sun-yat-sen.md` — Sun Yat-sen
   - `people/xi-jinping.md` — Xi Jinping
+  - `people/zheng-he.md` — Zheng He
   - `people/zhou-enlai.md` — Zhou Enlai
-- **Categories with content**: Culture & Society (4), Economy (3), Geography (3),
-  Government & Politics (3), History (8), People (9).
+- **Categories with content**: Culture & Society (5), Economy (3), Geography (3),
+  Government & Politics (3), History (9), People (10).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -114,9 +117,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 144 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 153 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 30 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 33 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -368,3 +371,37 @@ of 2023); and wove reciprocal cross-references from seven existing articles (the
 Confucianism to the Song; the Communist Party to the NPC; and Taoism and Buddhism to Chinese Medicine). Verified
 every cross-reference resolves (0 broken links repo-wide). Regenerated seed sections 4–5 to match live state
 (30 topic files, 30 README rows, 144 milestones, no empty categories).
+
+### G1-T11 — 2026-08-26 — Tick 11: Ming sea power, a Mao-era famine, and an ancient classic of change — Zheng He, the Great Leap Forward, and the I Ching
+
+Added three topics deepening People, History, and Culture & Society and spanning the full arc from
+an ancient divination classic through the apex of Ming maritime power to the deadliest famine of the
+Mao era: `people/zheng-he.md` (the Muslim eunuch admiral, 1371–1435, whose seven Indian Ocean
+"treasure fleet" voyages of 1405–1433 reached Arabia and the East African coast before the Ming court
+abandoned oceanic exploration and turned inward), `history/the-great-leap-forward.md` (Mao Zedong's
+1958–1962 mobilization campaign — the people's communes and backyard steel furnaces, inflated grain
+requisitions, the resulting famine of roughly 30 million dead, the Lushan Conference purge of Peng
+Dehuai, and the Seven Thousand Cadres Conference), and `culture-society/i-ching.md` (the Book of
+Changes — the 64 hexagrams of *yin* and *yang*, its canonization among the Five Classics, its role in
+the imperial examinations, Shao Yong's and Zhu Xi's Song commentaries, and its later Western reception
+from Leibniz's binary insight to the Wilhelm–Baynes translation), each with `title`/`date`/`category`
+front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and
+Sources. People now holds ten topics, History nine, and Culture & Society five; all six categories
+remain populated. Polished the new prose for encyclopedic neutral tone, corrected the launch of the
+Great Leap (the general line was adopted at the Second Session of the Eighth Party Congress in May
+1958, following the Nanning and Chengdu conferences, not "January 1958"), normalized the three files'
+front-matter dates to plain ISO tick dates, and removed a duplicate self-link (Taoism/"Daoism") in the
+I Ching's Related block, repointing it to Confucius. Refreshed the structural layer: added
+category-index rows for People (Zheng He), History (Great Leap Forward), and Culture & Society (I
+Ching); added the three topics to `INDEX.md`; grew the README knowledge table from 30 to 33 rows; and
+extended `TIMELINE.md` from 144 to 153 dated milestones (Zheng He's birth 1371, the 1424 halt and 1433
+end of the voyages, with the existing 1405/1433 entries repointed from the Ming Dynasty to the new
+Zheng He article; the Great Leap's 1958 launch, the 1959 Lushan purge, and the 1962 Seven Thousand
+Cadres Conference, repointing the 1958 milestone from Mao Zedong to the dedicated article; and the I
+Ching's 136 BCE canonization, Zhu Xi's 1177 *Zhouyi Benyi*, Leibniz's 1703 binary insight, and the
+1923 Wilhelm and 1950 Wilhelm–Baynes translations). Wove reciprocal cross-references from ten existing
+articles (the Ming Dynasty and the Silk Road to Zheng He; the Cultural Revolution, Mao Zedong, Deng
+Xiaoping, and Economic Reform & Opening-up to the Great Leap Forward; and Confucianism, Taoism, Chinese
+Medicine, and the Song Dynasty to the I Ching). Verified every cross-reference resolves (0 broken links
+repo-wide). Reconciled `ROADMAP.md` (the three Now items moved to Done as G1-T11) and regenerated seed
+sections 4–5 to match live state (33 topic files, 33 README rows, 153 milestones, no empty categories).
