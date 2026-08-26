@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (63):
+`INDEX.md`). Dedicated topic files (66):
 
 | Category | File | Topic |
 |---|---|---|
@@ -100,6 +100,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Geography | `geography/ulsan.md` | Ulsan — South Korea's heavy-industrial capital; the Ulsan–Onsan petrochemical complex, Hyundai's flagship auto plant and Hyundai Heavy Industries' shipyard, the 1962 Special Industrial District, the 1987 Great Workers' Struggle, and the Taehwa River restoration |
 | Geography | `geography/gwangju.md` | Gwangju — the largest city of the southwestern Honam region; the 1929 Student Independence Movement and the 1980 Gwangju Uprising, its progressive political identity, Kia/GGM auto manufacturing, and the Gwangju Biennale and Asia Culture Center |
 | Geography | `geography/daejeon.md` | Daejeon — central science city and national transport nexus; the Daedeok Innopolis research complex and KAIST, the 1950 Battle of Taejon, Expo '93, and the Daejeon–Sejong government–science axis |
+| Geography | `geography/suwon.md` | Suwon — capital of Gyeonggi Province and the largest non-metropolitan city; Samsung's Digital City R&D complex, the UNESCO-listed Hwaseong Fortress, and the city's Joseon-heritage-to-semiconductor arc |
 | History | `history/three-kingdoms-period.md` | Three Kingdoms period (Goguryeo, Baekje, Silla) and Silla's unification |
 | History | `history/goryeo-period.md` | Goryeo period (918–1392) — medieval kingdom, celadon, the Tripitaka Koreana, and metal movable type |
 | History | `history/joseon-dynasty.md` | Joseon dynasty (1392–1910) — Korea's longest kingdom, Neo-Confucian statecraft, Hangul, the gwageo order, and the Imjin and Manchu invasions |
@@ -127,6 +128,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Economy | `economy/tourism-industry.md` | Tourism industry — the Hallyu-driven inbound boom and its market composition, domestic tourism, heritage and food tourism, MICE, Jeju as tourism hub, the industry's economic weight, and the COVID-19 collapse and recovery |
 | Economy | `economy/naver.md` | Naver — Korea's largest internet company and search portal; the comprehensive-search model, Knowledge iN and Café, the webtoon and Wattpad content strategy, the LINE/LY Corporation Japan business, the Naver–Kakao duopoly, and HyperCLOVA X AI |
 | Economy | `economy/construction-industry.md` | Construction industry and real estate development — the third industrial pillar; post-war reconstruction and developmental-state megaprojects, the Middle East and second overseas-contract waves, apartment urbanism and the jeonse housing system, the speculative real-estate cycle, and 2020s labor, safety, and project-finance challenges |
+| Economy | `economy/telecommunications-industry.md` | Telecommunications industry — the SK Telecom/KT/LG U+ operator market and Samsung network equipment; 1980s liberalization and CDMA, the world-first consumer 5G launch, the enterprise segment, and the 6G roadmap |
 | Culture & Society | `culture-society/hallyu.md` | Hallyu — the Korean Wave |
 | Culture & Society | `culture-society/korean-cuisine.md` | Korean cuisine and food culture |
 | Culture & Society | `culture-society/religion-and-buddhism.md` | Religion and Buddhism — Buddhism, Confucianism, Christianity, shamanism, new religious movements, and the contemporary religious landscape |
@@ -154,9 +156,10 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/yi-sun-sin.md` | Yi Sun-sin (1545–1598) — Joseon admiral and national hero; his undefeated Imjin War naval campaigns, the *geobukseon* turtle ship, Myeongnyang and Noryang, the *Nanjung Ilgi*, and his cultural legacy |
 | People | `people/sejong-the-great.md` | Sejong the Great (r. 1418–1450) — Joseon's fourth king; the creation of Hangul and the *Hunminjeongeum*, the Hall of Worthies, Jang Yeong-sil's inventions, calendar and tax reform, and the northern frontier expansion |
 | People | `people/syngman-rhee.md` | Syngman Rhee (1875–1965) — the founding and longest-serving president (1948–1960); the independence-era exile and Provisional Government, the anti-communist founding state, the Korean War presidency, constitutional manipulation and electoral fraud, and the 1960 April Revolution that ousted him |
+| People | `people/kim-young-sam.md` | Kim Young-sam — the fourteenth president (1993–1998); the first civilian head of state in three decades, the three-party merger, the Hanahoe purge, the prosecution of Chun and Roh, the Real-Name Financial Transaction System, OECD accession, and the 1997 IMF crisis |
 
 Every taxonomy category holds at least six dedicated topics; Culture & Society is the largest
-(sixteen topics), followed by Economy (twelve), People (eleven), History and Geography (nine each),
+(sixteen topics), followed by Economy (thirteen), People (twelve), Geography (ten), History (nine),
 and Government & Politics (six).
 
 ## Section 5 — Structure Inventory
@@ -165,15 +168,15 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 
 | Artifact | State |
 |---|---|
-| `geography/index.md` | Present — 9 entries |
+| `geography/index.md` | Present — 10 entries |
 | `history/index.md` | Present — 9 entries |
 | `government-politics/index.md` | Present — 6 entries |
-| `economy/index.md` | Present — 12 entries |
+| `economy/index.md` | Present — 13 entries |
 | `culture-society/index.md` | Present — 16 entries |
-| `people/index.md` | Present — 11 entries |
-| `TIMELINE.md` | Present — 439 dated events across all sixty-three articles |
+| `people/index.md` | Present — 12 entries |
+| `TIMELINE.md` | Present — 459 dated events across all sixty-six articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all sixty-three topic articles |
+| Cross-references (`## Related`) | Present in all sixty-six topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -444,3 +447,14 @@ Added three dedicated articles — two giving Culture & Society its fifteenth an
 - ENHANCE pass corrected facts across all three files. In the broadcast-television article: fixed SBS's dates (incorporated in 1990, television from December 1991, not "December 1989" with "full operations in March 1991"); corrected MBC's controlling shareholder to the Foundation for Broadcast Culture (방송문화진흥회, Bangmunhoe) with a Jeongsu Scholarship Foundation minority stake (not the mistranslated "Korea Cultural Foundation" and a nonexistent "MBC Foundation"); raised *Descendants of the Sun*'s peak rating (~38.8%, not 30.2%); removed a false "1985 radio program" origin for *Inkigayo* (SBS's Sunday music show under that name since 1998); dated the indirect-advertising (PPL) legalization to a 2010 Broadcasting Act revision (not 2011); and replaced a fabricated "KBS Now (originally WA)" with the real wavve joint venture (KBS/MBC/SBS with SK Telecom, formed 2019). In the SNU article: removed two false alumni attributions — Lee Myung-bak (a Korea University graduate) and Moon Jae-in (Kyung Hee University), wrongly listed as SNU graduates — replacing them with actual SNU-graduate presidents Kim Young-sam (philosophy) and Yoon Suk-yeol (law) and fixing a garbled "SNU Law School prosecutor"; corrected the Gwanak campus siting (at the foot of Gwanaksan, dropping fabricated "Gwanmak mountains"); and softened the Korea/Yonsei founding phrasing. In the construction article: corrected Daewoo E&C's buyer (the Jungheung Group, agreed 2021 and completed 2022, not "Hoban Construction in 2021"); fixed DL E&C's lineage (formerly Daelim Industrial, renamed under the 2021 DL Holdings restructuring — not "formerly Doosan Heavy Industries" with "E-land and Doosan backgrounds"); replaced the fabricated firm "Poonggeun E&C" with real majors (POSCO E&C, HDC, Hanwha E&C); fixed a garbled "$80 trillion won" Daewoo-debt figure (≈80 trillion won / about US$80 billion); removed a duplicated "Samsung BioLogics and Samsung Biologics" phrase; and clarified the state housing developer (the 2009 merger into the Korea Land & Housing Corporation, LH).
 - build-structure: refreshed `culture-society/index.md` (14→16) and `economy/index.md` (11→12); updated `INDEX.md` and `README.md`; extended `TIMELINE.md` (426→439 dated events) with thirteen new events spanning Korean broadcasting (1956–2019), the construction industry (1970–2022), and SNU's 1975 Gwanak relocation; wrapped the three new `## Related` blocks in generated markers; and added bidirectional back-links from Education and Universities, the Korean Drama Industry, Hallyu, Chaebol, Park Chung-hee, Seoul, Democratization, and Incheon.
 - sync-seed: regenerated §4 (Content Inventory: 60→63 files) and §5 (Structure Inventory: entry counts and 439-event timeline; Culture & Society leads at sixteen, Economy second at twelve, People third at eleven).
+
+### G1-T24 — 2026-08-26 — Tick 24: Suwon, Kim Young-sam, and the telecommunications industry deepen Geography, People, and Economy
+
+Added three dedicated articles — one giving Geography a tenth topic (the Samsung-and-Hwaseong city), one adding the fourteenth president to People (a twelfth topic that completes the civilian democratic line), and one opening a thirteenth Economy topic on the mobile and broadband sector.
+
+- Created `geography/suwon.md`: encyclopedic article on Suwon — its Gyeongbu-corridor setting and four districts, Hwaseong Fortress (Jeongjo's 1794–1796 model city, Jeong Yakyong's *geojunggi* and the *Uigwe* record, the gates and Haenggung Palace, and UNESCO inscription), the industrial rise under Park Chung-hee, Samsung's Digital City and semiconductor era, transport and universities, the 2002 World Cup and Suwon Samsung Bluewings, and the Joseon-heritage-to-semiconductor identity.
+- Created `people/kim-young-sam.md`: encyclopedic article on Kim Young-sam — his Geoje origins and record nine National Assembly terms, the opposition years under Park and Chun (the 1983 hunger strike), the 1990 three-party merger and 1992 election, the presidency (the Hanahoe purge, the Real-Name Financial Transaction System, the prosecution and pardon of Chun and Roh, *Segyehwa* and OECD accession, and the capital-account liberalization that preceded the 1997 IMF crisis), and his legacy and 2015 death.
+- Created `economy/telecommunications-industry.md`: encyclopedic article on the telecom sector — the SK Telecom/KT/LG U+ operator structure, the 1980s liberalization and CDMA lead, broadband and LTE leadership, the world-first consumer 5G launch and the 6G roadmap, operator profiles and regulation (KCC/MSIT), Samsung as an equipment supplier, the semiconductor and device ecosystem, and the sector's capital, geopolitical, and universal-service challenges.
+- ENHANCE pass corrected facts and converted the three draft `[[wikilink]]` blocks to marker-wrapped, resolved `## Related` links. In the Kim Young-sam article: fixed his first election to the Third National Assembly (1954, not "Second"); reframed the 1969 attack as an acid-throwing incident on his car (not a house bombing); relocated the *Segyehwa* proclamation to Sydney in November 1994 (on the margins of the Bogor APEC summit); renamed the unrecognized "Seocho-Dong scandal" heading and softened the unverified "30 billion won slush-fund admission"; removed Daewoo from the 1997 chaebol-collapse list (its collapse came in 1999) in favor of Hanbo, Sammi, and Kia; noted Roh Tae-woo's reduction to 17 years on appeal; and dropped the two Related links to figures without dedicated articles (Roh Tae-woo, Chun Doo-hwan). In the Suwon article: corrected the rank and population (the largest non-metropolitan city, ~1.19 million — not "ninth-largest, 1.22 million"); removed the false "Hwaseong Sansong" gloss and the "Hwang River" tributary claim (Suwoncheon drains to the Hwanggujicheon); fixed the UNESCO reference number (No. 817, not 816); reattributed the Korean War damage and 1975–1979 restoration to Janganmun (Paldalmun survived as an original); fixed Haenggung Palace's size (576 *kan*, dropping the contradictory "5,765 *kan*"); corrected the 2002 World Cup detail (Suwon hosted the Spain–Ireland round of 16, not a "Spain quarterfinal in Gwangju") and the Bluewings title years (1998, 1999, 2004, 2008); replaced the unverifiable "Suwon International Film Festival" with the Hwaseong Cultural Festival; and corrected the population-growth figures (~170,000 in 1970 to one million around 2002). In the telecommunications article: corrected the LTE launch (SK Telecom and LG U+ in July 2011, KT in January 2012 — not "KT July 2011, SKT September 2011"); dated the SK Telecom rename to 1997; raised the end-2022 5G subscriber figure to ~28 million; reframed the MVNO count (dozens of *altteulpon* operators, not "approximately 15"); corrected the LG U+ bundle (U+tv IPTV plus the acquired LG HelloVision cable network); and softened the peak-capex figure.
+- build-structure: refreshed `geography/index.md` (9→10), `economy/index.md` (12→13), and `people/index.md` (11→12); updated `INDEX.md` (README already listed all three); extended `TIMELINE.md` (439→459 dated events) with twenty new events spanning Hwaseong and Suwon (1794–2002), Kim Young-sam's career (1927–2015), and the telecom sector (1981–2021); wrapped the three new `## Related` blocks in generated markers; and added bidirectional back-links from Semiconductors, Gyeonggi Province, Technology Sector, Banking and Finance, Democratization, and Kim Dae-jung.
+- sync-seed: regenerated §4 (Content Inventory: 63→66 files) and §5 (Structure Inventory: entry counts and 459-event timeline; Culture & Society leads at sixteen, Economy second at thirteen, People third at twelve).
