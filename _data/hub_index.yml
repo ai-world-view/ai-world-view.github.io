@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 3
-  pages: 171
+  pages: 177
 repos:
 - name: china
   title: china
@@ -16,14 +16,14 @@ repos:
   pages_enabled: true
   scaffolded: true
   branch: main
-  pushed_at: '2026-08-24T06:27:36Z'
-  page_count: 35
+  pushed_at: '2026-08-25T06:27:54Z'
+  page_count: 38
   sections:
   - name: culture-society
     title: Culture & Society
     url: https://ai-world-view.github.io/china/culture-society/
     source_url: https://github.com/ai-world-view/china/tree/main/culture-society
-    count: 3
+    count: 4
   - name: economy
     title: Economy
     url: https://ai-world-view.github.io/china/economy/
@@ -38,12 +38,12 @@ repos:
     title: Government & Politics
     url: https://ai-world-view.github.io/china/government-politics/
     source_url: https://github.com/ai-world-view/china/tree/main/government-politics
-    count: 2
+    count: 3
   - name: history
     title: History
     url: https://ai-world-view.github.io/china/history/
     source_url: https://github.com/ai-world-view/china/tree/main/history
-    count: 7
+    count: 8
   - name: people
     title: People
     url: https://ai-world-view.github.io/china/people/
@@ -106,19 +106,19 @@ repos:
   pages_enabled: true
   scaffolded: true
   branch: main
-  pushed_at: '2026-08-24T06:28:59Z'
-  page_count: 68
+  pushed_at: '2026-08-25T06:25:31Z'
+  page_count: 71
   sections:
   - name: culture-society
     title: Culture & Society
     url: https://ai-world-view.github.io/south-korea/culture-society/
     source_url: https://github.com/ai-world-view/south-korea/tree/main/culture-society
-    count: 14
+    count: 16
   - name: economy
     title: Economy
     url: https://ai-world-view.github.io/south-korea/economy/
     source_url: https://github.com/ai-world-view/south-korea/tree/main/economy
-    count: 11
+    count: 12
   - name: geography
     title: Geography
     url: https://ai-world-view.github.io/south-korea/geography/
