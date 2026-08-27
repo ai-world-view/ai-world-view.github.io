@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 3
-  pages: 177
+  pages: 183
 repos:
 - name: china
   title: china
@@ -16,14 +16,14 @@ repos:
   pages_enabled: true
   scaffolded: true
   branch: main
-  pushed_at: '2026-08-25T06:27:54Z'
-  page_count: 38
+  pushed_at: '2026-08-26T06:22:26Z'
+  page_count: 41
   sections:
   - name: culture-society
     title: Culture & Society
     url: https://ai-world-view.github.io/china/culture-society/
     source_url: https://github.com/ai-world-view/china/tree/main/culture-society
-    count: 4
+    count: 5
   - name: economy
     title: Economy
     url: https://ai-world-view.github.io/china/economy/
@@ -43,12 +43,12 @@ repos:
     title: History
     url: https://ai-world-view.github.io/china/history/
     source_url: https://github.com/ai-world-view/china/tree/main/history
-    count: 8
+    count: 9
   - name: people
     title: People
     url: https://ai-world-view.github.io/china/people/
     source_url: https://github.com/ai-world-view/china/tree/main/people
-    count: 9
+    count: 10
   root_pages:
   - title: Timeline
     url: https://ai-world-view.github.io/china/TIMELINE/
@@ -106,8 +106,8 @@ repos:
   pages_enabled: true
   scaffolded: true
   branch: main
-  pushed_at: '2026-08-25T06:25:31Z'
-  page_count: 71
+  pushed_at: '2026-08-26T06:30:24Z'
+  page_count: 74
   sections:
   - name: culture-society
     title: Culture & Society
@@ -118,12 +118,12 @@ repos:
     title: Economy
     url: https://ai-world-view.github.io/south-korea/economy/
     source_url: https://github.com/ai-world-view/south-korea/tree/main/economy
-    count: 12
+    count: 13
   - name: geography
     title: Geography
     url: https://ai-world-view.github.io/south-korea/geography/
     source_url: https://github.com/ai-world-view/south-korea/tree/main/geography
-    count: 9
+    count: 10
   - name: government-politics
     title: Government & Politics
     url: https://ai-world-view.github.io/south-korea/government-politics/
@@ -138,7 +138,7 @@ repos:
     title: People
     url: https://ai-world-view.github.io/south-korea/people/
     source_url: https://github.com/ai-world-view/south-korea/tree/main/people
-    count: 11
+    count: 12
   root_pages:
   - title: Timeline
     url: https://ai-world-view.github.io/south-korea/TIMELINE/
