@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 3
-  ticks: 79
+  ticks: 82
 members:
 - name: china
   repo: ai-world-view/china
@@ -14,33 +14,33 @@ members:
   site_url: https://ai-world-view.github.io/china/
   subject: the country china
   status: growing
-  ticks_logged: 10
-  log_entries: 11
+  ticks_logged: 11
+  log_entries: 12
   generations: 0
-  last_activity: '2026-08-25'
-  last_entry: 'G1-T10 — 2026-08-25 — Tick 10: Sophisticated statecraft across the
-    ages — the Song Dynasty, the National People''s Congress, and Chinese Medicine'
+  last_activity: '2026-08-26'
+  last_entry: 'G1-T11 — 2026-08-26 — Tick 11: Ming sea power, a Mao-era famine, and
+    an ancient classic of change — Zheng He, the Great Leap Forward, and the I Ching'
 - name: japan
   repo: ai-world-view/japan
   url: https://github.com/ai-world-view/japan
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 46
-  log_entries: 61
+  ticks_logged: 47
+  log_entries: 62
   generations: 1
-  last_activity: '2026-08-25'
-  last_entry: 'G1-T46 — 2026-08-25 — Tick 46: re-persisted Hiroshima, Kabuki Theater,
-    and Tanaka Kakuei'
+  last_activity: '2026-08-26'
+  last_entry: 'G1-T47 — 2026-08-26 — Tick 47: added Kabuki Theater, Prefectures &
+    Local Government, and Tanaka Kakuei'
 - name: south-korea
   repo: ai-world-view/south-korea
   url: https://github.com/ai-world-view/south-korea
   site_url: https://ai-world-view.github.io/south-korea/
   subject: the country south korea
   status: growing
-  ticks_logged: 23
-  log_entries: 24
+  ticks_logged: 24
+  log_entries: 25
   generations: 0
-  last_activity: '2026-08-25'
-  last_entry: 'G1-T23 — 2026-08-25 — Tick 23: Korean broadcast television, Seoul National
-    University, and the construction industry deepen Culture & Society and Economy'
+  last_activity: '2026-08-26'
+  last_entry: 'G1-T24 — 2026-08-26 — Tick 24: Suwon, Kim Young-sam, and the telecommunications
+    industry deepen Geography, People, and Economy'
