@@ -71,8 +71,8 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 33 rows.
-- **Dedicated topic files**: 33.
+- **README knowledge table**: 36 rows.
+- **Dedicated topic files**: 36.
   - `culture-society/buddhism-in-china.md` — Buddhism in China
   - `culture-society/chinese-medicine.md` — Chinese Medicine
   - `culture-society/confucianism.md` — Confucianism
@@ -87,6 +87,7 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `government-politics/chinese-civil-war.md` — Chinese Civil War
   - `government-politics/communist-party-china.md` — The Communist Party of China
   - `government-politics/national-peoples-congress.md` — The National People's Congress
+  - `government-politics/tiananmen-square-1989.md` — The 1989 Tiananmen Square Pro-Democracy Movement
   - `history/cultural-revolution.md` — Cultural Revolution
   - `history/the-great-leap-forward.md` — The Great Leap Forward
   - `history/the-han-dynasty.md` — The Han Dynasty
@@ -96,6 +97,8 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `history/the-qing-dynasty.md` — The Qing Dynasty
   - `history/the-song-dynasty.md` — The Song Dynasty
   - `history/the-tang-dynasty.md` — The Tang Dynasty
+  - `history/the-yuan-dynasty.md` — The Yuan Dynasty
+  - `history/warring-states-period.md` — The Warring States Period
   - `people/confucius.md` — Confucius
   - `people/deng-xiaoping.md` — Deng Xiaoping
   - `people/hu-jintao.md` — Hu Jintao
@@ -107,7 +110,7 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `people/zheng-he.md` — Zheng He
   - `people/zhou-enlai.md` — Zhou Enlai
 - **Categories with content**: Culture & Society (5), Economy (3), Geography (3),
-  Government & Politics (3), History (9), People (10).
+  Government & Politics (4), History (11), People (10).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -117,9 +120,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 153 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 167 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 33 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 36 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -405,3 +408,40 @@ Xiaoping, and Economic Reform & Opening-up to the Great Leap Forward; and Confuc
 Medicine, and the Song Dynasty to the I Ching). Verified every cross-reference resolves (0 broken links
 repo-wide). Reconciled `ROADMAP.md` (the three Now items moved to Done as G1-T11) and regenerated seed
 sections 4–5 to match live state (33 topic files, 33 README rows, 153 milestones, no empty categories).
+
+### G1-T12 — 2026-08-27 — Tick 12: Fragmentation, foreign conquest, and a modern watershed — the Warring States Period, the Yuan Dynasty, and the 1989 Tiananmen Square Movement
+
+Added three topics deepening History and Government & Politics and spanning the full arc from
+pre-imperial division through Mongol rule to a contemporary political turning point:
+`history/warring-states-period.md` (the 475–221 BCE era of the seven contending states — mass infantry
+warfare, the crossbow and cavalry, *The Art of War*, the Hundred Schools of Thought and the Jixia
+Academy, Shang Yang's Legalist reforms in Qin, the Battle of Changping, and the Qin conquests that
+ended the fragmentation), `history/the-yuan-dynasty.md` (the Mongol dynasty of 1271–1368 — Kublai
+Khan's founding and capital at Dadu, the four-tier social hierarchy and dual administration, paper
+money, the *Pax Mongolica* and Marco Polo, the failed invasions of Japan, Yuan drama and Zhao Mengfu,
+and the floods, plague, and Red Turban Rebellion that brought the Ming restoration), and
+`government-politics/tiananmen-square-1989.md` (the April–June 1989 pro-democracy movement — Hu
+Yaobang's death as catalyst, the hunger strike and Gorbachev's visit, the leadership split between
+Zhao Ziyang and the hardliners, martial law and the June 3–4 military crackdown, the disputed
+casualty toll, and the aftermath from Zhao's house arrest to Deng's Southern Tour and the enduring
+censorship), each with `title`/`date`/`category` front matter (single ISO dates), Summary, thematic
+sections, a `crossrefs`-wrapped Related block, and Sources. History now holds eleven topics and
+Government & Politics four; all six categories remain populated. Polished the new prose for
+encyclopedic neutral tone and fixed the three new files' Related blocks — removed three links to
+non-existent articles (a Zhao-Ziyang link mislabeled onto Hu Jintao, a Kublai-Khan link mislabeled
+onto Zheng He, and a Legalism link duplicating Confucianism), repointing them to real targets
+(Confucius) and normalizing the Yuan block's relative paths to bare same-directory filenames.
+Refreshed the structural layer: inserted the Warring States (before Qin) and Yuan (between Song and
+Ming) rows into the History category index and INDEX, and Tiananmen into the Government & Politics
+index and INDEX; extended `TIMELINE.md` from 153 to 167 dated milestones (the Warring States'
+475 BCE start, the 453 BCE partition of Jin, Shang Yang's 359 BCE reforms, Maling 341 BCE, King
+Wuling's cavalry 307 BCE, Changping 260 BCE, and the Zhou house's 256 BCE end; the Yuan's 1234
+Jin conquest, 1271 founding, the 1274 and 1281 Japan invasions, Kublai's 1294 death, and the 1351
+Red Turban Rebellion; and the 1989 death of Hu Yaobang and the June 3–4 crackdown), repointing the
+existing 1989 suppression milestone from Deng Xiaoping to the dedicated Tiananmen article; and wove
+reciprocal cross-references from seven existing articles (the Qin Dynasty and Qin Shi Huang to the
+Warring States; the Song and Ming dynasties to the Yuan; and Deng Xiaoping, the Communist Party, and
+Jiang Zemin to Tiananmen). Verified every cross-reference resolves (0 broken links repo-wide).
+Reconciled `ROADMAP.md` (the three Now items moved to Done as G1-T12; Sui Dynasty, Boxer Rebellion,
+and the Long March promoted from Backlog to Now) and regenerated seed sections 4–5 to match live
+state (36 topic files, 36 README rows, 167 milestones, no empty categories).
