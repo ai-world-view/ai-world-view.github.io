@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (66):
+`INDEX.md`). Dedicated topic files (69):
 
 | Category | File | Topic |
 |---|---|---|
@@ -101,6 +101,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Geography | `geography/gwangju.md` | Gwangju — the largest city of the southwestern Honam region; the 1929 Student Independence Movement and the 1980 Gwangju Uprising, its progressive political identity, Kia/GGM auto manufacturing, and the Gwangju Biennale and Asia Culture Center |
 | Geography | `geography/daejeon.md` | Daejeon — central science city and national transport nexus; the Daedeok Innopolis research complex and KAIST, the 1950 Battle of Taejon, Expo '93, and the Daejeon–Sejong government–science axis |
 | Geography | `geography/suwon.md` | Suwon — capital of Gyeonggi Province and the largest non-metropolitan city; Samsung's Digital City R&D complex, the UNESCO-listed Hwaseong Fortress, and the city's Joseon-heritage-to-semiconductor arc |
+| Geography | `geography/gangwon-province.md` | Gangwon Province — the mountainous northeastern province; the Taebaek range and Yeongseo/Yeongdong divide, the 2018 PyeongChang Winter Olympics, the Soyang hydroelectric cascade and Taebaek coal legacy, Kangwon Land casino, the DMZ frontier, and the 2023 Special Autonomous Province status |
 | History | `history/three-kingdoms-period.md` | Three Kingdoms period (Goguryeo, Baekje, Silla) and Silla's unification |
 | History | `history/goryeo-period.md` | Goryeo period (918–1392) — medieval kingdom, celadon, the Tripitaka Koreana, and metal movable type |
 | History | `history/joseon-dynasty.md` | Joseon dynasty (1392–1910) — Korea's longest kingdom, Neo-Confucian statecraft, Hangul, the gwageo order, and the Imjin and Manchu invasions |
@@ -129,6 +130,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Economy | `economy/naver.md` | Naver — Korea's largest internet company and search portal; the comprehensive-search model, Knowledge iN and Café, the webtoon and Wattpad content strategy, the LINE/LY Corporation Japan business, the Naver–Kakao duopoly, and HyperCLOVA X AI |
 | Economy | `economy/construction-industry.md` | Construction industry and real estate development — the third industrial pillar; post-war reconstruction and developmental-state megaprojects, the Middle East and second overseas-contract waves, apartment urbanism and the jeonse housing system, the speculative real-estate cycle, and 2020s labor, safety, and project-finance challenges |
 | Economy | `economy/telecommunications-industry.md` | Telecommunications industry — the SK Telecom/KT/LG U+ operator market and Samsung network equipment; 1980s liberalization and CDMA, the world-first consumer 5G launch, the enterprise segment, and the 6G roadmap |
+| Economy | `economy/pharmaceutical-biotech-industry.md` | Pharmaceutical and biotech industry — the pivot from generics to innovative biopharma; Samsung Biologics' CDMO leadership, the Celltrion and Samsung Bioepis biosimilars, SK Bioscience vaccines, the Songdo and Osong clusters, MFDS regulation and clinical-trial capacity, and the biosimilar-led export surge |
 | Culture & Society | `culture-society/hallyu.md` | Hallyu — the Korean Wave |
 | Culture & Society | `culture-society/korean-cuisine.md` | Korean cuisine and food culture |
 | Culture & Society | `culture-society/religion-and-buddhism.md` | Religion and Buddhism — Buddhism, Confucianism, Christianity, shamanism, new religious movements, and the contemporary religious landscape |
@@ -157,10 +159,11 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/sejong-the-great.md` | Sejong the Great (r. 1418–1450) — Joseon's fourth king; the creation of Hangul and the *Hunminjeongeum*, the Hall of Worthies, Jang Yeong-sil's inventions, calendar and tax reform, and the northern frontier expansion |
 | People | `people/syngman-rhee.md` | Syngman Rhee (1875–1965) — the founding and longest-serving president (1948–1960); the independence-era exile and Provisional Government, the anti-communist founding state, the Korean War presidency, constitutional manipulation and electoral fraud, and the 1960 April Revolution that ousted him |
 | People | `people/kim-young-sam.md` | Kim Young-sam — the fourteenth president (1993–1998); the first civilian head of state in three decades, the three-party merger, the Hanahoe purge, the prosecution of Chun and Roh, the Real-Name Financial Transaction System, OECD accession, and the 1997 IMF crisis |
+| People | `people/roh-tae-woo.md` | Roh Tae-woo — the thirteenth president (1988–1993); the Hanahoe and the December 1979 coup, Gwangju command responsibility, the June 29 Declaration and 1987 election, the Sixth Republic, Nordpolitik and UN entry, the 1988 Seoul Olympics, the three-party merger, and the slush-fund conviction and pardon |
 
 Every taxonomy category holds at least six dedicated topics; Culture & Society is the largest
-(sixteen topics), followed by Economy (thirteen), People (twelve), Geography (ten), History (nine),
-and Government & Politics (six).
+(sixteen topics), followed by Economy (fourteen), People (thirteen), Geography (eleven), History
+(nine), and Government & Politics (six).
 
 ## Section 5 — Structure Inventory
 
@@ -168,15 +171,15 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 
 | Artifact | State |
 |---|---|
-| `geography/index.md` | Present — 10 entries |
+| `geography/index.md` | Present — 11 entries |
 | `history/index.md` | Present — 9 entries |
 | `government-politics/index.md` | Present — 6 entries |
-| `economy/index.md` | Present — 13 entries |
+| `economy/index.md` | Present — 14 entries |
 | `culture-society/index.md` | Present — 16 entries |
-| `people/index.md` | Present — 12 entries |
-| `TIMELINE.md` | Present — 459 dated events across all sixty-six articles |
+| `people/index.md` | Present — 13 entries |
+| `TIMELINE.md` | Present — 472 dated events across all sixty-nine articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all sixty-six topic articles |
+| Cross-references (`## Related`) | Present in all sixty-nine topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -458,3 +461,14 @@ Added three dedicated articles — one giving Geography a tenth topic (the Samsu
 - ENHANCE pass corrected facts and converted the three draft `[[wikilink]]` blocks to marker-wrapped, resolved `## Related` links. In the Kim Young-sam article: fixed his first election to the Third National Assembly (1954, not "Second"); reframed the 1969 attack as an acid-throwing incident on his car (not a house bombing); relocated the *Segyehwa* proclamation to Sydney in November 1994 (on the margins of the Bogor APEC summit); renamed the unrecognized "Seocho-Dong scandal" heading and softened the unverified "30 billion won slush-fund admission"; removed Daewoo from the 1997 chaebol-collapse list (its collapse came in 1999) in favor of Hanbo, Sammi, and Kia; noted Roh Tae-woo's reduction to 17 years on appeal; and dropped the two Related links to figures without dedicated articles (Roh Tae-woo, Chun Doo-hwan). In the Suwon article: corrected the rank and population (the largest non-metropolitan city, ~1.19 million — not "ninth-largest, 1.22 million"); removed the false "Hwaseong Sansong" gloss and the "Hwang River" tributary claim (Suwoncheon drains to the Hwanggujicheon); fixed the UNESCO reference number (No. 817, not 816); reattributed the Korean War damage and 1975–1979 restoration to Janganmun (Paldalmun survived as an original); fixed Haenggung Palace's size (576 *kan*, dropping the contradictory "5,765 *kan*"); corrected the 2002 World Cup detail (Suwon hosted the Spain–Ireland round of 16, not a "Spain quarterfinal in Gwangju") and the Bluewings title years (1998, 1999, 2004, 2008); replaced the unverifiable "Suwon International Film Festival" with the Hwaseong Cultural Festival; and corrected the population-growth figures (~170,000 in 1970 to one million around 2002). In the telecommunications article: corrected the LTE launch (SK Telecom and LG U+ in July 2011, KT in January 2012 — not "KT July 2011, SKT September 2011"); dated the SK Telecom rename to 1997; raised the end-2022 5G subscriber figure to ~28 million; reframed the MVNO count (dozens of *altteulpon* operators, not "approximately 15"); corrected the LG U+ bundle (U+tv IPTV plus the acquired LG HelloVision cable network); and softened the peak-capex figure.
 - build-structure: refreshed `geography/index.md` (9→10), `economy/index.md` (12→13), and `people/index.md` (11→12); updated `INDEX.md` (README already listed all three); extended `TIMELINE.md` (439→459 dated events) with twenty new events spanning Hwaseong and Suwon (1794–2002), Kim Young-sam's career (1927–2015), and the telecom sector (1981–2021); wrapped the three new `## Related` blocks in generated markers; and added bidirectional back-links from Semiconductors, Gyeonggi Province, Technology Sector, Banking and Finance, Democratization, and Kim Dae-jung.
 - sync-seed: regenerated §4 (Content Inventory: 63→66 files) and §5 (Structure Inventory: entry counts and 459-event timeline; Culture & Society leads at sixteen, Economy second at thirteen, People third at twelve).
+
+### G1-T25 — 2026-08-27 — Tick 25: Roh Tae-woo, Gangwon Province, and the pharmaceutical and biotech industry deepen People, Geography, and Economy
+
+Added three dedicated articles — one giving People a thirteenth topic (the thirteenth president, completing the presidential arc from the June Democratic Struggle into the early consolidation years), one adding an eleventh Geography topic (the mountainous northeastern province and 2018 Olympic host), and one opening a fourteenth Economy topic on the life-sciences sector.
+
+- Created `people/roh-tae-woo.md`: encyclopedic article on Roh Tae-woo (1932–2021) — his Daegu-area origins and Korean Military Academy 11th class alongside Chun Doo-hwan, the Hanahoe network, the December 12, 1979 coup and Gwangju command responsibility, the June Democratic Struggle and the June 29, 1987 Declaration, the split-opposition 1987 election and the Sixth Republic, the 1988 Seoul Olympics, the Nordpolitik opening (Soviet, Chinese, and Eastern-bloc normalization; the 1991 UN dual entry and Basic Agreement), the three-party merger, and his 1995–1997 slush-fund and coup convictions, pardon, and contested legacy.
+- Created `geography/gangwon-province.md`: encyclopedic article on Gangwon Province — the Taebaek range and the Yeongseo/Yeongdong divide, the climate and cities (Chuncheon, Wonju, Gangneung, Sokcho, Taebaek), forestry and the Soyang/Hwacheon hydroelectric cascade, the Taebaek anthracite legacy and Kangwon Land casino, the 2018 PyeongChang Winter Olympics (venues, the Gyeonggang high-speed rail, the inter-Korean diplomatic opening, and the Gariwangsan and post-Olympic legacy debates), the ski-and-food tourism economy and Wonju medical-device cluster, the DMZ frontier, and the 2023 Special Autonomous Province status.
+- Created `economy/pharmaceutical-biotech-industry.md`: encyclopedic article on the pharmaceutical and biotech sector — the traditional-pharma history and the 2000s biotech pivot, government bio-cluster and R&D policy, the major players (Yuhan and Hanmi licensing deals, Samsung Biologics' CDMO leadership and Samsung Bioepis and Celltrion biosimilars, SK Bioscience vaccines, Medytox/Hugel neurotoxins), therapeutic strengths, the Songdo/Osong/Daedeok clusters and talent pipeline, the MFDS framework and clinical-trial capacity, the biosimilar-led export surge, and pricing, IP, and venture-ecosystem challenges.
+- ENHANCE pass corrected facts, converted the three draft `[[wikilink]]` blocks to marker-wrapped, resolved `## Related` links, and stripped stray inline `[[wikilinks]]` from the article bodies to match the repo's plain-prose convention. In the Roh Tae-woo article: fixed his 1979 command to the 9th Infantry Division (백마부대) — resolving an internal inconsistency with an earlier "9th Special Forces Brigade" — and clarified that during the December 12 coup he pulled that frontline division off the DMZ into Seoul without authorization (not a "9th Division of the Capital Defense Command"). In the Gangwon Province article: corrected the area claim (the second-largest province by area, ~16,830 km², after North Gyeongsang — not "the largest"); fixed the recurring romanization Yeongseong → Yeongseo (영서) throughout; removed a self-contradictory sentence about the administrative seat being "relocated from Chuncheon to Chuncheon" (Chuncheon remained the provincial seat); corrected the July 6, 2011 IOC vote (Pyeongchang won on the first ballot in its third consecutive bid, after losing the 2010 and 2014 votes — not "on the third ballot"); changed the Gyeonggang Line's stated origin from "Seongnam" to Seoul; and fixed a garbled hangul typo (초당순두bu → 초당순두부). In the pharmaceutical article: corrected Celltrion's founding year to 2002 (not 2000).
+- build-structure: refreshed `people/index.md` (12→13), `geography/index.md` (10→11), and `economy/index.md` (13→14); updated `INDEX.md` and `README.md`; extended `TIMELINE.md` (459→472 dated events) with thirteen new events spanning Roh Tae-woo's Nordpolitik and presidency (1990–1992, 2021), Gangwon (the 1973 Soyang Dam, the 2011 Olympic bid, the 2017 Gyeonggang rail, and the 2023 autonomy status), and the biotech sector (Samsung Biologics' 2011 founding, Celltrion's 2013 CT-P13 approval, the 2018 Yuhan–Janssen deal, and the 2022 SKYCovione approval); and wrapped the three new `## Related` blocks in generated markers with back-links to Democratization, the Gwangju Uprising, Nordpolitik, the Olympics, the DMZ, the Songdo and Daedeok clusters, and the chaebol.
+- sync-seed: regenerated §4 (Content Inventory: 66→69 files) and §5 (Structure Inventory: entry counts and 472-event timeline; Culture & Society leads at sixteen, Economy second at fourteen, People third at thirteen).
