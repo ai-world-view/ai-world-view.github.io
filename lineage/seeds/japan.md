@@ -112,7 +112,6 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `geography/major-islands.md` — Major Islands
   - `geography/mount-fuji.md` — Mount Fuji
   - `geography/noto-peninsula.md` — Noto Peninsula
-  - `geography/okinawa-ryukyu.md` — Okinawa & Ryukyu Islands
   - `geography/osaka.md` — Osaka
   - `geography/shikoku.md` — Shikoku
   - `geography/tokyo.md` — Tokyo
@@ -127,6 +126,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `history/sengoku-period.md` — Sengoku Period
   - `history/taisho-period.md` — Taisho Period
   - `history/world-war-ii.md` — World War II
+  - `government-politics/article-nine-debates.md` — Article 9 Debates and Constitutional Amendment Movements
   - `government-politics/diet-of-japan.md` — Diet of Japan
   - `government-politics/imperial-household.md` — The Imperial Household
   - `government-politics/imperial-succession.md` — Imperial Succession
@@ -134,6 +134,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `government-politics/ministry-economy-trade-industry.md` — Ministry of Economy, Trade and Industry (METI)
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
   - `government-politics/supreme-court.md` — Supreme Court of Japan
+  - `economy/automobile-industry.md` — Japanese Automobile Industry
   - `economy/bank-of-japan.md` — Bank of Japan
   - `economy/bubble-economy.md` — 1980s Bubble Economy
   - `economy/financial-sector-regulation.md` — Financial Sector Regulation
@@ -145,6 +146,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
+  - `culture-society/manga-comic-culture.md` — Manga & Comic Culture
   - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
   - `culture-society/noh-theater.md` — Noh Theater
@@ -163,12 +165,10 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/minamoto-no-yoritomo.md` — Minamoto no Yoritomo
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/nitobe-inazou.md` — Nitobe Inazō
-  - `people/oda-nobunaga.md` — Oda Nobunaga
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
-  - `people/toyotomi-hideyoshi.md` — Toyotomi Hideyoshi
   - `people/yoshida-shoin.md` — Yoshida Shoin
   - `people/yukio-mishima.md` — Yukio Mishima
-- **Categories with content**: People (14), Culture & Society (12), History (11), Geography (11), Economy (8), Government & Politics (7) — all six categories populated; People leads with fourteen topics, followed by Culture & Society with twelve, History and Geography with eleven each, Economy with eight, and Government & Politics with seven.
+- **Categories with content**: Culture & Society (13), People (12), History (11), Geography (10), Economy (9), Government & Politics (8) — all six categories populated; Culture & Society leads with thirteen topics, followed by People with twelve, History with eleven, Geography with ten, Economy with nine, and Government & Politics with eight.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -177,7 +177,7 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (People lists fourteen topics; Culture & Society twelve; History and Geography eleven each; Economy eight; Government & Politics seven).
+  (Culture & Society lists thirteen topics; People twelve; History eleven; Geography ten; Economy nine; Government & Politics eight).
 - **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
 - **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
 - **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
@@ -619,3 +619,12 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: converted every `[[wikilink]]` cross-reference in the three new files — inline and in `## Related` — into relative-Markdown links (first-mention inline links, plain text on repeats), and wrapped each `## Related` block in the canonical `BEGIN/END GENERATED: crossrefs` markers. Normalized the three front-matter `date:` fields from the creation day `2026-08-27` to topic-relevant single plain ISO dates per the repo convention: Oda Nobunaga `1534-06-23` (birth), Toyotomi Hideyoshi `1537-02-02` (birth), Okinawa & Ryukyu Islands `1879-04-04` (establishment of Okinawa Prefecture). Corrected one factual error from the model's own knowledge: in `okinawa-ryukyu.md`, the UNESCO "Gusuku Sites and Related Properties of the Kingdom of Ryukyu" was described as "Shuri Castle and nine other sites" (ten) — corrected to a serial property of nine component sites including Shuri Castle. Verified the unifiers' dates and campaigns (Okehazama 1560-06-12, Nagashino 1575-06-28, Honnō-ji 1582-06-21, Yamazaki 1582-07-02, Odawara 1590, Korean campaigns 1592–1598, Hideyoshi's death 1598-09-18) and Okinawa's chronology (Ryukyu unification 1429, Satsuma invasion 1609, Ryukyu Disposal 1879, Battle of Okinawa 1945, reversion 1972-05-15); a repository-wide check confirmed every internal Markdown link resolves.
 - **Structure** (`build-structure`): added the three topics to their category indices (`geography/index.md`, `people/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` and re-homed the era- and Major-Islands-linked rows to the new dedicated articles — Nobunaga's 1534 birth, 1568 entry into Kyoto, 1571 Enryaku-ji, 1575 Nagashino, 1576 Azuchi Castle, and 1582 Honnō-ji; Hideyoshi's 1537 birth, 1582 Yamazaki, 1587 Kyushu campaign and Bateren edict, 1588 Sword Hunt, 1590 Odawara, the 1592–1598 Korean invasions, and his 1598 death; and Okinawa's 1429 Ryukyu unification, 1609 Satsuma invasion, 1879 Ryukyu Disposal, the 1945 Battle of Okinawa, and the 1972 reversion. Made cross-references bidirectional with back-links from `sengoku-period.md`, `azuchi-momoyama-period.md`, `tokugawa-ieyasu.md`, and `samurai-bushido.md` (Oda Nobunaga and Toyotomi Hideyoshi); `osaka.md`, `tea-ceremony.md`, and `edo-period.md` (Toyotomi Hideyoshi); and `kyushu.md`, `world-war-ii.md`, and `meiji-restoration.md` (Okinawa & Ryukyu Islands).
 - **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — dropped the never-persisted phantoms `culture-society/kabuki-theater.md`, `government-politics/prefectures-local-government.md`, and `people/tanaka-kakuei.md` from the inventory, added the three real new files, and corrected the per-category counts to **People fourteen, Culture & Society twelve, History and Geography eleven each, Economy eight, Government & Politics seven** (63 topic files / 63 README rows) in both §4 and §5. Left §1–3 and §6–7 unchanged.
+
+### G1-T49 — 2026-08-28 — Tick 49: added Manga & Comic Culture, the Japanese Automobile Industry, and the Article 9 Debates
+
+- **Reconciliation**: as in the two prior ticks, the working tree that reached this tick held the 60 committed topic files, not the 63 the staged seed's §4/§5 described — the G1-T48 trio recorded as delivered (`people/oda-nobunaga.md`, `people/toyotomi-hideyoshi.md`, `geography/okinawa-ryukyu.md`) had never reached `main` and was absent from the tree, README, and indices. This tick's content pass added a fresh, coherent trio spanning three under-built categories (`culture-society/manga-comic-culture.md`, `economy/automobile-industry.md`, `government-politics/article-nine-debates.md`), and the enhance pass rebuilt §4/§5 to mirror the true 63-file tree rather than the phantom inventory.
+- **Content added** (3 dedicated topic files): `culture-society/manga-comic-culture.md` (Japan's sequential-art comics tradition — from Kitazawa Rakuten's newspaper strips and wartime propaganda through Osamu Tezuka's cinematic postwar revolution and *Astro Boy*, the shōnen/shōjo/seinen segmentation, the *Weekly Shōnen Jump* golden age and the global blockbusters *One Piece*, *Naruto*, *Attack on Titan*, and *Demon Slayer*, doujinshi and Comiket, gekiga and alternative manga, the magazine-serialization production system, the digital transition and piracy, and worldwide export and soft power), `economy/automobile-industry.md` (Japan's flagship manufacturing sector — the prewar founding of Nissan and Toyota, MITI's postwar developmental strategy, the Toyota Production System and lean/JIT/*kaizen* manufacturing, the 1970s oil-shock export boom, 1980s trade frictions and transplant factories, Lexus/Acura/Infiniti quality dominance, the Renault–Nissan alliance and the Ghosn affair, Prius hybrid leadership, and the 21st-century electrification and Chinese-competition challenge), and `government-politics/article-nine-debates.md` (the seven-decade controversy over the pacifist Article 9 — the Self-Defense Forces and constitutional reinterpretation, the *Sunakawa* case, the Three Non-Nuclear Principles, the Yoshida Doctrine, the 1960 Anpo protests, the 1992 PKO law, Abe's 2014 collective-self-defense reinterpretation and the 2015 security bills, the amendment debate, and Kishida's 2022 counterstrike and defense-spending shift). Culture & Society now holds thirteen topics, Economy nine, and Government & Politics eight.
+- **README**: knowledge table expanded from 60 to 63 rows, adding the Manga & Comic Culture, Japanese Automobile Industry, and Article 9 Debates rows (the staged table had carried only the 60 committed rows, not the phantom trio's).
+- **Enhance pass**: corrected several factual errors from the model's own knowledge. In `manga-comic-culture.md`: fixed the founding cartoonist's name from "Rakuten Kitazaki" to **Kitazawa Rakuten** (family name Kitazawa); corrected *Astro Boy*'s serialization venue from the nonexistent "Shōnen Astro" to Kobunsha's *Shōnen* magazine; fixed the *Doraemon* creator from "Fujio Fujiko" to **Fujiko F. Fujio**; corrected *Nakayoshi*'s founding to **1954** and *Ribon*'s to 1955; removed the fabricated co-author "Osamu Yamazaki" from *Kaze to Ki no Uta* (Keiko Takemiya alone); reassigned *Morning* and *Afternoon* to **Kodansha** (the draft had placed *Morning* at Shogakukan); corrected the gekiga pioneer "Yoshihiro Tatsuta" to **Yoshihiro Tatsumi**; untangled a garbled passage that had equated *kamishibai* with American comic books; and fixed the "Ultraman as giant robot" description and a "commissoned" typo. In `automobile-industry.md`: corrected the **Lexus launch from 1986 to 1989** (the LS 400 debut); replaced the erroneous 1960s "Renault technology to Nissan" licensing with the actual **Austin (1950s)** license (with Hino–Renault and Isuzu–Hillman arrangements); removed the spurious "Daimler-Benz" from the MITI-supported domestic makers (replaced with Mazda); and normalized "Toyota Kiichiro" to **Toyoda Kiichiro**. In `article-nine-debates.md`: corrected the "1999 Nye Report" to the **1995 Nye Initiative** (the Pentagon's *East Asia Strategy Report*); and de-linked two mislabeled cross-references (the Korean War and Gulf War links that pointed at the World War II article, neither having a dedicated file). All three new files carry single plain ISO front-matter `date:` fields (`1868-01-01`, `1868-01-01`, `1947-01-01`); a repository-wide check confirmed every internal Markdown link resolves.
+- **Structure** (`build-structure`): added the three topics to their category indices (`culture-society/index.md`, `economy/index.md`, `government-politics/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — Kitazawa's 1902 *Jiji Manga*, the 1907 Takuri, Toyota's 1937 founding, Tezuka's 1952 *Astro Boy*, the 1966 Corolla, the 1968 *Weekly Shōnen Jump*, the 1975 Comiket, Honda's 1982 Ohio plant, the 1989 Lexus, the 1992 PKO law, the 1994 *Jump* circulation peak, the 1997 *One Piece* debut and Prius launch, the 1999 Renault–Nissan alliance, Toyota's 2008 overtaking of GM, the 2020 digital-manga milestone, and the 2022 counterstrike documents. Made cross-references bidirectional with back-links from `modern-cinema-anime.md` (Manga & Comic Culture), `technology-manufacturing.md` (Japanese Automobile Industry), and `postwar-constitution.md`, `supreme-court.md`, and `abe-shinzo.md` (Article 9 Debates).
+- **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — dropped the never-persisted phantoms `geography/okinawa-ryukyu.md`, `people/oda-nobunaga.md`, and `people/toyotomi-hideyoshi.md` from the inventory, added the three real new files, and corrected the per-category counts to **Culture & Society thirteen, People twelve, History eleven, Geography ten, Economy nine, Government & Politics eight** (63 topic files / 63 README rows) in both §4 and §5. Left §1–3 and §6–7 unchanged.
