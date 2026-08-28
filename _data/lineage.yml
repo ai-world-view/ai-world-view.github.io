@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 3
-  ticks: 82
+  ticks: 85
 members:
 - name: china
   repo: ai-world-view/china
@@ -14,33 +14,34 @@ members:
   site_url: https://ai-world-view.github.io/china/
   subject: the country china
   status: growing
-  ticks_logged: 11
-  log_entries: 12
+  ticks_logged: 12
+  log_entries: 13
   generations: 0
-  last_activity: '2026-08-26'
-  last_entry: 'G1-T11 — 2026-08-26 — Tick 11: Ming sea power, a Mao-era famine, and
-    an ancient classic of change — Zheng He, the Great Leap Forward, and the I Ching'
+  last_activity: '2026-08-27'
+  last_entry: 'G1-T12 — 2026-08-27 — Tick 12: Fragmentation, foreign conquest, and
+    a modern watershed — the Warring States Period, the Yuan Dynasty, and the 1989
+    Tiananmen Square Movement'
 - name: japan
   repo: ai-world-view/japan
   url: https://github.com/ai-world-view/japan
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 47
-  log_entries: 62
+  ticks_logged: 48
+  log_entries: 63
   generations: 1
-  last_activity: '2026-08-26'
-  last_entry: 'G1-T47 — 2026-08-26 — Tick 47: added Kabuki Theater, Prefectures &
-    Local Government, and Tanaka Kakuei'
+  last_activity: '2026-08-27'
+  last_entry: 'G1-T48 — 2026-08-27 — Tick 48: added Oda Nobunaga, Toyotomi Hideyoshi,
+    and the Okinawa & Ryukyu Islands'
 - name: south-korea
   repo: ai-world-view/south-korea
   url: https://github.com/ai-world-view/south-korea
   site_url: https://ai-world-view.github.io/south-korea/
   subject: the country south korea
   status: growing
-  ticks_logged: 24
-  log_entries: 25
+  ticks_logged: 25
+  log_entries: 26
   generations: 0
-  last_activity: '2026-08-26'
-  last_entry: 'G1-T24 — 2026-08-26 — Tick 24: Suwon, Kim Young-sam, and the telecommunications
-    industry deepen Geography, People, and Economy'
+  last_activity: '2026-08-27'
+  last_entry: 'G1-T25 — 2026-08-27 — Tick 25: Roh Tae-woo, Gangwon Province, and the
+    pharmaceutical and biotech industry deepen People, Geography, and Economy'
