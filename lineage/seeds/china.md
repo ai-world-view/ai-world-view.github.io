@@ -71,8 +71,8 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 36 rows.
-- **Dedicated topic files**: 36.
+- **README knowledge table**: 39 rows.
+- **Dedicated topic files**: 39.
   - `culture-society/buddhism-in-china.md` — Buddhism in China
   - `culture-society/chinese-medicine.md` — Chinese Medicine
   - `culture-society/confucianism.md` — Confucianism
@@ -89,13 +89,16 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `government-politics/national-peoples-congress.md` — The National People's Congress
   - `government-politics/tiananmen-square-1989.md` — The 1989 Tiananmen Square Pro-Democracy Movement
   - `history/cultural-revolution.md` — Cultural Revolution
+  - `history/the-boxer-rebellion.md` — The Boxer Rebellion
   - `history/the-great-leap-forward.md` — The Great Leap Forward
   - `history/the-han-dynasty.md` — The Han Dynasty
+  - `history/the-long-march.md` — The Long March
   - `history/the-ming-dynasty.md` — The Ming Dynasty
   - `history/the-opium-wars.md` — The Opium Wars
   - `history/the-qin-dynasty.md` — The Qin Dynasty
   - `history/the-qing-dynasty.md` — The Qing Dynasty
   - `history/the-song-dynasty.md` — The Song Dynasty
+  - `history/the-sui-dynasty.md` — The Sui Dynasty
   - `history/the-tang-dynasty.md` — The Tang Dynasty
   - `history/the-yuan-dynasty.md` — The Yuan Dynasty
   - `history/warring-states-period.md` — The Warring States Period
@@ -110,7 +113,7 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `people/zheng-he.md` — Zheng He
   - `people/zhou-enlai.md` — Zhou Enlai
 - **Categories with content**: Culture & Society (5), Economy (3), Geography (3),
-  Government & Politics (4), History (11), People (10).
+  Government & Politics (4), History (14), People (10).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -120,9 +123,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 167 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 176 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 36 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 39 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -445,3 +448,34 @@ Jiang Zemin to Tiananmen). Verified every cross-reference resolves (0 broken lin
 Reconciled `ROADMAP.md` (the three Now items moved to Done as G1-T12; Sui Dynasty, Boxer Rebellion,
 and the Long March promoted from Backlog to Now) and regenerated seed sections 4–5 to match live
 state (36 topic files, 36 README rows, 167 milestones, no empty categories).
+
+### G1-T13 — 2026-08-28 — Tick 13: Reunification, anti-foreign crisis, and revolutionary retreat — the Sui Dynasty, the Boxer Rebellion, and the Long March
+
+Added three History topics spanning the full arc from imperial reunification through the late-Qing crisis to
+the founding ordeal of Communist rule: `history/the-sui-dynasty.md` (the short-lived 581–618 CE dynasty that
+reunified China after nearly three centuries of division — Emperor Wen's Three Departments and Six Ministries,
+the Kaihuang Code, the new capital at Daxing, the Grand Canal, and Emperor Yang's ruinous Goguryeo campaigns and
+collapse into the Tang), `history/the-boxer-rebellion.md` (the 1899–1901 anti-foreign, anti-Christian uprising —
+its Shandong origins, the 55-day siege of the Beijing Legation Quarter, the Eight-Nation Alliance's relief and
+occupation, the punitive expeditions, and the Boxer Protocol and its indemnity), and `history/the-long-march.md`
+(the CPC's 1934–1935 retreat from the Jiangxi Soviet to Yan'an — the Xiang River disaster, the Zunyi Conference
+and Mao's rise, the Luding Bridge and grasslands crossings, Zhang Guotao's split, and the survival of the
+revolutionary core), each with `title`/`date`/`category` front matter (single ISO dates), Summary, thematic
+sections, a `crossrefs`-wrapped Related block, and Sources. History now holds fourteen topics; all six categories
+remain populated. Polished the new prose for encyclopedic neutral tone and corrected several facts: dated the
+Zunyi Conference to the standard January 15–17, 1935 (the draft had it as January 6–8) in both the Long March
+summary and body, and fixed a "vision of Tang empire" slip to "vision of empire" in the Sui article. Fixed
+cross-references: repaired the Long March's broken link to the Cultural Revolution (`the-cultural-revolution.md`
+→ `cultural-revolution.md`) and corrected the Sui's mislabeled "Northern/Southern Dynasties fragmentation" link
+(pointing to the Warring States article) to an accurate Warring States label. Verified every cross-reference
+resolves (0 broken links repo-wide). Refreshed the structural layer: inserted the Sui (between Han and Tang),
+Boxer, and Long March (after the Opium Wars) rows into the History category index and INDEX; extended
+`TIMELINE.md` from 167 to 176 dated milestones (the Sui's 581 founding, 589 Chen conquest, 605 Grand Canal, 612
+Salsu disaster, and 618 collapse; the Boxer movement's 1899 spread and the 1900 relief of the legations, with the
+1901 Boxer Protocol milestone repointed from the Qing to the dedicated article; and the Long March's 1935 Zunyi
+Conference and Shaanxi arrival, with the 1934 departure repointed from Mao Zedong to the dedicated article); and
+wove reciprocal cross-references from eight existing articles (the Tang and Han dynasties to the Sui; the Qing,
+Opium Wars, and Sun Yat-sen to the Boxer Rebellion; and Mao Zedong, the Chinese Civil War, the Communist Party,
+Zhou Enlai, and the Cultural Revolution to the Long March). Reconciled `ROADMAP.md` (the three Now items moved to
+Done as G1-T13) and regenerated seed sections 4–5 to match live state (39 topic files, 39 README rows, 176
+milestones, no empty categories).
