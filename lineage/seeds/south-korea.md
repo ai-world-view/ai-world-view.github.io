@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (72):
+`INDEX.md`). Dedicated topic files (75):
 
 | Category | File | Topic |
 |---|---|---|
@@ -103,7 +103,9 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Geography | `geography/suwon.md` | Suwon — capital of Gyeonggi Province and the largest non-metropolitan city; Samsung's Digital City R&D complex, the UNESCO-listed Hwaseong Fortress, and the city's Joseon-heritage-to-semiconductor arc |
 | Geography | `geography/gangwon-province.md` | Gangwon Province — the mountainous northeastern province; the Taebaek range and Yeongseo/Yeongdong divide, the 2018 PyeongChang Winter Olympics, the Soyang hydroelectric cascade and Taebaek coal legacy, Kangwon Land casino, the DMZ frontier, and the 2023 Special Autonomous Province status |
 | Geography | `geography/gyeongju.md` | Gyeongju — ancient capital of the Silla kingdom in North Gyeongsang Province; the "museum without walls" of royal tumuli, Bulguksa and Seokguram, Cheomseongdae, the Silla gold crowns and the Emille Bell, the 2000 UNESCO Historic Areas inscription, and its role as Korea's premier heritage-tourism destination |
+| Geography | `geography/north-gyeongsang-province.md` | North Gyeongsang Province (Gyeongbuk) — South Korea's largest province by area; the Silla heartland around Gyeongju, POSCO's steel city of Pohang and POSTECH, the Gumi electronics complex, Andong's Confucian yangban heritage, Ulleung Island, and the conservative "TK" bloc anchored by adjacent Daegu |
 | History | `history/three-kingdoms-period.md` | Three Kingdoms period (Goguryeo, Baekje, Silla) and Silla's unification |
+| History | `history/unified-silla-period.md` | Unified Silla period (668–935) — the first political unification of the peninsula, the golden age of Buddhist civilization (Bulguksa, Seokguram, the Emille Bell), the bone-rank order and Hwarang, hyangga poetry and the idu script, Jang Bogo's maritime trade, and the decline into the Later Three Kingdoms |
 | History | `history/goryeo-period.md` | Goryeo period (918–1392) — medieval kingdom, celadon, the Tripitaka Koreana, and metal movable type |
 | History | `history/joseon-dynasty.md` | Joseon dynasty (1392–1910) — Korea's longest kingdom, Neo-Confucian statecraft, Hangul, the gwageo order, and the Imjin and Manchu invasions |
 | History | `history/korean-independence-movement.md` | Korean Independence Movement (1876–1945) — anti-colonial struggle to liberation |
@@ -163,10 +165,11 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/syngman-rhee.md` | Syngman Rhee (1875–1965) — the founding and longest-serving president (1948–1960); the independence-era exile and Provisional Government, the anti-communist founding state, the Korean War presidency, constitutional manipulation and electoral fraud, and the 1960 April Revolution that ousted him |
 | People | `people/kim-young-sam.md` | Kim Young-sam — the fourteenth president (1993–1998); the first civilian head of state in three decades, the three-party merger, the Hanahoe purge, the prosecution of Chun and Roh, the Real-Name Financial Transaction System, OECD accession, and the 1997 IMF crisis |
 | People | `people/roh-tae-woo.md` | Roh Tae-woo — the thirteenth president (1988–1993); the Hanahoe and the December 1979 coup, Gwangju command responsibility, the June 29 Declaration and 1987 election, the Sixth Republic, Nordpolitik and UN entry, the 1988 Seoul Olympics, the three-party merger, and the slush-fund conviction and pardon |
+| People | `people/lee-kun-hee.md` | Lee Kun-hee (1942–2020) — Samsung Group chairman (1987–2020); the semiconductor and display pivots, the 1993 Frankfurt Declaration and "New Management," the 1995 Gumi phone burning, the smartphone-era Galaxy line, the corruption and succession controversies, and South Korea's largest inheritance case |
 
 Every taxonomy category holds at least six dedicated topics; Culture & Society is the largest
-(seventeen topics), followed by Economy (fifteen), People (thirteen), Geography (twelve), History
-(nine), and Government & Politics (six).
+(seventeen topics), followed by Economy (fifteen), People (fourteen), Geography (thirteen), History
+(ten), and Government & Politics (six).
 
 ## Section 5 — Structure Inventory
 
@@ -174,15 +177,15 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 
 | Artifact | State |
 |---|---|
-| `geography/index.md` | Present — 12 entries |
-| `history/index.md` | Present — 9 entries |
+| `geography/index.md` | Present — 13 entries |
+| `history/index.md` | Present — 10 entries |
 | `government-politics/index.md` | Present — 6 entries |
 | `economy/index.md` | Present — 15 entries |
 | `culture-society/index.md` | Present — 17 entries |
-| `people/index.md` | Present — 13 entries |
-| `TIMELINE.md` | Present — 485 dated events across all seventy-two articles |
+| `people/index.md` | Present — 14 entries |
+| `TIMELINE.md` | Present — 494 dated events across all seventy-five articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all seventy-two topic articles |
+| Cross-references (`## Related`) | Present in all seventy-five topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -486,3 +489,14 @@ Added three dedicated articles — one giving Geography a twelfth topic (the anc
 - ENHANCE pass corrected facts and wrapped the three new `## Related` blocks in generated markers. In the Gyeongju article: replaced the fabricated antique names "Seowon/Eosowa" with the historical Seorabeol and Geumseong; removed the invented epithets "musok bangmul" and "Dongbanbu"; replaced the nonexistent "tomb of King Ondal" with Hwangnam-daechong and Cheonma-chong and corrected the tumuli heights (largest over 20 m); moderated the peak-population claim (from "1–2 million" to on the order of 170,000 households approaching a million, per the *Samguk Yusa*); fixed Bulguksa's dates (begun 751 under Gyeongdeok, completed 774) and reframed the "Namsanseong temple" as the Namsan open-air Buddhist site; and corrected the park designation (Gyeongju National Park, 1968) in place of a garbled "Gwolk Yeoksa Gongwon". In the Chuseok article: fixed the kimjang UNESCO inscription year to 2013 (matching the intro), corrected *beolchae* → *beolcho* for grave-tending, and clarified that Chuseok kites are *yeon* (the rectangular *bangpae-yeon*), not "bangpae/방패" (shield). In the Kakao article: corrected founder Kim Beom-su's arrest to July 2024 (not February), removed an unverified birthplace, and fixed a garbled KakaoPay transaction claim.
 - build-structure: refreshed `geography/index.md` (11→12), `economy/index.md` (14→15), and `culture-society/index.md` (16→17); updated `INDEX.md` and `README.md`; extended `TIMELINE.md` (472→485 dated events) with thirteen new events spanning Gyeongju (Cheomseongdae 647, the Emille Bell 771, the 1921 Gold Crown Tomb, the 1968 national park, the 1995 and 2000 UNESCO inscriptions, the 2016 earthquake), Kakao (KakaoTalk 2010, the Daum merger 2014, the KakaoBank IPO 2021, the 2022 datacenter fire, the founder's 2024 arrest), and Chuseok (the 2009 Ganggangsullae inscription); and added bidirectional back-links from Three Kingdoms Period, Traditional Visual Arts, Religion and Buddhism, Korean Cuisine, Naver, Banking and Finance, and Webtoons.
 - sync-seed: regenerated §4 (Content Inventory: 69→72 files) and §5 (Structure Inventory: entry counts and 485-event timeline; Culture & Society leads at seventeen, Economy second at fifteen, People third at thirteen).
+
+### G1-T27 — 2026-08-29 — Tick 27: North Gyeongsang Province, the Unified Silla period, and Lee Kun-hee deepen Geography, History, and People
+
+Added three dedicated articles — giving Geography a thirteenth topic (South Korea's largest province, the ancient Silla heartland), History a tenth topic (the peninsula's first unified dynasty), and People a fourteenth topic (the Samsung chairman who built Korea's technology power).
+
+- Created `geography/north-gyeongsang-province.md`: encyclopedic article on North Gyeongsang Province (Gyeongbuk) — its geography and climate, the relationship to the separated Daegu metropolis and the "TK" region, the major cities (Pohang and POSCO/POSTECH, Gyeongju's heritage, Andong's Confucian yangban culture, Ulleung Island), the steel/electronics/automotive/agriculture economy, the Silla-to-modern history, cultural and yangban heritage, demographic decline, and conservative regional politics.
+- Created `history/unified-silla-period.md`: encyclopedic article on Unified Silla (668–935) — the military unification (Baekgang 663, the Silla–Tang wars and Gibeol-po 676), the bone-rank order and provincial administration, the Buddhist florescence (Wonhyo and Uisang, Bulguksa and Seokguram, the Emille Bell, the twin Bulguksa pagodas and the *Dharani Sutra*), Hwarang culture, hyangga poetry and the idu script, Gyeongju's cosmopolitan trade (Tang, the Arab world, Japan, Balhae) and Jang Bogo's maritime empire, and the decline into the Later Three Kingdoms and transition to Goryeo.
+- Created `people/lee-kun-hee.md`: encyclopedic article on Lee Kun-hee (1942–2020) — his rise to the 1987 chairmanship, the semiconductor (DRAM) and display (LCD/OLED) pivots, consumer-electronics brand building and the smartphone-era Galaxy line, the 1993 Frankfurt Declaration and "New Management," the 1995 Gumi phone burning, the corruption and slush-fund convictions and pardons, the succession and Park Geun-hye bribery cases, his 2014 incapacitation and 2020 death, the record inheritance and the Lee Kun-hee art donation, and his economic legacy.
+- ENHANCE pass corrected facts, dates, and cross-references. Fixed all three files' front-matter `date:` from a stale 2026-08-12 to the tick date 2026-08-29. In the North Gyeongsang article: removed the mislabeling of the Ulsan shipyards and the Onsan petrochemical complex (both in the separate Ulsan Metropolitan City) as provincial industries, rebuilding the economy pillars around POSCO steel, the Gumi electronics complex, automotive/machinery components, and agriculture/fishing; fixed the "Yeoungseong" climatic-zone typo; and replaced the fabricated "2013 Universal Athletics Championships" with Daegu's actual 2003 Summer Universiade and 2011 World Athletics Championships. In the Unified Silla article: removed the hallucinated key figure "Aesclepius (Dae Jung)" and the anachronistic Goryeo-era monk Uicheon; corrected the claim that Bulguksa "represents the Tripitaka Koreana" (a later Goryeo canon at Haeinsa); fixed the final ruler from King Gyeongae (killed 927) to King Gyeongsun (surrendered 935); clarified the nogeup stipend-village system (not "equal-field") and the nine-province administrative structure (removing a garbled "(currently)"). In the Lee Kun-hee article: corrected his daughters (Lee Boo-jin and Lee Seo-hyun, not the sister Lee Myung-hee, who chairs Shinsegae), fixed Lee Seo-hyun's birth year to 1973, and removed a broken `lee-byung-chul.md` link and its "(if article exists)" editorial artifact.
+- build-structure: refreshed `geography/index.md` (12→13), `history/index.md` (9→10), and `people/index.md` (13→14); updated `INDEX.md`; extended `TIMELINE.md` (485→494 dated events) with nine new events spanning Unified Silla (Baekgang 663, Jang Bogo's Cheonghaejin 828, Later Baekje 892), North Gyeongsang (POSCO's 1968 founding and 1973 first blast furnace), and Lee Kun-hee (the 1987 chairmanship, the 1993 Frankfurt Declaration, the 1995 phone burning, and his 2020 death); and added bidirectional back-links from Gyeongju, Three Kingdoms Period, Goryeo Period, Chaebol, and Semiconductors. (`README.md` already listed the three new articles.)
+- sync-seed: regenerated §4 (Content Inventory: 72→75 files) and §5 (Structure Inventory: entry counts and 494-event timeline; Culture & Society leads at seventeen, Economy second at fifteen, People third at fourteen, Geography fourth at thirteen, History fifth at ten).
