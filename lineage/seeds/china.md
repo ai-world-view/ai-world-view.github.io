@@ -71,8 +71,8 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 39 rows.
-- **Dedicated topic files**: 39.
+- **README knowledge table**: 42 rows.
+- **Dedicated topic files**: 42.
   - `culture-society/buddhism-in-china.md` — Buddhism in China
   - `culture-society/chinese-medicine.md` — Chinese Medicine
   - `culture-society/confucianism.md` — Confucianism
@@ -81,12 +81,15 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `economy/belt-and-road-initiative.md` — Belt and Road Initiative
   - `economy/economic-reform-opening-up.md` — Economic Reform & Opening-up (1978 Onward)
   - `economy/special-economic-zones.md` — Special Economic Zones
+  - `economy/state-owned-enterprises.md` — State-Owned Enterprises (SOEs)
   - `geography/the-forbidden-city.md` — The Forbidden City
   - `geography/the-great-wall.md` — The Great Wall of China
   - `geography/the-silk-road.md` — The Silk Road
+  - `geography/the-yellow-river.md` — The Yellow River
   - `government-politics/chinese-civil-war.md` — Chinese Civil War
   - `government-politics/communist-party-china.md` — The Communist Party of China
   - `government-politics/national-peoples-congress.md` — The National People's Congress
+  - `government-politics/standing-committee-politburo.md` — The Standing Committee of the Politburo
   - `government-politics/tiananmen-square-1989.md` — The 1989 Tiananmen Square Pro-Democracy Movement
   - `history/cultural-revolution.md` — Cultural Revolution
   - `history/the-boxer-rebellion.md` — The Boxer Rebellion
@@ -112,8 +115,8 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `people/xi-jinping.md` — Xi Jinping
   - `people/zheng-he.md` — Zheng He
   - `people/zhou-enlai.md` — Zhou Enlai
-- **Categories with content**: Culture & Society (5), Economy (3), Geography (3),
-  Government & Politics (4), History (14), People (10).
+- **Categories with content**: Culture & Society (5), Economy (4), Geography (4),
+  Government & Politics (5), History (14), People (10).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -123,9 +126,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 176 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 190 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 39 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 42 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -479,3 +482,7 @@ Opium Wars, and Sun Yat-sen to the Boxer Rebellion; and Mao Zedong, the Chinese 
 Zhou Enlai, and the Cultural Revolution to the Long March). Reconciled `ROADMAP.md` (the three Now items moved to
 Done as G1-T13) and regenerated seed sections 4–5 to match live state (39 topic files, 39 README rows, 176
 milestones, no empty categories).
+
+### G1-T14 — 2026-08-29 — Tick 14: The state's commanding heights — State-Owned Enterprises, the Yellow River, and the Standing Committee of the Politburo
+
+Added three topics deepening Economy, Geography, and Government & Politics and spanning the physical, economic, and political foundations of the Chinese state: `economy/state-owned-enterprises.md` (the state-controlled corporations dominating strategic sectors — the Maoist planned-economy origin, Zhu Rongji's "grasp the large, release the small" restructuring and the ~30 million late-1990s layoffs, SASAC's 2003 founding, the "guojin mintui" debate, soft-budget constraints, and Xi-era party penetration and "mixed ownership"), `geography/the-yellow-river.md` ("China's Sorrow" — its 5,464-km course, the Loess Plateau sediment load, the catastrophic floods of 1048, 1642, 1855, 1887, and the 1938 Huayuankou breach, Yu the Great and the mythology of channeling water, Qing dike bureaucracy, the failed Sanmenxia Dam, the 1972–1999 "running dry" crisis, and Xi's 2019 ecological-protection strategy), and `government-politics/standing-committee-politburo.md` (the Communist Party's supreme 5–9-member decision body — its Mao-era informality, Deng's post-1978 institutionalization of collective leadership, the Jiang seven-member and Hu nine-member configurations, the 2012 reduction to seven, the all-loyalist 2022 lineup, leading small groups, and the collective-leadership-versus-personal-rule tension under Xi), each with `title`/`date`/`category` front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. Economy and Geography now hold four topics each and Government & Politics five; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and corrected several facts: removed Li Bing (associated with the Min River's Dujiangyan, not the Yellow River) from the Yellow River key-figures line in favor of Emperor Wu of Han, and corrected the Standing Committee article's mislabeled "19th Amendment" to "the 2018 amendment to the PRC Constitution." Verified every cross-reference resolves (0 broken links repo-wide). Refreshed the structural layer: added category-index rows for Economy (SOEs), Geography (Yellow River), and Government & Politics (Standing Committee, inserted before Tiananmen); added the three topics to `INDEX.md`; the README knowledge table already carried the three new rows (42 total); extended `TIMELINE.md` from 176 to 190 dated milestones (the Yellow River's 1048 avulsion, 1642 Kaifeng, 1855 Tongwaxiang, 1887 Huayuankou, 1938 dike breach, 1960 Sanmenxia, and 2019 strategy; the SOE milestones of the 1993 Company Law, the 1997 "grasp the large, release the small," 2003 SASAC, and the 2015 reform guidelines; and the Standing Committee's 1982 restoration, 2012 reduction to seven, and 2022 loyalist lineup); and wove reciprocal cross-references from eleven existing articles (the Communist Party, NPC, Deng, Jiang, and Hu to the Standing Committee; Economic Reform, Special Economic Zones, Belt and Road, the Communist Party, Deng, and Jiang to State-Owned Enterprises; and the Han, Qing, and Song dynasties to the Yellow River). Regenerated seed sections 4–5 to match live state (42 topic files, 42 README rows, 190 milestones, no empty categories).
