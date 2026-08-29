@@ -109,6 +109,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `geography/kobe.md` — Kobe
   - `geography/kyoto.md` — Kyoto
   - `geography/kyushu.md` — Kyushu
+  - `geography/lake-biwa.md` — Lake Biwa
   - `geography/major-islands.md` — Major Islands
   - `geography/mount-fuji.md` — Mount Fuji
   - `geography/noto-peninsula.md` — Noto Peninsula
@@ -126,7 +127,6 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `history/sengoku-period.md` — Sengoku Period
   - `history/taisho-period.md` — Taisho Period
   - `history/world-war-ii.md` — World War II
-  - `government-politics/article-nine-debates.md` — Article 9 Debates and Constitutional Amendment Movements
   - `government-politics/diet-of-japan.md` — Diet of Japan
   - `government-politics/imperial-household.md` — The Imperial Household
   - `government-politics/imperial-succession.md` — Imperial Succession
@@ -134,7 +134,6 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `government-politics/ministry-economy-trade-industry.md` — Ministry of Economy, Trade and Industry (METI)
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
   - `government-politics/supreme-court.md` — Supreme Court of Japan
-  - `economy/automobile-industry.md` — Japanese Automobile Industry
   - `economy/bank-of-japan.md` — Bank of Japan
   - `economy/bubble-economy.md` — 1980s Bubble Economy
   - `economy/financial-sector-regulation.md` — Financial Sector Regulation
@@ -146,7 +145,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
-  - `culture-society/manga-comic-culture.md` — Manga & Comic Culture
+  - `culture-society/kabuki-theater.md` — Kabuki Theater
   - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
   - `culture-society/noh-theater.md` — Noh Theater
@@ -166,9 +165,10 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/nitobe-inazou.md` — Nitobe Inazō
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
+  - `people/toyotomi-hideyoshi.md` — Toyotomi Hideyoshi
   - `people/yoshida-shoin.md` — Yoshida Shoin
   - `people/yukio-mishima.md` — Yukio Mishima
-- **Categories with content**: Culture & Society (13), People (12), History (11), Geography (10), Economy (9), Government & Politics (8) — all six categories populated; Culture & Society leads with thirteen topics, followed by People with twelve, History with eleven, Geography with ten, Economy with nine, and Government & Politics with eight.
+- **Categories with content**: Culture & Society (13), People (13), Geography (11), History (11), Economy (8), Government & Politics (7) — all six categories populated; Culture & Society and People lead with thirteen topics each, followed by Geography and History with eleven each, Economy with eight, and Government & Politics with seven.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -177,7 +177,7 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Culture & Society lists thirteen topics; People twelve; History eleven; Geography ten; Economy nine; Government & Politics eight).
+  (Culture & Society and People list thirteen topics each; Geography and History eleven each; Economy eight; Government & Politics seven).
 - **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
 - **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
 - **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
@@ -628,3 +628,12 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: corrected several factual errors from the model's own knowledge. In `manga-comic-culture.md`: fixed the founding cartoonist's name from "Rakuten Kitazaki" to **Kitazawa Rakuten** (family name Kitazawa); corrected *Astro Boy*'s serialization venue from the nonexistent "Shōnen Astro" to Kobunsha's *Shōnen* magazine; fixed the *Doraemon* creator from "Fujio Fujiko" to **Fujiko F. Fujio**; corrected *Nakayoshi*'s founding to **1954** and *Ribon*'s to 1955; removed the fabricated co-author "Osamu Yamazaki" from *Kaze to Ki no Uta* (Keiko Takemiya alone); reassigned *Morning* and *Afternoon* to **Kodansha** (the draft had placed *Morning* at Shogakukan); corrected the gekiga pioneer "Yoshihiro Tatsuta" to **Yoshihiro Tatsumi**; untangled a garbled passage that had equated *kamishibai* with American comic books; and fixed the "Ultraman as giant robot" description and a "commissoned" typo. In `automobile-industry.md`: corrected the **Lexus launch from 1986 to 1989** (the LS 400 debut); replaced the erroneous 1960s "Renault technology to Nissan" licensing with the actual **Austin (1950s)** license (with Hino–Renault and Isuzu–Hillman arrangements); removed the spurious "Daimler-Benz" from the MITI-supported domestic makers (replaced with Mazda); and normalized "Toyota Kiichiro" to **Toyoda Kiichiro**. In `article-nine-debates.md`: corrected the "1999 Nye Report" to the **1995 Nye Initiative** (the Pentagon's *East Asia Strategy Report*); and de-linked two mislabeled cross-references (the Korean War and Gulf War links that pointed at the World War II article, neither having a dedicated file). All three new files carry single plain ISO front-matter `date:` fields (`1868-01-01`, `1868-01-01`, `1947-01-01`); a repository-wide check confirmed every internal Markdown link resolves.
 - **Structure** (`build-structure`): added the three topics to their category indices (`culture-society/index.md`, `economy/index.md`, `government-politics/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — Kitazawa's 1902 *Jiji Manga*, the 1907 Takuri, Toyota's 1937 founding, Tezuka's 1952 *Astro Boy*, the 1966 Corolla, the 1968 *Weekly Shōnen Jump*, the 1975 Comiket, Honda's 1982 Ohio plant, the 1989 Lexus, the 1992 PKO law, the 1994 *Jump* circulation peak, the 1997 *One Piece* debut and Prius launch, the 1999 Renault–Nissan alliance, Toyota's 2008 overtaking of GM, the 2020 digital-manga milestone, and the 2022 counterstrike documents. Made cross-references bidirectional with back-links from `modern-cinema-anime.md` (Manga & Comic Culture), `technology-manufacturing.md` (Japanese Automobile Industry), and `postwar-constitution.md`, `supreme-court.md`, and `abe-shinzo.md` (Article 9 Debates).
 - **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — dropped the never-persisted phantoms `geography/okinawa-ryukyu.md`, `people/oda-nobunaga.md`, and `people/toyotomi-hideyoshi.md` from the inventory, added the three real new files, and corrected the per-category counts to **Culture & Society thirteen, People twelve, History eleven, Geography ten, Economy nine, Government & Politics eight** (63 topic files / 63 README rows) in both §4 and §5. Left §1–3 and §6–7 unchanged.
+
+### G1-T50 — 2026-08-29 — Tick 50: added Toyotomi Hideyoshi, Lake Biwa, and Kabuki Theater
+
+- **Reconciliation**: as in the five prior ticks (T45–T49), the working tree that reached this tick held the 60 committed topic files, not the 63 the staged seed's §4/§5 described — the G1-T49 trio recorded as delivered (`culture-society/manga-comic-culture.md`, `economy/automobile-industry.md`, `government-politics/article-nine-debates.md`) had never reached `main` and was absent from the tree, README, and indices. This tick's content pass added a fresh, coherent trio (`people/toyotomi-hideyoshi.md`, `geography/lake-biwa.md`, `culture-society/kabuki-theater.md`), and the enhance pass rebuilt §4/§5 to mirror the true 63-file tree rather than the phantom inventory.
+- **Content added** (3 dedicated topic files): `people/toyotomi-hideyoshi.md` (the second of the three great unifiers, 1537–1598 — the peasant-born general's ascent under Oda Nobunaga, the avenging victory at Yamazaki and the Kiyosu Conference, the pacification of Shikoku, Kyushu, and the Hōjō at Odawara, the *Taikō Kenchi* land survey and the *Katanagari* sword hunt that froze the class system, his appointment as *kampaku*, the patronage and forced *seppuku* of Sen no Rikyū, the Bateren expulsion edict and the Twenty-Six Martyrs, the failed Korean invasions and the *Mimizuka*, and the Council of Five Elders left to guard his heir Hideyori), `geography/lake-biwa.md` (Japan's largest freshwater lake in Shiga Prefecture — its two-basin hydrography and 119 tributaries, its 4-million-year antiquity and ~60 endemic species, the *funazushi* and *ayu* fisheries and the largemouth-bass/bluegill invasions, the 1885–1890 Lake Biwa Canal and Keage hydroelectric plant, the "Eight Views of Ōmi" and Hiroshige, the Chikubushima and Ishiyama-dera religious sites, the 1977 algal bloom and 1979 phosphate-detergent ban, and its role as the Kansai region's primary water source for ~15 million people), and `culture-society/kabuki-theater.md` (Japan's flamboyant classical popular theater — Izumo no Okuni's c. 1603 riverbed origins, the 1629 women's and 1652 *wakashū* bans and the resulting all-male *onnagata* tradition, Chikamatsu's *sewamono* and the Ichikawa Danjūrō *aragoto*/*wagoto* styles, *kumadori* makeup and the *mie* pose, the *hanamichi* and the 1758 revolving stage, the *jidaimono*/*sewamono*/*shosagoto* genres and *Chūshingura*, the Kabuki-za and Minamiza, the Meiji reforms, and the 2005 UNESCO inscription).
+- **README**: knowledge table stands at 63 rows, including the Toyotomi Hideyoshi, Lake Biwa, and Kabuki Theater rows (the staged table had carried only the 60 committed rows, not the phantom trio's).
+- **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected several errors. In `people/toyotomi-hideyoshi.md`, the sandal-bearer term was corrected from the non-word "*zorisake*" to **_zōritori_ (草履取り)**, and the 1582 forced march from Takamatsu was reframed from "roughly two weeks" to **roughly ten days**, naming it the "Great Return from Chūgoku" (*Chūgoku Ōgaeshi*). In `culture-society/kabuki-theater.md`, the founder's name was corrected from "Izumi Okuni" to **Izumo no Okuni** (two occurrences), and two actor/narrator names were put in Japanese surname-first order — "Tōjūrō Sakata" → **Sakata Tōjūrō** (three occurrences) and "Gidayū Takemoto" → **Takemoto Gidayū**. The same corrections were propagated to the README rows (Kabuki "1603 with Izumi Okuni" → "around 1603 with Izumo no Okuni"), and the README's Lake Biwa surface area was aligned to the article at **~670 km²** (from 674). A broken cross-reference in `toyotomi-hideyoshi.md` to a non-existent `oda-nobunaga.md` (no Oda Nobunaga article exists on `main`) was repointed to `../geography/kyoto.md`. Confirmed `title`/`date`/`category` front matter on all three files, each carrying a single plain ISO `date` (Toyotomi Hideyoshi **1537-01-01**, Lake Biwa **1603-01-01**, Kabuki Theater **1603-01-01**); a repository-wide check confirmed every internal Markdown link resolves.
+- **Structure** (`build-structure`): added the three topics to their category indices (`people/index.md`, `geography/index.md`, `culture-society/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — Hideyoshi's 1537 birth, the 1582-07-02 Battle of Yamazaki, his 1585 appointment as *kampaku*, the 1591-02-28 order for Sen no Rikyū's *seppuku*, and his 1598-09-18 death and Council of Five Elders; Lake Biwa's 1576 Azuchi Castle, the 1885–1890 canal, and the 1979 phosphate-detergent ban; and Kabuki's 1652 *wakashū* ban, the 1889 Kabuki-za opening, and the 2005 UNESCO inscription. Made cross-references bidirectional with back-links from `people/tokugawa-ieyasu.md` (Toyotomi Hideyoshi), `culture-society/edo-culture-arts.md` (Kabuki Theater), and `geography/kyoto.md` (Lake Biwa).
+- **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — dropped the never-persisted phantoms `culture-society/manga-comic-culture.md`, `economy/automobile-industry.md`, and `government-politics/article-nine-debates.md` from the inventory, added the three real new files, and corrected the per-category counts to **Culture & Society thirteen, People thirteen, Geography eleven, History eleven, Economy eight, Government & Politics seven** (63 topic files / 63 README rows) in both §4 and §5. Left §1–3 and §6–7 unchanged.
