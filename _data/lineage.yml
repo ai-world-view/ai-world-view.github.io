@@ -5,8 +5,8 @@
 # =============================================================================
 org: ai-world-view
 totals:
-  repos: 3
-  ticks: 85
+  repos: 4
+  ticks: 88
 members:
 - name: china
   repo: ai-world-view/china
@@ -14,34 +14,45 @@ members:
   site_url: https://ai-world-view.github.io/china/
   subject: the country china
   status: growing
-  ticks_logged: 12
-  log_entries: 13
+  ticks_logged: 13
+  log_entries: 14
   generations: 0
-  last_activity: '2026-08-27'
-  last_entry: 'G1-T12 — 2026-08-27 — Tick 12: Fragmentation, foreign conquest, and
-    a modern watershed — the Warring States Period, the Yuan Dynasty, and the 1989
-    Tiananmen Square Movement'
+  last_activity: '2026-08-28'
+  last_entry: 'G1-T13 — 2026-08-28 — Tick 13: Reunification, anti-foreign crisis,
+    and revolutionary retreat — the Sui Dynasty, the Boxer Rebellion, and the Long
+    March'
 - name: japan
   repo: ai-world-view/japan
   url: https://github.com/ai-world-view/japan
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 48
-  log_entries: 63
+  ticks_logged: 49
+  log_entries: 64
   generations: 1
-  last_activity: '2026-08-27'
-  last_entry: 'G1-T48 — 2026-08-27 — Tick 48: added Oda Nobunaga, Toyotomi Hideyoshi,
-    and the Okinawa & Ryukyu Islands'
+  last_activity: '2026-08-28'
+  last_entry: 'G1-T49 — 2026-08-28 — Tick 49: added Manga & Comic Culture, the Japanese
+    Automobile Industry, and the Article 9 Debates'
+- name: north-korea
+  repo: ai-world-view/north-korea
+  url: https://github.com/ai-world-view/north-korea
+  site_url: https://ai-world-view.github.io/north-korea/
+  subject: the country north korea
+  status: seeded
+  ticks_logged: 0
+  log_entries: 1
+  generations: 0
+  last_activity: ''
+  last_entry: ''
 - name: south-korea
   repo: ai-world-view/south-korea
   url: https://github.com/ai-world-view/south-korea
   site_url: https://ai-world-view.github.io/south-korea/
   subject: the country south korea
   status: growing
-  ticks_logged: 25
-  log_entries: 26
+  ticks_logged: 26
+  log_entries: 27
   generations: 0
-  last_activity: '2026-08-27'
-  last_entry: 'G1-T25 — 2026-08-27 — Tick 25: Roh Tae-woo, Gangwon Province, and the
-    pharmaceutical and biotech industry deepen People, Geography, and Economy'
+  last_activity: '2026-08-28'
+  last_entry: 'G1-T26 — 2026-08-28 — Tick 26: Gyeongju, Kakao, and Chuseok deepen
+    Geography, Economy, and Culture & Society'
