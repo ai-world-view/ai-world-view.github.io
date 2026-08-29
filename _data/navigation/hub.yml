@@ -55,6 +55,12 @@
     url: https://ai-world-view.github.io/japan/history/
   - title: People
     url: https://ai-world-view.github.io/japan/people/
+- title: north-korea
+  icon: bi-journal-richtext
+  url: https://ai-world-view.github.io/north-korea/
+  children:
+  - title: Site Home
+    url: https://ai-world-view.github.io/north-korea/
 - title: south-korea
   icon: bi-journal-richtext
   url: https://ai-world-view.github.io/south-korea/
