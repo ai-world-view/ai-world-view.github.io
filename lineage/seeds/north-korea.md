@@ -87,26 +87,33 @@ present under `.github/`:
 ## Section 4 — Content Inventory
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
-People. The README knowledge table ("Notable Facts about the country north korea") holds **3 rows**.
-Dedicated topic files (3):
+People. The README knowledge table ("Notable Facts about the country north korea") holds **6 rows**.
+Dedicated topic files (6):
 
+- `geography/pyongyang.md` — Pyongyang, the capital and largest city.
 - `history/korean-war.md` — the 1950–1953 Korean War.
 - `government-politics/government-structure.md` — the DPRK's political system and institutions.
+- `economy/economic-system-and-famine.md` — the planned economy and the 1994–1998 famine.
 - `people/kim-il-sung.md` — founding leader Kim Il-sung (1912–1994).
+- `people/kim-jong-il.md` — second leader Kim Jong-il (1942–2011).
 
-Populated categories: History, Government & Politics, People. Not yet opened: Geography, Economy,
+Populated categories: Geography, History, Government & Politics, Economy, People. Not yet opened:
 Culture & Society.
 
 ## Section 5 — Structure Inventory
 
 Generated structural artifacts now present:
 
-- **Category index pages** — `history/index.md`, `government-politics/index.md`, `people/index.md`
-  (one per populated category; empty categories have no index yet).
-- **Timeline** — `TIMELINE.md` (dated topics in chronological order).
+- **Category index pages** — `geography/index.md`, `history/index.md`,
+  `government-politics/index.md`, `economy/index.md`, `people/index.md` (one per populated
+  category; the empty Culture & Society category has no index yet).
+- **Timeline** — `TIMELINE.md` (topics with a historical date in chronological order: Kim Il-sung,
+  Kim Jong-il, Korean War).
 - **Master index** — `INDEX.md` (all topics grouped by taxonomy, with pointers to category indices
   and the timeline).
-- **Cross-references** — a generated `## Related` block in each of the 3 dedicated topic files.
+- **Cross-references** — a generated `## Related` block in each of the 6 dedicated topic files.
+- **Preview art** — atlas-style SVG cards under `assets/images/previews/` for each category and
+  featured topic.
 
 ## Section 6 — Growth Loop
 
@@ -136,3 +143,15 @@ layer from it.
 - Enhance pass: corrected Kim Il-sung's death location (Hyangsan Residence near Mount Myohyang, not "Diamond Mountain") and clarified his WPK party-post history.
 - Ran build-structure — created category indices (`history/index.md`, `government-politics/index.md`, `people/index.md`), `TIMELINE.md`, and `INDEX.md`; wrapped each topic's cross-references in a generated `## Related` block.
 - Ran sync-seed — regenerated §1–7 (Architecture inventory of 20 `.github/` files; Content 0→3 rows/files; Structure artifacts now all present).
+
+### G1-T2 — 2026-08-30 — Tick 2: opened Geography and Economy, extended People to the second Kim
+
+Second growth tick. Added three topics that opened two new categories and carried the dynasty into its second generation, then refreshed the structural layer.
+
+- Created `geography/pyongyang.md` — Pyongyang, the capital on the Taedong River: history from Goguryeo through colonial rule and wartime destruction, socialist reconstruction, monuments, the metro, songbun-gated residence, and its privileged standing over the rest of the country. Opened the Geography category.
+- Created `economy/economic-system-and-famine.md` — the DPRK's centrally planned economy, the Chollima drive, the post-Soviet collapse, the 1994–1998 famine (the "Arduous March"), the rise of jangmadang markets, and the sanctioned post-famine economy. Opened the Economy category.
+- Created `people/kim-jong-il.md` — second leader Kim Jong-il (1942–2011): Soviet birth and Paektu myth, grooming and 1980 succession, the cinema obsession and Shin Sang-ok abduction, Songun policy, the famine, the 2006 nuclear test, terrorism and inter-Korean episodes, and the handoff to Kim Jong-un.
+- Enhance pass: corrected Kim Jong-il's National Defense Commission chairmanship to 1993 (not 1997) in the header and body; fixed the drowned younger brother's name to Kim Man-il ("Shura"), removing a name clash with the half-brother Kim Pyong-il; repaired a broken Kim Jong-un cross-reference and a self-link in `pyongyang.md`, corrected "Ariran" to "Arirang", and deepened Pyongyang's pre-modern history (Gojoseon/Goguryeo/Goryeo Sŏgyŏng).
+- Added `README.md`, `INDEX.md`, and `people/index.md` rows for the three new topics; updated `ROADMAP.md` (Now → Done for tick 2).
+- Ran build-structure — created `geography/index.md` and `economy/index.md` (with atlas-style preview SVGs), added Kim Jong-il to `TIMELINE.md`, and refreshed the `## Related` cross-reference blocks across the older topic files to link the new pages bidirectionally.
+- Ran sync-seed — regenerated §1–7 (Content 3→6 rows/files across 5 populated categories; Structure inventory now lists 5 category indices, 3 dated timeline rows, and 6 cross-referenced files).
