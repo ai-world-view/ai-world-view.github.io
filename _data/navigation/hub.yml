@@ -61,6 +61,14 @@
   children:
   - title: Site Home
     url: https://ai-world-view.github.io/north-korea/
+  - title: Timeline
+    url: https://ai-world-view.github.io/north-korea/TIMELINE/
+  - title: Government & Politics
+    url: https://ai-world-view.github.io/north-korea/government-politics/
+  - title: History
+    url: https://ai-world-view.github.io/north-korea/history/
+  - title: People
+    url: https://ai-world-view.github.io/north-korea/people/
 - title: south-korea
   icon: bi-journal-richtext
   url: https://ai-world-view.github.io/south-korea/
