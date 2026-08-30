@@ -71,8 +71,8 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 42 rows.
-- **Dedicated topic files**: 42.
+- **README knowledge table**: 45 rows.
+- **Dedicated topic files**: 45.
   - `culture-society/buddhism-in-china.md` — Buddhism in China
   - `culture-society/chinese-medicine.md` — Chinese Medicine
   - `culture-society/confucianism.md` — Confucianism
@@ -85,9 +85,11 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `geography/the-forbidden-city.md` — The Forbidden City
   - `geography/the-great-wall.md` — The Great Wall of China
   - `geography/the-silk-road.md` — The Silk Road
+  - `geography/the-yangtze-river.md` — The Yangtze River
   - `geography/the-yellow-river.md` — The Yellow River
   - `government-politics/chinese-civil-war.md` — Chinese Civil War
   - `government-politics/communist-party-china.md` — The Communist Party of China
+  - `government-politics/imperial-examination-system.md` — The Imperial Examination System
   - `government-politics/national-peoples-congress.md` — The National People's Congress
   - `government-politics/standing-committee-politburo.md` — The Standing Committee of the Politburo
   - `government-politics/tiananmen-square-1989.md` — The 1989 Tiananmen Square Pro-Democracy Movement
@@ -100,6 +102,7 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `history/the-opium-wars.md` — The Opium Wars
   - `history/the-qin-dynasty.md` — The Qin Dynasty
   - `history/the-qing-dynasty.md` — The Qing Dynasty
+  - `history/the-shang-dynasty.md` — The Shang Dynasty
   - `history/the-song-dynasty.md` — The Song Dynasty
   - `history/the-sui-dynasty.md` — The Sui Dynasty
   - `history/the-tang-dynasty.md` — The Tang Dynasty
@@ -115,8 +118,8 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `people/xi-jinping.md` — Xi Jinping
   - `people/zheng-he.md` — Zheng He
   - `people/zhou-enlai.md` — Zhou Enlai
-- **Categories with content**: Culture & Society (5), Economy (4), Geography (4),
-  Government & Politics (5), History (14), People (10).
+- **Categories with content**: Culture & Society (5), Economy (4), Geography (5),
+  Government & Politics (6), History (15), People (10).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -126,9 +129,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 190 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 206 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 42 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 45 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -486,3 +489,7 @@ milestones, no empty categories).
 ### G1-T14 — 2026-08-29 — Tick 14: The state's commanding heights — State-Owned Enterprises, the Yellow River, and the Standing Committee of the Politburo
 
 Added three topics deepening Economy, Geography, and Government & Politics and spanning the physical, economic, and political foundations of the Chinese state: `economy/state-owned-enterprises.md` (the state-controlled corporations dominating strategic sectors — the Maoist planned-economy origin, Zhu Rongji's "grasp the large, release the small" restructuring and the ~30 million late-1990s layoffs, SASAC's 2003 founding, the "guojin mintui" debate, soft-budget constraints, and Xi-era party penetration and "mixed ownership"), `geography/the-yellow-river.md` ("China's Sorrow" — its 5,464-km course, the Loess Plateau sediment load, the catastrophic floods of 1048, 1642, 1855, 1887, and the 1938 Huayuankou breach, Yu the Great and the mythology of channeling water, Qing dike bureaucracy, the failed Sanmenxia Dam, the 1972–1999 "running dry" crisis, and Xi's 2019 ecological-protection strategy), and `government-politics/standing-committee-politburo.md` (the Communist Party's supreme 5–9-member decision body — its Mao-era informality, Deng's post-1978 institutionalization of collective leadership, the Jiang seven-member and Hu nine-member configurations, the 2012 reduction to seven, the all-loyalist 2022 lineup, leading small groups, and the collective-leadership-versus-personal-rule tension under Xi), each with `title`/`date`/`category` front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. Economy and Geography now hold four topics each and Government & Politics five; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and corrected several facts: removed Li Bing (associated with the Min River's Dujiangyan, not the Yellow River) from the Yellow River key-figures line in favor of Emperor Wu of Han, and corrected the Standing Committee article's mislabeled "19th Amendment" to "the 2018 amendment to the PRC Constitution." Verified every cross-reference resolves (0 broken links repo-wide). Refreshed the structural layer: added category-index rows for Economy (SOEs), Geography (Yellow River), and Government & Politics (Standing Committee, inserted before Tiananmen); added the three topics to `INDEX.md`; the README knowledge table already carried the three new rows (42 total); extended `TIMELINE.md` from 176 to 190 dated milestones (the Yellow River's 1048 avulsion, 1642 Kaifeng, 1855 Tongwaxiang, 1887 Huayuankou, 1938 dike breach, 1960 Sanmenxia, and 2019 strategy; the SOE milestones of the 1993 Company Law, the 1997 "grasp the large, release the small," 2003 SASAC, and the 2015 reform guidelines; and the Standing Committee's 1982 restoration, 2012 reduction to seven, and 2022 loyalist lineup); and wove reciprocal cross-references from eleven existing articles (the Communist Party, NPC, Deng, Jiang, and Hu to the Standing Committee; Economic Reform, Special Economic Zones, Belt and Road, the Communist Party, Deng, and Jiang to State-Owned Enterprises; and the Han, Qing, and Song dynasties to the Yellow River). Regenerated seed sections 4–5 to match live state (42 topic files, 42 README rows, 190 milestones, no empty categories).
+
+### G1-T15 — 2026-08-30 — Tick 15: Civilizational foundations — the Yangtze River, the Shang Dynasty, and the Imperial Examination System
+
+Added three topics deepening Geography, History, and Government & Politics and spanning China's physical, dynastic, and institutional foundations: `geography/the-yangtze-river.md` (Asia's longest river — its Tibetan-Plateau source and Three Gorges, the Yangtze civilization from Hemudu and Liangzhu, the Grand Canal grain trade, the Battle of Red Cliffs and 1949 crossing, the Three Gorges Dam, the baiji's extinction, and the 2021 fishing ban and Protection Law), `history/the-shang-dynasty.md` (China's earliest confirmed dynasty, c. 1600–1046 BCE — oracle-bone writing and the 1899 recognition and 1928 Yinxu excavation, piece-mold ritual bronzes and the taotie, the theocratic ancestor cult and human sacrifice, Fu Hao's intact tomb, and the Zhou conquest at Muye), and `government-politics/imperial-examination-system.md` (the *keju* civil-service examinations from the Sui/Tang *jinshi* through the Song's expansion, the Yuan suspension and restoration, the Ming eight-legged essay, and the 1905 abolition — the four tiers, examination compounds, the Four Books and Five Classics, and the scholar-official ideal), each with `title`/`date`/`category` front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. Geography now holds five topics, Government & Politics six, and History fifteen; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and corrected several factual errors in the examination article: the Han recommendation system rendered as *chaju* (not "chalian"), the Tang parallel tracks corrected to *mingjing* (classics) and *mingfa* (law) from a garbled "mingching/mingjing," and Hong Xiuquan's failures corrected from the *juren* to the entry-level Canton civil-service examination (he never gained even the *shengyuan* degree); and revised the Yangtze Economic Belt to its true share (over 40 percent of the population, some 600 million). Fixed cross-references: repointed the new files' Related blocks off six non-existent targets (the Grand Canal and Shanghai in Yangtze; Zhu Xi in the examinations; the Xia and Zhou dynasties and "Chinese Civilization" in Shang) to real articles, and corrected the Shang article's Yellow River link to its `../geography/` path. Verified every cross-reference resolves (0 broken links repo-wide). Refreshed the structural layer: inserted the Yangtze (after the Yellow River) into the Geography index and INDEX, the Shang (first, as the earliest) into the History index and INDEX, and the Imperial Examination System (first) into the Government & Politics index and INDEX; grew the README knowledge table from 42 to 45 rows; extended `TIMELINE.md` from 190 to 206 dated milestones (the Shang's c. 1600 founding, Wu Ding's c. 1250 peak, and the c. 1046 Battle of Muye, with the 1899 oracle-bone recognition, 1928 Yinxu excavation, 1976 Fu Hao tomb, and 2006 UNESCO listing; the examination system's 605 *jinshi* institution, 973 palace examination, and 1315 Yuan restoration, repointing the existing 1905 abolition milestone from Confucianism to the dedicated article; and the Yangtze's 208 Red Cliffs, 1931 flood, 1994 Three Gorges construction, 2007 baiji extinction, 2012 dam completion, and 2021 fishing ban); and wove reciprocal cross-references from eight existing articles (the Yellow River and Han Dynasty to the Yangtze; the Han, Qin, and Warring States to the Shang; and the Tang, Song, and Confucianism to the Imperial Examination System). Regenerated seed sections 4–5 to match live state (45 topic files, 45 README rows, 206 milestones, no empty categories).
