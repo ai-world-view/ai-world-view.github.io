@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (75):
+`INDEX.md`). Dedicated topic files (78):
 
 | Category | File | Topic |
 |---|---|---|
@@ -114,12 +114,14 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | History | `history/korean-war.md` | Korean War (1950–1953) |
 | History | `history/gwangju-uprising.md` | Gwangju Uprising (May 18 Incident, 1980) — Chun Doo-hwan's expanded martial law, the ten-day citizen resistance and its military suppression, casualties and the U.S. role, and the legacy for the democracy movement, legal accountability, and memorialization |
 | History | `history/democratization.md` | Democratization of South Korea (1987–1993) |
+| History | `history/asian-financial-crisis-1997.md` | The 1997 Asian Financial Crisis and Korean economic restructuring — the currency collapse and record IMF bailout, chaebol and labor restructuring under IMF conditionality, the Gold Collection Campaign and Daewoo's fall, and the lasting legacy of labor-market dualism and elevated household debt |
 | Government & Politics | `government-politics/government-structure.md` | Government structure — the presidential republic |
 | Government & Politics | `government-politics/north-korea-relations.md` | South Korea–North Korea relations and inter-Korean diplomacy |
 | Government & Politics | `government-politics/technology-innovation-policy.md` | Technology and innovation policy — the developmental state, K-Semiconductor Strategy, R&D, and tech regulation |
 | Government & Politics | `government-politics/military-defense-policy.md` | Military and defense policy — the armed forces, conscription, the defense industry, the U.S. alliance, deterrence toward North Korea, OPCON, and the shift to civilian control |
 | Government & Politics | `government-politics/environmental-policy.md` | Environmental policy and sustainability — the Green Growth era and Four Major Rivers Project, carbon neutrality and the Green New Deal, the K-ETS carbon market, air pollution (PM2.5, hwangsa) and plastic waste, the nuclear-phase-out reversal, environmental governance, and corporate ESG |
 | Government & Politics | `government-politics/electoral-system.md` | Electoral system and the National Assembly — presidential and legislative elections, the mixed-member proportional system and 3% threshold, the 2020 semi-linked reform and satellite parties, the National Election Commission, Honam–TK regionalism, and the 2016–2017 and 2024–2025 impeachment crises |
+| Government & Politics | `government-politics/political-parties-regionalism.md` | Political parties and regionalism — the two-bloc party system rooted in the TK–Honam divide, the Democratic and conservative lineages, the 1990 three-party merger and later realignments, regional voting persistence, gender and generational cleavages, and the 2024–2025 martial-law crisis, impeachment, and snap election |
 | Economy | `economy/chaebol.md` | Chaebol — family-controlled conglomerates |
 | Economy | `economy/semiconductors.md` | Semiconductors — memory-chip leadership and geopolitics |
 | Economy | `economy/technology-sector.md` | Technology sector — ICT, displays, AI, telecom, and mobility beyond semiconductors |
@@ -166,10 +168,11 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/kim-young-sam.md` | Kim Young-sam — the fourteenth president (1993–1998); the first civilian head of state in three decades, the three-party merger, the Hanahoe purge, the prosecution of Chun and Roh, the Real-Name Financial Transaction System, OECD accession, and the 1997 IMF crisis |
 | People | `people/roh-tae-woo.md` | Roh Tae-woo — the thirteenth president (1988–1993); the Hanahoe and the December 1979 coup, Gwangju command responsibility, the June 29 Declaration and 1987 election, the Sixth Republic, Nordpolitik and UN entry, the 1988 Seoul Olympics, the three-party merger, and the slush-fund conviction and pardon |
 | People | `people/lee-kun-hee.md` | Lee Kun-hee (1942–2020) — Samsung Group chairman (1987–2020); the semiconductor and display pivots, the 1993 Frankfurt Declaration and "New Management," the 1995 Gumi phone burning, the smartphone-era Galaxy line, the corruption and succession controversies, and South Korea's largest inheritance case |
+| People | `people/han-kang.md` | Han Kang (b. 1970) — novelist and the first Korean winner of the Nobel Prize in Literature (2024); *The Vegetarian* and its 2016 Man Booker International Prize, *Human Acts* and the Gwangju reckoning, *The White Book* and *Greek Lessons*, and the themes of the body, violence, and historical trauma |
 
-Every taxonomy category holds at least six dedicated topics; Culture & Society is the largest
-(seventeen topics), followed by Economy (fifteen), People (fourteen), Geography (thirteen), History
-(ten), and Government & Politics (six).
+Every taxonomy category holds at least seven dedicated topics; Culture & Society is the largest
+(seventeen topics), followed by Economy and People (fifteen each), Geography (thirteen), History
+(eleven), and Government & Politics (seven).
 
 ## Section 5 — Structure Inventory
 
@@ -178,14 +181,14 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 | Artifact | State |
 |---|---|
 | `geography/index.md` | Present — 13 entries |
-| `history/index.md` | Present — 10 entries |
-| `government-politics/index.md` | Present — 6 entries |
+| `history/index.md` | Present — 11 entries |
+| `government-politics/index.md` | Present — 7 entries |
 | `economy/index.md` | Present — 15 entries |
 | `culture-society/index.md` | Present — 17 entries |
-| `people/index.md` | Present — 14 entries |
-| `TIMELINE.md` | Present — 494 dated events across all seventy-five articles |
+| `people/index.md` | Present — 15 entries |
+| `TIMELINE.md` | Present — 507 dated events across all seventy-eight articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all seventy-five topic articles |
+| Cross-references (`## Related`) | Present in all seventy-eight topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -500,3 +503,14 @@ Added three dedicated articles — giving Geography a thirteenth topic (South Ko
 - ENHANCE pass corrected facts, dates, and cross-references. Fixed all three files' front-matter `date:` from a stale 2026-08-12 to the tick date 2026-08-29. In the North Gyeongsang article: removed the mislabeling of the Ulsan shipyards and the Onsan petrochemical complex (both in the separate Ulsan Metropolitan City) as provincial industries, rebuilding the economy pillars around POSCO steel, the Gumi electronics complex, automotive/machinery components, and agriculture/fishing; fixed the "Yeoungseong" climatic-zone typo; and replaced the fabricated "2013 Universal Athletics Championships" with Daegu's actual 2003 Summer Universiade and 2011 World Athletics Championships. In the Unified Silla article: removed the hallucinated key figure "Aesclepius (Dae Jung)" and the anachronistic Goryeo-era monk Uicheon; corrected the claim that Bulguksa "represents the Tripitaka Koreana" (a later Goryeo canon at Haeinsa); fixed the final ruler from King Gyeongae (killed 927) to King Gyeongsun (surrendered 935); clarified the nogeup stipend-village system (not "equal-field") and the nine-province administrative structure (removing a garbled "(currently)"). In the Lee Kun-hee article: corrected his daughters (Lee Boo-jin and Lee Seo-hyun, not the sister Lee Myung-hee, who chairs Shinsegae), fixed Lee Seo-hyun's birth year to 1973, and removed a broken `lee-byung-chul.md` link and its "(if article exists)" editorial artifact.
 - build-structure: refreshed `geography/index.md` (12→13), `history/index.md` (9→10), and `people/index.md` (13→14); updated `INDEX.md`; extended `TIMELINE.md` (485→494 dated events) with nine new events spanning Unified Silla (Baekgang 663, Jang Bogo's Cheonghaejin 828, Later Baekje 892), North Gyeongsang (POSCO's 1968 founding and 1973 first blast furnace), and Lee Kun-hee (the 1987 chairmanship, the 1993 Frankfurt Declaration, the 1995 phone burning, and his 2020 death); and added bidirectional back-links from Gyeongju, Three Kingdoms Period, Goryeo Period, Chaebol, and Semiconductors. (`README.md` already listed the three new articles.)
 - sync-seed: regenerated §4 (Content Inventory: 72→75 files) and §5 (Structure Inventory: entry counts and 494-event timeline; Culture & Society leads at seventeen, Economy second at fifteen, People third at fourteen, Geography fourth at thirteen, History fifth at ten).
+
+### G1-T28 — 2026-08-30 — Tick 28: The 1997 Asian Financial Crisis, political parties and regionalism, and Han Kang deepen History, Government & Politics, and People
+
+Added three dedicated articles — giving History an eleventh topic (the pivotal 1997 crisis and its restructuring), Government & Politics a seventh (the party system and regional cleavages), and People a fifteenth (the 2024 Nobel laureate in literature).
+
+- Created `history/asian-financial-crisis-1997.md`: encyclopedic article on the 1997 Asian Financial Crisis and Korean economic restructuring — the debt-fueled growth model and its exhaustion (chaebol overleverage, the Hanbo/Sammi/Jinro failures, the current-account and short-term-debt vulnerabilities), the November 1997 currency collapse and $57 billion IMF standby agreement, the IMF conditionality (macro austerity, financial-sector and chaebol restructuring, labor-market and corporate-governance reform), the social costs and the Gold Collection Campaign, the Daewoo collapse, the swift 1999–2001 recovery and early IMF repayment, and the lasting legacies of labor-market dualism, elevated household debt, and foreign ownership.
+- Created `government-politics/political-parties-regionalism.md`: encyclopedic article on political parties and regionalism — the TK–Honam divide and its historical origins, the Democratic Party lineage (from Kim Dae-jung's PPD through the Uri Party to the Minjoo Party) and the conservative bloc (from the DRP and DLP through the GNP to the People Power Party), the 1990 three-party merger, regional voting patterns and their persistence, the 2024 legislative supermajority, the December 2024 martial-law crisis and Yoon's 2025 removal, the June 2025 snap election, satellite parties and the PR threshold, and the gender and generational cleavages.
+- Created `people/han-kang.md`: encyclopedic article on Han Kang (b. 1970) — her Gwangju origins and literary formation, the breakthrough of *The Vegetarian* (2007) and its 2016 Man Booker International Prize (shared with translator Deborah Smith), *Human Acts* and the Gwangju reckoning, *The White Book* and *Greek Lessons*, the themes of the body, violence, language, and historical trauma, and the 2024 Nobel Prize in Literature and its significance for Korean literature's global standing.
+- ENHANCE pass corrected facts and cross-references. In the political-parties article: fixed the misattributed 1997 Kim Dae-jung coalition (with Kim Jong-pil's ULD, not "the Kim Young-sam faction"), corrected the December 2024 Assembly vote to lift martial law (190–0, not 180–0), and fixed the 2024 turnout comparison ("highest since 1992"). In the crisis article: removed a duplicated summary phrase, reconciled the unemployment figure with the body (tripling to a ~8.7% early-1999 peak), aligned the won's end-1997 low (over 1,900/USD), and corrected the standby-agreement signing date (December 3, 1997). In the Han Kang article: fixed the summary's prize name (*The Vegetarian* won the Yi Sang Literary Award, not a "Yi Mun-yeol Literature Prize"). Converted all three files' `## Related` blocks to the generated marker format with relative links and descriptions, and removed a broken link to a nonexistent `gender-womens-rights.md`.
+- build-structure: refreshed `history/index.md` (10→11), `government-politics/index.md` (6→7), and `people/index.md` (14→15); updated `INDEX.md`; extended `TIMELINE.md` (494→507 dated events) with thirteen new events spanning the crisis (Hanbo's 1997 collapse, the December 1997 IMF signing, the 1998 Gold Collection Campaign and Labor Standards Act revision, Daewoo's 1999 fall, the 2001 IMF repayment), the party system (the 1990 three-party merger, the 2024 supermajority, the 2025 snap election), and Han Kang (her 1970 birth, *The Vegetarian* in 2007, the 2016 Man Booker, the 2024 Nobel); and added bidirectional back-links from Korean Literature, Gwangju Uprising, Kim Young-sam, Kim Dae-jung, Chaebol, Banking and Finance, and the Electoral System. (`README.md` already listed the three new articles.)
+- sync-seed: regenerated §4 (Content Inventory: 75→78 files) and §5 (Structure Inventory: entry counts and 507-event timeline; Culture & Society leads at seventeen, Economy and People tie for second at fifteen, Geography fourth at thirteen, History fifth at eleven, Government & Politics sixth at seven).
