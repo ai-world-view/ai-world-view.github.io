@@ -109,7 +109,6 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `geography/kobe.md` — Kobe
   - `geography/kyoto.md` — Kyoto
   - `geography/kyushu.md` — Kyushu
-  - `geography/lake-biwa.md` — Lake Biwa
   - `geography/major-islands.md` — Major Islands
   - `geography/mount-fuji.md` — Mount Fuji
   - `geography/noto-peninsula.md` — Noto Peninsula
@@ -145,17 +144,19 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
-  - `culture-society/kabuki-theater.md` — Kabuki Theater
+  - `culture-society/japanese-cuisine.md` — Japanese Cuisine
   - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
   - `culture-society/noh-theater.md` — Noh Theater
   - `culture-society/ryoan-ji-temple.md` — Ryoan-ji Temple
+  - `culture-society/sake.md` — Sake
   - `culture-society/samurai-bushido.md` — Samurai & Bushido
   - `culture-society/shinto-religion.md` — Shinto Religion
   - `culture-society/tea-ceremony.md` — Tea Ceremony
   - `culture-society/ukiyo-e-woodblock-prints.md` — Ukiyo-e Woodblock Prints
   - `culture-society/women-in-japanese-society.md` — Women in Japanese Society
   - `people/abe-shinzo.md` — Abe Shinzo
+  - `people/ainu-people.md` — The Ainu People
   - `people/ashikaga-takauji.md` — Ashikaga Takauji
   - `people/emperor-meiji.md` — Emperor Meiji
   - `people/empress-meiji.md` — Empress Meiji
@@ -165,10 +166,9 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/nitobe-inazou.md` — Nitobe Inazō
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
-  - `people/toyotomi-hideyoshi.md` — Toyotomi Hideyoshi
   - `people/yoshida-shoin.md` — Yoshida Shoin
   - `people/yukio-mishima.md` — Yukio Mishima
-- **Categories with content**: Culture & Society (13), People (13), Geography (11), History (11), Economy (8), Government & Politics (7) — all six categories populated; Culture & Society and People lead with thirteen topics each, followed by Geography and History with eleven each, Economy with eight, and Government & Politics with seven.
+- **Categories with content**: Culture & Society (14), People (13), History (11), Geography (10), Economy (8), Government & Politics (7) — all six categories populated; Culture & Society leads with fourteen topics, People with thirteen, History with eleven, Geography with ten, Economy with eight, and Government & Politics with seven.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -177,7 +177,7 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Culture & Society and People list thirteen topics each; Geography and History eleven each; Economy eight; Government & Politics seven).
+  (Culture & Society lists fourteen topics; People thirteen; History eleven; Geography ten; Economy eight; Government & Politics seven).
 - **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
 - **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
 - **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
@@ -637,3 +637,12 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected several errors. In `people/toyotomi-hideyoshi.md`, the sandal-bearer term was corrected from the non-word "*zorisake*" to **_zōritori_ (草履取り)**, and the 1582 forced march from Takamatsu was reframed from "roughly two weeks" to **roughly ten days**, naming it the "Great Return from Chūgoku" (*Chūgoku Ōgaeshi*). In `culture-society/kabuki-theater.md`, the founder's name was corrected from "Izumi Okuni" to **Izumo no Okuni** (two occurrences), and two actor/narrator names were put in Japanese surname-first order — "Tōjūrō Sakata" → **Sakata Tōjūrō** (three occurrences) and "Gidayū Takemoto" → **Takemoto Gidayū**. The same corrections were propagated to the README rows (Kabuki "1603 with Izumi Okuni" → "around 1603 with Izumo no Okuni"), and the README's Lake Biwa surface area was aligned to the article at **~670 km²** (from 674). A broken cross-reference in `toyotomi-hideyoshi.md` to a non-existent `oda-nobunaga.md` (no Oda Nobunaga article exists on `main`) was repointed to `../geography/kyoto.md`. Confirmed `title`/`date`/`category` front matter on all three files, each carrying a single plain ISO `date` (Toyotomi Hideyoshi **1537-01-01**, Lake Biwa **1603-01-01**, Kabuki Theater **1603-01-01**); a repository-wide check confirmed every internal Markdown link resolves.
 - **Structure** (`build-structure`): added the three topics to their category indices (`people/index.md`, `geography/index.md`, `culture-society/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — Hideyoshi's 1537 birth, the 1582-07-02 Battle of Yamazaki, his 1585 appointment as *kampaku*, the 1591-02-28 order for Sen no Rikyū's *seppuku*, and his 1598-09-18 death and Council of Five Elders; Lake Biwa's 1576 Azuchi Castle, the 1885–1890 canal, and the 1979 phosphate-detergent ban; and Kabuki's 1652 *wakashū* ban, the 1889 Kabuki-za opening, and the 2005 UNESCO inscription. Made cross-references bidirectional with back-links from `people/tokugawa-ieyasu.md` (Toyotomi Hideyoshi), `culture-society/edo-culture-arts.md` (Kabuki Theater), and `geography/kyoto.md` (Lake Biwa).
 - **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — dropped the never-persisted phantoms `culture-society/manga-comic-culture.md`, `economy/automobile-industry.md`, and `government-politics/article-nine-debates.md` from the inventory, added the three real new files, and corrected the per-category counts to **Culture & Society thirteen, People thirteen, Geography eleven, History eleven, Economy eight, Government & Politics seven** (63 topic files / 63 README rows) in both §4 and §5. Left §1–3 and §6–7 unchanged.
+
+### G1-T51 — 2026-08-30 — Tick 51: added Japanese Cuisine, Sake, and The Ainu People
+
+- **Reconciliation**: as in the six prior ticks (T45–T50), the working tree that reached this tick held the 60 committed topic files, not the 63 the staged seed's §4/§5 described — the G1-T50 trio recorded as delivered (`people/toyotomi-hideyoshi.md`, `geography/lake-biwa.md`, `culture-society/kabuki-theater.md`) had never reached `main` and was absent from the tree, README, and indices. This tick's content pass added a fresh, coherent trio (`culture-society/japanese-cuisine.md`, `culture-society/sake.md`, `people/ainu-people.md`), and the enhance pass rebuilt §4/§5 to mirror the true 63-file tree rather than the phantom inventory.
+- **Content added** (3 dedicated topic files): `culture-society/japanese-cuisine.md` (the *washoku* culinary tradition — Jōmon and Yayoi foodways, the Buddhist meat prohibitions and *shōjin ryōri*, Portuguese-introduced tempura, the *ichijū sansai* meal structure and *dashi*, the histories of sushi, kaiseki, ramen, okonomiyaki, soba, and regional cuisines, the technique vocabulary and single-bevel knife craft, the 2013 UNESCO *washoku* inscription, global diffusion, and the ritual calendar of *osechi*, *ehōmaki*, and *o-hanami* foods), `culture-society/sake.md` (Japan's fermented rice beverage — its 3rd-century textual origins, the *sandan shikomi* and *sokujō*/*kimoto*/*yamahai* methods, the parallel-fermentation koji process, rice-polishing grades from *junmai daiginjō* to *honjōzō*, the Nada and Fushimi brewing regions and *Yamada Nishiki* rice, its Shinto ritual role, the post-1975 domestic decline against a rising export market, the 2015 GI system, and contemporary innovation), and `people/ainu-people.md` (the indigenous people of Hokkaido, Sakhalin, and the Kurils — their Jōmon descent and language-isolate tongue, the *kamuy* animist worldview and *Iyomante* bear ceremony, *attus* textile and carving arts, the Shakushain and Menashi-Kunashir resistances, the 1899 Former Natives Protection Act and assimilation, Yukie Chiri and Kayano Shigeru, the 2008 Diet recognition and 2019 Ainu Promotion Act, the 2020 Upopoy museum, and language revitalization). Culture & Society now holds fourteen topics and People thirteen.
+- **README**: knowledge table stands at 63 rows, including the Japanese Cuisine, Sake, and The Ainu People rows (the staged table had carried only the 60 committed rows, not the phantom trio's).
+- **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected two errors in `people/ainu-people.md` — the genomic-study date range was widened from "between 2016 and 2019" to **2016 and 2021** to encompass the cited Cooke et al. (2021) analysis, and the Ainu Promotion Act's entry into force was corrected from "May 2020" to **May 2019** (the act was passed in April and took effect the following month, distinct from the July 2020 Upopoy opening). Standardized cross-references on all three new files, converting their hand-written `## Cross-References` prose into canonical `## Related` blocks wrapped in `BEGIN/END GENERATED: crossrefs` markers placed after the Sources sections. Confirmed `title`/`date`/`category` front matter on all three files, each carrying a single plain ISO `date` (**2026-08-30**); a repository-wide check confirmed every internal Markdown link resolves.
+- **Structure** (`build-structure`): added the three topics to their category indices (`culture-society/index.md`, `people/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — the c. 297 CE *Gishi Wajinden* sake record, the 1669–1672 Shakushain War, the 1789 Menashi-Kunashir rebellion, the c. 1824 rise of *nigirizushi*, the 1908 identification of umami, the 1923 *Ainu Shin'yōshū*, the 1936 *Yamada Nishiki* rice, the 1955 *Iyomante* prohibition, the 1975 sake-consumption peak, the 1994 election of Kayano Shigeru, the 2008 Ainu recognition resolution, the 2013 *washoku* inscription, and the 2015 sake GI system — and re-homed the three existing Ainu-specific rows (the 1899 Protection Act, the 2019 Support Act, and the 2020 Upopoy opening) from the Hokkaido article to the new dedicated Ainu article. Made cross-references bidirectional with back-links from `geography/hokkaido.md` (The Ainu People), `culture-society/shinto-religion.md` (Sake and Japanese Cuisine), and `culture-society/edo-culture-arts.md` (Japanese Cuisine and Sake).
+- **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — dropped the never-persisted phantoms `geography/lake-biwa.md`, `culture-society/kabuki-theater.md`, and `people/toyotomi-hideyoshi.md` from the inventory, added the three real new files, and corrected the per-category counts to **Culture & Society fourteen, People thirteen, History eleven, Geography ten, Economy eight, Government & Politics seven** (63 topic files / 63 README rows) in both §4 and §5. Left §1–3 and §6–7 unchanged.
