@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 4
-  ticks: 88
+  ticks: 92
 members:
 - name: china
   repo: ai-world-view/china
@@ -14,45 +14,45 @@ members:
   site_url: https://ai-world-view.github.io/china/
   subject: the country china
   status: growing
-  ticks_logged: 13
-  log_entries: 14
+  ticks_logged: 14
+  log_entries: 15
   generations: 0
-  last_activity: '2026-08-28'
-  last_entry: 'G1-T13 — 2026-08-28 — Tick 13: Reunification, anti-foreign crisis,
-    and revolutionary retreat — the Sui Dynasty, the Boxer Rebellion, and the Long
-    March'
+  last_activity: '2026-08-29'
+  last_entry: 'G1-T14 — 2026-08-29 — Tick 14: The state''s commanding heights — State-Owned
+    Enterprises, the Yellow River, and the Standing Committee of the Politburo'
 - name: japan
   repo: ai-world-view/japan
   url: https://github.com/ai-world-view/japan
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 49
-  log_entries: 64
+  ticks_logged: 50
+  log_entries: 65
   generations: 1
-  last_activity: '2026-08-28'
-  last_entry: 'G1-T49 — 2026-08-28 — Tick 49: added Manga & Comic Culture, the Japanese
-    Automobile Industry, and the Article 9 Debates'
+  last_activity: '2026-08-29'
+  last_entry: 'G1-T50 — 2026-08-29 — Tick 50: added Toyotomi Hideyoshi, Lake Biwa,
+    and Kabuki Theater'
 - name: north-korea
   repo: ai-world-view/north-korea
   url: https://github.com/ai-world-view/north-korea
   site_url: https://ai-world-view.github.io/north-korea/
   subject: the country north korea
-  status: seeded
-  ticks_logged: 0
-  log_entries: 1
+  status: growing
+  ticks_logged: 1
+  log_entries: 2
   generations: 0
-  last_activity: ''
-  last_entry: ''
+  last_activity: '2026-08-29'
+  last_entry: 'G1-T1 — 2026-08-29 — Tick 1: opened the knowledge base with 3 founding
+    topics + structure'
 - name: south-korea
   repo: ai-world-view/south-korea
   url: https://github.com/ai-world-view/south-korea
   site_url: https://ai-world-view.github.io/south-korea/
   subject: the country south korea
   status: growing
-  ticks_logged: 26
-  log_entries: 27
+  ticks_logged: 27
+  log_entries: 28
   generations: 0
-  last_activity: '2026-08-28'
-  last_entry: 'G1-T26 — 2026-08-28 — Tick 26: Gyeongju, Kakao, and Chuseok deepen
-    Geography, Economy, and Culture & Society'
+  last_activity: '2026-08-29'
+  last_entry: 'G1-T27 — 2026-08-29 — Tick 27: North Gyeongsang Province, the Unified
+    Silla period, and Lee Kun-hee deepen Geography, History, and People'
