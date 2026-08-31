@@ -87,33 +87,37 @@ present under `.github/`:
 ## Section 4 — Content Inventory
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
-People. The README knowledge table ("Notable Facts about the country north korea") holds **6 rows**.
-Dedicated topic files (6):
+People. The README knowledge table ("Notable Facts about the country north korea") holds **9 rows**.
+Dedicated topic files (9):
 
 - `geography/pyongyang.md` — Pyongyang, the capital and largest city.
+- `geography/mount-paektu.md` — Mount Paektu, the sacred border volcano and its Kim-dynasty mythology.
 - `history/korean-war.md` — the 1950–1953 Korean War.
 - `government-politics/government-structure.md` — the DPRK's political system and institutions.
 - `economy/economic-system-and-famine.md` — the planned economy and the 1994–1998 famine.
+- `culture-society/state-ideology-and-propaganda.md` — juche, the personality cult, and the propaganda state.
 - `people/kim-il-sung.md` — founding leader Kim Il-sung (1912–1994).
 - `people/kim-jong-il.md` — second leader Kim Jong-il (1942–2011).
+- `people/kim-jong-un.md` — third leader Kim Jong-un (2011–present).
 
-Populated categories: Geography, History, Government & Politics, Economy, People. Not yet opened:
-Culture & Society.
+Populated categories: all six — Geography, History, Government & Politics, Economy, Culture & Society,
+and People. The Culture & Society category was opened this tick.
 
 ## Section 5 — Structure Inventory
 
 Generated structural artifacts now present:
 
 - **Category index pages** — `geography/index.md`, `history/index.md`,
-  `government-politics/index.md`, `economy/index.md`, `people/index.md` (one per populated
-  category; the empty Culture & Society category has no index yet).
+  `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md`
+  (one per category; all six are now populated).
 - **Timeline** — `TIMELINE.md` (topics with a historical date in chronological order: Kim Il-sung,
-  Kim Jong-il, Korean War).
+  Kim Jong-il, Korean War, Kim Jong-un).
 - **Master index** — `INDEX.md` (all topics grouped by taxonomy, with pointers to category indices
   and the timeline).
-- **Cross-references** — a generated `## Related` block in each of the 6 dedicated topic files.
+- **Cross-references** — a generated `## Related` block in each of the 9 dedicated topic files.
 - **Preview art** — atlas-style SVG cards under `assets/images/previews/` for each category and
-  featured topic.
+  featured topic (including `mount-paektu.svg`, `kim-jong-un.svg`,
+  `state-ideology-and-propaganda.svg`, and `culture-society.svg`).
 
 ## Section 6 — Growth Loop
 
@@ -155,3 +159,16 @@ Second growth tick. Added three topics that opened two new categories and carrie
 - Added `README.md`, `INDEX.md`, and `people/index.md` rows for the three new topics; updated `ROADMAP.md` (Now → Done for tick 2).
 - Ran build-structure — created `geography/index.md` and `economy/index.md` (with atlas-style preview SVGs), added Kim Jong-il to `TIMELINE.md`, and refreshed the `## Related` cross-reference blocks across the older topic files to link the new pages bidirectionally.
 - Ran sync-seed — regenerated §1–7 (Content 3→6 rows/files across 5 populated categories; Structure inventory now lists 5 category indices, 3 dated timeline rows, and 6 cross-referenced files).
+
+### G1-T3 — 2026-08-31 — Tick 3: opened Culture & Society, added Mount Paektu, and completed the Kim dynasty with Kim Jong-un
+
+Third growth tick. Added three topics that opened the last unpopulated category, brought the leadership coverage to the current head of state, and gave the state its sacred geography, then refreshed the structural layer.
+
+- Created `culture-society/state-ideology-and-propaganda.md` — the DPRK as a propaganda state: the origins and content of juche, the three-generation personality cult, the state media monopoly (KCNA, KCTV, Rodong Sinmun), mass mobilization and the Arirang mass games, cultural production and the Shin Sang-ok abduction, the songbun class system, inminban surveillance, the Chollima speed campaigns, and adaptation under Kim Jong-un. Opened the Culture & Society category — all six taxonomy categories are now populated.
+- Created `people/kim-jong-un.md` — third leader Kim Jong-un (2011–present): disputed birth and Swiss schooling, the compressed succession, the violent consolidation (Jang Song-thaek, Kim Jong-nam), the nuclear/missile completion and the Byungjin line, the 2018–2019 summit diplomacy and the pivot to Russia, domestic governance and the COVID border closure, and the modernized personality cult. Completes the Kim-dynasty coverage.
+- Created `geography/mount-paektu.md` — Mount Paektu, the 2,744 m sacred stratovolcano on the China–DPRK border: geology and the c. 946 Millennium Eruption, Heaven Lake, Korean creation myth and the Kim-dynasty birthplace fabrication, the 1962 Sino–North Korean border treaty, and ecology.
+- Enhance pass: converted every front-matter `date:` to a single ISO date (Kim Jong-un `1984-01-08`; the thematic State Ideology and geographic Mount Paektu topics to the tick date, matching the Pyongyang/Government-Structure convention); corrected Kim Jong-un's siblings (the three Ko Yong-hui children are Kim Jong-chol, Kim Jong-un, and Kim Yo-jong; Kim Sol-song and Kim Jong-nam were by other partners), his Swiss school dates (c. 1998–2000), and the Supreme Commander appointment (December 30, 2011); removed an unverifiable "Decree 149" citation from the songbun section; and fixed Mount Paektu's Heaven Lake dimensions (≈9.82 km² area, not diameter), river system (Songhua outlet; Yalu and Tumen forming the border), the border-treaty split (DPRK ≈54.5%), and an inaccurate national-anthem quotation.
+- Converted the three new topics' manual `## See Also` lists into generated `## Related` cross-reference blocks and refreshed the `## Related` blocks across the six older topic files to link the new pages bidirectionally.
+- Added `README.md`, `INDEX.md`, and category-index rows for the three new topics; created `culture-society/index.md`; added Kim Jong-un to `TIMELINE.md`; authored atlas-style preview SVGs for the three topics and the Culture & Society category; and updated `ROADMAP.md` (Now → Done for tick 3).
+- Ran build-structure — created the Culture & Society category index, extended the master index and timeline, and regenerated all cross-references.
+- Ran sync-seed — regenerated §1–7 (Content 6→9 rows/files across all six populated categories; Structure inventory now lists 6 category indices, 4 dated timeline rows, and 9 cross-referenced files).
