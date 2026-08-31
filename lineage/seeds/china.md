@@ -71,8 +71,8 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 45 rows.
-- **Dedicated topic files**: 45.
+- **README knowledge table**: 48 rows.
+- **Dedicated topic files**: 48.
   - `culture-society/buddhism-in-china.md` — Buddhism in China
   - `culture-society/chinese-medicine.md` — Chinese Medicine
   - `culture-society/confucianism.md` — Confucianism
@@ -82,7 +82,9 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `economy/economic-reform-opening-up.md` — Economic Reform & Opening-up (1978 Onward)
   - `economy/special-economic-zones.md` — Special Economic Zones
   - `economy/state-owned-enterprises.md` — State-Owned Enterprises (SOEs)
+  - `economy/the-tea-trade.md` — The Tea Trade
   - `geography/the-forbidden-city.md` — The Forbidden City
+  - `geography/the-grand-canal.md` — The Grand Canal
   - `geography/the-great-wall.md` — The Great Wall of China
   - `geography/the-silk-road.md` — The Silk Road
   - `geography/the-yangtze-river.md` — The Yangtze River
@@ -107,6 +109,7 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `history/the-sui-dynasty.md` — The Sui Dynasty
   - `history/the-tang-dynasty.md` — The Tang Dynasty
   - `history/the-yuan-dynasty.md` — The Yuan Dynasty
+  - `history/the-zhou-dynasty.md` — The Zhou Dynasty
   - `history/warring-states-period.md` — The Warring States Period
   - `people/confucius.md` — Confucius
   - `people/deng-xiaoping.md` — Deng Xiaoping
@@ -118,8 +121,8 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `people/xi-jinping.md` — Xi Jinping
   - `people/zheng-he.md` — Zheng He
   - `people/zhou-enlai.md` — Zhou Enlai
-- **Categories with content**: Culture & Society (5), Economy (4), Geography (5),
-  Government & Politics (6), History (15), People (10).
+- **Categories with content**: Culture & Society (5), Economy (5), Geography (6),
+  Government & Politics (6), History (16), People (10).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -129,9 +132,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 206 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 217 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 45 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 48 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -493,3 +496,7 @@ Added three topics deepening Economy, Geography, and Government & Politics and s
 ### G1-T15 — 2026-08-30 — Tick 15: Civilizational foundations — the Yangtze River, the Shang Dynasty, and the Imperial Examination System
 
 Added three topics deepening Geography, History, and Government & Politics and spanning China's physical, dynastic, and institutional foundations: `geography/the-yangtze-river.md` (Asia's longest river — its Tibetan-Plateau source and Three Gorges, the Yangtze civilization from Hemudu and Liangzhu, the Grand Canal grain trade, the Battle of Red Cliffs and 1949 crossing, the Three Gorges Dam, the baiji's extinction, and the 2021 fishing ban and Protection Law), `history/the-shang-dynasty.md` (China's earliest confirmed dynasty, c. 1600–1046 BCE — oracle-bone writing and the 1899 recognition and 1928 Yinxu excavation, piece-mold ritual bronzes and the taotie, the theocratic ancestor cult and human sacrifice, Fu Hao's intact tomb, and the Zhou conquest at Muye), and `government-politics/imperial-examination-system.md` (the *keju* civil-service examinations from the Sui/Tang *jinshi* through the Song's expansion, the Yuan suspension and restoration, the Ming eight-legged essay, and the 1905 abolition — the four tiers, examination compounds, the Four Books and Five Classics, and the scholar-official ideal), each with `title`/`date`/`category` front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. Geography now holds five topics, Government & Politics six, and History fifteen; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and corrected several factual errors in the examination article: the Han recommendation system rendered as *chaju* (not "chalian"), the Tang parallel tracks corrected to *mingjing* (classics) and *mingfa* (law) from a garbled "mingching/mingjing," and Hong Xiuquan's failures corrected from the *juren* to the entry-level Canton civil-service examination (he never gained even the *shengyuan* degree); and revised the Yangtze Economic Belt to its true share (over 40 percent of the population, some 600 million). Fixed cross-references: repointed the new files' Related blocks off six non-existent targets (the Grand Canal and Shanghai in Yangtze; Zhu Xi in the examinations; the Xia and Zhou dynasties and "Chinese Civilization" in Shang) to real articles, and corrected the Shang article's Yellow River link to its `../geography/` path. Verified every cross-reference resolves (0 broken links repo-wide). Refreshed the structural layer: inserted the Yangtze (after the Yellow River) into the Geography index and INDEX, the Shang (first, as the earliest) into the History index and INDEX, and the Imperial Examination System (first) into the Government & Politics index and INDEX; grew the README knowledge table from 42 to 45 rows; extended `TIMELINE.md` from 190 to 206 dated milestones (the Shang's c. 1600 founding, Wu Ding's c. 1250 peak, and the c. 1046 Battle of Muye, with the 1899 oracle-bone recognition, 1928 Yinxu excavation, 1976 Fu Hao tomb, and 2006 UNESCO listing; the examination system's 605 *jinshi* institution, 973 palace examination, and 1315 Yuan restoration, repointing the existing 1905 abolition milestone from Confucianism to the dedicated article; and the Yangtze's 208 Red Cliffs, 1931 flood, 1994 Three Gorges construction, 2007 baiji extinction, 2012 dam completion, and 2021 fishing ban); and wove reciprocal cross-references from eight existing articles (the Yellow River and Han Dynasty to the Yangtze; the Han, Qin, and Warring States to the Shang; and the Tang, Song, and Confucianism to the Imperial Examination System). Regenerated seed sections 4–5 to match live state (45 topic files, 45 README rows, 206 milestones, no empty categories).
+
+### G1-T16 — 2026-08-31 — Tick 16: Connective tissue of empire — the Zhou Dynasty, the Grand Canal, and the Tea Trade
+
+Added three topics deepening History, Geography, and Economy and supplying long-missing connective structure to the knowledge base: `history/the-zhou-dynasty.md` (China's longest-lasting dynasty, 1046–256 BCE — the Mandate of Heaven, the *fengjian* vassal order, the Western/Eastern Zhou division, and the Spring and Autumn and Warring States eras that produced Confucianism, Daoism, and the Hundred Schools before Qin's unification), `geography/the-grand-canal.md` (the ~1,776 km Beijing–Hangzhou waterway built in stages from the Sui through the Ming — Emperor Yang's ruinous construction, Tang–Song grain logistics, Guo Shoujing's Yuan re-alignment, peak Ming *caoyun* operations, the Qing decline, and the 2014 UNESCO listing), and `economy/the-tea-trade.md` (one of history's longest commodity trades — Lu Yu's Tang codification, the Song point-tea aesthetic, the Ming loose-leaf turn, the Canton System and Cohong, the silver drain that fed the opium traffic and the Opium Wars, and Robert Fortune's transplant of the industry to India), each with `title`/`preview`/`date`/`category` front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. History now holds sixteen topics, Geography six, and Economy five; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and corrected several facts: the Zhou is China's longest-lasting **dynasty** (not "imperial dynasty," since the imperial era began only with Qin in 221 BCE), the extinction of the Eastern Zhou in 256 BCE was carried out by the state of Qin under King Zhaoxiang (not by the then-infant Qin Shi Huang), and the last Shang king is rendered "Di Xin" for consistency; in the Grand Canal, dropped the spurious "Duke of Zhou" from the key figures (replaced with Guo Shoujing and the Yongle Emperor), fixed "the Marco Polo" and the Tianjin–Pukou (Jinpu) Railway name; and repaired two wrong `/economy/the-silk-road` links (the Silk Road is a Geography topic). Converted all three files from root-absolute, extensionless links to the repo's relative `.md` convention (81 links) and from `## See Also` sections to canonical `## Related` `crossrefs`-wrapped blocks, and added the missing `preview` front-matter field. Fixed six pre-existing files whose crossref markers rendered as visible text or `##` headings (`the-yellow-river`, `the-opium-wars`, `standing-committee-politburo`, `state-owned-enterprises`, `hu-jintao`, `jiang-zemin`), normalizing them to the canonical `<!-- BEGIN/END GENERATED: crossrefs -->` HTML-comment form. Verified every cross-reference resolves (0 broken links repo-wide). Refreshed the structural layer: inserted the Zhou (between Shang and Warring States) into the History index and INDEX, the Grand Canal (after the Yangtze) into the Geography index and INDEX, and the Tea Trade into the Economy index and INDEX; the README knowledge table already carried the three new rows (48 total), whose Zhou and Grand Canal descriptions were corrected ("imperial dynasty"→"dynasty"; canal length 1,100–1,200 km → ~1,776 km); extended `TIMELINE.md` from 206 to 217 dated milestones (the Zhou's c. 1046 founding, 771 fall of the Western Zhou, and 256 extinction; the Grand Canal's 486 BCE Han Gou precursor, 1293 Tonghui Canal, and 2014 UNESCO listing, with the 605 CE construction milestone repointed from the Sui to the dedicated article; and the Tea Trade's c. 760 *Cha Jing*, 793 tea tax, 1391 loose-leaf decree, 1610 Dutch export, 1757 Canton System, and 1848 Robert Fortune), repointing the 256 BCE Zhou-extinction milestone from the Warring States to the Zhou article; and wove reciprocal cross-references from ten existing articles (the Shang, Warring States, Qin, Confucius, and Confucianism to the Zhou; the Sui, Yangtze, and Yellow River to the Grand Canal; and the Silk Road and Ming to the Tea Trade). Reconciled `ROADMAP.md` (the three Now items moved to Done as G1-T16; Filial Piety, Tributary System, and Kangxi promoted from Backlog to Now) and regenerated seed sections 4–5 to match live state (48 topic files, 48 README rows, 217 milestones, no empty categories).
