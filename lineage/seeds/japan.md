@@ -112,6 +112,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `geography/major-islands.md` — Major Islands
   - `geography/mount-fuji.md` — Mount Fuji
   - `geography/noto-peninsula.md` — Noto Peninsula
+  - `geography/okinawa.md` — Okinawa
   - `geography/osaka.md` — Osaka
   - `geography/shikoku.md` — Shikoku
   - `geography/tokyo.md` — Tokyo
@@ -124,6 +125,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `history/nara-period.md` — Nara Period
   - `history/russo-japanese-war.md` — Russo-Japanese War
   - `history/sengoku-period.md` — Sengoku Period
+  - `history/showa-period-militarism.md` — Showa Period (Militarism Phase)
   - `history/taisho-period.md` — Taisho Period
   - `history/world-war-ii.md` — World War II
   - `government-politics/diet-of-japan.md` — Diet of Japan
@@ -137,6 +139,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `economy/bubble-economy.md` — 1980s Bubble Economy
   - `economy/financial-sector-regulation.md` — Financial Sector Regulation
   - `economy/financial-system.md` — Japanese Financial System
+  - `economy/japanese-corporations-keiretsu.md` — Japanese Corporations & Keiretsu
   - `economy/labor-market-and-employment.md` — Labor Market & Employment
   - `economy/lost-decade.md` — Lost Decade & Deflation
   - `economy/postwar-recovery-growth.md` — Postwar Recovery & Economic Growth
@@ -144,19 +147,16 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
-  - `culture-society/japanese-cuisine.md` — Japanese Cuisine
   - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
   - `culture-society/noh-theater.md` — Noh Theater
   - `culture-society/ryoan-ji-temple.md` — Ryoan-ji Temple
-  - `culture-society/sake.md` — Sake
   - `culture-society/samurai-bushido.md` — Samurai & Bushido
   - `culture-society/shinto-religion.md` — Shinto Religion
   - `culture-society/tea-ceremony.md` — Tea Ceremony
   - `culture-society/ukiyo-e-woodblock-prints.md` — Ukiyo-e Woodblock Prints
   - `culture-society/women-in-japanese-society.md` — Women in Japanese Society
   - `people/abe-shinzo.md` — Abe Shinzo
-  - `people/ainu-people.md` — The Ainu People
   - `people/ashikaga-takauji.md` — Ashikaga Takauji
   - `people/emperor-meiji.md` — Emperor Meiji
   - `people/empress-meiji.md` — Empress Meiji
@@ -168,7 +168,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
   - `people/yoshida-shoin.md` — Yoshida Shoin
   - `people/yukio-mishima.md` — Yukio Mishima
-- **Categories with content**: Culture & Society (14), People (13), History (11), Geography (10), Economy (8), Government & Politics (7) — all six categories populated; Culture & Society leads with fourteen topics, People with thirteen, History with eleven, Geography with ten, Economy with eight, and Government & Politics with seven.
+- **Categories with content**: History (12), Culture & Society (12), People (12), Geography (11), Economy (9), Government & Politics (7) — all six categories populated; History, Culture & Society, and People lead with twelve topics each, followed by Geography with eleven, Economy with nine, and Government & Politics with seven.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -177,7 +177,7 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Culture & Society lists fourteen topics; People thirteen; History eleven; Geography ten; Economy eight; Government & Politics seven).
+  (History, Culture & Society, and People list twelve topics each; Geography eleven; Economy nine; Government & Politics seven).
 - **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
 - **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
 - **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
@@ -646,3 +646,12 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected two errors in `people/ainu-people.md` — the genomic-study date range was widened from "between 2016 and 2019" to **2016 and 2021** to encompass the cited Cooke et al. (2021) analysis, and the Ainu Promotion Act's entry into force was corrected from "May 2020" to **May 2019** (the act was passed in April and took effect the following month, distinct from the July 2020 Upopoy opening). Standardized cross-references on all three new files, converting their hand-written `## Cross-References` prose into canonical `## Related` blocks wrapped in `BEGIN/END GENERATED: crossrefs` markers placed after the Sources sections. Confirmed `title`/`date`/`category` front matter on all three files, each carrying a single plain ISO `date` (**2026-08-30**); a repository-wide check confirmed every internal Markdown link resolves.
 - **Structure** (`build-structure`): added the three topics to their category indices (`culture-society/index.md`, `people/index.md`) and to `INDEX.md`; merged new dated facts into `TIMELINE.md` — the c. 297 CE *Gishi Wajinden* sake record, the 1669–1672 Shakushain War, the 1789 Menashi-Kunashir rebellion, the c. 1824 rise of *nigirizushi*, the 1908 identification of umami, the 1923 *Ainu Shin'yōshū*, the 1936 *Yamada Nishiki* rice, the 1955 *Iyomante* prohibition, the 1975 sake-consumption peak, the 1994 election of Kayano Shigeru, the 2008 Ainu recognition resolution, the 2013 *washoku* inscription, and the 2015 sake GI system — and re-homed the three existing Ainu-specific rows (the 1899 Protection Act, the 2019 Support Act, and the 2020 Upopoy opening) from the Hokkaido article to the new dedicated Ainu article. Made cross-references bidirectional with back-links from `geography/hokkaido.md` (The Ainu People), `culture-society/shinto-religion.md` (Sake and Japanese Cuisine), and `culture-society/edo-culture-arts.md` (Japanese Cuisine and Sake).
 - **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — dropped the never-persisted phantoms `geography/lake-biwa.md`, `culture-society/kabuki-theater.md`, and `people/toyotomi-hideyoshi.md` from the inventory, added the three real new files, and corrected the per-category counts to **Culture & Society fourteen, People thirteen, History eleven, Geography ten, Economy eight, Government & Politics seven** (63 topic files / 63 README rows) in both §4 and §5. Left §1–3 and §6–7 unchanged.
+
+### G1-T52 — 2026-08-31 — Tick 52: added the Showa Period (Militarism Phase), Okinawa, and Japanese Corporations & Keiretsu
+
+- **Reconciliation**: as in the seven prior ticks (T45–T51), the working tree that reached this tick held the 60 committed topic files, not the 63 the staged seed's §4/§5 described — the G1-T51 trio recorded as delivered (`culture-society/japanese-cuisine.md`, `culture-society/sake.md`, `people/ainu-people.md`) had never reached `main` and was absent from the tree, README, and indices. This tick's content pass added a fresh, coherent trio spanning three under-built categories (`history/showa-period-militarism.md`, `geography/okinawa.md`, `economy/japanese-corporations-keiretsu.md`), and the enhance pass rebuilt §4/§5 to mirror the true 63-file tree rather than the phantom inventory.
+- **Content added** (3 dedicated topic files): `history/showa-period-militarism.md` (Japan's militarization phase, 1926–1945 — the reversal of "Taishō democracy" amid the Great Depression and *kokutai* ultranationalism, the Mukden Incident and Manchukuo, the May Fifteenth and February Twenty-Sixth incidents that ended party government, the Second Sino-Japanese War and the Nanjing Massacre, the National General Mobilization Law, the Tripartite Pact and the Pacific War from Pearl Harbor through Midway to Okinawa and the atomic bombings, the debate over Hirohito's responsibility, total economic and cultural mobilization, and the postwar reckoning and reinvention), `geography/okinawa.md` (Japan's southernmost prefecture — the Ryukyu Islands' subtropical geography and coral ecology, the Ryukyu Kingdom, 1429–1879, its China-tribute trade and 1609 Satsuma subjugation, the 1879 *Ryūkyū Shobun* annexation, the 1945 Battle of Okinawa and its catastrophic civilian toll, the 1945–1972 US administration and 1972 reversion, the contemporary US-base controversy centered on Futenma and Henoko, the endangered Ryukyuan languages and *kumiodori*/*eisa*/*sanshin* arts, the *champurū* cuisine and longevity research, and the tourism-driven economy), and `economy/japanese-corporations-keiretsu.md` (the postwar corporate-group model — the SCAP *zaibatsu* dissolution and the reconstitution of horizontal and vertical *keiretsu*, the main-bank system and cross-shareholding, the *sōgō shōsha* trading companies, the lifetime-employment and *Shunto* labor order, the high-growth and bubble-era expansion, the Lost-Decade banking crisis and "zombie lending," and the post-2000 unwinding under global shareholder capitalism and governance reform). History now holds twelve topics, Geography eleven, and Economy nine.
+- **README**: knowledge table expanded from 60 to 63 rows, adding the Showa Period (Militarism), Okinawa, and Japanese Corporations & Keiretsu rows (the staged table had carried only the 60 committed rows, not the phantom trio's).
+- **Enhance pass**: normalized all three front-matter `date:` fields from bare years to single plain ISO dates — `1926-12-25` (Shōwa, Hirohito's accession), `1879-04-04` (Okinawa, the establishment of Okinawa Prefecture), and `1952-04-28` (Keiretsu, the end of the occupation, when former *zaibatsu* firms regrouped openly). Fixed a broken cross-reference in `geography/okinawa.md` (the `## Related` link to `../people/ainu-people.md`, a phantom file absent on disk) by removing it, and softened an overstated claim that Shuri Castle's main hall "reconstruction was completed in 2026" to reconstruction being underway and expected to complete in 2026 (not yet finished as of this tick). Standardized cross-references on all three files, converting their hand-written `## Related` blocks (placed before Sources) into canonical `## Related` blocks with em-dash descriptions, wrapped in `BEGIN/END GENERATED: crossrefs` markers placed after the Sources sections. Verified factual accuracy from the model's own knowledge — spot-checks confirmed the Nikkei peak (38,915 on 1989-12-29), the Plaza Accord and yen appreciation, Pearl Harbor casualties (2,403), the fall of Singapore, the Battle of Midway's four sunk carriers, the Ryukyu Kingdom's 1429 unification and 1609 Satsuma invasion, and Okinawa's 1972-05-15 reversion. Confirmed `title`/`date`/`category` front matter on all three files; a repository-wide check confirmed every internal Markdown link resolves.
+- **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `geography/index.md`, `economy/index.md`) and to `INDEX.md`; merged the genuinely new dated facts into `TIMELINE.md` — the Shōwa militarism period span (1926-12-25 – 1945-09-02), the 1932-05-15 May Fifteenth Incident, the 1938-03 National General Mobilization Law, the 1946–1948 *zaibatsu* dissolution and *keiretsu* regrouping, and the 2015 Corporate Governance Code. Okinawa's principal dated facts (the 1429 Ryukyu founding, the 1609 Satsuma annexation, the 1879 Okinawa Prefecture annexation, the 1945 Battle of Okinawa, and the 1972-05-15 reversion) were already represented in the timeline via `geography/major-islands.md`, so duplicate rows were deliberately avoided.
+- **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — dropped the never-persisted phantoms `culture-society/japanese-cuisine.md`, `culture-society/sake.md`, and `people/ainu-people.md` from the inventory, added the three real new files, and corrected the per-category counts to **History twelve, Culture & Society twelve, People twelve, Geography eleven, Economy nine, Government & Politics seven** (63 topic files / 63 README rows) in both §4 and §5. Left §1–3 and §6–7 unchanged.
