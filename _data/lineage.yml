@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 4
-  ticks: 92
+  ticks: 96
 members:
 - name: china
   repo: ai-world-view/china
@@ -14,45 +14,46 @@ members:
   site_url: https://ai-world-view.github.io/china/
   subject: the country china
   status: growing
-  ticks_logged: 14
-  log_entries: 15
+  ticks_logged: 15
+  log_entries: 16
   generations: 0
-  last_activity: '2026-08-29'
-  last_entry: 'G1-T14 — 2026-08-29 — Tick 14: The state''s commanding heights — State-Owned
-    Enterprises, the Yellow River, and the Standing Committee of the Politburo'
+  last_activity: '2026-08-30'
+  last_entry: 'G1-T15 — 2026-08-30 — Tick 15: Civilizational foundations — the Yangtze
+    River, the Shang Dynasty, and the Imperial Examination System'
 - name: japan
   repo: ai-world-view/japan
   url: https://github.com/ai-world-view/japan
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 50
-  log_entries: 65
+  ticks_logged: 51
+  log_entries: 66
   generations: 1
-  last_activity: '2026-08-29'
-  last_entry: 'G1-T50 — 2026-08-29 — Tick 50: added Toyotomi Hideyoshi, Lake Biwa,
-    and Kabuki Theater'
+  last_activity: '2026-08-30'
+  last_entry: 'G1-T51 — 2026-08-30 — Tick 51: added Japanese Cuisine, Sake, and The
+    Ainu People'
 - name: north-korea
   repo: ai-world-view/north-korea
   url: https://github.com/ai-world-view/north-korea
   site_url: https://ai-world-view.github.io/north-korea/
   subject: the country north korea
   status: growing
-  ticks_logged: 1
-  log_entries: 2
+  ticks_logged: 2
+  log_entries: 3
   generations: 0
-  last_activity: '2026-08-29'
-  last_entry: 'G1-T1 — 2026-08-29 — Tick 1: opened the knowledge base with 3 founding
-    topics + structure'
+  last_activity: '2026-08-30'
+  last_entry: 'G1-T2 — 2026-08-30 — Tick 2: opened Geography and Economy, extended
+    People to the second Kim'
 - name: south-korea
   repo: ai-world-view/south-korea
   url: https://github.com/ai-world-view/south-korea
   site_url: https://ai-world-view.github.io/south-korea/
   subject: the country south korea
   status: growing
-  ticks_logged: 27
-  log_entries: 28
+  ticks_logged: 28
+  log_entries: 29
   generations: 0
-  last_activity: '2026-08-29'
-  last_entry: 'G1-T27 — 2026-08-29 — Tick 27: North Gyeongsang Province, the Unified
-    Silla period, and Lee Kun-hee deepen Geography, History, and People'
+  last_activity: '2026-08-30'
+  last_entry: 'G1-T28 — 2026-08-30 — Tick 28: The 1997 Asian Financial Crisis, political
+    parties and regionalism, and Han Kang deepen History, Government & Politics, and
+    People'
