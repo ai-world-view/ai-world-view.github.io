@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (78):
+`INDEX.md`). Dedicated topic files (81):
 
 | Category | File | Topic |
 |---|---|---|
@@ -104,6 +104,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Geography | `geography/gangwon-province.md` | Gangwon Province — the mountainous northeastern province; the Taebaek range and Yeongseo/Yeongdong divide, the 2018 PyeongChang Winter Olympics, the Soyang hydroelectric cascade and Taebaek coal legacy, Kangwon Land casino, the DMZ frontier, and the 2023 Special Autonomous Province status |
 | Geography | `geography/gyeongju.md` | Gyeongju — ancient capital of the Silla kingdom in North Gyeongsang Province; the "museum without walls" of royal tumuli, Bulguksa and Seokguram, Cheomseongdae, the Silla gold crowns and the Emille Bell, the 2000 UNESCO Historic Areas inscription, and its role as Korea's premier heritage-tourism destination |
 | Geography | `geography/north-gyeongsang-province.md` | North Gyeongsang Province (Gyeongbuk) — South Korea's largest province by area; the Silla heartland around Gyeongju, POSCO's steel city of Pohang and POSTECH, the Gumi electronics complex, Andong's Confucian yangban heritage, Ulleung Island, and the conservative "TK" bloc anchored by adjacent Daegu |
+| Geography | `geography/korean-diaspora-overseas-communities.md` | Korean Diaspora and Overseas Korean Communities — the estimated 7.3–7.5 million ethnic Koreans abroad; the colonial-era, war-era, and industrial-era migration waves, the Zainichi and Koryo-saram communities, the major diaspora hubs from Los Angeles to Yanbian, and the diaspora's role in Hallyu, remittances, and Korean soft power |
 | History | `history/three-kingdoms-period.md` | Three Kingdoms period (Goguryeo, Baekje, Silla) and Silla's unification |
 | History | `history/unified-silla-period.md` | Unified Silla period (668–935) — the first political unification of the peninsula, the golden age of Buddhist civilization (Bulguksa, Seokguram, the Emille Bell), the bone-rank order and Hwarang, hyangga poetry and the idu script, Jang Bogo's maritime trade, and the decline into the Later Three Kingdoms |
 | History | `history/goryeo-period.md` | Goryeo period (918–1392) — medieval kingdom, celadon, the Tripitaka Koreana, and metal movable type |
@@ -137,6 +138,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Economy | `economy/telecommunications-industry.md` | Telecommunications industry — the SK Telecom/KT/LG U+ operator market and Samsung network equipment; 1980s liberalization and CDMA, the world-first consumer 5G launch, the enterprise segment, and the 6G roadmap |
 | Economy | `economy/pharmaceutical-biotech-industry.md` | Pharmaceutical and biotech industry — the pivot from generics to innovative biopharma; Samsung Biologics' CDMO leadership, the Celltrion and Samsung Bioepis biosimilars, SK Bioscience vaccines, the Songdo and Osong clusters, MFDS regulation and clinical-trial capacity, and the biosimilar-led export surge |
 | Economy | `economy/kakao.md` | Kakao — the mobile-first platform conglomerate built on the dominant KakaoTalk messenger; the 2014 Daum merger, KakaoPay and KakaoBank fintech, Kakao Mobility, Games and Entertainment, the Naver–Kakao duopoly and its antitrust scrutiny, the 2022 Pangyo datacenter-fire outage, and the founder's 2024 arrest |
+| Economy | `economy/kbeauty-cosmetics-industry.md` | K-beauty and Cosmetics Industry — the cosmetics and skincare export sector and soft-power engine; Amorepacific and LG Household & Health Care, the multi-step routine and glass-skin aesthetic, the IOPE cushion compact, Olive Young retail and the indie/TikTok booms, the THAAD-era China shock, and the export surge to a record $9+ billion |
 | Culture & Society | `culture-society/hallyu.md` | Hallyu — the Korean Wave |
 | Culture & Society | `culture-society/korean-cuisine.md` | Korean cuisine and food culture |
 | Culture & Society | `culture-society/religion-and-buddhism.md` | Religion and Buddhism — Buddhism, Confucianism, Christianity, shamanism, new religious movements, and the contemporary religious landscape |
@@ -169,9 +171,10 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/roh-tae-woo.md` | Roh Tae-woo — the thirteenth president (1988–1993); the Hanahoe and the December 1979 coup, Gwangju command responsibility, the June 29 Declaration and 1987 election, the Sixth Republic, Nordpolitik and UN entry, the 1988 Seoul Olympics, the three-party merger, and the slush-fund conviction and pardon |
 | People | `people/lee-kun-hee.md` | Lee Kun-hee (1942–2020) — Samsung Group chairman (1987–2020); the semiconductor and display pivots, the 1993 Frankfurt Declaration and "New Management," the 1995 Gumi phone burning, the smartphone-era Galaxy line, the corruption and succession controversies, and South Korea's largest inheritance case |
 | People | `people/han-kang.md` | Han Kang (b. 1970) — novelist and the first Korean winner of the Nobel Prize in Literature (2024); *The Vegetarian* and its 2016 Man Booker International Prize, *Human Acts* and the Gwangju reckoning, *The White Book* and *Greek Lessons*, and the themes of the body, violence, and historical trauma |
+| People | `people/lee-jae-yong.md` | Lee Jae-yong (b. 1968) — Samsung Electronics chairman and third-generation head of the Samsung Group; the semiconductor, foundry, display, battery, and biopharma strategy, the Taylor (Texas) fab and chip diplomacy, the Park Geun-hye bribery conviction and 2022 Liberation Day pardon, the 2024 merger-case acquittal, the record inheritance-tax case, and the debate over chaebol succession and governance |
 
 Every taxonomy category holds at least seven dedicated topics; Culture & Society is the largest
-(seventeen topics), followed by Economy and People (fifteen each), Geography (thirteen), History
+(seventeen topics), followed by Economy and People (sixteen each), Geography (fourteen), History
 (eleven), and Government & Politics (seven).
 
 ## Section 5 — Structure Inventory
@@ -180,15 +183,15 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 
 | Artifact | State |
 |---|---|
-| `geography/index.md` | Present — 13 entries |
+| `geography/index.md` | Present — 14 entries |
 | `history/index.md` | Present — 11 entries |
 | `government-politics/index.md` | Present — 7 entries |
-| `economy/index.md` | Present — 15 entries |
+| `economy/index.md` | Present — 16 entries |
 | `culture-society/index.md` | Present — 17 entries |
-| `people/index.md` | Present — 15 entries |
-| `TIMELINE.md` | Present — 507 dated events across all seventy-eight articles |
+| `people/index.md` | Present — 16 entries |
+| `TIMELINE.md` | Present — 524 dated events across all eighty-one articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all seventy-eight topic articles |
+| Cross-references (`## Related`) | Present in all eighty-one topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -514,3 +517,14 @@ Added three dedicated articles — giving History an eleventh topic (the pivotal
 - ENHANCE pass corrected facts and cross-references. In the political-parties article: fixed the misattributed 1997 Kim Dae-jung coalition (with Kim Jong-pil's ULD, not "the Kim Young-sam faction"), corrected the December 2024 Assembly vote to lift martial law (190–0, not 180–0), and fixed the 2024 turnout comparison ("highest since 1992"). In the crisis article: removed a duplicated summary phrase, reconciled the unemployment figure with the body (tripling to a ~8.7% early-1999 peak), aligned the won's end-1997 low (over 1,900/USD), and corrected the standby-agreement signing date (December 3, 1997). In the Han Kang article: fixed the summary's prize name (*The Vegetarian* won the Yi Sang Literary Award, not a "Yi Mun-yeol Literature Prize"). Converted all three files' `## Related` blocks to the generated marker format with relative links and descriptions, and removed a broken link to a nonexistent `gender-womens-rights.md`.
 - build-structure: refreshed `history/index.md` (10→11), `government-politics/index.md` (6→7), and `people/index.md` (14→15); updated `INDEX.md`; extended `TIMELINE.md` (494→507 dated events) with thirteen new events spanning the crisis (Hanbo's 1997 collapse, the December 1997 IMF signing, the 1998 Gold Collection Campaign and Labor Standards Act revision, Daewoo's 1999 fall, the 2001 IMF repayment), the party system (the 1990 three-party merger, the 2024 supermajority, the 2025 snap election), and Han Kang (her 1970 birth, *The Vegetarian* in 2007, the 2016 Man Booker, the 2024 Nobel); and added bidirectional back-links from Korean Literature, Gwangju Uprising, Kim Young-sam, Kim Dae-jung, Chaebol, Banking and Finance, and the Electoral System. (`README.md` already listed the three new articles.)
 - sync-seed: regenerated §4 (Content Inventory: 75→78 files) and §5 (Structure Inventory: entry counts and 507-event timeline; Culture & Society leads at seventeen, Economy and People tie for second at fifteen, Geography fourth at thirteen, History fifth at eleven, Government & Politics sixth at seven).
+
+### G1-T29 — 2026-08-31 — Tick 29: The K-beauty industry, the Korean diaspora, and Lee Jae-yong deepen Economy, Geography, and People
+
+Added three dedicated articles — giving Economy a sixteenth topic (the cosmetics export and soft-power sector), Geography a fourteenth (the global overseas-Korean communities), and People a sixteenth (the third-generation head of the Samsung Group).
+
+- Created `economy/kbeauty-cosmetics-industry.md`: encyclopedic article on the K-beauty and cosmetics industry — the sector's roots in Korea's consumer culture and developmental-state manufacturing, the major players (Amorepacific's Sulwhasoo/Laneige/Innisfree/IOPE, LG Household & Health Care's The History of Whoo, Missha's price-innovation model, Olive Young retail, and the Cosrx/Beauty of Joseon indie wave), the K-beauty philosophy (multi-step routines, fermentation, sheet masks, glass skin) and the IOPE cushion compact, the social-media and e-commerce globalization, the export dynamics and the 2017 THAAD China shock, the TikTok inflection, and the manufacturing and sustainability challenges.
+- Created `geography/korean-diaspora-overseas-communities.md`: encyclopedic article on the Korean diaspora — the estimated 7.3–7.5 million overseas Koreans, the successive migration waves (colonial-era Hawaii, Manchuria, Zainichi Japan and the Koryo-saram deportation; post-war adoptees and military brides; industrial-era and globalization emigration; and the Hallyu digital diaspora), the major communities by region (the United States, China's Yanbian, Japan, Canada, Australia, Brazil, and Europe), remittances and economic ties, the cultural and political dimensions (the 1992 Los Angeles unrest, political advocacy, North Korean defectors), and South Korean diaspora policy.
+- Created `people/lee-jae-yong.md`: encyclopedic article on Lee Jae-yong (b. 1968) — his grooming and rise to de facto Samsung leadership after his father's 2014 heart attack, the corporate strategy across semiconductors and the Taylor (Texas) foundry, displays, batteries, Harman, and Samsung Biologics, the Park Geun-hye bribery conviction and August 2022 Liberation Day pardon, the February 2024 acquittal in the Samsung C&T–Cheil merger accounting-fraud case, the record inheritance-tax case, and the geopolitical and chaebol-governance dimensions of his leadership.
+- ENHANCE pass corrected facts and cross-references. In the Lee Jae-yong article: fixed the "Key figures" line (Hong Ra-hee is his mother, not his wife; his sisters are Lee Boo-jin and Lee Seo-hyun, not "Lee Myung-hee"), corrected the generational framing (third-generation head, succeeding founder Lee Byung-chul and Lee Kun-hee), and added the February 2024 merger-case acquittal for consistency with the Chaebol article. In the diaspora article: corrected the claim that Andy Kim was "the first Korean-American elected to Congress" (Jay Kim was first, in 1992; Andy Kim became the first Korean-American senator in 2024), adjusted Coupang's IPO valuation (~$60 billion at its March 2021 NYSE debut, briefly approaching $100 billion), replaced a dubious Zainichi baseball example with Isao Harimoto, and fixed a romanization. In the K-beauty article: clarified Amorepacific's founding (Pacific Chemical Industrial, 1945; the family trade began in Gaeseong) and softened an unverifiable CVS distribution claim. Converted all three files' `## Related` blocks to the generated marker format with resolved relative links.
+- build-structure: refreshed `geography/index.md` (13→14), `economy/index.md` (15→16), and `people/index.md` (15→16); updated `INDEX.md`; extended `TIMELINE.md` (507→524 dated events) with seventeen new events spanning the diaspora (1903 Hawaii emigration, the 1937 Koryo-saram deportation, the 1963 Germany/Brazil migration, the 1992 Los Angeles unrest, the 1997 Overseas Koreans Foundation, and the 2023 Overseas Koreans Act), K-beauty (Amorepacific's 1945 founding, Missha in 2000, the 2008 cushion compact, the 2017 THAAD shock, and the 2023 Cosrx deal), and Lee Jae-yong (his 1968 birth, the 2014 succession, the 2017 arrest, the 2021 Taylor fab, and the 2022 pardon and chairmanship); and added bidirectional back-links from Hallyu and Lee Kun-hee. (`README.md` already listed the three new articles.)
+- sync-seed: regenerated §4 (Content Inventory: 78→81 files) and §5 (Structure Inventory: entry counts and 524-event timeline; Culture & Society leads at seventeen, Economy and People tie for second at sixteen, Geography fourth at fourteen, History fifth at eleven, Government & Politics sixth at seven).
