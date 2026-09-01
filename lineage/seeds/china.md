@@ -71,11 +71,12 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 48 rows.
-- **Dedicated topic files**: 48.
+- **README knowledge table**: 51 rows.
+- **Dedicated topic files**: 51.
   - `culture-society/buddhism-in-china.md` — Buddhism in China
   - `culture-society/chinese-medicine.md` — Chinese Medicine
   - `culture-society/confucianism.md` — Confucianism
+  - `culture-society/filial-piety.md` — Filial Piety (Xiao)
   - `culture-society/i-ching.md` — The I Ching (Book of Changes)
   - `culture-society/taoism.md` — Taoism
   - `economy/belt-and-road-initiative.md` — Belt and Road Initiative
@@ -95,6 +96,7 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `government-politics/national-peoples-congress.md` — The National People's Congress
   - `government-politics/standing-committee-politburo.md` — The Standing Committee of the Politburo
   - `government-politics/tiananmen-square-1989.md` — The 1989 Tiananmen Square Pro-Democracy Movement
+  - `government-politics/tributary-system.md` — The Tributary System
   - `history/cultural-revolution.md` — Cultural Revolution
   - `history/the-boxer-rebellion.md` — The Boxer Rebellion
   - `history/the-great-leap-forward.md` — The Great Leap Forward
@@ -115,14 +117,15 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `people/deng-xiaoping.md` — Deng Xiaoping
   - `people/hu-jintao.md` — Hu Jintao
   - `people/jiang-zemin.md` — Jiang Zemin
+  - `people/kangxi.md` — Kangxi
   - `people/mao-zedong.md` — Mao Zedong
   - `people/qin-shi-huang.md` — Qin Shi Huang
   - `people/sun-yat-sen.md` — Sun Yat-sen
   - `people/xi-jinping.md` — Xi Jinping
   - `people/zheng-he.md` — Zheng He
   - `people/zhou-enlai.md` — Zhou Enlai
-- **Categories with content**: Culture & Society (5), Economy (5), Geography (6),
-  Government & Politics (6), History (16), People (10).
+- **Categories with content**: Culture & Society (6), Economy (5), Geography (6),
+  Government & Politics (7), History (16), People (11).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -132,9 +135,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 217 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 231 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 48 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 51 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -500,3 +503,7 @@ Added three topics deepening Geography, History, and Government & Politics and s
 ### G1-T16 — 2026-08-31 — Tick 16: Connective tissue of empire — the Zhou Dynasty, the Grand Canal, and the Tea Trade
 
 Added three topics deepening History, Geography, and Economy and supplying long-missing connective structure to the knowledge base: `history/the-zhou-dynasty.md` (China's longest-lasting dynasty, 1046–256 BCE — the Mandate of Heaven, the *fengjian* vassal order, the Western/Eastern Zhou division, and the Spring and Autumn and Warring States eras that produced Confucianism, Daoism, and the Hundred Schools before Qin's unification), `geography/the-grand-canal.md` (the ~1,776 km Beijing–Hangzhou waterway built in stages from the Sui through the Ming — Emperor Yang's ruinous construction, Tang–Song grain logistics, Guo Shoujing's Yuan re-alignment, peak Ming *caoyun* operations, the Qing decline, and the 2014 UNESCO listing), and `economy/the-tea-trade.md` (one of history's longest commodity trades — Lu Yu's Tang codification, the Song point-tea aesthetic, the Ming loose-leaf turn, the Canton System and Cohong, the silver drain that fed the opium traffic and the Opium Wars, and Robert Fortune's transplant of the industry to India), each with `title`/`preview`/`date`/`category` front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. History now holds sixteen topics, Geography six, and Economy five; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and corrected several facts: the Zhou is China's longest-lasting **dynasty** (not "imperial dynasty," since the imperial era began only with Qin in 221 BCE), the extinction of the Eastern Zhou in 256 BCE was carried out by the state of Qin under King Zhaoxiang (not by the then-infant Qin Shi Huang), and the last Shang king is rendered "Di Xin" for consistency; in the Grand Canal, dropped the spurious "Duke of Zhou" from the key figures (replaced with Guo Shoujing and the Yongle Emperor), fixed "the Marco Polo" and the Tianjin–Pukou (Jinpu) Railway name; and repaired two wrong `/economy/the-silk-road` links (the Silk Road is a Geography topic). Converted all three files from root-absolute, extensionless links to the repo's relative `.md` convention (81 links) and from `## See Also` sections to canonical `## Related` `crossrefs`-wrapped blocks, and added the missing `preview` front-matter field. Fixed six pre-existing files whose crossref markers rendered as visible text or `##` headings (`the-yellow-river`, `the-opium-wars`, `standing-committee-politburo`, `state-owned-enterprises`, `hu-jintao`, `jiang-zemin`), normalizing them to the canonical `<!-- BEGIN/END GENERATED: crossrefs -->` HTML-comment form. Verified every cross-reference resolves (0 broken links repo-wide). Refreshed the structural layer: inserted the Zhou (between Shang and Warring States) into the History index and INDEX, the Grand Canal (after the Yangtze) into the Geography index and INDEX, and the Tea Trade into the Economy index and INDEX; the README knowledge table already carried the three new rows (48 total), whose Zhou and Grand Canal descriptions were corrected ("imperial dynasty"→"dynasty"; canal length 1,100–1,200 km → ~1,776 km); extended `TIMELINE.md` from 206 to 217 dated milestones (the Zhou's c. 1046 founding, 771 fall of the Western Zhou, and 256 extinction; the Grand Canal's 486 BCE Han Gou precursor, 1293 Tonghui Canal, and 2014 UNESCO listing, with the 605 CE construction milestone repointed from the Sui to the dedicated article; and the Tea Trade's c. 760 *Cha Jing*, 793 tea tax, 1391 loose-leaf decree, 1610 Dutch export, 1757 Canton System, and 1848 Robert Fortune), repointing the 256 BCE Zhou-extinction milestone from the Warring States to the Zhou article; and wove reciprocal cross-references from ten existing articles (the Shang, Warring States, Qin, Confucius, and Confucianism to the Zhou; the Sui, Yangtze, and Yellow River to the Grand Canal; and the Silk Road and Ming to the Tea Trade). Reconciled `ROADMAP.md` (the three Now items moved to Done as G1-T16; Filial Piety, Tributary System, and Kangxi promoted from Backlog to Now) and regenerated seed sections 4–5 to match live state (48 topic files, 48 README rows, 217 milestones, no empty categories).
+
+### G1-T17 — 2026-09-01 — Tick 17: The Qing zenith and the Confucian world order — Kangxi, Filial Piety, and the Tributary System
+
+Added three topics deepening People, Culture & Society, and Government & Politics and drawing the imperial-Confucian order into one interlocking cluster: `people/kangxi.md` (the fourth Qing emperor, r. 1661–1722 — the Oboi regency purge, the Three Feudatories Rebellion, the annexation of Taiwan, the Treaty of Nerchinsk, the Dzungar campaigns against Galdan, the Kangxi Dictionary and Jesuit science, and the succession crisis), `culture-society/filial-piety.md` (*xiao*, the cardinal Confucian virtue — its classical sources in the *Analects* and *Mencius*, the *Classic of Filial Piety*, imperial institutionalization through the Tang "Ten Abominations" and the Qing Sacred Edict, the three-year mourning system, the *Twenty-Four Paragons*, Neo-Confucian systematization, and its modern trajectory from the Cultural Revolution to the 2013 Elderly Rights Law), and `government-politics/tributary-system.md` (the Sinocentric ritual-diplomatic order from the Han through the nineteenth century — the kowtow and Board of Rites protocol, Ming expansion under Zheng He, Qing adaptation and the Macartney impasse, tribute trade under the *haijin*, and dissolution through the Opium Wars and the loss of Vietnam, Ryukyu, Burma, and Korea), each with `title`/`preview`/`date`/`category` front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. Culture & Society now holds six topics, Government & Politics seven, and People eleven; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and corrected several facts: in the Kangxi article, the 1683 Taiwan surrender was made by Koxinga's grandson Zheng Keshuang (Zheng Jing having died in 1681), not Zheng Jing; removed Ferdinand Verbiest (d. 1688) from the Nerchinsk interpreter list and rendered the treaty as drawn up in Latin (authoritative) with Russian and Manchu versions; and softened "thirty-five surviving sons" to "more than twenty adult sons"; in the Filial Piety article, corrected Lu Xun's critique to a 1926 essay (collected in *Dawn Blossoms Plucked at Dusk*), not 1918, and harmonized the *Xiaojing*'s Han canonization; and in the Tributary System article, clarified that the 1414 giraffe reached the Yongle court via Bengal from the East African coast. Added the missing `preview` front-matter field to all three new files. Refreshed the structural layer: inserted Filial Piety into the Culture & Society index and INDEX, the Tributary System (first, with the Imperial Examination System, as the earliest imperial institution) into the Government & Politics index and INDEX, and Kangxi (after Zheng He) into the People index and INDEX; the README knowledge table already carried the three new rows (51 total); extended `TIMELINE.md` from 217 to 231 dated milestones (Kangxi's 1654 birth, 1661 accession, 1669 Oboi purge, 1673 Three Feudatories revolt, 1681 fall of Kunming, 1696 Jao Modo, 1716 Dictionary, and 1722 death — with the existing 1683 Taiwan and 1689 Nerchinsk milestones repointed from the Qing Dynasty to the dedicated article; Filial Piety's 745 Xiaojing stone inscription, c. 1330 *Twenty-Four Paragons*, 1670 Sacred Edict, and 2013 Elderly Rights Law; and the Tributary System's 1414 *qilin* giraffe and 1879 Japanese annexation of Ryukyu, with the 1793 Macartney milestone repointed from the Qing to the dedicated article); and wove reciprocal cross-references from seven existing articles (the Qing Dynasty to both Kangxi and the Tributary System; Confucianism, Confucius, and the Imperial Examination System to Filial Piety; and the Ming Dynasty, Zheng He, and the Opium Wars to the Tributary System). Verified every cross-reference resolves (0 broken links repo-wide). Reconciled `ROADMAP.md` (the three Now items moved to Done as G1-T17; the Xia Dynasty, Porcelain and Ceramics, and the Hukou System promoted from Backlog to Now) and regenerated seed sections 4–5 to match live state (51 topic files, 51 README rows, 231 milestones, no empty categories).
