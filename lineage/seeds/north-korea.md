@@ -87,21 +87,24 @@ present under `.github/`:
 ## Section 4 — Content Inventory
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
-People. The README knowledge table ("Notable Facts about the country north korea") holds **9 rows**.
-Dedicated topic files (9):
+People. The README knowledge table ("Notable Facts about the country north korea") holds **12 rows**.
+Dedicated topic files (12):
 
 - `geography/pyongyang.md` — Pyongyang, the capital and largest city.
 - `geography/mount-paektu.md` — Mount Paektu, the sacred border volcano and its Kim-dynasty mythology.
 - `history/korean-war.md` — the 1950–1953 Korean War.
+- `history/nuclear-weapons-program.md` — the DPRK nuclear program from its 1980s origins to a deliverable thermonuclear deterrent.
 - `government-politics/government-structure.md` — the DPRK's political system and institutions.
+- `government-politics/workers-party-of-korea.md` — the sole ruling party (WPK) and institutional backbone of the state.
 - `economy/economic-system-and-famine.md` — the planned economy and the 1994–1998 famine.
 - `culture-society/state-ideology-and-propaganda.md` — juche, the personality cult, and the propaganda state.
 - `people/kim-il-sung.md` — founding leader Kim Il-sung (1912–1994).
 - `people/kim-jong-il.md` — second leader Kim Jong-il (1942–2011).
 - `people/kim-jong-un.md` — third leader Kim Jong-un (2011–present).
+- `people/kim-yo-jong.md` — Kim Yo-jong (b. 1987), sister and key advisor to Kim Jong-un.
 
 Populated categories: all six — Geography, History, Government & Politics, Economy, Culture & Society,
-and People. The Culture & Society category was opened this tick.
+and People. This tick deepened the History, Government & Politics, and People categories.
 
 ## Section 5 — Structure Inventory
 
@@ -111,13 +114,13 @@ Generated structural artifacts now present:
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md`
   (one per category; all six are now populated).
 - **Timeline** — `TIMELINE.md` (topics with a historical date in chronological order: Kim Il-sung,
-  Kim Jong-il, Korean War, Kim Jong-un).
+  Kim Jong-il, Korean War, Kim Jong-un, Kim Yo-jong).
 - **Master index** — `INDEX.md` (all topics grouped by taxonomy, with pointers to category indices
   and the timeline).
-- **Cross-references** — a generated `## Related` block in each of the 9 dedicated topic files.
+- **Cross-references** — a generated `## Related` block in each of the 12 dedicated topic files.
 - **Preview art** — atlas-style SVG cards under `assets/images/previews/` for each category and
-  featured topic (including `mount-paektu.svg`, `kim-jong-un.svg`,
-  `state-ideology-and-propaganda.svg`, and `culture-society.svg`).
+  featured topic (including `nuclear-weapons-program.svg`, `workers-party-of-korea.svg`, and
+  `kim-yo-jong.svg`).
 
 ## Section 6 — Growth Loop
 
@@ -172,3 +175,14 @@ Third growth tick. Added three topics that opened the last unpopulated category,
 - Added `README.md`, `INDEX.md`, and category-index rows for the three new topics; created `culture-society/index.md`; added Kim Jong-un to `TIMELINE.md`; authored atlas-style preview SVGs for the three topics and the Culture & Society category; and updated `ROADMAP.md` (Now → Done for tick 3).
 - Ran build-structure — created the Culture & Society category index, extended the master index and timeline, and regenerated all cross-references.
 - Ran sync-seed — regenerated §1–7 (Content 6→9 rows/files across all six populated categories; Structure inventory now lists 6 category indices, 4 dated timeline rows, and 9 cross-referenced files).
+
+### G1-T4 — 2026-09-01 — Tick 4: added the nuclear program, the ruling party, and Kim Yo-jong
+
+Fourth growth tick. Added three topics that deepened the History, Government & Politics, and People categories — carrying coverage into the DPRK's defining contemporary institutions and its most influential living figure after the Supreme Leader — then refreshed the structural layer.
+
+- Created `history/nuclear-weapons-program.md` — the DPRK nuclear weapons program: covert 1980s origins and Yongbyon, the Agreed Framework and its collapse, six tests (2006–2017) to a thermonuclear device, Hwasong ICBM and SLBM development, the Byungjin Line, the 2022 nuclear-forces law, post-2021 weapons modernization, the 2023–2024 Russia partnership, and the 2018–2019 diplomatic impasse.
+- Created `government-politics/workers-party-of-korea.md` — the Workers' Party of Korea: its 1945 founding and Soviet sponsorship, subordination to the personality cult through the 1950s purges, Leninist democratic-centralist structure and the cadre system, ideological and mass-mobilization functions, party–military relations under Songun, membership privileges, and the party under Kim Jong-un (7th and 8th Congresses, COVID enforcement, the hardline turn on South Korea).
+- Created `people/kim-yo-jong.md` — Kim Yo-jong (b. 1987), sister and key advisor to Kim Jong-un: her early obscurity, rise from the 2016 Central Committee appointment to First Vice Director of the Propaganda and Agitation Department, roles as spokesperson/diplomat/enforcer (PyeongChang 2018, the 2020 liaison-office demolition), nuclear rhetoric, the modernization of the cult, and her succession-contingency function.
+- Enhance pass: corrected Kim Yo-jong's Central Committee appointment to the May 2016 Seventh Party Congress (was mis-dated September 2016); fixed the nuclear-program chronology of the Agreed Framework's collapse (Bush administration in late 2002; NPT withdrawal January 2003; reprocessing resumed later that year, not "early 2002"); reworked the WPK's 2023–2024 reunification passage to stop conflating the September 2023 (nuclear-policy) SPA session with the reunification doctrine shift announced at the December 2023 plenum and January 2024 SPA; and fixed minor grammar/prose. Verified all three front-matter `date:` fields are single ISO dates (Kim Yo-jong `1987-09-26`; the thematic Nuclear and WPK topics on the tick date).
+- Ran build-structure — added README, INDEX, and category-index rows for the three topics; added Kim Yo-jong to `TIMELINE.md`; wrapped the new topics in generated `## Related` blocks and extended the blocks of seven older topic files to link the new pages bidirectionally; authored atlas-style preview SVGs for all three topics and added their `preview:` front matter; updated `ROADMAP.md` (Now → Done for tick 4).
+- Ran sync-seed — regenerated §1–7 (Content 9→12 rows/files across all six populated categories; Structure inventory now lists 6 category indices, 5 dated timeline rows, and 12 cross-referenced files).
