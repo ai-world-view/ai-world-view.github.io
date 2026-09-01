@@ -105,6 +105,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   Culture & Society, People.
 - **README knowledge table**: 63 rows.
 - **Dedicated topic files** (63), grouped by category:
+  - `geography/hiroshima.md` — Hiroshima
   - `geography/hokkaido.md` — Hokkaido
   - `geography/kobe.md` — Kobe
   - `geography/kyoto.md` — Kyoto
@@ -112,7 +113,6 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `geography/major-islands.md` — Major Islands
   - `geography/mount-fuji.md` — Mount Fuji
   - `geography/noto-peninsula.md` — Noto Peninsula
-  - `geography/okinawa.md` — Okinawa
   - `geography/osaka.md` — Osaka
   - `geography/shikoku.md` — Shikoku
   - `geography/tokyo.md` — Tokyo
@@ -125,7 +125,6 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `history/nara-period.md` — Nara Period
   - `history/russo-japanese-war.md` — Russo-Japanese War
   - `history/sengoku-period.md` — Sengoku Period
-  - `history/showa-period-militarism.md` — Showa Period (Militarism Phase)
   - `history/taisho-period.md` — Taisho Period
   - `history/world-war-ii.md` — World War II
   - `government-politics/diet-of-japan.md` — Diet of Japan
@@ -135,11 +134,11 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `government-politics/ministry-economy-trade-industry.md` — Ministry of Economy, Trade and Industry (METI)
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
   - `government-politics/supreme-court.md` — Supreme Court of Japan
+  - `government-politics/us-japan-security-treaty.md` — US-Japan Security Treaty
   - `economy/bank-of-japan.md` — Bank of Japan
   - `economy/bubble-economy.md` — 1980s Bubble Economy
   - `economy/financial-sector-regulation.md` — Financial Sector Regulation
   - `economy/financial-system.md` — Japanese Financial System
-  - `economy/japanese-corporations-keiretsu.md` — Japanese Corporations & Keiretsu
   - `economy/labor-market-and-employment.md` — Labor Market & Employment
   - `economy/lost-decade.md` — Lost Decade & Deflation
   - `economy/postwar-recovery-growth.md` — Postwar Recovery & Economic Growth
@@ -165,10 +164,11 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/minamoto-no-yoritomo.md` — Minamoto no Yoritomo
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/nitobe-inazou.md` — Nitobe Inazō
+  - `people/oda-nobunaga.md` — Oda Nobunaga
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
   - `people/yoshida-shoin.md` — Yoshida Shoin
   - `people/yukio-mishima.md` — Yukio Mishima
-- **Categories with content**: History (12), Culture & Society (12), People (12), Geography (11), Economy (9), Government & Politics (7) — all six categories populated; History, Culture & Society, and People lead with twelve topics each, followed by Geography with eleven, Economy with nine, and Government & Politics with seven.
+- **Categories with content**: People (13), Culture & Society (12), History (11), Geography (11), Government & Politics (8), Economy (8) — all six categories populated; People leads with thirteen topics, followed by Culture & Society with twelve, History and Geography with eleven each, and Government & Politics and Economy with eight each.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -177,7 +177,7 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (History, Culture & Society, and People list twelve topics each; Geography eleven; Economy nine; Government & Politics seven).
+  (People lists thirteen topics; Culture & Society twelve; History and Geography eleven each; Government & Politics and Economy eight each).
 - **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
 - **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
 - **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
@@ -655,3 +655,12 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: normalized all three front-matter `date:` fields from bare years to single plain ISO dates — `1926-12-25` (Shōwa, Hirohito's accession), `1879-04-04` (Okinawa, the establishment of Okinawa Prefecture), and `1952-04-28` (Keiretsu, the end of the occupation, when former *zaibatsu* firms regrouped openly). Fixed a broken cross-reference in `geography/okinawa.md` (the `## Related` link to `../people/ainu-people.md`, a phantom file absent on disk) by removing it, and softened an overstated claim that Shuri Castle's main hall "reconstruction was completed in 2026" to reconstruction being underway and expected to complete in 2026 (not yet finished as of this tick). Standardized cross-references on all three files, converting their hand-written `## Related` blocks (placed before Sources) into canonical `## Related` blocks with em-dash descriptions, wrapped in `BEGIN/END GENERATED: crossrefs` markers placed after the Sources sections. Verified factual accuracy from the model's own knowledge — spot-checks confirmed the Nikkei peak (38,915 on 1989-12-29), the Plaza Accord and yen appreciation, Pearl Harbor casualties (2,403), the fall of Singapore, the Battle of Midway's four sunk carriers, the Ryukyu Kingdom's 1429 unification and 1609 Satsuma invasion, and Okinawa's 1972-05-15 reversion. Confirmed `title`/`date`/`category` front matter on all three files; a repository-wide check confirmed every internal Markdown link resolves.
 - **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `geography/index.md`, `economy/index.md`) and to `INDEX.md`; merged the genuinely new dated facts into `TIMELINE.md` — the Shōwa militarism period span (1926-12-25 – 1945-09-02), the 1932-05-15 May Fifteenth Incident, the 1938-03 National General Mobilization Law, the 1946–1948 *zaibatsu* dissolution and *keiretsu* regrouping, and the 2015 Corporate Governance Code. Okinawa's principal dated facts (the 1429 Ryukyu founding, the 1609 Satsuma annexation, the 1879 Okinawa Prefecture annexation, the 1945 Battle of Okinawa, and the 1972-05-15 reversion) were already represented in the timeline via `geography/major-islands.md`, so duplicate rows were deliberately avoided.
 - **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — dropped the never-persisted phantoms `culture-society/japanese-cuisine.md`, `culture-society/sake.md`, and `people/ainu-people.md` from the inventory, added the three real new files, and corrected the per-category counts to **History twelve, Culture & Society twelve, People twelve, Geography eleven, Economy nine, Government & Politics seven** (63 topic files / 63 README rows) in both §4 and §5. Left §1–3 and §6–7 unchanged.
+
+### G1-T53 — 2026-09-01 — Tick 53: added Hiroshima, the US-Japan Security Treaty, and Oda Nobunaga
+
+- **Reconciliation**: as in the eight prior ticks (T45–T52), the working tree that reached this tick held 60 committed topic files, not the 63 the staged seed's §4/§5 described — the G1-T52 trio recorded as delivered (`history/showa-period-militarism.md`, `geography/okinawa.md`, `economy/japanese-corporations-keiretsu.md`) had never reached `main` and was absent from the tree, README, and indices. This tick's content pass added a fresh trio spanning three under-built areas (`geography/hiroshima.md`, `government-politics/us-japan-security-treaty.md`, `people/oda-nobunaga.md`), and the enhance pass rebuilt §4/§5 to mirror the true 63-file tree rather than the phantom inventory.
+- **Content added** (3 dedicated topic files): `geography/hiroshima.md` (the castle city on the Ōta River delta — Mōri Terumoto's 1589 founding and Hiroshima Castle, the Asano-clan castle town, the Meiji garrison and Sino-Japanese War Imperial Headquarters, the August 6, 1945 atomic bombing and its ~140,000 deaths by year's end, the *hibakusha*, Sadako Sasaki, the Genbaku Dome and 1955 Peace Memorial Park, the 2023 G7 summit, and Mazda-anchored contemporary Hiroshima), `government-politics/us-japan-security-treaty.md` (the foundational alliance — its occupation and San Francisco Peace Treaty origins, the asymmetric 1951 treaty and the Yoshida Doctrine, the 1960 revision and the *Anpo* struggle, the Status of Forces Agreement, Cold War basing and extended deterrence, the Article 9 reinterpretation and 2015 security legislation, the Okinawa base concentration and Futenma/Henoko dispute, and the 2020s defense buildup and Quad architecture), and `people/oda-nobunaga.md` (the first of the three great unifiers, 1534–1582 — his Owari origins, the firearms revolution at Nagashino, Okehazama and the march on Kyoto, the destruction of Enryaku-ji and the Ishiyama Hongan-ji siege, the *rakuichi-rakuza* free-market edicts and Azuchi Castle, his patronage of the tea ceremony and Christianity, and his death at the Honnō-ji Incident). People now holds thirteen topics, Government & Politics eight, and Geography eleven.
+- **README**: knowledge table expanded from 60 to 63 rows, adding the Hiroshima, US-Japan Security Treaty, and Oda Nobunaga rows (the staged table had carried only the 60 committed rows, not the phantom trio's).
+- **Enhance pass**: corrected the US-Japan Security Treaty front-matter date and lead — the treaty was signed on 1951-09-08 alongside the San Francisco Peace Treaty (effective 1952-04-28), so the `date:` was reset from the erroneous `1952-02-28` to `1951-09-08` and the lead's "signed in 1952" changed to "signed in 1951 (effective 1952)." In `people/oda-nobunaga.md`, corrected the birthplace, which had conflated two distinct traditions into "Nagoya Castle (then called Shobata Castle)": sources place Nobunaga's birth at either Shōbata Castle or the earlier Nagoya Castle (那古野城), a fortress distinct from the later Tokugawa-era castle of the same name. Converted all three new files' hand-written `[[wikilink]]` `## Related` blocks (which the remote Jekyll theme would not render) into canonical relative-Markdown `## Related` blocks with em-dash descriptions wrapped in `BEGIN/END GENERATED: crossrefs` markers, dropping dangling links to not-yet-created topics (Nagasaki, Itsukushima Shrine, Self-Defense Forces, Okinawa, Cold War in Asia, Toyotomi Hideyoshi). Verified `title`/`date`/`category` front matter as single plain ISO dates and spot-checked facts from the model's own knowledge — the "Little Boy" detonation at 8:15 a.m. at ~580 m and ~140,000 deaths by end-1945, Okehazama (1560), Nagashino (1575-06-28) and Honnō-ji (1582-06-21), the revised treaty's 1960-06-23 entry into force, and the 2019 Okinawa referendum's 72% rejection of Henoko.
+- **Structure** (`build-structure`): added the three topics to their category indices (`geography/index.md`, `government-politics/index.md`, `people/index.md`) and to `INDEX.md`; merged the genuinely new dated facts into `TIMELINE.md` — Nobunaga's 1534 birth, 1568 entry into Kyoto, 1573 expulsion of Yoshiaki, and 1576–1579 Azuchi Castle; Hiroshima's 1589 founding, the 1949 Peace Memorial City Construction Law, the 1955 Peace Memorial Park, the 1996 Genbaku Dome UNESCO inscription, and the 2023 G7 summit; and the treaty's 1951-09-08 signing, the 1960-06-15 *Anpo* peak and 1960-06-23 entry into force, the 1995 Okinawa protest, the 1996 Futenma agreement, the 2019 Henoko referendum, and the 2022-12 National Security Strategy — deliberately avoiding duplicate rows for facts already present (the 1945-08-06 bombing, 1571 Enryaku-ji, 1575 Nagashino, 1582 Honnō-ji, and the 1951/1952/1960/1972/2014/2015 treaty milestones). Added `## Related` crossref blocks to the three new files and made them bidirectional with back-links from `azuchi-momoyama-period.md`, `sengoku-period.md`, and `tokugawa-ieyasu.md` (Oda Nobunaga); `world-war-ii.md` (Hiroshima); and `postwar-constitution.md` and `abe-shinzo.md` (US-Japan Security Treaty).
+- **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — dropped the never-persisted phantoms `history/showa-period-militarism.md`, `geography/okinawa.md`, and `economy/japanese-corporations-keiretsu.md` from the inventory, added the three real new files, and corrected the per-category counts to **People thirteen, Culture & Society twelve, History eleven, Geography eleven, Government & Politics eight, Economy eight** (63 topic files / 63 README rows) in both §4 and §5. Left §1–3 and §6–7 unchanged.
