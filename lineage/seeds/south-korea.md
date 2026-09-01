@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (81):
+`INDEX.md`). Dedicated topic files (84):
 
 | Category | File | Topic |
 |---|---|---|
@@ -105,6 +105,8 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Geography | `geography/gyeongju.md` | Gyeongju — ancient capital of the Silla kingdom in North Gyeongsang Province; the "museum without walls" of royal tumuli, Bulguksa and Seokguram, Cheomseongdae, the Silla gold crowns and the Emille Bell, the 2000 UNESCO Historic Areas inscription, and its role as Korea's premier heritage-tourism destination |
 | Geography | `geography/north-gyeongsang-province.md` | North Gyeongsang Province (Gyeongbuk) — South Korea's largest province by area; the Silla heartland around Gyeongju, POSCO's steel city of Pohang and POSTECH, the Gumi electronics complex, Andong's Confucian yangban heritage, Ulleung Island, and the conservative "TK" bloc anchored by adjacent Daegu |
 | Geography | `geography/korean-diaspora-overseas-communities.md` | Korean Diaspora and Overseas Korean Communities — the estimated 7.3–7.5 million ethnic Koreans abroad; the colonial-era, war-era, and industrial-era migration waves, the Zainichi and Koryo-saram communities, the major diaspora hubs from Los Angeles to Yanbian, and the diaspora's role in Hallyu, remittances, and Korean soft power |
+| Geography | `geography/south-gyeongsang-province.md` | South Gyeongsang Province (Gyeongnam) — the south-eastern industrial province around the capital Changwon; the Geoje shipbuilding yards (Samsung Heavy Industries, Hanwha Ocean), the K9 and KF-21 defence-and-aerospace cluster, Jinju's Imjin War heritage and Gaya archaeology, the Hallyeo maritime islands, and the southern Yeongnam identity |
+| Geography | `geography/south-jeolla-province.md` | South Jeolla Province (Jeollanam) — the south-western Honam heartland; the 1,600-island Dadohae coast and Suncheon Bay, Korea's premier rice-and-seaweed agriculture, the Yeosu petrochemical complex and Goheung's Naro Space Center, pansori and Jeolla cuisine, and the region's deeply progressive political identity |
 | History | `history/three-kingdoms-period.md` | Three Kingdoms period (Goguryeo, Baekje, Silla) and Silla's unification |
 | History | `history/unified-silla-period.md` | Unified Silla period (668–935) — the first political unification of the peninsula, the golden age of Buddhist civilization (Bulguksa, Seokguram, the Emille Bell), the bone-rank order and Hwarang, hyangga poetry and the idu script, Jang Bogo's maritime trade, and the decline into the Later Three Kingdoms |
 | History | `history/goryeo-period.md` | Goryeo period (918–1392) — medieval kingdom, celadon, the Tripitaka Koreana, and metal movable type |
@@ -116,6 +118,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | History | `history/gwangju-uprising.md` | Gwangju Uprising (May 18 Incident, 1980) — Chun Doo-hwan's expanded martial law, the ten-day citizen resistance and its military suppression, casualties and the U.S. role, and the legacy for the democracy movement, legal accountability, and memorialization |
 | History | `history/democratization.md` | Democratization of South Korea (1987–1993) |
 | History | `history/asian-financial-crisis-1997.md` | The 1997 Asian Financial Crisis and Korean economic restructuring — the currency collapse and record IMF bailout, chaebol and labor restructuring under IMF conditionality, the Gold Collection Campaign and Daewoo's fall, and the lasting legacy of labor-market dualism and elevated household debt |
+| History | `history/martial-law-crisis-2024.md` | December 2024 Martial Law Crisis and Constitutional Crisis — President Yoon Suk-yeol's six-hour martial law declaration of December 3, 2024, the National Assembly's 190–0 defiance vote, the December 14 impeachment, the unanimous 8–0 Constitutional Court removal (April 2025), Yoon's arrest for insurrection, and Lee Jae-myung's June 2025 snap-election victory |
 | Government & Politics | `government-politics/government-structure.md` | Government structure — the presidential republic |
 | Government & Politics | `government-politics/north-korea-relations.md` | South Korea–North Korea relations and inter-Korean diplomacy |
 | Government & Politics | `government-politics/technology-innovation-policy.md` | Technology and innovation policy — the developmental state, K-Semiconductor Strategy, R&D, and tech regulation |
@@ -174,8 +177,8 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/lee-jae-yong.md` | Lee Jae-yong (b. 1968) — Samsung Electronics chairman and third-generation head of the Samsung Group; the semiconductor, foundry, display, battery, and biopharma strategy, the Taylor (Texas) fab and chip diplomacy, the Park Geun-hye bribery conviction and 2022 Liberation Day pardon, the 2024 merger-case acquittal, the record inheritance-tax case, and the debate over chaebol succession and governance |
 
 Every taxonomy category holds at least seven dedicated topics; Culture & Society is the largest
-(seventeen topics), followed by Economy and People (sixteen each), Geography (fourteen), History
-(eleven), and Government & Politics (seven).
+(seventeen topics), followed by Economy, People, and Geography (sixteen each), History
+(twelve), and Government & Politics (seven).
 
 ## Section 5 — Structure Inventory
 
@@ -183,15 +186,15 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 
 | Artifact | State |
 |---|---|
-| `geography/index.md` | Present — 14 entries |
-| `history/index.md` | Present — 11 entries |
+| `geography/index.md` | Present — 16 entries |
+| `history/index.md` | Present — 12 entries |
 | `government-politics/index.md` | Present — 7 entries |
 | `economy/index.md` | Present — 16 entries |
 | `culture-society/index.md` | Present — 17 entries |
 | `people/index.md` | Present — 16 entries |
-| `TIMELINE.md` | Present — 524 dated events across all eighty-one articles |
+| `TIMELINE.md` | Present — 526 dated events across all eighty-four articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all eighty-one topic articles |
+| Cross-references (`## Related`) | Present in all eighty-four topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -528,3 +531,14 @@ Added three dedicated articles — giving Economy a sixteenth topic (the cosmeti
 - ENHANCE pass corrected facts and cross-references. In the Lee Jae-yong article: fixed the "Key figures" line (Hong Ra-hee is his mother, not his wife; his sisters are Lee Boo-jin and Lee Seo-hyun, not "Lee Myung-hee"), corrected the generational framing (third-generation head, succeeding founder Lee Byung-chul and Lee Kun-hee), and added the February 2024 merger-case acquittal for consistency with the Chaebol article. In the diaspora article: corrected the claim that Andy Kim was "the first Korean-American elected to Congress" (Jay Kim was first, in 1992; Andy Kim became the first Korean-American senator in 2024), adjusted Coupang's IPO valuation (~$60 billion at its March 2021 NYSE debut, briefly approaching $100 billion), replaced a dubious Zainichi baseball example with Isao Harimoto, and fixed a romanization. In the K-beauty article: clarified Amorepacific's founding (Pacific Chemical Industrial, 1945; the family trade began in Gaeseong) and softened an unverifiable CVS distribution claim. Converted all three files' `## Related` blocks to the generated marker format with resolved relative links.
 - build-structure: refreshed `geography/index.md` (13→14), `economy/index.md` (15→16), and `people/index.md` (15→16); updated `INDEX.md`; extended `TIMELINE.md` (507→524 dated events) with seventeen new events spanning the diaspora (1903 Hawaii emigration, the 1937 Koryo-saram deportation, the 1963 Germany/Brazil migration, the 1992 Los Angeles unrest, the 1997 Overseas Koreans Foundation, and the 2023 Overseas Koreans Act), K-beauty (Amorepacific's 1945 founding, Missha in 2000, the 2008 cushion compact, the 2017 THAAD shock, and the 2023 Cosrx deal), and Lee Jae-yong (his 1968 birth, the 2014 succession, the 2017 arrest, the 2021 Taylor fab, and the 2022 pardon and chairmanship); and added bidirectional back-links from Hallyu and Lee Kun-hee. (`README.md` already listed the three new articles.)
 - sync-seed: regenerated §4 (Content Inventory: 78→81 files) and §5 (Structure Inventory: entry counts and 524-event timeline; Culture & Society leads at seventeen, Economy and People tie for second at sixteen, Geography fourth at fourteen, History fifth at eleven, Government & Politics sixth at seven).
+
+### G1-T30 — 2026-09-01 — Tick 30: South Gyeongsang Province, South Jeolla Province, and the 2024–2025 martial law crisis deepen Geography and History
+
+Added three dedicated articles — giving Geography a fifteenth and sixteenth topic (the two southern provinces completing the mainland provincial set alongside the metropolitan cities) and History a twelfth (the most severe constitutional crisis since democratization).
+
+- Created `geography/south-gyeongsang-province.md`: encyclopedic article on South Gyeongsang Province (Gyeongnam) — the Nakdong basin and Jirisan highlands, the Geoje/Namhae islands and Hallyeo maritime park, the planned industrial capital Changwon (the 2010 Masan–Jinhae merger and 2022 special-case-city status), the Geoje shipbuilding yards (Samsung Heavy Industries, Hanwha Ocean) and the Changwon/Sacheon defence-and-aerospace cluster (K9 Thunder, KF-21), Gaya-era iron culture and the Imjin War sieges of Jinju, the Korean War Busan Perimeter and Geoje POW uprising, Yeongnam Confucian identity, and demographic and post-shipbuilding transition challenges.
+- Created `geography/south-jeolla-province.md`: encyclopedic article on South Jeolla Province (Jeollanam) — the Honam agricultural heartland, the 1,600-island Dadohae and Suncheon Bay Ramsar wetland, the cities of Mokpo, Yeosu (2012 World Expo, petrochemical complex), Suncheon, and Naju (Bitgaram/KEPCO innovation city), Baekje and Goryeo-celadon heritage, Yi Sun-sin's Battle of Myeongnyang, the Goheung Naro Space Center, pansori and Jeolla cuisine, the region's progressive political identity rooted in the Gwangju Uprising and Kim Dae-jung, and demographic and offshore-wind futures.
+- Created `history/martial-law-crisis-2024.md`: encyclopedic article on the December 2024 Martial Law Crisis — Yoon Suk-yeol's presidency and legislative gridlock, the December 3 martial law declaration under Article 77 and the special-forces deployment to the National Assembly and National Election Commission, the Assembly's 190–0 lifting vote, the failed December 7 and successful December 14 impeachment votes, the unanimous 8–0 Constitutional Court removal (April 4, 2025), Yoon's January 2025 arrest for insurrection, Lee Jae-myung's June 3 snap-election victory, and the crisis's significance for democratic resilience and civilian control of the military.
+- ENHANCE pass polished prose and corrected facts. Gyeongnam: fixed the province's borders, corrected the Geoje–Busan link (the 2010 Geoga Fixed Link, a bridge-and-immersed-tunnel crossing, not a "3.7 km suspension bridge"), clarified Changwon's status (an integrated city, then a 2022 *teukryesi* special-case city — not a *teukbyeol-si*), rewrote the garbled Tongyeong/Tongjeyeong naval-headquarters sentence, and replaced the spurious "*Lee algae*" term with *nokjo* (녹조). Jeolla: corrected Kim Dae-jung's birthplace (Hauido in Sinan County, not Haenam) and his presidential ordinal (fifteenth) and 1973 KCIA abduction (removing "US-backed"), fixed the Purple Islands (Banwol and Bakji), the Bitgaram anchor tenants (KEPCO-led, removing KOICA), the pansori school romanizations (Seopyeonje/Dongpyeonje), the invasion dates (1592–1598), and softened the Jindo-dog claim; made the non-existent North Jeolla link plain text. Martial law: corrected the PPP's Assembly standing (a minority of ~115 seats, not "167 of 299"), removed the fabricated "one-seat expansion," fixed the NEC location (Gwacheon), reframed the command chain (Kim Yong-hyun, Kwak Jong-geun, Noh Sang-won), corrected the failed first-vote description (quorum not met) and Lee Jae-myung's ordinal (twenty-first), and resolved the bare People cross-links.
+- build-structure: refreshed `geography/index.md` (14→16) and `history/index.md` (11→12); updated `INDEX.md` and `README.md`; extended `TIMELINE.md` (524→526 dated events) with the 2010 Changwon merger and the 2012 Yeosu World Expo, retargeted the martial-law-crisis rows (Dec 3 declaration, Dec 14 impeachment, Apr 4 2025 removal, Jun 4 2025 inauguration) to the new dedicated article, and corrected Lee Jae-myung's inauguration date (June 4, 2025).
+- sync-seed: regenerated §4 (Content Inventory: 81→84 files) and §5 (Structure Inventory: entry counts and 526-event timeline; Culture & Society leads at seventeen, Economy, People, and Geography tie for second at sixteen, History fifth at twelve, Government & Politics sixth at seven).
