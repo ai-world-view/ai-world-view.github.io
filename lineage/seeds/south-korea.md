@@ -87,7 +87,7 @@ framework layer present this tick:
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
 People. The README knowledge table has 0 rows (content is surfaced via a Contents list and
-`INDEX.md`). Dedicated topic files (84):
+`INDEX.md`). Dedicated topic files (87):
 
 | Category | File | Topic |
 |---|---|---|
@@ -107,6 +107,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Geography | `geography/korean-diaspora-overseas-communities.md` | Korean Diaspora and Overseas Korean Communities — the estimated 7.3–7.5 million ethnic Koreans abroad; the colonial-era, war-era, and industrial-era migration waves, the Zainichi and Koryo-saram communities, the major diaspora hubs from Los Angeles to Yanbian, and the diaspora's role in Hallyu, remittances, and Korean soft power |
 | Geography | `geography/south-gyeongsang-province.md` | South Gyeongsang Province (Gyeongnam) — the south-eastern industrial province around the capital Changwon; the Geoje shipbuilding yards (Samsung Heavy Industries, Hanwha Ocean), the K9 and KF-21 defence-and-aerospace cluster, Jinju's Imjin War heritage and Gaya archaeology, the Hallyeo maritime islands, and the southern Yeongnam identity |
 | Geography | `geography/south-jeolla-province.md` | South Jeolla Province (Jeollanam) — the south-western Honam heartland; the 1,600-island Dadohae coast and Suncheon Bay, Korea's premier rice-and-seaweed agriculture, the Yeosu petrochemical complex and Goheung's Naro Space Center, pansori and Jeolla cuisine, and the region's deeply progressive political identity |
+| Geography | `geography/demilitarized-zone.md` | The Korean Demilitarized Zone (DMZ) — the 4-km-wide, 248-km buffer strip dividing the two Koreas since the 1953 armistice; the Military Demarcation Line and Civilian Control Zone, the Joint Security Area at Panmunjom, the infiltration tunnels and heavy militarization, the accidental wildlife sanctuary, and the DMZ's role in reunification scenarios |
 | History | `history/three-kingdoms-period.md` | Three Kingdoms period (Goguryeo, Baekje, Silla) and Silla's unification |
 | History | `history/unified-silla-period.md` | Unified Silla period (668–935) — the first political unification of the peninsula, the golden age of Buddhist civilization (Bulguksa, Seokguram, the Emille Bell), the bone-rank order and Hwarang, hyangga poetry and the idu script, Jang Bogo's maritime trade, and the decline into the Later Three Kingdoms |
 | History | `history/goryeo-period.md` | Goryeo period (918–1392) — medieval kingdom, celadon, the Tripitaka Koreana, and metal movable type |
@@ -159,6 +160,8 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | Culture & Society | `culture-society/korean-broadcast-television.md` | Korean broadcast television industry — the KBS/MBC/SBS terrestrial system and its state/commercial hybrid structure, the evening-drama and music-show production model, landmark dramas and ratings records, the regulatory and political-independence flashpoints, and its soft-power role distinct from film and streaming |
 | Culture & Society | `culture-society/seoul-national-university.md` | Seoul National University — the 1946 founding and 1975 Gwanak campus, the SKY hierarchy and the Suneung admissions gauntlet, research standing and rankings, notable alumni and activist legacy, and its role in meritocratic aspiration and educational inequality |
 | Culture & Society | `culture-society/chuseok.md` | Chuseok (Hangawi) — Korea's mid-autumn harvest festival and quintessential family holiday; the *jesa* ancestral rites and Confucian filial piety, the mass return migration to hometowns, songpyeon and feasting, kimjang and the Ganggangsullae dance, and its modern gender, generational, and commercial dimensions |
+| Culture & Society | `culture-society/korean-royal-palaces.md` | Korean royal palaces and heritage sites — the five grand Joseon palaces of Seoul (Gyeongbokgung, Changdeokgung, Changgyeonggung, Deoksugung, Gyeonghuigung) and Suwon's Hwaseong Fortress; their geomancy and Confucian spatial hierarchy, the Imjin War and colonial-era destruction, UNESCO inscription, ongoing restoration, and role as living heritage and Hallyu-driven tourism |
+| Culture & Society | `culture-society/seollal.md` | Seollal — Korea's Lunar New Year; the *charye* ancestral rite, tteokguk and the *sebae* bow, hanbok and folk games (*yutnori*, *jegichagi*), the Great Migration to ancestral hometowns, the gendered domestic-labor critique, and the North Korean and diaspora observance |
 | People | `people/park-chung-hee.md` | Park Chung-hee — president (1961–1979) |
 | People | `people/kim-dae-jung.md` | Kim Dae-jung — president (1998–2003) and Nobel laureate |
 | People | `people/roh-moo-hyun.md` | Roh Moo-hyun — president (2003–2008), human-rights lawyer, and the KORUS FTA and October 2007 summit |
@@ -177,7 +180,7 @@ People. The README knowledge table has 0 rows (content is surfaced via a Content
 | People | `people/lee-jae-yong.md` | Lee Jae-yong (b. 1968) — Samsung Electronics chairman and third-generation head of the Samsung Group; the semiconductor, foundry, display, battery, and biopharma strategy, the Taylor (Texas) fab and chip diplomacy, the Park Geun-hye bribery conviction and 2022 Liberation Day pardon, the 2024 merger-case acquittal, the record inheritance-tax case, and the debate over chaebol succession and governance |
 
 Every taxonomy category holds at least seven dedicated topics; Culture & Society is the largest
-(seventeen topics), followed by Economy, People, and Geography (sixteen each), History
+(nineteen topics), followed by Geography (seventeen), Economy and People (sixteen each), History
 (twelve), and Government & Politics (seven).
 
 ## Section 5 — Structure Inventory
@@ -186,15 +189,15 @@ Generated structural artifacts (maintained by `build-structure`, in marker block
 
 | Artifact | State |
 |---|---|
-| `geography/index.md` | Present — 16 entries |
+| `geography/index.md` | Present — 17 entries |
 | `history/index.md` | Present — 12 entries |
 | `government-politics/index.md` | Present — 7 entries |
 | `economy/index.md` | Present — 16 entries |
-| `culture-society/index.md` | Present — 17 entries |
+| `culture-society/index.md` | Present — 19 entries |
 | `people/index.md` | Present — 16 entries |
-| `TIMELINE.md` | Present — 526 dated events across all eighty-four articles |
+| `TIMELINE.md` | Present — 538 dated events across all eighty-seven articles |
 | `INDEX.md` | Present — master map grouped by all 6 categories |
-| Cross-references (`## Related`) | Present in all eighty-four topic articles |
+| Cross-references (`## Related`) | Present in all eighty-seven topic articles |
 
 All six category indices are generated; every category has content.
 
@@ -542,3 +545,14 @@ Added three dedicated articles — giving Geography a fifteenth and sixteenth to
 - ENHANCE pass polished prose and corrected facts. Gyeongnam: fixed the province's borders, corrected the Geoje–Busan link (the 2010 Geoga Fixed Link, a bridge-and-immersed-tunnel crossing, not a "3.7 km suspension bridge"), clarified Changwon's status (an integrated city, then a 2022 *teukryesi* special-case city — not a *teukbyeol-si*), rewrote the garbled Tongyeong/Tongjeyeong naval-headquarters sentence, and replaced the spurious "*Lee algae*" term with *nokjo* (녹조). Jeolla: corrected Kim Dae-jung's birthplace (Hauido in Sinan County, not Haenam) and his presidential ordinal (fifteenth) and 1973 KCIA abduction (removing "US-backed"), fixed the Purple Islands (Banwol and Bakji), the Bitgaram anchor tenants (KEPCO-led, removing KOICA), the pansori school romanizations (Seopyeonje/Dongpyeonje), the invasion dates (1592–1598), and softened the Jindo-dog claim; made the non-existent North Jeolla link plain text. Martial law: corrected the PPP's Assembly standing (a minority of ~115 seats, not "167 of 299"), removed the fabricated "one-seat expansion," fixed the NEC location (Gwacheon), reframed the command chain (Kim Yong-hyun, Kwak Jong-geun, Noh Sang-won), corrected the failed first-vote description (quorum not met) and Lee Jae-myung's ordinal (twenty-first), and resolved the bare People cross-links.
 - build-structure: refreshed `geography/index.md` (14→16) and `history/index.md` (11→12); updated `INDEX.md` and `README.md`; extended `TIMELINE.md` (524→526 dated events) with the 2010 Changwon merger and the 2012 Yeosu World Expo, retargeted the martial-law-crisis rows (Dec 3 declaration, Dec 14 impeachment, Apr 4 2025 removal, Jun 4 2025 inauguration) to the new dedicated article, and corrected Lee Jae-myung's inauguration date (June 4, 2025).
 - sync-seed: regenerated §4 (Content Inventory: 81→84 files) and §5 (Structure Inventory: entry counts and 526-event timeline; Culture & Society leads at seventeen, Economy, People, and Geography tie for second at sixteen, History fifth at twelve, Government & Politics sixth at seven).
+
+### G1-T31 — 2026-09-02 — Tick 31: The Korean Demilitarized Zone, the royal palaces, and Seollal deepen Geography and Culture & Society
+
+Added three dedicated articles — giving Geography a seventeenth topic (the fortified inter-Korean frontier) and Culture & Society its eighteenth and nineteenth topics (the Joseon palace heritage and the Lunar New Year), extending Culture & Society's lead as the largest category.
+
+- Created `geography/demilitarized-zone.md`: encyclopedic article on the Korean DMZ — the 4-km-wide, 248-km buffer strip and Military Demarcation Line established by the July 27, 1953 armistice, the geography and Civilian Control Zone, the armistice negotiations and the tunnels, the 1976 Axe Murder Incident and infiltration incidents, the landmines, the Joint Security Area at Panmunjom, the accidental wildlife sanctuary (red-crowned cranes, leopard cats), the military infrastructure and invasion corridors, DMZ tourism, and the zone's significance for reunification.
+- Created `culture-society/korean-royal-palaces.md`: encyclopedic article on the Joseon royal palaces — the five grand palaces of Seoul (Gyeongbokgung, Changdeokgung and its Secret Garden, Changgyeonggung, Deoksugung, Gyeonghuigung) and Suwon's Hwaseong Fortress, the geomancy and Confucian spatial hierarchy and dancheong construction, the Imjin War and colonial-era destruction, the UNESCO inscriptions (Changdeokgung and Hwaseong, 1997), the postwar restoration, and the palaces as living heritage and Hallyu-driven tourism.
+- Created `culture-society/seollal.md`: encyclopedic article on Seollal, Korea's Lunar New Year — the historical origins and colonial suppression, the 1989 reinstatement as a three-day holiday, the *charye* ancestral rite, the foods (tteokguk, jeon, hangwa), the customs (*sebae*, hanbok, *yutnori* and folk games, grave visits), the Great Migration, the gendered domestic-labor critique, and the North Korean and diaspora observance.
+- ENHANCE pass corrected facts, normalized inline links from absolute (`/category/file.md`) to relative (`../category/…` or same-category) paths, and converted all three draft `## Related Topics` lists to marker-wrapped `## Related` blocks with descriptions. Palaces: fixed "seven centuries" of Joseon rule to "more than five centuries"; reframed Changgyeonggung's 1909 conversion to a zoo (Changgyeongwon) as beginning under Japanese pressure before the 1910 annexation; softened the Buyongjeong "constructed in 1776" claim to Jeongjo's reign (r. 1776–1800); corrected "gingko" timber to pine; and generalized the loose claim that the Japan–Korea Annexation Treaty was signed at Deoksugung. DMZ: corrected the ecology (dropped "critically endangered Amur leopard cat" to the leopard cat and Amur goral, and the non-native "smooth-coated otter" to the Eurasian otter), replaced "Sea of Japan" with "East Sea (Sea of Japan)", and aligned the key-figures line with the body (William K. Harrison Jr., who signed at Panmunjom, replacing Matthew Ridgway). Seollal: fixed the confused *charye* bow sequence to the traditional two full bows (*jaebae*); removed the dubious Goryeo "nine major holidays (*guwol*)" term; and replaced the fabricated "kkong-guk soybean-paste" regional variant with tteok-mandu-guk and coastal oyster/anchovy versions. Fixed all three files' front-matter `date:` to a single ISO date (2026-09-02), correcting the palaces file's invalid bare-year `1395`.
+- build-structure: refreshed `geography/index.md` (16→17) and `culture-society/index.md` (17→19); updated `INDEX.md` (README already listed all three); extended `TIMELINE.md` (526→538 dated events) with twelve new events spanning the palaces (Changdeokgung 1405, the Gyeongbokgung reconstruction 1868, Deoksugung 1897, Changgyeongwon 1909, the Changdeokgung UNESCO inscription 1997, the Gwanghwamun restoration 2010), the DMZ (the 1953 armistice, the 1976 Axe Murder Incident, the 1978 Third Tunnel, the 2005 Kaesong opening, the 2018 JSA demining), and Seollal's 1989 reinstatement; wrapped the three new `## Related` blocks in generated markers; and added bidirectional back-links from the Korean War, North Korea Relations, the Joseon Dynasty, Suwon, Architecture and Urban Design, Chuseok, and Gyeonggi and Gangwon Provinces.
+- sync-seed: regenerated §4 (Content Inventory: 84→87 files) and §5 (Structure Inventory: entry counts and 538-event timeline; Culture & Society leads at nineteen, Geography second at seventeen, Economy and People tie for third at sixteen, History fifth at twelve, Government & Politics sixth at seven).
