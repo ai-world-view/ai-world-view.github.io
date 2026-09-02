@@ -87,24 +87,27 @@ present under `.github/`:
 ## Section 4 — Content Inventory
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
-People. The README knowledge table ("Notable Facts about the country north korea") holds **12 rows**.
-Dedicated topic files (12):
+People. The README knowledge table ("Notable Facts about the country north korea") holds **15 rows**.
+Dedicated topic files (15):
 
 - `geography/pyongyang.md` — Pyongyang, the capital and largest city.
 - `geography/mount-paektu.md` — Mount Paektu, the sacred border volcano and its Kim-dynasty mythology.
+- `geography/hamhung.md` — Hamhung, the second-largest city and chemical-industrial center on the east coast.
 - `history/korean-war.md` — the 1950–1953 Korean War.
 - `history/nuclear-weapons-program.md` — the DPRK nuclear program from its 1980s origins to a deliverable thermonuclear deterrent.
 - `government-politics/government-structure.md` — the DPRK's political system and institutions.
 - `government-politics/workers-party-of-korea.md` — the sole ruling party (WPK) and institutional backbone of the state.
+- `government-politics/korean-peoples-army.md` — the Korean People's Army (KPA): armed force, economic conglomerate, and regime skeleton.
 - `economy/economic-system-and-famine.md` — the planned economy and the 1994–1998 famine.
 - `culture-society/state-ideology-and-propaganda.md` — juche, the personality cult, and the propaganda state.
+- `culture-society/education-system.md` — the state-monopolized, militarized education system as an instrument of indoctrination.
 - `people/kim-il-sung.md` — founding leader Kim Il-sung (1912–1994).
 - `people/kim-jong-il.md` — second leader Kim Jong-il (1942–2011).
 - `people/kim-jong-un.md` — third leader Kim Jong-un (2011–present).
 - `people/kim-yo-jong.md` — Kim Yo-jong (b. 1987), sister and key advisor to Kim Jong-un.
 
 Populated categories: all six — Geography, History, Government & Politics, Economy, Culture & Society,
-and People. This tick deepened the History, Government & Politics, and People categories.
+and People. This tick deepened the Government & Politics, Culture & Society, and Geography categories.
 
 ## Section 5 — Structure Inventory
 
@@ -117,10 +120,9 @@ Generated structural artifacts now present:
   Kim Jong-il, Korean War, Kim Jong-un, Kim Yo-jong).
 - **Master index** — `INDEX.md` (all topics grouped by taxonomy, with pointers to category indices
   and the timeline).
-- **Cross-references** — a generated `## Related` block in each of the 12 dedicated topic files.
+- **Cross-references** — a generated `## Related` block in each of the 15 dedicated topic files.
 - **Preview art** — atlas-style SVG cards under `assets/images/previews/` for each category and
-  featured topic (including `nuclear-weapons-program.svg`, `workers-party-of-korea.svg`, and
-  `kim-yo-jong.svg`).
+  featured topic (including `korean-peoples-army.svg`, `education-system.svg`, and `hamhung.svg`).
 
 ## Section 6 — Growth Loop
 
@@ -186,3 +188,14 @@ Fourth growth tick. Added three topics that deepened the History, Government & P
 - Enhance pass: corrected Kim Yo-jong's Central Committee appointment to the May 2016 Seventh Party Congress (was mis-dated September 2016); fixed the nuclear-program chronology of the Agreed Framework's collapse (Bush administration in late 2002; NPT withdrawal January 2003; reprocessing resumed later that year, not "early 2002"); reworked the WPK's 2023–2024 reunification passage to stop conflating the September 2023 (nuclear-policy) SPA session with the reunification doctrine shift announced at the December 2023 plenum and January 2024 SPA; and fixed minor grammar/prose. Verified all three front-matter `date:` fields are single ISO dates (Kim Yo-jong `1987-09-26`; the thematic Nuclear and WPK topics on the tick date).
 - Ran build-structure — added README, INDEX, and category-index rows for the three topics; added Kim Yo-jong to `TIMELINE.md`; wrapped the new topics in generated `## Related` blocks and extended the blocks of seven older topic files to link the new pages bidirectionally; authored atlas-style preview SVGs for all three topics and added their `preview:` front matter; updated `ROADMAP.md` (Now → Done for tick 4).
 - Ran sync-seed — regenerated §1–7 (Content 9→12 rows/files across all six populated categories; Structure inventory now lists 6 category indices, 5 dated timeline rows, and 12 cross-referenced files).
+
+### G1-T5 — 2026-09-02 — Tick 5: added the Korean People's Army, the education system, and the city of Hamhung
+
+Fifth growth tick. Added three topics that deepened the Government & Politics, Culture & Society, and Geography categories — the military that is the regime's coercive skeleton, the schooling system that reproduces its loyalty, and the neglected second city that anchors its provincial industry — then refreshed the structural layer.
+
+- Created `government-politics/korean-peoples-army.md` — the Korean People's Army: its 1948 founding and anti-Japanese guerrilla myth, the Korean War, the layered party-controlled command structure and branches, universal conscription, the Songun policy and its partial rollback under Kim Jong-un, the KPA as economic conglomerate (mining, construction, farms, illicit foreign-currency and cyber operations via the Lazarus Group/RGB), the Strategic Forces Command with the nuclear-test and ballistic-missile record, internal-security and prison-camp roles, selective modernization, and the 2023–2025 Russia partnership including the Kursk deployment.
+- Created `culture-society/education-system.md` — the state-monopolized, militarized education system: the 12-year compulsory structure (2012 reform), songbun- and loyalty-gated higher education, the ideology-saturated curriculum (Ten Principles, Kim revolutionary history), mandatory youth organizations and military drill, teacher political control, famine-era institutional decay and the "lost generation," elite institutions (Kim Il-sung University, Manggyongdae, PUST), foreign-education pathways, and the technical-need-versus-ideological-control tension.
+- Created `geography/hamhung.md` — Hamhung, the DPRK's second-largest city in South Hamgyong: geography and the Hungnam port, pre-modern and colonial history (Yi Sŏnggye, Protestant missions, the Japanese chemical complex), the Korean War Hungnam evacuation, Vinalon and the chemical/military industry, the famine's devastation and the jangmadang, socialist urbanism, religious suppression, and present-day marginalization behind Pyongyang.
+- Enhance pass: corrected the education file's 12-year reform to the 6th Session of the 12th SPA (25 September 2012); removed an unsubstantiated 1997 revision of the Ten Principles (documented revisions are 1974 and 2013); fixed the muddled youth-league naming (Kim Il-sung Socialist Youth League from 1996 → Kimilsungist-Kimjongilist Youth League 2016 → Socialist Patriotic Youth League 2021); reconciled the Hungnam-evacuation refugee figures (~98,000 civilians); and removed a dangling `[[Songbun Social Classification]]` cross-reference (no such topic). Verified all three front-matter `date:` fields are single ISO dates (2026-09-02).
+- Ran build-structure — added README, INDEX, and category-index rows for the three topics; authored atlas-style preview SVGs (`korean-peoples-army.svg`, `education-system.svg`, `hamhung.svg`) and their `preview:` front matter; converted the three new topics' `## Related` lists into generated `## Related` crossref blocks with resolved links; and extended the crossref blocks of ten older topic files to link the new pages bidirectionally. TIMELINE unchanged (the new institution, theme, and place carry no new principal historical date). Updated `ROADMAP.md` (Now → Done for tick 5).
+- Ran sync-seed — regenerated §1–7 (Content 12→15 rows/files across all six populated categories; Structure inventory now lists 6 category indices, 5 dated timeline rows, and 15 cross-referenced files).
