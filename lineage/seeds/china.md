@@ -71,13 +71,14 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 51 rows.
-- **Dedicated topic files**: 51.
+- **README knowledge table**: 54 rows.
+- **Dedicated topic files**: 54.
   - `culture-society/buddhism-in-china.md` — Buddhism in China
   - `culture-society/chinese-medicine.md` — Chinese Medicine
   - `culture-society/confucianism.md` — Confucianism
   - `culture-society/filial-piety.md` — Filial Piety (Xiao)
   - `culture-society/i-ching.md` — The I Ching (Book of Changes)
+  - `culture-society/porcelain-and-ceramics.md` — Porcelain and Ceramics
   - `culture-society/taoism.md` — Taoism
   - `economy/belt-and-road-initiative.md` — Belt and Road Initiative
   - `economy/economic-reform-opening-up.md` — Economic Reform & Opening-up (1978 Onward)
@@ -92,6 +93,7 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `geography/the-yellow-river.md` — The Yellow River
   - `government-politics/chinese-civil-war.md` — Chinese Civil War
   - `government-politics/communist-party-china.md` — The Communist Party of China
+  - `government-politics/hukou-system.md` — The Hukou System
   - `government-politics/imperial-examination-system.md` — The Imperial Examination System
   - `government-politics/national-peoples-congress.md` — The National People's Congress
   - `government-politics/standing-committee-politburo.md` — The Standing Committee of the Politburo
@@ -110,6 +112,7 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `history/the-song-dynasty.md` — The Song Dynasty
   - `history/the-sui-dynasty.md` — The Sui Dynasty
   - `history/the-tang-dynasty.md` — The Tang Dynasty
+  - `history/the-xia-dynasty.md` — The Xia Dynasty
   - `history/the-yuan-dynasty.md` — The Yuan Dynasty
   - `history/the-zhou-dynasty.md` — The Zhou Dynasty
   - `history/warring-states-period.md` — The Warring States Period
@@ -124,8 +127,8 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `people/xi-jinping.md` — Xi Jinping
   - `people/zheng-he.md` — Zheng He
   - `people/zhou-enlai.md` — Zhou Enlai
-- **Categories with content**: Culture & Society (6), Economy (5), Geography (6),
-  Government & Politics (7), History (16), People (11).
+- **Categories with content**: Culture & Society (7), Economy (5), Geography (6),
+  Government & Politics (8), History (17), People (11).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -135,9 +138,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 231 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 244 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 51 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 54 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -507,3 +510,7 @@ Added three topics deepening History, Geography, and Economy and supplying long-
 ### G1-T17 — 2026-09-01 — Tick 17: The Qing zenith and the Confucian world order — Kangxi, Filial Piety, and the Tributary System
 
 Added three topics deepening People, Culture & Society, and Government & Politics and drawing the imperial-Confucian order into one interlocking cluster: `people/kangxi.md` (the fourth Qing emperor, r. 1661–1722 — the Oboi regency purge, the Three Feudatories Rebellion, the annexation of Taiwan, the Treaty of Nerchinsk, the Dzungar campaigns against Galdan, the Kangxi Dictionary and Jesuit science, and the succession crisis), `culture-society/filial-piety.md` (*xiao*, the cardinal Confucian virtue — its classical sources in the *Analects* and *Mencius*, the *Classic of Filial Piety*, imperial institutionalization through the Tang "Ten Abominations" and the Qing Sacred Edict, the three-year mourning system, the *Twenty-Four Paragons*, Neo-Confucian systematization, and its modern trajectory from the Cultural Revolution to the 2013 Elderly Rights Law), and `government-politics/tributary-system.md` (the Sinocentric ritual-diplomatic order from the Han through the nineteenth century — the kowtow and Board of Rites protocol, Ming expansion under Zheng He, Qing adaptation and the Macartney impasse, tribute trade under the *haijin*, and dissolution through the Opium Wars and the loss of Vietnam, Ryukyu, Burma, and Korea), each with `title`/`preview`/`date`/`category` front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. Culture & Society now holds six topics, Government & Politics seven, and People eleven; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and corrected several facts: in the Kangxi article, the 1683 Taiwan surrender was made by Koxinga's grandson Zheng Keshuang (Zheng Jing having died in 1681), not Zheng Jing; removed Ferdinand Verbiest (d. 1688) from the Nerchinsk interpreter list and rendered the treaty as drawn up in Latin (authoritative) with Russian and Manchu versions; and softened "thirty-five surviving sons" to "more than twenty adult sons"; in the Filial Piety article, corrected Lu Xun's critique to a 1926 essay (collected in *Dawn Blossoms Plucked at Dusk*), not 1918, and harmonized the *Xiaojing*'s Han canonization; and in the Tributary System article, clarified that the 1414 giraffe reached the Yongle court via Bengal from the East African coast. Added the missing `preview` front-matter field to all three new files. Refreshed the structural layer: inserted Filial Piety into the Culture & Society index and INDEX, the Tributary System (first, with the Imperial Examination System, as the earliest imperial institution) into the Government & Politics index and INDEX, and Kangxi (after Zheng He) into the People index and INDEX; the README knowledge table already carried the three new rows (51 total); extended `TIMELINE.md` from 217 to 231 dated milestones (Kangxi's 1654 birth, 1661 accession, 1669 Oboi purge, 1673 Three Feudatories revolt, 1681 fall of Kunming, 1696 Jao Modo, 1716 Dictionary, and 1722 death — with the existing 1683 Taiwan and 1689 Nerchinsk milestones repointed from the Qing Dynasty to the dedicated article; Filial Piety's 745 Xiaojing stone inscription, c. 1330 *Twenty-Four Paragons*, 1670 Sacred Edict, and 2013 Elderly Rights Law; and the Tributary System's 1414 *qilin* giraffe and 1879 Japanese annexation of Ryukyu, with the 1793 Macartney milestone repointed from the Qing to the dedicated article); and wove reciprocal cross-references from seven existing articles (the Qing Dynasty to both Kangxi and the Tributary System; Confucianism, Confucius, and the Imperial Examination System to Filial Piety; and the Ming Dynasty, Zheng He, and the Opium Wars to the Tributary System). Verified every cross-reference resolves (0 broken links repo-wide). Reconciled `ROADMAP.md` (the three Now items moved to Done as G1-T17; the Xia Dynasty, Porcelain and Ceramics, and the Hukou System promoted from Backlog to Now) and regenerated seed sections 4–5 to match live state (51 topic files, 51 README rows, 231 milestones, no empty categories).
+
+### G1-T18 — 2026-09-02 — Tick 18: Legendary origins, a global export, and a modern instrument of control — the Xia Dynasty, Porcelain and Ceramics, and the Hukou System
+
+Added three topics deepening History, Culture & Society, and Government & Politics and spanning the full arc from China's legendary dynastic origins to a defining institution of the contemporary state: `history/the-xia-dynasty.md` (China's legendary first dynasty, c. 2070–1600 BCE — Yu the Great's taming of the Yellow River floods, the shift from *shanrang* meritocratic succession to hereditary rule under Qi, the Mandate-forfeiting tyrant Jie, the Erlitou archaeological debate, the "Doubting Antiquity" school, and the Xia-Shang-Zhou Chronology Project), `culture-society/porcelain-and-ceramics.md` (five millennia of Chinese ceramics — Neolithic Longshan black ware, the Song five great kilns and celadon, Ming Jingdezhen blue-and-white and its global export, Yixing *zisha* stoneware, the Qing famille-rose and Canton trade, and the European race to Meissen hard-paste porcelain), and `government-politics/hukou-system.md` (the household-registration system from its 1951 origins and 1958 formalization through the planned-economy urban-rural divide, the reform-era *zanzhu zheng* and floating population, left-behind children, and the gradual point-based liberalization since 2014), each with `title`/`preview`/`date`/`category` front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. History now holds seventeen topics, Culture & Society seven, and Government & Politics eight; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and corrected several factual errors: in the Xia article, fixed the abdication term's pinyin (*shanrang* 禅让, not "chuanxian," for 禅让) and "*wanguo*"→"*wangguo* zhi jun," softened an overstated Erlitou Palace I dimension to a rammed-earth enclosure "roughly 100 meters on a side," and relabeled the *jue* and *jia* as wine vessels; in the Hukou article, attributed the 1958 regulations to the NPC Standing Committee and replaced an inaccurate claim that the 1982 Constitution's Article 35 guarantees freedom of movement with the accurate contrast that the 1982 charter (unlike the 1954 Constitution's Article 90) omits any such guarantee; and in the Porcelain article, corrected Hemudu ware from "wheel-thrown" to hand-built charcoal-tempered black pottery and replaced an unverifiable 2010 Ru-ware sale figure with the documented 2017 Sotheby's Hong Kong Ru brush-washer record (HK$294.3 million). Fixed cross-references: repaired the Hukou article's broken Cultural Revolution link (`the-cultural-revolution.md`→`cultural-revolution.md`), repointed the Porcelain article's broken Zheng He link (`history/zheng-he.md`→`people/zheng-he.md`) and removed a mislabeled duplicate "Canton System" link to the Opium Wars, and dropped a misleading "Mandate of Heaven→Tributary System" cross-ref from the Xia article. Verified every cross-reference resolves (0 broken links repo-wide). Refreshed the structural layer: inserted the Xia (first, as the earliest) into the History index and INDEX, Porcelain into the Culture & Society index and INDEX, and the Hukou System into the Government & Politics index and INDEX; grew the README knowledge table from 51 to 54 rows; extended `TIMELINE.md` from 231 to 244 dated milestones (the Xia's c. 2070 founding, its c. 1600 fall at Mingtiao, the 1959 Erlitou survey, and the 2000 Chronology Project; the ceramic milestones of c. 2500 BCE Longshan black ware, the c. 1085 Ru ware, Meissen's 1708 hard-paste breakthrough, d'Entrecolles's 1712 account, and the 2017 Ru-washer record; and the Hukou milestones of the 1951 first regulations, the 1958 formalization, the 2003 Sun Zhigang case, and the 2014 national reform guidelines); and wove reciprocal cross-references from nine existing articles (the Shang and Zhou dynasties and the Yellow River to the Xia; the Ming and Song dynasties and the Tea Trade to Porcelain; and the Communist Party, Economic Reform & Opening-up, and the Great Leap Forward to the Hukou System). Reconciled `ROADMAP.md` (the three Now items moved to Done as G1-T18; Pan Geng, Regional Autonomy, and Printing and Woodblock Printing promoted from Backlog to Now) and regenerated seed sections 4–5 to match live state (54 topic files, 54 README rows, 244 milestones, no empty categories).
