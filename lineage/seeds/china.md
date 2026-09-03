@@ -71,14 +71,15 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 54 rows.
-- **Dedicated topic files**: 54.
+- **README knowledge table**: 57 rows.
+- **Dedicated topic files**: 57.
   - `culture-society/buddhism-in-china.md` — Buddhism in China
   - `culture-society/chinese-medicine.md` — Chinese Medicine
   - `culture-society/confucianism.md` — Confucianism
   - `culture-society/filial-piety.md` — Filial Piety (Xiao)
   - `culture-society/i-ching.md` — The I Ching (Book of Changes)
   - `culture-society/porcelain-and-ceramics.md` — Porcelain and Ceramics
+  - `culture-society/printing-and-woodblock.md` — Printing and Woodblock Printing
   - `culture-society/taoism.md` — Taoism
   - `economy/belt-and-road-initiative.md` — Belt and Road Initiative
   - `economy/economic-reform-opening-up.md` — Economic Reform & Opening-up (1978 Onward)
@@ -96,10 +97,12 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `government-politics/hukou-system.md` — The Hukou System
   - `government-politics/imperial-examination-system.md` — The Imperial Examination System
   - `government-politics/national-peoples-congress.md` — The National People's Congress
+  - `government-politics/regional-autonomy.md` — Regional Autonomy
   - `government-politics/standing-committee-politburo.md` — The Standing Committee of the Politburo
   - `government-politics/tiananmen-square-1989.md` — The 1989 Tiananmen Square Pro-Democracy Movement
   - `government-politics/tributary-system.md` — The Tributary System
   - `history/cultural-revolution.md` — Cultural Revolution
+  - `history/pan-geng.md` — Pan Geng
   - `history/the-boxer-rebellion.md` — The Boxer Rebellion
   - `history/the-great-leap-forward.md` — The Great Leap Forward
   - `history/the-han-dynasty.md` — The Han Dynasty
@@ -127,8 +130,8 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `people/xi-jinping.md` — Xi Jinping
   - `people/zheng-he.md` — Zheng He
   - `people/zhou-enlai.md` — Zhou Enlai
-- **Categories with content**: Culture & Society (7), Economy (5), Geography (6),
-  Government & Politics (8), History (17), People (11).
+- **Categories with content**: Culture & Society (8), Economy (5), Geography (6),
+  Government & Politics (9), History (18), People (11).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -138,9 +141,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 244 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 251 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 54 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 57 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -514,3 +517,7 @@ Added three topics deepening People, Culture & Society, and Government & Politic
 ### G1-T18 — 2026-09-02 — Tick 18: Legendary origins, a global export, and a modern instrument of control — the Xia Dynasty, Porcelain and Ceramics, and the Hukou System
 
 Added three topics deepening History, Culture & Society, and Government & Politics and spanning the full arc from China's legendary dynastic origins to a defining institution of the contemporary state: `history/the-xia-dynasty.md` (China's legendary first dynasty, c. 2070–1600 BCE — Yu the Great's taming of the Yellow River floods, the shift from *shanrang* meritocratic succession to hereditary rule under Qi, the Mandate-forfeiting tyrant Jie, the Erlitou archaeological debate, the "Doubting Antiquity" school, and the Xia-Shang-Zhou Chronology Project), `culture-society/porcelain-and-ceramics.md` (five millennia of Chinese ceramics — Neolithic Longshan black ware, the Song five great kilns and celadon, Ming Jingdezhen blue-and-white and its global export, Yixing *zisha* stoneware, the Qing famille-rose and Canton trade, and the European race to Meissen hard-paste porcelain), and `government-politics/hukou-system.md` (the household-registration system from its 1951 origins and 1958 formalization through the planned-economy urban-rural divide, the reform-era *zanzhu zheng* and floating population, left-behind children, and the gradual point-based liberalization since 2014), each with `title`/`preview`/`date`/`category` front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. History now holds seventeen topics, Culture & Society seven, and Government & Politics eight; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and corrected several factual errors: in the Xia article, fixed the abdication term's pinyin (*shanrang* 禅让, not "chuanxian," for 禅让) and "*wanguo*"→"*wangguo* zhi jun," softened an overstated Erlitou Palace I dimension to a rammed-earth enclosure "roughly 100 meters on a side," and relabeled the *jue* and *jia* as wine vessels; in the Hukou article, attributed the 1958 regulations to the NPC Standing Committee and replaced an inaccurate claim that the 1982 Constitution's Article 35 guarantees freedom of movement with the accurate contrast that the 1982 charter (unlike the 1954 Constitution's Article 90) omits any such guarantee; and in the Porcelain article, corrected Hemudu ware from "wheel-thrown" to hand-built charcoal-tempered black pottery and replaced an unverifiable 2010 Ru-ware sale figure with the documented 2017 Sotheby's Hong Kong Ru brush-washer record (HK$294.3 million). Fixed cross-references: repaired the Hukou article's broken Cultural Revolution link (`the-cultural-revolution.md`→`cultural-revolution.md`), repointed the Porcelain article's broken Zheng He link (`history/zheng-he.md`→`people/zheng-he.md`) and removed a mislabeled duplicate "Canton System" link to the Opium Wars, and dropped a misleading "Mandate of Heaven→Tributary System" cross-ref from the Xia article. Verified every cross-reference resolves (0 broken links repo-wide). Refreshed the structural layer: inserted the Xia (first, as the earliest) into the History index and INDEX, Porcelain into the Culture & Society index and INDEX, and the Hukou System into the Government & Politics index and INDEX; grew the README knowledge table from 51 to 54 rows; extended `TIMELINE.md` from 231 to 244 dated milestones (the Xia's c. 2070 founding, its c. 1600 fall at Mingtiao, the 1959 Erlitou survey, and the 2000 Chronology Project; the ceramic milestones of c. 2500 BCE Longshan black ware, the c. 1085 Ru ware, Meissen's 1708 hard-paste breakthrough, d'Entrecolles's 1712 account, and the 2017 Ru-washer record; and the Hukou milestones of the 1951 first regulations, the 1958 formalization, the 2003 Sun Zhigang case, and the 2014 national reform guidelines); and wove reciprocal cross-references from nine existing articles (the Shang and Zhou dynasties and the Yellow River to the Xia; the Ming and Song dynasties and the Tea Trade to Porcelain; and the Communist Party, Economic Reform & Opening-up, and the Great Leap Forward to the Hukou System). Reconciled `ROADMAP.md` (the three Now items moved to Done as G1-T18; Pan Geng, Regional Autonomy, and Printing and Woodblock Printing promoted from Backlog to Now) and regenerated seed sections 4–5 to match live state (54 topic files, 54 README rows, 244 milestones, no empty categories).
+
+### G1-T19 — 2026-09-03 — Tick 19: Foundations of writing, print, and the multiethnic state — Pan Geng, Printing and Woodblock Printing, and Regional Autonomy
+
+Added three topics deepening History, Culture & Society, and Government & Politics and spanning the full arc from the Bronze Age origins of Chinese writing to a defining institution of the contemporary state: `history/pan-geng.md` (the Shang king, r. c. 14th century BCE, whose relocation of the capital to Yin near modern Anyang ended generations of instability, founded the Yinxu site whose oracle bones and royal tombs confirmed the dynasty archaeologically, and whose three *Shangshu* speeches rank among the oldest surviving Chinese prose), `culture-society/printing-and-woodblock.md` (China's printing tradition from Tang woodblock Buddhist texts and the 868 CE *Diamond Sutra* through Bi Sheng's eleventh-century movable type and Wang Zhen's wooden type to the Song commercial boom, the great Buddhist-canon projects, and the Ming polychrome zenith, and its spread across East Asia centuries before Gutenberg), and `government-politics/regional-autonomy.md` (the PRC's system of ethnic-minority self-governance through five autonomous regions, thirty prefectures, and some 120 counties, established from the 1947 Inner Mongolia region and codified in the 1984 Law on Regional National Autonomy, and the enduring tension between its nominal cultural rights and effective Communist Party control in Tibet, Xinjiang, and Inner Mongolia), each with `title`/`preview`/`date`/`category` front matter (single ISO dates). History now holds eighteen topics, Culture & Society eight, and Government & Politics nine; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and normalized the three files' front matter to the repo convention (quoted `title`/`category` and an `/images/previews/<slug>.svg` preview, replacing prose preview strings). Rebuilt all three new Related blocks from the non-standard `## Related`-inside-markers, `[[wiki-link]]` form to the canonical `## Related` heading above a `<!-- BEGIN/END GENERATED: crossrefs -->` block of resolving `[Title](path.md)` links: pruned nine links to non-existent articles (the Mandate of Heaven, the Book of Documents, Oracle Bones and Divination, and Bronze Age China from Pan Geng; Paper and Papermaking from Printing; and the Constitution of the PRC, Tibet, Xinjiang, and Inner Mongolia from Regional Autonomy), corrected two mislabeled targets (the "Civil Examination System" → the Imperial Examination System; "Economic Reform and Opening-Up" → Economic Reform & Opening-up), and added a Confucianism link to Pan Geng and a Hukou System link to Regional Autonomy. Verified every cross-reference resolves and no stray wiki-links remain (0 broken links repo-wide). Wove eleven reciprocal cross-references from existing articles (the Shang, Xia, and Zhou dynasties to Pan Geng; the Song, Ming, and Tang dynasties, Porcelain and Ceramics, and Chinese Medicine to Printing; and the Communist Party, the National People's Congress, and the Hukou System to Regional Autonomy). Refreshed the structural layer: inserted Pan Geng (after the Shang Dynasty) into the History index and INDEX, Printing into the Culture & Society index and INDEX, and Regional Autonomy into the Government & Politics index and INDEX; grew the README knowledge table from 54 to 57 rows; and extended `TIMELINE.md` from 244 to 251 dated milestones (Pan Geng's c. 1300 BCE move to Yin; the printing milestones of Bi Sheng's c. 1040 movable type, Wang Zhen's 1298 wooden type, and the 1408 *Yongle Encyclopedia*, with the existing 868 *Diamond Sutra* milestone repointed from Buddhism in China to the dedicated Printing article; and the autonomy milestones of the 1947 Inner Mongolia region, the 1965 Tibet Autonomous Region, and the 1984 Law on Regional National Autonomy). Regenerated seed sections 4–5 to match live state (57 topic files, 57 README rows, 251 milestones, no empty categories).
