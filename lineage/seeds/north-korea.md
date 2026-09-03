@@ -87,12 +87,13 @@ present under `.github/`:
 ## Section 4 — Content Inventory
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
-People. The README knowledge table ("Notable Facts about the country north korea") holds **15 rows**.
-Dedicated topic files (15):
+People. The README knowledge table ("Notable Facts about the country north korea") holds **18 rows**.
+Dedicated topic files (18):
 
 - `geography/pyongyang.md` — Pyongyang, the capital and largest city.
 - `geography/mount-paektu.md` — Mount Paektu, the sacred border volcano and its Kim-dynasty mythology.
 - `geography/hamhung.md` — Hamhung, the second-largest city and chemical-industrial center on the east coast.
+- `geography/kaesong.md` — Kaesong, the medieval Goryeo capital and DMZ border city, host to the Kaesong Industrial Complex.
 - `history/korean-war.md` — the 1950–1953 Korean War.
 - `history/nuclear-weapons-program.md` — the DPRK nuclear program from its 1980s origins to a deliverable thermonuclear deterrent.
 - `government-politics/government-structure.md` — the DPRK's political system and institutions.
@@ -101,13 +102,15 @@ Dedicated topic files (15):
 - `economy/economic-system-and-famine.md` — the planned economy and the 1994–1998 famine.
 - `culture-society/state-ideology-and-propaganda.md` — juche, the personality cult, and the propaganda state.
 - `culture-society/education-system.md` — the state-monopolized, militarized education system as an instrument of indoctrination.
+- `culture-society/kwanliso.md` — the kwanliso political prison-camp system and its doctrine of three-generation collective guilt.
 - `people/kim-il-sung.md` — founding leader Kim Il-sung (1912–1994).
 - `people/kim-jong-il.md` — second leader Kim Jong-il (1942–2011).
 - `people/kim-jong-un.md` — third leader Kim Jong-un (2011–present).
 - `people/kim-yo-jong.md` — Kim Yo-jong (b. 1987), sister and key advisor to Kim Jong-un.
+- `people/ko-yong-hui.md` — Ko Yong-hui (1952–2004), mother of Kim Jong-un and Kim Yo-jong and Kim Jong-il's longtime partner.
 
 Populated categories: all six — Geography, History, Government & Politics, Economy, Culture & Society,
-and People. This tick deepened the Government & Politics, Culture & Society, and Geography categories.
+and People. This tick deepened the Culture & Society, Geography, and People categories.
 
 ## Section 5 — Structure Inventory
 
@@ -117,12 +120,12 @@ Generated structural artifacts now present:
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md`
   (one per category; all six are now populated).
 - **Timeline** — `TIMELINE.md` (topics with a historical date in chronological order: Kim Il-sung,
-  Kim Jong-il, Korean War, Kim Jong-un, Kim Yo-jong).
+  Kim Jong-il, Korean War, Ko Yong-hui, Kim Jong-un, Kim Yo-jong).
 - **Master index** — `INDEX.md` (all topics grouped by taxonomy, with pointers to category indices
   and the timeline).
-- **Cross-references** — a generated `## Related` block in each of the 15 dedicated topic files.
+- **Cross-references** — a generated `## Related` block in each of the 18 dedicated topic files.
 - **Preview art** — atlas-style SVG cards under `assets/images/previews/` for each category and
-  featured topic (including `korean-peoples-army.svg`, `education-system.svg`, and `hamhung.svg`).
+  featured topic (including `kwanliso.svg`, `kaesong.svg`, and `ko-yong-hui.svg`).
 
 ## Section 6 — Growth Loop
 
@@ -199,3 +202,14 @@ Fifth growth tick. Added three topics that deepened the Government & Politics, C
 - Enhance pass: corrected the education file's 12-year reform to the 6th Session of the 12th SPA (25 September 2012); removed an unsubstantiated 1997 revision of the Ten Principles (documented revisions are 1974 and 2013); fixed the muddled youth-league naming (Kim Il-sung Socialist Youth League from 1996 → Kimilsungist-Kimjongilist Youth League 2016 → Socialist Patriotic Youth League 2021); reconciled the Hungnam-evacuation refugee figures (~98,000 civilians); and removed a dangling `[[Songbun Social Classification]]` cross-reference (no such topic). Verified all three front-matter `date:` fields are single ISO dates (2026-09-02).
 - Ran build-structure — added README, INDEX, and category-index rows for the three topics; authored atlas-style preview SVGs (`korean-peoples-army.svg`, `education-system.svg`, `hamhung.svg`) and their `preview:` front matter; converted the three new topics' `## Related` lists into generated `## Related` crossref blocks with resolved links; and extended the crossref blocks of ten older topic files to link the new pages bidirectionally. TIMELINE unchanged (the new institution, theme, and place carry no new principal historical date). Updated `ROADMAP.md` (Now → Done for tick 5).
 - Ran sync-seed — regenerated §1–7 (Content 12→15 rows/files across all six populated categories; Structure inventory now lists 6 category indices, 5 dated timeline rows, and 15 cross-referenced files).
+
+### G1-T6 — 2026-09-03 — Tick 6: added the political prison-camp system, Kaesong, and Ko Yong-hui
+
+Sixth growth tick. Added three topics that deepened the Culture & Society, Geography, and People categories — the kwanliso prison system at the core of the regime's terror apparatus, the historic border city that hosted the flagship inter-Korean economic experiment, and the mother whose advocacy shaped the third-generation succession — then refreshed the structural layer.
+
+- Created `culture-society/kwanliso.md` — the kwanliso political prison-camp system: the songbun and yonzwa doctrines of heritable political guilt, the post-Korean War origins under Kim Il-sung, profiles of the five identified camps (14 Kaechon, 15 Yodok, 16 Hwasong, 18 Bukchang, 25 Chongjin), conditions and forced labor, the 2014 UN Commission of Inquiry finding of crimes against humanity, and satellite documentation.
+- Created `geography/kaesong.md` — Kaesong, the medieval Goryeo capital (918–1392) and DMZ border city in North Hwanghae Province: its UNESCO heritage, its transfer from South to North by the 1953 armistice line, and the Kaesong Industrial Complex (2004–2016) with its political disruptions and 2016 closure.
+- Created `people/ko-yong-hui.md` — Ko Yong-hui (1952–2004), mother of Kim Jong-un and Kim Yo-jong and Kim Jong-il's longtime partner: her Osaka/Zainichi origins and repatriation, her Mansudae Art Troupe career and household role, her advocacy in the succession contest, her 2004 death in Paris, and the contradiction her biography poses to the Mount Paektu birth myth.
+- Enhance pass: fixed kwanliso's camp count ("four" → "five" for the five camps listed) and the Kang Cheol-hwan chronology (deported to Yodok in 1977, not "by 1987"; camps then "nearly two decades" old); corrected the Yodok hangul (요덕) and the French edition of *Aquariums of Pyongyang* (2000, not 1995); dropped an unverifiable "Seodok" label for Camp 25; and fixed "corraborates". Corrected Kaesong's province (North Hwanghae, not Hwanghae/Kangwon), removed the false claim that the KIC "resumed" in 2018 (proposals were never realized), and fixed "foodprocessing"; aligned the README row (province and 2004–2016 dates). Set Ko Yong-hui's front-matter `date:` to her birth date `1952-06-26` (People convention, feeding the timeline), corrected "Kim Hye-kyong" → Kim Sol-song and standardized "Sung Hye-rim" → Song Hye-rim for cross-file consistency.
+- Ran build-structure — converted the three new topics' inline `**Related topics**` lines into generated `## Related` crossref blocks; extended the crossref blocks of thirteen older topic files to link the new pages bidirectionally; added README, INDEX, and category-index rows; added Ko Yong-hui (1952-06-26) to `TIMELINE.md`; authored atlas-style preview SVGs (`kwanliso.svg`, `kaesong.svg`, `ko-yong-hui.svg`) and added their `preview:` front matter; and moved the three items from ROADMAP Now → Done.
+- Ran sync-seed — regenerated §1–7 (Content 15→18 rows/files across all six populated categories; Structure inventory now lists 6 category indices, 6 dated timeline rows, and 18 cross-referenced files).
