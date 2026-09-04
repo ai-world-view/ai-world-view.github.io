@@ -71,13 +71,14 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 57 rows.
-- **Dedicated topic files**: 57.
+- **README knowledge table**: 60 rows.
+- **Dedicated topic files**: 60.
   - `culture-society/buddhism-in-china.md` — Buddhism in China
   - `culture-society/chinese-medicine.md` — Chinese Medicine
   - `culture-society/confucianism.md` — Confucianism
   - `culture-society/filial-piety.md` — Filial Piety (Xiao)
   - `culture-society/i-ching.md` — The I Ching (Book of Changes)
+  - `culture-society/legalism.md` — Legalism
   - `culture-society/porcelain-and-ceramics.md` — Porcelain and Ceramics
   - `culture-society/printing-and-woodblock.md` — Printing and Woodblock Printing
   - `culture-society/taoism.md` — Taoism
@@ -97,6 +98,7 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `government-politics/hukou-system.md` — The Hukou System
   - `government-politics/imperial-examination-system.md` — The Imperial Examination System
   - `government-politics/national-peoples-congress.md` — The National People's Congress
+  - `government-politics/peoples-liberation-army.md` — The People's Liberation Army
   - `government-politics/regional-autonomy.md` — Regional Autonomy
   - `government-politics/standing-committee-politburo.md` — The Standing Committee of the Politburo
   - `government-politics/tiananmen-square-1989.md` — The 1989 Tiananmen Square Pro-Democracy Movement
@@ -124,14 +126,15 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `people/hu-jintao.md` — Hu Jintao
   - `people/jiang-zemin.md` — Jiang Zemin
   - `people/kangxi.md` — Kangxi
+  - `people/li-bai.md` — Li Bai
   - `people/mao-zedong.md` — Mao Zedong
   - `people/qin-shi-huang.md` — Qin Shi Huang
   - `people/sun-yat-sen.md` — Sun Yat-sen
   - `people/xi-jinping.md` — Xi Jinping
   - `people/zheng-he.md` — Zheng He
   - `people/zhou-enlai.md` — Zhou Enlai
-- **Categories with content**: Culture & Society (8), Economy (5), Geography (6),
-  Government & Politics (9), History (18), People (11).
+- **Categories with content**: Culture & Society (9), Economy (5), Geography (6),
+  Government & Politics (10), History (18), People (12).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -141,9 +144,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 251 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 264 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 57 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 60 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -521,3 +524,7 @@ Added three topics deepening History, Culture & Society, and Government & Politi
 ### G1-T19 — 2026-09-03 — Tick 19: Foundations of writing, print, and the multiethnic state — Pan Geng, Printing and Woodblock Printing, and Regional Autonomy
 
 Added three topics deepening History, Culture & Society, and Government & Politics and spanning the full arc from the Bronze Age origins of Chinese writing to a defining institution of the contemporary state: `history/pan-geng.md` (the Shang king, r. c. 14th century BCE, whose relocation of the capital to Yin near modern Anyang ended generations of instability, founded the Yinxu site whose oracle bones and royal tombs confirmed the dynasty archaeologically, and whose three *Shangshu* speeches rank among the oldest surviving Chinese prose), `culture-society/printing-and-woodblock.md` (China's printing tradition from Tang woodblock Buddhist texts and the 868 CE *Diamond Sutra* through Bi Sheng's eleventh-century movable type and Wang Zhen's wooden type to the Song commercial boom, the great Buddhist-canon projects, and the Ming polychrome zenith, and its spread across East Asia centuries before Gutenberg), and `government-politics/regional-autonomy.md` (the PRC's system of ethnic-minority self-governance through five autonomous regions, thirty prefectures, and some 120 counties, established from the 1947 Inner Mongolia region and codified in the 1984 Law on Regional National Autonomy, and the enduring tension between its nominal cultural rights and effective Communist Party control in Tibet, Xinjiang, and Inner Mongolia), each with `title`/`preview`/`date`/`category` front matter (single ISO dates). History now holds eighteen topics, Culture & Society eight, and Government & Politics nine; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and normalized the three files' front matter to the repo convention (quoted `title`/`category` and an `/images/previews/<slug>.svg` preview, replacing prose preview strings). Rebuilt all three new Related blocks from the non-standard `## Related`-inside-markers, `[[wiki-link]]` form to the canonical `## Related` heading above a `<!-- BEGIN/END GENERATED: crossrefs -->` block of resolving `[Title](path.md)` links: pruned nine links to non-existent articles (the Mandate of Heaven, the Book of Documents, Oracle Bones and Divination, and Bronze Age China from Pan Geng; Paper and Papermaking from Printing; and the Constitution of the PRC, Tibet, Xinjiang, and Inner Mongolia from Regional Autonomy), corrected two mislabeled targets (the "Civil Examination System" → the Imperial Examination System; "Economic Reform and Opening-Up" → Economic Reform & Opening-up), and added a Confucianism link to Pan Geng and a Hukou System link to Regional Autonomy. Verified every cross-reference resolves and no stray wiki-links remain (0 broken links repo-wide). Wove eleven reciprocal cross-references from existing articles (the Shang, Xia, and Zhou dynasties to Pan Geng; the Song, Ming, and Tang dynasties, Porcelain and Ceramics, and Chinese Medicine to Printing; and the Communist Party, the National People's Congress, and the Hukou System to Regional Autonomy). Refreshed the structural layer: inserted Pan Geng (after the Shang Dynasty) into the History index and INDEX, Printing into the Culture & Society index and INDEX, and Regional Autonomy into the Government & Politics index and INDEX; grew the README knowledge table from 54 to 57 rows; and extended `TIMELINE.md` from 244 to 251 dated milestones (Pan Geng's c. 1300 BCE move to Yin; the printing milestones of Bi Sheng's c. 1040 movable type, Wang Zhen's 1298 wooden type, and the 1408 *Yongle Encyclopedia*, with the existing 868 *Diamond Sutra* milestone repointed from Buddhism in China to the dedicated Printing article; and the autonomy milestones of the 1947 Inner Mongolia region, the 1965 Tibet Autonomous Region, and the 1984 Law on Regional National Autonomy). Regenerated seed sections 4–5 to match live state (57 topic files, 57 README rows, 251 milestones, no empty categories).
+
+### G1-T20 — 2026-09-04 — Tick 20: Statecraft, arms, and art — Legalism, the People's Liberation Army, and Li Bai
+
+Added three topics deepening Culture & Society, Government & Politics, and People and spanning the full arc from the philosophy that built the first empire to its armed heir and its poetic apogee: `culture-society/legalism.md` (the Warring States school of *fa* (law), *shu* (administrative technique), and *shi* (positional power) — Shang Yang's Qin reforms, Shen Buhai and Shen Dao, Han Fei's synthesis, Li Si's imperial administration and the book burning, and the Legalist substrate that outlasted the Han's Confucian turn), `government-politics/peoples-liberation-army.md` (the CPC's armed instrument from the 1927 Nanchang Uprising and the Long March through the Mao-era military state, Deng's post-1978 modernization, the 1989 Tiananmen crackdown, and Xi's Theater-Command reforms and civil-military fusion), and `people/li-bai.md` (the Tang poet, 701–762, whose *yuefu* and ancient-style verse, Daoist spontaneity, and moon-and-wine imagery made him, with Du Fu, one of the two summits of Chinese poetry), each with `title`/`preview`/`date`/`category` front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. Culture & Society now holds nine topics, Government & Politics ten, and People twelve; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and corrected several factual errors: in Legalism, fixed Shang Yang's alternate names (Gongsun Yang / Wei Yang, Lord of Shang, not "Shang Wen"), replaced a fabricated term ("Xingbai 性敗") with Xunzi's *xing'e* (性惡) framing, corrected the pinyin of *shǎngfá* 賞罰 (from "Jiang Fa") and tied it to Han Fei's "two handles," and rendered the early precursor as the historical Guan Zhong (d. 645 BCE); in the PLA article, corrected Xu Caihou and Guo Boxiong from "major generals" to full generals and updated the space/cyber component to reflect the April 2024 dissolution of the Strategic Support Force into the Aerospace, Cyberspace, and Information Support Forces; and in Li Bai, corrected his ancestry from "Liaoning" to the Longxi Li clan of Gansu (with the family's Central Asian sojourn at Suyab), removed a false claim that Du Fu was "born the same year Li Bai reached court," merged a duplicated "Quiet Night" poem entry, and fixed a "Buddhisim" typo. Fixed cross-references: pruned two links to non-existent articles from Li Bai's Related block (Du Fu and the An Lushan Rebellion). Verified every cross-reference resolves (0 broken links repo-wide). Refreshed the structural layer: appended Legalism to the Culture & Society index and INDEX, the People's Liberation Army to the Government & Politics index and INDEX, and Li Bai to the People index and INDEX; extended `TIMELINE.md` from 251 to 264 dated milestones (Legalism's c. 338 BCE death of Shang Yang, 233 BCE death of Han Fei, and 208 BCE execution of Li Si; Li Bai's 701 birth, 742 court summons, 744 meeting with Du Fu, and 762 death; and the PLA's 1927 Nanchang Uprising, 1949 naming, 1950 Korean War entry, 1979 Sino-Vietnamese War, 2015 Theater-Command reforms, and 2024 Strategic Support Force reorganization); and wove ten reciprocal cross-references from existing articles (Confucianism, the Qin Dynasty, the Warring States Period, and Qin Shi Huang to Legalism; the Communist Party, the Chinese Civil War, Mao Zedong, and Xi Jinping to the People's Liberation Army; and the Tang Dynasty and Taoism to Li Bai). The README knowledge table already carried the three new rows (60 total). Regenerated seed sections 4–5 to match live state (60 topic files, 60 README rows, 264 milestones, no empty categories).
