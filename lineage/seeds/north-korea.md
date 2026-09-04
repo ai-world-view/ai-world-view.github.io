@@ -87,8 +87,8 @@ present under `.github/`:
 ## Section 4 — Content Inventory
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
-People. The README knowledge table ("Notable Facts about the country north korea") holds **18 rows**.
-Dedicated topic files (18):
+People. The README knowledge table ("Notable Facts about the country north korea") holds **21 rows**.
+Dedicated topic files (21):
 
 - `geography/pyongyang.md` — Pyongyang, the capital and largest city.
 - `geography/mount-paektu.md` — Mount Paektu, the sacred border volcano and its Kim-dynasty mythology.
@@ -96,10 +96,13 @@ Dedicated topic files (18):
 - `geography/kaesong.md` — Kaesong, the medieval Goryeo capital and DMZ border city, host to the Kaesong Industrial Complex.
 - `history/korean-war.md` — the 1950–1953 Korean War.
 - `history/nuclear-weapons-program.md` — the DPRK nuclear program from its 1980s origins to a deliverable thermonuclear deterrent.
+- `history/japanese-colonial-period.md` — Korea under Japanese colonial rule (1910–1945), the nationalist resistance, and its legacy for the DPRK.
 - `government-politics/government-structure.md` — the DPRK's political system and institutions.
 - `government-politics/workers-party-of-korea.md` — the sole ruling party (WPK) and institutional backbone of the state.
 - `government-politics/korean-peoples-army.md` — the Korean People's Army (KPA): armed force, economic conglomerate, and regime skeleton.
+- `government-politics/state-security-department.md` — the Bowibu (Ministry of State Security), the regime's secret-police and internal-surveillance apparatus.
 - `economy/economic-system-and-famine.md` — the planned economy and the 1994–1998 famine.
+- `economy/foreign-trade-and-sanctions.md` — the DPRK's foreign trade, dependence on China and Russia, and the UN/US sanctions regime.
 - `culture-society/state-ideology-and-propaganda.md` — juche, the personality cult, and the propaganda state.
 - `culture-society/education-system.md` — the state-monopolized, militarized education system as an instrument of indoctrination.
 - `culture-society/kwanliso.md` — the kwanliso political prison-camp system and its doctrine of three-generation collective guilt.
@@ -110,7 +113,7 @@ Dedicated topic files (18):
 - `people/ko-yong-hui.md` — Ko Yong-hui (1952–2004), mother of Kim Jong-un and Kim Yo-jong and Kim Jong-il's longtime partner.
 
 Populated categories: all six — Geography, History, Government & Politics, Economy, Culture & Society,
-and People. This tick deepened the Culture & Society, Geography, and People categories.
+and People. This tick deepened the Economy, Government & Politics, and History categories.
 
 ## Section 5 — Structure Inventory
 
@@ -119,13 +122,14 @@ Generated structural artifacts now present:
 - **Category index pages** — `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md`
   (one per category; all six are now populated).
-- **Timeline** — `TIMELINE.md` (topics with a historical date in chronological order: Kim Il-sung,
-  Kim Jong-il, Korean War, Ko Yong-hui, Kim Jong-un, Kim Yo-jong).
+- **Timeline** — `TIMELINE.md` (topics with a historical date in chronological order: Japanese
+  Colonial Period, Kim Il-sung, Kim Jong-il, Korean War, Ko Yong-hui, Kim Jong-un, Kim Yo-jong).
 - **Master index** — `INDEX.md` (all topics grouped by taxonomy, with pointers to category indices
   and the timeline).
-- **Cross-references** — a generated `## Related` block in each of the 18 dedicated topic files.
+- **Cross-references** — a generated `## Related` block in each of the 21 dedicated topic files.
 - **Preview art** — atlas-style SVG cards under `assets/images/previews/` for each category and
-  featured topic (including `kwanliso.svg`, `kaesong.svg`, and `ko-yong-hui.svg`).
+  featured topic (including `foreign-trade-and-sanctions.svg`, `state-security-department.svg`,
+  and `japanese-colonial-period.svg`).
 
 ## Section 6 — Growth Loop
 
@@ -213,3 +217,14 @@ Sixth growth tick. Added three topics that deepened the Culture & Society, Geogr
 - Enhance pass: fixed kwanliso's camp count ("four" → "five" for the five camps listed) and the Kang Cheol-hwan chronology (deported to Yodok in 1977, not "by 1987"; camps then "nearly two decades" old); corrected the Yodok hangul (요덕) and the French edition of *Aquariums of Pyongyang* (2000, not 1995); dropped an unverifiable "Seodok" label for Camp 25; and fixed "corraborates". Corrected Kaesong's province (North Hwanghae, not Hwanghae/Kangwon), removed the false claim that the KIC "resumed" in 2018 (proposals were never realized), and fixed "foodprocessing"; aligned the README row (province and 2004–2016 dates). Set Ko Yong-hui's front-matter `date:` to her birth date `1952-06-26` (People convention, feeding the timeline), corrected "Kim Hye-kyong" → Kim Sol-song and standardized "Sung Hye-rim" → Song Hye-rim for cross-file consistency.
 - Ran build-structure — converted the three new topics' inline `**Related topics**` lines into generated `## Related` crossref blocks; extended the crossref blocks of thirteen older topic files to link the new pages bidirectionally; added README, INDEX, and category-index rows; added Ko Yong-hui (1952-06-26) to `TIMELINE.md`; authored atlas-style preview SVGs (`kwanliso.svg`, `kaesong.svg`, `ko-yong-hui.svg`) and added their `preview:` front matter; and moved the three items from ROADMAP Now → Done.
 - Ran sync-seed — regenerated §1–7 (Content 15→18 rows/files across all six populated categories; Structure inventory now lists 6 category indices, 6 dated timeline rows, and 18 cross-referenced files).
+
+### G1-T7 — 2026-09-04 — Tick 7: added foreign trade and sanctions, the State Security Department, and the Japanese colonial period
+
+Seventh growth tick. Added three topics that deepened the Economy, Government & Politics, and History categories — the DPRK's external trade and the sanctions regime that constrains it, the Bowibu secret police at the heart of the surveillance state, and the 1910–1945 Japanese colonial period that forged the regime's founding ideology and industrial base — then refreshed the structural layer.
+
+- Created `economy/foreign-trade-and-sanctions.md` — the DPRK's foreign trade and sanctions: Soviet-era dependence and the 1991 rupture, China's ~90% centrality and the post-2022 Russia realignment, the early sanctions (Agreed Framework, the 2005 Banco Delta Asia action), the 2006–2017 UN Security Council resolutions, Lazarus Group cyber-theft and conventional evasion (ship-to-ship transfers, shell firms, labor export, counterfeiting, narcotics), the 2018–2019 diplomatic opening and 2019 Hanoi collapse, the COVID border closure, and the impact on the economy and society.
+- Created `government-politics/state-security-department.md` — the Bowibu (Ministry of State Security): its NKVD-modeled origins and 1973 separation from ordinary policing, its bureau structure, the informant networks and life-review sessions, songbun administration and collective punishment, detention and torture, its target areas, cyber and modern expansion, its competitive relationship with the RGB and the WPK's OGD, and its role in the 2013 Jang Song-thaek purge.
+- Created `history/japanese-colonial-period.md` — Korea under Japanese rule (1910–1945): the road to annexation and Ito Hirobumi's assassination, the three administrative phases, the north's colonial heavy-industry base, cultural suppression and assimilation (language ban, Sōshi-kaimei, Shinto worship), nationalist resistance (the 1919 March 1st Movement, exile and communist movements, Kim Il-sung's Manchurian guerrilla struggle), wartime forced labor and the "comfort women" system, the Korean diasporas, and the 1945 liberation and 38th-parallel partition.
+- Enhance pass: corrected the Poch'onbo raid date (June 1937, not September 1937) and the "Dongnipgun" spelling in the colonial file; in the State Security file, removed an erroneous "Choe Ryong-hae" Bowibu-chief attribution, fixed the "Bureau 225" conflation to the KPA Military Security Command (in two places), scoped the ~2 million Joseonjok figure to China rather than Yanbian alone, softened the unverified claim that Kim Yo-jong "controls" the OGD, and clarified the muddled 1973 reorganization; and reordered the foreign-trade "Early Sanctions" section into correct chronological sequence (2002 → 2005 BDA → 2006 first test). Converted all inline `[[wikilinks]]` and manual "See also" lists in the three new files into proper relative markdown links and generated `## Related` crossref blocks. Verified every front-matter `date:` is a single ISO date (the two thematic topics on the tick date `2026-09-04`; the Japanese Colonial Period given its principal historical date `1910-08-22` so it anchors the timeline).
+- Ran build-structure — added README, INDEX, and category-index rows for the three topics; added the Japanese Colonial Period (1910-08-22) to `TIMELINE.md`; wrapped the new topics in generated `## Related` crossref blocks and extended the crossref blocks of seventeen older topic files to link the new pages bidirectionally; authored atlas-style preview SVGs (`foreign-trade-and-sanctions.svg`, `state-security-department.svg`, `japanese-colonial-period.svg`) and added their `preview:` front matter; and moved the three items from ROADMAP Now → Done.
+- Ran sync-seed — regenerated §1–7 (Content 18→21 rows/files across all six populated categories; Structure inventory now lists 6 category indices, 7 dated timeline rows, and 21 cross-referenced files).
