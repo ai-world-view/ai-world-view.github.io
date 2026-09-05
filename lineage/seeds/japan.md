@@ -111,15 +111,16 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `geography/kyushu.md` — Kyushu
   - `geography/major-islands.md` — Major Islands
   - `geography/mount-fuji.md` — Mount Fuji
+  - `geography/nagoya.md` — Nagoya
   - `geography/noto-peninsula.md` — Noto Peninsula
   - `geography/osaka.md` — Osaka
   - `geography/shikoku.md` — Shikoku
   - `geography/tokyo.md` — Tokyo
   - `history/azuchi-momoyama-period.md` — Azuchi-Momoyama Period
   - `history/edo-period.md` — Edo Period
+  - `history/fukushima-nuclear-disaster.md` — Fukushima Nuclear Disaster
   - `history/genpei-war.md` — Genpei War
   - `history/heian-period.md` — Heian Period
-  - `history/jomon-period.md` — Jomon Period
   - `history/kamakura-period.md` — Kamakura Period
   - `history/meiji-restoration.md` — Meiji Restoration
   - `history/nara-period.md` — Nara Period
@@ -142,17 +143,16 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `economy/lost-decade.md` — Lost Decade & Deflation
   - `economy/postwar-recovery-growth.md` — Postwar Recovery & Economic Growth
   - `economy/technology-manufacturing.md` — Technology & Manufacturing
-  - `culture-society/ainu-people-culture.md` — Ainu People & Culture
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
-  - `culture-society/japanese-language-writing.md` — Japanese Language & Writing System
   - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
   - `culture-society/noh-theater.md` — Noh Theater
   - `culture-society/ryoan-ji-temple.md` — Ryoan-ji Temple
   - `culture-society/samurai-bushido.md` — Samurai & Bushido
   - `culture-society/shinto-religion.md` — Shinto Religion
+  - `culture-society/sumo.md` — Sumo
   - `culture-society/tea-ceremony.md` — Tea Ceremony
   - `culture-society/ukiyo-e-woodblock-prints.md` — Ukiyo-e Woodblock Prints
   - `culture-society/women-in-japanese-society.md` — Women in Japanese Society
@@ -168,7 +168,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
   - `people/yoshida-shoin.md` — Yoshida Shoin
   - `people/yukio-mishima.md` — Yukio Mishima
-- **Categories with content**: Culture & Society (14), History (12), People (12), Geography (10), Economy (8), Government & Politics (7) — all six categories populated; Culture & Society leads with fourteen topics, followed by History and People with twelve each, Geography with ten, Economy with eight, and Government & Politics with seven.
+- **Categories with content**: Culture & Society (13), History (12), People (12), Geography (11), Economy (8), Government & Politics (7) — all six categories populated; Culture & Society leads with thirteen topics, followed by History and People with twelve each, Geography with eleven, Economy with eight, and Government & Politics with seven.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -177,7 +177,7 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Culture & Society lists fourteen topics; History and People twelve each; Geography ten; Economy eight; Government & Politics seven).
+  (Culture & Society lists thirteen topics; History and People twelve each; Geography eleven; Economy eight; Government & Politics seven).
 - **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
 - **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
 - **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
@@ -692,3 +692,12 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: verified factual accuracy from the model's own knowledge and made targeted corrections. Normalized two front-matter `date:` fields to valid single plain ISO `YYYY-MM-DD` dates — `history/jomon-period.md` from the un-parseable BCE value `-10000-01-01` to **`0001-01-01`** (the earliest representable ISO date, sorting the prehistoric period first), and `culture-society/japanese-language-writing.md` from the three-digit `800-01-01` to the zero-padded **`0800-01-01`** (matching the `geography/kyoto.md` `0794-11-08` convention); `ainu-people-culture.md` already carried a valid `1700-01-01`. In `jomon-period.md`, corrected the snow-goggle figurine type from "Shachihoko-type" (a mythical castle-ornament fish) to the **_shakōki-dogū_ (遮光器土偶)**. In `ainu-people-culture.md`, fixed a placeholder artifact ("Ainu embroidery (*embroidery* or *rayay*)") and several garbled or invented glosses — the fire, sea, and mountain *kamuy* (to **_Ape-huci-kamuy_, _Repun-kamuy_, _Kim-un-kamuy_**), salmon (**_kamuy-cep_**), the dugout canoe (**_cip_**), the shaman (**_tusukur_/_tusu_**), the oral genres (**_yukar_/_uwepeker_**), and the Matsumae **_basho_** trade system; removed the invented martial art "*tuntak*"; corrected the *Ainu Policy Promotion Act* passage from "June 2019" to the Diet's **April 2019** passage; and replaced an unverified "2024 recognition of Hokkaido as Ainu ancestral land" with the 2019 Act's recognition. In `japanese-language-writing.md`, corrected the loanword term from *gaigo* to **_gairaigo_ (外来語)**, replaced the misleading "Mononobe no Arakabi (early adoption)" key figure with **Wani (王仁)**, and swapped a dubious pro-kanji attribution to Natsume Sōseki for the historical kanji-abolition advocacy of **Maejima Hisoka**. Repointed a broken cross-reference in `jomon-period.md` (to a non-existent `yayoi-period.md`) to `../geography/hokkaido.md`; a repository-wide check confirmed every internal Markdown link resolves.
 - **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `culture-society/index.md` ×2) and to `INDEX.md`; merged the genuinely new dated facts into `TIMELINE.md` — a Jomon BCE block placed above the CE horizon (the c. 14,000–300 BCE period, the c. 5,000 BCE "Jomon Venus," c. 3,900–2,300 BCE Sannai-Maruyama, c. 2,000 BCE Ōyu Stone Circles, and the c. 300 BCE Yayoi transition); writing-system milestones (the traditional c. 285 CE arrival of Wani, the 471 CE Inariyama Sword inscription, the c. 900 CE maturation of hiragana, and the 1946 Tōyō / 1981 Jōyō / 2010 Jōyō-revision kanji reforms); and Ainu events (Shakushain's War, 1669–1672; Kayano Shigeru's 1994 election to the Diet; and the 1997 Cultural Promotion Act) — and re-homed the three existing Ainu-specific rows (the 1899 Protection Act, the 2019 recognition, and the 2020 Upopoy opening) from the Hokkaido article to the new dedicated Ainu article. Made cross-references bidirectional with back-links from `geography/hokkaido.md` (Ainu People & Culture and Jomon Period), `history/nara-period.md` and `history/heian-period.md` (Japanese Language & Writing System), and `history/meiji-restoration.md` (Ainu People & Culture).
 - **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — dropped the never-persisted phantoms `economy/keiretsu.md` and `culture-society/manga.md` from the inventory, added the two new Culture & Society files (`ainu-people-culture.md`, `japanese-language-writing.md`) beside the now-real `history/jomon-period.md`, and corrected the per-category counts to **Culture & Society fourteen, History twelve, People twelve, Geography ten, Economy eight, Government & Politics seven** (63 topic files / 63 README rows) in both §4 and §5. Left §1–3 and §6–7 unchanged.
+
+### G1-T57 — 2026-09-05 — Tick 57: added Sumo, Nagoya, and the Fukushima Nuclear Disaster
+
+- **Reconciliation**: as in the recurring pattern of prior ticks, the staged seed's §4/§5 described a 63-file tree built around the G1-T56 trio (`history/jomon-period.md`, `culture-society/ainu-people-culture.md`, `culture-society/japanese-language-writing.md`), but the working tree that reached this tick held those three only as phantom inventory — absent from the tree, README, and indices — while carrying a different, coherent 63-file set. This tick's content pass delivered `culture-society/sumo.md`, `geography/nagoya.md`, and `history/fukushima-nuclear-disaster.md`; the enhance pass rebuilt §4/§5 to mirror the true tree, dropping the three phantoms and recording the three real files.
+- **Content added** (3 dedicated topic files): `culture-society/sumo.md` (Japan's oldest institutionalized sport and Shinto ritual — the ancient court *sumai no sechie* and the *Nihon Shoki* origin legend, Nobunaga's Azuchi tournaments and the Edo *honbasho* system at Eko-in, the *banzuke* ranking and the permanent *yokozuna* rank, the Japan Sumo Association's 1925 incorporation, *dohyo* ceremony and Shinto ritual, the international era from Takamiyama and Akebono to Mongolian dominance, and modern controversies), `geography/nagoya.md` (Japan's fourth-largest city and Aichi capital — the Nobi Plain setting, the birthplaces of Nobunaga and Hideyoshi and Ieyasu's 1610 castle, Meiji textiles and ceramics, wartime Mitsubishi aircraft production and the 1945 firebombing, postwar reconstruction and the Toyota-anchored automotive and aerospace cluster, Atsuta Shrine and Nagoya Castle, and the Chukyo metropolitan economy), and `history/fukushima-nuclear-disaster.md` (the March 2011 Daiichi meltdown — the magnitude-9.0 earthquake and tsunami, the loss of cooling and the Unit 1/3/4 explosions, the INES-7 rating and ~154,000 evacuees, the NAIIC "man-made disaster" findings, disaster-related deaths and contamination, the treated-water release, Japan's nuclear-policy reversal and international ripple effects, TEPCO's nationalization and the 2022 Supreme Court ruling, and the decommissioning program). Culture & Society now holds thirteen topics, Geography eleven, and History twelve.
+- **README**: knowledge table stands at 63 rows, including the Sumo, Nagoya, and Fukushima Nuclear Disaster rows (the staged table already carried the three new rows atop the 60 committed rows); aligned the Nagoya row with the article's facts (fourth-largest city / third-largest metropolitan economy), correcting an earlier "fifth-largest metropolitan area."
+- **Enhance pass**: normalized two front-matter `date:` fields to valid single plain ISO dates — `culture-society/sumo.md` from the bare year `1500` to **`1757-01-01`** (the first Edo *honbasho* at Eko-in) and `geography/nagoya.md` from the bare year `1868` to **`1610-01-01`** (the founding of Nagoya Castle); `fukushima-nuclear-disaster.md` already carried a valid `2011-03-11`. Corrected factual errors: in `sumo.md`, Hakuhō's rank from the 64th to the **69th** *yokozuna*, the total *yokozuna* count from sixty-nine to **seventy-three** (as of 2024), and the garbled romanization *juhashi-nichi* to **_jūgo-nichi basho_** for the fifteen-day format; in `nagoya.md`, the Aichi Expo 2005 attendance from 26 million to **~22 million**; in `fukushima-nuclear-disaster.md`, the false-precision "41 of 50 backup diesel generators" to **all but one of the plant's thirteen** emergency diesel generators, and "the deadliest earthquake and tsunami in modern Japanese history" to **the most powerful earthquake ever recorded in Japan** (the 1923 Great Kantō quake was far deadlier). A repository-wide check confirmed every internal Markdown link resolves.
+- **Structure** (`build-structure`): added the three topics to their category indices (`culture-society/index.md`, `geography/index.md`, `history/index.md`) and to `INDEX.md`; merged the new dated facts into `TIMELINE.md` — sumo milestones (the 720 CE *Nihon Shoki* origin bout, Nobunaga's 1578 Azuchi tournament, the 1757 Eko-in *honbasho*, the 1925 Sumo Association, and Akebono's 1993 *yokozuna* promotion), Nagoya milestones (Nobunaga's 1534 birth, the 1610 castle, the 1907 port opening, the 1945-05-14 firebombing, and the 2005 Aichi Expo/Centrair opening), and Fukushima milestones (the 2011-03-11 meltdown onset and the 2011-03-12 Unit 1 explosion, the 2012-05 zero-nuclear-generation point, and the 2023-08-24 treated-water release); added `## Related` crossref blocks to the three new files and made them bidirectional with back-links from `culture-society/martial-arts-budo.md` (Sumo), `people/tokugawa-ieyasu.md` (Nagoya), and `geography/major-islands.md` (Fukushima Nuclear Disaster).
+- **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — dropped the never-persisted phantoms `history/jomon-period.md`, `culture-society/ainu-people-culture.md`, and `culture-society/japanese-language-writing.md` from the inventory, added the three real new files (`culture-society/sumo.md`, `geography/nagoya.md`, `history/fukushima-nuclear-disaster.md`), and corrected the per-category counts to **Culture & Society thirteen, History twelve, People twelve, Geography eleven, Economy eight, Government & Politics seven** (63 topic files / 63 README rows) in both §4 and §5. Left §1–3 and §6–7 unchanged.
