@@ -71,14 +71,16 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 60 rows.
-- **Dedicated topic files**: 60.
+- **README knowledge table**: 63 rows.
+- **Dedicated topic files**: 63.
   - `culture-society/buddhism-in-china.md` — Buddhism in China
+  - `culture-society/calligraphy.md` — Calligraphy
   - `culture-society/chinese-medicine.md` — Chinese Medicine
   - `culture-society/confucianism.md` — Confucianism
   - `culture-society/filial-piety.md` — Filial Piety (Xiao)
   - `culture-society/i-ching.md` — The I Ching (Book of Changes)
   - `culture-society/legalism.md` — Legalism
+  - `culture-society/mohism.md` — Mohism
   - `culture-society/porcelain-and-ceramics.md` — Porcelain and Ceramics
   - `culture-society/printing-and-woodblock.md` — Printing and Woodblock Printing
   - `culture-society/taoism.md` — Taoism
@@ -123,6 +125,7 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `history/warring-states-period.md` — The Warring States Period
   - `people/confucius.md` — Confucius
   - `people/deng-xiaoping.md` — Deng Xiaoping
+  - `people/du-fu.md` — Du Fu
   - `people/hu-jintao.md` — Hu Jintao
   - `people/jiang-zemin.md` — Jiang Zemin
   - `people/kangxi.md` — Kangxi
@@ -133,8 +136,8 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `people/xi-jinping.md` — Xi Jinping
   - `people/zheng-he.md` — Zheng He
   - `people/zhou-enlai.md` — Zhou Enlai
-- **Categories with content**: Culture & Society (9), Economy (5), Geography (6),
-  Government & Politics (10), History (18), People (12).
+- **Categories with content**: Culture & Society (11), Economy (5), Geography (6),
+  Government & Politics (10), History (18), People (13).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -144,9 +147,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 264 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 280 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 60 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 63 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -528,3 +531,7 @@ Added three topics deepening History, Culture & Society, and Government & Politi
 ### G1-T20 — 2026-09-04 — Tick 20: Statecraft, arms, and art — Legalism, the People's Liberation Army, and Li Bai
 
 Added three topics deepening Culture & Society, Government & Politics, and People and spanning the full arc from the philosophy that built the first empire to its armed heir and its poetic apogee: `culture-society/legalism.md` (the Warring States school of *fa* (law), *shu* (administrative technique), and *shi* (positional power) — Shang Yang's Qin reforms, Shen Buhai and Shen Dao, Han Fei's synthesis, Li Si's imperial administration and the book burning, and the Legalist substrate that outlasted the Han's Confucian turn), `government-politics/peoples-liberation-army.md` (the CPC's armed instrument from the 1927 Nanchang Uprising and the Long March through the Mao-era military state, Deng's post-1978 modernization, the 1989 Tiananmen crackdown, and Xi's Theater-Command reforms and civil-military fusion), and `people/li-bai.md` (the Tang poet, 701–762, whose *yuefu* and ancient-style verse, Daoist spontaneity, and moon-and-wine imagery made him, with Du Fu, one of the two summits of Chinese poetry), each with `title`/`preview`/`date`/`category` front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. Culture & Society now holds nine topics, Government & Politics ten, and People twelve; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and corrected several factual errors: in Legalism, fixed Shang Yang's alternate names (Gongsun Yang / Wei Yang, Lord of Shang, not "Shang Wen"), replaced a fabricated term ("Xingbai 性敗") with Xunzi's *xing'e* (性惡) framing, corrected the pinyin of *shǎngfá* 賞罰 (from "Jiang Fa") and tied it to Han Fei's "two handles," and rendered the early precursor as the historical Guan Zhong (d. 645 BCE); in the PLA article, corrected Xu Caihou and Guo Boxiong from "major generals" to full generals and updated the space/cyber component to reflect the April 2024 dissolution of the Strategic Support Force into the Aerospace, Cyberspace, and Information Support Forces; and in Li Bai, corrected his ancestry from "Liaoning" to the Longxi Li clan of Gansu (with the family's Central Asian sojourn at Suyab), removed a false claim that Du Fu was "born the same year Li Bai reached court," merged a duplicated "Quiet Night" poem entry, and fixed a "Buddhisim" typo. Fixed cross-references: pruned two links to non-existent articles from Li Bai's Related block (Du Fu and the An Lushan Rebellion). Verified every cross-reference resolves (0 broken links repo-wide). Refreshed the structural layer: appended Legalism to the Culture & Society index and INDEX, the People's Liberation Army to the Government & Politics index and INDEX, and Li Bai to the People index and INDEX; extended `TIMELINE.md` from 251 to 264 dated milestones (Legalism's c. 338 BCE death of Shang Yang, 233 BCE death of Han Fei, and 208 BCE execution of Li Si; Li Bai's 701 birth, 742 court summons, 744 meeting with Du Fu, and 762 death; and the PLA's 1927 Nanchang Uprising, 1949 naming, 1950 Korean War entry, 1979 Sino-Vietnamese War, 2015 Theater-Command reforms, and 2024 Strategic Support Force reorganization); and wove ten reciprocal cross-references from existing articles (Confucianism, the Qin Dynasty, the Warring States Period, and Qin Shi Huang to Legalism; the Communist Party, the Chinese Civil War, Mao Zedong, and Xi Jinping to the People's Liberation Army; and the Tang Dynasty and Taoism to Li Bai). The README knowledge table already carried the three new rows (60 total). Regenerated seed sections 4–5 to match live state (60 topic files, 60 README rows, 264 milestones, no empty categories).
+
+### G1-T21 — 2026-09-05 — Tick 21: Brush, argument, and verse — Calligraphy, Mohism, and Du Fu
+
+Added three topics deepening Culture & Society and People and spanning the full arc from an ancient philosophical rival of Confucianism to the supreme arts of the brush and the poem: `culture-society/calligraphy.md` (the three-millennia art of Chinese brushwork — the evolution of scripts from oracle-bone and seal to clerical, regular, running, and cursive, Wang Xizhi's *Lanting Xu*, the Tang monumental masters and wild-cursive Zhang Xu and Huaisu, the Song turn toward personality under the Four Great Masters, the four treasures of the study, and the aesthetics of *qi* and *shishi*), `culture-society/mohism.md` (Mozi's Warring States school and Confucianism's chief early rival — the Ten Theses centered on *jian'ai*, the anti-war Gongshu Pan confrontation, the proto-scientific *Mohist Canons* in logic, optics, and mechanics, the disciplined *juzi* organization, and the decline under the Han's Confucian turn and modern rediscovery), and `people/du-fu.md` (the Tang "Sage of Poetry," 712–770, whose friendship with Li Bai, witness to the An Lushan Rebellion in *Chunwang* and the "Three Officials/Three Separations," Chengdu Thatched Cottage years, and perfection of regulated verse made him, with Li Bai, one of the two summits of Chinese poetry), each with `title`/`preview`/`date`/`category` front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. Culture & Society now holds eleven topics and People thirteen; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and corrected several factual errors: in Calligraphy, fixed the pinyin of Ouyang Xun's *Thirty-Six Methods* (*sanshiliu fa*, not "sanshu liufa"), relabeled the clerical-script feature as *cantou yanwei* (蠶頭雁尾) rather than a bare "*can*," and corrected the eighth of the Eight Principles of *Yong* (磔 as the right-falling press, not a "point"); in Mohism, corrected Gongshu Pan's name (公輸盤, also known as Lu Ban 魯班) and the Yangcheng character (陽城, not 楊城), and replaced a misattributed "child falling into a well" gloss with Mencius's actual charge that love without gradations (*ai wu cha deng*) amounted to "being without a father" (*wu fu*, 無父); and in Du Fu, corrected the "Three Officials" to *san li* (三吏, e.g. *Xin'an Li*, not "Guan") and dropped a spurious "Six Laments" grouping, fixed the pinyin of the Reminder post (*zuo shiyi*, 左拾遺), retitled the 767 masterpiece *Deng Gao* ("Climbing the Heights," not "Deng Gaolou"), dated the *Yong Huai* couplet to 755, and rendered Qian Zhongshu's *Guanzhui bian* as *Limited Views* (not "Pipe Estimates of Talent"). Fixed cross-references: repointed a mislabeled "Mencius"→`confucius.md` link in Mohism to a Confucius label and a mislabeled "Poetry and Literati Traditions" link in Du Fu to Printing and Woodblock Printing. Verified every cross-reference resolves (0 broken links repo-wide). Refreshed the structural layer: appended Calligraphy and Mohism to the Culture & Society index and INDEX and Du Fu to the People index and INDEX; grew the README knowledge table from 60 to 63 rows; extended `TIMELINE.md` from 264 to 280 dated milestones (Mozi's c. 470 BCE birth, the c. 440 BCE Gongshu Pan debate, and his c. 391 BCE death, with Sun Yirang's 1894 *Mozi Xiangu* edition and A.C. Graham's 1978 reconstruction; the calligraphy milestones of the 219 BCE Mount Tai seal-script stele, Wang Xizhi's 353 CE *Lanting Xu*, Ouyang Xun's 632 CE *Jiucheng Gong* stele, Huaisu's c. 777 CE *Autobiography*, and Yan Zhenqing's 785 CE execution; and Du Fu's 712 birth, the 756 *Chunwang*, the 759 "Three Officials," the 760 Thatched Cottage, the 766 *Qiu Xing*, and his 770 death); and wove eight reciprocal cross-references from existing articles (Li Bai and the Tang Dynasty to Du Fu; the Tang, Song, and Imperial Examination System to Calligraphy; and Confucianism, Confucius, the Warring States Period, and Legalism to Mohism). Regenerated seed sections 4–5 to match live state (63 topic files, 63 README rows, 280 milestones, no empty categories).
