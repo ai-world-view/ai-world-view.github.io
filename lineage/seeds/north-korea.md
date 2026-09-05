@@ -87,8 +87,8 @@ present under `.github/`:
 ## Section 4 — Content Inventory
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
-People. The README knowledge table ("Notable Facts about the country north korea") holds **21 rows**.
-Dedicated topic files (21):
+People. The README knowledge table ("Notable Facts about the country north korea") holds **24 rows**.
+Dedicated topic files (24):
 
 - `geography/pyongyang.md` — Pyongyang, the capital and largest city.
 - `geography/mount-paektu.md` — Mount Paektu, the sacred border volcano and its Kim-dynasty mythology.
@@ -103,9 +103,12 @@ Dedicated topic files (21):
 - `government-politics/state-security-department.md` — the Bowibu (Ministry of State Security), the regime's secret-police and internal-surveillance apparatus.
 - `economy/economic-system-and-famine.md` — the planned economy and the 1994–1998 famine.
 - `economy/foreign-trade-and-sanctions.md` — the DPRK's foreign trade, dependence on China and Russia, and the UN/US sanctions regime.
+- `economy/energy-crisis-and-electricity.md` — the post-1991 energy collapse that triggered the famine and the chronic electricity shortage that persists today.
+- `economy/mining-and-resources.md` — the DPRK's mineral reserves and the coal, iron, rare-earth, and uranium extraction that funds the sanctioned state.
 - `culture-society/state-ideology-and-propaganda.md` — juche, the personality cult, and the propaganda state.
 - `culture-society/education-system.md` — the state-monopolized, militarized education system as an instrument of indoctrination.
 - `culture-society/kwanliso.md` — the kwanliso political prison-camp system and its doctrine of three-generation collective guilt.
+- `culture-society/religion-and-atheism.md` — the DPRK's official atheism and the systematic suppression of religion, above all Christianity.
 - `people/kim-il-sung.md` — founding leader Kim Il-sung (1912–1994).
 - `people/kim-jong-il.md` — second leader Kim Jong-il (1942–2011).
 - `people/kim-jong-un.md` — third leader Kim Jong-un (2011–present).
@@ -113,7 +116,7 @@ Dedicated topic files (21):
 - `people/ko-yong-hui.md` — Ko Yong-hui (1952–2004), mother of Kim Jong-un and Kim Yo-jong and Kim Jong-il's longtime partner.
 
 Populated categories: all six — Geography, History, Government & Politics, Economy, Culture & Society,
-and People. This tick deepened the Economy, Government & Politics, and History categories.
+and People. This tick deepened the Economy (two topics) and Culture & Society categories.
 
 ## Section 5 — Structure Inventory
 
@@ -126,10 +129,10 @@ Generated structural artifacts now present:
   Colonial Period, Kim Il-sung, Kim Jong-il, Korean War, Ko Yong-hui, Kim Jong-un, Kim Yo-jong).
 - **Master index** — `INDEX.md` (all topics grouped by taxonomy, with pointers to category indices
   and the timeline).
-- **Cross-references** — a generated `## Related` block in each of the 21 dedicated topic files.
+- **Cross-references** — a generated `## Related` block in each of the 24 dedicated topic files.
 - **Preview art** — atlas-style SVG cards under `assets/images/previews/` for each category and
-  featured topic (including `foreign-trade-and-sanctions.svg`, `state-security-department.svg`,
-  and `japanese-colonial-period.svg`).
+  featured topic (including `energy-crisis-and-electricity.svg`, `mining-and-resources.svg`,
+  and `religion-and-atheism.svg`).
 
 ## Section 6 — Growth Loop
 
@@ -228,3 +231,14 @@ Seventh growth tick. Added three topics that deepened the Economy, Government & 
 - Enhance pass: corrected the Poch'onbo raid date (June 1937, not September 1937) and the "Dongnipgun" spelling in the colonial file; in the State Security file, removed an erroneous "Choe Ryong-hae" Bowibu-chief attribution, fixed the "Bureau 225" conflation to the KPA Military Security Command (in two places), scoped the ~2 million Joseonjok figure to China rather than Yanbian alone, softened the unverified claim that Kim Yo-jong "controls" the OGD, and clarified the muddled 1973 reorganization; and reordered the foreign-trade "Early Sanctions" section into correct chronological sequence (2002 → 2005 BDA → 2006 first test). Converted all inline `[[wikilinks]]` and manual "See also" lists in the three new files into proper relative markdown links and generated `## Related` crossref blocks. Verified every front-matter `date:` is a single ISO date (the two thematic topics on the tick date `2026-09-04`; the Japanese Colonial Period given its principal historical date `1910-08-22` so it anchors the timeline).
 - Ran build-structure — added README, INDEX, and category-index rows for the three topics; added the Japanese Colonial Period (1910-08-22) to `TIMELINE.md`; wrapped the new topics in generated `## Related` crossref blocks and extended the crossref blocks of seventeen older topic files to link the new pages bidirectionally; authored atlas-style preview SVGs (`foreign-trade-and-sanctions.svg`, `state-security-department.svg`, `japanese-colonial-period.svg`) and added their `preview:` front matter; and moved the three items from ROADMAP Now → Done.
 - Ran sync-seed — regenerated §1–7 (Content 18→21 rows/files across all six populated categories; Structure inventory now lists 6 category indices, 7 dated timeline rows, and 21 cross-referenced files).
+
+### G1-T8 — 2026-09-05 — Tick 8: added religion and atheism, the energy crisis, and mining and resources
+
+Eighth growth tick. Added three topics that deepened the Culture & Society and Economy categories — the regime's official atheism and its suppression of religion (above all Christianity, once rooted in the north), the post-Soviet energy collapse that plunged the country into chronic darkness, and the mineral-extraction sector that is the sanctioned state's hard-currency lifeline — then refreshed the structural layer.
+
+- Created `culture-society/religion-and-atheism.md` — the DPRK's official atheist doctrine (inherited from Soviet Marxism-Leninism) and its systematic suppression of religion: pre-1945 Christianity in the north (the "Jerusalem of the East," the 1907 Pyongyang Revival, Christian nationalism), the founding-era destruction of the organized church, the constitutional-guarantee-versus-suppression contradiction, the state-controlled showcase institutions (Bongsu Church, Changchung Cathedral), juche and the personality cult as a quasi-religious substitute, the classification and punishment of believers (kwanliso internment under yonzwa collective guilt), and the 2014 UN Commission of Inquiry finding of crimes against humanity.
+- Created `economy/energy-crisis-and-electricity.md` — the DPRK's energy crisis: the 1945–1990 Soviet energy dependency and hydropower/coal base, the 1991 rupture and cascade collapse into industrial paralysis and the famine, the hydropower-and-coal attempted response, the 1994 Agreed Framework and the failed KEDO light-water reactor project, present-day power deprivation (the dark-peninsula satellite image, the priority-allocation hierarchy), and the post-2017 sanctions and COVID-closure constraints.
+- Created `economy/mining-and-resources.md` — the DPRK's mining sector: the estimated $6–10 trillion mineral endowment (coal, iron, magnesite, molybdenum, rare earths, uranium), coal as the dominant sector and its peak export dependency on China through 2017, iron/copper/metals, the Jongju rare-earth potential, uranium mining tied to the nuclear program, the brutal labor conditions (KPA units, kwanliso prisoners, drafted civilians), and the sanctions-evasion networks documented by the UN Panel of Experts.
+- Enhance pass: corrected the Byungjin Line date in the mining file to March 2013 (matching the nuclear/WPK/Kim Jong-un files, was "April 2012"); fixed the religion file's *Aquariums of Pyongyang* French edition to 2000 (not 1995) and standardized "Kang Chol-hwan" → Kang Cheol-hwan for cross-file consistency, and softened an overstated "2,000 churches" figure to a regional characterization; in the energy file, corrected the KEDO reactor endgame (Executive Board terminated the project in 2006; structures abandoned, not "demolished in 2008"). Verified every front-matter `date:` is a single ISO date (the three thematic topics on the tick date `2026-09-05`).
+- Ran build-structure — added README, INDEX, and category-index rows for the three topics; authored atlas-style preview SVGs (`religion-and-atheism.svg`, `energy-crisis-and-electricity.svg`, `mining-and-resources.svg`) and added their `preview:` front matter; wrapped the new topics in generated `## Related` crossref blocks and extended the crossref blocks of twelve older topic files to link the new pages bidirectionally; and moved the three items from ROADMAP Now → Done. TIMELINE unchanged (the three thematic topics carry no principal historical date).
+- Ran sync-seed — regenerated §1–7 (Content 21→24 rows/files across all six populated categories; Structure inventory now lists 6 category indices, 7 dated timeline rows, and 24 cross-referenced files).
