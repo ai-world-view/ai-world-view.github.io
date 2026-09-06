@@ -87,16 +87,18 @@ present under `.github/`:
 ## Section 4 — Content Inventory
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
-People. The README knowledge table ("Notable Facts about the country north korea") holds **24 rows**.
-Dedicated topic files (24):
+People. The README knowledge table ("Notable Facts about the country north korea") holds **27 rows**.
+Dedicated topic files (27):
 
 - `geography/pyongyang.md` — Pyongyang, the capital and largest city.
 - `geography/mount-paektu.md` — Mount Paektu, the sacred border volcano and its Kim-dynasty mythology.
 - `geography/hamhung.md` — Hamhung, the second-largest city and chemical-industrial center on the east coast.
 - `geography/kaesong.md` — Kaesong, the medieval Goryeo capital and DMZ border city, host to the Kaesong Industrial Complex.
+- `geography/wonsan.md` — Wonsan, the principal east-coast port in Kangwon Province: treaty port, Korean War siege site, naval base, and special economic zone.
 - `history/korean-war.md` — the 1950–1953 Korean War.
 - `history/nuclear-weapons-program.md` — the DPRK nuclear program from its 1980s origins to a deliverable thermonuclear deterrent.
 - `history/japanese-colonial-period.md` — Korea under Japanese colonial rule (1910–1945), the nationalist resistance, and its legacy for the DPRK.
+- `history/inter-korean-relations.md` — North–South relations since the 1953 armistice, from Cold War provocations through the Sunshine Policy and 2018 summits to the post-2023 two-state repudiation of reunification.
 - `government-politics/government-structure.md` — the DPRK's political system and institutions.
 - `government-politics/workers-party-of-korea.md` — the sole ruling party (WPK) and institutional backbone of the state.
 - `government-politics/korean-peoples-army.md` — the Korean People's Army (KPA): armed force, economic conglomerate, and regime skeleton.
@@ -114,9 +116,10 @@ Dedicated topic files (24):
 - `people/kim-jong-un.md` — third leader Kim Jong-un (2011–present).
 - `people/kim-yo-jong.md` — Kim Yo-jong (b. 1987), sister and key advisor to Kim Jong-un.
 - `people/ko-yong-hui.md` — Ko Yong-hui (1952–2004), mother of Kim Jong-un and Kim Yo-jong and Kim Jong-il's longtime partner.
+- `people/jang-song-thaek.md` — Jang Song-thaek (1946–2013), Kim Jong-un's uncle-in-law and chief economic administrator, executed in the 2013 consolidation purge.
 
 Populated categories: all six — Geography, History, Government & Politics, Economy, Culture & Society,
-and People. This tick deepened the Economy (two topics) and Culture & Society categories.
+and People. This tick deepened the History, People, and Geography categories.
 
 ## Section 5 — Structure Inventory
 
@@ -126,13 +129,13 @@ Generated structural artifacts now present:
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md`
   (one per category; all six are now populated).
 - **Timeline** — `TIMELINE.md` (topics with a historical date in chronological order: Japanese
-  Colonial Period, Kim Il-sung, Kim Jong-il, Korean War, Ko Yong-hui, Kim Jong-un, Kim Yo-jong).
+  Colonial Period, Kim Il-sung, Kim Jong-il, Jang Song-thaek, Korean War, Ko Yong-hui, Kim Jong-un,
+  Kim Yo-jong).
 - **Master index** — `INDEX.md` (all topics grouped by taxonomy, with pointers to category indices
   and the timeline).
-- **Cross-references** — a generated `## Related` block in each of the 24 dedicated topic files.
+- **Cross-references** — a generated `## Related` block in each of the 27 dedicated topic files.
 - **Preview art** — atlas-style SVG cards under `assets/images/previews/` for each category and
-  featured topic (including `energy-crisis-and-electricity.svg`, `mining-and-resources.svg`,
-  and `religion-and-atheism.svg`).
+  featured topic (including `inter-korean-relations.svg`, `jang-song-thaek.svg`, and `wonsan.svg`).
 
 ## Section 6 — Growth Loop
 
@@ -242,3 +245,14 @@ Eighth growth tick. Added three topics that deepened the Culture & Society and E
 - Enhance pass: corrected the Byungjin Line date in the mining file to March 2013 (matching the nuclear/WPK/Kim Jong-un files, was "April 2012"); fixed the religion file's *Aquariums of Pyongyang* French edition to 2000 (not 1995) and standardized "Kang Chol-hwan" → Kang Cheol-hwan for cross-file consistency, and softened an overstated "2,000 churches" figure to a regional characterization; in the energy file, corrected the KEDO reactor endgame (Executive Board terminated the project in 2006; structures abandoned, not "demolished in 2008"). Verified every front-matter `date:` is a single ISO date (the three thematic topics on the tick date `2026-09-05`).
 - Ran build-structure — added README, INDEX, and category-index rows for the three topics; authored atlas-style preview SVGs (`religion-and-atheism.svg`, `energy-crisis-and-electricity.svg`, `mining-and-resources.svg`) and added their `preview:` front matter; wrapped the new topics in generated `## Related` crossref blocks and extended the crossref blocks of twelve older topic files to link the new pages bidirectionally; and moved the three items from ROADMAP Now → Done. TIMELINE unchanged (the three thematic topics carry no principal historical date).
 - Ran sync-seed — regenerated §1–7 (Content 21→24 rows/files across all six populated categories; Structure inventory now lists 6 category indices, 7 dated timeline rows, and 24 cross-referenced files).
+
+### G1-T9 — 2026-09-06 — Tick 9: added inter-Korean relations, Jang Song-thaek, and Wonsan
+
+Ninth growth tick. Added three topics that deepened the History, People, and Geography categories — the full arc of North–South relations since the armistice, the uncle-in-law whose 2013 execution defined Kim Jong-un's power consolidation, and the principal east-coast port that expands geographic coverage beyond the capital and the northern cities — then refreshed the structural layer.
+
+- Created `history/inter-korean-relations.md` — inter-Korean relations since the 1953 armistice: the DMZ and absence of a peace treaty, Cold War provocations (the 1968 Blue House raid and USS *Pueblo* seizure, the 1976 Axe Murder Incident, the 1983 Rangoon bombing, KAL 858), the 1972 July 4 Joint Communiqué and Three Principles, the Sunshine Policy (family reunions, the Kaesong Industrial Complex, Diamond Mountain tourism, the 2000 and 2007 summits), the 2008–2017 confrontation (Cheonan, Yeonpyeong, nuclear tests), the 2018–2019 opening (three summits, the Panmunjom and Pyongyang declarations, the Singapore and Hanoi US summits), and the post-2020 hardline turn culminating in the 2023–2024 constitutional repudiation of reunification.
+- Created `people/jang-song-thaek.md` — Jang Song-thaek (1946–2013), husband of Kim Kyong-hui and Kim Jong-un's uncle-in-law: his marriage into the dynasty, rise through the OGD and Administrative Department, role as the regime's chief economic administrator and China interlocutor, apparent "regent" standing in the early succession, and his public December 2013 arrest, indictment, and execution — with the significance of the purge for DPRK elite politics.
+- Created `geography/wonsan.md` — Wonsan, the principal east-coast port in Kangwon Province: its ice-free harbor on Yonghung Bay, its 1880 treaty-port origins and the 1929 Wonsan General Strike, the 1950 amphibious landing and 861-day Korean War siege, the post-1991 collapse and jangmadang emergence, the repeated (largely unrealized) special-economic-zone and Kalma resort initiatives, its naval and missile-test facilities, and its role in sanctions evasion.
+- Enhance pass: corrected Jang Song-thaek's birth date to 6 February 1946 (front matter and body, replacing an unsupported "November 10"), his National Defence Commission role to vice chairman (from 2010), and the Byungjin Line adoption to March 2013 (matching the nuclear/WPK/mining files); repaired two in-body Nuclear Weapons Program links that lacked the `../history/` prefix and unlinked a misleading Kim Kyong-hui link; and reframed the "1972 Classification of the Three Families" claim as the documented yonzwa collective-guilt doctrine. In Wonsan, fixed the direction to Pyongyang (east, not northeast), the treaty-port ordering (second after Busan 1876, not "first"), the telegraph-line year (1891), the railway description (Gyeongwon Line to Seoul plus the Hamgyong Line north), the 1929 strike details (Rising Sun Petroleum Company; roughly three months), the Korean War chronology (the mining and minesweeping preceded, and delayed, the 26 October landing; USS *Pirate*/*Pledge* sunk 12 October), the missile/SLBM specifics (2016 Musudan launches; the October 2019 Pukguksong-3 test off Wonsan), and a wrong "Kangwon Province" label for Hamhung in the crossref. In Inter-Korean Relations, corrected the Sunshine Policy hangul (햇볕정책) and its Aesop's-fable etymology, the USS *Pueblo* crew figure (one killed, 82 held), the family-reunion dates and count (~20,000 individuals, 2000–2018), and softened an unverifiable reunification-poll statistic. Verified every front-matter `date:` is a single ISO date (the two thematic topics on the tick date `2026-09-06`; Jang Song-thaek on his birth date `1946-02-06`, feeding the timeline).
+- Ran build-structure — added README, INDEX, and category-index rows for the three topics; added Jang Song-thaek (1946-02-06) to `TIMELINE.md`; wrapped the three new topics in generated `## Related` crossref blocks and extended the crossref blocks of fifteen older topic files to link the new pages bidirectionally; authored atlas-style preview SVGs (`inter-korean-relations.svg`, `jang-song-thaek.svg`, `wonsan.svg`) and added their `preview:` front matter; and moved the three items from ROADMAP Now → Done (promoting Rason, Agriculture, and Ri Sol-ju into Now for Tick 10).
+- Ran sync-seed — regenerated §1–7 (Content 24→27 rows/files across all six populated categories; Structure inventory now lists 6 category indices, 8 dated timeline rows, and 27 cross-referenced files).
