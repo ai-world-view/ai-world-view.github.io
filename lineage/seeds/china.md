@@ -71,8 +71,8 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 63 rows.
-- **Dedicated topic files**: 63.
+- **README knowledge table**: 66 rows.
+- **Dedicated topic files**: 66.
   - `culture-society/buddhism-in-china.md` — Buddhism in China
   - `culture-society/calligraphy.md` — Calligraphy
   - `culture-society/chinese-medicine.md` — Chinese Medicine
@@ -89,6 +89,7 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `economy/special-economic-zones.md` — Special Economic Zones
   - `economy/state-owned-enterprises.md` — State-Owned Enterprises (SOEs)
   - `economy/the-tea-trade.md` — The Tea Trade
+  - `geography/beijing.md` — Beijing
   - `geography/the-forbidden-city.md` — The Forbidden City
   - `geography/the-grand-canal.md` — The Grand Canal
   - `geography/the-great-wall.md` — The Great Wall of China
@@ -103,10 +104,12 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `government-politics/peoples-liberation-army.md` — The People's Liberation Army
   - `government-politics/regional-autonomy.md` — Regional Autonomy
   - `government-politics/standing-committee-politburo.md` — The Standing Committee of the Politburo
+  - `government-politics/the-mandate-of-heaven.md` — The Mandate of Heaven
   - `government-politics/tiananmen-square-1989.md` — The 1989 Tiananmen Square Pro-Democracy Movement
   - `government-politics/tributary-system.md` — The Tributary System
   - `history/cultural-revolution.md` — Cultural Revolution
   - `history/pan-geng.md` — Pan Geng
+  - `history/the-an-lushan-rebellion.md` — The An Lushan Rebellion
   - `history/the-boxer-rebellion.md` — The Boxer Rebellion
   - `history/the-great-leap-forward.md` — The Great Leap Forward
   - `history/the-han-dynasty.md` — The Han Dynasty
@@ -136,8 +139,8 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `people/xi-jinping.md` — Xi Jinping
   - `people/zheng-he.md` — Zheng He
   - `people/zhou-enlai.md` — Zhou Enlai
-- **Categories with content**: Culture & Society (11), Economy (5), Geography (6),
-  Government & Politics (10), History (18), People (13).
+- **Categories with content**: Culture & Society (11), Economy (5), Geography (7),
+  Government & Politics (11), History (19), People (13).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -147,9 +150,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 280 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 288 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 63 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 66 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -535,3 +538,7 @@ Added three topics deepening Culture & Society, Government & Politics, and Peopl
 ### G1-T21 — 2026-09-05 — Tick 21: Brush, argument, and verse — Calligraphy, Mohism, and Du Fu
 
 Added three topics deepening Culture & Society and People and spanning the full arc from an ancient philosophical rival of Confucianism to the supreme arts of the brush and the poem: `culture-society/calligraphy.md` (the three-millennia art of Chinese brushwork — the evolution of scripts from oracle-bone and seal to clerical, regular, running, and cursive, Wang Xizhi's *Lanting Xu*, the Tang monumental masters and wild-cursive Zhang Xu and Huaisu, the Song turn toward personality under the Four Great Masters, the four treasures of the study, and the aesthetics of *qi* and *shishi*), `culture-society/mohism.md` (Mozi's Warring States school and Confucianism's chief early rival — the Ten Theses centered on *jian'ai*, the anti-war Gongshu Pan confrontation, the proto-scientific *Mohist Canons* in logic, optics, and mechanics, the disciplined *juzi* organization, and the decline under the Han's Confucian turn and modern rediscovery), and `people/du-fu.md` (the Tang "Sage of Poetry," 712–770, whose friendship with Li Bai, witness to the An Lushan Rebellion in *Chunwang* and the "Three Officials/Three Separations," Chengdu Thatched Cottage years, and perfection of regulated verse made him, with Li Bai, one of the two summits of Chinese poetry), each with `title`/`preview`/`date`/`category` front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. Culture & Society now holds eleven topics and People thirteen; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and corrected several factual errors: in Calligraphy, fixed the pinyin of Ouyang Xun's *Thirty-Six Methods* (*sanshiliu fa*, not "sanshu liufa"), relabeled the clerical-script feature as *cantou yanwei* (蠶頭雁尾) rather than a bare "*can*," and corrected the eighth of the Eight Principles of *Yong* (磔 as the right-falling press, not a "point"); in Mohism, corrected Gongshu Pan's name (公輸盤, also known as Lu Ban 魯班) and the Yangcheng character (陽城, not 楊城), and replaced a misattributed "child falling into a well" gloss with Mencius's actual charge that love without gradations (*ai wu cha deng*) amounted to "being without a father" (*wu fu*, 無父); and in Du Fu, corrected the "Three Officials" to *san li* (三吏, e.g. *Xin'an Li*, not "Guan") and dropped a spurious "Six Laments" grouping, fixed the pinyin of the Reminder post (*zuo shiyi*, 左拾遺), retitled the 767 masterpiece *Deng Gao* ("Climbing the Heights," not "Deng Gaolou"), dated the *Yong Huai* couplet to 755, and rendered Qian Zhongshu's *Guanzhui bian* as *Limited Views* (not "Pipe Estimates of Talent"). Fixed cross-references: repointed a mislabeled "Mencius"→`confucius.md` link in Mohism to a Confucius label and a mislabeled "Poetry and Literati Traditions" link in Du Fu to Printing and Woodblock Printing. Verified every cross-reference resolves (0 broken links repo-wide). Refreshed the structural layer: appended Calligraphy and Mohism to the Culture & Society index and INDEX and Du Fu to the People index and INDEX; grew the README knowledge table from 60 to 63 rows; extended `TIMELINE.md` from 264 to 280 dated milestones (Mozi's c. 470 BCE birth, the c. 440 BCE Gongshu Pan debate, and his c. 391 BCE death, with Sun Yirang's 1894 *Mozi Xiangu* edition and A.C. Graham's 1978 reconstruction; the calligraphy milestones of the 219 BCE Mount Tai seal-script stele, Wang Xizhi's 353 CE *Lanting Xu*, Ouyang Xun's 632 CE *Jiucheng Gong* stele, Huaisu's c. 777 CE *Autobiography*, and Yan Zhenqing's 785 CE execution; and Du Fu's 712 birth, the 756 *Chunwang*, the 759 "Three Officials," the 760 Thatched Cottage, the 766 *Qiu Xing*, and his 770 death); and wove eight reciprocal cross-references from existing articles (Li Bai and the Tang Dynasty to Du Fu; the Tang, Song, and Imperial Examination System to Calligraphy; and Confucianism, Confucius, the Warring States Period, and Legalism to Mohism). Regenerated seed sections 4–5 to match live state (63 topic files, 63 README rows, 280 milestones, no empty categories).
+
+### G1-T22 — 2026-09-06 — Tick 22: Capital, mandate, and the rebellion that broke the Tang — Beijing, the Mandate of Heaven, and the An Lushan Rebellion
+
+Added three topics deepening Geography, Government & Politics, and History and supplying long-referenced connective structure to the knowledge base: `geography/beijing.md` (the capital of over eight centuries — the Jin Zhongdu and Yuan Dadu, the Ming-Qing imperial city and Forbidden City, the hutong-and-*siheyuan* urban fabric, the 1860 burning of the Yuanmingyuan and 1900 foreign occupation, the republican interregnum as Beiping, the Communist remaking of Tiananmen Square, and the modern Olympic megacity), `government-politics/the-mandate-of-heaven.md` (*tianming*, the doctrine of virtue-based, revocable legitimacy — its Zhou articulation against the Shang, the dynastic cycle and its flexibility toward foreign conquest, the Confucian and Mencian readings that sanctioned rebellion, the ritual enactment at the Temple of Heaven, its transmission to Korea, Vietnam, and Japan, and its Republican and Marxist reinterpretation), and `history/the-an-lushan-rebellion.md` (the 755–763 uprising that shattered the high Tang — An Lushan's rise amid the Xuanzong court, the fall of both capitals and the execution of Yang Guifei at Mawei, the Uighur and Tibetan interventions, Du Fu's and Wang Wei's witness, and the permanent *jiedushi* decentralization), each with `title`/`preview`/`date`/`category` front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. Geography now holds seven topics, Government & Politics eleven, and History nineteen; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and corrected several factual errors: in Beijing, fixed the summary's dynastic names (Yuan Dadu and Ming-Qing "Beijing," not "Zhongdu (Yuan)/Jingzhao (Ming-Qing)"), clarified that Kublai built the new Dadu/Khanbaliq beside the former Jin Zhongdu (with Liu Bingzhong as chief planner and Guo Shoujing on the waterworks and the Tonghui Canal), corrected the Ming rename (Beiping → Beijing in 1403, not "Jingzhao"), removed the false claim that Beijing was the command center of Zheng He's Nanjing-based voyages, fixed the Palace Museum's 1925 opening and 1961 protected-site listing (with Zhou Enlai's Cultural-Revolution protection of the Forbidden City), and untangled the Peking/Beijing romanization and Beiping-era history; in the Mandate of Heaven, corrected Zhu Xi from "Yuan-era" to the Southern Song philosopher (1130–1200), fixed the pinyin of *zaiyi* (災異, not "kaiji"), removed a false attribution framing the Great Leap famine as Mao's pursuit of "heaven's abundance," and fixed a "It"→"Its" source typo; and in the An Lushan Rebellion, corrected the peak census to 754 (not 742), replaced the fabricated "Dandu system" with the accurate account of Liu Yan's salt monopoly and the 780 two-tax reform, and rewrote the vague "military governor of Zhedong" ending as Shi Chaoyi's 763 death and the pardon of the rebel generals as autonomous northeastern governors. Fixed cross-references: pruned five links to non-existent articles (the Yongle Emperor from Beijing; the Xinhai Revolution from the Mandate of Heaven; and the Five Dynasties, the Xuanzong Emperor, and Wang Wei from the An Lushan Rebellion) and removed an irrelevant Mao Zedong link from the rebellion's Related block. Verified every cross-reference resolves (0 broken links repo-wide). Refreshed the structural layer: appended Beijing to the Geography index and INDEX, inserted the Mandate of Heaven (first, as the foundational doctrine) into the Government & Politics index and INDEX, and inserted the An Lushan Rebellion (after the Tang Dynasty) into the History index and INDEX; grew the README knowledge table from 63 to 66 rows; extended `TIMELINE.md` from 280 to 288 dated milestones (Beijing's 1153 Jin Zhongdu, 1421 Ming capital transfer, and 2022 dual-Olympics distinction; the Mandate's c. 300 BCE Mencian formulation, 1420 Temple of Heaven, and 1912 Republican dissolution; and the rebellion's 756 fall of Chang'an and 763 suppression, with the existing 755 milestone repointed from the Tang Dynasty to the dedicated article); and wove ten reciprocal cross-references from existing articles (the Forbidden City, the Yuan and Ming dynasties, and the 1989 Tiananmen movement to Beijing; the Zhou and Xia dynasties and Confucianism to the Mandate of Heaven; and the Tang Dynasty, Du Fu, and Li Bai to the An Lushan Rebellion). Reconciled `ROADMAP.md` (the three Now items moved to Done as G1-T22) and regenerated seed sections 4–5 to match live state (66 topic files, 66 README rows, 288 milestones, no empty categories).
