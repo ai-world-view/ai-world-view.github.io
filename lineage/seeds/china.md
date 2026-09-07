@@ -71,8 +71,8 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 66 rows.
-- **Dedicated topic files**: 66.
+- **README knowledge table**: 69 rows.
+- **Dedicated topic files**: 69.
   - `culture-society/buddhism-in-china.md` — Buddhism in China
   - `culture-society/calligraphy.md` — Calligraphy
   - `culture-society/chinese-medicine.md` — Chinese Medicine
@@ -81,6 +81,7 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `culture-society/i-ching.md` — The I Ching (Book of Changes)
   - `culture-society/legalism.md` — Legalism
   - `culture-society/mohism.md` — Mohism
+  - `culture-society/oracle-bones-divination.md` — Oracle Bones and Divination
   - `culture-society/porcelain-and-ceramics.md` — Porcelain and Ceramics
   - `culture-society/printing-and-woodblock.md` — Printing and Woodblock Printing
   - `culture-society/taoism.md` — Taoism
@@ -90,6 +91,7 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `economy/state-owned-enterprises.md` — State-Owned Enterprises (SOEs)
   - `economy/the-tea-trade.md` — The Tea Trade
   - `geography/beijing.md` — Beijing
+  - `geography/shanghai.md` — Shanghai
   - `geography/the-forbidden-city.md` — The Forbidden City
   - `geography/the-grand-canal.md` — The Grand Canal
   - `geography/the-great-wall.md` — The Great Wall of China
@@ -108,6 +110,7 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `government-politics/tiananmen-square-1989.md` — The 1989 Tiananmen Square Pro-Democracy Movement
   - `government-politics/tributary-system.md` — The Tributary System
   - `history/cultural-revolution.md` — Cultural Revolution
+  - `history/five-dynasties-ten-kingdoms.md` — The Five Dynasties and Ten Kingdoms
   - `history/pan-geng.md` — Pan Geng
   - `history/the-an-lushan-rebellion.md` — The An Lushan Rebellion
   - `history/the-boxer-rebellion.md` — The Boxer Rebellion
@@ -139,8 +142,8 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `people/xi-jinping.md` — Xi Jinping
   - `people/zheng-he.md` — Zheng He
   - `people/zhou-enlai.md` — Zhou Enlai
-- **Categories with content**: Culture & Society (11), Economy (5), Geography (7),
-  Government & Politics (11), History (19), People (13).
+- **Categories with content**: Culture & Society (12), Economy (5), Geography (8),
+  Government & Politics (11), History (20), People (13).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -150,9 +153,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 288 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 301 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 66 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 69 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -542,3 +545,7 @@ Added three topics deepening Culture & Society and People and spanning the full 
 ### G1-T22 — 2026-09-06 — Tick 22: Capital, mandate, and the rebellion that broke the Tang — Beijing, the Mandate of Heaven, and the An Lushan Rebellion
 
 Added three topics deepening Geography, Government & Politics, and History and supplying long-referenced connective structure to the knowledge base: `geography/beijing.md` (the capital of over eight centuries — the Jin Zhongdu and Yuan Dadu, the Ming-Qing imperial city and Forbidden City, the hutong-and-*siheyuan* urban fabric, the 1860 burning of the Yuanmingyuan and 1900 foreign occupation, the republican interregnum as Beiping, the Communist remaking of Tiananmen Square, and the modern Olympic megacity), `government-politics/the-mandate-of-heaven.md` (*tianming*, the doctrine of virtue-based, revocable legitimacy — its Zhou articulation against the Shang, the dynastic cycle and its flexibility toward foreign conquest, the Confucian and Mencian readings that sanctioned rebellion, the ritual enactment at the Temple of Heaven, its transmission to Korea, Vietnam, and Japan, and its Republican and Marxist reinterpretation), and `history/the-an-lushan-rebellion.md` (the 755–763 uprising that shattered the high Tang — An Lushan's rise amid the Xuanzong court, the fall of both capitals and the execution of Yang Guifei at Mawei, the Uighur and Tibetan interventions, Du Fu's and Wang Wei's witness, and the permanent *jiedushi* decentralization), each with `title`/`preview`/`date`/`category` front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. Geography now holds seven topics, Government & Politics eleven, and History nineteen; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and corrected several factual errors: in Beijing, fixed the summary's dynastic names (Yuan Dadu and Ming-Qing "Beijing," not "Zhongdu (Yuan)/Jingzhao (Ming-Qing)"), clarified that Kublai built the new Dadu/Khanbaliq beside the former Jin Zhongdu (with Liu Bingzhong as chief planner and Guo Shoujing on the waterworks and the Tonghui Canal), corrected the Ming rename (Beiping → Beijing in 1403, not "Jingzhao"), removed the false claim that Beijing was the command center of Zheng He's Nanjing-based voyages, fixed the Palace Museum's 1925 opening and 1961 protected-site listing (with Zhou Enlai's Cultural-Revolution protection of the Forbidden City), and untangled the Peking/Beijing romanization and Beiping-era history; in the Mandate of Heaven, corrected Zhu Xi from "Yuan-era" to the Southern Song philosopher (1130–1200), fixed the pinyin of *zaiyi* (災異, not "kaiji"), removed a false attribution framing the Great Leap famine as Mao's pursuit of "heaven's abundance," and fixed a "It"→"Its" source typo; and in the An Lushan Rebellion, corrected the peak census to 754 (not 742), replaced the fabricated "Dandu system" with the accurate account of Liu Yan's salt monopoly and the 780 two-tax reform, and rewrote the vague "military governor of Zhedong" ending as Shi Chaoyi's 763 death and the pardon of the rebel generals as autonomous northeastern governors. Fixed cross-references: pruned five links to non-existent articles (the Yongle Emperor from Beijing; the Xinhai Revolution from the Mandate of Heaven; and the Five Dynasties, the Xuanzong Emperor, and Wang Wei from the An Lushan Rebellion) and removed an irrelevant Mao Zedong link from the rebellion's Related block. Verified every cross-reference resolves (0 broken links repo-wide). Refreshed the structural layer: appended Beijing to the Geography index and INDEX, inserted the Mandate of Heaven (first, as the foundational doctrine) into the Government & Politics index and INDEX, and inserted the An Lushan Rebellion (after the Tang Dynasty) into the History index and INDEX; grew the README knowledge table from 63 to 66 rows; extended `TIMELINE.md` from 280 to 288 dated milestones (Beijing's 1153 Jin Zhongdu, 1421 Ming capital transfer, and 2022 dual-Olympics distinction; the Mandate's c. 300 BCE Mencian formulation, 1420 Temple of Heaven, and 1912 Republican dissolution; and the rebellion's 756 fall of Chang'an and 763 suppression, with the existing 755 milestone repointed from the Tang Dynasty to the dedicated article); and wove ten reciprocal cross-references from existing articles (the Forbidden City, the Yuan and Ming dynasties, and the 1989 Tiananmen movement to Beijing; the Zhou and Xia dynasties and Confucianism to the Mandate of Heaven; and the Tang Dynasty, Du Fu, and Li Bai to the An Lushan Rebellion). Reconciled `ROADMAP.md` (the three Now items moved to Done as G1-T22) and regenerated seed sections 4–5 to match live state (66 topic files, 66 README rows, 288 milestones, no empty categories).
+
+### G1-T23 — 2026-09-07 — Tick 23: Writing's origin, the interregnum, and the treaty-port metropolis — Oracle Bones and Divination, the Five Dynasties and Ten Kingdoms, and Shanghai
+
+Added three topics deepening Culture & Society, History, and Geography and spanning the full arc from the Bronze Age origin of Chinese writing through the Tang–Song interregnum to the modern global metropolis: `culture-society/oracle-bones-divination.md` (the Shang pyromantic divination that produced *jiaguwen*, the earliest known Chinese writing — the diviners' formulaic charges on ox scapulae and turtle plastrons, the *Shangdi* and ancestral cosmology, the c. 4,500 graphs and their evolution into later scripts, the 1899 recognition by Wang Yirong, the Yinxu excavations and Pit H127, Fu Hao's tomb, and the descent into the *I Ching* and later divination), `history/five-dynasties-ten-kingdoms.md` (the fractured 907–979 interregnum — the Huang Chao Rebellion and Zhu Wen's usurpation, the five northern dynasties, the cession of the Sixteen Prefectures to the Khitan Liao, the southern kingdoms and their *ci* poetry and celadon, Feng Dao's printed Confucian Classics, and the Song reunification through the Yellow Robe Incident), and `geography/shanghai.md` (the Yangtze-mouth metropolis — its treaty-port concessions after 1842, the Bund and the golden-age economy, the 1921 CCP founding congress and the 1925 May Thirtieth and 1927 April 12 events, the Jewish wartime refuge and Battle of Shanghai, the socialist eclipse, and Pudong's reform-era rise), each with `title`/`preview`/`date`/`category` front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. Culture & Society now holds twelve topics, History twenty, and Geography eight; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and corrected several factual errors: in the Five Dynasties article, Zhu Wen's murderer was his son Zhu Yougui (not "Zhu Youzhen"), Shi Jingtang addressed the Liao emperor Yelü Deguang as "father emperor" (not "elder uncle"), Chai Rong was Guo Wei's adopted heir and his empress's nephew (not "son-in-law"), the *Hua Jian Ji* was compiled in Later Shu in 940 (not "Former Shu"), the garbled "Southern Wu" and "Later Chu" pseudo-states were rewritten as the historical Wu-to-Southern-Tang succession and the Ma-family Chu, the fabricated Jingnan and Feng Dao quotations were replaced with the attested *Gao laizi* epithet and the survivor-bureaucrat framing, and the *huangpao jiashen* romanization was corrected; and in Shanghai, Chiune Sugihara was corrected from a Shanghai "Consul-General" to the Japanese vice-consul in Kaunas, Lithuania, whose 1940 transit visas routed refugees (including the Mir Yeshiva) to Shanghai, and the dubious "Banco Sino-Português" was replaced with the Deutsch-Asiatische Bank. Fixed cross-references: pruned two links to non-existent articles (Bronze Casting and Ritual Vessels from Oracle Bones; the May Fourth Movement from Shanghai, repointed to the Five Dynasties). Verified every cross-reference resolves (0 broken links repo-wide). Refreshed the structural layer: appended Oracle Bones to the Culture & Society index and INDEX, inserted the Five Dynasties (between the An Lushan Rebellion and the Song) into the History index and INDEX, and appended Shanghai to the Geography index and INDEX; the README knowledge table already carried the three new rows (69 total); extended `TIMELINE.md` from 288 to 301 dated milestones (the Five Dynasties' 938 cession of the Sixteen Prefectures, 953 Feng Dao Classics, and 975 fall of Southern Tang, with the existing 907 Tang-fall milestone repointed from the Tang to the dedicated article; Oracle Bones' 1903 *Tieyun Cang Gui*, 1936 Pit H127, and 2017 UNESCO Memory of the World listing, with the 1899 recognition repointed from the Shang to the dedicated article; and Shanghai's 1291 Yuan county, 1843 British Settlement, 1925 May Thirtieth, 1937 Battle of Shanghai, 1990 stock-exchange reopening, 2010 World Expo, and 2015 Shanghai Tower); and wove eight reciprocal cross-references from existing articles (the Shang Dynasty and Pan Geng to Oracle Bones; the Tang, Song, and An Lushan Rebellion to the Five Dynasties; and the Yangtze River, the Opium Wars, and the Chinese Civil War to Shanghai). Regenerated seed sections 4–5 to match live state (69 topic files, 69 README rows, 301 milestones, no empty categories).
