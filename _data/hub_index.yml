@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 4
-  pages: 275
+  pages: 284
 repos:
 - name: china
   title: china
@@ -16,8 +16,8 @@ repos:
   pages_enabled: true
   scaffolded: true
   branch: main
-  pushed_at: '2026-09-05T09:39:18Z'
-  page_count: 71
+  pushed_at: '2026-09-06T10:01:04Z'
+  page_count: 74
   sections:
   - name: culture-society
     title: Culture & Society
@@ -33,17 +33,17 @@ repos:
     title: Geography
     url: https://ai-world-view.github.io/china/geography/
     source_url: https://github.com/ai-world-view/china/tree/main/geography
-    count: 6
+    count: 7
   - name: government-politics
     title: Government & Politics
     url: https://ai-world-view.github.io/china/government-politics/
     source_url: https://github.com/ai-world-view/china/tree/main/government-politics
-    count: 10
+    count: 11
   - name: history
     title: History
     url: https://ai-world-view.github.io/china/history/
     source_url: https://github.com/ai-world-view/china/tree/main/history
-    count: 18
+    count: 19
   - name: people
     title: People
     url: https://ai-world-view.github.io/china/people/
@@ -106,8 +106,8 @@ repos:
   pages_enabled: true
   scaffolded: true
   branch: main
-  pushed_at: '2026-09-05T09:35:49Z'
-  page_count: 32
+  pushed_at: '2026-09-06T10:00:16Z'
+  page_count: 35
   sections:
   - name: culture-society
     title: Culture & Society
@@ -123,7 +123,7 @@ repos:
     title: Geography
     url: https://ai-world-view.github.io/north-korea/geography/
     source_url: https://github.com/ai-world-view/north-korea/tree/main/geography
-    count: 4
+    count: 5
   - name: government-politics
     title: Government & Politics
     url: https://ai-world-view.github.io/north-korea/government-politics/
@@ -133,12 +133,12 @@ repos:
     title: History
     url: https://ai-world-view.github.io/north-korea/history/
     source_url: https://github.com/ai-world-view/north-korea/tree/main/history
-    count: 3
+    count: 4
   - name: people
     title: People
     url: https://ai-world-view.github.io/north-korea/people/
     source_url: https://github.com/ai-world-view/north-korea/tree/main/people
-    count: 5
+    count: 6
   root_pages:
   - title: Timeline
     url: https://ai-world-view.github.io/north-korea/TIMELINE/
@@ -151,8 +151,8 @@ repos:
   pages_enabled: true
   scaffolded: true
   branch: main
-  pushed_at: '2026-09-05T09:44:18Z'
-  page_count: 104
+  pushed_at: '2026-09-06T10:04:19Z'
+  page_count: 107
   sections:
   - name: culture-society
     title: Culture & Society
@@ -163,12 +163,12 @@ repos:
     title: Economy
     url: https://ai-world-view.github.io/south-korea/economy/
     source_url: https://github.com/ai-world-view/south-korea/tree/main/economy
-    count: 16
+    count: 17
   - name: geography
     title: Geography
     url: https://ai-world-view.github.io/south-korea/geography/
     source_url: https://github.com/ai-world-view/south-korea/tree/main/geography
-    count: 18
+    count: 19
   - name: government-politics
     title: Government & Politics
     url: https://ai-world-view.github.io/south-korea/government-politics/
@@ -178,7 +178,7 @@ repos:
     title: History
     url: https://ai-world-view.github.io/south-korea/history/
     source_url: https://github.com/ai-world-view/south-korea/tree/main/history
-    count: 13
+    count: 14
   - name: people
     title: People
     url: https://ai-world-view.github.io/south-korea/people/
