@@ -87,14 +87,15 @@ present under `.github/`:
 ## Section 4 — Content Inventory
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
-People. The README knowledge table ("Notable Facts about the country north korea") holds **27 rows**.
-Dedicated topic files (27):
+People. The README knowledge table ("Notable Facts about the country north korea") holds **30 rows**.
+Dedicated topic files (30):
 
 - `geography/pyongyang.md` — Pyongyang, the capital and largest city.
 - `geography/mount-paektu.md` — Mount Paektu, the sacred border volcano and its Kim-dynasty mythology.
 - `geography/hamhung.md` — Hamhung, the second-largest city and chemical-industrial center on the east coast.
 - `geography/kaesong.md` — Kaesong, the medieval Goryeo capital and DMZ border city, host to the Kaesong Industrial Complex.
 - `geography/wonsan.md` — Wonsan, the principal east-coast port in Kangwon Province: treaty port, Korean War siege site, naval base, and special economic zone.
+- `geography/rason.md` — Rason, the DPRK's oldest special economic zone at the Russia–China tri-border, a largely unrealized experiment in market-oriented development.
 - `history/korean-war.md` — the 1950–1953 Korean War.
 - `history/nuclear-weapons-program.md` — the DPRK nuclear program from its 1980s origins to a deliverable thermonuclear deterrent.
 - `history/japanese-colonial-period.md` — Korea under Japanese colonial rule (1910–1945), the nationalist resistance, and its legacy for the DPRK.
@@ -107,6 +108,7 @@ Dedicated topic files (27):
 - `economy/foreign-trade-and-sanctions.md` — the DPRK's foreign trade, dependence on China and Russia, and the UN/US sanctions regime.
 - `economy/energy-crisis-and-electricity.md` — the post-1991 energy collapse that triggered the famine and the chronic electricity shortage that persists today.
 - `economy/mining-and-resources.md` — the DPRK's mineral reserves and the coal, iron, rare-earth, and uranium extraction that funds the sanctioned state.
+- `economy/agriculture-and-food-security.md` — the collective-farm system and chronic food insecurity, from the 1994–1998 famine to the jangmadang markets that arose in its wake.
 - `culture-society/state-ideology-and-propaganda.md` — juche, the personality cult, and the propaganda state.
 - `culture-society/education-system.md` — the state-monopolized, militarized education system as an instrument of indoctrination.
 - `culture-society/kwanliso.md` — the kwanliso political prison-camp system and its doctrine of three-generation collective guilt.
@@ -117,9 +119,10 @@ Dedicated topic files (27):
 - `people/kim-yo-jong.md` — Kim Yo-jong (b. 1987), sister and key advisor to Kim Jong-un.
 - `people/ko-yong-hui.md` — Ko Yong-hui (1952–2004), mother of Kim Jong-un and Kim Yo-jong and Kim Jong-il's longtime partner.
 - `people/jang-song-thaek.md` — Jang Song-thaek (1946–2013), Kim Jong-un's uncle-in-law and chief economic administrator, executed in the 2013 consolidation purge.
+- `people/ri-sol-ju.md` — Ri Sol-ju (b. c. 1987–1989), wife of Kim Jong-un and the DPRK's publicly visible "first lady" from 2012, a former Unhasu Orchestra singer.
 
 Populated categories: all six — Geography, History, Government & Politics, Economy, Culture & Society,
-and People. This tick deepened the History, People, and Geography categories.
+and People. This tick deepened the Geography, Economy, and People categories.
 
 ## Section 5 — Structure Inventory
 
@@ -128,14 +131,14 @@ Generated structural artifacts now present:
 - **Category index pages** — `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md`
   (one per category; all six are now populated).
-- **Timeline** — `TIMELINE.md` (topics with a historical date in chronological order: Japanese
+- **Timeline** — `TIMELINE.md` (topics with a principal date in chronological order: Japanese
   Colonial Period, Kim Il-sung, Kim Jong-il, Jang Song-thaek, Korean War, Ko Yong-hui, Kim Jong-un,
-  Kim Yo-jong).
+  Kim Yo-jong, Ri Sol-ju).
 - **Master index** — `INDEX.md` (all topics grouped by taxonomy, with pointers to category indices
   and the timeline).
-- **Cross-references** — a generated `## Related` block in each of the 27 dedicated topic files.
+- **Cross-references** — a generated `## Related` block in each of the 30 dedicated topic files.
 - **Preview art** — atlas-style SVG cards under `assets/images/previews/` for each category and
-  featured topic (including `inter-korean-relations.svg`, `jang-song-thaek.svg`, and `wonsan.svg`).
+  featured topic (including `rason.svg`, `agriculture-and-food-security.svg`, and `ri-sol-ju.svg`).
 
 ## Section 6 — Growth Loop
 
@@ -256,3 +259,14 @@ Ninth growth tick. Added three topics that deepened the History, People, and Geo
 - Enhance pass: corrected Jang Song-thaek's birth date to 6 February 1946 (front matter and body, replacing an unsupported "November 10"), his National Defence Commission role to vice chairman (from 2010), and the Byungjin Line adoption to March 2013 (matching the nuclear/WPK/mining files); repaired two in-body Nuclear Weapons Program links that lacked the `../history/` prefix and unlinked a misleading Kim Kyong-hui link; and reframed the "1972 Classification of the Three Families" claim as the documented yonzwa collective-guilt doctrine. In Wonsan, fixed the direction to Pyongyang (east, not northeast), the treaty-port ordering (second after Busan 1876, not "first"), the telegraph-line year (1891), the railway description (Gyeongwon Line to Seoul plus the Hamgyong Line north), the 1929 strike details (Rising Sun Petroleum Company; roughly three months), the Korean War chronology (the mining and minesweeping preceded, and delayed, the 26 October landing; USS *Pirate*/*Pledge* sunk 12 October), the missile/SLBM specifics (2016 Musudan launches; the October 2019 Pukguksong-3 test off Wonsan), and a wrong "Kangwon Province" label for Hamhung in the crossref. In Inter-Korean Relations, corrected the Sunshine Policy hangul (햇볕정책) and its Aesop's-fable etymology, the USS *Pueblo* crew figure (one killed, 82 held), the family-reunion dates and count (~20,000 individuals, 2000–2018), and softened an unverifiable reunification-poll statistic. Verified every front-matter `date:` is a single ISO date (the two thematic topics on the tick date `2026-09-06`; Jang Song-thaek on his birth date `1946-02-06`, feeding the timeline).
 - Ran build-structure — added README, INDEX, and category-index rows for the three topics; added Jang Song-thaek (1946-02-06) to `TIMELINE.md`; wrapped the three new topics in generated `## Related` crossref blocks and extended the crossref blocks of fifteen older topic files to link the new pages bidirectionally; authored atlas-style preview SVGs (`inter-korean-relations.svg`, `jang-song-thaek.svg`, `wonsan.svg`) and added their `preview:` front matter; and moved the three items from ROADMAP Now → Done (promoting Rason, Agriculture, and Ri Sol-ju into Now for Tick 10).
 - Ran sync-seed — regenerated §1–7 (Content 24→27 rows/files across all six populated categories; Structure inventory now lists 6 category indices, 8 dated timeline rows, and 27 cross-referenced files).
+
+### G1-T10 — 2026-09-07 — Tick 10: added Rason, agriculture and food security, and Ri Sol-ju
+
+Tenth growth tick. Added three topics that deepened the Geography, Economy, and People categories — the DPRK's oldest special economic zone at the Russia–China tri-border, the collective-farm system and the chronic food insecurity behind the 1994–1998 famine, and Kim Jong-un's publicly visible wife as the regime's modernized "first lady" — then refreshed the structural layer.
+
+- Created `geography/rason.md` — Rason (formerly Rajin-Sŏnbong), the DPRK's oldest special economic zone in the northeastern corner where Korea meets Russia and China: its December 1991 designation, the 1993 and post-2011 investment-law revisions, the exceptional but underused tri-border transit geography, the Russian Rajin-Khasan railway and 49-year Pier No. 3 lease, the Chinese road and pier-lease investments, and its persistent underdevelopment under sanctions and the COVID border closure.
+- Created `economy/agriculture-and-food-security.md` — the DPRK's collective- and state-farm system and chronic food insecurity: the 1953–1958 collectivization, limited arable land and natural constraints, the structural grain deficit, the 1994–1998 famine and its demographic aftermath, international food aid and the Sunshine Policy, the public distribution system and its collapse, the jangmadang markets as a survival mechanism, and the marginal 6.28 (2012) and 30 May (2014) reforms under Kim Jong-un.
+- Created `people/ri-sol-ju.md` — Ri Sol-ju (b. c. 1987–1989), wife of Kim Jong-un: her Unhasu Orchestra background, her 6 July 2012 public debut at a Moranbong Band concert, her ceremonial and propaganda role, the deliberate break from the concealment of previous leaders' partners, the revelation and public emergence of her daughter Kim Ju-ae, and the contrast with the politically substantive Kim Yo-jong.
+- Enhance pass: corrected Ri Sol-ju's front-matter `date:` to her 2012-07-06 public-debut date (birth year is uncertain, so the defining public event serves as her principal/timeline date), fixed the Masikryong Ski Resort opening to December 2013 (was "February 2013"), and moved Dennis Rodman's revelation of daughter Ju-ae to September 2013 (was "February 2013"). In agriculture, corrected the cooperative-farm romanization to 협동농장 (hyeopdong nongjang), fixed the "6.28 Measures" announcement to June 2012 (was "August 2012"), removed an erroneous 1994 date on the Goodkind & West Census Bureau estimate, and reconciled the child-stunting figures to the declining 2012 (~28%) and 2017 (~19%) survey results. In Rason, reworked the 2013 SEZ-expansion passage to separate the May 2013 Economic Development Zone Law from the November 2013 designation of the new zones and dropped an incorrect claim that Rason was renamed in 2013 (the contraction predated it). Verified every front-matter `date:` is a single ISO date (Rason and Agriculture on the tick date `2026-09-07`; Ri Sol-ju on `2012-07-06`).
+- Ran build-structure — added README, INDEX, and category-index rows for the three topics; added Ri Sol-ju (2012-07-06) to `TIMELINE.md`; normalized the three new topics' `## Related` blocks into the canonical annotated crossref format and extended the crossref blocks of eleven older topic files to link the new pages bidirectionally; authored atlas-style preview SVGs (`rason.svg`, `agriculture-and-food-security.svg`, `ri-sol-ju.svg`) and added their `preview:` front matter; and moved the three items from ROADMAP Now → Done (promoting Songun ideology, Railway and transportation networks, and Sino–North Korean relations into Now for Tick 11).
+- Ran sync-seed — regenerated §1–7 (Content 27→30 rows/files across all six populated categories; Structure inventory now lists 6 category indices, 9 dated timeline rows, and 30 cross-referenced files).
