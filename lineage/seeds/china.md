@@ -71,8 +71,8 @@ adapters that point to it). At the time of this sync, `.github/` contained:
 
 Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society, People.
 
-- **README knowledge table**: 69 rows.
-- **Dedicated topic files**: 69.
+- **README knowledge table**: 72 rows.
+- **Dedicated topic files**: 72.
   - `culture-society/buddhism-in-china.md` — Buddhism in China
   - `culture-society/calligraphy.md` — Calligraphy
   - `culture-society/chinese-medicine.md` — Chinese Medicine
@@ -85,12 +85,14 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `culture-society/porcelain-and-ceramics.md` — Porcelain and Ceramics
   - `culture-society/printing-and-woodblock.md` — Printing and Woodblock Printing
   - `culture-society/taoism.md` — Taoism
+  - `economy/agriculture-and-land-reform.md` — Agriculture and Land Reform
   - `economy/belt-and-road-initiative.md` — Belt and Road Initiative
   - `economy/economic-reform-opening-up.md` — Economic Reform & Opening-up (1978 Onward)
   - `economy/special-economic-zones.md` — Special Economic Zones
   - `economy/state-owned-enterprises.md` — State-Owned Enterprises (SOEs)
   - `economy/the-tea-trade.md` — The Tea Trade
   - `geography/beijing.md` — Beijing
+  - `geography/hong-kong.md` — Hong Kong
   - `geography/shanghai.md` — Shanghai
   - `geography/the-forbidden-city.md` — The Forbidden City
   - `geography/the-grand-canal.md` — The Grand Canal
@@ -136,14 +138,15 @@ Taxonomy: Geography, History, Government & Politics, Economy, Culture & Society,
   - `people/jiang-zemin.md` — Jiang Zemin
   - `people/kangxi.md` — Kangxi
   - `people/li-bai.md` — Li Bai
+  - `people/lu-xun.md` — Lu Xun
   - `people/mao-zedong.md` — Mao Zedong
   - `people/qin-shi-huang.md` — Qin Shi Huang
   - `people/sun-yat-sen.md` — Sun Yat-sen
   - `people/xi-jinping.md` — Xi Jinping
   - `people/zheng-he.md` — Zheng He
   - `people/zhou-enlai.md` — Zhou Enlai
-- **Categories with content**: Culture & Society (12), Economy (5), Geography (8),
-  Government & Politics (11), History (20), People (13).
+- **Categories with content**: Culture & Society (12), Economy (6), Geography (9),
+  Government & Politics (11), History (20), People (14).
 - **Categories still empty**: none — all six taxonomy categories have content.
 
 ## Section 5 — Structure Inventory
@@ -153,9 +156,9 @@ Generated structural artifacts (maintained by `build-structure`):
 - **Category index pages**: all six generated — `geography/index.md`,
   `government-politics/index.md`, `culture-society/index.md`, `history/index.md`,
   `economy/index.md`, `people/index.md`.
-- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 301 dated milestones.
+- **Timeline**: `TIMELINE.md` — present (China is time-oriented); 311 dated milestones.
 - **Master index / TOC**: `INDEX.md` — present; groups all content by taxonomy category.
-- **Cross-references**: `## Related` blocks present in all 69 dedicated topic files.
+- **Cross-references**: `## Related` blocks present in all 72 dedicated topic files.
 
 ## Section 6 — Growth Loop
 
@@ -549,3 +552,7 @@ Added three topics deepening Geography, Government & Politics, and History and s
 ### G1-T23 — 2026-09-07 — Tick 23: Writing's origin, the interregnum, and the treaty-port metropolis — Oracle Bones and Divination, the Five Dynasties and Ten Kingdoms, and Shanghai
 
 Added three topics deepening Culture & Society, History, and Geography and spanning the full arc from the Bronze Age origin of Chinese writing through the Tang–Song interregnum to the modern global metropolis: `culture-society/oracle-bones-divination.md` (the Shang pyromantic divination that produced *jiaguwen*, the earliest known Chinese writing — the diviners' formulaic charges on ox scapulae and turtle plastrons, the *Shangdi* and ancestral cosmology, the c. 4,500 graphs and their evolution into later scripts, the 1899 recognition by Wang Yirong, the Yinxu excavations and Pit H127, Fu Hao's tomb, and the descent into the *I Ching* and later divination), `history/five-dynasties-ten-kingdoms.md` (the fractured 907–979 interregnum — the Huang Chao Rebellion and Zhu Wen's usurpation, the five northern dynasties, the cession of the Sixteen Prefectures to the Khitan Liao, the southern kingdoms and their *ci* poetry and celadon, Feng Dao's printed Confucian Classics, and the Song reunification through the Yellow Robe Incident), and `geography/shanghai.md` (the Yangtze-mouth metropolis — its treaty-port concessions after 1842, the Bund and the golden-age economy, the 1921 CCP founding congress and the 1925 May Thirtieth and 1927 April 12 events, the Jewish wartime refuge and Battle of Shanghai, the socialist eclipse, and Pudong's reform-era rise), each with `title`/`preview`/`date`/`category` front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. Culture & Society now holds twelve topics, History twenty, and Geography eight; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and corrected several factual errors: in the Five Dynasties article, Zhu Wen's murderer was his son Zhu Yougui (not "Zhu Youzhen"), Shi Jingtang addressed the Liao emperor Yelü Deguang as "father emperor" (not "elder uncle"), Chai Rong was Guo Wei's adopted heir and his empress's nephew (not "son-in-law"), the *Hua Jian Ji* was compiled in Later Shu in 940 (not "Former Shu"), the garbled "Southern Wu" and "Later Chu" pseudo-states were rewritten as the historical Wu-to-Southern-Tang succession and the Ma-family Chu, the fabricated Jingnan and Feng Dao quotations were replaced with the attested *Gao laizi* epithet and the survivor-bureaucrat framing, and the *huangpao jiashen* romanization was corrected; and in Shanghai, Chiune Sugihara was corrected from a Shanghai "Consul-General" to the Japanese vice-consul in Kaunas, Lithuania, whose 1940 transit visas routed refugees (including the Mir Yeshiva) to Shanghai, and the dubious "Banco Sino-Português" was replaced with the Deutsch-Asiatische Bank. Fixed cross-references: pruned two links to non-existent articles (Bronze Casting and Ritual Vessels from Oracle Bones; the May Fourth Movement from Shanghai, repointed to the Five Dynasties). Verified every cross-reference resolves (0 broken links repo-wide). Refreshed the structural layer: appended Oracle Bones to the Culture & Society index and INDEX, inserted the Five Dynasties (between the An Lushan Rebellion and the Song) into the History index and INDEX, and appended Shanghai to the Geography index and INDEX; the README knowledge table already carried the three new rows (69 total); extended `TIMELINE.md` from 288 to 301 dated milestones (the Five Dynasties' 938 cession of the Sixteen Prefectures, 953 Feng Dao Classics, and 975 fall of Southern Tang, with the existing 907 Tang-fall milestone repointed from the Tang to the dedicated article; Oracle Bones' 1903 *Tieyun Cang Gui*, 1936 Pit H127, and 2017 UNESCO Memory of the World listing, with the 1899 recognition repointed from the Shang to the dedicated article; and Shanghai's 1291 Yuan county, 1843 British Settlement, 1925 May Thirtieth, 1937 Battle of Shanghai, 1990 stock-exchange reopening, 2010 World Expo, and 2015 Shanghai Tower); and wove eight reciprocal cross-references from existing articles (the Shang Dynasty and Pan Geng to Oracle Bones; the Tang, Song, and An Lushan Rebellion to the Five Dynasties; and the Yangtze River, the Opium Wars, and the Chinese Civil War to Shanghai). Regenerated seed sections 4–5 to match live state (69 topic files, 69 README rows, 301 milestones, no empty categories).
+
+### G1-T24 — 2026-09-08 — Tick 24: Rural revolution, a colonial gateway, and the conscience of modern letters — Agriculture and Land Reform, Hong Kong, and Lu Xun
+
+Added three topics deepening Economy, Geography, and People and spanning the agrarian foundation of the People's Republic, the treaty-port gateway between China and the West, and the paramount literary figure of twentieth-century China: `economy/agriculture-and-land-reform.md` (the arc of Chinese land policy — pre-1949 landlord tenure, the 1947–1952 redistribution and struggle sessions, 1950s collectivization and the people's communes, the Great Leap famine, the Deng-era household-responsibility system born at Xiaogang, and the contemporary rural-urban divide, agribusiness, and Rural Vitalization Strategy), `geography/hong-kong.md` (the former British colony, 1842–1997 — cession under the Treaty of Nanking, the New Territories lease, the Cold War manufacturing and refugee haven, the 1984 Sino-British Joint Declaration and "one country, two systems," the 1997 handover, and the 2019 protests and 2020 National Security Law), and `people/lu-xun.md` (Zhou Shuren, 1881–1936 — his abandonment of medicine for cultural criticism, the vernacular breakthrough of "A Madman's Diary," "The True Story of Ah Q" and the other *Nahan*/*Panghuang* stories, his leftward turn and independence from the Party, the New Woodblock Print Movement, and his posthumous canonization), each with `title`/`preview`/`date`/`category` front matter (single ISO dates), Summary, thematic sections, a `crossrefs`-wrapped Related block, and Sources. Economy now holds six topics, Geography nine, and People fourteen; all six categories remain populated. Polished the new prose for encyclopedic neutral tone and corrected several factual errors: in Lu Xun, fixed his father's name (Zhou Boyi, not "Zhou Bogen") and his paternal grandfather Zhou Fuqing (a Hanlin academician jailed in the 1893 examination-bribery scandal, not a "maternal grandfather Zhou Fujing"), corrected the pen-name etymology to the surname taken from his mother Lu Rui, fixed the *Hot Wind* romanization (*Refeng*) and replaced a spurious essay-collection title (*While Fleeing*/"Zouhuo") with the attested *Fen* and the Shanghai *zawen* corpus, removed an unsupported claim that Hu Shih was a pallbearer, and corrected Xu Guangping's school to the Beijing Women's Normal College; in Agriculture, replaced a dubious "1993 Yangluo uprising in Rui'an" with the documented 1993 Renshou county tax protests, corrected the soil-pollution law to the 2018 Soil Pollution Prevention and Control Law and the 2014 survey figures (16.1% of all surveyed land, 19.4% of arable land), generalized an over-specific "National Resources Commission" land-survey attribution to Buck's 1930s farm study, and neutralized an editorializing "Deng's genius" phrasing; and in Hong Kong, removed a dubious "*dai chong*" romanization for public housing. Fixed cross-references: repaired the three new files' Related blocks — corrected same-directory and relative paths (Agriculture's `economy/…`→bare and `government-politics/…`→`../`; Hong Kong's and Lu Xun's `geography/…`/`people/…`→bare same-directory links), pruned three links to non-existent articles (the May Fourth Movement and the Republic of China from Lu Xun; a duplicate "Treaty System" link from Hong Kong), and unlinked a broken inline May Fourth Movement reference in the Lu Xun body. Verified every cross-reference resolves (0 broken links repo-wide). Refreshed the structural layer: appended Agriculture and Land Reform to the Economy index and INDEX, Hong Kong to the Geography index and INDEX, and Lu Xun to the People index and INDEX; grew the README knowledge table from 69 to 72 rows; extended `TIMELINE.md` from 301 to 311 dated milestones (Agriculture's 1950 Land Reform Law, 1978 Xiaogang contract, and 2006 abolition of the agricultural tax; Hong Kong's 1842 cession, 1898 New Territories lease, 1984 Joint Declaration, and 2020 National Security Law; and Lu Xun's 1881 birth, 1918 "A Madman's Diary," and 1936 death); and wove reciprocal cross-references from nine existing articles (Economic Reform & Opening-up, the Great Leap Forward, the Hukou System, and Mao Zedong to Agriculture; the Opium Wars, Special Economic Zones, and Shanghai to Hong Kong; and Confucianism and Printing and Woodblock Printing to Lu Xun). Regenerated seed sections 4–5 to match live state (72 topic files, 72 README rows, 311 milestones, no empty categories).
