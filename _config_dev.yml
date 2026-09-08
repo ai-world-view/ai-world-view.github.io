@@ -105,6 +105,9 @@ exclude:
   # from rendering and colliding with home.md at "/" (dev sets unpublished:true).
   - README.md
   - CLAUDE.md
+  # fleet.manifest.yml is the AI-lane inventory (fleet/v1) — repo metadata, not
+  # a static file to copy into _site/.
+  - fleet.manifest.yml
   # Orchestration source data (centralized seeds + bootstrap kit), not site content.
   - lineage/
   # Abstracted org-model DNA / replant tooling, not site content.

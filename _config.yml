@@ -588,6 +588,9 @@ exclude:
   # has no front matter, so keep it listed here (don't rely on published:false).
   - README.md
   - CLAUDE.md
+  # fleet.manifest.yml is the AI-lane inventory (fleet/v1) — repo metadata, not
+  # a static file to copy into _site/.
+  - fleet.manifest.yml
 
   # ── Orchestration source data (not site content) ─────────────────────────
   # lineage/ holds the centralized seeds + bootstrap kit for the self-growing
