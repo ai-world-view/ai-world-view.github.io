@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 4
-  ticks: 124
+  ticks: 128
 members:
 - name: china
   repo: ai-world-view/china
@@ -14,45 +14,47 @@ members:
   site_url: https://ai-world-view.github.io/china/
   subject: the country china
   status: growing
-  ticks_logged: 22
-  log_entries: 23
+  ticks_logged: 23
+  log_entries: 24
   generations: 0
-  last_activity: '2026-09-06'
-  last_entry: 'G1-T22 — 2026-09-06 — Tick 22: Capital, mandate, and the rebellion
-    that broke the Tang — Beijing, the Mandate of Heaven, and the An Lushan Rebellion'
+  last_activity: '2026-09-07'
+  last_entry: 'G1-T23 — 2026-09-07 — Tick 23: Writing''s origin, the interregnum,
+    and the treaty-port metropolis — Oracle Bones and Divination, the Five Dynasties
+    and Ten Kingdoms, and Shanghai'
 - name: japan
   repo: ai-world-view/japan
   url: https://github.com/ai-world-view/japan
   site_url: https://ai-world-view.github.io/japan/
   subject: the country japan
   status: growing
-  ticks_logged: 58
-  log_entries: 73
+  ticks_logged: 59
+  log_entries: 74
   generations: 1
-  last_activity: '2026-09-06'
-  last_entry: 'G1-T58 — 2026-09-06 — Tick 58: re-delivered Sumo, Nagoya, and the Fukushima
-    Nuclear Disaster (freshly authored)'
+  last_activity: '2026-09-07'
+  last_entry: 'G1-T59 — 2026-09-07 — Tick 59: added Japan''s Demographic Crisis, the
+    Japan-United States Alliance, and the Self-Defense Forces'
 - name: north-korea
   repo: ai-world-view/north-korea
   url: https://github.com/ai-world-view/north-korea
   site_url: https://ai-world-view.github.io/north-korea/
   subject: the country north korea
   status: growing
-  ticks_logged: 9
-  log_entries: 10
+  ticks_logged: 10
+  log_entries: 11
   generations: 0
-  last_activity: '2026-09-06'
-  last_entry: 'G1-T9 — 2026-09-06 — Tick 9: added inter-Korean relations, Jang Song-thaek,
-    and Wonsan'
+  last_activity: '2026-09-07'
+  last_entry: 'G1-T10 — 2026-09-07 — Tick 10: added Rason, agriculture and food security,
+    and Ri Sol-ju'
 - name: south-korea
   repo: ai-world-view/south-korea
   url: https://github.com/ai-world-view/south-korea
   site_url: https://ai-world-view.github.io/south-korea/
   subject: the country south korea
   status: growing
-  ticks_logged: 35
-  log_entries: 36
+  ticks_logged: 36
+  log_entries: 37
   generations: 0
-  last_activity: '2026-09-06'
-  last_entry: 'G1-T35 — 2026-09-06 — Tick 35: The Candlelight Revolution, the healthcare
-    system, and public transportation deepen History, Economy, and Geography'
+  last_activity: '2026-09-07'
+  last_entry: 'G1-T36 — 2026-09-07 — Tick 36: South Korea–United States relations,
+    the LG Group, and Korean football deepen Government & Politics, Economy, and Culture
+    & Society'
