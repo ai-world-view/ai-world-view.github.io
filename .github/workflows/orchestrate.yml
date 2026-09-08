@@ -20,6 +20,20 @@ name: Lineage Orchestrator
 #
 # Deterministic: when no repo's state changed, the ledger is unchanged and no
 # commit is made.
+#
+# Kill switches — two layers, both must permit a scheduled run:
+#   _data/fleet_pause.yml   in-tree emergency STOP (ADR-0003): `paused: true`
+#                           halts every growth dispatch at once; default running.
+#   ORCHESTRATE_ENABLED     repository variable, opt-in ARM: the daily cron idles
+#                           until a human sets it —
+#                             gh variable set ORCHESTRATE_ENABLED --body true
+#                           push / pull_request / workflow_dispatch runs are never
+#                           gated by it, so a human can always validate a PR or
+#                           run a tick by hand. The bot token cannot set repo
+#                           variables, so the loop can never arm itself.
+#                           grow-lineage.yml and plant-lineage.yml are dispatch-
+#                           only and inherit this consent through their only
+#                           automated dispatcher (this workflow).
 
 permissions:
   contents: write
@@ -55,6 +69,9 @@ concurrency:
 jobs:
   orchestrate:
     runs-on: ubuntu-latest
+    # The scheduled run idles until a human arms ORCHESTRATE_ENABLED (see the
+    # header); push / pull_request / workflow_dispatch always run.
+    if: github.event_name != 'schedule' || vars.ORCHESTRATE_ENABLED == 'true'
     steps:
       - name: Checkout
         uses: actions/checkout@v4

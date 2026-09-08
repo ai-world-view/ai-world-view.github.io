@@ -30,6 +30,11 @@ name: Plant Lineage
 #
 # Secrets: CLAUDE_CODE_OAUTH_TOKEN (DECIDE pass), ANTHROPIC_API_KEY
 # (fallback), LIFECYCLE_PAT (repo creation + Pages + hub seed commit).
+#
+# Kill switches: dispatch-only, so no *_ENABLED gate of its own — the auto-spawn
+# path is armed by ORCHESTRATE_ENABLED on orchestrate.yml (its only automated
+# dispatcher) and stopped by _data/fleet_pause.yml (honored below); the manual
+# path keeps the two-key confirm.
 
 on:
   workflow_dispatch:
