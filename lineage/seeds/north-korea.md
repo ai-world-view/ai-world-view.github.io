@@ -87,8 +87,8 @@ present under `.github/`:
 ## Section 4 — Content Inventory
 
 Taxonomy (6 categories): Geography, History, Government & Politics, Economy, Culture & Society,
-People. The README knowledge table ("Notable Facts about the country north korea") holds **30 rows**.
-Dedicated topic files (30):
+People. The README knowledge table ("Notable Facts about the country north korea") holds **33 rows**.
+Dedicated topic files (33):
 
 - `geography/pyongyang.md` — Pyongyang, the capital and largest city.
 - `geography/mount-paektu.md` — Mount Paektu, the sacred border volcano and its Kim-dynasty mythology.
@@ -96,14 +96,17 @@ Dedicated topic files (30):
 - `geography/kaesong.md` — Kaesong, the medieval Goryeo capital and DMZ border city, host to the Kaesong Industrial Complex.
 - `geography/wonsan.md` — Wonsan, the principal east-coast port in Kangwon Province: treaty port, Korean War siege site, naval base, and special economic zone.
 - `geography/rason.md` — Rason, the DPRK's oldest special economic zone at the Russia–China tri-border, a largely unrealized experiment in market-oriented development.
+- `geography/railway-and-transportation-networks.md` — the DPRK's aging, fuel-starved network of railways, roads, ports, and limited air service, critical to internal control and external trade but crippled by power shortages and sanctions.
 - `history/korean-war.md` — the 1950–1953 Korean War.
 - `history/nuclear-weapons-program.md` — the DPRK nuclear program from its 1980s origins to a deliverable thermonuclear deterrent.
 - `history/japanese-colonial-period.md` — Korea under Japanese colonial rule (1910–1945), the nationalist resistance, and its legacy for the DPRK.
 - `history/inter-korean-relations.md` — North–South relations since the 1953 armistice, from Cold War provocations through the Sunshine Policy and 2018 summits to the post-2023 two-state repudiation of reunification.
+- `history/sino-north-korean-relations.md` — Sino–DPRK relations, from the 1950 "blood alliance" and 1961 mutual-defense treaty through the 1992 recognition shock to today's asymmetric economic lifeline and the post-2022 Russia pivot.
 - `government-politics/government-structure.md` — the DPRK's political system and institutions.
 - `government-politics/workers-party-of-korea.md` — the sole ruling party (WPK) and institutional backbone of the state.
 - `government-politics/korean-peoples-army.md` — the Korean People's Army (KPA): armed force, economic conglomerate, and regime skeleton.
 - `government-politics/state-security-department.md` — the Bowibu (Ministry of State Security), the regime's secret-police and internal-surveillance apparatus.
+- `government-politics/songun-ideology.md` — Songun, the military-first state doctrine codified under Kim Jong-il that elevates the Korean People's Army above the party and the state.
 - `economy/economic-system-and-famine.md` — the planned economy and the 1994–1998 famine.
 - `economy/foreign-trade-and-sanctions.md` — the DPRK's foreign trade, dependence on China and Russia, and the UN/US sanctions regime.
 - `economy/energy-crisis-and-electricity.md` — the post-1991 energy collapse that triggered the famine and the chronic electricity shortage that persists today.
@@ -122,7 +125,7 @@ Dedicated topic files (30):
 - `people/ri-sol-ju.md` — Ri Sol-ju (b. c. 1987–1989), wife of Kim Jong-un and the DPRK's publicly visible "first lady" from 2012, a former Unhasu Orchestra singer.
 
 Populated categories: all six — Geography, History, Government & Politics, Economy, Culture & Society,
-and People. This tick deepened the Geography, Economy, and People categories.
+and People. This tick deepened the Geography, Government & Politics, and History categories.
 
 ## Section 5 — Structure Inventory
 
@@ -136,9 +139,10 @@ Generated structural artifacts now present:
   Kim Yo-jong, Ri Sol-ju).
 - **Master index** — `INDEX.md` (all topics grouped by taxonomy, with pointers to category indices
   and the timeline).
-- **Cross-references** — a generated `## Related` block in each of the 30 dedicated topic files.
+- **Cross-references** — a generated `## Related` block in each of the 33 dedicated topic files.
 - **Preview art** — atlas-style SVG cards under `assets/images/previews/` for each category and
-  featured topic (including `rason.svg`, `agriculture-and-food-security.svg`, and `ri-sol-ju.svg`).
+  featured topic (including `railway-and-transportation-networks.svg`, `songun-ideology.svg`, and
+  `sino-north-korean-relations.svg`).
 
 ## Section 6 — Growth Loop
 
@@ -270,3 +274,14 @@ Tenth growth tick. Added three topics that deepened the Geography, Economy, and 
 - Enhance pass: corrected Ri Sol-ju's front-matter `date:` to her 2012-07-06 public-debut date (birth year is uncertain, so the defining public event serves as her principal/timeline date), fixed the Masikryong Ski Resort opening to December 2013 (was "February 2013"), and moved Dennis Rodman's revelation of daughter Ju-ae to September 2013 (was "February 2013"). In agriculture, corrected the cooperative-farm romanization to 협동농장 (hyeopdong nongjang), fixed the "6.28 Measures" announcement to June 2012 (was "August 2012"), removed an erroneous 1994 date on the Goodkind & West Census Bureau estimate, and reconciled the child-stunting figures to the declining 2012 (~28%) and 2017 (~19%) survey results. In Rason, reworked the 2013 SEZ-expansion passage to separate the May 2013 Economic Development Zone Law from the November 2013 designation of the new zones and dropped an incorrect claim that Rason was renamed in 2013 (the contraction predated it). Verified every front-matter `date:` is a single ISO date (Rason and Agriculture on the tick date `2026-09-07`; Ri Sol-ju on `2012-07-06`).
 - Ran build-structure — added README, INDEX, and category-index rows for the three topics; added Ri Sol-ju (2012-07-06) to `TIMELINE.md`; normalized the three new topics' `## Related` blocks into the canonical annotated crossref format and extended the crossref blocks of eleven older topic files to link the new pages bidirectionally; authored atlas-style preview SVGs (`rason.svg`, `agriculture-and-food-security.svg`, `ri-sol-ju.svg`) and added their `preview:` front matter; and moved the three items from ROADMAP Now → Done (promoting Songun ideology, Railway and transportation networks, and Sino–North Korean relations into Now for Tick 11).
 - Ran sync-seed — regenerated §1–7 (Content 27→30 rows/files across all six populated categories; Structure inventory now lists 6 category indices, 9 dated timeline rows, and 30 cross-referenced files).
+
+### G1-T11 — 2026-09-08 — Tick 11: added Songun ideology, railway and transportation networks, and Sino–North Korean relations
+
+Eleventh growth tick. Added three topics that deepened the Government & Politics, Geography, and History categories — the military-first doctrine that reorganized the state around the army, the aging transport network that binds and constrains the country, and the alliance with China that underwrites the regime's survival — then refreshed the structural layer.
+
+- Created `government-politics/songun-ideology.md` — Songun (military-first) ideology: its guerrilla-era and 1962 "four-military-lines" precursors, its crystallization under Kim Jong-il and the National Defense Commission (the 1995 first-inspection myth and the 1997 term), the inversion of the party–military hierarchy, 15–25%-of-GDP military spending, the KPA as economic conglomerate, the nuclear program as its material expression, and its partial rebalancing under Kim Jong-un (the March 2013 byungjin line, the 2016 State Affairs Commission, the revitalized party).
+- Created `geography/railway-and-transportation-networks.md` — the DPRK's transport infrastructure: the Japanese colonial and Soviet-era rail base, the degraded contemporary network (≈5,200–6,300 km main line at 30–40% capacity), principal lines and electrification, the Rajin–Khasan project, road transport and the servi-cha informal economy, port infrastructure and ship-to-ship transfers, Air Koryo, the China and Russia border crossings, and the strategic/military-logistics and population-control dimensions.
+- Created `history/sino-north-korean-relations.md` — Sino–DPRK relations: pre-1948 Manchurian communist cooperation, the Korean War "blood alliance" and the 1961 mutual-defense treaty, Sino–Soviet balancing and the 1956 August Faction Incident, the 1992 ROK-recognition shock, China as economic lifeline (≈90–95% of trade), the friction over the six nuclear tests and the THAAD crisis, the 2018–2019 re-engagement, and the post-2022 Russia pivot with continuing Chinese dependence.
+- Enhance pass: reworked the Songun origin passage to stop asserting an unverifiable "January 1, 1995 Taesong Military District" articulation, framing instead the mythologized New Year 1995 field-inspection and the August 25, 1960 "Day of Songun" origin and the 1997 emergence of the term; corrected the Sino–NK claim of "five" Kim Jong-un visits to China to four (2018–2019) plus Xi's June 2019 Pyongyang visit; and in the railway file fixed the Sunan Terminal 2 opening (mid-2015, not April), replaced the anachronistic colonial "Pyongŭi Line" bullet with the Manp'o Line, and repaired the principal-lines table (dropped a garbled "Ch'ŏngnyŏn Idukch'ŏn Line" and relabeled the mislabeled "Kangwon Line" Pyongyang–Wonsan trunk as the P'yŏngra Line west section). Converted all absolute-path (`/dir/slug`) links across the three files to the repo's relative `.md` convention and their `## See Also` lists into generated `## Related` crossref blocks. Verified every front-matter `date:` is a single ISO date (all three thematic/relations topics on the tick date `2026-09-08`).
+- Ran build-structure — added README (done in the prior pass), INDEX, and category-index rows for the three topics; wrapped the three new topics in generated `## Related` crossref blocks and extended the crossref blocks of seventeen older topic files to link the new pages bidirectionally; authored atlas-style preview SVGs (`songun-ideology.svg`, `railway-and-transportation-networks.svg`, `sino-north-korean-relations.svg`) and added their `preview:` front matter. TIMELINE unchanged (the three thematic/relations topics carry no principal historical date).
+- Ran sync-seed — regenerated §1–7 (Content 30→33 rows/files across all six populated categories; Structure inventory now lists 6 category indices, 9 dated timeline rows, and 33 cross-referenced files).
