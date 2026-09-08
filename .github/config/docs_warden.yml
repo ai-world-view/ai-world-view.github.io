@@ -84,7 +84,7 @@ rules:
     match: ["scripts/**/*.rb", "scripts/**/*.sh"]
     requires: ["CLAUDE.md"]
     severity: required
-    note: "Scripts are invisible plumbing — name them in CLAUDE.md (repo-map / Common commands)."
+    note: "Scripts are invisible plumbing — name them in CLAUDE.md (Layout / Stack & commands)."
   - id: genome-bin
     match: ["genome/bin/*.rb"]
     requires: ["genome/GENOME.md"]
