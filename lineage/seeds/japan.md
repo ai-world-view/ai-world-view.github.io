@@ -121,7 +121,6 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `history/heian-period.md` — Heian Period
   - `history/kamakura-period.md` — Kamakura Period
   - `history/meiji-restoration.md` — Meiji Restoration
-  - `history/muromachi-period.md` — Muromachi Period
   - `history/nara-period.md` — Nara Period
   - `history/russo-japanese-war.md` — Russo-Japanese War
   - `history/sengoku-period.md` — Sengoku Period
@@ -130,14 +129,12 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `government-politics/diet-of-japan.md` — Diet of Japan
   - `government-politics/imperial-household.md` — The Imperial Household
   - `government-politics/imperial-succession.md` — Imperial Succession
-  - `government-politics/japan-us-alliance.md` — Japan-United States Alliance
   - `government-politics/liberal-democratic-party.md` — Liberal Democratic Party
   - `government-politics/ministry-economy-trade-industry.md` — Ministry of Economy, Trade and Industry (METI)
   - `government-politics/postwar-constitution.md` — Postwar Constitution & Democracy
   - `government-politics/supreme-court.md` — Supreme Court of Japan
   - `economy/bank-of-japan.md` — Bank of Japan
   - `economy/bubble-economy.md` — 1980s Bubble Economy
-  - `economy/demographic-crisis.md` — Japan's Demographic Crisis
   - `economy/financial-sector-regulation.md` — Financial Sector Regulation
   - `economy/financial-system.md` — Japanese Financial System
   - `economy/labor-market-and-employment.md` — Labor Market & Employment
@@ -147,6 +144,7 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `culture-society/buddhist-schools.md` — Buddhist Schools & Traditions
   - `culture-society/edo-culture-arts.md` — Edo Culture & Arts
   - `culture-society/haiku-poetry.md` — Haiku & Poetry
+  - `culture-society/ikebana-flower-arrangement.md` — Ikebana (Flower Arrangement)
   - `culture-society/martial-arts-budo.md` — Martial Arts & Budo
   - `culture-society/modern-cinema-anime.md` — Modern Cinema & Anime
   - `culture-society/noh-theater.md` — Noh Theater
@@ -165,10 +163,12 @@ Mirrors the skills and commands above as Claude Code adapters. Canonical procedu
   - `people/minamoto-no-yoritomo.md` — Minamoto no Yoritomo
   - `people/murasaki-shikibu.md` — Murasaki Shikibu
   - `people/nitobe-inazou.md` — Nitobe Inazō
+  - `people/oda-nobunaga.md` — Oda Nobunaga
   - `people/tokugawa-ieyasu.md` — Tokugawa Ieyasu
+  - `people/toyotomi-hideyoshi.md` — Toyotomi Hideyoshi
   - `people/yoshida-shoin.md` — Yoshida Shoin
   - `people/yukio-mishima.md` — Yukio Mishima
-- **Categories with content**: Culture & Society (12), People (12), History (12), Geography (10), Economy (9), Government & Politics (8) — all six categories populated; Culture & Society, People, and History lead with twelve topics each, followed by Geography with ten, Economy with nine, and Government & Politics with eight.
+- **Categories with content**: People (14), Culture & Society (13), History (11), Geography (10), Economy (8), Government & Politics (7) — all six categories populated; People leads with fourteen topics, followed by Culture & Society with thirteen, History with eleven, Geography with ten, Economy with eight, and Government & Politics with seven.
 - **Categories awaiting content**: none.
 
 ## 5. Structure Inventory
@@ -177,7 +177,7 @@ Generated structural artifacts (idempotent, wrapped in `BEGIN/END GENERATED` mar
 
 - **Category indices** (6, one per populated category): `geography/index.md`, `history/index.md`,
   `government-politics/index.md`, `economy/index.md`, `culture-society/index.md`, `people/index.md` — all present
-  (Culture & Society, People, and History list twelve topics each; Geography ten; Economy nine; Government & Politics eight).
+  (People lists fourteen topics; Culture & Society thirteen; History eleven; Geography ten; Economy eight; Government & Politics seven).
 - **Timeline**: `TIMELINE.md` — present (chronological index of dated facts across all 63 topics).
 - **Master index**: `INDEX.md` — present (all 63 topics grouped by taxonomy; every category populated).
 - **Cross-references**: `## Related` blocks present in all 63 dedicated topic files, using relative
@@ -728,3 +728,12 @@ To reconstruct this knowledge base from DNA:
 - **Enhance pass**: corrected each new file's front-matter `date` from a bare year to a single plain ISO date — `history/muromachi-period.md` 1336 → 1336-01-01, `government-politics/japan-us-alliance.md` 1951 → 1951-09-08 (the San Francisco/Security Treaty signing), and `economy/demographic-crisis.md` 2000 → 2005-01-01 (the record-low TFR year); fixed a mixed romaji/kanji rendering in the alliance article (`bōeki摩擦` → `bōeki masatsu`); and verified factual accuracy from the model's own knowledge (Muromachi 1336–1573, Kinkaku-ji 1397, Ōnin War 1467–1477, Tanegashima 1543; TFR 1.26 in 2005 and 1.20 in 2023, 2008 population peak of 128.08 million; San Francisco/Security Treaties 1951-09-08, revised treaty 1960-01-19, sovereignty restored 1952-04-28) and confirmed all `See also`/cross-reference targets exist.
 - **Structure** (`build-structure`): added the three topics to their category indices (`history/index.md`, `economy/index.md`, `government-politics/index.md`) and to `INDEX.md`; replaced each new file's hand-written "See also" trailer with a generated `## Related` cross-reference block wrapped in `BEGIN/END GENERATED: crossrefs` markers; made cross-references bidirectional by adding Muromachi Period back-links from `history/kamakura-period.md`, `history/sengoku-period.md`, `history/azuchi-momoyama-period.md`, and `people/ashikaga-takauji.md`; and merged the genuinely new dated facts into `TIMELINE.md` — the 1336–1573 Muromachi period span; the 1951-09-08 Security Treaty signing, the 1960-01-19 revised-treaty signing, the 2022-12-16 National Security Strategy, and the 2023-08-18 Camp David trilateral summit (Alliance); and the 2005 record-low TFR, the 2008 population peak, and the 2019-04 Specified Skilled Worker visa opening (Demographic Crisis) — avoiding duplicate rows for Muromachi-era facts (Kinkaku-ji, Ōnin War, Tanegashima) already present from other files.
 - **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — dropped the phantom `government-politics/self-defense-forces.md`, added the on-disk `history/muromachi-period.md`, and corrected the per-category counts to **Culture & Society twelve, People twelve, History twelve, Geography ten, Economy nine, Government & Politics eight** (63 topic files / 63 README rows) in both §4 and §5. Verified §3 Architecture matches the staged `.github/` layout (2 agents, 2 instructions, 8 prompts, 8 skills); left §1–3 and §6–7 unchanged.
+
+### G1-T61 — 2026-09-09 — Tick 61: added Oda Nobunaga, Toyotomi Hideyoshi, and Ikebana (Flower Arrangement)
+
+- **Reconciliation**: continuing the recurring phantom-inventory pattern, the staged seed's §4/§5 described the 63-file tree recorded by G1-T60 — carrying `history/muromachi-period.md`, `economy/demographic-crisis.md`, and `government-politics/japan-us-alliance.md` (History twelve, Economy nine, Government & Politics eight). None of those three reached `main`; the true committed tree that arrived at this tick holds 60 topic files. This tick's content pass added a fresh, coherent trio — `people/oda-nobunaga.md`, `people/toyotomi-hideyoshi.md`, and `culture-society/ikebana-flower-arrangement.md` — and the enhance pass rebuilt §4/§5 to mirror the real 63-file tree, dropping the three never-persisted phantoms and adding the three new files.
+- **Content added** (3 dedicated topic files): `people/oda-nobunaga.md` (the first of Japan's three great unifiers, 1534–1582 — the "Fool of Owari," the consolidation of Owari, the 1560 upset at Okehazama, the Kiyosu alliance with Ieyasu, the firearm revolution at the 1575 Battle of Nagashino, the 1573 expulsion of the last Ashikaga shogun, the destruction of Enryaku-ji and the decade-long Ishiyama Hongan-ji siege, the *rakuichi-rakuza* free-market reforms and land surveys, Azuchi Castle, pragmatic relations with the Jesuits, and the 1582 Honnō-ji Incident and his *seppuku*), `people/toyotomi-hideyoshi.md` (the second unifier, 1537–1598 — the peasant-born general's ascent under Nobunaga, the Chūgoku Ōgaeshi and the avenging victory at Yamazaki, the Kiyosu Conference and Shizugatake, the pacification of Kyushu and the Hōjō at Odawara, the *Taikō kenchi* land survey and the 1588 *katanagari* sword hunt that froze the class system, his appointment as *Kampaku*, the patronage and forced suicide of Sen no Rikyū, the Bateren edict and the Twenty-Six Martyrs, and the failed Korean invasions), and `culture-society/ikebana-flower-arrangement.md` (the classical Japanese art of flower arrangement — the 6th-century Buddhist-altar origins and the Ono no Imoko / Ikenobō foundation story, the Muromachi codification of *rikka* under Ikenobō Senkei, the tea-room simplicity of Sen no Rikyū and the 17th-century *shōka* style, the philosophical principles of *ma*, *mono no aware*, *wabi-sabi*, *shizen*, and asymmetry, the three principal schools Ikenobō / Ohara / Sōgetsu, and the 20th-century global spread). People holds fourteen topics, Culture & Society thirteen, History eleven, Geography ten, Economy eight, and Government & Politics seven.
+- **README**: knowledge table expanded from 60 to 63 rows, adding the Oda Nobunaga, Toyotomi Hideyoshi, and Ikebana (Flower Arrangement) rows (the staged table had carried only the 60 committed rows, not the phantom trio's).
+- **Enhance pass**: verified factual accuracy from the model's own knowledge and corrected errors. In `people/oda-nobunaga.md`, the Honnō-ji narrative was made internally consistent — Nobunaga arrived "on the night of June 20, 1582" (the dawn attack falling on June 21), replacing a self-contradictory June 21 arrival — and the *tenka fubu* (天下布武) seal was corrected from a "three-character" to a **four-character** sobriquet. In `culture-society/ikebana-flower-arrangement.md`, the closing line's anachronistic "Heian priest who first arranged flowers … in seventh-century Kyoto" (the 7th century predates the Heian period and Heian-kyō's 794 founding) was recast as "the priest who, according to tradition, first arranged flowers … in seventh-century Kyoto." Confirmed `title`/`date`/`category` front matter on all three files, each `date` a single plain ISO date (Oda Nobunaga 2026-09-09, Toyotomi Hideyoshi 2026-09-09, Ikebana 2026-09-09), and that every internal Markdown link resolves against the on-disk tree.
+- **Structure** (`build-structure`): added the three topics to their category indices (`people/index.md` ×2, `culture-society/index.md`), to `INDEX.md`, and to the README homepage table; wrapped each new file's `## Related` block in the canonical `BEGIN/END GENERATED: crossrefs` markers with bidirectional links among Nobunaga, Hideyoshi, Ieyasu, the Azuchi-Momoyama and Sengoku periods, Samurai & Bushido, and the Tea Ceremony (the unifiers), and to the Tea Ceremony, Noh Theater, Ryōan-ji, Haiku & Poetry, Shintō Religion, and Ukiyo-e (Ikebana); merged new dated facts into `TIMELINE.md` — Nobunaga's 1534 birth, the 1560 Okehazama victory, the 1573 end of the Ashikaga shogunate, the 1576–1579 Azuchi Castle, and his 1582 death; Hideyoshi's 1537 birth, the 1582 Yamazaki victory, the 1585 *Kampaku* appointment, the 1588 Sword Hunt, the 1590 Odawara unification, and his 1598 death; and Ikebana's c. 607 Ono no Imoko origin, the c. 1470s–1480s *rikka* systematization, the 17th-century *shōka* style, the 1895 Ohara school, and the 1927 Sōgetsu school — avoiding duplicate rows for unifier battles already present from the Azuchi-Momoyama and Tokugawa Ieyasu articles (Okehazama and Nagashino retained their existing history/people rows alongside the new people-linked entries).
+- **Seed** (`sync-seed`): regenerated §4 and §5 to mirror the live 63-file tree — dropped the never-persisted phantoms `history/muromachi-period.md`, `economy/demographic-crisis.md`, and `government-politics/japan-us-alliance.md`, added the on-disk `people/oda-nobunaga.md`, `people/toyotomi-hideyoshi.md`, and `culture-society/ikebana-flower-arrangement.md`, and corrected the per-category counts to **People fourteen, Culture & Society thirteen, History eleven, Geography ten, Economy eight, Government & Politics seven** (63 topic files / 63 README rows) in both §4 and §5. Verified §3 Architecture matches the staged `.github/` layout (2 agents, 2 instructions, 8 prompts, 8 skills); left §1–3 and §6–7 unchanged.
