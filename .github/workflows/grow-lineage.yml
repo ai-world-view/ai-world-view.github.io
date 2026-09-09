@@ -21,6 +21,12 @@ name: Grow Lineage
 #
 # Secrets: CLAUDE_CODE_OAUTH_TOKEN (primary), ANTHROPIC_API_KEY (fallback),
 # LIFECYCLE_PAT (push to the target country repo + the hub's seed log).
+#
+# Kill switches: this workflow is dispatch-only, so it carries no *_ENABLED gate
+# of its own (an event-based gate would be tautological here). Its scheduled
+# consent is the ORCHESTRATE_ENABLED repository variable on orchestrate.yml —
+# the only automated dispatcher; the in-tree emergency stop is
+# _data/fleet_pause.yml, honored by the gate job below.
 
 on:
   workflow_dispatch:
