@@ -93,8 +93,10 @@ teaser                   : '/assets/images/favicon_gpt_computer_retro.png' # pat
 info_banner              : '/assets/images/info-banner-mountain-wizard.png' # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 
 ## Preview Image Generation (AI-powered) #####################################
-# Settings for automatic preview image generation using AI
-# Used by: scripts/generate-preview-images.sh
+# Settings for automatic preview image generation using AI. Read by the
+# zer0-image-generator gem (Gemfile; `bundle exec jekyll preview-images`) —
+# every key below is one of its documented keys (the gem README's
+# "Configuration") — and by scripts/generate-preview-images.sh.
 
 # Fleet-aligned preview contract (same shape as lifehacker.dev and the
 # year-of-ai hub). `auto` is a capability ladder resolved by
