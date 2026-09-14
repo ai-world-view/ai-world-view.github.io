@@ -108,6 +108,9 @@ exclude:
   # fleet.manifest.yml is the AI-lane inventory (fleet/v1) — repo metadata, not
   # a static file to copy into _site/.
   - fleet.manifest.yml
+  # zer0.json is the zer0-CMS console config (content folders + types) — editor
+  # metadata, not a static file to copy into _site/.
+  - zer0.json
   # Orchestration source data (centralized seeds + bootstrap kit), not site content.
   - lineage/
   # Abstracted org-model DNA / replant tooling, not site content.
