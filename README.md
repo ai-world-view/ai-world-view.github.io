@@ -57,7 +57,7 @@ Pure PR checks (`ai-content-review`, `framework-pr-reviewer`, `build-validation`
 | `templates/deploy/chat-proxy/` | Cloudflare Worker for the AI-chat widget (disabled until deployed) |
 | `fleet.manifest.yml` | This repo's AI lanes in the shared `fleet/v1` vocabulary (`provenance: derived`; each lane's `switch:` names its arming variable) |
 | `.claude/` | The `content-reviewer` agent behind `ai-content-review` + `settings.json`, a read-only `git`/`gh` permission allowlist |
-| `.github/workflows/` | The growth engine (`orchestrate`, `grow-lineage`), the fleet (`telemetry-ledger`, `fleet-health-watch`, `pages-deploy-sentinel`, `secret-expiry-watch`, `framework-pr-reviewer`, `docs-warden`), and content/site automation (`hub-sync`, `ai-content-review`, `codeql`) |
+| `.github/workflows/` | The growth engine (`orchestrate`, `grow-lineage`), the fleet (`telemetry-ledger`, `fleet-health-watch`, `pages-deploy-sentinel`, `secret-expiry-watch`, `framework-pr-reviewer`, `docs-warden`), and content/site automation (`hub-sync`, `ai-content-review`, `codeql`, the weekly `site-quality-scan`) |
 
 Everything the theme provides (`_layouts`, `_includes`, `_sass`, `assets/css`, JS, vendored Bootstrap, images) comes from `remote_theme` at build time and is not stored here.
 
