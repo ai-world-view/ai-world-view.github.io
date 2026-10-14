@@ -39,8 +39,10 @@ permissions:
   contents: write
 
 on:
-  schedule:
-    - cron: '30 5 * * *' # daily, ahead of any residual per-repo automation
+  # Schedule paused (Actions waste reduction, Oct 14): the job is gated by vars.ORCHESTRATE_ENABLED, which is
+  # currently off, so every scheduled run was skipped. To restore: set ORCHESTRATE_ENABLED=true AND uncomment the block below.
+  # schedule:
+  #   - cron: '30 5 * * *' # daily, ahead of any residual per-repo automation
   workflow_dispatch:
     inputs:
       trigger_growth:
