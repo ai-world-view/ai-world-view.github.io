@@ -67,11 +67,11 @@ How a tick runs:
 1. `orchestrate.yml` (daily cron `30 5 * * *`) refreshes `_data/lineage.yml` from
 the seeds via `sync-lineage-state.rb`, then dispatches `grow-lineage.yml` for the **`cadence.repos_per_run` stalest members** (from `lineage/policy.yml`; 0 = every member every day).
 2. `grow-lineage.yml` first runs a **gate job** (fleet kill-switch + input
-validation), then checks out the target country repo, stages `lineage/framework/*` (minus the dead peer-to-peer surfaces) + `lineage/seeds/<repo>.md`, and runs the **3-tier escalation** (`claude-haiku-4-5` draft → `claude-sonnet-4-6` expand → `claude-opus-4-8` enhance) — every pass writing from the model's own world view, never the web. An **API-key fallback** pass fires if the OAuth passes produce no content changes or report `is_error`.
+validation), then checks out the target country repo, stages `lineage/framework/*` (minus the dead peer-to-peer surfaces) + `lineage/seeds/<repo>.md`, and runs the **3-tier escalation** (`claude-haiku-5-5` draft → `claude-sonnet-5-5` expand → `claude-opus-5-5` enhance) — every pass writing from the model's own world view, never the web. An **API-key fallback** pass fires if the OAuth passes produce no content changes or report `is_error`.
 3. The **Illustrate** step banners each new article with a Claude-authored
 SVG preview (`scripts/claude_svg_banner.py`; art direction + model from `lineage/policy.yml` `preview:`; degrades to the engine's deterministic `local` SVG without a credential, never blocks a publish). The updated seed §8 is persisted back to `lineage/seeds/<repo>.md`; the staged framework/seed are stripped, front-matter dates are normalized to ISO (`scripts/normalize-front-matter-dates.rb` — an unparseable `date:` fails a member's whole Pages build), and **only** new content + telemetry are pushed to the country repo. A tick that publishes nothing fails loudly (auth/setup failure vs stalled growth).
 
-**Auth (org secrets):** `CLAUDE_CODE_OAUTH_TOKEN` (primary model auth), `ANTHROPIC_API_KEY` (fallback), `LIFECYCLE_PAT` (cross-repo push + workflow dispatch). The model values come from `lineage/policy.yml`, not the workflow — change tiers there. Use authoritative model IDs (`claude-haiku-4-5`, `claude-sonnet-4-6`, `claude-opus-4-8`).
+**Auth (org secrets):** `CLAUDE_CODE_OAUTH_TOKEN` (primary model auth), `ANTHROPIC_API_KEY` (fallback), `LIFECYCLE_PAT` (cross-repo push + workflow dispatch). The model values come from `lineage/policy.yml`, not the workflow — change tiers there. Use authoritative model IDs (`claude-haiku-5-5`, `claude-sonnet-5-5`, `claude-opus-5-5`).
 
 ## Stack & commands
 
