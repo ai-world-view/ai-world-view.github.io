@@ -589,6 +589,7 @@ exclude:
   # pages/home.md). This exclude IS the guard against a "/" collision — README
   # has no front matter, so keep it listed here (don't rely on published:false).
   - README.md
+  - PRD.md
   - CLAUDE.md
   # fleet.manifest.yml is the AI-lane inventory (fleet/v1) — repo metadata, not
   # a static file to copy into _site/.
