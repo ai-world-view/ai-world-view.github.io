@@ -104,6 +104,7 @@ exclude:
   # pages/home.md). It has no front matter, so this exclude is what keeps it
   # from rendering and colliding with home.md at "/" (dev sets unpublished:true).
   - README.md
+  - PRD.md
   - CLAUDE.md
   # fleet.manifest.yml is the AI-lane inventory (fleet/v1) — repo metadata, not
   # a static file to copy into _site/.
