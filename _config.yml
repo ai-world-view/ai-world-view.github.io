@@ -597,6 +597,7 @@ exclude:
   # zer0.json is the zer0-CMS console config (content folders + types) — editor
   # metadata, not a static file to copy into _site/.
   - zer0.json
+  - features/
 
   # ── Orchestration source data (not site content) ─────────────────────────
   # lineage/ holds the centralized seeds + bootstrap kit for the self-growing
