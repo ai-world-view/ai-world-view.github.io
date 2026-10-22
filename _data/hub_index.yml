@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 4
-  pages: 311
+  pages: 315
 repos:
 - name: china
   title: china
@@ -16,8 +16,8 @@ repos:
   pages_enabled: true
   scaffolded: true
   branch: main
-  pushed_at: '2026-10-03T21:39:44Z'
-  page_count: 83
+  pushed_at: '2026-10-22T00:04:44Z'
+  page_count: 84
   sections:
   - name: culture-society
     title: Culture & Society
@@ -50,6 +50,9 @@ repos:
     source_url: https://github.com/ai-world-view/china/tree/main/people
     count: 17
   root_pages:
+  - title: Prd
+    url: https://ai-world-view.github.io/china/PRD/
+    source_url: https://github.com/ai-world-view/china/blob/main/PRD.md
   - title: Timeline
     url: https://ai-world-view.github.io/china/TIMELINE/
     source_url: https://github.com/ai-world-view/china/blob/main/TIMELINE.md
@@ -61,8 +64,8 @@ repos:
   pages_enabled: true
   scaffolded: true
   branch: main
-  pushed_at: '2026-10-03T21:39:46Z'
-  page_count: 68
+  pushed_at: '2026-10-22T00:05:01Z'
+  page_count: 69
   sections:
   - name: culture-society
     title: Culture & Society
@@ -95,6 +98,9 @@ repos:
     source_url: https://github.com/ai-world-view/japan/tree/main/people
     count: 12
   root_pages:
+  - title: Prd
+    url: https://ai-world-view.github.io/japan/PRD/
+    source_url: https://github.com/ai-world-view/japan/blob/main/PRD.md
   - title: Timeline
     url: https://ai-world-view.github.io/japan/TIMELINE/
     source_url: https://github.com/ai-world-view/japan/blob/main/TIMELINE.md
@@ -106,8 +112,8 @@ repos:
   pages_enabled: true
   scaffolded: true
   branch: main
-  pushed_at: '2026-10-03T21:39:47Z'
-  page_count: 44
+  pushed_at: '2026-10-22T00:05:06Z'
+  page_count: 45
   sections:
   - name: culture-society
     title: Culture & Society
@@ -140,6 +146,9 @@ repos:
     source_url: https://github.com/ai-world-view/north-korea/tree/main/people
     count: 7
   root_pages:
+  - title: Prd
+    url: https://ai-world-view.github.io/north-korea/PRD/
+    source_url: https://github.com/ai-world-view/north-korea/blob/main/PRD.md
   - title: Timeline
     url: https://ai-world-view.github.io/north-korea/TIMELINE/
     source_url: https://github.com/ai-world-view/north-korea/blob/main/TIMELINE.md
@@ -151,8 +160,8 @@ repos:
   pages_enabled: true
   scaffolded: true
   branch: main
-  pushed_at: '2026-10-03T21:39:48Z'
-  page_count: 116
+  pushed_at: '2026-10-22T00:05:12Z'
+  page_count: 117
   sections:
   - name: culture-society
     title: Culture & Society
@@ -185,6 +194,9 @@ repos:
     source_url: https://github.com/ai-world-view/south-korea/tree/main/people
     count: 17
   root_pages:
+  - title: Prd
+    url: https://ai-world-view.github.io/south-korea/PRD/
+    source_url: https://github.com/ai-world-view/south-korea/blob/main/PRD.md
   - title: Timeline
     url: https://ai-world-view.github.io/south-korea/TIMELINE/
     source_url: https://github.com/ai-world-view/south-korea/blob/main/TIMELINE.md

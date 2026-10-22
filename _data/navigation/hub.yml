@@ -21,6 +21,8 @@
   children:
   - title: Site Home
     url: https://ai-world-view.github.io/china/
+  - title: Prd
+    url: https://ai-world-view.github.io/china/PRD/
   - title: Timeline
     url: https://ai-world-view.github.io/china/TIMELINE/
   - title: Culture & Society
@@ -41,6 +43,8 @@
   children:
   - title: Site Home
     url: https://ai-world-view.github.io/japan/
+  - title: Prd
+    url: https://ai-world-view.github.io/japan/PRD/
   - title: Timeline
     url: https://ai-world-view.github.io/japan/TIMELINE/
   - title: Culture & Society
@@ -61,6 +65,8 @@
   children:
   - title: Site Home
     url: https://ai-world-view.github.io/north-korea/
+  - title: Prd
+    url: https://ai-world-view.github.io/north-korea/PRD/
   - title: Timeline
     url: https://ai-world-view.github.io/north-korea/TIMELINE/
   - title: Culture & Society
@@ -81,6 +87,8 @@
   children:
   - title: Site Home
     url: https://ai-world-view.github.io/south-korea/
+  - title: Prd
+    url: https://ai-world-view.github.io/south-korea/PRD/
   - title: Timeline
     url: https://ai-world-view.github.io/south-korea/TIMELINE/
   - title: Culture & Society
