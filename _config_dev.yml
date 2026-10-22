@@ -118,6 +118,7 @@ exclude:
   - genome/
   # Hub evolution ledger (growth run records), not site content.
   - telemetry/
+  - features/
 
   # ── Jekyll cache ─────────────────────────────────────────────────────────
   - .sass-cache/
