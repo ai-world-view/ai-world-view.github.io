@@ -6,7 +6,7 @@
 org: ai-world-view
 totals:
   repos: 4
-  pages: 315
+  pages: 331
 repos:
 - name: china
   title: china
@@ -16,14 +16,19 @@ repos:
   pages_enabled: true
   scaffolded: true
   branch: main
-  pushed_at: '2026-10-22T00:04:44Z'
-  page_count: 84
+  pushed_at: '2026-10-24T22:12:03Z'
+  page_count: 88
   sections:
   - name: culture-society
     title: Culture & Society
     url: https://ai-world-view.github.io/china/culture-society/
     source_url: https://github.com/ai-world-view/china/tree/main/culture-society
     count: 12
+  - name: docs
+    title: Docs
+    url: https://ai-world-view.github.io/china/docs/
+    source_url: https://github.com/ai-world-view/china/tree/main/docs
+    count: 4
   - name: economy
     title: Economy
     url: https://ai-world-view.github.io/china/economy/
@@ -64,14 +69,19 @@ repos:
   pages_enabled: true
   scaffolded: true
   branch: main
-  pushed_at: '2026-10-22T00:05:01Z'
-  page_count: 69
+  pushed_at: '2026-10-24T22:11:43Z'
+  page_count: 73
   sections:
   - name: culture-society
     title: Culture & Society
     url: https://ai-world-view.github.io/japan/culture-society/
     source_url: https://github.com/ai-world-view/japan/tree/main/culture-society
     count: 12
+  - name: docs
+    title: Docs
+    url: https://ai-world-view.github.io/japan/docs/
+    source_url: https://github.com/ai-world-view/japan/tree/main/docs
+    count: 4
   - name: economy
     title: Economy
     url: https://ai-world-view.github.io/japan/economy/
@@ -112,14 +122,19 @@ repos:
   pages_enabled: true
   scaffolded: true
   branch: main
-  pushed_at: '2026-10-22T00:05:06Z'
-  page_count: 45
+  pushed_at: '2026-10-24T22:11:33Z'
+  page_count: 49
   sections:
   - name: culture-society
     title: Culture & Society
     url: https://ai-world-view.github.io/north-korea/culture-society/
     source_url: https://github.com/ai-world-view/north-korea/tree/main/culture-society
     count: 5
+  - name: docs
+    title: Docs
+    url: https://ai-world-view.github.io/north-korea/docs/
+    source_url: https://github.com/ai-world-view/north-korea/tree/main/docs
+    count: 4
   - name: economy
     title: Economy
     url: https://ai-world-view.github.io/north-korea/economy/
@@ -160,14 +175,19 @@ repos:
   pages_enabled: true
   scaffolded: true
   branch: main
-  pushed_at: '2026-10-22T00:05:12Z'
-  page_count: 117
+  pushed_at: '2026-10-24T22:11:22Z'
+  page_count: 121
   sections:
   - name: culture-society
     title: Culture & Society
     url: https://ai-world-view.github.io/south-korea/culture-society/
     source_url: https://github.com/ai-world-view/south-korea/tree/main/culture-society
     count: 28
+  - name: docs
+    title: Docs
+    url: https://ai-world-view.github.io/south-korea/docs/
+    source_url: https://github.com/ai-world-view/south-korea/tree/main/docs
+    count: 4
   - name: economy
     title: Economy
     url: https://ai-world-view.github.io/south-korea/economy/
