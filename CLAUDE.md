@@ -71,7 +71,7 @@ validation), then checks out the target country repo, stages `lineage/framework/
 3. The **Illustrate** step banners each new article with a Claude-authored
 SVG preview (`scripts/claude_svg_banner.py`; art direction + model from `lineage/policy.yml` `preview:`; degrades to the engine's deterministic `local` SVG without a credential, never blocks a publish). The updated seed §8 is persisted back to `lineage/seeds/<repo>.md`; the staged framework/seed are stripped, front-matter dates are normalized to ISO (`scripts/normalize-front-matter-dates.rb` — an unparseable `date:` fails a member's whole Pages build), and **only** new content + telemetry are pushed to the country repo. A tick that publishes nothing fails loudly (auth/setup failure vs stalled growth).
 
-**Auth (org secrets):** `CLAUDE_CODE_OAUTH_TOKEN` (primary model auth), `ANTHROPIC_API_KEY` (fallback), `LIFECYCLE_PAT` (cross-repo push + workflow dispatch). The model values come from `lineage/policy.yml`, not the workflow — change tiers there. Use authoritative model IDs (`claude-haiku-5-5`, `claude-sonnet-5-5`, `claude-opus-5-5`).
+**Auth (org secrets):** `CLAUDE_CODE_OAUTH_TOKEN` (primary model auth), `ANTHROPIC_API_KEY` (fallback), `LIFECYCLE_PAT` (cross-repo push + workflow dispatch). Re-minting `CLAUDE_CODE_OAUTH_TOKEN` is the owner's job; the procedure and its log are [`docs/SECRET-ROTATION.md`](docs/SECRET-ROTATION.md). The model values come from `lineage/policy.yml`, not the workflow — change tiers there. Use authoritative model IDs (`claude-haiku-5-5`, `claude-sonnet-5-5`, `claude-opus-5-5`).
 
 ## Stack & commands
 
