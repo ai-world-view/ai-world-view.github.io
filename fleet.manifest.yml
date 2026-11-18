@@ -17,7 +17,7 @@ lanes:
     events:
     - pull_request
   - kind: dispatch
-  switch: null
+  switch: AI_CONTENT_REVIEW_ENABLED  # an OFF switch, not an arming one: on while unset; "false" stops the model tier only
   uses_tokens:
   - ANTHROPIC_API_KEY
   - CLAUDE_CODE_OAUTH_TOKEN
@@ -34,7 +34,7 @@ lanes:
     events:
     - pull_request
   - kind: dispatch
-  switch: null
+  switch: FRAMEWORK_PR_REVIEWER_ENABLED  # an OFF switch, not an arming one: on while unset; "false" stops the model pass only
   uses_tokens:
   - ANTHROPIC_API_KEY
   - CLAUDE_CODE_OAUTH_TOKEN
@@ -66,6 +66,7 @@ lanes:
   - kind: dispatch
   switch: ORCHESTRATE_ENABLED  # auto-spawn is dispatched by orchestrate.yml; manual path keeps the two-key confirm
   uses_tokens:
+  - ANTHROPIC_API_KEY
   - CLAUDE_CODE_OAUTH_TOKEN
   - LIFECYCLE_PAT
   guardrails:
@@ -83,6 +84,7 @@ lanes:
   - kind: dispatch
   switch: SECRET_EXPIRY_WATCH_ENABLED
   uses_tokens:
+  - ANTHROPIC_API_KEY
   - CLAUDE_CODE_OAUTH_TOKEN
   - LIFECYCLE_PAT
   guardrails:
@@ -92,11 +94,13 @@ tokens:
 - name: ANTHROPIC_API_KEY
   scope: fleet
   required: false
-  purpose: Fallback Claude auth, used only when the OAuth token is absent.
+  purpose: Claude auth by API key, taken in the order the CLAUDE_AUTH_ORDER repository variable names (unset = after the OAuth token).
   used_by:
   - ai-content-review
   - framework-pr-reviewer
   - grow-lineage
+  - plant-lineage
+  - secret-expiry-watch
 - name: CLAUDE_CODE_OAUTH_TOKEN
   scope: fleet
   required: true
