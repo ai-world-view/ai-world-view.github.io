@@ -19,7 +19,10 @@ name: Grow Lineage
 # passes or the publish steps — including their `if: always()` variants, which
 # an in-job check could not stop.
 #
-# Secrets: CLAUDE_CODE_OAUTH_TOKEN (primary), ANTHROPIC_API_KEY (fallback),
+# Secrets: CLAUDE_CODE_OAUTH_TOKEN (Claude auth — OAuth only),
+# Claude auth: OAuth only (CLAUDE_CODE_OAUTH_TOKEN). ANTHROPIC_API_KEY disabled for
+# now (2026-11-15) — the API-key fallback pass is gated off and the Illustrate step
+# no longer gets the key; to restore, re-add the secrets.ANTHROPIC_API_KEY references.
 # LIFECYCLE_PAT (push to the target country repo + the hub's seed log).
 #
 # Kill switches: this workflow is dispatch-only, so it carries no *_ENABLED gate
@@ -106,7 +109,7 @@ env:
          "### G<gen>-T<seq> — <YYYY-MM-DD> — Tick N: <short summary>"
          naming what was added. Leave all existing §8 entries intact.
     Then STOP. Do not run publish-session, do not commit, do not push.
-  # ---- API-key fallback: one complete pass (no publish) ------------------
+  # ---- API-key fallback: one complete pass (no publish) — DISABLED for now
   FALLBACK_PROMPT: |
     The 3-tier OAuth growth passes produced no publishable content (the
     subscription token may have failed). Run ONE complete growth tick now on the
@@ -233,9 +236,8 @@ jobs:
         id: claude-auth
         uses: bamr87/bamr87/.github/actions/claude-auth@main
         with:
-          order: ${{ vars.CLAUDE_AUTH_ORDER }}
+          order: oauth
           has-oauth: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN != '' }}
-          api-key: ${{ secrets.ANTHROPIC_API_KEY }}
 
       # Dollar caps (--max-budget-usd) are sized by the fleet rule, 0.15 USD a
       # turn rounded up to the next 5: 15 for 80 turns, 20 for 120, 25 for 150.
@@ -249,7 +251,6 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ steps.claude-auth.outputs.method == 'oauth' && secrets.CLAUDE_CODE_OAUTH_TOKEN || '' }}
-          anthropic_api_key: ${{ steps.claude-auth.outputs.method == 'api_key' && secrets.ANTHROPIC_API_KEY || '' }}
           # Skips the OIDC GitHub-App-token exchange (the agent only edits files
           # locally; the workflow does every git push via LIFECYCLE_PAT).
           github_token: ${{ github.token }}
@@ -267,7 +268,6 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ steps.claude-auth.outputs.method == 'oauth' && secrets.CLAUDE_CODE_OAUTH_TOKEN || '' }}
-          anthropic_api_key: ${{ steps.claude-auth.outputs.method == 'api_key' && secrets.ANTHROPIC_API_KEY || '' }}
           github_token: ${{ github.token }}
           prompt: ${{ env.EXPAND_PROMPT }}
           claude_args: >-
@@ -283,7 +283,6 @@ jobs:
         uses: anthropics/claude-code-action@v1
         with:
           claude_code_oauth_token: ${{ steps.claude-auth.outputs.method == 'oauth' && secrets.CLAUDE_CODE_OAUTH_TOKEN || '' }}
-          anthropic_api_key: ${{ steps.claude-auth.outputs.method == 'api_key' && secrets.ANTHROPIC_API_KEY || '' }}
           github_token: ${{ github.token }}
           prompt: ${{ env.ENHANCE_PROMPT }}
           claude_args: >-
@@ -332,8 +331,12 @@ jobs:
           echo "failed=$failed" >> "$GITHUB_OUTPUT"
           echo "empty=$empty failed=$failed"
 
+      # Disabled: API key off for now (2026-11-15). This pass exists only to run on
+      # ANTHROPIC_API_KEY. To restore, put back the condition
+      #   if: steps.check.outputs.empty == 'true' || steps.check.outputs.failed == 'true'
+      # and the input  anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
       - name: Fallback — generate the tick on the API key
-        if: steps.check.outputs.empty == 'true' || steps.check.outputs.failed == 'true'
+        if: false # disabled: API key off for now
         continue-on-error: true
         id: fallback
         uses: anthropics/claude-code-action@v1
@@ -344,7 +347,6 @@ jobs:
           # key. A method the order does not name is never spent, so an order of
           # `oauth` alone leaves this pass without a credential and it fails fast.
           claude_code_oauth_token: ${{ steps.claude-auth.outputs.method == 'api_key' && contains(steps.claude-auth.outputs.order, 'oauth') && secrets.CLAUDE_CODE_OAUTH_TOKEN || '' }}
-          anthropic_api_key: ${{ steps.claude-auth.outputs.method != 'api_key' && contains(steps.claude-auth.outputs.order, 'api_key') && secrets.ANTHROPIC_API_KEY || '' }}
           github_token: ${{ github.token }}
           prompt: ${{ env.FALLBACK_PROMPT }}
           claude_args: >-
@@ -379,7 +381,7 @@ jobs:
         continue-on-error: true
         env:
           CLAUDE_CODE_OAUTH_TOKEN: ${{ secrets.CLAUDE_CODE_OAUTH_TOKEN }}
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          # Claude auth: OAuth only (CLAUDE_CODE_OAUTH_TOKEN). ANTHROPIC_API_KEY disabled for now (2026-11-15); to restore, re-add the secrets.ANTHROPIC_API_KEY reference.
         run: |
           set -uo pipefail
           # Art direction + on/off come from policy, not the workflow.
