@@ -41,7 +41,7 @@ gh variable set ORCHESTRATE_ENABLED --body true          # the daily orchestrate
 gh variable set SECRET_EXPIRY_WATCH_ENABLED --body true  # the daily credential probe
 ```
 
-Pure PR checks (`ai-content-review`, `framework-pr-reviewer`, `build-validation`, the `docs-warden` gate) deliberately carry no arming switch — a paused fleet must still be able to validate a human's pull request.
+Pure PR checks (`ai-content-review`, `framework-pr-reviewer`, `build-validation`, the `docs-warden` gate) deliberately carry no arming switch — a paused fleet must still be able to validate a human's pull request. The two that call a model have an **off** switch for that model pass alone (fleet harness standard, 2026-11-13): `AI_CONTENT_REVIEW_ENABLED` and `FRAMEWORK_PR_REVIEWER_ENABLED` are on while unset, and setting one to `false` stops the Claude tier while the deterministic checks keep running.
 
 ## Layout
 
@@ -57,7 +57,7 @@ Pure PR checks (`ai-content-review`, `framework-pr-reviewer`, `build-validation`
 | `templates/deploy/chat-proxy/` | Cloudflare Worker for the AI-chat widget (disabled until deployed) |
 | `fleet.manifest.yml` | This repo's AI lanes in the shared `fleet/v1` vocabulary (`provenance: derived`; each lane's `switch:` names its arming variable) |
 | `.claude/` | The `content-reviewer` agent behind `ai-content-review` + `settings.json`, a read-only `git`/`gh` permission allowlist |
-| `.github/workflows/` | The growth engine (`orchestrate`, `grow-lineage`), the fleet (`telemetry-ledger`, `fleet-health-watch`, `pages-deploy-sentinel`, `secret-expiry-watch`, `framework-pr-reviewer`, `docs-warden`), and content/site automation (`hub-sync`, `ai-content-review`, `codeql`, the weekly `site-quality-scan`) |
+| `.github/workflows/` | The growth engine (`orchestrate`, `grow-lineage`), the fleet (`telemetry-ledger`, `fleet-health-watch`, `pages-deploy-sentinel`, `secret-expiry-watch`, `framework-pr-reviewer`, `docs-warden`), content/site automation (`hub-sync`, `ai-content-review`, `codeql`, the weekly `site-quality-scan`), and the fleet-kit thin callers owned by the bamr87/bamr87 kits (`ci`, `conformance`, `verify`, `release`, `claude`) — change those in the hub, not here |
 
 Everything the theme provides (`_layouts`, `_includes`, `_sass`, `assets/css`, JS, vendored Bootstrap, images) comes from `remote_theme` at build time and is not stored here.
 
